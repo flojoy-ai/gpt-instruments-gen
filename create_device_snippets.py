@@ -22,8 +22,13 @@ def create_device_snippets(df: pd.DataFrame, snippets_dir: str) -> None:
             continue
 
         category = row[Cols.category]
-        # For some reason they are formatted as '"['text']"'
-        category = eval(category)[0] if category is not np.nan else ""
+        # For some reason they are sometimes formatted as '"['text']"'
+        if isinstance(category, list):
+            category = category[0]
+        elif isinstance(category, str) and "[" in category:
+            category = eval(category)[0]
+        elif category is np.nan:
+            category = ""
 
         docstring = row[Cols.docstring]
         code = query_chatgpt(library, device, category, docstring)

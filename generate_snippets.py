@@ -38,7 +38,7 @@ def get_data_for_lib(df: pd.DataFrame, library: str) -> pd.DataFrame:
     """Filters data for a library and loads docstring for each sample
     
     First, checks cache file, returns if exists
-    """
+    """ 
     cache_file = LIBRARY_CACHE_MAP[library]
     if os.path.isfile(cache_file):
         df_lib = pd.read_csv(cache_file)
@@ -62,4 +62,6 @@ def process_data() -> None:
         create_device_snippets(df_lib, LIBRARY_SNIPPET_MAP[lib])
 
 if __name__ == "__main__":
+    os.makedirs(SNIPPETS_DIR, exist_ok=True)
+    os.makedirs(DATA_DIR, exist_ok=True)
     process_data()

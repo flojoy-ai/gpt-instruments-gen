@@ -1,6 +1,8 @@
 import os
 import pandas as pd
 import airtable
+import numpy as np
+
 
 AIRTABLE_API_KEY = os.environ["AIRTABLE_API_KEY"]
 LOCAL_FILE_NAME = "data/device_data.csv"
@@ -15,7 +17,13 @@ class Cols:
     docstring = "docstring"
     category = "Device Category"
     github_link = "GitHub link to Python driver (NOT LINK TO DOCS ON GITHUB)"
-    
+
+
+def use_device_name_when_no_correct(row: pd.Series):
+    if (row[Cols.correct_device_name] is np.nan) or (row[Cols.correct_device_name] == "??"):
+        return row[Cols.device_name]
+    return row[Cols.correct_device_name]
+
 
 def load_data():
     if os.path.isfile(LOCAL_FILE_NAME):
@@ -31,6 +39,8 @@ def load_data():
             break
 
     df = pd.DataFrame([row["fields"] for row in all_data])
+    df = df[~df[Cols.device_name].isna()]
+    df[Cols.correct_device_name] = df.apply(use_device_name_when_no_correct, axis=1)
     df.to_csv("device_data.csv", index=False)
     return df
 
