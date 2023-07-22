@@ -1,4 +1,4 @@
-To connect to a Singlequantum instrument using Qcodes Community, you can use the `WebSQControlqcode` class provided in the code example. Here's an example script that demonstrates how to connect to the instrument and perform some basic operations:
+To connect to a Singlequantum Photon Counting System using Qcodes Community, you can use the provided `WebSQControlqcode` class. Here's an example script that demonstrates how to connect to the instrument and perform some basic operations:
 
 ```python
 from qcodes import Station
@@ -7,22 +7,22 @@ from qcodes.instrument_drivers.singlequantum.WebSQControlqcode import WebSQContr
 # Create a station to hold the instrument
 station = Station()
 
-# Connect to the Singlequantum instrument
+# Connect to the Singlequantum Photon Counting System
 instrument = WebSQControlqcode('singlequantum', address='localhost', port=12000)
 station.add_component(instrument)
 
-# Set the bias current to 10 uA
-instrument.bias_current(10)
+# Set the bias current to 100 uA
+instrument.bias_current.set(100)
 
 # Enable the detectors
-instrument.detectors(True)
+instrument.detectors.set(True)
 
-# Set the measurement period to 100 ms
-instrument.measurement_periode(100)
+# Set the measurement period to 10 ms
+instrument.measurement_periode.set(10)
 
 # Acquire 5 points
-instrument.npts(5)
-counts = instrument.counters()
+instrument.npts.set(5)
+counts = instrument.counters.get()
 
 # Print the acquired counts
 print(counts)
@@ -31,6 +31,4 @@ print(counts)
 instrument.close()
 ```
 
-In this script, we first create a `Station` object to hold the instrument. Then, we create an instance of the `WebSQControlqcode` class and add it to the station. We can then use the instrument's parameters and methods to interact with the instrument. In this example, we set the bias current, enable the detectors, set the measurement period, and acquire counts. Finally, we close the connection to the instrument.
-
-Note that you need to replace `'localhost'` with the actual IP address of the Singlequantum instrument, and adjust the port number if necessary.
+In this script, we first create a `Station` object to hold the instrument. Then, we create an instance of the `WebSQControlqcode` class and add it to the station. We can then use the instrument's parameters to interact with the Singlequantum Photon Counting System. In this example, we set the bias current, enable the detectors, set the measurement period, and acquire counts for 5 points. Finally, we print the acquired counts and close the connection to the instrument.

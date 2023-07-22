@@ -37,8 +37,6 @@ channel1.enable('off')
 n6705b.close()
 ```
 
-This script creates an instance of the `Keysight_67XXB` instrument, which is a subclass of `VisaInstrument` provided by Qcodes. It connects to the KEYSIGHT N6705B Power Supply using the specified address (replace `'TCPIP0::192.168.1.1::inst0::INSTR'` with the actual address of your instrument).
+This script creates an instance of the `Keysight_67XXB` instrument, connects to the N6705B Power Supply at the specified address, and performs various operations such as setting voltage and current, enabling/disabling channels, and reading measured voltage and current.
 
-The script then demonstrates various operations on the instrument, such as getting the IDN information, accessing individual channels (`ch1`, `ch2`, `ch3`, `ch4`), setting the voltage and current for a channel, enabling/disabling a channel, and reading the measured voltage and current.
-
-Finally, the script closes the connection to the instrument using the `close()` method.
+Note: Make sure to replace `'TCPIP0::192.168.1.1::inst0::INSTR'` with the actual address of your N6705B Power Supply.

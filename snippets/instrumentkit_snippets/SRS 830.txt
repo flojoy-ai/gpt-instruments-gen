@@ -1,31 +1,20 @@
-To connect to a SRS 830 Lockin Amplifier using Instrumentkit, you can use the following Python script:
+To connect to a SRS 830 Lock-In Amplifier using Instrumentkit, you can use the following code:
 
 ```python
-import instrumentkit
+import instrumentkit as ik
 
-# Create a connection to the Lockin Amplifier
-lockin = instrumentkit.connect('SRS 830')
+# Connect to the lock-in amplifier
+srs = ik.srs.SRS830.open_gpibusb('/dev/ttyUSB0', 1)
 
-# Perform operations on the Lockin Amplifier
-lockin.set_frequency(1000)  # Set the frequency to 1000 Hz
-lockin.set_amplitude(0.5)  # Set the amplitude to 0.5 V
-lockin.set_phase(45)  # Set the phase to 45 degrees
+# Set the lock-in frequency
+srs.frequency = 1000 * ik.units.hertz
 
-# Read data from the Lockin Amplifier
-x, y = lockin.read_data()  # Read the X and Y values
-
-# Print the read data
-print(f"X: {x}")
-print(f"Y: {y}")
-
-# Close the connection to the Lockin Amplifier
-lockin.close()
+# Take a measurement with a sample rate of 1Hz and 10 samples
+data = srs.take_measurement(1, 10)
 ```
 
-Make sure you have the `instrumentkit` package installed before running this script. You can install it using pip:
+This code imports the `instrumentkit` module and uses the `open_gpibusb` method from the `ik.srs.SRS830` class to connect to the lock-in amplifier. The first argument is the device path (`/dev/ttyUSB0` in this example) and the second argument is the GPIB address of the lock-in amplifier.
 
-```
-pip install instrumentkit
-```
+Once connected, you can set the lock-in frequency using the `frequency` property. In this example, it is set to 1000 Hz.
 
-Replace `'SRS 830'` with the appropriate connection string for your Lockin Amplifier.
+Finally, you can use the `take_measurement` method to take a measurement with a specified sample rate and number of samples. In this example, it takes a measurement with a sample rate of 1 Hz and 10 samples, and the result is stored in the `data` variable.

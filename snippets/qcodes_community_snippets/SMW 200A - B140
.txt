@@ -1,0 +1,29 @@
+Here is a Python script that uses Qcodes Community to connect to a SMW 200A - B140 RF Signal Generator:
+
+```python
+import qcodes as qc
+from qcodes.instrument_drivers.rohde_schwarz.SMW200A import SMW200A
+
+# Create an instance of the SMW200A instrument
+smw = SMW200A('smw', 'TCPIP0::192.168.1.1::inst0::INSTR')
+
+# Connect to the instrument
+smw.connect()
+
+# Print the instrument ID
+print(smw.IDN())
+
+# Set the frequency to 1 GHz
+smw.frequency(1e9)
+
+# Set the power level to -10 dBm
+smw.power(-10)
+
+# Enable the output
+smw.output(True)
+
+# Disconnect from the instrument
+smw.disconnect()
+```
+
+Note: Replace `'TCPIP0::192.168.1.1::inst0::INSTR'` with the actual VISA address of your SMW 200A instrument.

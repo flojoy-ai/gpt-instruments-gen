@@ -1,30 +1,37 @@
-Sure! Here's an example Python script that uses Pymeasure to connect to a From MG3690C Series RF Signal Generator:
+Sure! Here's a Python script that uses Pymeasure to connect to an Anritsu MG3692C Signal Generator:
 
 ```python
-from pymeasure import instruments
+from pymeasure.adapters import VISAAdapter
+from pymeasure.instruments.anritsu import AnritsuMG3692C
 
-# Connect to the RF Signal Generator
-generator = instruments.FromMG3690C("GPIB::1")
+# Create a VISA adapter for the instrument
+adapter = VISAAdapter("GPIB0::9::INSTR")
 
-# Set the frequency to 1 GHz
-generator.frequency = 1e9
+# Connect to the Anritsu MG3692C Signal Generator
+signal_generator = AnritsuMG3692C(adapter)
 
-# Set the power level to -10 dBm
-generator.power_level = -10
+# Set the output power to -10 dBm
+signal_generator.power = -10
 
-# Enable the output
-generator.output = True
+# Set the output frequency to 1 GHz
+signal_generator.frequency = 1e9
 
-# Disconnect from the RF Signal Generator
-generator.disconnect()
+# Enable the signal output
+signal_generator.enable()
+
+# Disable the signal output
+signal_generator.disable()
+
+# Shutdown the instrument
+signal_generator.shutdown()
 ```
 
-This script first imports the `FromMG3690C` class from the `pymeasure.instruments` module. It then creates an instance of the `FromMG3690C` class, specifying the GPIB address of the RF Signal Generator.
+Explanation of the code:
+- First, we import the necessary modules from Pymeasure.
+- We create a `VISAAdapter` object, specifying the VISA address of the instrument. In this case, the address is "GPIB0::9::INSTR".
+- We create an `AnritsuMG3692C` object, passing the adapter as an argument.
+- We can then use the properties and methods of the `AnritsuMG3692C` object to control the signal generator. For example, we set the output power to -10 dBm using the `power` property, and the output frequency to 1 GHz using the `frequency` property.
+- We can enable or disable the signal output using the `enable()` and `disable()` methods.
+- Finally, we call the `shutdown()` method to put the instrument in a safe state.
 
-The script then sets the frequency to 1 GHz using the `frequency` property of the `FromMG3690C` class. Similarly, it sets the power level to -10 dBm using the `power_level` property.
-
-Next, the script enables the output of the RF Signal Generator by setting the `output` property to `True`.
-
-Finally, the script disconnects from the RF Signal Generator using the `disconnect()` method of the `FromMG3690C` class.
-
-Note: Make sure you have the necessary drivers and libraries installed for your RF Signal Generator and GPIB interface.
+Note: Make sure you have the necessary dependencies installed, such as `pymeasure` and the appropriate VISA library for your instrument.

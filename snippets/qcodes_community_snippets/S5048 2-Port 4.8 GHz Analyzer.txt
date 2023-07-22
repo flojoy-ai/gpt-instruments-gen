@@ -1,31 +1,37 @@
-Sure! Here's an example Python script that uses Qcodes Community to connect to a S5048 2-Port 4.8 GHz Analyzer Network Analyzer:
+To connect to a S5048 2-Port 4.8 GHz Analyzer Network Analyzer using Qcodes Community, you can use the following Python script:
 
 ```python
-import qcodes as qc
-from qcodes.instrument_drivers.Keysight.Keysight_P9374A import Keysight_P9374A
+from qcodes.instrument.visa import VisaInstrument
+from qcodes.instrument.parameter import ArrayParameter
+import qcodes.utils.validators as vals
 
-# Connect to the network analyzer
-na = Keysight_P9374A('na', 'TCPIP0::192.168.1.1::inst0::INSTR')
+class CMTS5048Trace(ArrayParameter):
+    # ... (code omitted for brevity)
 
-# Print the instrument ID
-print(na.IDN())
+class CMTS5048(VisaInstrument):
+    # ... (code omitted for brevity)
 
-# Set the start and stop frequency
-na.start_frequency(1e9)  # 1 GHz
-na.stop_frequency(4.8e9)  # 4.8 GHz
+# Create an instance of the CMTS5048 instrument
+s5048 = CMTS5048('s5048', 'TCPIP0::192.168.1.1::inst0::INSTR')
 
-# Set the number of points and bandwidth
-na.npts(1001)
-na.bandwidth(1000)  # 1 kHz
+# Connect to the instrument
+s5048.connect()
 
-# Perform a sweep and get the data
-data = na.sweep()
+# Access and set instrument parameters
+s5048.start_freq(1000000)  # Set the start frequency to 1 MHz
+s5048.stop_freq(5000000)  # Set the stop frequency to 5 MHz
+s5048.averaging('ON')  # Turn on averaging
+s5048.number_of_averages(10)  # Set the number of averages to 10
+s5048.trace.prepare_trace()  # Prepare the trace
 
-# Print the data
-print(data)
+# Get the trace data
+trace_data = s5048.trace.get()
 
-# Disconnect from the network analyzer
-na.close()
+# Print the trace data
+print(trace_data)
+
+# Disconnect from the instrument
+s5048.disconnect()
 ```
 
-Make sure to replace `'TCPIP0::192.168.1.1::inst0::INSTR'` with the actual VISA address of your network analyzer.
+This script creates an instance of the `CMTS5048` instrument, connects to it using the specified address (`TCPIP0::192.168.1.1::inst0::INSTR`), sets some instrument parameters, prepares the trace, gets the trace data, and finally disconnects from the instrument.

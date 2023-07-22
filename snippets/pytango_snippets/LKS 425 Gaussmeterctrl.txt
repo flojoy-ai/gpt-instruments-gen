@@ -1,22 +1,22 @@
-Here's an example Python script that uses Pytango to connect to a LKS 425 Gaussmeterctrl:
+To connect to a LKS 425 Gaussmeterctrl Multimeters using Pytango, you can use the following code:
 
 ```python
 import PyTango
 
-# Create a DeviceProxy for the LKS 425 Gaussmeterctrl
-device_proxy = PyTango.DeviceProxy("device/server/instance")
+# Create a DeviceProxy for the Gaussmeterctrl Multimeters
+device_proxy = PyTango.DeviceProxy("device_name")
 
 # Connect to the device
-device_proxy.connect()
+device_proxy.Connect()
 
 # Check if the device is connected
-if device_proxy.state() == PyTango.DevState.ON:
+if device_proxy.State() == PyTango.DevState.ON:
     print("Device is connected")
 else:
     print("Device is not connected")
 
 # Disconnect from the device
-device_proxy.disconnect()
+device_proxy.Disconnect()
 ```
 
-In this example, you need to replace `"device/server/instance"` with the actual Tango device server and instance name for your LKS 425 Gaussmeterctrl.
+Replace `"device_name"` with the actual name of the device you want to connect to.

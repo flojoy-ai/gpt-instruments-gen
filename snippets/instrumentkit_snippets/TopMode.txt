@@ -1,79 +1,15 @@
-Sure! Here's an example Python script that uses Instrumentkit to connect to a TopMode laser:
+To connect to a TopMode laser using Instrumentkit, you can use the following Python script:
 
 ```python
-import instrumentkit as ik
+from instrumentkit import toptica
 
 # Connect to the TopMode laser
-tm = ik.toptica.TopMode.open_serial('/dev/ttyUSB0', 115200)
+tm = toptica.TopMode.open_serial('/dev/ttyUSB0', 115200)
 
-# Get the serial number of the laser
-serial_number = tm.laser[0].serial_number
-print(f"Serial Number: {serial_number}")
-
-# Get the model type of the laser
-model = tm.laser[0].model
-print(f"Model: {model}")
-
-# Get the wavelength of the laser
-wavelength = tm.laser[0].wavelength
-print(f"Wavelength: {wavelength}")
-
-# Enable the laser
-tm.laser[0].enable = True
-
-# Check if the laser is connected
-is_connected = tm.laser[0].is_connected
-print(f"Is Connected: {is_connected}")
-
-# Get the on time of the laser
-on_time = tm.laser[0].on_time
-print(f"On Time: {on_time}")
-
-# Get the charm status of the laser
-charm_status = tm.laser[0].charm_status
-print(f"Charm Status: {charm_status}")
-
-# Get the temperature control status of the laser
-temperature_control_status = tm.laser[0].temperature_control_status
-print(f"Temperature Control Status: {temperature_control_status}")
-
-# Get the current control status of the laser
-current_control_status = tm.laser[0].current_control_status
-print(f"Current Control Status: {current_control_status}")
-
-# Get the TEC status of the laser
-tec_status = tm.laser[0].tec_status
-print(f"TEC Status: {tec_status}")
-
-# Get the intensity of the laser
-intensity = tm.laser[0].intensity
-print(f"Intensity: {intensity}")
-
-# Get the mode hop status of the laser
-mode_hop = tm.laser[0].mode_hop
-print(f"Mode Hop: {mode_hop}")
-
-# Get the lock start datetime of the laser
-lock_start = tm.laser[0].lock_start
-print(f"Lock Start: {lock_start}")
-
-# Get the first mode hop datetime of the laser
-first_mode_hop_time = tm.laser[0].first_mode_hop_time
-print(f"First Mode Hop Time: {first_mode_hop_time}")
-
-# Get the latest mode hop datetime of the laser
-latest_mode_hop_time = tm.laser[0].latest_mode_hop_time
-print(f"Latest Mode Hop Time: {latest_mode_hop_time}")
-
-# Get the correction status of the laser
-correction_status = tm.laser[0].correction_status
-print(f"Correction Status: {correction_status}")
-
-# Run the correction against the laser
-tm.laser[0].correction()
-
-# Close the connection to the laser
-tm.close()
+# Access laser properties
+print(tm.laser[0].wavelength)
 ```
 
-Make sure to replace `'/dev/ttyUSB0'` with the correct serial port for your TopMode laser.
+This script imports the `toptica` module from Instrumentkit and uses the `TopMode.open_serial()` method to connect to the TopMode laser using the specified serial port and baud rate. The `open_serial()` method returns a `TopMode` object, which can be used to access the properties and methods of the laser.
+
+In this example, the script accesses the `wavelength` property of the first laser (`tm.laser[0].wavelength`) and prints its value.

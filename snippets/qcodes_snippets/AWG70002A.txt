@@ -10,19 +10,22 @@ awg = AWG70000A('awg', 'TCPIP0::192.168.1.1::inst0::INSTR')
 # Print the instrument ID
 print(awg.IDN())
 
-# Set the sample rate
+# Set the sample rate to 1 GHz
 awg.sample_rate(1e9)
 
-# Set the amplitude of channel 1
+# Set the amplitude of channel 1 to 0.5 V
 awg.channels.ch1.awg_amplitude(0.5)
 
-# Set the frequency of channel 1
+# Set the frequency of channel 1 to 1 MHz
 awg.channels.ch1.fgen_frequency(1e6)
 
-# Play the waveform
+# Run the AWG
 awg.play()
 
-# Disconnect from the AWG70002A RF Signal Generator
+# Stop the AWG
+awg.stop()
+
+# Close the connection to the AWG
 awg.close()
 ```
 

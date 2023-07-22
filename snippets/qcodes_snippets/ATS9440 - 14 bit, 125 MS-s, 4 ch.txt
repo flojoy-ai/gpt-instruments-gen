@@ -1,40 +1,30 @@
-To connect to an ATS9440 board using Qcodes, you can use the `AlazarTech_ATS` driver provided by Qcodes. Here's an example script:
+Here is a Python script that uses Qcodes to connect to an ATS9440 - 14 bit, 125 MS/s, 4 ch DAQ board:
 
 ```python
-import qcodes as qc
+from qcodes import Station
 from qcodes.instrument_drivers.AlazarTech.ATS9440 import AlazarTech_ATS9440
 
-# Connect to the ATS9440 board
-board = AlazarTech_ATS9440("board", system_id=1, board_id=1)
+# Create a station to hold the instruments
+station = Station()
 
-# Print the board information
-print(board.get_idn())
+# Create an instance of the ATS9440 instrument
+ats9440 = AlazarTech_ATS9440('ats9440', dll_path='C:\\WINDOWS\\System32\\ATSApi.dll')
 
-# Configure the board settings
-board.clock_source('INTERNAL_CLOCK')
-board.sample_rate(125e6)
-board.clock_edge('CLOCK_EDGE_RISING')
-board.decimation(1)
-board.coupling1('DC')
-board.coupling2('DC')
-board.coupling3('DC')
-board.coupling4('DC')
-board.channel_range1(0.4)
-board.channel_range2(0.4)
-board.channel_range3(0.4)
-board.channel_range4(0.4)
+# Add the instrument to the station
+station.add_component(ats9440)
 
-# Perform an acquisition
-board.acquire(1, 1024, mode='NPT', records_per_buffer=10, buffers_per_acquisition=1)
+# Connect to the instrument
+ats9440.connect()
 
-# Read the acquired data
-data = board.readout_data()
+# Now you can use the instrument to perform measurements
+# For example, you can set the clock source:
+ats9440.clock_source('INTERNAL_CLOCK')
 
-# Print the acquired data
-print(data)
+# You can also read the current clock source:
+clock_source = ats9440.clock_source()
 
-# Disconnect from the board
-board.close()
+# Disconnect from the instrument
+ats9440.disconnect()
 ```
 
-Note: Make sure you have Qcodes and the AlazarTech ATS driver installed before running this script.
+Note: Make sure to replace `'C:\\WINDOWS\\System32\\ATSApi.dll'` with the correct path to the ATSApi.dll file on your system.

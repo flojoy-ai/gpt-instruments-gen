@@ -1,27 +1,20 @@
-To connect to a DG645 Pulse Generator using Instrumentkit, you can use the following Python script:
+To connect to a DG645 Pulse Generator using Instrumentkit, you can use the following code:
 
 ```python
-import instrumentkit
+import instrumentkit as ik
 
-# Create a connection to the DG645 Pulse Generator
-dg645 = instrumentkit.connect('DG645')
+# Connect to the DG645 Pulse Generator
+dg645 = ik.srs.SRSDG645.open_gpibusb('/dev/ttyUSB0', 1)
 
-# Print the instrument information
-print(dg645)
-
-# Perform operations with the DG645 Pulse Generator
-# ...
-
-# Close the connection
-dg645.close()
+# Example usage
+dg645.channel[dg645.Channels.A].delay = (dg645.channel[dg645.Channels.T0], 10 * ik.units.ns)
+dg645.output[dg645.Outputs.AB].level_amplitude = 4.0 * ik.units.V
 ```
 
-Make sure you have Instrumentkit installed before running this script. You can install it using pip:
+This code imports the `instrumentkit` module and opens a connection to the DG645 Pulse Generator using the `open_gpibusb` method of the `SRSDG645` class. The first argument is the device path (`'/dev/ttyUSB0'`) and the second argument is the GPIB address (`1`).
 
-```
-pip install instrumentkit
-```
+After connecting, you can use the `channel` property to access specific channels of the DG645 Pulse Generator. In the example, it sets the delay of channel A to 10 nanoseconds relative to channel T0.
 
-Replace the `# Perform operations with the DG645 Pulse Generator` comment with the specific operations you want to perform with the DG645 Pulse Generator, such as setting the pulse parameters, triggering the pulses, or reading the pulse output.
+Similarly, you can use the `output` property to access specific outputs of the DG645 Pulse Generator. In the example, it sets the amplitude of output AB to 4.0 volts.
 
-Note that the specific connection details for the DG645 Pulse Generator may vary depending on your setup. You may need to provide additional parameters to the `connect` function, such as the IP address or serial port of the instrument. Refer to the DG645 Pulse Generator documentation for the correct connection details.
+Note: This code assumes that you have already installed the `instrumentkit` package and its dependencies.

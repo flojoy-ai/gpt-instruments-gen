@@ -1,22 +1,160 @@
 ```python
-import qcodes as qc
-from qcodes.instrument_drivers.tektronix.PL303P import PL303P
+from qcodes.instrument.visa import VisaInstrument
 
-# Connect to the power supply
-power_supply = PL303P('power_supply', 'USB0::0x0699::0x0363::C033251::INSTR')
+class AimTTi(VisaInstrument):
+    """
+    This is the QCoDeS driver for the Aim TTi PL-P series power supply.
+    Tested with Aim TTi PL601-P equipped with a single output channel.
+    """
 
-# Set the output voltage to 5V
-power_supply.voltage(5)
+    _numOutputChannels = {
+        "PL068-P": 1,
+        "PL155-P": 1,
+        "PL303-P": 1,
+        "PL601-P": 1,
+        "PL303QMD-P": 2,
+        "PL303QMT-P": 3,
+        "QL355TP": 3,
+    }
 
-# Enable the output
-power_supply.output('on')
+    def __init__(self, name: str, address: str, **kwargs: Any) -> None:
+        """
+        Args:
+            name: Name to use internally in QCoDeS.
+            address: VISA resource address
+        """
+        super().__init__(name, address, terminator="\n", **kwargs)
 
-# Disable the output after 10 seconds
-qc.sleep(10)
-power_supply.output('off')
+        channels = ChannelList(self, "Channels", AimTTiChannel, snapshotable=False)
 
-# Close the connection to the power supply
-power_supply.close()
+        _model = self.get_idn()["model"]
+
+        if (_model not in self._numOutputChannels.keys()) or (_model is None):
+            raise NotKnownModel("Unknown model, connection cannot be " "established.")
+
+        self.numOfChannels = self._numOutputChannels[_model]
+        for i in range(1, self.numOfChannels + 1):
+            channel = AimTTiChannel(self, f"ch{i}", i)
+            channels.append(channel)
+            self.add_submodule(f"ch{i}", channel)
+
+        self.add_submodule("channels", channels.to_channel_tuple())
+        self.connect_message()
+
+    # Interface Management
+
+    def get_idn(self) -> dict[str, Optional[str]]:
+        """
+        Returns the instrument identification including vendor, model, serial
+        number and the firmware.
+        """
+        IDNstr = self.ask_raw("*IDN?")
+        vendor, model, serial, firmware = map(str.strip, IDNstr.split(","))
+
+        IDN: dict[str, Optional[str]] = {
+            "vendor": vendor,
+            "model": model,
+            "serial": serial,
+            "firmware": firmware,
+        }
+        return IDN
+
+    def get_address(self) -> int:
+        """
+        Returns the bus address.
+        """
+        busAddressStr = self.ask_raw("ADDRESS?")
+        busAddress = busAddressStr.strip()
+        return int(busAddress)
+
+    def get_IP(self) -> str:
+        """
+        Returns the IP address of the LAN interface, if the connection exists.
+        If there is a pre-configured static IP and the instrument is not
+        connected to a LAN interface, that static IP will be returned.
+        Otherwise, the return value is '0.0.0.0'.
+        """
+        ipAddress = self.ask_raw("IPADDR?")
+        return ipAddress.strip()
+
+    def get_netMask(self) -> str:
+        """
+        Returns the netmask of the LAN interface, if the connection exists.
+        """
+        netMask = self.ask_raw("NETMASK?")
+        return netMask.strip()
+
+    def get_netConfig(self) -> str:
+        """
+        Returns the means by which an IP address is acquired, i.e.,
+        DHCP, AUTO or STATIC.
+        """
+        netConfig = self.ask_raw("NETCONFIG?")
+        return netConfig.strip()
+
+    def local_mode(self) -> None:
+        """
+        Go to local mode until the next remote command is recieved. This
+        function does not release any active interface lock.
+        """
+        self.write("LOCAL")
+
+    def is_interface_locked(self) -> int:
+        """
+        Returns '1' if the interface lock is owned by the requesting instance,
+        '0' if there is no active lock and '-1' if the lock is unavailable.
+        """
+        is_lockedSTR = self.ask_raw("IFLOCK?")
+        is_locked = is_lockedSTR.strip()
+        return int(is_locked)
+
+    def lock_interface(self) -> int:
+        """
+        Requests instrument interface lock. Returns '1' if successful and
+        '-1' if the lock is unavailable.
+        """
+        lockSTR = self.ask_raw("IFLOCK")
+        lock = lockSTR.strip()
+        return int(lock)
+
+    def unlock_interface(self) -> int:
+        """
+        Requests the release of instrument interface lock. Returns '0'
+        if successful and '-1' if unsuccessful.
+        """
+        unlockSTR = self.ask_raw("IFUNLOCK")
+        unlock = unlockSTR.strip()
+        return int(unlock)
 ```
 
-This code imports the necessary modules and connects to a PL303-P Power Supply using its USB address. It then sets the output voltage to 5V, enables the output, waits for 10 seconds, and finally disables the output. Finally, it closes the connection to the power supply.
+To connect to a PL303-P Power Supply, you can use the `AimTTi` class from the code provided. Here's an example of how to connect to the power supply:
+
+```python
+from qcodes.instrument.visa import VisaInstrument
+
+# Create an instance of the AimTTi instrument
+aim_tti = AimTTi("aim_tti", "TCPIP0::192.168.1.1::inst0::INSTR")
+
+# Print the instrument identification
+print(aim_tti.get_idn())
+
+# Access the channels of the power supply
+channel1 = aim_tti.channels.ch1
+
+# Set the voltage of channel 1 to 5V
+channel1.volt(5)
+
+# Set the current range of channel 1 to high range
+channel1.curr_range(2)
+
+# Enable the output of channel 1
+channel1.output(1)
+
+# Disable the output of channel 1
+channel1.output(0)
+
+# Close the connection to the power supply
+aim_tti.close()
+```
+
+Note: Replace `"TCPIP0::192.168.1.1::inst0::INSTR"` with the actual VISA resource address of your power supply.

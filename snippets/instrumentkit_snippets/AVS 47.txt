@@ -1,28 +1,22 @@
-To connect to an AVS 47 Temperature Controller using Instrumentkit, you can use the following Python script:
+Here is an example Python script that uses Instrumentkit to connect to a Picowatt AVS 47 resistance bridge:
 
 ```python
-from instrumentkit import avs47
+import instrumentkit as ik
 
-# Create an instance of the AVS 47 Temperature Controller
-avs = avs47.AVS47()
+# Connect to the AVS 47 resistance bridge
+bridge = ik.picowatt.PicowattAVS47.open_gpibusb('/dev/ttyUSB0', 1)
 
-# Connect to the device
-avs.connect()
+# Set the input source to actual
+bridge.input_source = bridge.InputSource.actual
 
-# Perform operations on the device
-temperature = avs.get_temperature()
-print(f"Current temperature: {temperature} °C")
+# Set the multiplexer channel to 0
+bridge.mux_channel = 0
 
-# Disconnect from the device
-avs.disconnect()
+# Get the resistance of the first sensor
+resistance = bridge.sensor[0].resistance
+
+# Print the resistance
+print(resistance)
 ```
 
-Make sure you have Instrumentkit installed in your Python environment before running this script. You can install it using pip:
-
-```
-pip install instrumentkit
-```
-
-Replace the `perform operations on the device` section with the specific operations you want to perform on the AVS 47 Temperature Controller, such as setting the temperature or reading other parameters.
-
-Note: The AVS 47 Temperature Controller class in Instrumentkit may have additional methods and properties that you can use to interact with the device. Please refer to the Instrumentkit documentation for more details on the available functionality.
+This script imports the `instrumentkit` module and uses the `open_gpibusb` method of the `PicowattAVS47` class to connect to the resistance bridge. It then sets the input source to actual and the multiplexer channel to 0. Finally, it retrieves the resistance of the first sensor using the `resistance` property of the `Sensor` class and prints it.

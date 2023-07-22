@@ -1,42 +1,26 @@
-To connect to a Picomotor controller 8742 using Instrumentkit, you can use the following Python script:
+To connect to a Picomotorcontroller 8742 Positional Controller using Instrumentkit, you can use the following code:
 
 ```python
 import instrumentkit as ik
 
-# Connect to the Picomotor controller
-picomotor = ik.newport.AGUC2.open_serial(port='COM1', baud=115200)
+# Define the IP address and port of the controller
+ip = "192.168.1.2"
+port = 23
 
-# Reset the controller
-picomotor.reset_controller()
+# Open a TCP/IP connection to the controller
+controller = ik.newport.PicoMotorController8742.open_tcpip(ip, port)
 
-# Enable remote mode
-picomotor.enable_remote_mode = True
+# Set the controller address (if using multiple controllers)
+controller.controller_address = 1
 
-# Move the X axis by 1000 steps
-picomotor.axis["X"].move_relative = 1000
+# Get the first axis of the controller
+axis = controller.axis[0]
 
-# Move the Y axis by -500 steps
-picomotor.axis["Y"].move_relative = -500
+# Move the motor relative to its current position
+axis.move_relative = 100
 
-# Check the position of the X axis
-x_position = picomotor.axis["X"].number_of_steps
-print(f"X axis position: {x_position} steps")
-
-# Check the position of the Y axis
-y_position = picomotor.axis["Y"].number_of_steps
-print(f"Y axis position: {y_position} steps")
-
-# Stop the X axis
-picomotor.axis["X"].stop()
-
-# Stop the Y axis
-picomotor.axis["Y"].stop()
-
-# Disable remote mode
-picomotor.enable_remote_mode = False
-
-# Close the connection to the Picomotor controller
-picomotor.close()
+# Close the connection to the controller
+controller.close()
 ```
 
-Make sure to replace `'COM1'` with the correct serial port for your Picomotor controller. Also, adjust the step values and other commands as needed for your specific application.
+This code establishes a TCP/IP connection to the Picomotorcontroller 8742 at the specified IP address and port. It then sets the controller address (if using multiple controllers) and gets the first axis of the controller. Finally, it moves the motor relative to its current position by 100 steps and closes the connection to the controller.

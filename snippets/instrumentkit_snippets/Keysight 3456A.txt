@@ -1,19 +1,25 @@
-To connect to a Keysight 3456A Multimeter using Instrumentkit, you can use the following Python script:
+Sure! Here's a Python script that uses Instrumentkit to connect to a Keysight 3456A Multimeter:
 
 ```python
-import instrumentkit
+import instrumentkit as ik
 
-# Create a connection to the multimeter
-multimeter = instrumentkit.connect('keysight_3456a', address='COM1')
+# Connect to the multimeter
+multimeter = ik.keysight.Keysight3456A.open_gpibusb("/dev/ttyUSB0", 22)
 
-# Query the multimeter for its identification
-identification = multimeter.query('*IDN?')
-print(f'Multimeter identification: {identification}')
+# Set the measurement mode to DC voltage
+multimeter.mode = multimeter.Mode.dcv
 
-# Close the connection to the multimeter
-multimeter.close()
+# Perform a measurement
+measurement = multimeter.measure()
+
+# Print the measurement result
+print(f"Measurement: {measurement}")
 ```
 
-Make sure to replace `'COM1'` with the appropriate address for your multimeter. This script uses the `connect` function from Instrumentkit to establish a connection to the multimeter. It then sends a query command `*IDN?` to retrieve the multimeter's identification string. Finally, it prints the identification string and closes the connection.
+In this script, we first import the `instrumentkit` module and then use the `open_gpibusb` method of the `ik.keysight.Keysight3456A` class to connect to the multimeter. You'll need to replace `"/dev/ttyUSB0"` with the appropriate device path for your system.
 
-Note: The `keysight_3456a` module needs to be installed for this script to work. You can install it using `pip install instrumentkit[keysight_3456a]`.
+Next, we set the measurement mode to DC voltage by assigning the `multimeter.Mode.dcv` value to the `mode` property of the multimeter object.
+
+Finally, we use the `measure` method of the multimeter object to perform a measurement and store the result in the `measurement` variable. We then print the measurement result.
+
+Note that this script assumes you have already installed the `instrumentkit` library. If not, you can install it using `pip install instrumentkit`.

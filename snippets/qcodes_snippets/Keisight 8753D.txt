@@ -5,27 +5,20 @@ import qcodes as qc
 from qcodes.instrument_drivers.Keysight.Keysight_8753D import Keysight_8753D
 
 # Create an instance of the instrument
-na = Keysight_8753D('na', 'GPIB0::1::INSTR')
+instrument = Keysight_8753D("instrument_name", "TCPIP0::192.168.1.1::INSTR")
 
 # Connect to the instrument
-na.connect()
+instrument.connect()
 
-# Perform measurements or set instrument parameters
-na.set_measurement('S11')
-na.set_start_frequency(1e6)
-na.set_stop_frequency(1e9)
-na.set_numpoints(101)
-na.set_power(-10)
+# Now you can use the instrument to perform measurements
+# For example, you can set the start frequency
+instrument.start_freq(1e6)
 
-# Get the trace data
-freqs, data = na.get_trace()
-
-# Print the data
-print(freqs)
-print(data)
+# You can also read the trace data
+trace_data = instrument.trace()
 
 # Disconnect from the instrument
-na.disconnect()
+instrument.disconnect()
 ```
 
-Note that you need to have Qcodes and the Keysight_8753D instrument driver installed in order to run this script.
+Note that you need to replace `"instrument_name"` with the desired name for your instrument, and `"TCPIP0::192.168.1.1::INSTR"` with the actual address of your Keysight 8753D Network Analyzer.

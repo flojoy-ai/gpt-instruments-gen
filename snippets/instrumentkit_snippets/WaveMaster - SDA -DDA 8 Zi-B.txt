@@ -1,4 +1,4 @@
-Sure! Here's an example script that uses Instrumentkit to connect to a WaveMaster / SDA / DDA 8 Zi-B Oscilloscope:
+To connect to a WaveMaster / SDA / DDA 8 Zi-B Oscilloscope using Instrumentkit, you can use the following code:
 
 ```python
 import instrumentkit as ik
@@ -7,27 +7,20 @@ import instrumentkit as ik
 address = "TCPIP0::192.168.0.10::INSTR"
 oscilloscope = ik.teledyne.MAUI.open_visa(address)
 
-# Print the oscilloscope ID
-print(oscilloscope.show_id)
+# Perform operations on the oscilloscope
+oscilloscope.run()
+print(oscilloscope.trigger_state)
 
-# Set the time per division to 200 ns
-oscilloscope.time_div = 200 * ik.units.ns
+oscilloscope.time_div = 20 * ik.units.ns
 
-# Enable the first channel and set the vertical scale to 1 V/division
 channel = oscilloscope.channel[0]
 channel.trace = True
+channel.coupling = channel.Coupling.dc50
 channel.scale = 1 * ik.units.V
 
-# Start the trigger in automatic mode
-oscilloscope.run()
-
-# Read and print the waveform from the first channel
 xdat, ydat = channel.read_waveform()
-print("Time:", xdat)
-print("Voltage:", ydat)
-
-# Disconnect from the oscilloscope
-oscilloscope.close()
 ```
 
-Make sure to replace the `address` variable with the actual IP address or VISA resource string of your oscilloscope.
+This code connects to the oscilloscope at the specified address using the `open_visa` method from the `ik.teledyne.MAUI` module. It then performs various operations on the oscilloscope, such as starting the trigger in automatic mode, setting the timebase to 20 ns per division, and reading a waveform from the first channel.
+
+Note: Make sure to replace `"TCPIP0::192.168.0.10::INSTR"` with the actual IP address or VISA resource string of your oscilloscope.

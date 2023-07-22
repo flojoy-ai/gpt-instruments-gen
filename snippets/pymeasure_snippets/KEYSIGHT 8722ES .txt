@@ -4,33 +4,33 @@ Sure! Here's a Python script that uses Pymeasure to connect to a KEYSIGHT 8722ES
 from pymeasure.adapters import VISAAdapter
 from pymeasure.instruments.agilent import Agilent8722ES
 
-# Create a VISA adapter for communication
+# Create a VISA adapter
 adapter = VISAAdapter("GPIB0::9::INSTR")
 
 # Connect to the Agilent 8722ES Network Analyzer
-network_analyzer = Agilent8722ES(adapter)
+analyzer = Agilent8722ES(adapter)
 
 # Set the start and stop frequencies
-network_analyzer.start_frequency = 1e6  # 1 MHz
-network_analyzer.stop_frequency = 1e9  # 1 GHz
+analyzer.start_frequency = 1e6  # 1 MHz
+analyzer.stop_frequency = 1e9  # 1 GHz
 
 # Set the number of scan points
-network_analyzer.scan_points = 101
+analyzer.scan_points = 101
 
 # Perform a single scan
-network_analyzer.scan_single()
+analyzer.scan_single()
 
 # Get the frequencies and data from the scan
-frequencies = network_analyzer.frequencies
-data_magnitude = network_analyzer.data_magnitude
-data_phase = network_analyzer.data_phase
+frequencies = analyzer.frequencies
+data_magnitude = analyzer.data_magnitude
+data_phase = analyzer.data_phase
 
 # Print the frequencies and data
 for frequency, magnitude, phase in zip(frequencies, data_magnitude, data_phase):
     print(f"Frequency: {frequency} Hz, Magnitude: {magnitude} dB, Phase: {phase} degrees")
 
-# Disconnect from the network analyzer
-network_analyzer.disconnect()
+# Disconnect from the analyzer
+analyzer.disconnect()
 ```
 
-This script connects to the KEYSIGHT 8722ES Network Analyzer using a VISA adapter. It sets the start and stop frequencies, the number of scan points, and performs a single scan. It then retrieves the frequencies, magnitude, and phase data from the scan and prints them. Finally, it disconnects from the network analyzer.
+This script connects to the KEYSIGHT 8722ES Network Analyzer using a VISA adapter and the GPIB address "GPIB0::9::INSTR". It sets the start and stop frequencies, the number of scan points, and performs a single scan. It then retrieves the frequencies, magnitude, and phase data from the scan and prints them. Finally, it disconnects from the analyzer.

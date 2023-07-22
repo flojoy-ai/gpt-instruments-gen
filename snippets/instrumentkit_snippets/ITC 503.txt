@@ -1,4 +1,4 @@
-Sure! Here's an example Python script that uses Instrumentkit to connect to an Oxford ITC 503 Temperature Controller:
+To connect to an ITC 503 Temperature Controller using Instrumentkit, you can use the following Python script:
 
 ```python
 import instrumentkit as ik
@@ -6,14 +6,13 @@ import instrumentkit as ik
 # Connect to the ITC 503 Temperature Controller
 itc = ik.oxford.OxfordITC503.open_gpibusb('/dev/ttyUSB0', 1)
 
-# Read the temperature from the first sensor
+# Read the temperature of the first sensor
 temperature = itc.sensor[0].temperature
-print(f"Temperature: {temperature:.2f} K")
-
-# Close the connection
-itc.close()
+print(temperature)
 ```
 
-Make sure to replace `'/dev/ttyUSB0'` with the correct serial port of your ITC 503 Temperature Controller. The second argument `1` is the GPIB address of the instrument.
+This script imports the `instrumentkit` module as `ik` and uses the `open_gpibusb` method of the `OxfordITC503` class to connect to the ITC 503 Temperature Controller. The `open_gpibusb` method takes the device path (`'/dev/ttyUSB0'`) and the GPIB address (`1`) as arguments.
 
-This script connects to the ITC 503 Temperature Controller, reads the temperature from the first sensor, and then closes the connection. The temperature is printed with two decimal places.
+After connecting, you can access the temperature of the sensors using the `sensor` property of the `itc` object. In this example, we read the temperature of the first sensor by accessing `itc.sensor[0].temperature`. The temperature is returned as a `pint.Quantity` object with units in Kelvin.
+
+Finally, the temperature is printed to the console using `print(temperature)`.

@@ -19,26 +19,35 @@ submodule = KeysightSwitchMatrixSubModule(parent=None, name='Submodule', slot=1)
 # Connect to the instrument
 submodule.connect()
 
-# Perform operations on the submodule, such as connecting channels
-submodule.connect_paths([(1, 1), (2, 3)])
-
-# Disconnect channels
-submodule.disconnect_paths([(1, 1), (2, 3)])
-
 # Check if a channel is open/disconnected
-is_open = submodule.is_open(1, 1)
+is_open = submodule.is_open(row=1, column=2)
+print(f"Channel (1, 2) is open: {is_open}")
 
 # Check if a channel is closed/connected
-is_closed = submodule.is_closed(1, 1)
+is_closed = submodule.is_closed(row=1, column=2)
+print(f"Channel (1, 2) is closed: {is_closed}")
 
-# Check if a list of channels is closed/connected
-are_closed = submodule.are_closed([(1, 1), (2, 3)])
+# Connect a specific channel
+submodule.connect(row=1, column=2)
 
-# Check if a list of channels is open/disconnected
-are_open = submodule.are_open([(1, 1), (2, 3)])
+# Disconnect a specific channel
+submodule.disconnect(row=1, column=2)
 
-# Disconnect from the instrument
-submodule.disconnect()
+# Connect multiple channels
+submodule.connect_paths([(1, 2), (3, 4), (5, 6)])
+
+# Disconnect multiple channels
+submodule.disconnect_paths([(1, 2), (3, 4), (5, 6)])
+
+# Check if multiple channels are closed/connected
+are_closed = submodule.are_closed([(1, 2), (3, 4), (5, 6)])
+print(f"Channels [(1, 2), (3, 4), (5, 6)] are closed: {are_closed}")
+
+# Check if multiple channels are open/disconnected
+are_open = submodule.are_open([(1, 2), (3, 4), (5, 6)])
+print(f"Channels [(1, 2), (3, 4), (5, 6)] are open: {are_open}")
 ```
 
-This script creates an instance of the `KeysightSwitchMatrixSubModule` class, which is a subclass of `KeysightSubModule` and `InstrumentChannel`. It then connects to the instrument using the `connect()` method and performs various operations on the submodule, such as connecting and disconnecting channels. Finally, it disconnects from the instrument using the `disconnect()` method.
+This script creates an instance of the `KeysightSwitchMatrixSubModule` class, which is a subclass of `KeysightSubModule` and `InstrumentChannel`. It then connects to the KEYSIGHT 34980A Submodule DAQ board and performs various operations such as checking the status of channels, connecting and disconnecting channels, and checking the status of multiple channels.
+
+Note: The `parent` argument in the `KeysightSubModule` constructor should be set to the appropriate parent instrument or channel object.

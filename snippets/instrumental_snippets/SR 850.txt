@@ -1,23 +1,27 @@
+Here is an example Python script that uses Instrumental to connect to a SR 850 Lock-in Amplifier:
+
 ```python
 import instrumental
 
-# Connect to the SR850 Lock-in Amplifier
-lia = instrumental.LIA("COM1")
+# Connect to the SR 850 Lock-in Amplifier
+sr850 = instrumental.SR850()
 
-# Characterize the lock-in amplifier
-lia.characterize()
+# Set the reference frequency to 1 kHz
+sr850.set_reference_frequency(1e3)
 
-# Set the frequency and phase
-lia.setf(1000)
-lia.setphase(45)
+# Get the reference frequency
+ref_freq = sr850.get_reference_frequency()
+print("Reference Frequency:", ref_freq)
 
-# Get the average value and standard deviation of channel 1
-avg, std = lia.getAverage(channel=1, N=400)
+# Set the sensitivity to 10 nV/fA
+sr850.set_sensitivity(sr850.Sensitivity.x10nV_fA)
 
-# Scan the frequency and get the output values of channel 1
-frequencies = [100, 200, 300, 400, 500]
-output = lia.scanP(frequencies, channel=1, N=100)
+# Get the sensitivity
+sensitivity = sr850.get_sensitivity()
+print("Sensitivity:", sensitivity)
 
-# Scan the frequency and get the output values of trace 1
-output_trace, err_trace = lia.scanR(frequencies, trace=1, N=100)
+# Close the connection
+sr850.close()
 ```
+
+This script connects to the SR 850 Lock-in Amplifier, sets the reference frequency to 1 kHz, gets the reference frequency, sets the sensitivity to 10 nV/fA, gets the sensitivity, and then closes the connection.

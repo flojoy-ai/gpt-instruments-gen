@@ -1,28 +1,25 @@
-Sure! Here's an example script that uses Pymeasure to connect to a 2500A Bridge Multimeter:
+Sure! Here's a Python script that uses Pymeasure to connect to a 2500A Bridge Multimeter:
 
 ```python
-from pymeasure.instruments.keithley import Keithley2500
+from pymeasure.adapters import VISAAdapter
+from pymeasure.instruments import AH2500A
 
-# Connect to the instrument
-meter = Keithley2500("GPIB::1::INSTR")
+# Create a VISA adapter for communication
+adapter = VISAAdapter("GPIB0::1::INSTR")
 
-# Initialize the instrument
-meter.reset()
-meter.beep(1000, 0.1)
+# Connect to the AH2500A instrument
+bridge = AH2500A(adapter)
 
-# Set the measurement mode to resistance
-meter.mode = "RES"
+# Perform a single capacitance and loss measurement
+capacitance, loss, voltage = bridge.caplossvolt
 
-# Perform a resistance measurement
-resistance = meter.resistance
-
-# Print the measured resistance
-print("Resistance: {} Ohms".format(resistance))
+# Print the measurement values
+print(f"Capacitance: {capacitance} pF")
+print(f"Loss: {loss} nS")
+print(f"Voltage: {voltage} V")
 
 # Disconnect from the instrument
-meter.disconnect()
+bridge.disconnect()
 ```
 
-This script connects to the Keithley 2500A Bridge Multimeter using the GPIB interface. It initializes the instrument, sets the measurement mode to resistance, performs a resistance measurement, and prints the measured resistance. Finally, it disconnects from the instrument.
-
-Note: Make sure to replace `"GPIB::1::INSTR"` with the correct address of your instrument.
+This script connects to the AH2500A instrument using a VISA adapter, performs a single capacitance and loss measurement, and prints the measurement values. Finally, it disconnects from the instrument.

@@ -23,8 +23,10 @@ lda.close()
 
 This script creates a `Station` object to hold the instruments. Then, it connects to the LDA-802-8 by creating an instance of the `LDA` driver and adding it to the station. The `serial_number` argument is set to `8028` to specify the specific LDA device to connect to.
 
-After connecting, the script prints the IDN (identification) of the LDA using the `get_idn()` method. It then sets the attenuation to 10 dB on channel 1 using the `attenuation` parameter of the LDA.
+After connecting, you can use the `get_idn()` method to print the identification information of the LDA.
 
-Finally, the script closes the connection to the LDA using the `close()` method.
+You can then use the `attenuation()` method to set the attenuation to 10 dB on channel 1 of the LDA.
+
+Finally, the `close()` method is called to close the connection to the LDA.
 
 Note: Make sure you have the necessary DLL files (`VNX_atten64.dll` or `VNX_atten.dll`) in the correct directory as specified in the script.

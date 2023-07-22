@@ -1,21 +1,29 @@
-To connect to a Tektronix AWG2005 RF Signal Generator using Instrumentkit, you can use the `TekAWG2000` class from the provided code example. Here's a Python script that demonstrates how to connect to the AWG2005 and set the amplitude and frequency of a specific channel:
+Here's an example Python script that uses Instrumentkit to connect to a AWG2005 RF Signal Generator:
 
 ```python
 import instrumentkit as ik
 
-# Connect to the AWG2005
+# Connect to the AWG2005 RF Signal Generator
 awg = ik.tektronix.TekAWG2000.open_gpibusb("/dev/ttyUSB0", 1)
 
-# Set the amplitude of channel 1 to 1 Vpp
+# Set the amplitude of channel 1 to 1 V
 awg.channel[0].amplitude = 1
 
-# Set the frequency of channel 1 to 1 kHz
-awg.channel[0].frequency = 1e3
+# Set the frequency of channel 1 to 1 MHz
+awg.channel[0].frequency = 1e6
 
-# Disconnect from the AWG2005
-awg.close()
+# Set the waveform shape of channel 1 to sine
+awg.channel[0].shape = awg.Shape.sine
+
+# Upload a waveform to the AWG2005 RF Signal Generator
+yzero = 0
+ymult = 1
+xincr = 1
+waveform = [0, 0.5, 1, 0.5, 0, -0.5, -1, -0.5]  # Example waveform data
+awg.upload_waveform(yzero, ymult, xincr, waveform)
+
+# Set the waveform name to "my_waveform"
+awg.waveform_name = "my_waveform"
 ```
 
-Make sure to replace `"/dev/ttyUSB0"` with the appropriate device path for your AWG2005. Also, note that the AWG2005 has two channels, so you can access the second channel using `awg.channel[1]` if needed.
-
-This script demonstrates how to connect to the AWG2005, set the amplitude of channel 1 to 1 Vpp, and set the frequency of channel 1 to 1 kHz. You can modify the script to suit your specific requirements.
+Note: This script assumes that you have already installed the Instrumentkit library and its dependencies.

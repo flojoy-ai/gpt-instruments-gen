@@ -1,37 +1,21 @@
-Sure! Here's an example Python script that uses Instrumentkit to connect to a TDS520/TDS540 Oscilloscope:
+To connect to a TDS520/TDS540 Oscilloscope using Instrumentkit, you can use the following Python script:
 
 ```python
-import instrumentkit as ik
+from instrumentkit import tektronix
 
 # Connect to the oscilloscope
-scope = ik.tektronix.TDSSeries.open_gpibusb("/dev/ttyUSB0", 1)
+tek = tektronix.TekTDS5xx.open_tcpip('192.168.0.2', 8888)
 
-# Set the timebase and voltage scale
-scope.timebase = 1e-6  # 1 microsecond per division
-scope.channel[1].voltage_scale = 0.1  # 0.1 volts per division
+# Access the channels and read waveform data
+channel1 = tek.channel[0]
+x, y = channel1.read_waveform()
 
-# Acquire a waveform
-waveform = scope.acquire_waveform(channel=1)
-
-# Plot the waveform
-import matplotlib.pyplot as plt
-plt.plot(waveform.time, waveform.voltage)
-plt.xlabel("Time (s)")
-plt.ylabel("Voltage (V)")
-plt.show()
+# Print the waveform data
+print("X values:", x)
+print("Y values:", y)
 
 # Disconnect from the oscilloscope
-scope.close()
+tek.close()
 ```
 
-Make sure to replace `"/dev/ttyUSB0"` with the correct serial port of your oscilloscope, and `1` with the correct GPIB address of your oscilloscope.
-
-This script connects to the oscilloscope, sets the timebase to 1 microsecond per division and the voltage scale of channel 1 to 0.1 volts per division. It then acquires a waveform from channel 1 and plots it using matplotlib. Finally, it disconnects from the oscilloscope.
-
-Note that you'll need to have Instrumentkit and matplotlib installed in order to run this script. You can install them using pip:
-
-```
-pip install instrumentkit matplotlib
-```
-
-I hope this helps! Let me know if you have any further questions.
+This script connects to the oscilloscope at IP address '192.168.0.2' and port 8888. It then accesses the first channel of the oscilloscope and reads the waveform data. Finally, it prints the X and Y values of the waveform.

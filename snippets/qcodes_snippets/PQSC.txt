@@ -5,7 +5,7 @@ import qcodes as qc
 from qcodes.instrument_drivers.zhinst import PQSC
 
 # Create a connection to the PQSC instrument
-pqsc = PQSC("pqsc", "dev1234", interface="1GbE")
+pqsc = PQSC("pqsc", "dev1234")
 
 # Connect to the instrument
 pqsc.connect()
@@ -21,10 +21,10 @@ pqsc.stop()
 pqsc.disconnect()
 ```
 
-In this script, we import the necessary modules and create an instance of the `PQSC` instrument driver. We provide the instrument name ("pqsc") and the device ID ("dev1234") as arguments to the `PQSC` constructor. We also specify the interface to use for the connection ("1GbE").
+In this script, we import the necessary modules and create an instance of the `PQSC` instrument driver. We provide a name for the instrument ("pqsc") and the device identifier ("dev1234") as arguments to the `PQSC` constructor.
 
 Then, we connect to the instrument using the `connect()` method. After connecting, we can use the instrument for measurements. In this example, we arm and run the PQSC using the `arm_and_run()` method, and then stop the trigger generation using the `stop()` method.
 
 Finally, we disconnect from the instrument using the `disconnect()` method.
 
-Note: Make sure you have the necessary dependencies installed, including Qcodes and the Zurich Instruments driver for Qcodes.
+Note: Make sure to replace "dev1234" with the actual device identifier of your PQSC instrument.

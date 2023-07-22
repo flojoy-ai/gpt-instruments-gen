@@ -22,18 +22,16 @@ spi_rack = SPI_rack()
 m2j_module = M2j('m2j', spi_rack, module=1)
 
 # Set the gain of the amplifier
-m2j_module.gain(50)  # Set the gain to 50 dB
+m2j_module.gain(50)
 
 # Get the RF level after amplification
 rf_level = m2j_module.RF_level()
-print(f"RF level: {rf_level} dBm")
 
 # Clear RF clip
 m2j_module.clear_rf_clip()
 
 # Check if RF is clipped
 is_rf_clipped = m2j_module.is_rf_clipped()
-print(f"RF clipped: {is_rf_clipped}")
 ```
 
-This script creates an instance of the `SPI_rack` class and connects to the M2j Lockin Amplifier module using the `M2j` class. It then sets the gain of the amplifier to 50 dB, measures the RF level after amplification, clears the RF clip, and checks if the RF is clipped.
+This script creates an instance of the `SPI_rack` class and connects to the M2j Lockin Amplifier module using the `M2j` class. It then sets the gain of the amplifier to 50 dB, gets the RF level after amplification, clears RF clip, and checks if RF is clipped.

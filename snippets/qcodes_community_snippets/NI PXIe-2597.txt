@@ -30,4 +30,4 @@ The script adds the switch to the station using the `add_component` method. It t
 
 The active channel is set to 'ch1' using the `channel` parameter as a function. The active channel is retrieved using the `channel` parameter as a function without any arguments.
 
-Note: Make sure you have the necessary dependencies installed and the correct resource name for your specific setup.
+Note: Make sure to replace `'PXI1Slot2'` with the appropriate resource address for your specific setup.

@@ -2,7 +2,7 @@ Sure! Here's a Python script that uses Pymeasure to connect to a PS 120-10 Power
 
 ```python
 from pymeasure.adapters import GPIBAdapter
-from pymeasure.instruments import PS120_10
+from pymeasure.instruments.oxford import PS120_10
 
 # Create a GPIB adapter
 adapter = GPIBAdapter(address="GPIB::25")
@@ -34,7 +34,9 @@ ps.set_field(0)
 ps.disable_control()
 ```
 
-This script first creates a GPIB adapter using the `GPIBAdapter` class from Pymeasure. It then creates an instance of the `PS120_10` instrument, passing the adapter as an argument.
+This script first creates a GPIB adapter using the `GPIBAdapter` class from Pymeasure. The address parameter is set to "GPIB::25" to specify the GPIB address of the power supply.
+
+Then, an instance of the `PS120_10` instrument is created using the adapter. This instrument represents the Oxford Superconducting Magnet Power Supply PS 120-10.
 
 The script then enables control of the power supply using the `enable_control()` method. It trains the magnet by calling the `train_magnet()` method with a list of field and current values.
 
@@ -42,4 +44,4 @@ Next, it sets the field to 12 T using the `set_field()` method and prints the cu
 
 After that, it sets the field to 0 T and finally disables control of the power supply using the `disable_control()` method.
 
-Note: Make sure you have Pymeasure installed (`pip install pymeasure`) and the appropriate GPIB driver for your system.
+Note: Make sure you have Pymeasure installed (`pip install pymeasure`) and the necessary GPIB drivers for your system.

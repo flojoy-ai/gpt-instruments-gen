@@ -28,10 +28,10 @@ controller.phi.wait_for_stop()
 # Disable the axes
 controller.disable()
 
-# Close the connection to the controller
+# Close the connection
 controller.shutdown()
 ```
 
-This script connects to the ESP 300 controller using a VISA adapter and creates an instance of the `ESP300` class. It then enables the axes, sets the positions of the x, y, and phi axes, waits for the motion to complete, disables the axes, and finally shuts down the controller.
+This script connects to the ESP 300 controller using a VISA adapter and creates an instance of the `ESP300` class. It then enables the axes, sets the positions of the x, y, and phi axes, waits for the motion to complete, disables the axes, and finally shuts down the controller and closes the connection.
 
 Note: You will need to install the `pymeasure` package and have the appropriate VISA drivers installed to run this script.

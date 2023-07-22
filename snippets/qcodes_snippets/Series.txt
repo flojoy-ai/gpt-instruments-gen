@@ -31,3 +31,4 @@ znb.rf_power(False)
 # Close the connection to the instrument
 znb.close()
 ```
+Note: Replace `"TCPIP0::192.168.15.100::inst0::INSTR"` with the actual address of your Series Network Analyzer.

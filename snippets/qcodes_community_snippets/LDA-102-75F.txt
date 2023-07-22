@@ -23,4 +23,6 @@ lda.attenuation(10)
 lda.close()
 ```
 
-This script creates a `Station` object to hold the instruments. It then connects to the LDA-102-75F by creating an instance of the `LDA` class and passing the serial number of the instrument as an argument. The LDA is added to the station using the `add_component` method. The IDN of the LDA is printed using the `get_idn` method. The attenuation is set to 10 dB using the `attenuation` parameter. Finally, the connection to the LDA is closed using the `close` method.
+This script creates a `Station` object to hold the instruments. It then connects to the LDA-102-75F by creating an instance of the `LDA` class and passing the serial number as an argument. The LDA is added to the station using the `add_component` method.
+
+The IDN of the LDA is printed using the `get_idn` method. The attenuation is set to 10 dB using the `attenuation` parameter. Finally, the connection to the LDA is closed using the `close` method.

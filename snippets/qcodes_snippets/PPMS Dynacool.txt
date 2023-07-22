@@ -25,4 +25,4 @@ print(f"Measured field: {field} T")
 dynacool.close()
 ```
 
-This script connects to the DynaCool instrument using the IP address and port specified in the `address` argument of the `DynaCool` constructor. It then sets the temperature setpoint to 10 K and ramps the field to 1 T in blocking mode. Finally, it retrieves the measured field value and closes the connection to the instrument.
+This script connects to the DynaCool instrument using the IP address and port specified in the `address` argument of the `DynaCool` constructor. It then sets the temperature setpoint to 10 K and ramps the field to 1 T in blocking mode. Finally, it retrieves the measured field value and prints it. The connection to the instrument is closed at the end of the script using the `close()` method.

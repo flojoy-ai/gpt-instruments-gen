@@ -14,11 +14,11 @@ lockin.connect()
 x = lockin.X()
 y = lockin.Y()
 
-# You can also set parameters of the lock-in amplifier:
-lockin.frequency(1000)  # Set the frequency to 1000 Hz
+# You can also set parameters, for example the frequency:
+lockin.frequency(1000)
 
-# Disconnect from the instrument when you're done
+# Don't forget to disconnect from the instrument when you're done
 lockin.disconnect()
 ```
 
-Note: Replace `'TCPIP::192.168.1.1::INSTR'` with the actual address of your SR 830 Lock-in Amplifier.
+Note that you need to replace `'TCPIP::192.168.1.1::INSTR'` with the actual address of your SR 830 Lock-in Amplifier.

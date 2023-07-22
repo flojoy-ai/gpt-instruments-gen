@@ -1,9 +1,11 @@
+Sure! Here's a Python script that uses Pymeasure to connect to a SPD1168X Power Supply:
+
 ```python
 from pymeasure.adapters import VISAAdapter
 from pymeasure.instruments.siglenttechnologies import SPD1168X
 
 # Create a VISA adapter for communication with the instrument
-adapter = VISAAdapter("USB0::0xF4EC::0xEE3A::SPD1168X-1000-1168X-0001::INSTR")
+adapter = VISAAdapter("USB0::0xF4EC::0xEE3A::SPD1168X-1000-1168X-1000-1168XN1P1R1::INSTR")
 
 # Create an instance of the SPD1168X power supply
 power_supply = SPD1168X(adapter)
@@ -11,13 +13,18 @@ power_supply = SPD1168X(adapter)
 # Connect to the power supply
 power_supply.connect()
 
-# Perform operations with the power supply
-# For example, set the voltage and current limits
-power_supply.ch_1.voltage_limit = 5  # Set the voltage limit to 5V
-power_supply.ch_1.current_limit = 1  # Set the current limit to 1A
+# Now you can use the power supply to perform various operations
+# For example, to set the output voltage to 5V:
+power_supply.ch_1.voltage = 5
+
+# To turn on the output:
+power_supply.ch_1.output_enabled = True
+
+# To read the current output voltage:
+voltage = power_supply.ch_1.voltage
 
 # Disconnect from the power supply
 power_supply.disconnect()
 ```
 
-Note: Replace the VISA address `"USB0::0xF4EC::0xEE3A::SPD1168X-1000-1168X-0001::INSTR"` with the appropriate address for your instrument.
+Note: Make sure to replace the VISA address in the `VISAAdapter` constructor with the appropriate address for your instrument.

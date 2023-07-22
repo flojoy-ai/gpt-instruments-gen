@@ -2,27 +2,23 @@ Sure! Here's an example of a Python script that uses Qcodes Community to connect
 
 ```python
 import qcodes as qc
-from qcodes.instrument_drivers.qcodes_contrib_drivers.Kelvinox import Kelvinox_ICE
+from qcodes.instrument_drivers.qblox import Kelvinox_100
 
 # Connect to the Kelvinox
-kelvinox = Kelvinox_ICE("kelvinox", "ASRL1::INSTR")
+kelvinox = Kelvinox_100.KeystoneKelvinox100('kelvinox', 'ASRLCOM3::INSTR')
 
 # Print the instrument ID
 print(kelvinox.IDN())
 
-# Set the temperature
-kelvinox.temperature(1.5)
+# Set the temperature to 1 Kelvin
+kelvinox.temperature(1)
 
 # Close the connection
 kelvinox.close()
 ```
 
-In this script, we first import the necessary modules: `qcodes` and the `Kelvinox_ICE` driver from `qcodes_contrib_drivers`. 
+In this example, we import the necessary modules from Qcodes and specifically import the `Kelvinox_100` driver from the `qblox` package. We then create an instance of the `Kelvinox_100` class, passing the instrument name and the connection string as arguments.
 
-Then, we create an instance of the `Kelvinox_ICE` driver, passing the instrument name and the connection string as arguments. The connection string `"ASRL1::INSTR"` is just an example and should be replaced with the appropriate connection string for your specific setup.
+We can then use the various methods and properties of the `Kelvinox_100` class to interact with the instrument. In this example, we print the instrument ID using the `IDN()` method, set the temperature to 1 Kelvin using the `temperature()` method, and finally close the connection using the `close()` method.
 
-We can then use the various methods provided by the `Kelvinox_ICE` driver to interact with the instrument. In this example, we print the instrument ID using the `IDN()` method and set the temperature to 1.5 Kelvin using the `temperature()` method.
-
-Finally, we close the connection to the instrument using the `close()` method.
-
-Note that this is just a basic example to demonstrate the usage of Qcodes Community with a Kelvinox. You may need to modify the code to suit your specific requirements and instrument capabilities.
+Note that you may need to modify the connection string (`ASRLCOM3::INSTR`) to match the actual connection details of your Kelvinox instrument.

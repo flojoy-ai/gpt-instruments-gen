@@ -1,0 +1,28 @@
+```python
+from qcodes import Station, initialise_or_create_database_at
+from qcodes.instrument_drivers.signal_core.sc5521a import SC5521A
+
+# Create a QCoDeS station
+station = Station()
+
+# Initialise or create a QCoDeS database
+initialise_or_create_database_at('path_to_database')
+
+# Create an instance of the SC5521A instrument
+signal_generator = SC5521A('signal_generator', dll_path='path_to_dll')
+
+# Add the instrument to the station
+station.add_component(signal_generator)
+
+# Connect to the instrument
+signal_generator.connect()
+
+# Access and control the instrument parameters
+signal_generator.frequency(1e9)
+signal_generator.power(-10)
+signal_generator.status('on')
+
+# Disconnect from the instrument
+signal_generator.disconnect()
+```
+Note: Replace `'path_to_database'` with the desired path for the QCoDeS database file, and `'path_to_dll'` with the actual path to the SC5521A DLL file.

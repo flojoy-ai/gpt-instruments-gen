@@ -25,6 +25,6 @@ stahl.disconnect()
 
 This script creates an instance of the `Stahl` instrument with the name "stahl" and the serial port address "COM1". It then connects to the instrument using the `connect()` method.
 
-You can access the parameters and functions of the instrument using the instance. In this example, it retrieves the voltage, current, and lock status of channel 1 using the `voltage()`, `current()`, and `is_locked()` methods respectively.
+You can access the parameters and functions of the instrument using dot notation. In the example, it retrieves the voltage, current, and lock status of channel 1 using the `voltage()`, `current()`, and `is_locked()` methods, respectively.
 
 Finally, it prints the values and disconnects from the instrument using the `disconnect()` method.

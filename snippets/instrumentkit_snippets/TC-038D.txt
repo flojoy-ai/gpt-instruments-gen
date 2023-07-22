@@ -1,48 +1,23 @@
-To connect to a TC-038D Temperature Controller using Instrumentkit, you can follow the steps below:
-
-1. Install the Instrumentkit library by running `pip install instrumentkit` in your terminal.
-
-2. Import the necessary modules from Instrumentkit:
+Here is an example Python script that uses Instrumentkit to connect to a TC-038D Temperature Controller:
 
 ```python
-from instrumentkit import Instrument, ConnectionType, ConnectionVisa
+from instrumentkit import hcp
+
+# Connect to the TC-038D Temperature Controller
+inst = hcp.TC038D.open_serial('COM10')
+
+# Set the setpoint temperature to 45.3°C
+inst.setpoint = 45.3
+
+# Get the current temperature
+temperature = inst.temperature
+
+print(temperature)
 ```
 
-3. Create a class for the TC-038D Temperature Controller by inheriting from the `Instrument` class:
-
-```python
-class TC038D(Instrument):
-    def __init__(self, connection_type, connection_address):
-        super().__init__(connection_type, connection_address)
-```
-
-4. Implement the necessary methods for the TC-038D Temperature Controller. For example, you can add a method to read the current temperature:
-
-```python
-def read_temperature(self):
-    response = self.query("READ:TEMP?")
-    temperature = float(response)
-    return temperature
-```
-
-5. Create an instance of the `TC038D` class and connect to the temperature controller:
-
-```python
-if __name__ == "__main__":
-    connection_type = ConnectionType.VISA
-    connection_address = "TC038D_ADDRESS"  # Replace with the actual address of the temperature controller
-
-    tc038d = TC038D(connection_type, connection_address)
-    tc038d.connect(ConnectionVisa())
-```
-
-6. Use the methods of the `TC038D` instance to interact with the temperature controller. For example, you can read the current temperature:
-
-```python
-    temperature = tc038d.read_temperature()
-    print(f"Current temperature: {temperature} °C")
-```
-
-Make sure to replace `"TC038D_ADDRESS"` with the actual address of the TC-038D Temperature Controller. The address can be a VISA address, IP address, or any other supported connection type.
-
-Note: The above code is a basic example to get you started. You may need to refer to the TC-038D Temperature Controller's documentation for the specific commands and syntax required to control and read data from the device.
+Explanation:
+1. The script imports the `hcp` module from `instrumentkit`.
+2. It then connects to the TC-038D Temperature Controller using the `open_serial` method, specifying the serial port as the argument.
+3. The setpoint temperature is set to 45.3°C by assigning the desired value to the `setpoint` property of the instrument object.
+4. The current temperature is obtained by accessing the `temperature` property of the instrument object.
+5. Finally, the temperature is printed to the console.

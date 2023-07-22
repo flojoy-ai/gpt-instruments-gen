@@ -10,25 +10,15 @@ oscilloscope = KeysightDSOX1102G(adapter)
 
 # Perform some operations on the oscilloscope
 oscilloscope.clear_status()
-oscilloscope.factory_reset()
-oscilloscope.default_setup()
-
-# Set up channel 1
-oscilloscope.ch1.setup(coupling="ac", range=0.1, scale=0.01)
-
-# Set up timebase
-oscilloscope.timebase_setup(mode="main", offset=0, horizontal_range=0.1, scale=0.001)
-
-# Acquire waveform data from channel 1
-oscilloscope.digitize("channel1")
-data, preamble = oscilloscope.download_data(source="channel1", points=1000)
-
-# Print the acquired data and waveform preamble
-print("Data:", data)
-print("Preamble:", preamble)
+oscilloscope.autoscale()
+ch1_data_array, ch1_preamble = oscilloscope.download_data(source="channel1", points=2000)
 
 # Disconnect from the oscilloscope
 oscilloscope.shutdown()
 ```
 
-Note: Make sure to replace the VISA address in the `VISAAdapter` constructor with the appropriate address for your oscilloscope.
+In this script, we first import the necessary modules from Pymeasure. We then create a `VISAAdapter` object to connect to the oscilloscope using its VISA address. Next, we create a `KeysightDSOX1102G` object using the adapter.
+
+We can then perform various operations on the oscilloscope, such as clearing the status, autoscaling the display, and downloading data from channel 1. Finally, we call the `shutdown()` method to disconnect from the oscilloscope.
+
+Note: Replace `"USB0::0x0957::0x179B::MY44012345::INSTR"` with the actual VISA address of your oscilloscope.

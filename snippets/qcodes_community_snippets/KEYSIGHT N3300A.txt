@@ -1,33 +1,20 @@
-Sure! Here's an example Python script that uses Qcodes Community to connect to a KEYSIGHT N3300A Electronic Load:
+To connect to a KEYSIGHT N3300A Electronic Load using Qcodes Community, you can use the following Python script:
 
 ```python
-import qcodes as qc
 from qcodes.instrument_drivers.Keysight.Keysight_N3300A import Keysight_N3300A
 
-# Connect to the KEYSIGHT N3300A Electronic Load
+# Create an instance of the instrument
 load = Keysight_N3300A('load', 'TCPIP0::192.168.1.1::inst0::INSTR')
 
-# Print the instrument ID
-print(load.IDN())
+# Connect to the instrument
+load.connect()
 
-# Set the load to constant current mode with 1A current
-load.current(1)
+# Now you can use the instrument to perform operations
+# For example, you can set the load current
+load.current.set(1)  # Set the load current to 1 Ampere
 
-# Enable the load
-load.output('on')
-
-# Disable the load after 5 seconds
-qc.sleep(5)
-load.output('off')
-
-# Close the connection to the load
-load.close()
+# Disconnect from the instrument
+load.disconnect()
 ```
 
-In this script, we first import the necessary modules: `qcodes` and the `Keysight_N3300A` instrument driver from the `qcodes.instrument_drivers.Keysight` package.
-
-Then, we create an instance of the `Keysight_N3300A` instrument by providing the instrument name ('load') and the instrument address ('TCPIP0::192.168.1.1::inst0::INSTR').
-
-We can then use the instrument to perform various operations. In this example, we print the instrument ID, set the load to constant current mode with 1A current, enable the load, wait for 5 seconds using `qc.sleep()`, and then disable the load.
-
-Finally, we close the connection to the load using `load.close()`.
+Note: Replace `'TCPIP0::192.168.1.1::inst0::INSTR'` with the actual VISA address of your KEYSIGHT N3300A Electronic Load.

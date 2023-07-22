@@ -1,26 +1,22 @@
+To connect to a KEYSIGHT - 34410A Multimeter using Qcodes, you can use the following Python script:
+
 ```python
-from qcodes.instrument_drivers.Keysight.Keysight_344xxA import Keysight_344xxA
+from qcodes.instrument_drivers.Keysight.Keysight_344XXA import Keysight_344XXA
 
-# Create an instance of the instrument
-multimeter = Keysight_344xxA("multimeter", "TCPIP0::192.168.1.1::INSTR")
+# Create an instance of the Keysight_344XXA driver
+multimeter = Keysight_344XXA('multimeter', 'TCPIP0::192.168.1.1::INSTR')
 
-# Connect to the instrument
+# Connect to the multimeter
 multimeter.connect()
 
-# Perform a DC voltage measurement
-voltage_dc = multimeter.voltage_dc()
+# Perform measurements or set parameters using the multimeter object
 
-# Print the measurement result
-print("DC Voltage:", voltage_dc)
-
-# Disconnect from the instrument
+# Disconnect from the multimeter
 multimeter.disconnect()
 ```
 
-Explanation:
-1. Import the `Keysight_344xxA` class from the `qcodes.instrument_drivers.Keysight.Keysight_344xxA` module.
-2. Create an instance of the instrument by calling `Keysight_344xxA("multimeter", "TCPIP0::192.168.1.1::INSTR")`. Replace `"TCPIP0::192.168.1.1::INSTR"` with the appropriate address of your instrument.
-3. Connect to the instrument by calling `multimeter.connect()`.
-4. Perform a DC voltage measurement by calling `multimeter.voltage_dc()`.
-5. Print the measurement result by calling `print("DC Voltage:", voltage_dc)`.
-6. Disconnect from the instrument by calling `multimeter.disconnect()`.
+This script imports the `Keysight_344XXA` driver from the `qcodes.instrument_drivers.Keysight` module. It then creates an instance of the driver, specifying a name for the instrument and the VISA resource address of the multimeter.
+
+The `connect()` method is called to establish a connection to the multimeter. You can then perform measurements or set parameters using the methods and properties provided by the `multimeter` object.
+
+Finally, the `disconnect()` method is called to close the connection to the multimeter.

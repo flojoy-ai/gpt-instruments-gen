@@ -1,30 +1,74 @@
-Sure! Here's a Python script that uses Pymeasure to connect to an Apsin 26G RF Signal Generator:
-
 ```python
-from pymeasure.instruments.apsin import Apsin26G
+from pymeasure.instruments import Instrument
+from pymeasure.instruments.validators import strict_range, strict_discrete_set
 
-# Connect to the RF Signal Generator
-signal_generator = Apsin26G("GPIB0::1::INSTR")
 
-# Set the frequency to 1 GHz
-signal_generator.frequency = 1e9
+class APSIN26G(Instrument):
+    """ Represents the Anapico APSIN26G Signal Generator with option 9K,
+    HP and GPIB. """
+    FREQ_LIMIT = [9e3, 26e9]
+    POW_LIMIT = [-30, 27]
 
-# Set the power level to -10 dBm
-signal_generator.power_level = -10
+    power = Instrument.control(
+        "SOUR:POW:LEV:IMM:AMPL?;", "SOUR:POW:LEV:IMM:AMPL %gdBm;",
+        """ A floating point property that represents the output power
+        in dBm. This property can be set. """,
+        validator=strict_range,
+        values=POW_LIMIT
+    )
+    frequency = Instrument.control(
+        "SOUR:FREQ:CW?;", "SOUR:FREQ:CW %eHz;",
+        """ A floating point property that represents the output frequency
+        in Hz. This property can be set. """,
+        validator=strict_range,
+        values=FREQ_LIMIT
+    )
+    blanking = Instrument.control(
+        ":OUTP:BLAN:STAT?", ":OUTP:BLAN:STAT %s",
+        """ A string property that represents the blanking of output power
+        when frequency is changed. ON makes the output to be blanked (off) while
+        changing frequency. This property can be set. """,
+        validator=strict_discrete_set,
+        values=['ON', 'OFF']
+    )
+    reference_output = Instrument.control(
+        "SOUR:ROSC:OUTP:STAT?", "SOUR:ROSC:OUTP:STAT %s",
+        """ A string property that represents the 10MHz reference output from
+        the synth. This property can be set. """,
+        validator=strict_discrete_set,
+        values=['ON', 'OFF']
+    )
 
-# Enable the RF output
-signal_generator.output = True
+    def __init__(self, adapter, name="Anapico APSIN26G Signal Generator", **kwargs):
+        super().__init__(
+            adapter,
+            name,
+            **kwargs
+        )
 
-# Disconnect from the RF Signal Generator
-signal_generator.disconnect()
+    def enable_rf(self):
+        """ Enables the RF output. """
+        self.write("OUTP:STAT 1")
+
+    def disable_rf(self):
+        """ Disables the RF output. """
+        self.write("OUTP:STAT 0")
 ```
 
-In this script, we first import the `Apsin26G` class from the `pymeasure.instruments.apsin` module. We then create an instance of the `Apsin26G` class, passing the instrument's address (e.g., "GPIB0::1::INSTR") as an argument to the constructor.
+This code defines a new class `APSIN26G` that represents the Anapico APSIN26G Signal Generator. It inherits from the `Instrument` class provided by PyMeasure.
 
-Next, we can use various properties of the `Apsin26G` class to control the RF Signal Generator. In this example, we set the frequency to 1 GHz using the `frequency` property and the power level to -10 dBm using the `power_level` property.
+The class defines several properties such as `power`, `frequency`, `blanking`, and `reference_output`, which are used to control various settings of the signal generator. These properties are defined using the `Instrument.control` decorator, which specifies the SCPI commands to get and set the corresponding values.
 
-We then enable the RF output by setting the `output` property to `True`.
+The `power` property represents the output power in dBm, and it is validated using the `strict_range` validator with the limits specified in `POW_LIMIT`.
 
-Finally, we disconnect from the RF Signal Generator by calling the `disconnect()` method.
+The `frequency` property represents the output frequency in Hz, and it is validated using the `strict_range` validator with the limits specified in `FREQ_LIMIT`.
 
-Note: Make sure you have the necessary drivers and libraries installed for your RF Signal Generator and that it is properly connected to your computer before running this script.
+The `blanking` property represents the blanking of output power when the frequency is changed. It is validated using the `strict_discrete_set` validator with the allowed values of 'ON' and 'OFF'.
+
+The `reference_output` property represents the 10MHz reference output from the signal generator. It is also validated using the `strict_discrete_set` validator with the allowed values of 'ON' and 'OFF'.
+
+The `enable_rf` method enables the RF output of the signal generator by sending the corresponding SCPI command.
+
+The `disable_rf` method disables the RF output of the signal generator by sending the corresponding SCPI command.
+
+The `APSIN26G` class can be used to connect to and control an Anapico APSIN26G Signal Generator using PyMeasure.

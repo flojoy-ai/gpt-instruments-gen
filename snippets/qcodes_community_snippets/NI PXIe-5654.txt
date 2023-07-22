@@ -25,4 +25,4 @@ Make sure you have installed the `qcodes_contrib_drivers` package, which contain
 
 Replace `'PXI1Slot2'` with the appropriate resource name for your specific setup.
 
-Note that this script assumes you have already set up the necessary hardware and drivers for the NI PXIe-5654 RF Signal Generator.
+The script creates an instance of the `NI_PXIe_5654` driver, connects to the instrument, sets the frequency and power level, and then disconnects from the instrument.

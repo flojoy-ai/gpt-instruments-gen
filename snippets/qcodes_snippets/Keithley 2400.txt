@@ -21,8 +21,8 @@ current = keithley.curr()  # Read the current value
 keithley.disconnect()
 ```
 
-In this script, we first import the necessary modules and classes from Qcodes. Then, we create an instance of the `Keithley2400` instrument by providing a name and the instrument's address (in this case, a TCP/IP address). Next, we connect to the instrument using the `connect()` method.
+In this script, we first import the necessary modules and classes from Qcodes. Then, we create an instance of the `Keithley2400` instrument by providing a name and the instrument's address (in this case, a TCP/IP address). We then connect to the instrument using the `connect()` method.
 
-Once connected, we can use the instrument's parameters and methods to control and read measurements from the power supply. In the example, we set the voltage range using the `rangev` parameter and read the current value using the `curr` parameter.
+Once connected, we can use the instrument's parameters and methods to control and read measurements from the power supply. In this example, we set the voltage range using the `rangev` parameter and read the current value using the `curr()` method.
 
 Finally, we disconnect from the instrument using the `disconnect()` method.

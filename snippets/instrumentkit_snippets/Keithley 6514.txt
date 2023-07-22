@@ -1,31 +1,32 @@
-To connect to a Keithley 6514 Power Meter using Instrumentkit, you can use the following Python script:
+Here is an example Python script that uses Instrumentkit to connect to a Keithley 6514 electrometer:
 
 ```python
-import instrumentkit
+import instrumentkit as ik
 
-# Create a connection to the Keithley 6514 Power Meter
-power_meter = instrumentkit.connect('keithley6514', address='GPIB0::22::INSTR')
+# Connect to the Keithley 6514 electrometer
+dmm = ik.keithley.Keithley6514.open_gpibusb('/dev/ttyUSB0', 12)
 
-# Perform some measurements
-voltage = power_meter.measure_voltage()
-current = power_meter.measure_current()
-power = power_meter.measure_power()
+# Set the measurement mode to voltage
+dmm.mode = ik.keithley.Keithley6514.Mode.voltage
 
-# Print the measurements
-print(f"Voltage: {voltage} V")
-print(f"Current: {current} A")
-print(f"Power: {power} W")
+# Set the input range to 10 V
+dmm.input_range = 10 * ik.units.volt
 
-# Close the connection
-power_meter.close()
+# Enable auto range
+dmm.auto_range = True
+
+# Perform an auto configuration for the current mode
+dmm.auto_config(ik.keithley.Keithley6514.Mode.voltage)
+
+# Fetch the latest reading
+reading, timestamp = dmm.fetch()
+
+# Print the reading and timestamp
+print(f"Reading: {reading}")
+print(f"Timestamp: {timestamp}")
+
+# Close the connection to the Keithley 6514 electrometer
+dmm.close()
 ```
 
-Make sure you have the `instrumentkit` package installed before running this script. You can install it using pip:
-
-```
-pip install instrumentkit
-```
-
-Replace `'GPIB0::22::INSTR'` with the actual address of your Keithley 6514 Power Meter. This address can be different depending on the interface you are using to connect to the power meter (e.g., GPIB, USB, Ethernet).
-
-The script connects to the power meter, performs voltage, current, and power measurements, and then prints the results. Finally, it closes the connection to the power meter.
+This script demonstrates how to connect to the Keithley 6514 electrometer, set the measurement mode to voltage, set the input range, enable auto range, perform an auto configuration, fetch the latest reading, and print the reading and timestamp. Finally, it closes the connection to the electrometer.

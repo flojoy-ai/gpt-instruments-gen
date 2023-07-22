@@ -13,20 +13,12 @@ multimeter = HP3437A(adapter)
 # Open the connection to the instrument
 multimeter.open()
 
-# Set the measurement range to 1V
-multimeter.range = 1
-
-# Set the number of readings to 10
-multimeter.number_readings = 10
-
-# Read the measured data
-data = multimeter.read_data()
-
-# Print the measured data
-print(data)
+# Perform measurements or set instrument properties here
 
 # Close the connection to the instrument
 multimeter.close()
 ```
 
-This script connects to the HP 3437A Multimeter using a PrologixAdapter, sets the measurement range to 1V, sets the number of readings to 10, reads the measured data, and then prints the data. Finally, it closes the connection to the instrument.
+This script creates a `PrologixAdapter` object to connect to the instrument using the GPIB interface. Then, it creates an `HP3437A` object using the adapter. The `open()` method is called to establish the connection to the instrument. You can perform measurements or set instrument properties between the `open()` and `close()` calls. Finally, the `close()` method is called to close the connection to the instrument.
+
+Please note that you need to have the `pymeasure` package installed in order to run this script.

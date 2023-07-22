@@ -6,35 +6,37 @@ import instrumentkit as ik
 # Connect to the CC1 Coincidence Counter
 cc1 = ik.qubitekk.CC1.open_serial('COM8', 19200, timeout=1)
 
-# Read the firmware version
+# Get the firmware version
 firmware_version = cc1.firmware
 print(f"Firmware version: {firmware_version}")
 
 # Set the dwell time to 1 second
 cc1.dwell_time = 1
 
-# Set the coincidence window to 10 ns
-cc1.window = 10
+# Get the counts of the first channel
+channel_1_count = cc1.channel[0].count
+print(f"Channel 1 count: {channel_1_count}")
 
 # Enable the gate
 cc1.gate = True
 
-# Enable subtract
+# Enable the subtract feature
 cc1.subtract = True
 
 # Set the trigger mode to continuous
-cc1.trigger_mode = 'continuous'
+cc1.trigger_mode = "continuous"
 
-# Read the counts for each channel
-for i, channel in enumerate(cc1.channel):
-    count = channel.count
-    print(f"Channel {i+1} count: {count}")
+# Set the coincidence window to 5 ns
+cc1.window = 5
 
-# Clear the counts
+# Set the delay on Channel 1 to 4 ns
+cc1.delay = 4
+
+# Clear the current total counts on the counters
 cc1.clear_counts()
 
-# Close the connection
+# Disconnect from the CC1 Coincidence Counter
 cc1.close()
 ```
 
-Make sure to replace `'COM8'` with the correct serial port for your CC1 Coincidence Counter.
+This script demonstrates how to connect to the CC1 Coincidence Counter, retrieve the firmware version, set various properties such as dwell time, gate, subtract, trigger mode, coincidence window, and delay, as well as clear the counts and disconnect from the instrument.

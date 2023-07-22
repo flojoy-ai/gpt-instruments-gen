@@ -17,16 +17,17 @@ pt104.write_attribute("MainsRejection", 0)
 
 # Set channel 1 for a PT-100 sensor
 pt104.write_attribute("Channel", 1)
-pt104.write_attribute("DataType", "PT100")
-pt104.write_attribute("NoOfWires", 4)
+pt104.write_attribute("DataType", 4)  # PT-100
 
 # Collect data
 num_samples = 30
 data_values = []
-
 for _ in range(num_samples):
     data_values.append(pt104.read_attribute("Value").value)
-    pt.sleep(1)
 
 # Close connection to device
-pt104.command_inout("CloseUnit")
+pt104.command_inout("Close")
+
+# Print the collected data
+for i, value in enumerate(data_values):
+    print(f"Sample {i+1}: {value}")

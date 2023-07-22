@@ -29,10 +29,10 @@ print('Power uncertainty:', measurement.std_dev)
 pm100d.close()
 ```
 
-This script first lists all available instruments using the `list_instruments()` function. Then, it connects to the PM100D Power Meter using the `instrument()` function and assigns it to the `pm100d` variable.
+This script first lists all available instruments using the `list_instruments()` function. Then, it connects to the PM100D Power Meter using the `instrument()` function and assigns it to the variable `pm100d`.
 
-The script then demonstrates some basic operations with the Power Meter. It retrieves the current power reading using the `power()` method and prints it. It sets the input signal wavelength to 1550 nm using the `wavelength` attribute. It retrieves the current wavelength using the `wavelength` attribute and prints it.
+The script then demonstrates various operations with the Power Meter. It retrieves the current power reading using the `power()` method and prints it. It sets the input signal wavelength to 1550 nm using the `wavelength` attribute. It retrieves the current wavelength using the `wavelength` attribute and prints it.
 
 Finally, the script makes a multi-sample power measurement using the `measure()` method with 10 samples. It retrieves the average power and power uncertainty from the measurement and prints them.
 
-The script closes the connection to the Power Meter using the `close()` method.
+The script ends by closing the connection to the Power Meter using the `close()` method.

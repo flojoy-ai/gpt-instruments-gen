@@ -1,40 +1,25 @@
-To connect to an ATS9373 board using Qcodes, you can use the `AlazarTech_ATS` driver provided by Qcodes. Here's an example script:
+Here is a Python script that uses Qcodes to connect to an ATS9373 - 12 bit, 4 GS/s DAQ board:
 
 ```python
-import qcodes as qc
-from qcodes.instrument_drivers.AlazarTech.ATS9373 import AlazarTech_ATS9373
+from qcodes.instrument_drivers.AlazarTech.ATS import AlazarTech_ATS
+from qcodes.instrument_drivers.AlazarTech.ATS9373 import AlazarTechATS9373
 
 # Connect to the ATS9373 board
-board = AlazarTech_ATS9373("board", system_id=1, board_id=1)
+ats = AlazarTechATS9373('ats', dll_path='C:\\WINDOWS\\System32\\ATSApi.dll')
 
-# Print the board information
-print(board.get_idn())
+# Print the board ID
+print(ats.get_idn())
 
-# Configure the board settings
-board.clock_source('INTERNAL_CLOCK')
-board.sample_rate(4e9)
-board.input_range1(0.4)
-board.input_range2(0.4)
-board.trigger_operation('J_or_K', 'OR', 'J', 'POSITIVE', 0.1, 'K', 'POSITIVE', 0.1)
-board.trigger_delay(0)
-board.trigger_timeout(0)
-board.records_per_buffer(1)
-board.records_per_acquisition(10)
+# Set the clock source to INTERNAL_CLOCK
+ats.clock_source('INTERNAL_CLOCK')
 
-# Start the acquisition
-board.start_acquisition()
+# Set the sample rate to 4 GS/s
+ats.sample_rate(4_000_000_000)
 
-# Read the acquired data
-data = board.acquire()
+# Set other parameters as needed
 
-# Print the acquired data
-print(data)
-
-# Stop the acquisition
-board.stop_acquisition()
-
-# Disconnect from the board
-board.close()
+# Close the connection to the board
+ats.close()
 ```
 
-Note: This script assumes that you have already installed Qcodes and the AlazarTech ATS driver. You may need to modify the system_id and board_id parameters to match your specific setup.
+This script connects to the ATS9373 board using the `AlazarTechATS9373` driver. It sets the clock source to `INTERNAL_CLOCK` and the sample rate to 4 GS/s. You can set other parameters as needed for your application. Finally, it closes the connection to the board.

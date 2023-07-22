@@ -1,4 +1,4 @@
-Sure! Here's an example script that uses Instrumentkit to connect to a WaveRunner 9000 Oscilloscope:
+To connect to a WaveRunner 9000 Oscilloscope using Instrumentkit, you can use the following code:
 
 ```python
 import instrumentkit as ik
@@ -6,22 +6,14 @@ import instrumentkit as ik
 # Connect to the oscilloscope
 oscilloscope = ik.teledyne.MAUI.open_visa("TCPIP0::192.168.0.10::INSTR")
 
-# Print the oscilloscope information
-print(oscilloscope.show_id)
-
-# Set the time per division to 200 ns
-oscilloscope.time_div = 200 * ik.units.ns
-
-# Start the trigger in automatic mode
-oscilloscope.run()
-
-# Read the waveform from channel 1
+# Perform operations on the oscilloscope
+# For example, you can read the waveform from a channel
 channel = oscilloscope.channel[0]
 xdat, ydat = channel.read_waveform()
 
 # Print the waveform data
-print("Time (s):", xdat)
-print("Voltage (V):", ydat)
+print("X Data:", xdat)
+print("Y Data:", ydat)
 ```
 
-Make sure to replace `"TCPIP0::192.168.0.10::INSTR"` with the actual VISA address of your WaveRunner 9000 Oscilloscope.
+This code connects to the oscilloscope at the specified IP address ("TCPIP0::192.168.0.10::INSTR") using the VISA protocol. It then reads the waveform data from the first channel and prints it.

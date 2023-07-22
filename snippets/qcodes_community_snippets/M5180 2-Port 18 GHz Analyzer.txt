@@ -1,21 +1,38 @@
-Sure! Here's an example code that uses Qcodes Community to connect to a M5180 2-Port 18 GHz Analyzer Network Analyzer:
-
 ```python
-import qcodes as qc
-from qcodes.instrument_drivers.Keysight.Keysight_M5180A import Keysight_M5180A
+from qcodes import Station
+from qcodes.instrument_drivers.CopperMountain.M5180 import M5180
 
-# Connect to the instrument
-m5180 = Keysight_M5180A('m5180', 'TCPIP0::192.168.1.1::inst0::INSTR')
+# Create a station to hold the instruments
+station = Station()
 
-# Print the instrument ID
-print(m5180.IDN())
+# Connect to the M5180 instrument
+m5180 = M5180('m5180', 'TCPIP0::192.168.1.1::inst0::INSTR')
+station.add_component(m5180)
 
-# Close the connection
-m5180.close()
+# Print the available parameters of the M5180 instrument
+print(m5180.parameters)
+
+# Set the start frequency to 1 GHz
+m5180.start(1e9)
+
+# Set the stop frequency to 10 GHz
+m5180.stop(10e9)
+
+# Set the number of points to 1001
+m5180.npts(1001)
+
+# Perform a frequency sweep and get the S-parameters
+freq, s11_mag, s11_phase, s12_mag, s12_phase, s21_mag, s21_phase, s22_mag, s22_phase = m5180.get_s()
+
+# Print the S11 magnitude and phase at the first frequency point
+print(f"S11 magnitude: {s11_mag[0]} dB")
+print(f"S11 phase: {s11_phase[0]} rad")
+
+# Perform a single point measurement and get the S-parameters
+point_s11_mag, point_s11_phase = m5180.point_s11()
+
+# Print the S11 magnitude and phase at the single point
+print(f"Point S11 magnitude: {point_s11_mag} dB")
+print(f"Point S11 phase: {point_s11_phase} rad")
 ```
-
-Make sure to replace `'TCPIP0::192.168.1.1::inst0::INSTR'` with the actual VISA address of your M5180 analyzer.
-
-This code imports the necessary modules, creates an instance of the `Keysight_M5180A` instrument driver, connects to the instrument using the specified VISA address, prints the instrument ID, and finally closes the connection.
-
-Let me know if you need any further assistance!
+Note: Replace `'TCPIP0::192.168.1.1::inst0::INSTR'` with the actual IP address or VISA resource string of your M5180 instrument.

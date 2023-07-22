@@ -1,19 +1,30 @@
+Sure! Here's an example Python script that uses Qcodes to connect to a KEYSIGHT - 34401A Multimeter:
+
 ```python
-import qcodes as qc
 from qcodes.instrument_drivers.Keysight.Keysight_344XXA import Keysight_344XXA
 
-# Connect to the multimeter
+# Create an instance of the Keysight_344XXA driver
 multimeter = Keysight_344XXA('multimeter', 'TCPIP0::192.168.1.1::INSTR')
 
-# Print the multimeter ID
-print(multimeter.IDN())
+# Connect to the multimeter
+multimeter.connect()
 
-# Close the connection
-multimeter.close()
+# Perform some measurements
+voltage = multimeter.volt()
+current = multimeter.curr()
+
+# Print the measurement results
+print(f"Voltage: {voltage} V")
+print(f"Current: {current} A")
+
+# Disconnect from the multimeter
+multimeter.disconnect()
 ```
 
-Explanation:
-1. Import the necessary modules: `qcodes` and `Keysight_344XXA` from `qcodes.instrument_drivers.Keysight`.
-2. Create an instance of the `Keysight_344XXA` class and pass the desired name for the instrument and the connection string as arguments. The connection string should be in the format `'TCPIP0::<IP_ADDRESS>::INSTR'`, where `<IP_ADDRESS>` is the IP address of the multimeter.
-3. Use the `IDN()` method to retrieve and print the identification string of the multimeter.
-4. Close the connection to the multimeter using the `close()` method.
+In this script, we import the `Keysight_344XXA` driver from the `qcodes.instrument_drivers.Keysight` module. We then create an instance of the driver, specifying the name of the instrument (`multimeter`) and the VISA resource name (`TCPIP0::192.168.1.1::INSTR`). 
+
+Next, we connect to the multimeter using the `connect()` method. We can then perform measurements using the various measurement functions provided by the driver, such as `volt()` for voltage measurements and `curr()` for current measurements. 
+
+Finally, we print the measurement results and disconnect from the multimeter using the `disconnect()` method.
+
+Note: Make sure to replace `'TCPIP0::192.168.1.1::INSTR'` with the actual VISA resource name of your KEYSIGHT - 34401A Multimeter.

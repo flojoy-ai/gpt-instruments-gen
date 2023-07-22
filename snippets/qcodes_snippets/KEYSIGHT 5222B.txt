@@ -1,4 +1,4 @@
-Here is a Python script that uses Qcodes to connect to a KEYSIGHT 5222B Network Analyzer:
+To connect to a KEYSIGHT 5222B Network Analyzer using Qcodes, you can use the following Python script:
 
 ```python
 from qcodes import Station
@@ -16,27 +16,42 @@ station.add_component(pna)
 # Print the available options on the KEYSIGHT 5222B Network Analyzer
 print(pna.get_options())
 
-# Set the frequency range on the KEYSIGHT 5222B Network Analyzer
+# Print the trace catalog on the KEYSIGHT 5222B Network Analyzer
+print(pna.get_trace_catalog())
+
+# Select a trace on the KEYSIGHT 5222B Network Analyzer by name
+pna.select_trace_by_name('S11')
+
+# Set the start and stop frequencies on the KEYSIGHT 5222B Network Analyzer
 pna.start(1e6)
 pna.stop(1e9)
 
-# Set the power range on the KEYSIGHT 5222B Network Analyzer
-pna._set_power_limits(-30, 10)
+# Set the power on the KEYSIGHT 5222B Network Analyzer
+pna.power(-10)
 
-# Enable trace averaging on the KEYSIGHT 5222B Network Analyzer
-pna.averages_on()
+# Set the number of points in a sweep on the KEYSIGHT 5222B Network Analyzer
+pna.points(1001)
 
-# Perform a sweep on the KEYSIGHT 5222B Network Analyzer
+# Set the IF bandwidth on the KEYSIGHT 5222B Network Analyzer
+pna.if_bandwidth(1e3)
+
+# Set the electrical delay on the KEYSIGHT 5222B Network Analyzer
+pna.electrical_delay(0)
+
+# Set the sweep mode on the KEYSIGHT 5222B Network Analyzer
+pna.sweep_mode('CONT')
+
+# Run a sweep on the KEYSIGHT 5222B Network Analyzer
 pna.run_sweep()
 
-# Get the magnitude data from the KEYSIGHT 5222B Network Analyzer
-magnitude_data = pna.traces[0].magnitude()
+# Get the data from the selected trace on the KEYSIGHT 5222B Network Analyzer
+data = pna.traces[0].get()
 
-# Print the magnitude data
-print(magnitude_data)
+# Print the data
+print(data)
 
 # Disconnect from the KEYSIGHT 5222B Network Analyzer
 pna.close()
 ```
 
-Note: Replace `'TCPIP0::192.168.1.1::inst0::INSTR'` with the actual IP address or VISA resource string of your KEYSIGHT 5222B Network Analyzer.
+This script creates a station to hold the instruments and connects to the KEYSIGHT 5222B Network Analyzer using the `Keysight_PNA` driver from Qcodes. It then performs various operations on the network analyzer, such as getting the available options, selecting a trace, setting frequency and power parameters, running a sweep, and getting the data from the selected trace. Finally, it disconnects from the network analyzer.

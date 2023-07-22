@@ -1,64 +1,30 @@
-To connect to a Lakeshore 475 Power Meter using Instrumentkit, you can use the following Python script:
+Sure! Here's an example Python script that uses Instrumentkit to connect to a Lakeshore 475 Gaussmeter:
 
 ```python
-from instrumentkit import Instrument, VISAInstrument
+import instrumentkit as ik
+import instrumentkit.devices as ik_dev
+import instrumentkit.io as ik_io
+import instrumentkit.io.serial as ik_serial
 
-class Lakeshore475PowerMeter(VISAInstrument):
-    def __init__(self, resource_name):
-        super().__init__(resource_name)
-    
-    def get_power(self):
-        return self.query("MEAS:POW?")
-    
-    def set_range(self, range_value):
-        self.write(f"RANGE {range_value}")
-    
-    def set_auto_range(self):
-        self.write("RANGE:AUTO ON")
-    
-    def set_units(self, unit):
-        self.write(f"UNIT {unit}")
-    
-    def get_units(self):
-        return self.query("UNIT?")
-    
-    def set_display(self, display):
-        self.write(f"DISP {display}")
-    
-    def get_display(self):
-        return self.query("DISP?")
-    
-    def reset(self):
-        self.write("*RST")
+# Create a serial connection to the Lakeshore 475 Gaussmeter
+serial_conn = ik_serial.SerialConnection(port='/dev/ttyUSB0', baudrate=9600)
+lakeshore = ik_dev.Lakeshore475(connection=serial_conn)
 
-# Example usage
-if __name__ == "__main__":
-    # Connect to the Lakeshore 475 Power Meter
-    power_meter = Lakeshore475PowerMeter("GPIB0::22::INSTR")
-    
-    # Get the power measurement
-    power = power_meter.get_power()
-    print(f"Power: {power} W")
-    
-    # Set the range to 10 W
-    power_meter.set_range(10)
-    
-    # Set the units to dBm
-    power_meter.set_units("DBM")
-    
-    # Get the units
-    units = power_meter.get_units()
-    print(f"Units: {units}")
-    
-    # Set the display to on
-    power_meter.set_display("ON")
-    
-    # Get the display status
-    display = power_meter.get_display()
-    print(f"Display: {display}")
-    
-    # Reset the power meter
-    power_meter.reset()
+# Open the connection to the Gaussmeter
+lakeshore.open()
+
+# Read the field value from the connected probe
+field = lakeshore.field
+print(f"Field: {field}")
+
+# Set the field units to Tesla
+lakeshore.field_units = ik.units.tesla
+
+# Set the field setpoint to 0.05 Tesla
+lakeshore.field_setpoint = 0.05 * ik.units.tesla
+
+# Close the connection to the Gaussmeter
+lakeshore.close()
 ```
 
-Make sure to replace `"GPIB0::22::INSTR"` with the actual resource name of your Lakeshore 475 Power Meter.
+Note: This code assumes that you have already installed the Instrumentkit library.

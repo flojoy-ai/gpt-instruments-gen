@@ -1,19 +1,16 @@
 ```python
-import qcodes as qc
-from qcodes.instrument_drivers.tektronix.Keithley_2600_channels import Keithley_2600
+from qcodes.instrument_drivers.Keithley.KeithleyS46 import KeithleyS46
 
-# Connect to the Keithley S 46
-keithley = Keithley_2600('keithley', 'TCPIP0::192.168.1.1::inst0::INSTR')
+# Connect to the Keithley S46 switch
+s46 = KeithleyS46("s46", "TCPIP::192.168.1.1::INSTR")
 
-# Print the instrument ID
-print(keithley.IDN())
+# Open all channels
+s46.open_all_channels()
 
-# Close the connection
-keithley.close()
+# Close channel A1
+s46.A1.set("close")
+
+# Check if channel A1 is closed
+is_closed = s46.A1.is_closed()
+print(f"Channel A1 is closed: {is_closed}")
 ```
-
-Explanation:
-1. Import the necessary modules: `qcodes` and `Keithley_2600` from `qcodes.instrument_drivers.tektronix.Keithley_2600_channels`.
-2. Create an instance of the `Keithley_2600` instrument with a name 'keithley' and the appropriate connection string. Replace `'TCPIP0::192.168.1.1::inst0::INSTR'` with the actual connection string of your Keithley S 46.
-3. Print the instrument ID using the `IDN()` method.
-4. Close the connection to the instrument using the `close()` method.

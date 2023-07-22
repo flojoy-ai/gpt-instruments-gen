@@ -1,8 +1,10 @@
+Here is an example Python script that uses Qcodes to connect to a UHFLI Lockin Amplifier:
+
 ```python
 import qcodes as qc
 from qcodes.instrument_drivers.zhinst import UHFLI
 
-# Connect to the UHFLI instrument
+# Connect to the UHFLI Lockin Amplifier
 uhfli = UHFLI("uhfli", "dev1234")
 
 # Print the available AWG channels
@@ -33,7 +35,8 @@ uhfli.awgs[0].write_to_waveform_memory(waveforms)
 read_waveforms = uhfli.awgs[0].read_from_waveform_memory()
 print(read_waveforms)
 
-# Disconnect from the instrument
+# Disconnect from the UHFLI Lockin Amplifier
 uhfli.close()
 ```
-This script connects to a UHFLI Lockin Amplifier instrument using the QCoDeS driver. It performs various operations such as enabling the sequencer, compiling and loading a sequencer program, and writing/reading waveforms to/from the waveform memory. Finally, it disconnects from the instrument.
+
+Note: Replace `"dev1234"` with the actual device ID or address of your UHFLI Lockin Amplifier.

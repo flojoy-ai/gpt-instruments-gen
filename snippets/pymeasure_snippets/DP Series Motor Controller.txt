@@ -1,35 +1,36 @@
-Sure! Here's an example of a Python script that uses Pymeasure to connect to a DP Series Motor Controller:
+Sure! Here's an example Python script that uses Pymeasure to connect to a DP Series Motor Controller:
 
 ```python
-from pymeasure.instruments.newport import DPSSeries
+from pymeasure.adapters import SerialAdapter
+from pymeasure.instruments import DPSeriesMotorController
 
-# Connect to the motor controller
-motor = DPSSeries("COM1")
+# Create a SerialAdapter for communication with the motor controller
+adapter = SerialAdapter(port='COM1', baudrate=38400)
 
-# Set the motor controller parameters
-motor.write("SOUR:VOLT 5")  # Set the voltage to 5V
-motor.write("SOUR:CURR 1")  # Set the current to 1A
+# Create an instance of the DPSeriesMotorController
+motor_controller = DPSeriesMotorController(adapter)
 
-# Enable the motor controller
-motor.write("OUTP ON")
+# Set the motor controller's address
+motor_controller.address = 1
 
-# Move the motor to a specific position
-motor.write("MOVE 100")  # Move to position 100
+# Move the motor in the clockwise direction
+motor_controller.move('CW')
 
-# Wait for the motor to reach the target position
-motor.wait_for("IDLE")
+# Wait for the motor to complete the movement
+motor_controller.wait_for_completion()
 
-# Disable the motor controller
-motor.write("OUTP OFF")
+# Stop the motor
+motor_controller.stop()
 
-# Disconnect from the motor controller
-motor.disconnect()
+# Read the current motor position in steps
+position = motor_controller.step_position
+print("Current position:", position)
+
+# Reset the motor position to 0
+motor_controller.reset_position()
+
+# Close the connection to the motor controller
+motor_controller.close()
 ```
 
-In this example, we first import the `DPSSeries` class from the `pymeasure.instruments.newport` module. We then create an instance of the `DPSSeries` class, specifying the serial port to which the motor controller is connected (e.g., `"COM1"`).
-
-We can then use the `write` method to send commands to the motor controller. In this example, we set the voltage and current parameters, enable the motor controller, move the motor to a specific position, wait for the motor to reach the target position, and finally disable the motor controller.
-
-Finally, we disconnect from the motor controller using the `disconnect` method.
-
-Note: Make sure to replace `"COM1"` with the appropriate serial port for your setup.
+This script connects to a DP Series Motor Controller using a SerialAdapter and creates an instance of the DPSeriesMotorController class. It then sets the motor controller's address, moves the motor in the clockwise direction, waits for the motor to complete the movement, stops the motor, reads the current motor position in steps, resets the motor position to 0, and finally closes the connection to the motor controller.

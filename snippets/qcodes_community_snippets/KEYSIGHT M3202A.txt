@@ -4,22 +4,30 @@ To connect to a KEYSIGHT M3202A RF Signal Generator using Qcodes Community, you 
 from qcodes.instrument_drivers.Keysight.Keysight_M3202A import M3202A
 
 # Create an instance of the M3202A driver
-awg = M3202A('awg', chassis=0, slot=2)
+awg1 = M3202A('awg1', chassis=0, slot=2)
 
 # Connect to the instrument
-awg.connect()
+awg1.connect()
 
 # Now you can use the instrument for various operations
 # For example, you can upload a waveform
-waveform = [0, 0.1, 0.2, 0.3, 0.4, 0.5]
-ref = awg.upload_waveform(waveform)
+waveform_data = [0, 1, 0, -1, 0, 1, 0, -1]  # Example waveform data
+ref_1 = awg1.upload_waveform(waveform_data)
 
-# Queue the waveform for output on channel 1
-trigger_mode = awg.SD_TriggerModes.EXTTRIG
-awg.awg_queue_waveform(1, ref, trigger_mode, 0, 1, 0)
+# Set the trigger mode and queue the waveform
+trigger_mode = awg1.SD_TriggerModes.EXTTRIG
+awg1.awg_queue_waveform(1, ref_1, trigger_mode, 0, 1, 0)
 
 # Disconnect from the instrument
-awg.disconnect()
+awg1.disconnect()
 ```
 
-Note that you need to replace `chassis=0` and `slot=2` with the appropriate values for your setup.
+In this script, we import the `M3202A` driver from `qcodes.instrument_drivers.Keysight.Keysight_M3202A`. We then create an instance of the driver with the name 'awg1' and specify the chassis number and slot number where the device is located.
+
+Next, we connect to the instrument using the `connect()` method. After connecting, we can perform various operations on the instrument. In this example, we upload a waveform using the `upload_waveform()` method and obtain a waveform reference `ref_1`.
+
+We then set the trigger mode to `EXTTRIG` and queue the waveform using the `awg_queue_waveform()` method.
+
+Finally, we disconnect from the instrument using the `disconnect()` method.
+
+Note: Make sure you have the necessary dependencies installed, including the Qcodes Community package and the Keysight instrument drivers.

@@ -1,63 +1,19 @@
-To connect to a KIM001 Positional Controller using Instrumentkit, you can follow the steps below:
-
-1. Install the Instrumentkit library by running `pip install instrumentkit` in your terminal.
-
-2. Import the necessary modules:
+To connect to a KIM001 Positional Controller using Instrumentkit, you can use the following code:
 
 ```python
-from instrumentkit import KIM001
-from instrumentkit import ConnectionError
+import instrumentkit as ik
+
+# Connect to the KIM001 controller
+controller = ik.thorlabs.APTPiezoInertiaActuator.open_serial("/dev/ttyUSB0", baud=115200)
+
+# Get the first channel of the controller
+channel = controller.channel[0]
+
+# Enable the channel
+channel.enabled_single = True
+
+# Move the channel to a specific position
+channel.move_abs(1000)
 ```
 
-3. Create an instance of the KIM001 controller:
-
-```python
-controller = KIM001()
-```
-
-4. Connect to the controller:
-
-```python
-try:
-    controller.connect()
-    print("Connected to KIM001 Positional Controller")
-except ConnectionError:
-    print("Failed to connect to KIM001 Positional Controller")
-```
-
-5. You can now use the controller to send commands and receive data. For example, to move the controller to a specific position:
-
-```python
-position = 100  # desired position in millimeters
-controller.move_to(position)
-```
-
-6. Finally, don't forget to disconnect from the controller when you're done:
-
-```python
-controller.disconnect()
-```
-
-Here's the complete script:
-
-```python
-from instrumentkit import KIM001
-from instrumentkit import ConnectionError
-
-controller = KIM001()
-
-try:
-    controller.connect()
-    print("Connected to KIM001 Positional Controller")
-
-    position = 100  # desired position in millimeters
-    controller.move_to(position)
-
-except ConnectionError:
-    print("Failed to connect to KIM001 Positional Controller")
-
-finally:
-    controller.disconnect()
-```
-
-Make sure to replace `position = 100` with the desired position value in millimeters.
+This code connects to the KIM001 controller using the `open_serial` method from the `APTPiezoInertiaActuator` class. It then gets the first channel of the controller and enables it using the `enabled_single` property. Finally, it moves the channel to a specific position using the `move_abs` method.

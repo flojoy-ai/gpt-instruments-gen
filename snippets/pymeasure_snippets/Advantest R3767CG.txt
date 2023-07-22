@@ -70,4 +70,4 @@ The class has several attributes and methods:
 
 - `trace_1`: This is a measurement attribute that reads the data array from trace 1 after formatting using the SCPI command `TRAC:DATA? FDAT1`.
 
-- `__init__`: This is the constructor method of the class. It initializes the `AdvantestR3767CG` object by calling the constructor of the `Instrument` class and passing the adapter and name. It also sends the command `OLDC OFF` to the VNA to operate in IEEE488.2-1987 command mode.
+- `__init__`: This is the constructor method of the class. It initializes the `AdvantestR3767CG` object by calling the constructor of the `Instrument` class and passing the adapter and name. It also sends the SCPI command `OLDC OFF` to the VNA to operate in IEEE488.2-1987 command mode.

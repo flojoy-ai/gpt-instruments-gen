@@ -1,134 +1,32 @@
-Here is a Python script that uses Pymeasure to connect to a KEYSIGHT 4156C Spectrum Analyzer:
+Sure! Here's an example Python script that uses Pymeasure to connect to a KEYSIGHT 4156C Spectrum Analyzer:
 
 ```python
-import pymeasure
-from pymeasure.adapters import VISAAdapter
+from pymeasure.instruments.agilent import Agilent4156
 
-class hp4156c(pymeasure.Instrument):
-    def __init__(self, adapter):
-        super().__init__(
-            adapter=adapter,
-            name="HP4156C",
-            model="4156C",
-            version="03.04:04.05:01.00"
-        )
+# Connect to the instrument
+instrument = Agilent4156("GPIB0::25")
 
-    def reset(self):
-        self.write("*rst")
+# Reset the instrument
+instrument.reset()
 
-    def measurementMode(self, mode, intTime):
-        if (mode == "SWEEP" or mode == "SAMPLE" or mode == "QSCV") and (intTime == "SHORT" or intTime == "MEDIUM" or intTime == "LONG"):
-            self.write(":PAGE:CHAN:MODE " + mode)
-            self.write(":PAGE:MEAS:MSET:ITIM " + intTime)
-        else:
-            print("Invalid measurement mode or integration time. Exiting.")
-            sys.exit()
+# Configure the instrument using a JSON configuration file
+instrument.configure("configuration_file.json")
 
-    def smu(self, arg1, arg2):
-        self.write(":PAGE:CHAN:"+arg1+":VNAME %s" % arg2[0])
-        self.write(":PAGE:CHAN:"+arg1+":FUNC %s" % arg2[1])
-        self.write(":PAGE:CHAN:"+arg1+":INAME %s" % arg2[2])
-        self.write(":PAGE:CHAN:"+arg1+":MODE %s" % arg2[3])
-        self.write(":PAGE:MEAS:CONS:"+arg1+" %s" % arg2[4])
-        self.write(":PAGE:MEAS:CONS:"+arg1+":COMP %s" % arg2[5])
+# Save the desired variables
+instrument.save(['VC', 'IC', 'VB', 'IB'])
 
-    def disableSmu(self, arg):
-        for i in arg:
-            self.write(":PAGE:CHAN:" + i + ":DIS")
+# Perform a measurement
+instrument.measure()
 
-    def var(self, arg1, arg2):
-        string = ":PAGE:MEAS:" + arg1 + ":"
-        if arg1 == "VAR1":
-            self.write(string + "SPAC %s" % arg2[0])
-            self.write(string + "MODE %s" % arg2[1])
-            self.write(string + "STAR %s" % arg2[2])
-            self.write(string + "STEP %s" % arg2[3])
-            self.write(string + "STOP %s" % arg2[4])
-            self.write(string + "COMP %s" % arg2[5])
-        elif arg1 == "VAR2":
-            self.write(string + "MODE %s" % arg2[1])
-            self.write(string + "STAR %s" % arg2[2])
-            self.write(string + "POIN %s" % arg2[4])
-            self.write(string + "STEP %s" % arg2[3])
-            self.write(string + "COMP %s" % arg2[5])
+# Get the measured data as a pandas DataFrame
+data = instrument.get_data()
 
-    def daq(self, values):
-        self.values = values
-        self.data = [[]] * len(values)
-        self.timeout = 120000
-        for x in range(0, len(values)):
-            try:
-                print("Obtaining %s data values" % values[x])
-                self.write(":DATA? %s" % values[x])
-            except:
-                print("Command Timeout!")
-            read = self.read() # returns unicode string of values
-            self.data[x] = [float(a) for a in read.encode().rstrip().split(",")]
-            print("Obtained %d data values for %s" % (len(self.data[x]), values[x]))
-        self.timeout = 3000
-        self.data = np.transpose(np.array(self.data))
-        print("data in an {} array".format(self.data.shape))
-
-    def save_data(self, fname, savedir):
-        header = ""
-        for val in self.values:
-            header = header + val + ","
-        np.savetxt(os.path.join(savedir, fname), self.data, delimiter=',', header=header[:-1], comments="")
-
-    def collect_data(self, values, fname, savedir):
-        self.daq(values)
-        self.save_data(fname, savedir)
-
-    def single(self):
-        self.write(":PAGE:SCON:SING")
-        self.write("*WAI")
-        self.timeout = 1e6
-        self.ask("*OPC?")
-        self.timeout = 10
-
-    def continuous(self):
-        self.write(":PAGE:SCON:CONT")
-        self.write("*WAI")
-
-    def abort(self):
-        self.write(":PAGE:SCON:STOP")
-        pass
-
-    def stress(self, term, func, mode, name, value=0.0, duration=0):
-        self.write(":PAGE:STR:SET:DUR %s" % duration)
-        self.write(":PAGE:STR:%s:NAME %s" % (term, name))
-        self.write(":PAGE:STR:%s:FUNC %s" % (term, func))
-        self.write(":PAGE:STR:%s:MODE %s" % (term, mode))
-        self.write(":PAGE:STR:SET:CONS:%s %s" % (term, value))
-        pass
-
-    def merger(self, *lists):
-        self.merged = []
-        for i in range(len(lists[0][0])):
-            self.temp = []
-            for j in range(len(lists[0])):
-                self.temp.append(lists[0][j][i])
-            self.merged.append(self.temp)
-        return self.merged
-
-    def get_error(self, v=True):
-        err = self.ask(":SYST:ERR?")
-        if v:
-            print(err)
-        return err
-
-# Create a VISA adapter
-adapter = VISAAdapter("GPIB::1::INSTR")
-
-# Create an instance of the hp4156c class
-instrument = hp4156c(adapter)
-
-# Now you can use the instrument object to interact with the KEYSIGHT 4156C Spectrum Analyzer
-# For example, you can call instrument.reset() to reset the instrument
-# or instrument.measurementMode("SWEEP", "SHORT") to set the measurement mode and integration time
-
-# Remember to close the connection when you're done
-instrument.close()
+# Print the data
+print(data)
 ```
 
-Note: This script assumes that you have already installed the necessary dependencies, including Pymeasure and the VISA library for your operating system.
+In this example, you would need to replace `"GPIB0::25"` with the appropriate address of your KEYSIGHT 4156C Spectrum Analyzer. You would also need to provide a valid JSON configuration file for the `configure` method.
+
+The script connects to the instrument, resets it, configures it using the JSON file, saves the desired variables, performs a measurement, and retrieves the measured data as a pandas DataFrame. Finally, it prints the data.
+
+Note: This script assumes that you have already installed the `pymeasure` package and its dependencies.

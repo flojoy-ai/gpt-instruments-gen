@@ -1,35 +1,20 @@
-Sure! Here's an example Python script that uses Instrumentkit to connect to a Keithley 2182 Power Meter:
+To connect to a Keithley 2182 Power Meter using Instrumentkit, you can use the following Python script:
 
 ```python
 import instrumentkit as ik
 
 # Connect to the Keithley 2182 Power Meter
-power_meter = ik.keithley.Keithley2182.open_gpibusb('/dev/ttyUSB0', 12)
-
-# Set the measurement mode to DC voltage
-power_meter.mode = power_meter.Mode.voltage_dc
-
-# Set the input range to auto
-power_meter.input_range = 'auto'
+meter = ik.keithley.Keithley2182.open_gpibusb("/dev/ttyUSB0", 10)
 
 # Perform a measurement
-measurement = power_meter.measure()
+measurement = meter.measure(meter.Mode.voltage_dc)
 
-# Print the measurement result
-print(f"Measurement: {measurement}")
-
-# Close the connection to the power meter
-power_meter.close()
+# Print the measurement value
+print(measurement)
 ```
 
-Make sure to replace `'/dev/ttyUSB0'` with the correct serial port of your Keithley 2182 Power Meter. You can find the correct serial port by checking your system's device manager or using a serial port monitoring tool.
+This script imports the `instrumentkit` module and uses the `open_gpibusb` method of the `Keithley2182` class to connect to the Keithley 2182 Power Meter. The first argument of `open_gpibusb` is the device path (`/dev/ttyUSB0` in this example) and the second argument is the GPIB address (10 in this example).
 
-This script connects to the Keithley 2182 Power Meter, sets the measurement mode to DC voltage, sets the input range to auto, performs a measurement, and prints the measurement result. Finally, it closes the connection to the power meter.
+After connecting to the power meter, the script performs a measurement using the `measure` method of the `Keithley2182` class. The measurement mode is specified as `meter.Mode.voltage_dc`, which represents the DC voltage measurement mode.
 
-Note that you may need to install the `instrumentkit` package before running this script. You can install it using pip:
-
-```
-pip install instrumentkit
-```
-
-I hope this helps! Let me know if you have any further questions.
+Finally, the script prints the measurement value.

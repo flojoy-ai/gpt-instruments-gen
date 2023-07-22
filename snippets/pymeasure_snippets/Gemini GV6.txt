@@ -29,5 +29,3 @@ motor.disconnect()
 ```
 
 This script creates an instance of the `ParkerGV6` instrument, connects to the motor controller using the specified address (e.g., `"ASRL1::INSTR"`), enables the motor, sets the velocity, moves the motor to a specific angle, checks if the motor is moving, disables the motor, and finally disconnects from the motor controller.
-
-Please note that you may need to modify the address `"ASRL1::INSTR"` to match the actual address of your Gemini GV6 motor controller.

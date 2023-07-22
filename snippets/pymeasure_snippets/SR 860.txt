@@ -5,7 +5,7 @@ from pymeasure.adapters import VISAAdapter
 from pymeasure.instruments.sr860 import SR860
 
 # Create a VISA adapter for the instrument
-adapter = VISAAdapter("GPIB::1::INSTR")
+adapter = VISAAdapter("GPIB0::1::INSTR")
 
 # Connect to the SR860 Lock-in Amplifier
 lockin = SR860(adapter)

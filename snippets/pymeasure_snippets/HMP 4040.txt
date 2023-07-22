@@ -11,23 +11,15 @@ adapter = VISAAdapter("TCPIP::192.168.1.1::INSTR")
 power_supply = HMP4040(adapter)
 
 # Perform operations on the power supply
-power_supply.beep()  # Emit a single beep from the instrument
-
-power_supply.control_method = "REM"  # Set the control method to remote
-
-voltage = power_supply.voltage  # Get the output voltage
-print("Output Voltage:", voltage)
-
-current = power_supply.current  # Get the output current
-print("Output Current:", current)
-
-power_supply.voltage = 5.0  # Set the output voltage to 5.0 V
-power_supply.current = 1.0  # Set the output current to 1.0 A
-
-power_supply.output_enabled = True  # Enable the output
+power_supply.beep()
+power_supply.control_method = "REM"
+voltage = power_supply.voltage
+current = power_supply.current
 
 # Disconnect from the power supply
 power_supply.disconnect()
 ```
 
-This script connects to the HMP4040 Power Supply using a VISA adapter and performs various operations such as emitting a beep, setting the control method to remote, getting and setting the output voltage and current, enabling the output, and finally disconnecting from the power supply.
+This script connects to the HMP4040 Power Supply using a VISA adapter with the IP address "192.168.1.1". It then performs some operations on the power supply, such as emitting a beep, setting the control method to remote, and reading the voltage and current values. Finally, it disconnects from the power supply.
+
+Note: Replace "TCPIP::192.168.1.1::INSTR" with the appropriate VISA address for your specific setup.

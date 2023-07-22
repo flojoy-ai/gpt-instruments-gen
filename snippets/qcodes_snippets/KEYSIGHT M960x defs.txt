@@ -1,4 +1,4 @@
-Sure! Here's an example script that uses Qcodes to connect to a KEYSIGHT M960x Power Meter:
+Sure! Here's an example Python script that uses Qcodes to connect to a KEYSIGHT M960x Power Meter:
 
 ```python
 import qcodes as qc
@@ -16,21 +16,16 @@ print("Serial Number:", power_meter.serial_number())
 # Set the power meter to measure power
 power_meter.measurement_function("POWER")
 
-# Set the power meter range
-power_meter.range_auto(True)
-
 # Read the power measurement
-power = power_meter.power()
+power = power_meter.measure()
 
 # Print the power measurement
-print("Power:", power, "dBm")
+print("Power Measurement:", power)
 
-# Close the connection to the power meter
+# Disconnect from the power meter
 power_meter.close()
 ```
 
-Note: Replace `"TCPIP0::192.168.1.1::inst0::INSTR"` with the actual VISA address of your KEYSIGHT M960x Power Meter.
+This script connects to the power meter using the IP address "192.168.1.1" and the instrument name "inst0". It then retrieves the power meter identification information, sets the measurement function to "POWER", and reads the power measurement. Finally, it closes the connection to the power meter.
 
-This script connects to the power meter, retrieves its identification information, sets the measurement function to power, enables auto-ranging, reads the power measurement, and then closes the connection to the power meter.
-
-Let me know if you have any questions about the code!
+Note: Make sure to replace the IP address and instrument name with the correct values for your setup.

@@ -1,18 +1,19 @@
 ```python
 from qcodes.instrument_drivers.rohde_schwarz.HMP4040 import RohdeSchwarzHMP4040
 
-# Connect to the HMP4040 Power Supply
+# Create an instance of the HMP4040 power supply
 hmp = RohdeSchwarzHMP4040('hmp', 'TCPIP0::192.168.0.1::INSTR')
 
-# Perform operations on the power supply
-hmp.voltage(5)  # Set the output voltage to 5V
-hmp.current(1)  # Set the output current to 1A
-hmp.output('on')  # Turn on the output
+# Connect to the power supply
+hmp.connect()
+
+# Perform operations with the power supply
+# ...
 
 # Disconnect from the power supply
-hmp.close()
+hmp.disconnect()
 ```
 
-This script imports the `RohdeSchwarzHMP4040` class from the `qcodes.instrument_drivers.rohde_schwarz.HMP4040` module. It then creates an instance of the `RohdeSchwarzHMP4040` class named `hmp` by passing the name and address of the power supply as arguments to the constructor.
+This code imports the `RohdeSchwarzHMP4040` class from the `qcodes.instrument_drivers.rohde_schwarz.HMP4040` module. It then creates an instance of the `RohdeSchwarzHMP4040` class named `hmp`, passing the name and address of the power supply as arguments.
 
-The script then performs operations on the power supply, such as setting the output voltage and current, and turning on the output. Finally, it closes the connection to the power supply by calling the `close()` method on the `hmp` instance.
+The `connect()` method is called to establish a connection with the power supply. You can then perform operations with the power supply using the `hmp` instance. Finally, the `disconnect()` method is called to close the connection with the power supply.

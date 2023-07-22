@@ -30,8 +30,8 @@ This script first creates a VISA adapter using the `VISAAdapter` class from Pyme
 
 Then, an instance of the `Agilent33500` class is created, passing the VISA adapter as the argument. This class represents the KEYSIGHT 33521A RF Signal Generator.
 
-The script then sets the desired properties of the signal generator, such as the waveform shape, frequency, amplitude, and output state.
+The script then sets the output waveform shape to sine, the output frequency to 1 kHz, and the output amplitude to 1 Vpp. Finally, it enables the output of the signal generator.
 
-Finally, the script disconnects from the instrument by calling the `disconnect()` method of the signal generator.
+Note that you may need to modify the VISA address ("GPIB::1") to match the actual address of your instrument.
 
-Note: Make sure to replace "GPIB::1" with the actual VISA address of your KEYSIGHT 33521A RF Signal Generator.
+Let me know if you have any questions!

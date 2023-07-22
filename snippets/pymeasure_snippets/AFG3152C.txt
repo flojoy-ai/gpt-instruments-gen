@@ -4,26 +4,31 @@ Sure! Here's a Python script that uses Pymeasure to connect to an AFG3152C Funct
 from pymeasure.adapters import VISAAdapter
 from pymeasure.instruments import AFG3152C
 
-# Create a VISA adapter and connect to the instrument
+# Create a VISA adapter for communication
 adapter = VISAAdapter("GPIB::1")
-instrument = AFG3152C(adapter)
 
-# Reset the instrument to default settings
-instrument.reset()
+# Connect to the AFG3152C Function Generator
+afg = AFG3152C(adapter)
 
-# Set the shape, unit, amplitude, frequency, and enable the output for Channel 1
-instrument.ch1.shape = "sinusoidal"
-instrument.ch1.unit = "VPP"
-instrument.ch1.amp_vpp = 1
-instrument.ch1.frequency = 1e3
-instrument.ch1.enable()
+# Reset the AFG3152C to default settings
+afg.reset()
 
-# Beep and check for operation completion
-instrument.beep()
-instrument.opc()
+# Set the shape of Channel 1 to sinusoidal
+afg.ch1.shape = "sinusoidal"
 
-# Disconnect from the instrument
-instrument.disconnect()
+# Set the unit of Channel 1 to VPP
+afg.ch1.unit = "VPP"
+
+# Set the amplitude of Channel 1 to 1 VPP
+afg.ch1.amp_vpp = 1
+
+# Set the frequency of Channel 1 to 1 KHz
+afg.ch1.frequency = 1e3
+
+# Enable the output of Channel 1
+afg.ch1.enable()
 ```
 
-This script connects to the AFG3152C Function Generator using a VISA adapter and creates an instance of the `AFG3152C` instrument. It then resets the instrument to default settings, sets the shape, unit, amplitude, and frequency for Channel 1, and enables the output. Finally, it beeps and checks for operation completion before disconnecting from the instrument.
+This script uses the `VISAAdapter` from Pymeasure to establish a connection to the AFG3152C Function Generator using the GPIB interface. It then creates an instance of the `AFG3152C` instrument and sets the desired properties of Channel 1, such as the shape, unit, amplitude, and frequency. Finally, it enables the output of Channel 1.
+
+Note: Make sure to replace `"GPIB::1"` with the appropriate address of your AFG3152C Function Generator.

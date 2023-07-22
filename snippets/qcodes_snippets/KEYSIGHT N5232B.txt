@@ -53,4 +53,4 @@ data = na.traces[0].get()
 print(data)
 ```
 
-Note: The above code assumes that the KEYSIGHT N5232B Network Analyzer is connected to the computer via TCP/IP at IP address 192.168.1.1. You may need to modify the IP address to match your setup.
+Note: The above code assumes that you have already installed the necessary dependencies, including Qcodes and the Keysight_P9372A instrument driver.

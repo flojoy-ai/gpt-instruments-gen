@@ -1,30 +1,36 @@
+Here's an example Python script that uses Qcodes to connect to a Keithley 2634B Power Supply:
+
 ```python
 import qcodes as qc
-from qcodes.instrument_drivers.tektronix.Keithley_2634B import Keithley_2634B
+from qcodes.instrument_drivers.tektronix.Keithley_2600 import Keithley2600
 
 # Connect to the Keithley 2634B Power Supply
-keithley = Keithley_2634B('keithley', 'TCPIP0::192.168.1.1::inst0::INSTR')
+keithley = Keithley2600("keithley", "TCPIP::192.168.1.1::INSTR")
 
 # Print the instrument ID
-print(keithley.IDN())
+print(keithley.get_idn())
 
-# Set the voltage to 1V
-keithley.voltage(1)
-
-# Set the current limit to 100mA
-keithley.current_limit(0.1)
+# Set the voltage and current limits
+keithley.smua.limitv(10)  # Set voltage limit to 10V
+keithley.smua.limiti(0.1)  # Set current limit to 0.1A
 
 # Enable the output
-keithley.output('on')
+keithley.smua.output(1)  # Turn on the output
+
+# Set the voltage and current levels
+keithley.smua.volt(5)  # Set voltage to 5V
+keithley.smua.curr(0.05)  # Set current to 0.05A
+
+# Measure the voltage and current
+voltage = keithley.smua.volt()
+current = keithley.smua.curr()
+print(f"Voltage: {voltage}V, Current: {current}A")
 
 # Disable the output
-keithley.output('off')
+keithley.smua.output(0)  # Turn off the output
 
-# Close the connection to the instrument
+# Close the connection
 keithley.close()
 ```
-In this code, we import the necessary modules and classes from Qcodes. We then create an instance of the `Keithley_2634B` instrument driver, passing the instrument name and the connection string as arguments. The connection string specifies the communication protocol and the address of the instrument.
 
-We can then use various methods provided by the instrument driver to interact with the Keithley 2634B Power Supply. For example, we can use the `IDN()` method to get the instrument identification string, `voltage()` method to set the voltage, `current_limit()` method to set the current limit, and `output()` method to enable or disable the output.
-
-Finally, we close the connection to the instrument using the `close()` method.
+Note: Replace `"TCPIP::192.168.1.1::INSTR"` with the actual IP address or VISA resource address of your Keithley 2634B Power Supply.

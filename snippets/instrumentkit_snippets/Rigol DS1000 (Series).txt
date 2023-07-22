@@ -1,32 +1,36 @@
-To connect to a Rigol DS1000 series oscilloscope using Instrumentkit, you can use the following Python script:
+Sure! Here's an example Python script that uses Instrumentkit to connect to a Rigol DS1000 Series oscilloscope:
 
 ```python
-import instrumentkit
+from instrumentkit import RigolDS1000Series
 
-# Create a connection to the oscilloscope
-oscilloscope = instrumentkit.RigolDS1000("USB0::0x1AB1::0x0588::DS1ED141904883::INSTR")
+# Connect to the oscilloscope
+oscilloscope = RigolDS1000Series("USB0::0x1AB1::0x0588::DS1ED141904883::INSTR")
 
-# Open the connection
-oscilloscope.open()
+# Print the available channels
+print("Available channels:")
+for channel in oscilloscope.channel:
+    print(channel.name)
 
-# Query the instrument identification
-idn = oscilloscope.query("*IDN?")
-print("Instrument identification:", idn)
+# Set the acquisition type to normal
+oscilloscope.acquire_type = RigolDS1000Series.AcquisitionType.normal
 
-# Perform other operations with the oscilloscope
+# Set the number of averages to 8
+oscilloscope.acquire_averages = 8
 
-# Close the connection
-oscilloscope.close()
+# Force a trigger
+oscilloscope.force_trigger()
+
+# Start running the oscilloscope trigger
+oscilloscope.run()
+
+# Stop the oscilloscope trigger
+oscilloscope.stop()
+
+# Release any lockout of the local control panel
+oscilloscope.release_panel()
+
+# Disconnect from the oscilloscope
+oscilloscope.disconnect()
 ```
 
-Make sure to replace the `"USB0::0x1AB1::0x0588::DS1ED141904883::INSTR"` with the actual VISA resource string of your oscilloscope. You can find the resource string by using a VISA library such as PyVISA and listing the available resources.
-
-The script creates an instance of the `RigolDS1000` class from the `instrumentkit` module, which represents the Rigol DS1000 series oscilloscope. It then opens the connection to the oscilloscope, queries the instrument identification, performs other operations as needed, and finally closes the connection.
-
-Note that you need to have the `instrumentkit` library installed in your Python environment. You can install it using pip:
-
-```
-pip install instrumentkit
-```
-
-Also, make sure you have the necessary drivers and libraries installed for your oscilloscope to work with Instrumentkit.
+Note: Replace `"USB0::0x1AB1::0x0588::DS1ED141904883::INSTR"` with the actual VISA resource string of your oscilloscope.

@@ -23,4 +23,4 @@ lda.attenuation(10)
 lda.close()
 ```
 
-Make sure to replace `'path/to/dll'` with the actual path to the DLL files for the LDA-906V.
+Make sure to replace `'path/to/dll'` with the actual path to the DLL file for the LDA-906V.

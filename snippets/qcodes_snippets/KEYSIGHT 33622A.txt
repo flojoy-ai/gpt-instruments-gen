@@ -1,23 +1,23 @@
-import pyvisa
-from qcodes.instrument.visa import VisaInstrument
+To connect to a KEYSIGHT 33622A Function Generator using Qcodes, you can use the following Python script:
 
-class Keysight33622A(VisaInstrument):
-    def __init__(self, name, address):
-        super().__init__(name, address)
-        self.add_parameter(name='frequency',
-                           label='Frequency',
-                           unit='Hz',
-                           get_cmd='SOURce1:FREQuency?',
-                           set_cmd='SOURce1:FREQuency {}',
-                           get_parser=float,
-                           vals=Numbers(0, 1e9))
-        # Add more parameters for other SCPI commands as needed
+```python
+from qcodes.instrument_drivers.Keysight.Keysight_33600A import Keysight_33600A
+
+# Create an instance of the instrument driver
+instrument = Keysight_33600A('instrument_name', 'TCPIP0::192.168.1.1::INSTR')
 
 # Connect to the instrument
-rm = pyvisa.ResourceManager()
-resource = rm.open_resource('<instrument_address>')
-instrument = Keysight33622A('keysight_33622a', resource)
+instrument.connect()
 
-# Example usage
-frequency = instrument.frequency()
-print(frequency)
+# Now you can use the instrument to control the function generator
+# For example, you can set the frequency of channel 1 to 1 kHz
+instrument.ch1.frequency(1e3)
+
+# You can also read the current frequency setting
+frequency = instrument.ch1.frequency()
+
+# Disconnect from the instrument
+instrument.disconnect()
+```
+
+Note: Replace `'instrument_name'` with a unique name for your instrument and `'TCPIP0::192.168.1.1::INSTR'` with the actual VISA resource name of your KEYSIGHT 33622A Function Generator.

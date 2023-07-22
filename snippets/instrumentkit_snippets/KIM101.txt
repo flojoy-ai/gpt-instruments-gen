@@ -1,43 +1,25 @@
-To connect to a KIM101 Positional Controller using Instrumentkit, you can use the following Python script:
+To connect to a KIM101 Positional Controller using Instrumentkit, you can use the following code:
 
 ```python
-from instrumentkit import Instrument, VISAInstrumentDriver
+import instrumentkit as ik
 
-class KIM101(Instrument):
-    """
-    Instrument class for the KIM101 Positional Controller.
-    """
+# Connect to the KIM101 controller
+controller = ik.thorlabs.APTPiezoInertiaActuator.open_serial("/dev/ttyUSB0", baud=115200)
 
-    def __init__(self, resource_name):
-        super().__init__(VISAInstrumentDriver(resource_name))
+# Get the first channel of the controller
+channel = controller.channel[0]
 
-    def move_to_position(self, position):
-        """
-        Moves the KIM101 Positional Controller to the specified position.
+# Enable the channel
+channel.enabled_single = True
 
-        :param float position: The position to move to.
-        """
-        self.driver.send_command(f"MOVE {position}")
+# Set the drive parameters for the channel
+max_volts = ik.units.Quantity(110, ik.units.V)
+step_rate = ik.units.Quantity(1000, 1/ik.units.s)
+acceleration = ik.units.Quantity(10000, 1/ik.units.s**2)
+channel.drive_op_parameters = [max_volts, step_rate, acceleration]
 
-    def get_position(self):
-        """
-        Gets the current position of the KIM101 Positional Controller.
-
-        :return: The current position.
-        :rtype: float
-        """
-        response = self.driver.query("POS?")
-        return float(response)
-
-# Connect to the KIM101 Positional Controller
-controller = KIM101("USB0::0x1234::0x5678::12345678::INSTR")
-
-# Move to position 10
-controller.move_to_position(10)
-
-# Get the current position
-position = controller.get_position()
-print(f"Current position: {position}")
+# Move the channel to a specific position
+channel.move_abs(1000)
 ```
 
-Make sure to replace `"USB0::0x1234::0x5678::12345678::INSTR"` with the actual resource name of your KIM101 Positional Controller.
+This code connects to the KIM101 controller, enables the first channel, sets the drive parameters, and moves the channel to a specific position.

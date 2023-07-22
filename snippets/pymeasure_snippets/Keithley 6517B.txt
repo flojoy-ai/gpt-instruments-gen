@@ -10,22 +10,29 @@ adapter = VISAAdapter("GPIB::1")
 # Connect to the Keithley 6517B Power Meter
 keithley = Keithley6517B(adapter)
 
-# Enable the source and set the source voltage
+# Enable the source output
 keithley.enable_source()
+
+# Set up to measure resistance
+keithley.measure_resistance()
+
+# Set the source voltage range to 200 V
+keithley.source_voltage_range = 200
+
+# Set the source voltage to 20 V
 keithley.source_voltage = 20
 
-# Measure the resistance
-keithley.measure_resistance()
-print("Resistance:", keithley.resistance)
-
-# Ramp the voltage to 50V
+# Ramp the voltage to 50 V
 keithley.ramp_to_voltage(50)
 
-# Measure the resistance again
-print("Resistance:", keithley.resistance)
+# Print the measured resistance in Ohms
+print(keithley.resistance)
 
-# Shutdown the instrument
+# Ramp the voltage to 0 V and disable the output
 keithley.shutdown()
+
+# Disconnect from the instrument
+keithley.disconnect()
 ```
 
-This script connects to the Keithley 6517B Power Meter using a VISA adapter and creates an instance of the `Keithley6517B` class. It then enables the source and sets the source voltage to 20V. It measures the resistance and prints the result. Next, it ramps the voltage to 50V and measures the resistance again. Finally, it shuts down the instrument by ramping the voltage to 0V and disabling the output.
+This script first creates a VISA adapter using the GPIB address of the Keithley 6517B Power Meter. Then, it creates an instance of the `Keithley6517B` class using the adapter. The script enables the source output, sets up the instrument to measure resistance, and sets the source voltage range and voltage. It then ramps the voltage to 50 V and prints the measured resistance. Finally, it ramps the voltage to 0 V and disables the output before disconnecting from the instrument.

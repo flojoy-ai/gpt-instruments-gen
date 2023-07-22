@@ -28,5 +28,4 @@ hdawg.awgs[0].wait_done()
 # Disconnect from the instrument
 hdawg.close()
 ```
-
-This script connects to a HDAWG instrument with the name "hdawg" and the serial number "dev1234". It enables QCCS mode on the instrument, loads a sequencer program to AWG channel 0, enables the sequencer, waits for the AWG to finish, and then disconnects from the instrument.
+This script connects to a HDAWG instrument, enables QCCS mode, loads a sequencer program to AWG channel 0, enables the sequencer, waits for the AWG to finish, and then disconnects from the instrument.

@@ -1,45 +1,44 @@
-To connect to the ATS9360 DAQ board using Qcodes, you can use the following code:
+Sure! Here's an example Python script that uses Qcodes to connect to an ATS9360 - 12bit, 1.8GS/s DAQ board:
 
 ```python
 import qcodes as qc
-from qcodes.instrument_drivers.AlazarTech.ATS9360 import AlazarTech_ATS9360
+from qcodes.instrument_drivers.tektronix.ATS9360 import ATS9360
 
 # Connect to the ATS9360 DAQ board
-daq = AlazarTech_ATS9360("daq", "ATS9360")
+daq = ATS9360("daq", "TCPIP0::192.168.1.1::inst0::INSTR")
 
-# Set the clock source and samplerate
-daq.clock_source("INTERNAL_CLOCK")
+# Print the instrument ID
+print(daq.IDN())
+
+# Set the sample rate to 1.8 GS/s
 daq.sample_rate(1.8e9)
 
-# Set the trigger parameters
-daq.trigger_source1("EXTERNAL")
-daq.trigger_level1(0.5)
-daq.trigger_edge1("RISING")
+# Set the number of samples to acquire
+daq.num_points(1000)
 
-# Set the acquisition parameters
-daq.samples_per_record(1024)
-daq.records_per_buffer(100)
-daq.buffers_per_acquisition(10)
+# Arm the acquisition
+daq.arm()
 
 # Start the acquisition
-daq.acquisition_mode("NPT")
-daq.start_acquisition()
+daq.run()
+
+# Wait for the acquisition to complete
+daq.wait_done()
 
 # Read the acquired data
-data = daq.acquire()
+data = daq.data()
 
-# Stop the acquisition
-daq.stop_acquisition()
+# Print the acquired data
+print(data)
 
-# Close the connection to the DAQ board
+# Disconnect from the DAQ board
 daq.close()
 ```
 
-Note that you may need to install the `qcodes` package and the `AlazarTech` driver before running this code. You can install them using pip:
+In this script, we first import the necessary modules and classes from Qcodes. Then, we create an instance of the `ATS9360` instrument driver, passing the instrument name and the connection string as arguments. The connection string `"TCPIP0::192.168.1.1::inst0::INSTR"` assumes that the DAQ board is connected to the IP address `192.168.1.1`.
 
-```
-pip install qcodes
-pip install qcodes-contrib-drivers
-```
+We can then use various methods of the `ATS9360` instrument driver to interact with the DAQ board. For example, we can use the `sample_rate` method to set the sample rate to 1.8 GS/s, the `num_points` method to set the number of samples to acquire, and the `arm` and `run` methods to start the acquisition.
 
-Make sure to replace `"daq"` and `"ATS9360"` with the appropriate names for your instrument and instrument driver.
+After the acquisition is complete, we can use the `data` method to read the acquired data. Finally, we close the connection to the DAQ board using the `close` method.
+
+Note: This code assumes that you have already installed the necessary dependencies, including Qcodes and the Tektronix instrument driver for ATS9360.

@@ -1,65 +1,24 @@
-Here is a Python script that uses Instrumental to connect to a KEYSIGHT 81110A Function Generator:
+To connect to a KEYSIGHT 81110A Function Generator using Instrumental, you can use the following Python script:
 
 ```python
-from instrumental import instrument, list_instruments
+from instrumental import instrument, list_resources
 
-# List available instruments
-print(list_instruments())
+# Find available resources
+resources = list_resources()
 
 # Connect to the KEYSIGHT 81110A Function Generator
-func_gen = instrument('KEYSIGHT 81110A')
+func_gen = instrument(resources[0])
 
-# Set the delay, width, high, and low values for channel 1
-func_gen.delay.set(0.1, channel=1)
-func_gen.width.set(1e-6, channel=1)
-func_gen.high.set(5, channel=1)
-func_gen.low.set(0, channel=1)
+# Now you can use the function generator
+# For example, to set the frequency:
+func_gen.frequency = 1000  # Set frequency to 1 kHz
 
-# Get the delay, width, high, and low values for channel 1
-delay = func_gen.delay.get(channel=1)
-width = func_gen.width.get(channel=1)
-high = func_gen.high.get(channel=1)
-low = func_gen.low.get(channel=1)
-
-print(f"Delay: {delay} s")
-print(f"Width: {width} s")
-print(f"High: {high} V")
-print(f"Low: {low} V")
-
-# Set the status of channel 1 to 'on'
-func_gen.status.set('on', channel=1)
-
-# Get the status of channel 1
-status = func_gen.status.get(channel=1)
-print(f"Status: {status}")
-
-# Set the display status to 'on'
-func_gen.display.set('on')
-
-# Get the display status
-display = func_gen.display.get()
-print(f"Display: {display}")
-
-# Set the instrument to triggered mode
-func_gen.set_mode_triggered()
-
-# Set the instrument to continuous mode
-func_gen.set_mode_continuous()
-
-# Reset the instrument to default values
-func_gen.reset()
+# Close the connection
+func_gen.close()
 ```
 
-This script first lists the available instruments using `list_instruments()` function from Instrumental. Then, it connects to the KEYSIGHT 81110A Function Generator using the `instrument()` function and assigns it to the `func_gen` variable.
+This script first uses the `list_resources()` function from Instrumental to find all available resources. It then connects to the first resource in the list, assuming it is the KEYSIGHT 81110A Function Generator. You can modify the index in `resources[0]` if you have multiple function generators connected.
 
-The script sets the delay, width, high, and low values for channel 1 using the `set()` method of each parameter. It also gets the values using the `get()` method and prints them.
+After connecting, you can use the `func_gen` object to control the function generator. In the example, it sets the frequency to 1 kHz by assigning the desired frequency to the `frequency` attribute of the `func_gen` object.
 
-Next, it sets the status of channel 1 to 'on' using the `set()` method of the `status` parameter. It gets the status using the `get()` method and prints it.
-
-Then, it sets the display status to 'on' using the `set()` method of the `display` parameter. It gets the display status using the `get()` method and prints it.
-
-The script sets the instrument to triggered mode using the `set_mode_triggered()` method and then sets it to continuous mode using the `set_mode_continuous()` method.
-
-Finally, it resets the instrument to default values using the `reset()` method.
-
-Note: Make sure to install the `instrumental` package before running this script.
+Finally, the script closes the connection to the function generator using the `close()` method of the `func_gen` object.

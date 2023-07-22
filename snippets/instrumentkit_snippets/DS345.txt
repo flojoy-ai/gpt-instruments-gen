@@ -1,28 +1,24 @@
-Sure! Here's an example Python script that uses Instrumentkit to connect to a DS345 Function Generator:
+To connect to a DS345 Function Generator using Instrumentkit, you can use the following Python script:
 
 ```python
 import instrumentkit as ik
-import instrumentkit.io as io
-import instrumentkit.drivers.srs as srs
+import instrumentkit.devices.srs as srs
 
 # Connect to the DS345 Function Generator
-with io.open_gpib('/dev/ttyUSB0', 1) as connection:
-    ds345 = srs.SRS345(connection)
+srs345 = srs.SRS345.open_gpib('/dev/ttyUSB0', 1)
 
-    # Set the output frequency to 1 MHz
-    ds345.frequency = 1 * ik.units.MHz
+# Set the frequency to 1 MHz
+srs345.frequency = 1 * ik.units.MHz
 
-    # Print the current offset voltage
-    print(ds345.offset)
+# Get the offset voltage
+offset_voltage = srs345.offset
 
-    # Set the output function to triangle
-    ds345.function = ds345.Function.triangle
+# Set the output function to triangle
+srs345.function = srs345.Function.triangle
 ```
 
-Make sure you have Instrumentkit installed (`pip install instrumentkit`) before running this script. Also, replace `/dev/ttyUSB0` with the correct serial port for your DS345 Function Generator.
+This script imports the necessary modules from Instrumentkit and specifically imports the `SRS345` class from the `instrumentkit.devices.srs` module. It then connects to the DS345 Function Generator using the `open_gpib` method, specifying the appropriate device address.
 
-This script connects to the DS345 Function Generator using the `open_gpib` function from `instrumentkit.io`. It then creates an instance of the `SRS345` class from the `instrumentkit.drivers.srs` module, passing in the connection object.
+Once connected, you can interact with the function generator by setting and getting various properties. In the example script, it sets the frequency to 1 MHz using the `frequency` property, gets the offset voltage using the `offset` property, and sets the output function to triangle using the `function` property.
 
-You can then use the various properties and methods of the `SRS345` class to interact with the DS345 Function Generator. In the example script, it sets the output frequency to 1 MHz, prints the current offset voltage, and sets the output function to triangle.
-
-Feel free to modify the script to suit your specific needs and use cases.
+Note that the script assumes you have Instrumentkit and its dependencies installed.

@@ -1,73 +1,28 @@
-import instrumental
+To connect to a Thorlabs DCU224C camera using Instrumental, you can use the following Python script:
 
-# Connect to the Thorlab DCU224C camera
-camera = instrumental.instrument("Thorlab DCU224C")
+```python
+from instrumental import instrument, list_instruments
 
-# Perform some operations on the camera
-camera.WriteEEPROM("test")
-content = camera.ReadEEPROM(count=len("test"))
-assert content == "test"
+# List all available instruments
+print(list_instruments())
 
-assert camera.AllocImageMem() == 0
+# Connect to the Thorlabs DCU224C camera
+cam = instrument('Thorlabs DCU224C')
 
-assert camera.FreeImageMem() == 0
+# Perform operations on the camera
+# For example, capture an image
+image = cam.grab_image()
 
-assert camera.SetImageMem() == 0
+# Close the camera connection
+cam.close()
+```
 
-cam = camera
-cam.AllocImageMem()
-cam.SetImageMem()
-assert cam.SetImageSize(x=300, y=200) == 0
-assert cam.SetImageSize(x=uc480.IS.GET_IMAGE_SIZE_X) == 300
-assert cam.SetImageSize(x=uc480.IS.GET_IMAGE_SIZE_Y) == 200
+This script first lists all available instruments using the `list_instruments()` function from Instrumental. Then, it connects to the Thorlabs DCU224C camera using the `instrument()` function and assigns it to the `cam` variable. You can then perform operations on the camera, such as capturing an image using the `grab_image()` method. Finally, the camera connection is closed using the `close()` method.
 
-assert camera.CaptureVideo() == 0
+Note that you may need to install the `instrumental` package before running this script. You can install it using pip:
 
-assert camera.StopLiveVideo() == 0
+```
+pip install instrumental
+```
 
-try:
-    camera.CaptureVideo()
-except Exception:
-    camera.GetError()
-    error_message = camera.error_message.value
-assert error_message == "There is no activated image memory"
-
-import numpy
-camera.AllocImageMem()
-camera.SetImageMem()
-camera.CaptureVideo(uc480.IS.WAIT)
-camera.StopLiveVideo(uc480.IS.WAIT)
-assert camera.CopyImageMem() == 0
-assert numpy.sum(camera.data) > 0
-
-assert camera.AddToSequence() == 0
-
-camera.AllocImageMem()
-camera.AddToSequence()
-camera.SetImageMem()
-camera.CaptureVideo(uc480.IS.WAIT)
-camera.StopLiveVideo(uc480.IS.WAIT)
-assert camera.CopyImageMem() == 0
-assert numpy.sum(camera.data) > 0
-
-assert camera.ClearSequence() == 0
-
-camera.AllocImageMem()
-camera.AddToSequence()
-assert camera.LockSeqBuf(1) == 0
-
-camera.AllocImageMem()
-assert camera.UnlockSeqBuf(1) == 0
-
-assert camera.GetActSeqBuf() == 0
-
-assert camera.SetAllocatedImageMem() == 0
-
-camera.SetAllocatedImageMem()
-camera.SetImageMem()
-camera.CaptureVideo(uc480.IS.WAIT)
-camera.StopLiveVideo(uc480.IS.WAIT)
-assert numpy.sum(camera.data) > 0
-
-# Disconnect from the camera
-camera.ExitCamera()
+Make sure you have the necessary drivers and dependencies installed for the Thorlabs DCU224C camera to work properly.

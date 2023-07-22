@@ -1,53 +1,23 @@
-To connect to an APT Stepper Motor Control Module Positional Controller using Instrumentkit, you can follow the steps below:
+To connect to an APT Stepper Motor Control Module Positional Controller using Instrumentkit, you can use the following code:
 
-1. Install the required dependencies by running the following command in your terminal:
-   ```
-   pip install instrumentkit
-   ```
+```python
+import instrumentkit as ik
 
-2. Import the necessary modules:
-   ```python
-   from instrumentkit import APTMotor
-   from instrumentkit import APTMotorController
-   ```
+# Connect to the APT Stepper Motor Control Module Positional Controller
+controller = ik.thorlabs.APTMotorController.open_serial("/dev/ttyUSB0", baud=115200)
 
-3. Create an instance of the APTMotorController class and connect to the controller:
-   ```python
-   controller = APTMotorController()
-   controller.connect()
-   ```
+# Get the first channel of the controller
+channel = controller.channel[0]
 
-4. Get the available motor channels on the controller:
-   ```python
-   motor_channels = controller.get_motor_channels()
-   ```
+# Set the motor model for the channel
+channel.motor_model = "PRM1-Z8"
 
-5. Select the desired motor channel and create an instance of the APTMotor class:
-   ```python
-   motor_channel = motor_channels[0]  # Assuming the first motor channel is used
-   motor = APTMotor(controller, motor_channel)
-   ```
+# Move the motor to a specific position
+channel.move(1000)  # Move to position 1000 (encoder counts)
 
-6. Initialize the motor:
-   ```python
-   motor.initialize()
-   ```
+# Get the current position of the motor
+position = channel.position
+print(f"Current position: {position}")
+```
 
-7. Set the motor parameters such as velocity and acceleration:
-   ```python
-   motor.set_velocity(10)  # Set the velocity to 10 mm/s
-   motor.set_acceleration(5)  # Set the acceleration to 5 mm/s^2
-   ```
-
-8. Move the motor to a specific position:
-   ```python
-   target_position = 100  # Set the target position to 100 mm
-   motor.move_to(target_position)
-   ```
-
-9. Disconnect from the controller when finished:
-   ```python
-   controller.disconnect()
-   ```
-
-This script provides a basic example of how to connect to an APT Stepper Motor Control Module Positional Controller and control a stepper motor using Instrumentkit. You can modify it according to your specific requirements.
+This code connects to the APT Stepper Motor Control Module Positional Controller using the `open_serial` method, specifying the serial port and baud rate. It then gets the first channel of the controller and sets the motor model to "PRM1-Z8". Finally, it moves the motor to position 1000 and retrieves the current position of the motor.

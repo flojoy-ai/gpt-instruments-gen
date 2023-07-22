@@ -10,11 +10,11 @@ power_supply = RohdeSchwarzHMC8042('power_supply', 'TCPIP0::192.168.1.1::INSTR')
 power_supply.connect()
 
 # Now you can use the power_supply object to control the power supply
-# For example, you can set the voltage of channel 1 to 5V:
+# For example, you can set the voltage of channel 1 to 5V
 power_supply.ch1.voltage.set(5)
 
 # Disconnect from the power supply
 power_supply.disconnect()
 ```
 
-Make sure to replace `'TCPIP0::192.168.1.1::INSTR'` with the actual IP address or VISA resource string of your HMC8042 Power Supply.
+Note that you need to replace `'TCPIP0::192.168.1.1::INSTR'` with the actual IP address or VISA resource string of your power supply.

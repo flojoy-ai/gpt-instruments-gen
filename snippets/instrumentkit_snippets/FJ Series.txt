@@ -1,28 +1,28 @@
-To connect to a FJ Series Power Supply using Instrumentkit, you can use the following Python script:
+To connect to a FJ Series Power Supply using Instrumentkit, you can use the `GlassmanFR` class from the provided code. Here's an example script:
 
 ```python
-from instrumentkit import FJPowerSupply
-
-# Create an instance of the FJPowerSupply class
-power_supply = FJPowerSupply()
+import instrumentkit as ik
 
 # Connect to the power supply
-power_supply.connect()
+psu = ik.glassman.GlassmanFR.open_serial('/dev/ttyUSB0', 9600)
 
-# Check if the power supply is connected
-if power_supply.is_connected():
-    print("Connected to FJ Series Power Supply")
-else:
-    print("Failed to connect to FJ Series Power Supply")
+# Set the output voltage to 100V
+psu.voltage = 100
 
-# Disconnect from the power supply
-power_supply.disconnect()
+# Turn on the power supply
+psu.output = True
+
+# Read the output voltage
+voltage = psu.voltage
+print(voltage)
 ```
 
-Make sure you have Instrumentkit installed before running this script. You can install it using pip:
+This script first imports the `instrumentkit` module as `ik`. Then, it creates an instance of the `GlassmanFR` class by calling the `open_serial` method and passing the serial port name and baud rate as arguments.
 
-```
-pip install instrumentkit
-```
+Next, it sets the output voltage of the power supply to 100V by assigning the desired voltage value to the `voltage` property of the `psu` object.
 
-Replace the `FJPowerSupply` class with the appropriate class for your specific FJ Series Power Supply model.
+After that, it turns on the power supply by assigning `True` to the `output` property of the `psu` object.
+
+Finally, it reads the output voltage by accessing the `voltage` property of the `psu` object and prints the result.
+
+Note that you may need to modify the serial port name and baud rate to match your specific setup.

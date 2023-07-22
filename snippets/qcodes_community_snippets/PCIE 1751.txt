@@ -73,12 +73,14 @@ daq_board.port0_dir(0x00)
 # Set the direction of port 1 to pins 0 to 3 as outputs and pins 4 to 7 as inputs
 daq_board.port1_dir(0x0f)
 
-# Get the direction of port 0
-direction = daq_board.port0_dir()
-print("Port 0 direction:", direction)
+# Read the direction of port 0
+port0_direction = daq_board.port0_dir()
 
-# Close the connection to the DAQ board
-daq_board.close()
+# Write a value to port 1
+daq_board.write_port(1, 0b1010)
+
+# Disconnect from the DAQ board
+daq_board.disconnect()
 ```
 
 Note: This code assumes that you have already installed the necessary Advantech drivers and have generated the `_bdaqctrl.h` file as mentioned in the documentation.

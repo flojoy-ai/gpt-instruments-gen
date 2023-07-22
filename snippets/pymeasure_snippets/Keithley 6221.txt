@@ -51,8 +51,8 @@ keithley.waveform_abort()
 # Disable the source
 keithley.disable_source()
 
-# Disconnect from the Keithley 6221
+# Close the connection to the Keithley 6221
 keithley.shutdown()
 ```
 
-This script connects to the Keithley 6221 using the GPIB interface (address "GPIB::1"). It enables the source, sets the source current and compliance, and configures the waveform parameters. It then arms and starts the waveform, waits for it to finish using the Service Request (SRQ) event, and aborts the waveform. Finally, it disables the source and disconnects from the Keithley 6221.
+This script connects to the Keithley 6221 using the GPIB interface (address "GPIB::1"). It enables the source, sets the source current and compliance, and configures the waveform parameters. It then arms and starts the waveform, waits for it to finish using the Service Request (SRQ) event, and aborts the waveform. Finally, it disables the source and closes the connection to the Keithley 6221.

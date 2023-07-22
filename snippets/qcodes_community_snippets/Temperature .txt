@@ -1,5 +1,0 @@
-The code provided is not directly related to Qcodes Community or connecting to a Temperature Controller. It is a setup script for a Python package called "cryocon-22c-controller" that provides a package for controlling CryoCon 22C Temperature Controllers.
-
-To connect to a Temperature Controller using Qcodes Community, you would need to write additional code specific to the Temperature Controller you are using. The provided code is for package setup and installation, not for connecting to a Temperature Controller.
-
-If you have a specific Temperature Controller in mind, please provide more details, and I can help you with the code to connect to it using Qcodes Community.

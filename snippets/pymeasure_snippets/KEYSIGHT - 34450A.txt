@@ -13,14 +13,14 @@ dmm = Agilent34450A(adapter)
 # Reset the instrument
 dmm.reset()
 
-# Configure the instrument to measure DC voltage
+# Configure the instrument to measure voltage
 dmm.configure_voltage()
 
 # Read the voltage measurement
 voltage = dmm.voltage
 print("Voltage:", voltage)
 
-# Configure the instrument to measure DC current
+# Configure the instrument to measure current
 dmm.configure_current()
 
 # Read the current measurement
@@ -31,8 +31,6 @@ print("Current:", current)
 dmm.shutdown()
 ```
 
-In this script, we first import the necessary modules from Pymeasure. We create a `VISAAdapter` object to connect to the instrument using the appropriate VISA address. Then, we create an instance of the `Agilent34450A` instrument using the adapter.
+In this example, we first create a VISA adapter using the appropriate address for your instrument. Then, we create an instance of the Agilent34450A instrument using the adapter. We can then use the instrument's methods to perform various operations, such as resetting the instrument, configuring the measurement mode, and reading measurements. Finally, we shutdown the instrument to release any resources.
 
-We can then perform various operations on the instrument. In this example, we reset the instrument, configure it to measure DC voltage, read the voltage measurement, configure it to measure DC current, read the current measurement, and finally shutdown the instrument.
-
-Note that you will need to replace the VISA address `"USB0::0x0957::0x0607::MY44012345::INSTR"` with the actual VISA address of your instrument.
+Note: Make sure to replace `"USB0::0x0957::0x0607::MY44012345::INSTR"` with the actual address of your instrument.

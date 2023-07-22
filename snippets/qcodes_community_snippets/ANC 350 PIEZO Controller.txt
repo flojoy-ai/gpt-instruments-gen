@@ -1,29 +1,37 @@
-Sure! Here's an example Python script that uses Qcodes Community to connect to an ANC 350 PIEZO Controller Positional Controller:
+Here is an example Python script that uses Qcodes Community to connect to an ANC350 PIEZO Controller Positional Controller:
 
 ```python
 import qcodes as qc
-from qcodes.instrument_drivers.anc350 import ANC350
+from qcodes.instrument_drivers.attocube.ANC350 import ANC350, ANC350v3Lib
 
-# Connect to the ANC 350 controller
-anc350 = ANC350('anc350', 'COM1')  # Replace 'COM1' with the appropriate serial port
+# Create an instance of the ANC350v3Lib library
+lib = ANC350v3Lib()
 
-# Print the available parameters
-print(anc350.parameters)
+# Create an instance of the ANC350 instrument
+anc350 = ANC350("anc350", lib)
 
-# Set the voltage amplitude to 10 V
-anc350.voltage_amplitude(10)
+# Connect to the ANC350 device
+anc350.connect()
 
-# Set the frequency to 100 Hz
-anc350.frequency(100)
+# Print the device information
+print(anc350.get_idn())
 
-# Enable the output
-anc350.output_enable(True)
+# Access the individual axis channels
+x_axis = anc350.axis_channels.x_axis
+y_axis = anc350.axis_channels.y_axis
+z_axis = anc350.axis_channels.z_axis
 
-# Move the piezo to position 0
-anc350.move_absolute(0)
+# Set the frequency of the x-axis to 1000 Hz
+x_axis.frequency(1000)
 
-# Disconnect from the ANC 350 controller
+# Set the amplitude of the y-axis to 50 V
+y_axis.amplitude(50)
+
+# Move the z-axis to a target position of 10 mm
+z_axis.target_position(10)
+
+# Close the connection to the ANC350 device
 anc350.close()
 ```
 
-Make sure to replace `'COM1'` with the appropriate serial port that your ANC 350 controller is connected to.
+Note: Make sure to install the necessary dependencies (`qcodes` and `pyanc350`) before running the script.

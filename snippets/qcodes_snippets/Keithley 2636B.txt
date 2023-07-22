@@ -1,28 +1,36 @@
-To connect to a Keithley 2636B Power Supply using Qcodes, you can use the `Instrument` class provided by Qcodes. Here's an example script:
+Here's an example Python script that uses Qcodes to connect to a Keithley 2636B Power Supply:
 
 ```python
 import qcodes as qc
-from qcodes.instrument_drivers.tektronix.Keithley_2636B import Keithley_2636B
+from qcodes.instrument_drivers.tektronix.Keithley_2600 import Keithley2600
 
-# Create an instance of the Keithley_2636B instrument
-keithley = Keithley_2636B('keithley', 'ASRL/dev/ttyUSB0::INSTR')
+# Connect to the Keithley 2636B Power Supply
+keithley = Keithley2600("keithley", "TCPIP::192.168.1.1::INSTR")
 
-# Connect to the instrument
-keithley.connect()
+# Print the instrument ID
+print(keithley.get_idn())
 
-# Perform operations with the instrument
-keithley.smua.source_voltage(1)  # Set the source voltage of SMUA to 1V
-keithley.smua.source_current(0.1)  # Set the source current of SMUA to 0.1A
+# Set the voltage and current limits
+keithley.smua.limitv(10)  # Set voltage limit to 10V
+keithley.smua.limiti(0.1)  # Set current limit to 0.1A
 
-# Disconnect from the instrument
-keithley.disconnect()
+# Enable the output
+keithley.smua.output(1)  # Turn on the output
+
+# Set the voltage and current levels
+keithley.smua.volt(5)  # Set voltage to 5V
+keithley.smua.curr(0.05)  # Set current to 0.05A
+
+# Measure the voltage and current
+voltage = keithley.smua.volt()
+current = keithley.smua.curr()
+print(f"Voltage: {voltage}V, Current: {current}A")
+
+# Disable the output
+keithley.smua.output(0)  # Turn off the output
+
+# Close the connection
+keithley.close()
 ```
 
-In this example, we import the `Keithley_2636B` driver from the `qcodes.instrument_drivers.tektronix` module. We create an instance of the `Keithley_2636B` instrument with a name (`keithley`) and the instrument address (`ASRL/dev/ttyUSB0::INSTR`). Then, we connect to the instrument using the `connect()` method. After that, we can perform operations on the instrument, such as setting the source voltage and current. Finally, we disconnect from the instrument using the `disconnect()` method.
-
-Note that you may need to install the `qcodes` library and the `qcodes_contrib_drivers` package to run this script. You can install them using pip:
-
-```
-pip install qcodes
-pip install qcodes_contrib_drivers
-```
+Note: Replace `"TCPIP::192.168.1.1::INSTR"` with the actual IP address or VISA resource address of your Keithley 2636B Power Supply.

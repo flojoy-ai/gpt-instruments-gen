@@ -238,4 +238,4 @@ laser.output_enabled = False
 laser.close()
 ```
 
-This code snippet connects to the laser source at the specified address, enables the output, sets the output power to 10 mW, sets the wavelength to 1550 nm, sets the sweep parameters, starts the sweep, waits for the sweep to complete, and then disables the output. Finally, it closes the connection to the laser source.
+This code snippet demonstrates how to connect to the KEYSIGHT N7776C Laser, enable the output, set the output power, set the wavelength, configure a sweep, start the sweep, wait for the sweep to complete, and finally disable the output.

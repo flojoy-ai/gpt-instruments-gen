@@ -17,8 +17,8 @@ daq.disconnect_all()
 daq.disconnect()
 ```
 
-This script imports the `Keysight34980A` class from the `qcodes.instrument_drivers.Keysight.Keysight_34980A` module. It then creates an instance of the instrument with the name 'daq' and the instrument address 'TCPIP0::192.168.1.1::INSTR'. The `connect()` method is called to establish a connection to the instrument.
+This script creates an instance of the `Keysight34980A` instrument with the name 'daq' and the specified address ('TCPIP0::192.168.1.1::INSTR'). It then connects to the instrument using the `connect()` method.
 
-After connecting, you can perform various operations on the instrument. In this example, the `reset()` method is called to perform an instrument reset, and the `disconnect_all()` method is called to open/disconnect all connections on the module.
+After connecting, you can perform various operations on the instrument, such as resetting it (`reset()`) and disconnecting all connections (`disconnect_all()`).
 
-Finally, the `disconnect()` method is called to disconnect from the instrument.
+Finally, you can disconnect from the instrument using the `disconnect()` method.

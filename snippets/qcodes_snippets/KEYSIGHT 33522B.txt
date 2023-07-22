@@ -1,20 +1,13 @@
-```python
-from qcodes.instrument_drivers.Keysight.KeysightAgilent_33XXX import Keysight33522B
+To connect to a KEYSIGHT 33522B RF Signal Generator using Qcodes, you can use the following Python script:
 
-# Create an instance of the Keysight33522B instrument
-instrument = Keysight33522B('instrument_name', 'USB0::0x0957::0x2307::MY52800838::INSTR')
+```python
+from qcodes.instrument_drivers.Keysight.Keysight_33XXX import WaveformGenerator_33XXX
+
+# Create an instance of the instrument
+signal_generator = WaveformGenerator_33XXX('signal_generator', 'TCPIP0::192.168.1.1::INSTR')
 
 # Connect to the instrument
-instrument.connect()
-
-# Perform operations with the instrument
-
-# Disconnect from the instrument
-instrument.disconnect()
+signal_generator.connect_message()
 ```
 
-In the code above, we import the `Keysight33522B` class from the `qcodes.instrument_drivers.Keysight.KeysightAgilent_33XXX` module. We then create an instance of the `Keysight33522B` instrument by providing a name for the instrument and the instrument's address (in this case, a USB address).
-
-We then connect to the instrument using the `connect()` method. After connecting, you can perform various operations with the instrument, such as setting waveform parameters, generating waveforms, etc.
-
-Finally, we disconnect from the instrument using the `disconnect()` method.
+This script imports the `WaveformGenerator_33XXX` class from the `qcodes.instrument_drivers.Keysight.Keysight_33XXX` module. It then creates an instance of the instrument with the name `'signal_generator'` and the appropriate VISA resource address (`'TCPIP0::192.168.1.1::INSTR'` in this example). Finally, it calls the `connect_message()` method to establish a connection to the instrument and print a connection message.

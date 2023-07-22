@@ -1,64 +1,20 @@
+To connect to an ATS9870 board using Qcodes, you can use the following Python script:
+
 ```python
-import qcodes as qc
 from qcodes.instrument_drivers.AlazarTech.ATS9870 import AlazarTech_ATS9870
 
-def do_acquire():
-    b = AlazarTech_ATS9870("b", "1", "1")
+# Create an instance of the ATS9870 driver
+ats9870 = AlazarTech_ATS9870('ats9870', dll_path='C:\\WINDOWS\\System32\\ATSApi.dll')
 
-    board_model = b.get_board_model()
+# Connect to the board
+ats9870.connect()
 
-    b.clock_source('INTERNAL_CLOCK')
-    b.sample_rate(1e9)
+# Now you can use the board for data acquisition and other operations
+# For example, you can set the sample rate
+ats9870.sample_rate(1_000_000_000)
 
-    if board_model == 'ATS9870':
-        b.input_range1(0.4)
-        b.trigger_operation('TRIG_ENGINE_OP_J')
-        b.trigger_engine1('TRIG_ENGINE_J')
-        b.trigger_source1('EXTERNAL')
-        b.external_trigger_coupling('DC')
-        b.external_trigger_range('ETR_2V5')
-        b.trigger_slope1('TRIG_SLOPE_POSITIVE')
-        b.trigger_level1(160)
-        b.trigger_delay(0)
-        b.timeout_ticks(0)
-
-    b.num_averages(10)
-    b.samples_per_record(1024)
-    b.records_per_buffer(100)
-    b.buffers_per_acquisition(10)
-
-    b.prepare_to_acquire()
-
-    b.start_acquisition()
-
-    b.wait_for_acquisition()
-
-    chA = b.chA()
-    chB = b.chB()
-
-    return chA, chB
-
-def stats(chan):
-    cmin, cmax = chan.min(), chan.max()
-    return chan.shape, cmin, cmax, cmax - cmin, np.mean(chan[:])
-
-def main():
-    chA, chB = do_acquire()
-
-    stat_str = 'shape = {}, min = {}, max = {}, delta = {}, mean = {}'
-
-    plt.plot(range(1024), chA, 'r-')
-    plt.plot(range(1024), chB, 'g-')
-    plt.show()
-
-    print('acquisition statistics:')
-    print('channel A:')
-    print(stat_str.format(*stats(chA)))
-    print('channel B:')
-    print(stat_str.format(*stats(chB)))
-
-if __name__ == '__main__':
-    main()
+# Disconnect from the board
+ats9870.disconnect()
 ```
 
-Note: The code assumes that you have already installed the QCoDeS package and the AlazarTech ATS9870 driver.
+Note that you need to provide the correct path to the `ATSApi.dll` file in the `dll_path` argument of the `AlazarTech_ATS9870` constructor.

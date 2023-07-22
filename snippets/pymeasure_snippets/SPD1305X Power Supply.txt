@@ -18,4 +18,4 @@ power_supply.ch_1.current_limit = 2  # Set the current limit of channel 1 to 2A
 power_supply.disconnect()
 ```
 
-This script uses the `VISAAdapter` from Pymeasure to connect to the power supply using the VISA address. Then, it creates an instance of the `SPD1305X` class and performs operations on the power supply, such as setting the voltage and current limit of channel 1. Finally, it disconnects from the power supply using the `disconnect()` method.
+This script uses the `VISAAdapter` from Pymeasure to create a connection to the power supply using the VISA address. Then, it creates an instance of the `SPD1305X` class and assigns it to the `power_supply` variable. You can perform operations on the power supply, such as setting the voltage and current limit of channel 1, by accessing the `ch_1` attribute of the `power_supply` object. Finally, the script disconnects from the power supply using the `disconnect()` method.

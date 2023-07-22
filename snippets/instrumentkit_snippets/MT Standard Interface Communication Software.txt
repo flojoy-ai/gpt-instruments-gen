@@ -1,24 +1,28 @@
-To connect to a MT Standard Interface Communication Software using Instrumentkit, you can use the `SerialInstrument` class. Here's an example script:
+Here is an example Python script that uses Instrumentkit to connect to a Mettler Toledo balance using the MT Standard Interface Communication Software:
 
 ```python
-from instrumentkit import SerialInstrument
+import instrumentkit as ik
 
-# Create a SerialInstrument object
-instrument = SerialInstrument()
+# Open a serial connection to the balance
+inst = ik.mettler_toledo.MTSICS.open_serial('/dev/ttyUSB0', 9600)
 
-# Set the serial port parameters
-instrument.port = '/dev/ttyUSB0'  # Replace with the actual serial port
-instrument.baudrate = 9600  # Replace with the desired baudrate
+# Perform operations on the balance
+inst.clear_tare()
+inst.reset()
+inst.tare()
+inst.zero()
 
-# Open the serial connection
-instrument.open()
+# Get information from the balance
+mt_sics_info = inst.mt_sics
+mt_sics_commands = inst.mt_sics_commands
+balance_name = inst.name
+serial_number = inst.serial_number
+tare_value = inst.tare_value
+weight = inst.weight
+weight_mode = inst.weight_mode
 
-# Send commands and receive responses
-instrument.write('CMD1')  # Replace with the actual command
-response = instrument.read()  # Replace with the expected response
-
-# Close the serial connection
-instrument.close()
+# Close the connection to the balance
+inst.close()
 ```
 
-Make sure to replace `/dev/ttyUSB0` with the actual serial port that your MT Standard Interface Communication Software is connected to. Also, replace `'CMD1'` with the actual command you want to send and modify the `response` variable to handle the expected response from the instrument.
+Note: This script assumes that you have installed the `instrumentkit` package and imported it as `ik`.

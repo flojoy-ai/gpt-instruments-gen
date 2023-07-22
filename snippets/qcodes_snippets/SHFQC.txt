@@ -17,10 +17,21 @@ shfqc.sgchannels[0].configure_channel(
 )
 
 # Enable the sequencer on the first SG channel
-shfqc.sgchannels[0].awg.enable_sequencer(single=True)
+shfqc.sgchannels[0].awg.enable_sequencer(single=False)
 
-# Load a sequencer program to the first SG channel
-shfqc.sgchannels[0].awg.load_sequencer_program("sequencer_program.seqc")
+# Upload a sequencer program to the first SG channel
+sequencer_program = """
+    const AWG_CHANNEL = 0
+    const WAIT_TIME = 1000
+    while (true) {
+        playWave(AWG_CHANNEL, "waveform1")
+        waitWave(AWG_CHANNEL)
+        playWave(AWG_CHANNEL, "waveform2")
+        waitWave(AWG_CHANNEL)
+        wait(WAIT_TIME)
+    }
+"""
+shfqc.sgchannels[0].awg.load_sequencer_program(sequencer_program)
 
 # Start the sequencer on the first SG channel
 shfqc.sgchannels[0].awg.enable_sequencer(single=False)

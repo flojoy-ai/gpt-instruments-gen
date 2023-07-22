@@ -1,23 +1,22 @@
-Sure! Here's a Python script that uses Qcodes to connect to a SR 865 lock-in amplifier:
-
 ```python
-import qcodes as qc
-from qcodes.instrument_drivers.stanford_research.SR865 import SR865
+from qcodes.instrument_drivers.stanford_research.SR86x import SR865
+
+# Create an instance of the SR865 lock-in amplifier
+lockin = SR865('lockin', 'TCPIP::192.168.1.1::INSTR')
 
 # Connect to the lock-in amplifier
-lockin = SR865('lockin', 'GPIB0::1::INSTR')
+lockin.connect()
 
-# Print the identification string of the lock-in amplifier
-print(lockin.IDN())
+# Perform operations with the lock-in amplifier
+# ...
 
-# Close the connection to the lock-in amplifier
-lockin.close()
+# Disconnect from the lock-in amplifier
+lockin.disconnect()
 ```
 
-In this script, we import the necessary modules and classes from Qcodes. We then create an instance of the `SR865` class, which represents the SR 865 lock-in amplifier. The first argument to the `SR865` constructor is the name of the instrument, and the second argument is the address of the instrument (in this case, the GPIB address).
-
-We can then use the `lockin` object to interact with the lock-in amplifier. In this example, we simply print the identification string of the lock-in amplifier using the `IDN()` method.
-
-Finally, we close the connection to the lock-in amplifier using the `close()` method.
-
-Note: Make sure you have the necessary dependencies installed, such as `qcodes` and `pyvisa`, before running this script.
+Explanation:
+1. Import the `SR865` class from the `qcodes.instrument_drivers.stanford_research.SR86x` module.
+2. Create an instance of the `SR865` lock-in amplifier with the name `'lockin'` and the IP address `'TCPIP::192.168.1.1::INSTR'`. Adjust the IP address to match the actual IP address of your lock-in amplifier.
+3. Connect to the lock-in amplifier using the `connect()` method.
+4. Perform any desired operations with the lock-in amplifier.
+5. Disconnect from the lock-in amplifier using the `disconnect()` method.

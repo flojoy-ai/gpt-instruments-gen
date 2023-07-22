@@ -48,11 +48,18 @@ To use this class, you need to create an instance of it by providing the necessa
 
 - `name`: The name of the instrument.
 - `address`: The address or VISA alias of the instrument.
-- `attenuation`: Optional attenuation level (in dB) to set on startup.
+- `attenuation` (optional): The attenuation level (in dB) to set on startup.
 - `terminator`: The termination character in VISA communication.
 
-Once you have created an instance of `Keysight_J7211`, you can access and control the instrument using its parameters. In this case, the only parameter defined is `attenuation`, which represents the attenuation level in dB. You can set and get the attenuation level using the `set_cmd` and `get_cmd` commands respectively. The `vals` argument specifies the valid range of attenuation values.
+Once you have created an instance of `Keysight_J7211`, you can access and control the instrument using its parameters. In this case, the only parameter defined is `attenuation`, which represents the attenuation level of the control unit. It has the following properties:
 
-To connect to the instrument, you can call the `connect_message()` method.
+- `unit`: The unit of the attenuation level (dB).
+- `set_cmd`: The command to set the attenuation level, using the format `'ATT {:03.0f}'`.
+- `get_cmd`: The command to get the current attenuation level.
+- `get_parser`: The function to parse the response of the `get_cmd` into an integer.
+- `vals`: The range of valid attenuation values based on the model of the control unit.
+- `initial_value`: The initial attenuation level to set on startup.
 
-Note: This code is a template for creating a driver for the KEYSIGHT J7211 Attenuation Control Unit. You may need to modify it based on your specific requirements and the communication protocol of your instrument.
+You can connect to the instrument by calling the `connect_message()` method.
+
+Note: This script only defines the class and its parameters. To use it, you need to create an instance of the class and interact with the instrument accordingly.

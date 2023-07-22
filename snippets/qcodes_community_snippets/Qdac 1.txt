@@ -16,8 +16,8 @@ qdac.channels.ch01.v(1)
 voltage = qdac.channels.ch01.v()
 print(f"Voltage of channel 1: {voltage} V")
 
-# Close the connection to the instrument
-qdac.close()
+# Ramp the voltage of channel 1 from 0V to 1V in 1 second
+qdac.ramp_voltages([1], [0], [1], 1)
 ```
 
-Note: Replace `'TCPIP0::192.168.1.1::inst0::INSTR'` with the actual VISA address of your Qdac instrument.
+Note: Replace `'TCPIP0::192.168.1.1::inst0::INSTR'` with the actual VISA address of your Qdac 1 Power Supply.

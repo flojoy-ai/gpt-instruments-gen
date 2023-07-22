@@ -1,27 +1,19 @@
-To connect to a SCPI multimeter using Instrumentkit, you can use the following Python script:
+To connect to a SCPI multimeter using Instrumentkit, you can use the following code:
 
 ```python
-import instrumentkit
+import instrumentkit as ik
 
-# Create a connection to the multimeter
-multimeter = instrumentkit.connect('multimeter', address='192.168.1.1', port=1234)
+# Connect to the multimeter
+multimeter = ik.SCPIMultimeter.open_tcpip("192.168.1.1")
 
-# Query the multimeter for a measurement
-measurement = multimeter.query('MEASURE:VOLTAGE:DC?')
+# Set the measurement mode to voltage DC
+multimeter.mode = multimeter.Mode.voltage_dc
+
+# Perform a measurement
+measurement = multimeter.measure()
 
 # Print the measurement result
-print(f"Measurement: {measurement} V")
-
-# Close the connection to the multimeter
-multimeter.close()
+print(measurement)
 ```
 
-In the script above, replace `'192.168.1.1'` with the IP address of your multimeter and `1234` with the port number used for communication. The `query` method is used to send a SCPI command to the multimeter and retrieve the measurement result. Finally, the measurement result is printed to the console.
-
-Make sure to install the `instrumentkit` package before running the script. You can install it using pip:
-
-```
-pip install instrumentkit
-```
-
-Note: The documentation provided (`nan`) does not provide enough information to fully implement the script. You will need to refer to the specific documentation of your multimeter to find the correct SCPI commands and syntax for measurements.
+This code connects to the multimeter using the `open_tcpip` method, sets the measurement mode to voltage DC using the `mode` property, performs a measurement using the `measure` method, and prints the measurement result.

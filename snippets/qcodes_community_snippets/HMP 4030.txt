@@ -22,6 +22,6 @@ hmp.disconnect()
 
 In this script, we import the `RohdeSchwarzHMP4030` class from the `qcodes.instrument_drivers.rohde_schwarz.HMP4030` module. We then create an instance of the driver by providing a name for the instrument (`'hmp'`) and the instrument's address (`'TCPIP0::192.168.0.1::INSTR'`).
 
-After creating the instance, we can connect to the instrument using the `connect()` method. Once connected, we can perform various operations on the instrument. In this example, we set the output voltage to 5V using the `voltage()` method and then read the output voltage using the same method.
+After creating the instance, we can connect to the instrument using the `connect()` method. Once connected, we can use various methods provided by the driver to control the instrument. In the example, we set the output voltage to 5V using the `voltage()` method and then read the output voltage using the same method.
 
 Finally, we disconnect from the instrument using the `disconnect()` method.

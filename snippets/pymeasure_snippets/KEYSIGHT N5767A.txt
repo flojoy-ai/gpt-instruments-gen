@@ -78,41 +78,4 @@ class KeysightN5767A(Instrument):
 
 This script defines a class `KeysightN5767A` that represents the KEYSIGHT N5767A Power Supply. It provides methods and properties to control and measure the current and voltage of the power supply.
 
-To use this script, you need to have Pymeasure installed. You can then create an instance of the `KeysightN5767A` class and connect to the power supply using a suitable adapter, such as a VISA adapter.
-
-For example:
-
-```python
-from pymeasure.adapters import VISAAdapter
-
-# Create a VISA adapter
-adapter = VISAAdapter("GPIB::1::INSTR")
-
-# Create an instance of KeysightN5767A
-power_supply = KeysightN5767A(adapter)
-
-# Enable the power supply
-power_supply.enable()
-
-# Set the current range to 10 A
-power_supply.current_range = 10
-
-# Read the current
-current = power_supply.current
-print("Current:", current)
-
-# Set the voltage range to 30 V
-power_supply.voltage_range = 30
-
-# Read the voltage
-voltage = power_supply.voltage
-print("Voltage:", voltage)
-
-# Disable the power supply
-power_supply.disable()
-
-# Disconnect from the power supply
-power_supply.disconnect()
-```
-
-This script connects to the KEYSIGHT N5767A Power Supply using a VISA adapter, enables the power supply, sets the current and voltage ranges, reads the current and voltage measurements, disables the power supply, and finally disconnects from the power supply.
+To use this script, you need to have Pymeasure installed and import the necessary modules. Then, you can create an instance of the `KeysightN5767A` class and use its methods and properties to interact with the power supply.

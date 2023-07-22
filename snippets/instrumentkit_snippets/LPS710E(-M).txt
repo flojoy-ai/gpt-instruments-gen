@@ -1,28 +1,25 @@
-To connect to a LPS710E(/M) Positional Controller using Instrumentkit, you can use the following Python script:
+To connect to a LPS710E(/M) Positional Controller using Instrumentkit, you can use the following code:
 
 ```python
-import instrumentkit
+import instrumentkit as ik
 
-# Create a connection to the LPS710E(/M) Positional Controller
-controller = instrumentkit.connect('LPS710E')
+# Connect to the LPS710E(/M) Positional Controller
+controller = ik.thorlabs.LPS710E.open_serial("/dev/ttyUSB0", baud=115200)
 
-# Perform operations on the controller
-# For example, you can get the current position
-position = controller.get_position()
-print(f"Current position: {position}")
+# Get the channel object for channel 1
+channel = controller.channel[0]
 
-# You can also move the controller to a specific position
-target_position = 100.0
-controller.move_to(target_position)
+# Enable the channel
+channel.enabled = True
 
-# Close the connection to the controller
+# Set the position of the channel to 1000 steps
+channel.position = 1000
+
+# Move the channel to the specified position
+channel.move()
+
+# Disconnect from the controller
 controller.close()
 ```
 
-Make sure you have Instrumentkit installed in your Python environment before running this script. You can install it using pip:
-
-```
-pip install instrumentkit
-```
-
-Replace `'LPS710E'` with the appropriate connection string for your specific controller.
+This code connects to the LPS710E(/M) Positional Controller using the `open_serial` method, specifying the serial port and baud rate. It then gets the channel object for channel 1 and enables it. The position of the channel is set to 1000 steps, and then the channel is moved to the specified position using the `move` method. Finally, the code closes the connection to the controller using the `close` method.

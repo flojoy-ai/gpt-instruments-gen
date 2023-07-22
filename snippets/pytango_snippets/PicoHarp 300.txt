@@ -22,7 +22,7 @@ dev_name = "pico/0"  # Replace with the actual device name
 dev = pt.DeviceProxy(dev_name)
 
 # Initialize the device
-dev.Initialize(0)
+dev.Initialize(0)  # MODE_HIST = 0
 
 # Set measurement parameters
 dev.SetSyncDiv(syncDivider)
@@ -32,37 +32,50 @@ dev.SetBinning(binning)
 dev.SetOffset(offset)
 
 # Get device information
-hw_info = dev.GetHardwareInfo()
-hw_model = hw_info.model
-hw_partno = hw_info.partno
-hw_version = hw_info.version
+hw_model = dev.GetHardwareInfo().model
+hw_partno = dev.GetHardwareInfo().partno
+hw_version = dev.GetHardwareInfo().version
 print(f"Found Model {hw_model} Part no {hw_partno} Version {hw_version}")
 
 # Calibrate the device
 dev.Calibrate()
 
-# Start measurement
-while True:
-    input("Press ENTER to start measurement...")
+# Set stop overflow
+dev.SetStopOverflow(1, 65535)
+
+# Start measurement loop
+cmd = ""
+while cmd != "q":
+    # Clear histogram memory
+    dev.ClearHistMem(0)
+
+    input("Press RETURN to start measurement")
+
+    # Start measurement
     dev.StartMeas(tacq)
-    time.sleep(tacq / 1000)  # Wait for measurement to complete
+
+    print(f"\nMeasuring for {tacq} milliseconds...")
+
+    # Wait for measurement to complete
+    while dev.CTCStatus() == 0:
+        time.sleep(0.1)
+
+    # Stop measurement
+    dev.StopMeas()
 
     # Get histogram data
-    dev.GetHistogram(counts, 0)
+    counts = dev.GetHistogram(0)
 
-    # Process the histogram data as needed
-    integral_count = np.sum(counts)
-    print(f"Total Count: {integral_count}")
+    # Calculate total count
+    total_count = np.sum(counts)
+
+    print(f"\nTotalCount={total_count}")
 
     # Check for overflow
-    flags = dev.GetFlags()
-    if flags & 0x0040:
-        print("Overflow")
+    if dev.GetFlags() & 0x0040 > 0:
+        print("Overflow.")
 
-    # Continue or quit
-    cmd = input("Enter c to continue or q to quit: ")
-    if cmd == "q":
-        break
+    cmd = input("Enter c to continue or q to quit and save the count data.")
 
 # Close the device
 dev.CloseDevice()

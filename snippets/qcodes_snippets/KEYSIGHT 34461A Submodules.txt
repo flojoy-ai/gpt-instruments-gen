@@ -14,4 +14,4 @@ dmm.connect()
 dmm.disconnect()
 ```
 
-This code imports the necessary modules and creates an instance of the `Keysight34461A` driver. It then connects to the instrument using the specified address (`TCPIP0::192.168.1.1::INSTR`). After performing any desired measurements or operations, it disconnects from the instrument.
+This code imports the necessary modules and creates an instance of the `Keysight34461A` driver, which represents the Keysight 34461A Multimeter. The `name` parameter is set to `'dmm'` and the `address` parameter is set to the IP address of the instrument. The `connect()` method is then called to establish a connection to the instrument, and the `disconnect()` method is called to disconnect from the instrument when finished.

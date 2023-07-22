@@ -1,33 +1,45 @@
-To connect to the LCC25 Power Supplies using Instrumentkit, you can use the `SerialInstrument` class provided by Instrumentkit. Here's an example script:
+Sure! Here's an example Python script that uses Instrumentkit to connect to a LCC25 Power Supply:
 
 ```python
-from instrumentkit import SerialInstrument
+from instrumentkit import Instrument, ConnectionType
+from instrumentkit.contrib.thorlabs import LCC25
 
-# Define the serial port settings
-port = 'COM1'  # Replace with the actual serial port name
-baudrate = 9600  # Replace with the actual baudrate
+# Connect to the LCC25 Power Supply
+instrument = Instrument(
+    LCC25,
+    connection_type=ConnectionType.SERIAL,
+    port="COM1",  # Replace with the actual serial port
+    baudrate=9600,  # Replace with the actual baudrate
+)
 
-# Connect to the LCC25 Power Supplies
-power_supply = SerialInstrument(port, baudrate)
+# Initialize the instrument
+instrument.initialize()
 
-# Set the output voltage and current
-power_supply.sendcmd('VSET 5.0')  # Set the output voltage to 5.0V
-power_supply.sendcmd('ISET 1.0')  # Set the output current to 1.0A
+# Get the name and version number of the device
+name = instrument.name
+print(f"Device Name: {name}")
+
+# Set the frequency at which the LCC oscillates between the two voltages
+frequency = 10  # Hz
+instrument.frequency = frequency
+
+# Set the output mode of the LCC25
+mode = LCC25.Mode.voltage1
+instrument.mode = mode
 
 # Enable the output
-power_supply.sendcmd('OUT 1')  # Enable the output
+instrument.enable = True
 
-# Read the output voltage and current
-voltage = power_supply.query('VOUT?')
-current = power_supply.query('IOUT?')
-print(f"Output Voltage: {voltage}V")
-print(f"Output Current: {current}A")
+# Set the voltage values for output 1 and output 2
+voltage1 = 10  # Volts
+voltage2 = 20  # Volts
+instrument.voltage1 = voltage1
+instrument.voltage2 = voltage2
 
-# Disable the output
-power_supply.sendcmd('OUT 0')  # Disable the output
+# Perform other operations as needed
 
-# Disconnect from the power supply
-power_supply.close()
+# Close the connection to the instrument
+instrument.close()
 ```
 
-Make sure to replace `'COM1'` with the actual serial port name and `9600` with the actual baudrate used by your LCC25 Power Supplies.
+Note: Replace `"COM1"` with the actual serial port that the LCC25 Power Supply is connected to, and replace `9600` with the actual baudrate if it's different.

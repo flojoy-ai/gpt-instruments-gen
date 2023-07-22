@@ -22,12 +22,16 @@ print(mflilockin.parameters)
 mflilockin.frequency(1000)  # Set the frequency to 1000 Hz
 mflilockin.amplitude(0.1)  # Set the amplitude to 0.1 V
 
-# Close the connection to the MFLI Lock-in Amplifier
+# Close the connection to the lock-in amplifier
 mflilockin.close()
 ```
 
-Note: In the above script, replace `"dev1234"` with the actual device ID or name of your MFLI Lock-in Amplifier. The `"1GbE"` interface is used for connecting to the instrument over a 1 Gigabit Ethernet interface. Adjust the interface parameter according to your setup.
+Note: Replace `"dev1234"` with the actual device ID or name of your MFLI Lock-in Amplifier. The `"interface"` argument specifies the interface to use for communication with the instrument, which can be `"1GbE"` for Ethernet or `"USB"` for USB connection.
 
-This script establishes a connection to the MFLI Lock-in Amplifier, adds it to a Qcodes station, and performs some basic operations like setting the frequency and amplitude. Finally, it closes the connection to the lock-in amplifier.
+This script creates a `Station` object to hold the instruments. It then connects to the MFLI Lock-in Amplifier using the `MFLI` class from the `zhinst-qcodes` package. The lock-in amplifier is added as a component to the station.
+
+You can access and manipulate the lock-in amplifier's parameters using the `parameters` attribute of the `MFLI` object. In the example, it prints the available parameters. You can set the frequency and amplitude using the `frequency()` and `amplitude()` methods, respectively.
+
+Finally, the script closes the connection to the lock-in amplifier using the `close()` method.
 
 Remember to install the `zhinst-qcodes` package before running this script.

@@ -1,35 +1,33 @@
-Sure! Here's an example Python script that uses Instrumentkit to connect to a Keithley 485 Power Meter:
+Sure! Here's an example Python script that uses Instrumentkit to connect to a Keithley 485 picoammeter:
 
 ```python
 import instrumentkit as ik
 
-# Connect to the Keithley 485 Power Meter
-power_meter = ik.keithley.Keithley485.open_gpibusb('/dev/ttyUSB0', 12)
+# Connect to the Keithley 485 picoammeter
+inst = ik.keithley.Keithley485.open_gpibusb("/dev/ttyUSB0", 22)
 
-# Set the measurement mode to power
-power_meter.mode = power_meter.Mode.power
+# Set the input range to 2e-9 A
+inst.input_range = "2e-9"
 
-# Set the range to auto
-power_meter.input_range = 'auto'
+# Enable zero check mode
+inst.zero_check = True
 
-# Measure the power
-power_measurement = power_meter.measure()
+# Enable log mode
+inst.log = True
 
-# Print the power measurement
-print(f"Power: {power_measurement}")
+# Enable relative mode
+inst.relative = True
 
-# Close the connection to the power meter
-power_meter.close()
+# Set the trigger mode to continuous on talk
+inst.trigger_mode = "continuous_ontalk"
+
+# Perform a current measurement
+measurement = inst.measure()
+
+# Print the measurement result
+print(measurement)
 ```
 
-Make sure to replace `'/dev/ttyUSB0'` with the correct serial port of your Keithley 485 Power Meter. You can also adjust the GPIB address (`12`) if necessary.
+This script connects to the Keithley 485 picoammeter using the `open_gpibusb` method from the `ik.keithley.Keithley485` class. It then sets various properties of the picoammeter, such as the input range, zero check mode, log mode, relative mode, and trigger mode. Finally, it performs a current measurement using the `measure` method and prints the result.
 
-This script connects to the power meter, sets the measurement mode to power, sets the range to auto, measures the power, and then prints the power measurement. Finally, it closes the connection to the power meter.
-
-Note that you may need to install the `instrumentkit` package before running this script. You can install it using pip:
-
-```
-pip install instrumentkit
-```
-
-I hope this helps! Let me know if you have any further questions.
+Note: This script assumes that you have already installed the Instrumentkit library and have the necessary permissions to access the GPIB device at `/dev/ttyUSB0`.

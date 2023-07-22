@@ -13,11 +13,8 @@ lakeshore.connect()
 # Print the identification string of the instrument
 print(lakeshore.IDN())
 
-# Set the setpoint temperature of the sample heater to 300 K
-lakeshore.sample_heater.setpoint(300)
-
-# Close the connection to the instrument
+# Disconnect from the instrument
 lakeshore.disconnect()
 ```
 
-In this script, we import the necessary modules and create an instance of the `LakeshoreModel372` driver. We then connect to the instrument using the `connect()` method. After that, we can interact with the instrument by calling its methods and parameters. In this example, we print the identification string of the instrument using the `IDN()` method and set the setpoint temperature of the sample heater to 300 K using the `setpoint()` method. Finally, we disconnect from the instrument using the `disconnect()` method.
+This script creates an instance of the `LakeshoreModel372` driver, specifying the name and address of the instrument. The `connect()` method is then called to establish a connection to the instrument. The `IDN()` method is used to retrieve the identification string of the instrument, which can be printed to verify the connection. Finally, the `disconnect()` method is called to close the connection to the instrument.

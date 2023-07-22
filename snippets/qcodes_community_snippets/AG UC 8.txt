@@ -1,26 +1,32 @@
 ```python
 from qcodes.instrument_drivers.newport.ag_uc8 import Newport_AG_UC8
 
-# Connect to the AG UC 8 Positional Controller
-ag_uc8 = Newport_AG_UC8("ag_uc8", "ASRL3")
+# Create an instance of the Newport_AG_UC8 driver
+controller = Newport_AG_UC8('controller', 'ASRL3')
 
-# Reset the controller
-ag_uc8.reset()
+# Connect to the instrument
+controller.connect()
 
-# Get the identification of the controller
-idn = ag_uc8.get_idn()
+# Get the identification information of the instrument
+idn = controller.get_idn()
 print(idn)
 
-# Move the first axis of channel 1 to absolute position 500
-ag_uc8.channels.channel_1.axis_1.move_abs(500)
+# Reset the controller
+controller.reset()
 
-# Jog the second axis of channel 2 in the positive direction with speed 2
-ag_uc8.channels.channel_2.axis_2.jog(2)
+# Select channel 1
+channel1 = controller.channels.channel_1
 
-# Stop the movement of the second axis of channel 2
-ag_uc8.channels.channel_2.axis_2.stop()
+# Move the axis 1 of channel 1 to absolute position 500
+channel1.axis1.move_abs(500)
 
-# Close the connection to the controller
-ag_uc8.close()
+# Move the axis 2 of channel 1 to relative position -100
+channel1.axis2.move_rel(-100)
+
+# Stop the movement of axis 1 of channel 1
+channel1.axis1.stop()
+
+# Disconnect from the instrument
+controller.disconnect()
 ```
-Note: Replace `"ASRL3"` with the appropriate VISA string for your serial port.
+Note: Replace `'ASRL3'` with the appropriate VISA address for your instrument.

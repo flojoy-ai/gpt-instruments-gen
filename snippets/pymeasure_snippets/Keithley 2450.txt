@@ -1,11 +1,13 @@
-Here is a Python script that uses Pymeasure to connect to a Keithley 2450 Power Supply:
+Sure! Here's an example Python script that uses Pymeasure to connect to a Keithley 2450 Power Supply:
 
 ```python
 from pymeasure.adapters import VISAAdapter
 from pymeasure.instruments.keithley import Keithley2450
 
-# Create a connection to the instrument
+# Create a VISA adapter for the instrument
 adapter = VISAAdapter("GPIB::1")
+
+# Connect to the Keithley 2450 Power Supply
 keithley = Keithley2450(adapter)
 
 # Configure the instrument
@@ -15,13 +17,27 @@ keithley.compliance_voltage = 10
 keithley.source_current = 0
 keithley.enable_source()
 
-# Perform measurements
+# Measure voltage
 keithley.measure_voltage()
+
+# Ramp the current to 5 mA
 keithley.ramp_to_current(5e-3)
+
+# Print the voltage
 print(keithley.voltage)
 
 # Shutdown the instrument
 keithley.shutdown()
 ```
 
-This script connects to the Keithley 2450 Power Supply using a VISA adapter with the GPIB address "GPIB::1". It then configures the instrument to apply a current, sets the current range, compliance voltage, and source current. It enables the source output and performs voltage measurements. It ramps the current to 5 mA and prints the measured voltage. Finally, it shuts down the instrument by ramping the current to 0 mA and disabling the output.
+This script first creates a VISA adapter using the `VISAAdapter` class from Pymeasure. The adapter is then used to connect to the Keithley 2450 Power Supply by creating an instance of the `Keithley2450` class.
+
+The script then configures the instrument by setting the source mode to current, the current range to 10 mA, the compliance voltage to 10 V, and the source current to 0 mA. It then enables the source output.
+
+Next, it configures the instrument to measure voltage.
+
+After that, it ramps the current to 5 mA using the `ramp_to_current` method.
+
+Finally, it prints the measured voltage and shuts down the instrument.
+
+Note: Make sure to replace `"GPIB::1"` with the appropriate address of your Keithley 2450 Power Supply.

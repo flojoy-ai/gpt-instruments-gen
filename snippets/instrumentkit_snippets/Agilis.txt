@@ -1,39 +1,37 @@
-Sure! Here's an example Python script that uses Instrumentkit to connect to an Agilis Positional Controller:
+To connect to an Agilis Positional Controller using Instrumentkit, you can use the following code:
 
 ```python
-import instrumentkit as ik
+from instrumentkit import serial
+from instrumentkit import newport
 
-# Connect to the Agilis Positional Controller
-agl = ik.newport.AGUC2.open_serial(port='COM5', baud=921600)
+# Connect to the controller
+port = serial.SerialPort("COM5", baudrate=921600)
+controller = newport.AGUC2(port)
 
 # Reset the controller
-agl.reset_controller()
+controller.reset_controller()
 
 # Print the firmware version
-print(agl.firmware_version)
+print(controller.firmware_version)
 
 # Move the X axis relative by 1000 steps
-agl.axis["X"].move_relative(1000)
+controller.axis["X"].move_relative = 1000
 
 # Activate jogging in mode 3 for the Y axis
-agl.axis["Y"].jog = 3
-
-# Wait for 5 seconds
-import time
-time.sleep(5)
+controller.axis["Y"].jog = 3
 
 # Stop the Y axis jogging
-agl.axis["Y"].stop()
+controller.axis["Y"].stop()
 
 # Query the step amplitude for the X axis
-step_amplitude = agl.axis["X"].step_amplitude
-print(f"Step amplitude for X axis: {step_amplitude}")
+step_amplitude = controller.axis["X"].step_amplitude
+print(step_amplitude)
 
-# Set the step amplitude for the X axis to 10 in positive direction and -20 in negative direction
-agl.axis["X"].step_amplitude = (10, -20)
+# Set the positive step amplitude for the X axis to +10 and the negative step amplitude to -20
+controller.axis["X"].step_amplitude = (10, -20)
 
-# Close the connection to the Agilis Positional Controller
-agl.close()
+# Close the connection
+controller.close()
 ```
 
-Make sure to replace `'COM5'` with the correct serial port for your Agilis Positional Controller.
+This code connects to the Agilis Positional Controller on COM5 with a baud rate of 921600. It then performs various operations such as resetting the controller, printing the firmware version, moving the X axis relative by 1000 steps, activating jogging in mode 3 for the Y axis, stopping the Y axis jogging, querying and setting the step amplitude for the X axis, and finally closing the connection.

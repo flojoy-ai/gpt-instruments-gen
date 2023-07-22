@@ -23,4 +23,12 @@ print("Y: ", y)
 lia.disconnect()
 ```
 
-This script connects to the lock-in amplifier using the GPIB interface (assuming the lock-in amplifier is connected to GPIB address 8). It then sets the lock-in frequency, sensitivity, and time constant. Finally, it reads the X and Y values from the lock-in amplifier and prints them.
+In this script, we first import the `SR830` class from the `pymeasure.instruments.srs` module. We then create an instance of the `SR830` class, passing the GPIB address of the lock-in amplifier as the argument.
+
+Next, we can set the lock-in amplifier parameters using the properties provided by the `SR830` class. In this example, we set the lock-in frequency to 1 kHz, sensitivity to 1 µV, and time constant to 1 ms.
+
+We can then read the X and Y values from the lock-in amplifier using the `x` and `y` properties provided by the `SR830` class.
+
+Finally, we print the X and Y values and disconnect from the lock-in amplifier using the `disconnect()` method.
+
+Note: Make sure you have the necessary dependencies installed, such as `pymeasure` and the appropriate GPIB driver for your system.

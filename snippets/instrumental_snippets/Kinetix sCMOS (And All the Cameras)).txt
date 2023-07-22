@@ -1,27 +1,7 @@
-Sure! Here's an example script that uses the Instrumental library to connect to a Kinetix sCMOS camera:
+Unfortunately, the provided code does not include any implementation for connecting to a Kinetix sCMOS camera or any other camera. The code is a driver for Photometrics cameras and specifically for PVCam cameras. It provides a class `PVCam` that inherits from `Camera` and includes methods for camera initialization, capturing images, and other camera operations.
 
-```python
-import instrumental as ins
+To connect to a Kinetix sCMOS camera or any other camera, you would need to have the appropriate driver or library for that specific camera model. The code provided does not include the necessary implementation for connecting to a Kinetix sCMOS camera.
 
-# Connect to the camera
-camera = ins.KinetixCamera()
+If you have the appropriate driver or library for the Kinetix sCMOS camera, you would need to write a separate code that utilizes that driver or library to connect to the camera and perform operations such as capturing images. The specific code for connecting to the Kinetix sCMOS camera would depend on the API or interface provided by the camera manufacturer.
 
-# Set the exposure time
-camera.exposure_time = 0.1
-
-# Start acquiring frames
-camera.start_acquisition()
-
-# Capture a single frame
-frame = camera.capture_frame()
-
-# Stop acquiring frames
-camera.stop_acquisition()
-
-# Disconnect from the camera
-camera.disconnect()
-```
-
-This script creates an instance of the `KinetixCamera` class from the Instrumental library. It then sets the exposure time to 0.1 seconds and starts acquiring frames. It captures a single frame and then stops acquiring frames. Finally, it disconnects from the camera.
-
-Note that you may need to install the Instrumental library using `pip install instrumental` before running this script.
+Without the specific driver or library for the Kinetix sCMOS camera, it is not possible to provide a complete code example for connecting to and using the camera.

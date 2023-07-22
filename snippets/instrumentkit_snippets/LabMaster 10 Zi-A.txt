@@ -1,31 +1,24 @@
-To connect to a LabMaster 10 Zi-A Oscilloscope using Instrumentkit, you can use the following Python script:
+To connect to a LabMaster 10 Zi-A Oscilloscope using Instrumentkit, you can use the following code:
 
 ```python
-from instrumentkit import Instrument, VISAInstrument
+import instrumentkit as ik
 
-class LabMasterOscilloscope(VISAInstrument):
-    def __init__(self, resource_name):
-        super().__init__(resource_name)
-    
-    def get_idn(self):
-        return self.query('*IDN?')
+# Connect to the oscilloscope
+oscilloscope = ik.teledyne.LabMaster10ZiA.open_visa("TCPIP0::192.168.0.1::INSTR")
 
-# Connect to the LabMaster Oscilloscope
-oscilloscope = LabMasterOscilloscope('your_resource_name')
+# Perform operations on the oscilloscope
+# For example, you can read the waveform from a channel
+channel = oscilloscope.channel[0]
+xdat, ydat = channel.read_waveform()
 
-# Get the instrument identification
-idn = oscilloscope.get_idn()
-print(f'Connected to: {idn}')
-
-# Perform other operations with the oscilloscope
-# ...
-
-# Disconnect from the oscilloscope
+# Close the connection to the oscilloscope
 oscilloscope.close()
 ```
 
-Make sure to replace `'your_resource_name'` with the actual VISA resource name of your LabMaster 10 Zi-A Oscilloscope. You can find the resource name by using a VISA library such as PyVISA or NI-VISA.
+This code connects to the oscilloscope using the `open_visa` method from the `ik.teledyne.LabMaster10ZiA` class. You need to provide the appropriate VISA address for your oscilloscope.
 
-This script creates a custom `LabMasterOscilloscope` class that inherits from `VISAInstrument` provided by Instrumentkit. The `get_idn` method is overridden to query the instrument identification using the `*IDN?` command.
+Once connected, you can perform various operations on the oscilloscope. In the example code, it reads the waveform from the first channel using the `read_waveform` method of the channel object.
 
-You can then use the `LabMasterOscilloscope` class to connect to the oscilloscope, retrieve the instrument identification, and perform other operations as needed. Finally, the `close` method is called to disconnect from the oscilloscope.
+Finally, you should close the connection to the oscilloscope using the `close` method to release any resources.
+
+Note: Make sure you have the necessary dependencies installed, such as `pyvisa` and `numpy`, as mentioned in the documentation.

@@ -18,17 +18,20 @@ s5i = S5i('s5i', spi_rack, module=1)
 s5i.connect()
 
 # Now you can use the S5i RF Signal Generator
-# For example, you can enable the RF output
+# For example, to enable the RF output:
 s5i.output_enabled(True)
 
-# Set the frequency to 50 MHz
-s5i.frequency(50e6)
+# To set the frequency:
+s5i.frequency(42e6)
 
-# Set the output power to -10 dBm
-s5i.power(-10)
+# To set the output power:
+s5i.power(10)
 
-# Disconnect from the S5i RF Signal Generator
+# To optimize the stepsize for the current frequency:
+s5i.optimize_for_frequency()
+
+# To disconnect from the S5i RF Signal Generator:
 s5i.disconnect()
 ```
 
-Note: In the above code, make sure to replace `SPI_rack()` with the appropriate initialization code for your specific SPI rack.
+Note: In the above code, make sure to replace `SPI_rack()` with the appropriate initialization of the SPI_rack class from the spirack package.

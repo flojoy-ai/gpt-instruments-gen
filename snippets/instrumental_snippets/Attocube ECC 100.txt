@@ -1,46 +1,29 @@
-The provided code is a Python class `ECC100` that represents a connection to an Attocube ECC 100 Motion controller. It uses a TCP socket to communicate with the controller and sends commands using a custom protocol defined in the `ecc100_protocol` and `ucprotocol` modules.
-
-To use Instrumental to connect to the Attocube ECC 100 Motion controller, you can modify the `ECC100` class as follows:
-
-1. Import the `instrumental` module:
+To connect to an Attocube ECC 100 Motion using Instrumental, you can use the following Python script:
 
 ```python
-import instrumental
+from instrumental import instrument, list_instruments
+
+# List all available instruments
+instruments = list_instruments()
+print(instruments)
+
+# Connect to the Attocube ECC 100 Motion
+ecc100 = instrument(instruments[0])
+
+# Get the current position of the linear stage
+position = ecc100.get_position()
+print("Current position:", position)
+
+# Move the linear stage to a new position
+new_position = 100  # Replace with the desired position
+ecc100.move_to(new_position, wait=True)
+
+# Get the target position of the linear stage
+target_position = ecc100.get_target()
+print("Target position:", target_position)
+
+# Disconnect from the Attocube ECC 100 Motion
+ecc100.close()
 ```
 
-2. Replace the `socket` import with the `instrumental` module:
-
-```python
-import instrumental as socket
-```
-
-3. Modify the `connect` method to use the `instrumental` module to create the socket:
-
-```python
-def connect(self):
-    self.socket = socket.create_connection((self.ECC100_HOST, self.ECC100_TCP_PORT))
-```
-
-4. Modify the `send` method to send commands using the `instrumental` socket:
-
-```python
-def send(self, cmd):
-    self.socket.sendall(cmd + LF)
-```
-
-5. Modify the `recv` method to receive responses using the `instrumental` socket:
-
-```python
-def recv(self):
-    r = self.socket.recv(BUFFER_SIZE).decode().rstrip(LF)
-    return r
-```
-
-6. Modify the `close` method to close the `instrumental` socket:
-
-```python
-def close(self):
-    self.socket.close()
-```
-
-With these modifications, you can now use the `ECC100` class with Instrumental to connect to the Attocube ECC 100 Motion controller.
+Note: Make sure to replace `instruments[0]` with the appropriate instrument name from the `list_instruments()` output.

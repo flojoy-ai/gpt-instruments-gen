@@ -23,11 +23,10 @@ n5171b.power(-10)
 # Enable the RF output
 n5171b.rf_output(1)
 
-# Disable the pulse modulation
-n5171b.pulse_modulation(0)
-
 # Disconnect from the instrument
 n5171b.close()
 ```
 
-This script connects to a KEYSIGHT N5171B EXG RF Signal Generator using the Qcodes driver `N51x1`. It creates a station to hold the instrument, connects to the instrument using the instrument's IP address, adds the instrument to the station, and then performs various operations on the instrument such as setting the frequency, power, enabling RF output, and disabling pulse modulation. Finally, it disconnects from the instrument.
+This script connects to a KEYSIGHT N5171B EXG RF Signal Generator using the Qcodes driver `N51x1`. It creates a `Station` to hold the instrument, connects to the instrument using the instrument's IP address, adds the instrument to the station, and prints the IDN information of the instrument.
+
+Then, it sets the frequency to 1 GHz, the power to -10 dBm, and enables the RF output. Finally, it closes the connection to the instrument.

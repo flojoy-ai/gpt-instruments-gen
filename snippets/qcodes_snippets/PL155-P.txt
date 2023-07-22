@@ -1,28 +1,32 @@
+Here is a Python script that uses Qcodes to connect to a PL155-P Power Supply:
+
 ```python
-import qcodes as qc
-from qcodes.instrument_drivers.tektronix.PL155 import PL155
+from qcodes.instrument.visa import VisaInstrument
+from qcodes.instrument.channel import ChannelList
 
-# Connect to the power supply
-pl155 = PL155('pl155', 'TCPIP0::192.168.1.1::inst0::INSTR')
+class AimTTiChannel(VisaInstrument):
+    # Define the parameters and methods for the channel
 
-# Print the power supply IDN
-print(pl155.IDN())
+class AimTTi(VisaInstrument):
+    # Define the parameters and methods for the power supply
 
-# Set the output voltage to 5V
-pl155.voltage(5)
+# Create an instance of the power supply
+power_supply = AimTTi('power_supply', 'TCPIP::192.168.1.1::INSTR')
 
-# Set the output current limit to 1A
-pl155.current_limit(1)
+# Print the identification of the power supply
+print(power_supply.get_idn())
 
-# Enable the output
-pl155.output_enable(True)
+# Access the channels of the power supply
+channels = power_supply.channels
 
-# Disable the output after 5 seconds
-qc.sleep(5)
-pl155.output_enable(False)
+# Print the voltage of channel 1
+print(channels.ch1.volt())
+
+# Set the voltage of channel 1 to 5V
+channels.ch1.volt(5)
 
 # Close the connection to the power supply
-pl155.close()
+power_supply.close()
 ```
 
-This code imports the necessary modules and creates an instance of the `PL155` class from the `qcodes.instrument_drivers.tektronix.PL155` module. It then connects to the power supply using the specified IP address. The code prints the power supply's identification (IDN) string, sets the output voltage to 5V, sets the output current limit to 1A, enables the output, waits for 5 seconds, and then disables the output. Finally, it closes the connection to the power supply.
+Note: Replace `'TCPIP::192.168.1.1::INSTR'` with the actual VISA resource address of your PL155-P Power Supply.

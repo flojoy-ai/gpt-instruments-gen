@@ -32,9 +32,21 @@ class KeysightN9030B(VisaInstrument):
 
         self.connect_message()
 
+    def reset(self):
+        self.write("*RST")
 
-# Create an instance of the KeysightN9030B instrument
+    def on(self):
+        self.write(":OUTPut:STATe ON")
+
+    def off(self):
+        self.write(":OUTPut:STATe OFF")
+
+
+# Connect to the KEYSIGHT N9030B PXA RF Signal Generator
 signal_generator = KeysightN9030B("signal_generator", "TCPIP0::192.168.1.1::inst0::INSTR")
+
+# Reset the signal generator
+signal_generator.reset()
 
 # Set the frequency to 1 GHz
 signal_generator.frequency(1e9)
@@ -42,16 +54,11 @@ signal_generator.frequency(1e9)
 # Set the power level to -10 dBm
 signal_generator.power(-10)
 
-# Get the current frequency and power level
-frequency = signal_generator.frequency()
-power = signal_generator.power()
+# Turn on the signal generator
+signal_generator.on()
 
-# Print the frequency and power level
-print(f"Frequency: {frequency} Hz")
-print(f"Power: {power} dBm")
-
-# Close the connection to the instrument
-signal_generator.close()
+# Turn off the signal generator
+signal_generator.off()
 ```
 
-Note: Replace `"TCPIP0::192.168.1.1::inst0::INSTR"` with the actual address of your KEYSIGHT N9030B PXA RF Signal Generator.
+Note: Replace `"TCPIP0::192.168.1.1::inst0::INSTR"` with the actual VISA address of your KEYSIGHT N9030B PXA RF Signal Generator.

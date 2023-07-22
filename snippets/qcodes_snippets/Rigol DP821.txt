@@ -2,16 +2,13 @@
 import qcodes as qc
 from qcodes.instrument_drivers.rigol.DP8xx import RigolDP821
 
-# Create an instance of the RigolDP821 driver
+# Connect to the Rigol DP821 Power Supply
 dp821 = RigolDP821('dp821', 'TCPIP0::192.168.1.100::INSTR')
 
-# Connect to the instrument
-dp821.connect()
+# Add the instrument to the QCoDeS station
+station = qc.Station()
+station.add_component(dp821)
 
-# Perform operations using the instrument
-
-# Disconnect from the instrument
-dp821.disconnect()
+# Print the instrument information
+print(dp821)
 ```
-
-Note: Replace `'TCPIP0::192.168.1.100::INSTR'` with the actual IP address or VISA resource string of your Rigol DP821 Power Supply.
