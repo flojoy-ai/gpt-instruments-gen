@@ -5,10 +5,12 @@ See notebook for more details on development
 
 ## Run
 
+```
 export OPENAI_API_KEY=""  # set your key
 export AIRTABLE_API_KEY=""  # set your key
 pip install -r requirements.txt
 python generate_snippets.py
+```
 
 ## Details
 
