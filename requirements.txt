@@ -5,3 +5,4 @@ tqdm
 beautifulsoup4
 openai
 airtable
+tiktoken
