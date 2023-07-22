@@ -1,0 +1,39 @@
+Sure! Here's an example Python script that uses Instrumentkit to connect to a DPO70000 Oscilloscope:
+
+```python
+import instrumentkit as ik
+
+# Connect to the DPO70000 Oscilloscope
+scope = ik.tektronix.TekDPO70000.open_gpibusb("/dev/ttyUSB0", 1)
+
+# Set the acquisition parameters
+scope.acquisition.mode = ik.tektronix.TekDPO70000.AcquisitionMode.NORMAL
+scope.acquisition.record_length = 1000
+scope.acquisition.sample_rate = 1e9
+
+# Set the trigger parameters
+scope.trigger.source = ik.tektronix.TekDPO70000.TriggerSource.CH1
+scope.trigger.level = 0.5
+scope.trigger.slope = ik.tektronix.TekDPO70000.TriggerSlope.RISING
+
+# Configure the waveform display
+scope.display.waveform_source = ik.tektronix.TekDPO70000.WaveformSource.CH1
+scope.display.waveform_format = ik.tektronix.TekDPO70000.WaveformFormat.ASCII
+
+# Start the acquisition
+scope.acquisition.start()
+
+# Wait for the acquisition to complete
+scope.acquisition.wait_for_completion()
+
+# Get the waveform data
+waveform = scope.display.get_waveform()
+
+# Print the waveform data
+print(waveform)
+
+# Disconnect from the oscilloscope
+scope.close()
+```
+
+Make sure to replace `"/dev/ttyUSB0"` with the correct serial port for your DPO70000 Oscilloscope. You can also adjust the acquisition parameters, trigger parameters, and waveform display settings to fit your specific needs.

@@ -1,0 +1,44 @@
+Sure! Here's an example Python script that uses Pytango to connect to a Kchannelswitch device:
+
+```python
+import PyTango
+
+# Define the device name and connection details
+device_name = "kchannelswitch/device/1"
+host = "localhost"
+port = 10000
+
+# Create a Tango device proxy
+device_proxy = PyTango.DeviceProxy(f"{device_name}:{host}:{port}")
+
+# Check if the device is online
+if device_proxy.ping():
+    print(f"Device {device_name} is online.")
+else:
+    print(f"Device {device_name} is offline.")
+
+# Get the current state of the device
+state = device_proxy.state()
+print(f"Device {device_name} is in state: {state}")
+
+# Switch to channel 2
+device_proxy.command_inout("SwitchChannel", 2)
+
+# Get the current channel
+current_channel = device_proxy.read_attribute("CurrentChannel").value
+print(f"Current channel: {current_channel}")
+```
+
+In this example, we first import the `PyTango` module. Then, we define the device name, host, and port for the Kchannelswitch device.
+
+Next, we create a `DeviceProxy` object by passing the device name and connection details. This object allows us to interact with the device.
+
+We use the `ping()` method to check if the device is online. If it is, we print a message indicating that the device is online. Otherwise, we print a message indicating that the device is offline.
+
+We use the `state()` method to get the current state of the device and print it.
+
+We then use the `command_inout()` method to switch to channel 2.
+
+Finally, we use the `read_attribute()` method to read the value of the `CurrentChannel` attribute and print it.
+
+Note: Make sure to replace `"kchannelswitch/device/1"`, `"localhost"`, and `10000` with the actual device name, host, and port of your Kchannelswitch device.

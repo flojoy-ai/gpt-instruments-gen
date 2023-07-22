@@ -1,0 +1,23 @@
+```python
+import instrumental
+
+# Connect to the SR850 Lock-in Amplifier
+lia = instrumental.LIA("COM1")
+
+# Characterize the lock-in amplifier
+lia.characterize()
+
+# Set the frequency and phase
+lia.setf(1000)
+lia.setphase(45)
+
+# Get the average value and standard deviation of channel 1
+avg, std = lia.getAverage(channel=1, N=400)
+
+# Scan the frequency and get the output values of channel 1
+frequencies = [100, 200, 300, 400, 500]
+output = lia.scanP(frequencies, channel=1, N=100)
+
+# Scan the frequency and get the output values of trace 1
+output_trace, err_trace = lia.scanR(frequencies, trace=1, N=100)
+```

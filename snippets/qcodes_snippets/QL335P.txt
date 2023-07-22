@@ -1,0 +1,31 @@
+```python
+import qcodes as qc
+from qcodes.instrument_drivers.qlab.QL335P import QL335P
+
+# Connect to the QL335P Power Supply
+power_supply = QL335P('power_supply', 'ASRL1::INSTR')
+
+# Set the output voltage to 5V
+power_supply.voltage(5)
+
+# Set the output current limit to 1A
+power_supply.current_limit(1)
+
+# Enable the output
+power_supply.output(True)
+
+# Disable the output
+power_supply.output(False)
+
+# Close the connection to the power supply
+power_supply.close()
+```
+
+Explanation:
+1. Import the necessary modules: `qcodes` and the `QL335P` instrument driver.
+2. Create an instance of the `QL335P` instrument driver and connect to the power supply using the specified address (`ASRL1::INSTR`).
+3. Set the output voltage to 5V using the `voltage()` method of the power supply object.
+4. Set the output current limit to 1A using the `current_limit()` method of the power supply object.
+5. Enable the output using the `output()` method of the power supply object, passing `True` as the argument.
+6. Disable the output using the `output()` method of the power supply object, passing `False` as the argument.
+7. Close the connection to the power supply using the `close()` method of the power supply object.

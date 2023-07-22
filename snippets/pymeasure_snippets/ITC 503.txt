@@ -1,0 +1,33 @@
+Sure! Here's an example Python script that uses Pymeasure to connect to an ITC 503 Temperature Controller:
+
+```python
+from pymeasure.instruments import OxfordITC503
+
+# Connect to the ITC 503 Temperature Controller
+itc = OxfordITC503("GPIB::24")
+
+# Set the control mode to remote
+itc.control_mode = "RU"
+
+# Turn on auto heater and flow
+itc.heater_gas_mode = "AUTO"
+
+# Turn on auto-pid
+itc.auto_pid = True
+
+# Print the current set-point
+print(itc.temperature_setpoint)
+
+# Change the set-point to 300 K
+itc.temperature_setpoint = 300
+
+# Wait for the temperature to stabilize
+itc.wait_for_temperature()
+
+# Print the temperature at sensor 1
+print(itc.temperature_1)
+```
+
+This script connects to the ITC 503 Temperature Controller using the GPIB address "GPIB::24". It sets the control mode to remote, turns on auto heater and flow, and enables auto-pid. It then prints the current set-point temperature, changes the set-point to 300 K, waits for the temperature to stabilize, and finally prints the temperature at sensor 1.
+
+Note: Make sure you have the necessary dependencies installed, such as Pymeasure and the GPIB driver for your specific hardware.

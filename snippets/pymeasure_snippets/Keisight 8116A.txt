@@ -1,0 +1,26 @@
+Sure! Here's an example Python script that uses Pymeasure to connect to a Keysight 8116A Function Generator:
+
+```python
+from pymeasure.adapters import VISAAdapter
+from pymeasure.instruments.hp import HP8116A
+
+# Create a VISA adapter for the instrument
+adapter = VISAAdapter("GPIB0::9::INSTR")
+
+# Connect to the instrument
+instrument = HP8116A(adapter)
+
+# Set the frequency to 1 kHz
+instrument.frequency = 1e3
+
+# Set the amplitude to 1 V
+instrument.amplitude = 1
+
+# Enable the output
+instrument.output_enabled = True
+
+# Disconnect from the instrument
+instrument.shutdown()
+```
+
+This script connects to the instrument using a VISA adapter, sets the frequency to 1 kHz, sets the amplitude to 1 V, enables the output, and then disconnects from the instrument.

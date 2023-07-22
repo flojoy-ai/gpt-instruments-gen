@@ -1,0 +1,43 @@
+Sure! Here's an example Python script that uses Qcodes to connect to a Keithley 2602B Power Supply:
+
+```python
+import qcodes as qc
+from qcodes.instrument_drivers.tektronix.Keithley_2600_channels import Keithley_2600
+
+# Connect to the Keithley 2602B Power Supply
+keithley = Keithley_2600('keithley', 'TCPIP0::192.168.1.1::inst0::INSTR')
+
+# Print the instrument ID
+print(keithley.IDN())
+
+# Set the voltage and current limits
+keithley.smua.source.limitv.set(10)  # Set voltage limit to 10V
+keithley.smua.source.limiti.set(1)   # Set current limit to 1A
+
+# Enable the output
+keithley.smua.source.output.set(1)   # Set output to ON
+
+# Set the voltage and current values
+keithley.smua.source.levelv.set(5)   # Set voltage to 5V
+keithley.smua.source.leveli.set(0.5) # Set current to 0.5A
+
+# Measure the voltage and current
+voltage = keithley.smua.measure.v()
+current = keithley.smua.measure.i()
+
+# Print the measured values
+print(f"Voltage: {voltage} V")
+print(f"Current: {current} A")
+
+# Disable the output
+keithley.smua.source.output.set(0)   # Set output to OFF
+
+# Close the connection to the instrument
+keithley.close()
+```
+
+This script first imports the necessary modules and classes from Qcodes. It then creates an instance of the `Keithley_2600` class, passing the instrument's connection string as an argument. The connection string specifies the communication protocol and the IP address of the instrument.
+
+The script then performs various operations on the Keithley 2602B Power Supply, such as setting voltage and current limits, enabling the output, setting voltage and current values, and measuring the voltage and current. Finally, it closes the connection to the instrument.
+
+Note: Make sure to replace `'TCPIP0::192.168.1.1::inst0::INSTR'` with the actual IP address of your Keithley 2602B Power Supply.

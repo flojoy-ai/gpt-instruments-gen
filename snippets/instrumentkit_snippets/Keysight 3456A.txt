@@ -1,0 +1,19 @@
+To connect to a Keysight 3456A Multimeter using Instrumentkit, you can use the following Python script:
+
+```python
+import instrumentkit
+
+# Create a connection to the multimeter
+multimeter = instrumentkit.connect('keysight_3456a', address='COM1')
+
+# Query the multimeter for its identification
+identification = multimeter.query('*IDN?')
+print(f'Multimeter identification: {identification}')
+
+# Close the connection to the multimeter
+multimeter.close()
+```
+
+Make sure to replace `'COM1'` with the appropriate address for your multimeter. This script uses the `connect` function from Instrumentkit to establish a connection to the multimeter. It then sends a query command `*IDN?` to retrieve the multimeter's identification string. Finally, it prints the identification string and closes the connection.
+
+Note: The `keysight_3456a` module needs to be installed for this script to work. You can install it using `pip install instrumentkit[keysight_3456a]`.

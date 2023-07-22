@@ -1,0 +1,33 @@
+Sure! Here's an example script that uses Instrumentkit to connect to a WaveSurfer 510 Oscilloscope:
+
+```python
+import instrumentkit as ik
+import instrumentkit.devices.teledyne as teledyne
+
+# Connect to the oscilloscope
+oscilloscope = teledyne.WaveSurfer510.open_visa("TCPIP0::192.168.0.10::INSTR")
+
+# Print the oscilloscope information
+print(oscilloscope.show_id())
+
+# Set the time per division to 100 ns
+oscilloscope.time_div = ik.Quantity(100, ik.units.ns)
+
+# Enable the first channel and set the vertical scale to 1 V/division
+channel = oscilloscope.channel[0]
+channel.trace = True
+channel.scale = ik.Quantity(1, ik.units.V)
+
+# Acquire and plot a waveform from the first channel
+xdat, ydat = channel.read_waveform()
+import matplotlib.pyplot as plt
+plt.plot(xdat, ydat)
+plt.xlabel('Time (s)')
+plt.ylabel('Voltage (V)')
+plt.show()
+
+# Disconnect from the oscilloscope
+oscilloscope.close()
+```
+
+Make sure to replace `"TCPIP0::192.168.0.10::INSTR"` with the actual VISA address of your WaveSurfer 510 Oscilloscope.

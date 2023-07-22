@@ -1,0 +1,26 @@
+Sure! Here's an example Python script that uses Pymeasure to connect to a SFM RF Signal Generator:
+
+```python
+from pymeasure.instruments.rohde_schwarz import SFM
+from pymeasure.adapters import VISAAdapter
+
+# Create a VISA adapter for communication
+adapter = VISAAdapter("TCPIP::192.168.1.1::INSTR")
+
+# Connect to the SFM RF Signal Generator
+signal_generator = SFM(adapter)
+
+# Set the frequency to 100 MHz
+signal_generator.frequency = 100E6
+
+# Set the output level to -10 dBm
+signal_generator.level = -10
+
+# Enable the RF output
+signal_generator.rf_out_enabled = True
+
+# Disconnect from the SFM RF Signal Generator
+signal_generator.disconnect()
+```
+
+This script connects to the SFM RF Signal Generator using a VISA adapter and sets the frequency to 100 MHz and the output level to -10 dBm. It then enables the RF output and disconnects from the signal generator.

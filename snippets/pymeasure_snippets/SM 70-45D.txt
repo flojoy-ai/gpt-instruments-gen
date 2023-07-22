@@ -1,0 +1,44 @@
+Sure! Here's a Python script that uses Pymeasure to connect to a SM 70-45D Power Supply:
+
+```python
+from pymeasure import Instrument
+
+# Connect to the power supply
+power_supply = Instrument("COM1", baudrate=9600, timeout=5)
+
+# Open the connection
+power_supply.open()
+
+# Set the voltage and current limits
+power_supply.write("VOLT 10")
+power_supply.write("CURR 2")
+
+# Enable the output
+power_supply.write("OUTP ON")
+
+# Read the voltage and current values
+voltage = power_supply.ask("MEAS:VOLT?")
+current = power_supply.ask("MEAS:CURR?")
+
+# Print the values
+print("Voltage: {} V".format(voltage))
+print("Current: {} A".format(current))
+
+# Disable the output
+power_supply.write("OUTP OFF")
+
+# Close the connection
+power_supply.close()
+```
+
+This script first imports the `Instrument` class from the `pymeasure` module. It then creates an instance of the `Instrument` class, specifying the serial port (`COM1` in this example), baudrate (9600), and timeout (5 seconds).
+
+The script then opens the connection to the power supply using the `open()` method.
+
+Next, it sets the voltage and current limits of the power supply using the `write()` method. In this example, the voltage limit is set to 10 V and the current limit is set to 2 A.
+
+The script then enables the output of the power supply by sending the command `OUTP ON` using the `write()` method.
+
+After that, it reads the voltage and current values from the power supply using the `ask()` method. The `ask()` method sends a command to the power supply and waits for a response.
+
+Finally, the script prints the voltage and current values, disables the output of the power supply, and closes the connection using the `write()` and `close()` methods, respectively.

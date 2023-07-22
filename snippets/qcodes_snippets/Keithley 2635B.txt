@@ -1,0 +1,30 @@
+```python
+import qcodes as qc
+from qcodes.instrument_drivers.tektronix.Keithley_2635B import Keithley_2635B
+
+# Connect to the Keithley 2635B Power Supply
+keithley = Keithley_2635B('keithley', 'TCPIP0::192.168.1.1::inst0::INSTR')
+
+# Print the instrument ID
+print(keithley.IDN())
+
+# Set the voltage to 5V
+keithley.voltage(5)
+
+# Set the current limit to 1A
+keithley.current_limit(1)
+
+# Enable the output
+keithley.output('on')
+
+# Disable the output
+keithley.output('off')
+
+# Close the connection to the instrument
+keithley.close()
+```
+In this code, we import the necessary modules and classes from Qcodes. We then create an instance of the `Keithley_2635B` class, passing the instrument name and the connection string as arguments. The connection string specifies the communication protocol and the address of the instrument.
+
+We can then use various methods of the `Keithley_2635B` class to interact with the instrument. For example, we can use the `IDN()` method to get the instrument identification string, `voltage()` method to set the voltage, `current_limit()` method to set the current limit, and `output()` method to enable or disable the output.
+
+Finally, we close the connection to the instrument using the `close()` method.

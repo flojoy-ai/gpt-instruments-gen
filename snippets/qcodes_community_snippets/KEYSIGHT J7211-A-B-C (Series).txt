@@ -1,0 +1,58 @@
+To connect to a KEYSIGHT J7211/A/B/C Lockin Amplifier using Qcodes Community, you can use the following Python script:
+
+```python
+from qcodes.instrument.visa import VisaInstrument
+from qcodes.utils.validators import Ints
+from typing import Optional
+
+
+class Keysight_J7211(VisaInstrument):
+    r"""
+    Qcodes driver for the Keysight J7211 Attenuation Control Unit.
+    Tested with J7211B.
+
+    Args:
+        name: Instrument name
+        address: Address or VISA alias of instrument
+        attenuation: Optional attenuation level (in dB) to set on startup
+        terminator: Termination character in VISA communication.
+    """
+
+    def __init__(self, name: str, address: str,
+                 attenuation: Optional[int] = None,
+                 terminator="\r", **kwargs):
+        super().__init__(name=name, address=address,
+                         terminator=terminator, **kwargs)
+
+        model = self.IDN()['model']
+        if model in ["J7211A", "J7211B"]:
+            vals = Ints(0, 120)
+        elif model in ["J7211C"]:
+            vals = Ints(0, 100)
+        else:
+            raise RuntimeError(f"Model {model} is not supported.")
+
+        self.add_parameter('attenuation', unit='dB',
+                           set_cmd='ATT {:03.0f}',
+                           get_cmd='ATT?',
+                           get_parser=int,
+                           vals=vals,
+                           initial_value=attenuation)
+
+        self.connect_message()
+```
+
+This script defines a class `Keysight_J7211` that inherits from `VisaInstrument` in the `qcodes.instrument.visa` module. The class represents the KEYSIGHT J7211 Attenuation Control Unit.
+
+To use this class, you need to create an instance of it by providing the necessary arguments:
+
+- `name`: The name of the instrument.
+- `address`: The address or VISA alias of the instrument.
+- `attenuation`: Optional attenuation level (in dB) to set on startup.
+- `terminator`: The termination character in VISA communication.
+
+Once you have created an instance of `Keysight_J7211`, you can access and control the instrument using its parameters. In this case, the only parameter defined is `attenuation`, which represents the attenuation level in dB. You can set and get the attenuation level using the `set_cmd` and `get_cmd` commands respectively. The `vals` argument specifies the valid range of attenuation values.
+
+To connect to the instrument, you can call the `connect_message()` method.
+
+Note: This code is a template for creating a driver for the KEYSIGHT J7211 Attenuation Control Unit. You may need to modify it based on your specific requirements and the communication protocol of your instrument.

@@ -1,0 +1,21 @@
+To connect to a SR 865 A Lockin Amplifier using Qcodes, you can use the following code:
+
+```python
+from qcodes.instrument_drivers.stanford_research.SR865 import SR865
+
+# Create an instance of the SR865 driver
+lockin = SR865("lockin", "TCPIP::192.168.1.1::INSTR")
+
+# Connect to the instrument
+lockin.connect()
+
+# Now you can use the lockin object to control the instrument
+# For example, you can set the frequency and read the X value
+lockin.frequency(1000)  # Set the frequency to 1000 Hz
+x_value = lockin.X()  # Read the X value
+
+# Disconnect from the instrument
+lockin.disconnect()
+```
+
+Note that you need to replace `"TCPIP::192.168.1.1::INSTR"` with the actual address of your lock-in amplifier.

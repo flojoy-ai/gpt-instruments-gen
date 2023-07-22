@@ -1,0 +1,42 @@
+Here is a Python script that uses Qcodes to connect to a KEYSIGHT 5222B Network Analyzer:
+
+```python
+from qcodes import Station
+from qcodes.instrument_drivers.Keysight.Keysight_PNA import Keysight_PNA
+
+# Create a station to hold the instruments
+station = Station()
+
+# Connect to the KEYSIGHT 5222B Network Analyzer
+pna = Keysight_PNA('pna', 'TCPIP0::192.168.1.1::inst0::INSTR')
+
+# Add the KEYSIGHT 5222B Network Analyzer to the station
+station.add_component(pna)
+
+# Print the available options on the KEYSIGHT 5222B Network Analyzer
+print(pna.get_options())
+
+# Set the frequency range on the KEYSIGHT 5222B Network Analyzer
+pna.start(1e6)
+pna.stop(1e9)
+
+# Set the power range on the KEYSIGHT 5222B Network Analyzer
+pna._set_power_limits(-30, 10)
+
+# Enable trace averaging on the KEYSIGHT 5222B Network Analyzer
+pna.averages_on()
+
+# Perform a sweep on the KEYSIGHT 5222B Network Analyzer
+pna.run_sweep()
+
+# Get the magnitude data from the KEYSIGHT 5222B Network Analyzer
+magnitude_data = pna.traces[0].magnitude()
+
+# Print the magnitude data
+print(magnitude_data)
+
+# Disconnect from the KEYSIGHT 5222B Network Analyzer
+pna.close()
+```
+
+Note: Replace `'TCPIP0::192.168.1.1::inst0::INSTR'` with the actual IP address or VISA resource string of your KEYSIGHT 5222B Network Analyzer.

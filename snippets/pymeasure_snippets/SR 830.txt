@@ -1,0 +1,26 @@
+Sure! Here's an example Python script that uses Pymeasure to connect to a SR 830 Lock-in Amplifier:
+
+```python
+from pymeasure.instruments.srs import SR830
+
+# Connect to the lock-in amplifier
+lia = SR830("GPIB0::8::INSTR")
+
+# Set the lock-in amplifier parameters
+lia.frequency = 1000  # Set the lock-in frequency to 1 kHz
+lia.sensitivity = 1e-6  # Set the sensitivity to 1 µV
+lia.time_constant = 1e-3  # Set the time constant to 1 ms
+
+# Read the X and Y values
+x = lia.x
+y = lia.y
+
+# Print the X and Y values
+print("X: ", x)
+print("Y: ", y)
+
+# Disconnect from the lock-in amplifier
+lia.disconnect()
+```
+
+This script connects to the lock-in amplifier using the GPIB interface (assuming the lock-in amplifier is connected to GPIB address 8). It then sets the lock-in frequency, sensitivity, and time constant. Finally, it reads the X and Y values from the lock-in amplifier and prints them.

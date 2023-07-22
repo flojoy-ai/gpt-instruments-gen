@@ -1,0 +1,19 @@
+```python
+import qcodes as qc
+from qcodes.instrument_drivers.Keysight.Keysight_N9000A import Keysight_N9000A
+
+# Connect to the spectrum analyzer
+sa = Keysight_N9000A('sa', 'TCPIP0::192.168.1.1::inst0::INSTR')
+
+# Print the instrument ID
+print(sa.IDN())
+
+# Close the connection
+sa.close()
+```
+
+Explanation:
+1. Import the necessary modules: `qcodes` and `Keysight_N9000A` from `qcodes.instrument_drivers.Keysight.Keysight_N9000A`.
+2. Create an instance of the `Keysight_N9000A` class and pass the instrument name ('sa') and the instrument address ('TCPIP0::192.168.1.1::inst0::INSTR') as arguments.
+3. Use the `IDN()` method to get the instrument identification string and print it.
+4. Close the connection to the instrument using the `close()` method.

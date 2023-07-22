@@ -1,0 +1,31 @@
+To connect to a SCPI instrument using Instrumentkit, you can use the `Instrument` class from the `instrumentkit` module. Here's an example script that demonstrates how to connect to a SCPI instrument:
+
+```python
+from instrumentkit import Instrument
+
+# Create an instance of the Instrument class
+instrument = Instrument()
+
+# Connect to the SCPI instrument
+instrument.connect('IP_ADDRESS', PORT)
+
+# Send SCPI commands to the instrument
+instrument.send_command('COMMAND')
+
+# Receive and print the response from the instrument
+response = instrument.receive_response()
+print(response)
+
+# Disconnect from the instrument
+instrument.disconnect()
+```
+
+Replace `'IP_ADDRESS'` with the IP address of your SCPI instrument and `PORT` with the appropriate port number. Replace `'COMMAND'` with the SCPI command you want to send to the instrument.
+
+Note that you may need to install the `instrumentkit` package before running this script. You can install it using pip:
+
+```
+pip install instrumentkit
+```
+
+Make sure to consult the documentation of your specific SCPI instrument to find the correct IP address, port, and SCPI commands to use.

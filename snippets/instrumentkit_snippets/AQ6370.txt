@@ -1,0 +1,41 @@
+Sure! Here's an example Python script that uses Instrumentkit to connect to a Yokogawa AQ6370 Spectrum Analyzer:
+
+```python
+import instrumentkit as ik
+
+# Connect to the Yokogawa AQ6370 Spectrum Analyzer
+osa = ik.yokogawa.Yokogawa6370.open_visa('TCPIP0:192.168.0.35')
+
+# Print the device identification
+print("Device ID:", osa.id)
+
+# Set the start and stop wavelengths
+osa.start_wl = 1030e-9 * ik.units.meter
+osa.stop_wl = 1050e-9 * ik.units.meter
+
+# Set the number of points in the trace
+osa.points = 1000
+
+# Start the sweep
+osa.start_sweep()
+
+# Wait for the sweep to complete
+osa.wait_for_sweep_completion()
+
+# Get the trace data
+data = osa.data()
+
+# Get the wavelength data
+wavelengths = osa.wavelength()
+
+# Print the first 10 data points
+print("Data:", data[:10])
+
+# Print the first 10 wavelength points
+print("Wavelengths:", wavelengths[:10])
+
+# Disconnect from the Yokogawa AQ6370 Spectrum Analyzer
+osa.close()
+```
+
+Make sure to replace `'TCPIP0:192.168.0.35'` with the appropriate VISA address for your Yokogawa AQ6370 Spectrum Analyzer.

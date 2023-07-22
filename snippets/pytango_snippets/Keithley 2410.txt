@@ -1,0 +1,14 @@
+```python
+import PyTango
+
+# Create a DeviceProxy object to connect to the Keithley 2410 Power Supply
+device_proxy = PyTango.DeviceProxy("device_name")
+
+# Example code to interact with the device
+# ...
+
+# Close the connection to the device
+device_proxy._delete_device_proxy()
+```
+
+In the code above, replace `"device_name"` with the actual name of the Keithley 2410 Power Supply device. This code creates a `DeviceProxy` object using PyTango to connect to the device. You can then use the `device_proxy` object to interact with the device, such as reading or setting values. Finally, the connection is closed using the `_delete_device_proxy()` method.

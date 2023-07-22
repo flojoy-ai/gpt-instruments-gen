@@ -1,0 +1,45 @@
+Sure! Here's a Python script that uses Pymeasure to connect to a PS 120-10 Power Supply:
+
+```python
+from pymeasure.adapters import GPIBAdapter
+from pymeasure.instruments import PS120_10
+
+# Create a GPIB adapter
+adapter = GPIBAdapter(address="GPIB::25")
+
+# Create an instance of the PS120_10 instrument
+ps = PS120_10(adapter)
+
+# Enable control of the power supply
+ps.enable_control()
+
+# Train the magnet
+ps.train_magnet([
+    (11.8, 1.0),
+    (13.9, 0.4),
+    (14.9, 0.2),
+    (16.0, 0.1),
+])
+
+# Set the field to 12 T
+ps.set_field(12)
+
+# Print the current field
+print(ps.field)
+
+# Set the field to 0 T
+ps.set_field(0)
+
+# Disable control of the power supply
+ps.disable_control()
+```
+
+This script first creates a GPIB adapter using the `GPIBAdapter` class from Pymeasure. It then creates an instance of the `PS120_10` instrument, passing the adapter as an argument.
+
+The script then enables control of the power supply using the `enable_control()` method. It trains the magnet by calling the `train_magnet()` method with a list of field and current values.
+
+Next, it sets the field to 12 T using the `set_field()` method and prints the current field using the `field` property.
+
+After that, it sets the field to 0 T and finally disables control of the power supply using the `disable_control()` method.
+
+Note: Make sure you have Pymeasure installed (`pip install pymeasure`) and the appropriate GPIB driver for your system.

@@ -1,0 +1,67 @@
+Here is a Python script that uses Qcodes to connect to a Keithley DMM6500 Multimeter:
+
+```python
+from qcodes.instrument.visa import VisaInstrument
+from qcodes.instrument.parameter import Parameter
+from qcodes.utils.validators import Numbers
+
+
+class KeithleyDMM6500(VisaInstrument):
+    def __init__(self, name, address, **kwargs):
+        super().__init__(name, address, terminator="\n", **kwargs)
+
+        self.add_parameter(
+            "voltage",
+            get_cmd="MEAS:VOLT:DC?",
+            get_parser=float,
+            unit="V",
+            vals=Numbers(),
+        )
+
+        self.add_parameter(
+            "current",
+            get_cmd="MEAS:CURR:DC?",
+            get_parser=float,
+            unit="A",
+            vals=Numbers(),
+        )
+
+        self.add_parameter(
+            "resistance",
+            get_cmd="MEAS:RES?",
+            get_parser=float,
+            unit="Ohm",
+            vals=Numbers(),
+        )
+
+        self.connect_message()
+
+    def reset(self):
+        self.write("*RST")
+
+
+# Connect to the Keithley DMM6500
+dmm = KeithleyDMM6500("dmm", "TCPIP0::192.168.1.1::INSTR")
+
+# Reset the device
+dmm.reset()
+
+# Read voltage
+voltage = dmm.voltage()
+print("Voltage:", voltage)
+
+# Read current
+current = dmm.current()
+print("Current:", current)
+
+# Read resistance
+resistance = dmm.resistance()
+print("Resistance:", resistance)
+
+# Close the connection
+dmm.close()
+```
+
+This script creates a custom instrument class `KeithleyDMM6500` that inherits from `VisaInstrument`. It adds three parameters: `voltage`, `current`, and `resistance`, which are used to measure the corresponding quantities using the `MEAS` commands of the Keithley DMM6500.
+
+The script then creates an instance of `KeithleyDMM6500` and connects to the instrument using the specified address. It resets the device, reads the voltage, current, and resistance values, and prints them. Finally, it closes the connection to the instrument.

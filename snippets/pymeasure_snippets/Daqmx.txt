@@ -1,0 +1,27 @@
+Sure! Here's an example of a Python script that uses Pymeasure to connect to a DAQmx device:
+
+```python
+from pymeasure.adapters import DAQmxAdapter
+
+# Create a DAQmxAdapter object
+adapter = DAQmxAdapter()
+
+# Connect to the DAQmx device
+adapter.connect()
+
+# Perform some measurements or control operations
+# ...
+
+# Disconnect from the DAQmx device
+adapter.disconnect()
+```
+
+In this example, we import the `DAQmxAdapter` class from the `pymeasure.adapters` module. We then create an instance of the `DAQmxAdapter` class called `adapter`.
+
+To connect to the DAQmx device, we call the `connect()` method of the `adapter` object. This establishes a connection to the device.
+
+After connecting, you can perform measurements or control operations using the DAQmx device. This could include reading analog or digital inputs, setting analog or digital outputs, or performing other operations supported by the device.
+
+Finally, to disconnect from the DAQmx device, we call the `disconnect()` method of the `adapter` object. This closes the connection to the device.
+
+Note that you may need to install the necessary dependencies, such as the NI-DAQmx driver, for this code to work properly.

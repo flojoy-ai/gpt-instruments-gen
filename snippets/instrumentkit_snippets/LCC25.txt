@@ -1,0 +1,33 @@
+To connect to the LCC25 Power Supplies using Instrumentkit, you can use the `SerialInstrument` class provided by Instrumentkit. Here's an example script:
+
+```python
+from instrumentkit import SerialInstrument
+
+# Define the serial port settings
+port = 'COM1'  # Replace with the actual serial port name
+baudrate = 9600  # Replace with the actual baudrate
+
+# Connect to the LCC25 Power Supplies
+power_supply = SerialInstrument(port, baudrate)
+
+# Set the output voltage and current
+power_supply.sendcmd('VSET 5.0')  # Set the output voltage to 5.0V
+power_supply.sendcmd('ISET 1.0')  # Set the output current to 1.0A
+
+# Enable the output
+power_supply.sendcmd('OUT 1')  # Enable the output
+
+# Read the output voltage and current
+voltage = power_supply.query('VOUT?')
+current = power_supply.query('IOUT?')
+print(f"Output Voltage: {voltage}V")
+print(f"Output Current: {current}A")
+
+# Disable the output
+power_supply.sendcmd('OUT 0')  # Disable the output
+
+# Disconnect from the power supply
+power_supply.close()
+```
+
+Make sure to replace `'COM1'` with the actual serial port name and `9600` with the actual baudrate used by your LCC25 Power Supplies.

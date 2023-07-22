@@ -1,0 +1,18 @@
+To connect to a Lakeshore 370 Power Meter using Instrumentkit, you can use the following Python script:
+
+```python
+import instrumentkit as ik
+
+# Connect to the Lakeshore 370 Power Meter
+power_meter = ik.lakeshore.Lakeshore370.open_gpibusb('/dev/ttyUSB0', 1)
+
+# Read the power measurement
+power = power_meter.power
+
+# Print the power measurement
+print(f"Power: {power:.2f} {power.units}")
+```
+
+Make sure to replace `'/dev/ttyUSB0'` with the correct serial port of your Lakeshore 370 Power Meter. The `1` parameter is the GPIB address of the instrument.
+
+This script opens a connection to the Lakeshore 370 Power Meter and reads the power measurement using the `power` property. The power measurement is then printed to the console.

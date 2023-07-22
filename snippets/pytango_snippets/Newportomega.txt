@@ -1,0 +1,17 @@
+```python
+import PyTango
+
+# Create a DeviceProxy object to connect to the Newportomega device
+device_proxy = PyTango.DeviceProxy("device_name")
+
+# Read a device attribute
+attribute_value = device_proxy.read_attribute("attribute_name").value
+
+# Write a device attribute
+device_proxy.write_attribute("attribute_name", attribute_value)
+
+# Call a device command
+device_proxy.command_inout("command_name")
+```
+
+In the code above, replace "device_name" with the actual name of the Newportomega device you want to connect to. Replace "attribute_name" with the name of the attribute you want to read or write, and replace "command_name" with the name of the command you want to call.

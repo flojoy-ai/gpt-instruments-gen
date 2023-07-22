@@ -1,0 +1,23 @@
+```python
+from qcodes.instrument_drivers.Keysight.KeysightAgilent_33XXX import Keysight33510B
+
+# Create an instance of the Keysight33510B instrument
+signal_generator = Keysight33510B('signal_generator', 'TCPIP0::192.168.1.1::INSTR')
+
+# Connect to the instrument
+signal_generator.connect()
+
+# Perform operations with the instrument
+# ...
+
+# Disconnect from the instrument
+signal_generator.disconnect()
+```
+
+In the code above, we import the `Keysight33510B` class from the `KeysightAgilent_33XXX` module of the `qcodes.instrument_drivers.Keysight` package. We then create an instance of the `Keysight33510B` instrument with the name `'signal_generator'` and the appropriate address (`'TCPIP0::192.168.1.1::INSTR'` in this example).
+
+Next, we connect to the instrument using the `connect()` method. This establishes the communication with the KEYSIGHT 33510B RF Signal Generator.
+
+After connecting, you can perform various operations with the instrument, such as setting waveform parameters, generating waveforms, etc. These operations will depend on the specific methods and properties provided by the `Keysight33510B` class.
+
+Finally, when you are done using the instrument, you can disconnect from it using the `disconnect()` method.

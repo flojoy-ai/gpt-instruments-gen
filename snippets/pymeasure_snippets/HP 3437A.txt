@@ -1,0 +1,32 @@
+Sure! Here's a Python script that uses Pymeasure to connect to a HP 3437A Multimeter:
+
+```python
+from pymeasure.adapters import PrologixAdapter
+from pymeasure.instruments.hp import HP3437A
+
+# Create a PrologixAdapter object to connect to the instrument
+adapter = PrologixAdapter("GPIB0::10::INSTR")
+
+# Create an HP3437A object using the adapter
+multimeter = HP3437A(adapter)
+
+# Open the connection to the instrument
+multimeter.open()
+
+# Set the measurement range to 1V
+multimeter.range = 1
+
+# Set the number of readings to 10
+multimeter.number_readings = 10
+
+# Read the measured data
+data = multimeter.read_data()
+
+# Print the measured data
+print(data)
+
+# Close the connection to the instrument
+multimeter.close()
+```
+
+This script connects to the HP 3437A Multimeter using a PrologixAdapter, sets the measurement range to 1V, sets the number of readings to 10, reads the measured data, and then prints the data. Finally, it closes the connection to the instrument.

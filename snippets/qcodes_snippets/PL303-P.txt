@@ -1,0 +1,22 @@
+```python
+import qcodes as qc
+from qcodes.instrument_drivers.tektronix.PL303P import PL303P
+
+# Connect to the power supply
+power_supply = PL303P('power_supply', 'USB0::0x0699::0x0363::C033251::INSTR')
+
+# Set the output voltage to 5V
+power_supply.voltage(5)
+
+# Enable the output
+power_supply.output('on')
+
+# Disable the output after 10 seconds
+qc.sleep(10)
+power_supply.output('off')
+
+# Close the connection to the power supply
+power_supply.close()
+```
+
+This code imports the necessary modules and connects to a PL303-P Power Supply using its USB address. It then sets the output voltage to 5V, enables the output, waits for 10 seconds, and finally disables the output. Finally, it closes the connection to the power supply.

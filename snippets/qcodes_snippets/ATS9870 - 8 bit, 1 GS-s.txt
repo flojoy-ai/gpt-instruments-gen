@@ -1,0 +1,64 @@
+```python
+import qcodes as qc
+from qcodes.instrument_drivers.AlazarTech.ATS9870 import AlazarTech_ATS9870
+
+def do_acquire():
+    b = AlazarTech_ATS9870("b", "1", "1")
+
+    board_model = b.get_board_model()
+
+    b.clock_source('INTERNAL_CLOCK')
+    b.sample_rate(1e9)
+
+    if board_model == 'ATS9870':
+        b.input_range1(0.4)
+        b.trigger_operation('TRIG_ENGINE_OP_J')
+        b.trigger_engine1('TRIG_ENGINE_J')
+        b.trigger_source1('EXTERNAL')
+        b.external_trigger_coupling('DC')
+        b.external_trigger_range('ETR_2V5')
+        b.trigger_slope1('TRIG_SLOPE_POSITIVE')
+        b.trigger_level1(160)
+        b.trigger_delay(0)
+        b.timeout_ticks(0)
+
+    b.num_averages(10)
+    b.samples_per_record(1024)
+    b.records_per_buffer(100)
+    b.buffers_per_acquisition(10)
+
+    b.prepare_to_acquire()
+
+    b.start_acquisition()
+
+    b.wait_for_acquisition()
+
+    chA = b.chA()
+    chB = b.chB()
+
+    return chA, chB
+
+def stats(chan):
+    cmin, cmax = chan.min(), chan.max()
+    return chan.shape, cmin, cmax, cmax - cmin, np.mean(chan[:])
+
+def main():
+    chA, chB = do_acquire()
+
+    stat_str = 'shape = {}, min = {}, max = {}, delta = {}, mean = {}'
+
+    plt.plot(range(1024), chA, 'r-')
+    plt.plot(range(1024), chB, 'g-')
+    plt.show()
+
+    print('acquisition statistics:')
+    print('channel A:')
+    print(stat_str.format(*stats(chA)))
+    print('channel B:')
+    print(stat_str.format(*stats(chB)))
+
+if __name__ == '__main__':
+    main()
+```
+
+Note: The code assumes that you have already installed the QCoDeS package and the AlazarTech ATS9870 driver.

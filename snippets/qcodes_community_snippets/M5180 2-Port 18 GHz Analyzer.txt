@@ -1,0 +1,21 @@
+Sure! Here's an example code that uses Qcodes Community to connect to a M5180 2-Port 18 GHz Analyzer Network Analyzer:
+
+```python
+import qcodes as qc
+from qcodes.instrument_drivers.Keysight.Keysight_M5180A import Keysight_M5180A
+
+# Connect to the instrument
+m5180 = Keysight_M5180A('m5180', 'TCPIP0::192.168.1.1::inst0::INSTR')
+
+# Print the instrument ID
+print(m5180.IDN())
+
+# Close the connection
+m5180.close()
+```
+
+Make sure to replace `'TCPIP0::192.168.1.1::inst0::INSTR'` with the actual VISA address of your M5180 analyzer.
+
+This code imports the necessary modules, creates an instance of the `Keysight_M5180A` instrument driver, connects to the instrument using the specified VISA address, prints the instrument ID, and finally closes the connection.
+
+Let me know if you need any further assistance!

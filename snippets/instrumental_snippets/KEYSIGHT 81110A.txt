@@ -1,0 +1,65 @@
+Here is a Python script that uses Instrumental to connect to a KEYSIGHT 81110A Function Generator:
+
+```python
+from instrumental import instrument, list_instruments
+
+# List available instruments
+print(list_instruments())
+
+# Connect to the KEYSIGHT 81110A Function Generator
+func_gen = instrument('KEYSIGHT 81110A')
+
+# Set the delay, width, high, and low values for channel 1
+func_gen.delay.set(0.1, channel=1)
+func_gen.width.set(1e-6, channel=1)
+func_gen.high.set(5, channel=1)
+func_gen.low.set(0, channel=1)
+
+# Get the delay, width, high, and low values for channel 1
+delay = func_gen.delay.get(channel=1)
+width = func_gen.width.get(channel=1)
+high = func_gen.high.get(channel=1)
+low = func_gen.low.get(channel=1)
+
+print(f"Delay: {delay} s")
+print(f"Width: {width} s")
+print(f"High: {high} V")
+print(f"Low: {low} V")
+
+# Set the status of channel 1 to 'on'
+func_gen.status.set('on', channel=1)
+
+# Get the status of channel 1
+status = func_gen.status.get(channel=1)
+print(f"Status: {status}")
+
+# Set the display status to 'on'
+func_gen.display.set('on')
+
+# Get the display status
+display = func_gen.display.get()
+print(f"Display: {display}")
+
+# Set the instrument to triggered mode
+func_gen.set_mode_triggered()
+
+# Set the instrument to continuous mode
+func_gen.set_mode_continuous()
+
+# Reset the instrument to default values
+func_gen.reset()
+```
+
+This script first lists the available instruments using `list_instruments()` function from Instrumental. Then, it connects to the KEYSIGHT 81110A Function Generator using the `instrument()` function and assigns it to the `func_gen` variable.
+
+The script sets the delay, width, high, and low values for channel 1 using the `set()` method of each parameter. It also gets the values using the `get()` method and prints them.
+
+Next, it sets the status of channel 1 to 'on' using the `set()` method of the `status` parameter. It gets the status using the `get()` method and prints it.
+
+Then, it sets the display status to 'on' using the `set()` method of the `display` parameter. It gets the display status using the `get()` method and prints it.
+
+The script sets the instrument to triggered mode using the `set_mode_triggered()` method and then sets it to continuous mode using the `set_mode_continuous()` method.
+
+Finally, it resets the instrument to default values using the `reset()` method.
+
+Note: Make sure to install the `instrumental` package before running this script.

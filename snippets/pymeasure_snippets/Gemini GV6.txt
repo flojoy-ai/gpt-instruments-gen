@@ -1,0 +1,33 @@
+Sure! Here's a Python script that uses Pymeasure to connect to a Gemini GV6 motor controller:
+
+```python
+from pymeasure.instruments.parker import ParkerGV6
+
+# Create an instance of the ParkerGV6 instrument
+motor = ParkerGV6("ASRL1::INSTR")
+
+# Connect to the motor controller
+motor.connect()
+
+# Enable the motor
+motor.enable()
+
+# Set the motor velocity to 5 revolutions per second
+motor.velocity = 5
+
+# Move the motor to a specific angle
+motor.angle = 90
+
+# Check if the motor is currently moving
+is_moving = motor.is_moving()
+
+# Disable the motor
+motor.disable()
+
+# Disconnect from the motor controller
+motor.disconnect()
+```
+
+This script creates an instance of the `ParkerGV6` instrument, connects to the motor controller using the specified address (e.g., `"ASRL1::INSTR"`), enables the motor, sets the velocity, moves the motor to a specific angle, checks if the motor is moving, disables the motor, and finally disconnects from the motor controller.
+
+Please note that you may need to modify the address `"ASRL1::INSTR"` to match the actual address of your Gemini GV6 motor controller.

@@ -1,0 +1,40 @@
+To connect to an ATS9373 board using Qcodes, you can use the `AlazarTech_ATS` driver provided by Qcodes. Here's an example script:
+
+```python
+import qcodes as qc
+from qcodes.instrument_drivers.AlazarTech.ATS9373 import AlazarTech_ATS9373
+
+# Connect to the ATS9373 board
+board = AlazarTech_ATS9373("board", system_id=1, board_id=1)
+
+# Print the board information
+print(board.get_idn())
+
+# Configure the board settings
+board.clock_source('INTERNAL_CLOCK')
+board.sample_rate(4e9)
+board.input_range1(0.4)
+board.input_range2(0.4)
+board.trigger_operation('J_or_K', 'OR', 'J', 'POSITIVE', 0.1, 'K', 'POSITIVE', 0.1)
+board.trigger_delay(0)
+board.trigger_timeout(0)
+board.records_per_buffer(1)
+board.records_per_acquisition(10)
+
+# Start the acquisition
+board.start_acquisition()
+
+# Read the acquired data
+data = board.acquire()
+
+# Print the acquired data
+print(data)
+
+# Stop the acquisition
+board.stop_acquisition()
+
+# Disconnect from the board
+board.close()
+```
+
+Note: This script assumes that you have already installed Qcodes and the AlazarTech ATS driver. You may need to modify the system_id and board_id parameters to match your specific setup.

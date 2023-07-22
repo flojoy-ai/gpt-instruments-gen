@@ -1,0 +1,36 @@
+Sure! Here's an example Python script that uses Qcodes to connect to a PL068-P Power Supply:
+
+```python
+import qcodes as qc
+from qcodes.instrument_drivers.Keysight.Keysight_34465A import Keysight_34465A
+
+# Connect to the power supply
+power_supply = Keysight_34465A('power_supply', 'TCPIP0::192.168.1.1::inst0::INSTR')
+
+# Print the power supply IDN
+print(power_supply.IDN())
+
+# Set the voltage to 5V
+power_supply.voltage(5)
+
+# Set the current limit to 1A
+power_supply.current_limit(1)
+
+# Enable the output
+power_supply.output_enable(True)
+
+# Disable the output after 5 seconds
+qc.sleep(5)
+power_supply.output_enable(False)
+
+# Close the connection to the power supply
+power_supply.close()
+```
+
+In this script, we import the necessary modules and create an instance of the `Keysight_34465A` class, which represents the PL068-P Power Supply. We pass the IP address of the power supply as the second argument to the class constructor.
+
+We then use various methods of the `Keysight_34465A` class to interact with the power supply. For example, we can use the `voltage()` method to set the voltage, the `current_limit()` method to set the current limit, and the `output_enable()` method to enable or disable the output.
+
+Finally, we close the connection to the power supply using the `close()` method.
+
+Note: Make sure to replace `'TCPIP0::192.168.1.1::inst0::INSTR'` with the actual IP address of your PL068-P Power Supply.

@@ -1,0 +1,33 @@
+Sure! Here's an example Python script that uses Qcodes Community to connect to a KEYSIGHT N3300A Electronic Load:
+
+```python
+import qcodes as qc
+from qcodes.instrument_drivers.Keysight.Keysight_N3300A import Keysight_N3300A
+
+# Connect to the KEYSIGHT N3300A Electronic Load
+load = Keysight_N3300A('load', 'TCPIP0::192.168.1.1::inst0::INSTR')
+
+# Print the instrument ID
+print(load.IDN())
+
+# Set the load to constant current mode with 1A current
+load.current(1)
+
+# Enable the load
+load.output('on')
+
+# Disable the load after 5 seconds
+qc.sleep(5)
+load.output('off')
+
+# Close the connection to the load
+load.close()
+```
+
+In this script, we first import the necessary modules: `qcodes` and the `Keysight_N3300A` instrument driver from the `qcodes.instrument_drivers.Keysight` package.
+
+Then, we create an instance of the `Keysight_N3300A` instrument by providing the instrument name ('load') and the instrument address ('TCPIP0::192.168.1.1::inst0::INSTR').
+
+We can then use the instrument to perform various operations. In this example, we print the instrument ID, set the load to constant current mode with 1A current, enable the load, wait for 5 seconds using `qc.sleep()`, and then disable the load.
+
+Finally, we close the connection to the load using `load.close()`.

@@ -1,0 +1,30 @@
+Sure! Here's a Python script that uses Pymeasure to connect to an Apsin 26G RF Signal Generator:
+
+```python
+from pymeasure.instruments.apsin import Apsin26G
+
+# Connect to the RF Signal Generator
+signal_generator = Apsin26G("GPIB0::1::INSTR")
+
+# Set the frequency to 1 GHz
+signal_generator.frequency = 1e9
+
+# Set the power level to -10 dBm
+signal_generator.power_level = -10
+
+# Enable the RF output
+signal_generator.output = True
+
+# Disconnect from the RF Signal Generator
+signal_generator.disconnect()
+```
+
+In this script, we first import the `Apsin26G` class from the `pymeasure.instruments.apsin` module. We then create an instance of the `Apsin26G` class, passing the instrument's address (e.g., "GPIB0::1::INSTR") as an argument to the constructor.
+
+Next, we can use various properties of the `Apsin26G` class to control the RF Signal Generator. In this example, we set the frequency to 1 GHz using the `frequency` property and the power level to -10 dBm using the `power_level` property.
+
+We then enable the RF output by setting the `output` property to `True`.
+
+Finally, we disconnect from the RF Signal Generator by calling the `disconnect()` method.
+
+Note: Make sure you have the necessary drivers and libraries installed for your RF Signal Generator and that it is properly connected to your computer before running this script.

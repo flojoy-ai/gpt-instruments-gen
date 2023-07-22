@@ -1,0 +1,42 @@
+Here is an example Python script that uses Qcodes to connect to a Tektronix AWG5014 RF Signal Generator:
+
+```python
+import qcodes as qc
+from qcodes.instrument_drivers.tektronix.AWG5014 import TektronixAWG5014
+
+# Connect to the AWG5014
+awg = TektronixAWG5014('awg', 'TCPIP0::192.168.1.1::inst0::INSTR')
+
+# Set the clock source to internal
+awg.clock_source('INT')
+
+# Set the waveform for channel 1
+awg.ch1_waveform('SINE')
+
+# Set the amplitude for channel 1
+awg.ch1_amplitude(0.5)
+
+# Run the AWG
+awg.run()
+
+# Disconnect from the AWG5014
+awg.close()
+```
+
+This script first imports the necessary modules and then creates an instance of the `TektronixAWG5014` class, which represents the AWG5014 RF Signal Generator. The IP address of the instrument is passed as an argument to the constructor.
+
+The script then sets the clock source to internal and sets the waveform and amplitude for channel 1. Finally, it runs the AWG and closes the connection.
+
+Note that you will need to install the Qcodes library and the Tektronix AWG5014 driver before running this script. You can install Qcodes using pip:
+
+```
+pip install qcodes
+```
+
+And you can install the Tektronix AWG5014 driver using pip as well:
+
+```
+pip install qcodes-drivers-tektronix-AWG5014
+```
+
+Make sure to replace the IP address in the script with the actual IP address of your AWG5014 instrument.

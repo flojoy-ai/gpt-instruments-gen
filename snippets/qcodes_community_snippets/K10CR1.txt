@@ -1,0 +1,39 @@
+To connect to a K10CR1 Motion using Qcodes Community, you can use the following Python script:
+
+```python
+import qcodes as qc
+from qcodes.instrument_drivers.Thorlabs import Thorlabs_K10CR1
+
+# Connect to the Thorlabs K10CR1 instrument
+k10cr1 = Thorlabs_K10CR1("k10cr1", device_id=1, apt=apt)
+
+# Print the hardware information of the device
+print(k10cr1.get_idn())
+
+# Set the position of the rotator
+k10cr1.position(90)
+
+# Get the current position of the rotator
+position = k10cr1.position()
+print(f"Current position: {position} degrees")
+
+# Set the minimum velocity of the rotator
+k10cr1.velocity_min(1)
+
+# Set the maximum velocity of the rotator
+k10cr1.velocity_max(10)
+
+# Move the rotator in the forward direction
+k10cr1.move_direction(Thorlabs_K10CR1.RotationDirection.FORWARD)
+
+# Move the rotator to the home position
+k10cr1.move_home()
+
+# Stop the rotator
+k10cr1.stop()
+
+# Disconnect from the instrument
+k10cr1.close()
+```
+
+Note: Make sure to replace `device_id=1` with the appropriate device ID for your setup.

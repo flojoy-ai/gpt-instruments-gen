@@ -1,0 +1,28 @@
+Sure! Here's an example script that uses Pymeasure to connect to a 2700A Bridge Multimeter:
+
+```python
+from pymeasure import instruments
+
+# Connect to the multimeter
+multimeter = instruments.K2700A("GPIB::1::INSTR")
+
+# Set the measurement mode to resistance
+multimeter.mode = "resistance"
+
+# Perform a measurement
+measurement = multimeter.measure()
+
+# Print the measurement result
+print("Resistance: {} Ohms".format(measurement))
+
+# Disconnect from the multimeter
+multimeter.disconnect()
+```
+
+In this script, we first import the `K2700A` class from the `pymeasure.instruments` module. We then create an instance of the `K2700A` class, passing the GPIB address of the multimeter as an argument.
+
+We can then use various methods and properties of the `K2700A` object to interact with the multimeter. In this example, we set the measurement mode to resistance using the `mode` property, and then perform a measurement using the `measure` method.
+
+Finally, we print the measurement result and disconnect from the multimeter using the `disconnect` method.
+
+Note that you may need to adjust the GPIB address in the `K2700A` constructor to match the address of your specific multimeter.

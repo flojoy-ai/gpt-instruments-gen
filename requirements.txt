@@ -1,0 +1,7 @@
+pandas
+numpy
+requests
+tqdm
+beautifulsoup4
+openai
+airtable

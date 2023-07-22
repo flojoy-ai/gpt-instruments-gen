@@ -1,0 +1,25 @@
+To connect to a HDAWG Wavemeter using Qcodes Community, you can use the following Python script:
+
+```python
+from qcodes import Station, initialise_or_create_database_at
+from qcodes.instrument_drivers.zhinst import ZIHDAWG8
+
+# Create a database for storing the measurement data
+initialise_or_create_database_at('path_to_database')
+
+# Create a station to hold the instruments
+station = Station()
+
+# Connect to the HDAWG instrument
+hdawg = ZIHDAWG8('hdawg', 'dev1234')
+station.add_component(hdawg)
+
+# Now you can use the HDAWG instrument for measurements
+hdawg.enable_channel(1)
+hdawg.start_awg(1)
+
+# Close the connection to the instruments
+hdawg.close()
+```
+
+This script creates a database for storing the measurement data, creates a station to hold the instruments, connects to the HDAWG instrument with the specified device ID, and performs some basic operations on the instrument. Finally, it closes the connection to the instrument.

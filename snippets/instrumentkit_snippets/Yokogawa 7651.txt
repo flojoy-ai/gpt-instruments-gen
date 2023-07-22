@@ -1,0 +1,26 @@
+Sure! Here's an example Python script that uses Instrumentkit to connect to a Yokogawa 7651 Power Supply:
+
+```python
+import instrumentkit as ik
+
+# Connect to the Yokogawa 7651 Power Supply
+power_supply = ik.yokogawa.Yokogawa7651.open_gpibusb('/dev/ttyUSB0')
+
+# Set the output voltage to 5V
+power_supply.output_voltage = 5
+
+# Enable the output
+power_supply.output_enabled = True
+
+# Read the output current
+output_current = power_supply.output_current
+print(f"Output Current: {output_current} A")
+
+# Disable the output
+power_supply.output_enabled = False
+
+# Close the connection to the power supply
+power_supply.close()
+```
+
+Make sure to replace `'/dev/ttyUSB0'` with the correct device path for your Yokogawa 7651 Power Supply.

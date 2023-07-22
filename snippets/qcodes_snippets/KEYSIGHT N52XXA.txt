@@ -1,0 +1,19 @@
+```python
+import qcodes as qc
+from qcodes.instrument_drivers.Keysight.Keysight_N52xx import Keysight_N52xx
+
+# Connect to the network analyzer
+nwa = Keysight_N52xx('nwa', 'TCPIP0::192.168.1.1::inst0::INSTR')
+
+# Print the IDN string of the network analyzer
+print(nwa.IDN())
+
+# Close the connection to the network analyzer
+nwa.close()
+```
+
+Explanation:
+1. Import the necessary modules: `qcodes` and `Keysight_N52xx` from `qcodes.instrument_drivers.Keysight.Keysight_N52xx`.
+2. Create an instance of the `Keysight_N52xx` class and pass the instrument name and connection string as arguments. Replace `'nwa'` with the desired instrument name and `'TCPIP0::192.168.1.1::inst0::INSTR'` with the appropriate connection string for your network analyzer.
+3. Use the `IDN()` method to retrieve the identification string of the network analyzer and print it.
+4. Close the connection to the network analyzer using the `close()` method.

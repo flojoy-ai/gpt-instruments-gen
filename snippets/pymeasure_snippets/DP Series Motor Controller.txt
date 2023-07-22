@@ -1,0 +1,35 @@
+Sure! Here's an example of a Python script that uses Pymeasure to connect to a DP Series Motor Controller:
+
+```python
+from pymeasure.instruments.newport import DPSSeries
+
+# Connect to the motor controller
+motor = DPSSeries("COM1")
+
+# Set the motor controller parameters
+motor.write("SOUR:VOLT 5")  # Set the voltage to 5V
+motor.write("SOUR:CURR 1")  # Set the current to 1A
+
+# Enable the motor controller
+motor.write("OUTP ON")
+
+# Move the motor to a specific position
+motor.write("MOVE 100")  # Move to position 100
+
+# Wait for the motor to reach the target position
+motor.wait_for("IDLE")
+
+# Disable the motor controller
+motor.write("OUTP OFF")
+
+# Disconnect from the motor controller
+motor.disconnect()
+```
+
+In this example, we first import the `DPSSeries` class from the `pymeasure.instruments.newport` module. We then create an instance of the `DPSSeries` class, specifying the serial port to which the motor controller is connected (e.g., `"COM1"`).
+
+We can then use the `write` method to send commands to the motor controller. In this example, we set the voltage and current parameters, enable the motor controller, move the motor to a specific position, wait for the motor to reach the target position, and finally disable the motor controller.
+
+Finally, we disconnect from the motor controller using the `disconnect` method.
+
+Note: Make sure to replace `"COM1"` with the appropriate serial port for your setup.

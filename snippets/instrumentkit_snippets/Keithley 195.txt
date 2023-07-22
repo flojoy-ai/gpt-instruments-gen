@@ -1,0 +1,19 @@
+Sure! Here's an example Python script that uses Instrumentkit to connect to a Keithley 195 Multimeter:
+
+```python
+import instrumentkit as ik
+
+# Connect to the Keithley 195 Multimeter
+dmm = ik.keithley.Keithley195.open_gpibusb('/dev/ttyUSB0', 12)
+
+# Set the measurement mode to resistance
+dmm.mode = dmm.Mode.resistance
+
+# Perform a measurement
+measurement = dmm.measure()
+
+# Print the measurement result
+print(f"Measurement: {measurement}")
+```
+
+Make sure to replace `'/dev/ttyUSB0'` with the correct serial port of your Keithley 195 Multimeter.

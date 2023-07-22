@@ -1,0 +1,44 @@
+To connect to a KEYSIGHT 34980A Submodule DAQ board using Qcodes, you can use the following Python script:
+
+```python
+from qcodes import VisaInstrument, InstrumentChannel
+from typing import Union, List, Tuple, Optional
+
+
+class KeysightSubModule(InstrumentChannel):
+    # ... (code omitted for brevity)
+
+
+class KeysightSwitchMatrixSubModule(KeysightSubModule):
+    # ... (code omitted for brevity)
+
+
+# Create an instance of the KEYSIGHT 34980A Submodule DAQ board
+submodule = KeysightSwitchMatrixSubModule(parent=None, name='Submodule', slot=1)
+
+# Connect to the instrument
+submodule.connect()
+
+# Perform operations on the submodule, such as connecting channels
+submodule.connect_paths([(1, 1), (2, 3)])
+
+# Disconnect channels
+submodule.disconnect_paths([(1, 1), (2, 3)])
+
+# Check if a channel is open/disconnected
+is_open = submodule.is_open(1, 1)
+
+# Check if a channel is closed/connected
+is_closed = submodule.is_closed(1, 1)
+
+# Check if a list of channels is closed/connected
+are_closed = submodule.are_closed([(1, 1), (2, 3)])
+
+# Check if a list of channels is open/disconnected
+are_open = submodule.are_open([(1, 1), (2, 3)])
+
+# Disconnect from the instrument
+submodule.disconnect()
+```
+
+This script creates an instance of the `KeysightSwitchMatrixSubModule` class, which is a subclass of `KeysightSubModule` and `InstrumentChannel`. It then connects to the instrument using the `connect()` method and performs various operations on the submodule, such as connecting and disconnecting channels. Finally, it disconnects from the instrument using the `disconnect()` method.

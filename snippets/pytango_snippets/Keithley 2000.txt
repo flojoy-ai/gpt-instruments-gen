@@ -1,0 +1,14 @@
+```python
+import PyTango
+
+# Create a DeviceProxy object to connect to the Keithley 2000 Multimeter
+device_proxy = PyTango.DeviceProxy("device_name")
+
+# Read the value from the multimeter
+value = device_proxy.read_attribute("attribute_name").value
+
+# Print the value
+print(value)
+```
+
+In the code above, replace `"device_name"` with the actual name of the Keithley 2000 Multimeter device in your Tango database, and `"attribute_name"` with the name of the attribute you want to read from the multimeter.

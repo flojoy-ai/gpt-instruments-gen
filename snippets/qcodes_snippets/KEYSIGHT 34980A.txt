@@ -1,0 +1,24 @@
+To connect to a KEYSIGHT 34980A DAQ board using Qcodes, you can use the following Python script:
+
+```python
+from qcodes.instrument_drivers.Keysight.Keysight_34980A import Keysight34980A
+
+# Create an instance of the instrument
+daq = Keysight34980A('daq', 'TCPIP0::192.168.1.1::INSTR')
+
+# Connect to the instrument
+daq.connect()
+
+# Perform operations on the instrument
+daq.reset()
+daq.disconnect_all()
+
+# Disconnect from the instrument
+daq.disconnect()
+```
+
+This script imports the `Keysight34980A` class from the `qcodes.instrument_drivers.Keysight.Keysight_34980A` module. It then creates an instance of the instrument with the name 'daq' and the instrument address 'TCPIP0::192.168.1.1::INSTR'. The `connect()` method is called to establish a connection to the instrument.
+
+After connecting, you can perform various operations on the instrument. In this example, the `reset()` method is called to perform an instrument reset, and the `disconnect_all()` method is called to open/disconnect all connections on the module.
+
+Finally, the `disconnect()` method is called to disconnect from the instrument.

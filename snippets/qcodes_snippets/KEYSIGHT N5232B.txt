@@ -1,0 +1,56 @@
+```python
+from qcodes import Station
+from qcodes.instrument_drivers.Keysight.Keysight_P9372A import Keysight_P9372A
+
+# Create a station to hold the instruments
+station = Station()
+
+# Connect to the KEYSIGHT N5232B Network Analyzer
+na = Keysight_P9372A('na', 'TCPIP0::192.168.1.1::inst0::INSTR')
+station.add_component(na)
+
+# Print the available options on the network analyzer
+print(na.get_options())
+
+# Set the frequency range
+na.start(1e9)
+na.stop(10e9)
+
+# Set the power range
+na._set_power_limits(-30, 10)
+
+# Enable trace averaging
+na.averages_on()
+
+# Set the number of averages
+na.averages(10)
+
+# Set the IF bandwidth
+na.if_bandwidth(1e3)
+
+# Set the number of points in a sweep
+na.points(1001)
+
+# Set the electrical delay
+na.electrical_delay(0)
+
+# Set the sweep mode
+na.sweep_mode('CONT')
+
+# Set the trigger source
+na.trigger_source('EXT')
+
+# Select the active trace
+na.active_trace(1)
+
+# Run a sweep on the network analyzer
+na.run_sweep()
+
+# Get the data from the active trace
+data = na.traces[0].get()
+
+# Print the data
+print(data)
+```
+
+Note: The above code assumes that the KEYSIGHT N5232B Network Analyzer is connected to the computer via TCP/IP at IP address 192.168.1.1. You may need to modify the IP address to match your setup.

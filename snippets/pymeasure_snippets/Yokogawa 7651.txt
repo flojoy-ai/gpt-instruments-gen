@@ -1,0 +1,35 @@
+Sure! Here's a Python script that uses Pymeasure to connect to a Yokogawa 7651 Power Supply:
+
+```python
+from pymeasure.adapters import GPIBAdapter
+from pymeasure.instruments.yokogawa import Yokogawa7651
+
+# Create a GPIB adapter
+adapter = GPIBAdapter(address=1)
+
+# Connect to the Yokogawa 7651 Power Supply
+yoko = Yokogawa7651(adapter)
+
+# Set up the power supply
+yoko.apply_current()
+yoko.source_current_range = 10e-3
+yoko.compliance_voltage = 10
+yoko.source_current = 0
+
+# Enable the power supply
+yoko.enable_source()
+
+# Ramp the current to 5 mA
+yoko.ramp_to_current(5e-3)
+
+# Shutdown the power supply
+yoko.shutdown()
+```
+
+In this script, we first import the necessary modules from Pymeasure. We create a GPIBAdapter object to connect to the Yokogawa 7651 Power Supply using the GPIB address 1. Then, we create a Yokogawa7651 object, passing in the adapter.
+
+We can then use the various methods and properties of the Yokogawa7651 object to interact with the power supply. In this example, we set up the power supply to source current, set the current range to 10 mA, set the compliance voltage to 10 V, and set the source current to 0 mA.
+
+We enable the power supply, ramp the current to 5 mA using the `ramp_to_current` method, and finally, shut down the power supply.
+
+Note that you may need to adjust the GPIB address and the specific settings for your Yokogawa 7651 Power Supply.

@@ -1,0 +1,31 @@
+To connect to a Keysight 8753D Network Analyzer using Qcodes, you can use the following Python script:
+
+```python
+import qcodes as qc
+from qcodes.instrument_drivers.Keysight.Keysight_8753D import Keysight_8753D
+
+# Create an instance of the instrument
+na = Keysight_8753D('na', 'GPIB0::1::INSTR')
+
+# Connect to the instrument
+na.connect()
+
+# Perform measurements or set instrument parameters
+na.set_measurement('S11')
+na.set_start_frequency(1e6)
+na.set_stop_frequency(1e9)
+na.set_numpoints(101)
+na.set_power(-10)
+
+# Get the trace data
+freqs, data = na.get_trace()
+
+# Print the data
+print(freqs)
+print(data)
+
+# Disconnect from the instrument
+na.disconnect()
+```
+
+Note that you need to have Qcodes and the Keysight_8753D instrument driver installed in order to run this script.

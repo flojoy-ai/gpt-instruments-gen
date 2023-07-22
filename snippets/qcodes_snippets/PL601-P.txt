@@ -1,0 +1,38 @@
+Sure! Here's an example Python script that uses Qcodes to connect to a PL601-P Power Supply:
+
+```python
+import qcodes as qc
+from qcodes.instrument_drivers.Keysight.PL601P import PL601P
+
+# Connect to the power supply
+power_supply = PL601P('power_supply', 'TCPIP0::192.168.1.1::inst0::INSTR')
+
+# Print the power supply IDN
+print(power_supply.IDN())
+
+# Set the output voltage to 5V
+power_supply.voltage(5)
+
+# Set the output current limit to 1A
+power_supply.current_limit(1)
+
+# Enable the output
+power_supply.output_enable(True)
+
+# Disable the output after 5 seconds
+qc.sleep(5)
+power_supply.output_enable(False)
+
+# Close the connection to the power supply
+power_supply.close()
+```
+
+In this script, we first import the necessary modules: `qcodes` and the `PL601P` driver from `qcodes.instrument_drivers.Keysight`. 
+
+We then create an instance of the `PL601P` driver, passing the instrument's connection string as the second argument. The connection string specifies the communication interface and address of the power supply. In this example, we assume the power supply is connected via TCP/IP with the IP address `192.168.1.1`.
+
+We can then use the various methods provided by the `PL601P` driver to interact with the power supply. For example, we can use the `voltage()` method to set the output voltage, the `current_limit()` method to set the output current limit, and the `output_enable()` method to enable or disable the output.
+
+Finally, we close the connection to the power supply using the `close()` method.
+
+Note: Make sure to replace the IP address in the connection string with the actual IP address of your power supply.

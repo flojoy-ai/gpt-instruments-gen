@@ -1,0 +1,27 @@
+To connect to a KEYSIGHT E8267D PSG RF Signal Generator using Qcodes Community, you can use the following Python script:
+
+```python
+from qcodes.instrument.visa import VisaInstrument
+from qcodes.instrument_drivers.Keysight.Keysight_E8267D import Keysight_E8267D
+
+# Connect to the instrument
+instrument = Keysight_E8267D("instrument_name", "TCPIP0::192.168.1.1::inst0::INSTR")
+
+# Set the frequency to 1 GHz
+instrument.frequency(1e9)
+
+# Set the power to -10 dBm
+instrument.power(-10)
+
+# Enable the RF output
+instrument.output_rf("ON")
+
+# Disconnect from the instrument
+instrument.close()
+```
+
+Make sure to replace `"instrument_name"` with the desired name for your instrument and `"TCPIP0::192.168.1.1::inst0::INSTR"` with the actual address of your KEYSIGHT E8267D PSG RF Signal Generator.
+
+The script first imports the necessary modules and classes from Qcodes Community. Then, it creates an instance of the `Keysight_E8267D` class, passing the instrument name and address as arguments. Next, it sets the frequency and power using the corresponding parameters of the instrument. Finally, it enables the RF output and closes the connection to the instrument.
+
+Note: The `Keysight_E8267D` class is assumed to be available in the Qcodes Community library. If it is not available, you may need to install the appropriate driver or create a custom driver for your specific instrument.

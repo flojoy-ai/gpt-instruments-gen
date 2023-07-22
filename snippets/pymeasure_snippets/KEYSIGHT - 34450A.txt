@@ -1,0 +1,38 @@
+Sure! Here's an example Python script that uses Pymeasure to connect to a KEYSIGHT - 34450A Multimeter:
+
+```python
+from pymeasure.adapters import VISAAdapter
+from pymeasure.instruments import Agilent34450A
+
+# Create a VISA adapter for the instrument
+adapter = VISAAdapter("USB0::0x0957::0x0607::MY44012345::INSTR")
+
+# Create an instance of the Agilent34450A instrument
+dmm = Agilent34450A(adapter)
+
+# Reset the instrument
+dmm.reset()
+
+# Configure the instrument to measure DC voltage
+dmm.configure_voltage()
+
+# Read the voltage measurement
+voltage = dmm.voltage
+print("Voltage:", voltage)
+
+# Configure the instrument to measure DC current
+dmm.configure_current()
+
+# Read the current measurement
+current = dmm.current
+print("Current:", current)
+
+# Shutdown the instrument
+dmm.shutdown()
+```
+
+In this script, we first import the necessary modules from Pymeasure. We create a `VISAAdapter` object to connect to the instrument using the appropriate VISA address. Then, we create an instance of the `Agilent34450A` instrument using the adapter.
+
+We can then perform various operations on the instrument. In this example, we reset the instrument, configure it to measure DC voltage, read the voltage measurement, configure it to measure DC current, read the current measurement, and finally shutdown the instrument.
+
+Note that you will need to replace the VISA address `"USB0::0x0957::0x0607::MY44012345::INSTR"` with the actual VISA address of your instrument.

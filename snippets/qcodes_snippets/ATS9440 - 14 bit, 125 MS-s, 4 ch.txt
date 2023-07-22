@@ -1,0 +1,40 @@
+To connect to an ATS9440 board using Qcodes, you can use the `AlazarTech_ATS` driver provided by Qcodes. Here's an example script:
+
+```python
+import qcodes as qc
+from qcodes.instrument_drivers.AlazarTech.ATS9440 import AlazarTech_ATS9440
+
+# Connect to the ATS9440 board
+board = AlazarTech_ATS9440("board", system_id=1, board_id=1)
+
+# Print the board information
+print(board.get_idn())
+
+# Configure the board settings
+board.clock_source('INTERNAL_CLOCK')
+board.sample_rate(125e6)
+board.clock_edge('CLOCK_EDGE_RISING')
+board.decimation(1)
+board.coupling1('DC')
+board.coupling2('DC')
+board.coupling3('DC')
+board.coupling4('DC')
+board.channel_range1(0.4)
+board.channel_range2(0.4)
+board.channel_range3(0.4)
+board.channel_range4(0.4)
+
+# Perform an acquisition
+board.acquire(1, 1024, mode='NPT', records_per_buffer=10, buffers_per_acquisition=1)
+
+# Read the acquired data
+data = board.readout_data()
+
+# Print the acquired data
+print(data)
+
+# Disconnect from the board
+board.close()
+```
+
+Note: Make sure you have Qcodes and the AlazarTech ATS driver installed before running this script.

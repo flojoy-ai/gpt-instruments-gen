@@ -1,0 +1,37 @@
+```python
+import logging
+import matplotlib.pyplot as plt
+import qcodes as qc
+from qcodes.dataset import (
+    Measurement,
+    load_experiment_by_name,
+    new_experiment,
+    plot_by_id,
+)
+from qcodes.instrument_drivers.Keysight import KeysightN5245A
+
+# Setup logging
+logger = logging.getLogger()
+logger.setLevel(logging.DEBUG)
+
+# Start experiment
+exp_name = 'PNA_Example'
+sample_name = 'Thru_Coax'
+try:
+    exp = load_experiment_by_name(exp_name, sample=sample_name)
+    print('Experiment loaded. Last ID no:', exp.last_counter)
+except ValueError:
+    exp = new_experiment(exp_name, sample_name)
+    print('Starting new experiment.')
+
+# Connect to the instrument
+pna = KeysightN5245A('pna', 'TCPIP::192.168.0.10::inst0::INSTR')
+
+# Simple Measurements
+with Measurement(exp=exp) as meas:
+    meas.register_parameter(pna.magnitude)
+    data = meas.run()
+
+# Plot the data
+plot_by_id(data.run_id)
+```

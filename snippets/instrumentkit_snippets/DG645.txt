@@ -1,0 +1,27 @@
+To connect to a DG645 Pulse Generator using Instrumentkit, you can use the following Python script:
+
+```python
+import instrumentkit
+
+# Create a connection to the DG645 Pulse Generator
+dg645 = instrumentkit.connect('DG645')
+
+# Print the instrument information
+print(dg645)
+
+# Perform operations with the DG645 Pulse Generator
+# ...
+
+# Close the connection
+dg645.close()
+```
+
+Make sure you have Instrumentkit installed before running this script. You can install it using pip:
+
+```
+pip install instrumentkit
+```
+
+Replace the `# Perform operations with the DG645 Pulse Generator` comment with the specific operations you want to perform with the DG645 Pulse Generator, such as setting the pulse parameters, triggering the pulses, or reading the pulse output.
+
+Note that the specific connection details for the DG645 Pulse Generator may vary depending on your setup. You may need to provide additional parameters to the `connect` function, such as the IP address or serial port of the instrument. Refer to the DG645 Pulse Generator documentation for the correct connection details.

@@ -1,0 +1,64 @@
+To connect to a Lakeshore 475 Power Meter using Instrumentkit, you can use the following Python script:
+
+```python
+from instrumentkit import Instrument, VISAInstrument
+
+class Lakeshore475PowerMeter(VISAInstrument):
+    def __init__(self, resource_name):
+        super().__init__(resource_name)
+    
+    def get_power(self):
+        return self.query("MEAS:POW?")
+    
+    def set_range(self, range_value):
+        self.write(f"RANGE {range_value}")
+    
+    def set_auto_range(self):
+        self.write("RANGE:AUTO ON")
+    
+    def set_units(self, unit):
+        self.write(f"UNIT {unit}")
+    
+    def get_units(self):
+        return self.query("UNIT?")
+    
+    def set_display(self, display):
+        self.write(f"DISP {display}")
+    
+    def get_display(self):
+        return self.query("DISP?")
+    
+    def reset(self):
+        self.write("*RST")
+
+# Example usage
+if __name__ == "__main__":
+    # Connect to the Lakeshore 475 Power Meter
+    power_meter = Lakeshore475PowerMeter("GPIB0::22::INSTR")
+    
+    # Get the power measurement
+    power = power_meter.get_power()
+    print(f"Power: {power} W")
+    
+    # Set the range to 10 W
+    power_meter.set_range(10)
+    
+    # Set the units to dBm
+    power_meter.set_units("DBM")
+    
+    # Get the units
+    units = power_meter.get_units()
+    print(f"Units: {units}")
+    
+    # Set the display to on
+    power_meter.set_display("ON")
+    
+    # Get the display status
+    display = power_meter.get_display()
+    print(f"Display: {display}")
+    
+    # Reset the power meter
+    power_meter.reset()
+```
+
+Make sure to replace `"GPIB0::22::INSTR"` with the actual resource name of your Lakeshore 475 Power Meter.

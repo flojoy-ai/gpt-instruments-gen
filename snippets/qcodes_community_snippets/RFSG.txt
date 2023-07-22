@@ -1,0 +1,24 @@
+Here is an example Python script that uses Qcodes Community to connect to a RFSG RF Signal Generator:
+
+```python
+import qcodes as qc
+from qcodes.instrument_drivers.ni.NIRFSG import NI_RFSG
+
+# Connect to the RF Signal Generator
+rfsg = NI_RFSG('rfsg', 'PXI1Slot2')
+
+# Print the IDN information
+print(rfsg.get_idn())
+
+# Set the frequency and power level
+rfsg.frequency(1e9)  # 1 GHz
+rfsg.power_level(-10)  # -10 dBm
+
+# Enable the RF output
+rfsg.output_enabled(True)
+
+# Close the connection
+rfsg.close()
+```
+
+Note: Make sure you have installed the `qcodes` package and the necessary dependencies before running this script.

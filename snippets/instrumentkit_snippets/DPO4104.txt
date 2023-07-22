@@ -1,0 +1,27 @@
+To connect to a DPO4104 Oscilloscope using Instrumentkit, you can use the following Python script:
+
+```python
+import instrumentkit
+
+# Create a connection to the DPO4104 Oscilloscope
+oscilloscope = instrumentkit.connect('dpo4104')
+
+# Print the instrument information
+print(oscilloscope)
+
+# Perform some operations with the oscilloscope
+# For example, you can set the timebase and trigger settings
+oscilloscope.timebase.set_scale(1e-6)  # Set timebase scale to 1 microsecond
+oscilloscope.trigger.set_edge(channel=1, level=0, slope='rising')  # Set trigger to rising edge on channel 1
+
+# Close the connection to the oscilloscope
+oscilloscope.close()
+```
+
+Make sure you have Instrumentkit installed in your Python environment before running this script. You can install it using pip:
+
+```
+pip install instrumentkit
+```
+
+Replace the `oscilloscope.timebase.set_scale()` and `oscilloscope.trigger.set_edge()` calls with the specific operations you want to perform on the oscilloscope. You can refer to the Instrumentkit documentation for more details on the available operations and methods for the DPO4104 Oscilloscope.

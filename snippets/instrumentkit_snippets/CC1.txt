@@ -1,0 +1,40 @@
+Sure! Here's an example Python script that uses Instrumentkit to connect to a CC1 Coincidence Counter:
+
+```python
+import instrumentkit as ik
+
+# Connect to the CC1 Coincidence Counter
+cc1 = ik.qubitekk.CC1.open_serial('COM8', 19200, timeout=1)
+
+# Read the firmware version
+firmware_version = cc1.firmware
+print(f"Firmware version: {firmware_version}")
+
+# Set the dwell time to 1 second
+cc1.dwell_time = 1
+
+# Set the coincidence window to 10 ns
+cc1.window = 10
+
+# Enable the gate
+cc1.gate = True
+
+# Enable subtract
+cc1.subtract = True
+
+# Set the trigger mode to continuous
+cc1.trigger_mode = 'continuous'
+
+# Read the counts for each channel
+for i, channel in enumerate(cc1.channel):
+    count = channel.count
+    print(f"Channel {i+1} count: {count}")
+
+# Clear the counts
+cc1.clear_counts()
+
+# Close the connection
+cc1.close()
+```
+
+Make sure to replace `'COM8'` with the correct serial port for your CC1 Coincidence Counter.

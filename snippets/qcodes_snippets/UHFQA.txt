@@ -1,0 +1,26 @@
+Here is an example Python script that uses Qcodes to connect to a UHFQA:
+
+```python
+import qcodes as qc
+from qcodes.instrument_drivers.zhinst import UHFQA
+
+# Connect to the UHFQA instrument
+uhfqa = UHFQA("uhfqa", "dev1234")
+
+# Print the instrument ID
+print("Instrument ID:", uhfqa.IDN())
+
+# Set the integration time
+uhfqa.integration_time(0.1)
+
+# Perform a measurement
+result = uhfqa.measure()
+
+# Print the measurement result
+print("Measurement result:", result)
+
+# Close the connection to the instrument
+uhfqa.close()
+```
+
+In this example, we import the necessary modules and create an instance of the UHFQA instrument using the `UHFQA` class from the `qcodes.instrument_drivers.zhinst` module. We then print the instrument ID, set the integration time to 0.1 seconds, perform a measurement, and print the measurement result. Finally, we close the connection to the instrument using the `close()` method.

@@ -1,0 +1,28 @@
+Sure! Here's an example Python script that uses the Instrumental library to connect to a Thorlabs KDC101 Motion controller:
+
+```python
+import instrumental
+
+# Connect to the KDC101 Motion controller
+instrument = instrumental.instrument('thorlabs.kdc101', 'COM1')
+
+# Enable the motor
+instrument.enable()
+
+# Move the motor to a specific position
+instrument.move_to_position(1000)
+
+# Disable the motor
+instrument.disable()
+
+# Disconnect from the controller
+instrument.disconnect()
+```
+
+In this script, we first import the `instrumental` library. Then, we use the `instrument` function to connect to the Thorlabs KDC101 Motion controller. The first argument is the instrument driver name (`thorlabs.kdc101`), and the second argument is the communication port (`COM1` in this example).
+
+Once connected, we can use various methods provided by the `instrument` object to control the motor. In this example, we enable the motor using the `enable` method, move the motor to a specific position using the `move_to_position` method (passing the desired position as an argument), and finally disable the motor using the `disable` method.
+
+Finally, we disconnect from the controller using the `disconnect` method.
+
+Note: This example assumes that you have already installed the `instrumental` library and have the necessary drivers and communication port configured for the Thorlabs KDC101 Motion controller.

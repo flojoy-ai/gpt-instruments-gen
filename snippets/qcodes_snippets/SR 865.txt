@@ -1,0 +1,23 @@
+Sure! Here's a Python script that uses Qcodes to connect to a SR 865 lock-in amplifier:
+
+```python
+import qcodes as qc
+from qcodes.instrument_drivers.stanford_research.SR865 import SR865
+
+# Connect to the lock-in amplifier
+lockin = SR865('lockin', 'GPIB0::1::INSTR')
+
+# Print the identification string of the lock-in amplifier
+print(lockin.IDN())
+
+# Close the connection to the lock-in amplifier
+lockin.close()
+```
+
+In this script, we import the necessary modules and classes from Qcodes. We then create an instance of the `SR865` class, which represents the SR 865 lock-in amplifier. The first argument to the `SR865` constructor is the name of the instrument, and the second argument is the address of the instrument (in this case, the GPIB address).
+
+We can then use the `lockin` object to interact with the lock-in amplifier. In this example, we simply print the identification string of the lock-in amplifier using the `IDN()` method.
+
+Finally, we close the connection to the lock-in amplifier using the `close()` method.
+
+Note: Make sure you have the necessary dependencies installed, such as `qcodes` and `pyvisa`, before running this script.

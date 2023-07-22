@@ -1,0 +1,34 @@
+import qcodes as qc
+from qcodes.instrument_drivers.Keysight.Keysight_34465A import Keysight_34465A
+
+# Create an instance of the instrument
+dmm = Keysight_34465A('dmm', 'TCPIP0::192.168.1.10::inst0::INSTR')
+
+# Set up the file to store the data
+thefile = "reading-" + qc.utils.helpers.datetime_label() + ".csv"
+f = open(thefile, "w")
+
+# Define a function to write data to file and close it
+def readout():
+    print("Writing data to file...")
+    f.write('\n'.join(dat))
+    print("Closing File. Data stored in " + thefile)
+    f.close()
+    exit()
+
+# Register the readout function to be called on exit
+qc.utils.helpers.add_to_sweep_functions(readout)
+
+# Start the measurement
+dat = []
+print("Reading from instrument to RAM...")
+print("Press CTRL-C to stop")
+
+with dmm.run() as datasaver:
+    while True:
+        data = dmm.volt()
+        dat.append(str(data))
+        datasaver.add_result((dmm.volt, data))
+
+# Close the connection to the instrument
+dmm.close()

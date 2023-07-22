@@ -1,0 +1,33 @@
+Here is an example Python script that uses Qcodes to connect to a QDAC Power Supply:
+
+```python
+import qcodes as qc
+from qcodes_contrib_drivers.drivers.QDevil.QDac import QDac
+
+# Connect to the QDAC Power Supply
+qdac = QDac('qdac', 'TCPIP0::192.168.1.1::inst0::INSTR')
+
+# Print the firmware version
+print(f"Firmware Version: {qdac.version}")
+
+# Reset the QDAC Power Supply
+qdac.reset()
+
+# Set the voltage of channel 1 to 2V
+qdac.channels.ch01.v(2)
+
+# Get the current of channel 1
+current = qdac.channels.ch01.i()
+print(f"Current of channel 1: {current} A")
+
+# Ramp the voltage of channel 2 from 0V to 5V in 1 second
+qdac.ramp_voltages([2], [0], [5], 1)
+
+# Print the status of all channels
+qdac.print_overview()
+
+# Disconnect from the QDAC Power Supply
+qdac.close()
+```
+
+Note: Make sure to replace `'TCPIP0::192.168.1.1::inst0::INSTR'` with the actual VISA address of your QDAC Power Supply.

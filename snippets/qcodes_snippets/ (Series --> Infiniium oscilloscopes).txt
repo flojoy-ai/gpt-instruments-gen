@@ -1,0 +1,22 @@
+To connect to a Keysight Infiniium oscilloscope using Qcodes, you can use the following code:
+
+```python
+import qcodes as qc
+from qcodes.instrument_drivers.Keysight.Keysight_6000 import Keysight_6000
+
+# Create an instance of the Keysight_6000 driver
+oscilloscope = Keysight_6000("oscilloscope", "TCPIP0::192.168.1.1::INSTR")
+
+# Connect to the oscilloscope
+oscilloscope.connect()
+
+# Print the IDN of the oscilloscope
+print(oscilloscope.IDN())
+
+# Perform other operations with the oscilloscope
+
+# Disconnect from the oscilloscope
+oscilloscope.disconnect()
+```
+
+Make sure to replace `"TCPIP0::192.168.1.1::INSTR"` with the actual VISA address of your oscilloscope.

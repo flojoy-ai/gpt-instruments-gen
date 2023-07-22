@@ -1,0 +1,45 @@
+The provided code is a PyQt5-based GUI application for connecting to a Gentec EO Maestro Screen Display and collecting data from it. It uses the QtNetwork module for network communication.
+
+To use Qcodes Community to connect to the Maestro Screen Display, you would need to modify the code and integrate the Qcodes library. Here's an example of how you can modify the code to use Qcodes:
+
+```python
+# -*- coding: utf-8 -*-
+
+import qcodes as qc
+from qcodes.instrument_drivers.gentec.Maestro import Maestro
+
+class MaestroUi(qc.QtPlot):
+    def __init__(self, parent):
+        super().__init__(parent)
+
+        self.meter = None
+        self.collectData = True
+        self.avgData = qc.Queue()
+        self.measure = False
+        self.runDataThr = True
+        self.measureData = []
+        self.startTime = None
+
+        # ... Rest of the code ...
+
+    def connectMeter(self):
+        print('connected')
+        self.meter = Maestro('Maestro', 'TCPIP::' + self.ipEdit.text() + '::' + self.portEdit.text() + '::SOCKET')
+        self.meter.connect()
+        self.meter.start()
+        self.dataAq_worker.start.emit()
+
+    # ... Rest of the code ...
+
+if __name__ == '__main__':
+    app = qc.QtPlotApplication()
+    test = MaestroUi(None)
+    test.show()
+    app.exec_()
+```
+
+In this modified code, we import the `qcodes` library and the `Maestro` instrument driver from `qcodes.instrument_drivers.gentec`. We then create an instance of the `Maestro` instrument and connect to it using the specified IP address and port.
+
+Note that the `Maestro` instrument driver is not a part of the core Qcodes library and may need to be installed separately. You can install it using `pip install qcodes-gentec`.
+
+Please make sure to install the necessary dependencies and modify the code as needed for your specific setup.

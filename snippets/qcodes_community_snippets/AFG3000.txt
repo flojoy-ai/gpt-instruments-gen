@@ -1,0 +1,30 @@
+To connect to an AFG3000 Function Generator using Qcodes, you can use the following Python script:
+
+```python
+from qcodes import Station, Instrument
+from qcodes.instrument_drivers.tektronix.AFG3000 import AFG3000
+
+# Create a station to hold the instruments
+station = Station()
+
+# Connect to the AFG3000 Function Generator
+afg = AFG3000('afg', 'TCPIP0::192.168.1.1::inst0::INSTR')
+station.add_component(afg)
+
+# Print the available parameters of the AFG3000
+print(afg.parameters)
+
+# Set the trigger mode to 'TRIG'
+afg.trigger_mode('TRIG')
+
+# Set the output impedance of channel 1 to 50 Ohm
+afg.impedance_output1(50)
+
+# Set the amplitude modulation depth of channel 2 to 10%
+afg.am_depth2(10)
+
+# Close the connection to the instruments
+station.close_all_registered_instruments()
+```
+
+This script creates a `Station` object to hold the instruments, then connects to the AFG3000 Function Generator using the `AFG3000` driver. The AFG3000 instrument is added to the station. The available parameters of the AFG3000 can be printed using `afg.parameters`. You can then use the various parameter functions to control the instrument, such as setting the trigger mode, output impedance, and amplitude modulation depth. Finally, the connection to the instruments is closed using `station.close_all_registered_instruments()`.

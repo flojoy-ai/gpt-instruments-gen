@@ -1,0 +1,26 @@
+Sure! Here's an example Python script that uses Qcodes Community to connect to an IP Power 9258 S Power Supply:
+
+```python
+import qcodes as qc
+from qcodes.instrument_drivers.ip_power.ip9258 import IP9258
+
+# Connect to the IP Power 9258 S Power Supply
+power_supply = IP9258('power_supply', '192.168.1.100', 23)
+
+# Turn on the power supply
+power_supply.on()
+
+# Set the voltage to 5V
+power_supply.voltage(5)
+
+# Set the current limit to 1A
+power_supply.current(1)
+
+# Turn off the power supply
+power_supply.off()
+
+# Close the connection
+power_supply.close()
+```
+
+Make sure to replace `'192.168.1.100'` with the actual IP address of your IP Power 9258 S Power Supply.

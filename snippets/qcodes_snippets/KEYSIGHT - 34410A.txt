@@ -1,0 +1,26 @@
+```python
+from qcodes.instrument_drivers.Keysight.Keysight_344xxA import Keysight_344xxA
+
+# Create an instance of the instrument
+multimeter = Keysight_344xxA("multimeter", "TCPIP0::192.168.1.1::INSTR")
+
+# Connect to the instrument
+multimeter.connect()
+
+# Perform a DC voltage measurement
+voltage_dc = multimeter.voltage_dc()
+
+# Print the measurement result
+print("DC Voltage:", voltage_dc)
+
+# Disconnect from the instrument
+multimeter.disconnect()
+```
+
+Explanation:
+1. Import the `Keysight_344xxA` class from the `qcodes.instrument_drivers.Keysight.Keysight_344xxA` module.
+2. Create an instance of the instrument by calling `Keysight_344xxA("multimeter", "TCPIP0::192.168.1.1::INSTR")`. Replace `"TCPIP0::192.168.1.1::INSTR"` with the appropriate address of your instrument.
+3. Connect to the instrument by calling `multimeter.connect()`.
+4. Perform a DC voltage measurement by calling `multimeter.voltage_dc()`.
+5. Print the measurement result by calling `print("DC Voltage:", voltage_dc)`.
+6. Disconnect from the instrument by calling `multimeter.disconnect()`.

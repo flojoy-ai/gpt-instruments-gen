@@ -1,0 +1,32 @@
+Sure! Here's an example Python script that uses Instrumental to connect to a Thorlabs TDC001 Motion controller:
+
+```python
+import instrumental
+
+# Connect to the TDC001 Motion controller
+controller = instrumental.instrument('tdc001')
+
+# Enable the controller
+controller.enable()
+
+# Move the motor to a specific position
+controller.move_to_position(100)
+
+# Disable the controller
+controller.disable()
+
+# Disconnect from the controller
+controller.disconnect()
+```
+
+In this script, we first import the `instrumental` module. Then, we create an instance of the `instrument` class, specifying the instrument type as `'tdc001'` to connect to the Thorlabs TDC001 Motion controller.
+
+We then enable the controller using the `enable()` method, move the motor to a specific position using the `move_to_position()` method (in this example, we move it to position 100), disable the controller using the `disable()` method, and finally disconnect from the controller using the `disconnect()` method.
+
+Note that you may need to install the `instrumental` package before running this script. You can install it using pip:
+
+```
+pip install instrumental
+```
+
+Make sure you have the necessary drivers and libraries installed for the Thorlabs TDC001 Motion controller as well.

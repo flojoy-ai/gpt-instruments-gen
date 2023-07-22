@@ -1,0 +1,20 @@
+```python
+from qcodes.instrument_drivers.Keysight.KeysightAgilent_33XXX import Keysight33522B
+
+# Create an instance of the Keysight33522B instrument
+instrument = Keysight33522B('instrument_name', 'USB0::0x0957::0x2307::MY52800838::INSTR')
+
+# Connect to the instrument
+instrument.connect()
+
+# Perform operations with the instrument
+
+# Disconnect from the instrument
+instrument.disconnect()
+```
+
+In the code above, we import the `Keysight33522B` class from the `qcodes.instrument_drivers.Keysight.KeysightAgilent_33XXX` module. We then create an instance of the `Keysight33522B` instrument by providing a name for the instrument and the instrument's address (in this case, a USB address).
+
+We then connect to the instrument using the `connect()` method. After connecting, you can perform various operations with the instrument, such as setting waveform parameters, generating waveforms, etc.
+
+Finally, we disconnect from the instrument using the `disconnect()` method.

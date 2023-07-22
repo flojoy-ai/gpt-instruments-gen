@@ -1,0 +1,30 @@
+Sure! Here's an example Python script that uses the Instrumental library to connect to a KEYSIGHT 86100A Oscilloscope:
+
+```python
+import instrumental
+
+# Connect to the oscilloscope
+oscilloscope = instrumental.instrument('keysight_86100a', address='GPIB0::9::INSTR')
+
+# Set the oscilloscope to acquire data
+oscilloscope.write('ACQUIRE:MODE SAMPLE')
+
+# Configure the oscilloscope to measure the eye diagram
+oscilloscope.write('MEASURE:EYE')
+
+# Trigger the oscilloscope to start acquiring data
+oscilloscope.write('TRIGGER')
+
+# Read the acquired data from the oscilloscope
+data = oscilloscope.query('FETCH:EYE')
+
+# Print the acquired data
+print(data)
+
+# Disconnect from the oscilloscope
+oscilloscope.disconnect()
+```
+
+This script uses the `instrumental` library to connect to the KEYSIGHT 86100A Oscilloscope using the GPIB interface. It sets the oscilloscope to acquire data in sample mode and configures it to measure the eye diagram. Then, it triggers the oscilloscope to start acquiring data and reads the acquired data using the `FETCH:EYE` command. Finally, it prints the acquired data and disconnects from the oscilloscope.
+
+Note: Make sure you have the `instrumental` library installed before running this script. You can install it using `pip install instrumental`.

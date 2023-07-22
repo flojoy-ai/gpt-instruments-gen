@@ -1,0 +1,32 @@
+Sure! Here's an example script that uses Instrumentkit to connect to a WaveRunner 8000HD Oscilloscope:
+
+```python
+import instrumentkit as ik
+
+# Connect to the oscilloscope
+oscilloscope = ik.teledyne.MAUI.open_visa("TCPIP0::192.168.0.10::INSTR")
+
+# Print the oscilloscope ID
+print(oscilloscope.show_id)
+
+# Set the time per division to 100 ns
+oscilloscope.time_div = 100 * ik.units.ns
+
+# Enable the first channel and set the vertical scale to 1 V/division
+channel = oscilloscope.channel[0]
+channel.trace = True
+channel.scale = 1 * ik.units.V
+
+# Start the trigger in automatic mode
+oscilloscope.run()
+
+# Read and print a waveform from the first channel
+xdat, ydat = channel.read_waveform()
+print("Time:", xdat)
+print("Voltage:", ydat)
+
+# Disconnect from the oscilloscope
+oscilloscope.close()
+```
+
+Make sure to replace `"TCPIP0::192.168.0.10::INSTR"` with the actual VISA address of your WaveRunner 8000HD Oscilloscope.

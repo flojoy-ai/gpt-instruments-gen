@@ -1,0 +1,22 @@
+```python
+from pymeasure.instruments.fwbell import FWBell5080
+
+# Connect to the FWBell5080 Gaussmeter
+gaussmeter = FWBell5080("GPIB::1")
+
+# Perform operations with the gaussmeter
+gaussmeter.reset()
+field_strength = gaussmeter.field_strength
+print("Field Strength:", field_strength)
+
+# Disconnect from the gaussmeter
+gaussmeter.disconnect()
+```
+
+Explanation:
+1. Import the `FWBell5080` class from the `pymeasure.instruments.fwbell` module.
+2. Create an instance of the `FWBell5080` class and pass the instrument address as a string to the constructor. In this example, the instrument address is `"GPIB::1"`.
+3. Use the `reset()` method to reset the gaussmeter.
+4. Access the `field_strength` property to get the current field strength reading.
+5. Print the field strength value.
+6. Disconnect from the gaussmeter using the `disconnect()` method.

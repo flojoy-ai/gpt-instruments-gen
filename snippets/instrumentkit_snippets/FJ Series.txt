@@ -1,0 +1,28 @@
+To connect to a FJ Series Power Supply using Instrumentkit, you can use the following Python script:
+
+```python
+from instrumentkit import FJPowerSupply
+
+# Create an instance of the FJPowerSupply class
+power_supply = FJPowerSupply()
+
+# Connect to the power supply
+power_supply.connect()
+
+# Check if the power supply is connected
+if power_supply.is_connected():
+    print("Connected to FJ Series Power Supply")
+else:
+    print("Failed to connect to FJ Series Power Supply")
+
+# Disconnect from the power supply
+power_supply.disconnect()
+```
+
+Make sure you have Instrumentkit installed before running this script. You can install it using pip:
+
+```
+pip install instrumentkit
+```
+
+Replace the `FJPowerSupply` class with the appropriate class for your specific FJ Series Power Supply model.

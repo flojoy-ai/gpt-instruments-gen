@@ -1,0 +1,39 @@
+Sure! Here's an example Python script that uses the Instrumental library to connect to a Pi Camera:
+
+```python
+import instrumental
+
+# Connect to the Pi Camera
+camera = instrumental.PiCamera()
+
+# Start the camera preview
+camera.start_preview()
+
+# Capture an image
+camera.capture('image.jpg')
+
+# Start recording video
+camera.start_recording('video.h264')
+
+# Wait for 10 seconds
+camera.wait_recording(10)
+
+# Stop recording video
+camera.stop_recording()
+
+# Stop the camera preview
+camera.stop_preview()
+
+# Close the camera connection
+camera.close()
+```
+
+This script demonstrates how to connect to the Pi Camera, start the camera preview, capture an image, start recording video, wait for a specified duration, stop recording video, stop the camera preview, and close the camera connection.
+
+Note that you will need to have the Instrumental library installed in order to run this script. You can install it using pip:
+
+```
+pip install instrumental
+```
+
+Make sure you have the necessary permissions to access the Pi Camera before running this script.

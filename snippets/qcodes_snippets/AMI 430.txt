@@ -1,0 +1,39 @@
+To connect to an AMI 430 Power Supply using Qcodes, you can use the following Python script:
+
+```python
+from qcodes.instrument_drivers.pymeasure.instruments import AMI430
+
+# Create an instance of the AMI430 instrument
+magnet = AMI430("TCPIP::web.address.com::7180::SOCKET")
+
+# Set the properties of the magnet
+magnet.coilconst(1.182)
+magnet.voltage_limit(2.2)
+magnet.target_current(10)
+magnet.target_field(1)
+magnet.ramp_rate_current(0.0357)
+magnet.ramp_rate_field(0.0422)
+
+# Initiate the ramping
+magnet.ramp()
+
+# Read the current, supply current, field, and magnet status
+current = magnet.magnet_current()
+supply_current = magnet.supply_current()
+field = magnet.field()
+status = magnet.magnet_status()
+
+# Ramp the current to 5 A
+magnet.ramp_to_current(5)
+
+# Shutdown the magnet
+magnet.shutdown()
+```
+
+This script creates an instance of the `AMI430` instrument and sets its properties such as `coilconst`, `voltage_limit`, `target_current`, `target_field`, `ramp_rate_current`, and `ramp_rate_field`. It then initiates the ramping using the `ramp()` method.
+
+The script also demonstrates how to read the current, supply current, field, and magnet status using the corresponding measurement methods.
+
+To ramp the current to a specific value, you can use the `ramp_to_current()` method and provide the desired current value as an argument.
+
+Finally, the script shuts down the magnet using the `shutdown()` method.

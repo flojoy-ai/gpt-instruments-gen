@@ -1,0 +1,19 @@
+import PyTango
+
+# Create a DeviceProxy for the SML01 RF Signal Generator
+sml01 = PyTango.DeviceProxy("device/sml01/1")
+
+# Connect to the SML01 RF Signal Generator
+sml01.connect()
+
+# Set the frequency to 1 GHz
+sml01.write_attribute("Frequency", 1e9)
+
+# Set the power level to -10 dBm
+sml01.write_attribute("PowerLevel", -10)
+
+# Enable the RF output
+sml01.write_attribute("RFOutput", True)
+
+# Disconnect from the SML01 RF Signal Generator
+sml01.disconnect()

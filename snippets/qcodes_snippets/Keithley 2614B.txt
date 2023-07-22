@@ -1,0 +1,34 @@
+Unfortunately, the provided code is not using Qcodes to connect to the Keithley 2614B Power Supplies. It is a custom implementation specific to the K2614 device. To connect to the Keithley 2614B Power Supplies using Qcodes, you would need to use the appropriate Qcodes driver for the device.
+
+Here's an example of how you can connect to a Keithley 2614B Power Supply using Qcodes:
+
+```python
+from qcodes import VisaInstrument
+
+class Keithley2614B(VisaInstrument):
+    def __init__(self, name, address):
+        super().__init__(name, address)
+
+        # Add your initialization code here
+
+    def get_idn(self):
+        return self.ask('*IDN?')
+
+# Create an instance of the Keithley2614B instrument
+keithley = Keithley2614B('keithley', 'TCPIP0::192.168.1.1::INSTR')
+
+# Connect to the instrument
+keithley.connect()
+
+# Get the instrument identification
+print(keithley.get_idn())
+
+# Disconnect from the instrument
+keithley.disconnect()
+```
+
+Note: Replace `'TCPIP0::192.168.1.1::INSTR'` with the actual VISA address of your Keithley 2614B Power Supply.
+
+This example demonstrates how to create a custom Qcodes instrument class for the Keithley 2614B Power Supply and connect to it using the VISA address. You can then use the Qcodes API to interact with the instrument.
+
+Please note that you may need to install the appropriate Qcodes driver for the Keithley 2614B Power Supply before running this code.

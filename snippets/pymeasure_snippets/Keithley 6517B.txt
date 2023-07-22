@@ -1,0 +1,31 @@
+Sure! Here's an example Python script that uses Pymeasure to connect to a Keithley 6517B Power Meter:
+
+```python
+from pymeasure.adapters import VISAAdapter
+from pymeasure.instruments.keithley import Keithley6517B
+
+# Create a VISA adapter for the instrument
+adapter = VISAAdapter("GPIB::1")
+
+# Connect to the Keithley 6517B Power Meter
+keithley = Keithley6517B(adapter)
+
+# Enable the source and set the source voltage
+keithley.enable_source()
+keithley.source_voltage = 20
+
+# Measure the resistance
+keithley.measure_resistance()
+print("Resistance:", keithley.resistance)
+
+# Ramp the voltage to 50V
+keithley.ramp_to_voltage(50)
+
+# Measure the resistance again
+print("Resistance:", keithley.resistance)
+
+# Shutdown the instrument
+keithley.shutdown()
+```
+
+This script connects to the Keithley 6517B Power Meter using a VISA adapter and creates an instance of the `Keithley6517B` class. It then enables the source and sets the source voltage to 20V. It measures the resistance and prints the result. Next, it ramps the voltage to 50V and measures the resistance again. Finally, it shuts down the instrument by ramping the voltage to 0V and disabling the output.

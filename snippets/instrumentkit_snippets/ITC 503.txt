@@ -1,0 +1,19 @@
+Sure! Here's an example Python script that uses Instrumentkit to connect to an Oxford ITC 503 Temperature Controller:
+
+```python
+import instrumentkit as ik
+
+# Connect to the ITC 503 Temperature Controller
+itc = ik.oxford.OxfordITC503.open_gpibusb('/dev/ttyUSB0', 1)
+
+# Read the temperature from the first sensor
+temperature = itc.sensor[0].temperature
+print(f"Temperature: {temperature:.2f} K")
+
+# Close the connection
+itc.close()
+```
+
+Make sure to replace `'/dev/ttyUSB0'` with the correct serial port of your ITC 503 Temperature Controller. The second argument `1` is the GPIB address of the instrument.
+
+This script connects to the ITC 503 Temperature Controller, reads the temperature from the first sensor, and then closes the connection. The temperature is printed with two decimal places.

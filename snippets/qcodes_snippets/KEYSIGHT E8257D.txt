@@ -1,0 +1,21 @@
+Sure! Here's an example script that uses Qcodes to connect to a KEYSIGHT E8257D RF Signal Generator:
+
+```python
+import qcodes as qc
+from qcodes.instrument_drivers.Keysight.Keysight_E8257D import Keysight_E8257D
+
+# Connect to the RF Signal Generator
+rf_generator = Keysight_E8257D('rf_generator', 'TCPIP0::192.168.1.1::inst0::INSTR')
+
+# Set the frequency and power level
+rf_generator.frequency(1e9)  # Set frequency to 1 GHz
+rf_generator.power(-10)  # Set power level to -10 dBm
+
+# Enable the RF output
+rf_generator.rf_output(True)
+
+# Disconnect from the RF Signal Generator
+rf_generator.close()
+```
+
+Make sure to replace `'TCPIP0::192.168.1.1::inst0::INSTR'` with the actual VISA address of your RF Signal Generator.

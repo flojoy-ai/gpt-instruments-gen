@@ -1,0 +1,30 @@
+Sure! Here's an example Python script that uses Pymeasure to connect to a From MG3690C Series RF Signal Generator:
+
+```python
+from pymeasure import instruments
+
+# Connect to the RF Signal Generator
+generator = instruments.FromMG3690C("GPIB::1")
+
+# Set the frequency to 1 GHz
+generator.frequency = 1e9
+
+# Set the power level to -10 dBm
+generator.power_level = -10
+
+# Enable the output
+generator.output = True
+
+# Disconnect from the RF Signal Generator
+generator.disconnect()
+```
+
+This script first imports the `FromMG3690C` class from the `pymeasure.instruments` module. It then creates an instance of the `FromMG3690C` class, specifying the GPIB address of the RF Signal Generator.
+
+The script then sets the frequency to 1 GHz using the `frequency` property of the `FromMG3690C` class. Similarly, it sets the power level to -10 dBm using the `power_level` property.
+
+Next, the script enables the output of the RF Signal Generator by setting the `output` property to `True`.
+
+Finally, the script disconnects from the RF Signal Generator using the `disconnect()` method of the `FromMG3690C` class.
+
+Note: Make sure you have the necessary drivers and libraries installed for your RF Signal Generator and GPIB interface.

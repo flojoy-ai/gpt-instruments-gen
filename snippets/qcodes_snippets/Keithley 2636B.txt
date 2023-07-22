@@ -1,0 +1,28 @@
+To connect to a Keithley 2636B Power Supply using Qcodes, you can use the `Instrument` class provided by Qcodes. Here's an example script:
+
+```python
+import qcodes as qc
+from qcodes.instrument_drivers.tektronix.Keithley_2636B import Keithley_2636B
+
+# Create an instance of the Keithley_2636B instrument
+keithley = Keithley_2636B('keithley', 'ASRL/dev/ttyUSB0::INSTR')
+
+# Connect to the instrument
+keithley.connect()
+
+# Perform operations with the instrument
+keithley.smua.source_voltage(1)  # Set the source voltage of SMUA to 1V
+keithley.smua.source_current(0.1)  # Set the source current of SMUA to 0.1A
+
+# Disconnect from the instrument
+keithley.disconnect()
+```
+
+In this example, we import the `Keithley_2636B` driver from the `qcodes.instrument_drivers.tektronix` module. We create an instance of the `Keithley_2636B` instrument with a name (`keithley`) and the instrument address (`ASRL/dev/ttyUSB0::INSTR`). Then, we connect to the instrument using the `connect()` method. After that, we can perform operations on the instrument, such as setting the source voltage and current. Finally, we disconnect from the instrument using the `disconnect()` method.
+
+Note that you may need to install the `qcodes` library and the `qcodes_contrib_drivers` package to run this script. You can install them using pip:
+
+```
+pip install qcodes
+pip install qcodes_contrib_drivers
+```

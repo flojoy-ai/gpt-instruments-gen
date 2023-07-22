@@ -1,0 +1,27 @@
+To connect to a TDS5XX oscilloscope using Instrumentkit, you can use the following Python script:
+
+```python
+import instrumentkit
+
+# Create a connection to the TDS5XX oscilloscope
+scope = instrumentkit.Scope("TDS5XX")
+
+# Connect to the oscilloscope
+scope.connect()
+
+# Perform operations on the oscilloscope
+# For example, you can query the instrument's identification
+identification = scope.query("*IDN?")
+print("Instrument identification:", identification)
+
+# Disconnect from the oscilloscope
+scope.disconnect()
+```
+
+Make sure you have Instrumentkit installed in your Python environment before running this script. You can install it using pip:
+
+```
+pip install instrumentkit
+```
+
+Replace `"TDS5XX"` with the appropriate connection string for your oscilloscope. The connection string depends on the communication interface you are using (e.g., USB, Ethernet, GPIB). Refer to the Instrumentkit documentation for more information on how to specify the connection string for your specific oscilloscope model.

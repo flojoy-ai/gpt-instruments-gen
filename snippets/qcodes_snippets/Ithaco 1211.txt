@@ -1,0 +1,35 @@
+Sure! Here's an example Python script that uses Qcodes to connect to an Ithaco 1211 Lockin Amplifier:
+
+```python
+import qcodes as qc
+from qcodes.instrument_drivers.ithaco import Ithaco1211
+
+# Connect to the Ithaco 1211 Lockin Amplifier
+lockin = Ithaco1211('lockin', 'COM1')  # Replace 'COM1' with the actual serial port of the lockin
+
+# Print the lockin amplifier's IDN
+print(lockin.IDN())
+
+# Set the lockin amplifier's frequency to 1 kHz
+lockin.frequency(1000)
+
+# Set the lockin amplifier's amplitude to 0.1 V
+lockin.amplitude(0.1)
+
+# Enable the lockin amplifier's output
+lockin.output_enable(True)
+
+# Disable the lockin amplifier's output
+lockin.output_enable(False)
+
+# Close the connection to the lockin amplifier
+lockin.close()
+```
+
+In this script, we import the necessary modules and classes from Qcodes. We then create an instance of the `Ithaco1211` class, passing the instrument name and the serial port to which the lockin amplifier is connected. You should replace `'COM1'` with the actual serial port of your lockin amplifier.
+
+We can then use various methods of the `Ithaco1211` class to interact with the lockin amplifier. For example, we can use the `frequency()` method to set the lockin amplifier's frequency, the `amplitude()` method to set the lockin amplifier's amplitude, and the `output_enable()` method to enable or disable the lockin amplifier's output.
+
+Finally, we close the connection to the lockin amplifier using the `close()` method.
+
+Note: This script assumes that you have already installed Qcodes and the necessary dependencies.

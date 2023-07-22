@@ -1,0 +1,20 @@
+Sure! Here's a Python script that uses Pymeasure to connect to a Fluke 7341 Temperature Controller:
+
+```python
+from pymeasure.instruments.fluke import Fluke7341
+
+# Connect to the Fluke 7341 Temperature Controller
+controller = Fluke7341("COM1")  # Replace "COM1" with the actual serial port of the controller
+
+# Set the temperature setpoint to 25 degrees Celsius
+controller.set_temperature(25)
+
+# Read the current temperature
+temperature = controller.get_temperature()
+print("Current temperature: {} degrees Celsius".format(temperature))
+
+# Disconnect from the controller
+controller.disconnect()
+```
+
+Make sure to replace `"COM1"` with the actual serial port of your Fluke 7341 Temperature Controller.

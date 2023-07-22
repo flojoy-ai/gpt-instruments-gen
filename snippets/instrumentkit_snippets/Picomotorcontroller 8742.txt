@@ -1,0 +1,42 @@
+To connect to a Picomotor controller 8742 using Instrumentkit, you can use the following Python script:
+
+```python
+import instrumentkit as ik
+
+# Connect to the Picomotor controller
+picomotor = ik.newport.AGUC2.open_serial(port='COM1', baud=115200)
+
+# Reset the controller
+picomotor.reset_controller()
+
+# Enable remote mode
+picomotor.enable_remote_mode = True
+
+# Move the X axis by 1000 steps
+picomotor.axis["X"].move_relative = 1000
+
+# Move the Y axis by -500 steps
+picomotor.axis["Y"].move_relative = -500
+
+# Check the position of the X axis
+x_position = picomotor.axis["X"].number_of_steps
+print(f"X axis position: {x_position} steps")
+
+# Check the position of the Y axis
+y_position = picomotor.axis["Y"].number_of_steps
+print(f"Y axis position: {y_position} steps")
+
+# Stop the X axis
+picomotor.axis["X"].stop()
+
+# Stop the Y axis
+picomotor.axis["Y"].stop()
+
+# Disable remote mode
+picomotor.enable_remote_mode = False
+
+# Close the connection to the Picomotor controller
+picomotor.close()
+```
+
+Make sure to replace `'COM1'` with the correct serial port for your Picomotor controller. Also, adjust the step values and other commands as needed for your specific application.

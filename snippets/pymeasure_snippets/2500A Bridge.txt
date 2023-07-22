@@ -1,0 +1,28 @@
+Sure! Here's an example script that uses Pymeasure to connect to a 2500A Bridge Multimeter:
+
+```python
+from pymeasure.instruments.keithley import Keithley2500
+
+# Connect to the instrument
+meter = Keithley2500("GPIB::1::INSTR")
+
+# Initialize the instrument
+meter.reset()
+meter.beep(1000, 0.1)
+
+# Set the measurement mode to resistance
+meter.mode = "RES"
+
+# Perform a resistance measurement
+resistance = meter.resistance
+
+# Print the measured resistance
+print("Resistance: {} Ohms".format(resistance))
+
+# Disconnect from the instrument
+meter.disconnect()
+```
+
+This script connects to the Keithley 2500A Bridge Multimeter using the GPIB interface. It initializes the instrument, sets the measurement mode to resistance, performs a resistance measurement, and prints the measured resistance. Finally, it disconnects from the instrument.
+
+Note: Make sure to replace `"GPIB::1::INSTR"` with the correct address of your instrument.

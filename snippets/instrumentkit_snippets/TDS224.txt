@@ -1,0 +1,22 @@
+To connect to a TDS224 using Instrumentkit, you can use the following Python script:
+
+```python
+import instrumentkit
+
+# Create a connection to the TDS224
+tds224 = instrumentkit.connect('TDS224')
+
+# Perform operations on the TDS224
+# ...
+
+# Close the connection
+tds224.close()
+```
+
+Please note that the above code assumes that you have already installed Instrumentkit library. If not, you can install it using pip:
+
+```
+pip install instrumentkit
+```
+
+Replace the `# Perform operations on the TDS224` comment with the specific operations you want to perform on the TDS224, such as reading measurements or configuring settings.

@@ -1,0 +1,31 @@
+Sure! Here's an example Python script that uses Qcodes Community to connect to a S5048 2-Port 4.8 GHz Analyzer Network Analyzer:
+
+```python
+import qcodes as qc
+from qcodes.instrument_drivers.Keysight.Keysight_P9374A import Keysight_P9374A
+
+# Connect to the network analyzer
+na = Keysight_P9374A('na', 'TCPIP0::192.168.1.1::inst0::INSTR')
+
+# Print the instrument ID
+print(na.IDN())
+
+# Set the start and stop frequency
+na.start_frequency(1e9)  # 1 GHz
+na.stop_frequency(4.8e9)  # 4.8 GHz
+
+# Set the number of points and bandwidth
+na.npts(1001)
+na.bandwidth(1000)  # 1 kHz
+
+# Perform a sweep and get the data
+data = na.sweep()
+
+# Print the data
+print(data)
+
+# Disconnect from the network analyzer
+na.close()
+```
+
+Make sure to replace `'TCPIP0::192.168.1.1::inst0::INSTR'` with the actual VISA address of your network analyzer.

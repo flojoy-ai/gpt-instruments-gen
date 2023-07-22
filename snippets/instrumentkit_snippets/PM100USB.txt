@@ -1,0 +1,27 @@
+Sure! Here's an example Python script that uses Instrumentkit to connect to a PM100USB Power Meter:
+
+```python
+from instrumentkit import ThorlabsPM100USB
+
+# Connect to the PM100USB Power Meter
+power_meter = ThorlabsPM100USB()
+
+# Print information about the connected sensor
+sensor = power_meter.sensor
+print("Sensor Name:", sensor.name)
+print("Sensor Serial Number:", sensor.serial_number)
+print("Sensor Calibration Message:", sensor.calibration_message)
+print("Sensor Type:", sensor.type)
+print("Sensor Flags:", sensor.flags)
+
+# Set the measurement configuration to power
+power_meter.measurement_configuration = ThorlabsPM100USB.MeasurementConfiguration.power
+
+# Read a measurement from the power meter
+measurement = power_meter.read()
+print("Measurement:", measurement)
+```
+
+Make sure you have Instrumentkit installed (`pip install instrumentkit`) and the necessary dependencies (`pyvisa`, `pyvisa-py`, and `numpy`). Also, ensure that you have the correct USB driver installed for the PM100USB Power Meter.
+
+Note that this script assumes that you have only one PM100USB Power Meter connected to your computer. If you have multiple power meters, you may need to specify the correct resource name when creating the `ThorlabsPM100USB` object.

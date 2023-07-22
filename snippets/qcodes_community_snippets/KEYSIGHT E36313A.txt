@@ -1,0 +1,30 @@
+Sure! Here's an example code that uses Qcodes Community to connect to a KEYSIGHT E36313A Power Supply:
+
+```python
+import qcodes as qc
+from qcodes.instrument_drivers.Keysight.Keysight_E36313A import Keysight_E36313A
+
+# Connect to the power supply
+power_supply = Keysight_E36313A('power_supply', 'TCPIP0::192.168.1.1::inst0::INSTR')
+
+# Print the power supply IDN
+print(power_supply.IDN())
+
+# Set the output voltage to 5V
+power_supply.voltage(5)
+
+# Set the output current limit to 1A
+power_supply.current_limit(1)
+
+# Enable the output
+power_supply.output_enable(True)
+
+# Disable the output after 5 seconds
+qc.sleep(5)
+power_supply.output_enable(False)
+
+# Close the connection to the power supply
+power_supply.close()
+```
+
+Make sure to replace `'TCPIP0::192.168.1.1::inst0::INSTR'` with the actual VISA address of your power supply.

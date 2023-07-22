@@ -1,0 +1,73 @@
+import instrumental
+
+# Connect to the Thorlab DCU224C camera
+camera = instrumental.instrument("Thorlab DCU224C")
+
+# Perform some operations on the camera
+camera.WriteEEPROM("test")
+content = camera.ReadEEPROM(count=len("test"))
+assert content == "test"
+
+assert camera.AllocImageMem() == 0
+
+assert camera.FreeImageMem() == 0
+
+assert camera.SetImageMem() == 0
+
+cam = camera
+cam.AllocImageMem()
+cam.SetImageMem()
+assert cam.SetImageSize(x=300, y=200) == 0
+assert cam.SetImageSize(x=uc480.IS.GET_IMAGE_SIZE_X) == 300
+assert cam.SetImageSize(x=uc480.IS.GET_IMAGE_SIZE_Y) == 200
+
+assert camera.CaptureVideo() == 0
+
+assert camera.StopLiveVideo() == 0
+
+try:
+    camera.CaptureVideo()
+except Exception:
+    camera.GetError()
+    error_message = camera.error_message.value
+assert error_message == "There is no activated image memory"
+
+import numpy
+camera.AllocImageMem()
+camera.SetImageMem()
+camera.CaptureVideo(uc480.IS.WAIT)
+camera.StopLiveVideo(uc480.IS.WAIT)
+assert camera.CopyImageMem() == 0
+assert numpy.sum(camera.data) > 0
+
+assert camera.AddToSequence() == 0
+
+camera.AllocImageMem()
+camera.AddToSequence()
+camera.SetImageMem()
+camera.CaptureVideo(uc480.IS.WAIT)
+camera.StopLiveVideo(uc480.IS.WAIT)
+assert camera.CopyImageMem() == 0
+assert numpy.sum(camera.data) > 0
+
+assert camera.ClearSequence() == 0
+
+camera.AllocImageMem()
+camera.AddToSequence()
+assert camera.LockSeqBuf(1) == 0
+
+camera.AllocImageMem()
+assert camera.UnlockSeqBuf(1) == 0
+
+assert camera.GetActSeqBuf() == 0
+
+assert camera.SetAllocatedImageMem() == 0
+
+camera.SetAllocatedImageMem()
+camera.SetImageMem()
+camera.CaptureVideo(uc480.IS.WAIT)
+camera.StopLiveVideo(uc480.IS.WAIT)
+assert numpy.sum(camera.data) > 0
+
+# Disconnect from the camera
+camera.ExitCamera()

@@ -1,0 +1,24 @@
+Here's an example Python script that uses Instrumental library to connect to a Thorlabs BBD201 Motion controller:
+
+```python
+import instrumental
+
+# Connect to the Thorlabs BBD201 Motion controller
+with instrumental.instrument('thorlabs_bbd201') as inst:
+    # Enable the motor
+    inst.motor.enable()
+
+    # Move the motor to a specific position
+    inst.motor.move_to(100)
+
+    # Get the current position of the motor
+    position = inst.motor.position()
+
+    # Print the current position
+    print(f"Current position: {position}")
+
+    # Disable the motor
+    inst.motor.disable()
+```
+
+Make sure you have the `instrumental` library installed before running this script. You can install it using `pip install instrumental`.

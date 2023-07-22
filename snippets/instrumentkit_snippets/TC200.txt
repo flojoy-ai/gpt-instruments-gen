@@ -1,0 +1,27 @@
+To connect to a TC200 Temperature Controller using Instrumentkit, you can use the following Python script:
+
+```python
+from instrumentkit import TC200
+
+# Create an instance of the TC200 Temperature Controller
+tc200 = TC200()
+
+# Connect to the TC200 Temperature Controller
+tc200.connect()
+
+# Perform operations with the TC200 Temperature Controller
+# For example, you can read the temperature value
+temperature = tc200.read_temperature()
+print(f"Temperature: {temperature} °C")
+
+# Disconnect from the TC200 Temperature Controller
+tc200.disconnect()
+```
+
+Make sure you have Instrumentkit installed in your Python environment before running this script. You can install it using pip:
+
+```
+pip install instrumentkit
+```
+
+Replace the `perform operations` section with the specific operations you want to perform with the TC200 Temperature Controller, such as setting the temperature or reading other parameters. Refer to the documentation of the TC200 Temperature Controller for the available methods and their usage.

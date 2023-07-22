@@ -1,0 +1,45 @@
+To connect to the ATS9360 DAQ board using Qcodes, you can use the following code:
+
+```python
+import qcodes as qc
+from qcodes.instrument_drivers.AlazarTech.ATS9360 import AlazarTech_ATS9360
+
+# Connect to the ATS9360 DAQ board
+daq = AlazarTech_ATS9360("daq", "ATS9360")
+
+# Set the clock source and samplerate
+daq.clock_source("INTERNAL_CLOCK")
+daq.sample_rate(1.8e9)
+
+# Set the trigger parameters
+daq.trigger_source1("EXTERNAL")
+daq.trigger_level1(0.5)
+daq.trigger_edge1("RISING")
+
+# Set the acquisition parameters
+daq.samples_per_record(1024)
+daq.records_per_buffer(100)
+daq.buffers_per_acquisition(10)
+
+# Start the acquisition
+daq.acquisition_mode("NPT")
+daq.start_acquisition()
+
+# Read the acquired data
+data = daq.acquire()
+
+# Stop the acquisition
+daq.stop_acquisition()
+
+# Close the connection to the DAQ board
+daq.close()
+```
+
+Note that you may need to install the `qcodes` package and the `AlazarTech` driver before running this code. You can install them using pip:
+
+```
+pip install qcodes
+pip install qcodes-contrib-drivers
+```
+
+Make sure to replace `"daq"` and `"ATS9360"` with the appropriate names for your instrument and instrument driver.

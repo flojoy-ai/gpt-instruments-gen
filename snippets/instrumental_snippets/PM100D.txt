@@ -1,0 +1,38 @@
+Here is a Python script that uses Instrumental to connect to a PM100D Power Meter:
+
+```python
+from instrumental import instrument, list_instruments
+
+# List all available instruments
+print(list_instruments())
+
+# Connect to the PM100D Power Meter
+pm100d = instrument('Thorlabs PM100D')
+
+# Get the current power reading
+power = pm100d.power()
+print('Current power:', power)
+
+# Set the input signal wavelength to 1550 nm
+pm100d.wavelength = 1550
+
+# Get the input signal wavelength
+wavelength = pm100d.wavelength
+print('Current wavelength:', wavelength)
+
+# Make a multi-sample power measurement
+measurement = pm100d.measure(n_samples=10)
+print('Average power:', measurement.nominal_value)
+print('Power uncertainty:', measurement.std_dev)
+
+# Close the connection to the Power Meter
+pm100d.close()
+```
+
+This script first lists all available instruments using the `list_instruments()` function. Then, it connects to the PM100D Power Meter using the `instrument()` function and assigns it to the `pm100d` variable.
+
+The script then demonstrates some basic operations with the Power Meter. It retrieves the current power reading using the `power()` method and prints it. It sets the input signal wavelength to 1550 nm using the `wavelength` attribute. It retrieves the current wavelength using the `wavelength` attribute and prints it.
+
+Finally, the script makes a multi-sample power measurement using the `measure()` method with 10 samples. It retrieves the average power and power uncertainty from the measurement and prints them.
+
+The script closes the connection to the Power Meter using the `close()` method.

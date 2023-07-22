@@ -1,0 +1,36 @@
+To connect to a Singlequantum instrument using Qcodes Community, you can use the `WebSQControlqcode` class provided in the code example. Here's an example script that demonstrates how to connect to the instrument and perform some basic operations:
+
+```python
+from qcodes import Station
+from qcodes.instrument_drivers.singlequantum.WebSQControlqcode import WebSQControlqcode
+
+# Create a station to hold the instrument
+station = Station()
+
+# Connect to the Singlequantum instrument
+instrument = WebSQControlqcode('singlequantum', address='localhost', port=12000)
+station.add_component(instrument)
+
+# Set the bias current to 10 uA
+instrument.bias_current(10)
+
+# Enable the detectors
+instrument.detectors(True)
+
+# Set the measurement period to 100 ms
+instrument.measurement_periode(100)
+
+# Acquire 5 points
+instrument.npts(5)
+counts = instrument.counters()
+
+# Print the acquired counts
+print(counts)
+
+# Disconnect from the instrument
+instrument.close()
+```
+
+In this script, we first create a `Station` object to hold the instrument. Then, we create an instance of the `WebSQControlqcode` class and add it to the station. We can then use the instrument's parameters and methods to interact with the instrument. In this example, we set the bias current, enable the detectors, set the measurement period, and acquire counts. Finally, we close the connection to the instrument.
+
+Note that you need to replace `'localhost'` with the actual IP address of the Singlequantum instrument, and adjust the port number if necessary.

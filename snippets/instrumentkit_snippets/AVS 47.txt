@@ -1,0 +1,28 @@
+To connect to an AVS 47 Temperature Controller using Instrumentkit, you can use the following Python script:
+
+```python
+from instrumentkit import avs47
+
+# Create an instance of the AVS 47 Temperature Controller
+avs = avs47.AVS47()
+
+# Connect to the device
+avs.connect()
+
+# Perform operations on the device
+temperature = avs.get_temperature()
+print(f"Current temperature: {temperature} °C")
+
+# Disconnect from the device
+avs.disconnect()
+```
+
+Make sure you have Instrumentkit installed in your Python environment before running this script. You can install it using pip:
+
+```
+pip install instrumentkit
+```
+
+Replace the `perform operations on the device` section with the specific operations you want to perform on the AVS 47 Temperature Controller, such as setting the temperature or reading other parameters.
+
+Note: The AVS 47 Temperature Controller class in Instrumentkit may have additional methods and properties that you can use to interact with the device. Please refer to the Instrumentkit documentation for more details on the available functionality.

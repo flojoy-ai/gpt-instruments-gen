@@ -1,0 +1,21 @@
+```python
+import pymeasure
+
+# Create a connection to the KEYSIGHT E4980A Multimeter
+meter = pymeasure.e4980a.E4980A("GPIB::1")
+
+# Open the connection
+meter.open()
+
+# Perform measurements or other operations with the meter
+
+# Close the connection
+meter.close()
+```
+
+Explanation:
+1. Import the `pymeasure` module.
+2. Create a connection to the KEYSIGHT E4980A Multimeter using the `pymeasure.e4980a.E4980A` class and provide the appropriate address (e.g., "GPIB::1").
+3. Open the connection using the `open()` method.
+4. Perform measurements or other operations with the meter.
+5. Close the connection using the `close()` method.

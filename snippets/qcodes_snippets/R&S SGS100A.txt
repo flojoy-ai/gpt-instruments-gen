@@ -1,0 +1,29 @@
+Here is a Python script that uses Qcodes to connect to a R&S SGS100A RF Signal Generator:
+
+```python
+import qcodes as qc
+from qcodes.instrument_drivers.rohde_schwarz.SGS100A import RohdeSchwarzSGS100A
+
+# Create an instance of the instrument
+sg = RohdeSchwarzSGS100A('sg', 'TCPIP0::192.168.1.1::inst0::INSTR')
+
+# Connect to the instrument
+sg.connect()
+
+# Print the frequency of the signal generator
+print(sg.frequency())
+
+# Set the frequency to 1 GHz
+sg.frequency(1e9)
+
+# Turn on the RF output
+sg.on()
+
+# Turn off the RF output
+sg.off()
+
+# Disconnect from the instrument
+sg.disconnect()
+```
+
+Note: Replace `'TCPIP0::192.168.1.1::inst0::INSTR'` with the actual address of your signal generator.

@@ -1,0 +1,33 @@
+Sure! Here's an example Python script that uses Instrumentkit to connect to a Keithley 6220 Power Meter:
+
+```python
+import instrumentkit as ik
+
+# Connect to the Keithley 6220 Power Meter
+power_meter = ik.keithley.Keithley6220.open_gpibusb('/dev/ttyUSB0', 12)
+
+# Set the measurement mode to current
+power_meter.mode = power_meter.Mode.current
+
+# Set the current range to 1 mA
+power_meter.current_range = 1e-3
+
+# Enable the output
+power_meter.output_enabled = True
+
+# Measure the current
+current = power_meter.measure()
+
+# Print the measured current
+print(f"Measured current: {current}")
+
+# Disable the output
+power_meter.output_enabled = False
+
+# Close the connection to the power meter
+power_meter.close()
+```
+
+Make sure to replace `'/dev/ttyUSB0'` with the correct serial port of your Keithley 6220 Power Meter. Also, adjust the measurement mode and range according to your needs.
+
+Note: This script assumes that you have already installed the Instrumentkit library. If not, you can install it using `pip install instrumentkit`.

@@ -1,0 +1,40 @@
+To connect to a Smaract MCS2 Motion controller using Instrumental, you can use the following Python script:
+
+```python
+from instrumental import instrument, list_instruments
+
+# Find the available instruments
+instruments = list_instruments()
+
+# Connect to the Smaract MCS2 Motion controller
+controller = instrument(instruments[0])
+
+# Now you can use the controller object to send commands and retrieve information
+# For example, to get the version of the controller:
+version = controller.version
+print(version)
+
+# To get the number of channels:
+nchannels = controller.nchannels
+print(nchannels)
+
+# To reset the controller:
+controller.reset()
+
+# To set the sensor enabled mode:
+controller.sensor_enabled = 1
+
+# To trigger a command:
+controller.trigger_command()
+
+# To configure the baudrate:
+controller.configure_baudrate(9600)
+
+# To keep the controller alive:
+controller.keep_alive(1000)
+
+# Disconnect from the controller
+controller.disconnect()
+```
+
+Note: Replace `instruments[0]` with the appropriate instrument name or address for your specific setup.

@@ -1,0 +1,69 @@
+```python
+import time
+import numpy as np
+import PyTango as pt
+
+# Measurement parameters, these are hardcoded since this is just a demo
+binning = 0  # you can change this
+offset = 0
+tacq = 1000  # Measurement time in millisec, you can change this
+syncDivider = 1  # you can change this
+CFDZeroCross0 = 10  # you can change this (in mV)
+CFDLevel0 = 100  # you can change this (in mV)
+CFDZeroCross1 = 10  # you can change this (in mV)
+CFDLevel1 = 50  # you can change this (in mV)
+
+# Variables to store information read from device
+counts = np.zeros(65536, dtype=np.uint32)
+dev = None
+
+# Connect to the PicoHarp device
+dev_name = "pico/0"  # Replace with the actual device name
+dev = pt.DeviceProxy(dev_name)
+
+# Initialize the device
+dev.Initialize(0)
+
+# Set measurement parameters
+dev.SetSyncDiv(syncDivider)
+dev.SetInputCFD(0, CFDLevel0, CFDZeroCross0)
+dev.SetInputCFD(1, CFDLevel1, CFDZeroCross1)
+dev.SetBinning(binning)
+dev.SetOffset(offset)
+
+# Get device information
+hw_info = dev.GetHardwareInfo()
+hw_model = hw_info.model
+hw_partno = hw_info.partno
+hw_version = hw_info.version
+print(f"Found Model {hw_model} Part no {hw_partno} Version {hw_version}")
+
+# Calibrate the device
+dev.Calibrate()
+
+# Start measurement
+while True:
+    input("Press ENTER to start measurement...")
+    dev.StartMeas(tacq)
+    time.sleep(tacq / 1000)  # Wait for measurement to complete
+
+    # Get histogram data
+    dev.GetHistogram(counts, 0)
+
+    # Process the histogram data as needed
+    integral_count = np.sum(counts)
+    print(f"Total Count: {integral_count}")
+
+    # Check for overflow
+    flags = dev.GetFlags()
+    if flags & 0x0040:
+        print("Overflow")
+
+    # Continue or quit
+    cmd = input("Enter c to continue or q to quit: ")
+    if cmd == "q":
+        break
+
+# Close the device
+dev.CloseDevice()
+```

@@ -1,0 +1,29 @@
+Sure! Here's an example Python script that uses Qcodes Community to connect to an ANC 350 PIEZO Controller Positional Controller:
+
+```python
+import qcodes as qc
+from qcodes.instrument_drivers.anc350 import ANC350
+
+# Connect to the ANC 350 controller
+anc350 = ANC350('anc350', 'COM1')  # Replace 'COM1' with the appropriate serial port
+
+# Print the available parameters
+print(anc350.parameters)
+
+# Set the voltage amplitude to 10 V
+anc350.voltage_amplitude(10)
+
+# Set the frequency to 100 Hz
+anc350.frequency(100)
+
+# Enable the output
+anc350.output_enable(True)
+
+# Move the piezo to position 0
+anc350.move_absolute(0)
+
+# Disconnect from the ANC 350 controller
+anc350.close()
+```
+
+Make sure to replace `'COM1'` with the appropriate serial port that your ANC 350 controller is connected to.

@@ -1,0 +1,1264 @@
+,"Yearly revenue (millions, USD)",Vendor headquarters,Device Description,Device,Field 1,Vendor wikipedia or cruncbase description,Library,Vendor,Vendor logo,Vendor website,ChatGPT prompt,Category description link,Device Category,Category Description,Corrected device name,Device datasheet (PDF),Device picture,Device Description Link,GitHub link to Python driver (NOT LINK TO DOCS ON GITHUB),Python docs link,Device Price,ChatGPT code,Obsolete,Notes,docstring
+0,110.6,"Cleveland, Ohio, United States",Device To Interface A Keithley Multimeters.,Keithleymultimeters,205.0,"Keithley Instruments is a measurement and instrument company headquartered in Solon, Ohio, that develops, manufactures, markets, and sells data acquisition products, as well as complete systems for high-volume production and assembly testing.
+",Pytango,Keithley,"[OrderedDict([('id', 'att7PoO6FUHxnCmlK'), ('width', 900), ('height', 500), ('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/NeO02HKgoFPV3DNb9vOFuQ/oUOnoE3G5-QeCMyfgXyg8FqsnOeauIly5GBoFYr9Za8Zrr0680YSs6QaLZbjSLo7PoMQ00w0RPeo8KNMcbYt2atP2MKHb0B4-GyFD_CU3NjI0vDcK8LLowKujulyPoKADY3pAVNPMgBCEnKshd91bg/0TQRCCKsz0gJy1NFGfGsJsjM3QdRGQ8MoPDdSPPJdCA'), ('filename', 'keithley-a-tektronix-company-vector-logo.png'), ('size', 4698), ('type', 'image/png'), ('thumbnails', OrderedDict([('small', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/ZnO_WGoJzGnSlUctBDqWew/3IevGml9FN4w1wC95p0SxkWfy9Or2KbV9QY3D0d1q_Sej0Zp6VH3gJgIsG75z_GB4Ob04GciukrNLZqRSkqxUA/uTVK9YUV68keAgFRR7IKhzRM4i5JrKr9C0Qtw0T9sOo'), ('width', 65), ('height', 36)])), ('large', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/qLTzFSMkPTLA6g9lkPJmsg/zyqBAfflKt_8lvw15arx51Xd9fYqp17v4WFX71buJSr6egMKaBsN1l-whDpCpYtjxp2PsM9RQH8m8m3yxtquXw/52L-EUk-XUGAnw0eN3grANao1iKKOIuxmavJUlgreXQ'), ('width', 900), ('height', 500)])), ('full', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/DD76F3FSvA0sLYAXfST7DA/Y9vIBAtL1_Fy2BC2SLgyVwDmN2BpqCN-RepHfRd6uBzNVwzsKrLvHbBvYJti5ZoIf_VLDikmzoIRrzQ6Veuw7g/bIGTWhsUS3UoKan-BcRmMtd0TCP2TPvDoZpnD5k1pXQ'), ('width', 3000), ('height', 3000)]))]))])]",https://www.tek.com/en,Write a Python script that uses Pytango to connect to a {Device name} ,,,,,,,,,,,,,,
+9,75000.0,US,Server For The Control Of The Pressure Automated Calibration Equipment 5000 From Ge,Gepressctrlpace 5000,130.0,"**GE** Power is a world energy leader providing equipment, solutions and services across the energy value chain from generation to consumption
+
+",Pytango,GE,"[OrderedDict([('id', 'attLXmPsmAvezjIJt'), ('width', 1200), ('height', 1200), ('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/8XsVWpsXU9vQ0yEvLryTNg/E0Twpa-kt4aD0is0AWHPtM08k4vHCBK7u_dP-xMKh3KHsTG7T5KzDXUSRkKzEjscu2rx_f23rFxW5SFifH809-BBUms0rP-1wWObG8gGxJbsjVEiTgBaMjEQ6bkgfw2q/oj0QrdRkku18P1_PNYj4b-v4sfBTD-sPwQnws50r948'), ('filename', 'General_Electric_logo.svg.png'), ('size', 143888), ('type', 'image/png'), ('thumbnails', OrderedDict([('small', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/BT3w2v8Z5EVkdxSYQ2sEaw/lzTpDniBwEZXDo51T7GYxJqsY71uLdRzD6ToypKBdgZ03L4g3h0s1osBduASiMVkgXQncRAskBdR-VdhqYjg3A/Nn6i3BzyXxtYuK-ka3O8-U9x7D5s3Es7_mltIJBzLjc'), ('width', 36), ('height', 36)])), ('large', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/J3zGzApMohWAi0K5sHzg_A/oUMQNdwhlJtthXwbTtf5Scip4lJI-qozdZYlBaQmQyb9EK1LSciTQ9vDlhH-nZnxzsrRVMxmpfPs97ffurFXDA/m7Kp80whKtDmHZdeeOdgan4YTeKRW_mBqOrzVQ0wv6s'), ('width', 512), ('height', 512)])), ('full', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/x8L4hhlgCkfdewUnghSw1A/ZKo2YMEXvBIBOekypqIu3fyRlusM1LWfoAQwe40_H8zRlK9Rxd84fWl28_-1GHv8mBeqKZ6But3hPycbFZE_QQ/BKE3FzheXqtHMlE60V41MLmIGMDURFKGy6HZAaAglxA'), ('width', 3000), ('height', 3000)]))]))])]",https://www.ge.com/,Write a Python script that uses Pytango to connect to a Druck PACE5000 Pressure Controller,https://en.wikipedia.org/wiki/Pressure_regulator,['Pressure Controller'],"A pressure regulator is a valve that controls the pressure of a fluid to a desired value, using negative feedback from the controlled pressure",Druck PACE5000,https://www.instrumart.com/assets/BHCS38476-PACE-5000-6000-Modular-Pressure-Controller_R12.pdf,"[OrderedDict([('id', 'attrWoDPDV7ZJuhQq'), ('width', 660), ('height', 495), ('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/0YykXDulsU9e8OZa5QwuQQ/fgSD98Q7eKyryR9jl6klPER-YN2a7ZkJxpuhc2rtOmEiih4JIHsridCFPrAcHH5b-e6_A-Yq9Q-BovtyRaY2jLtGmvK4UoEJzArZmufljTY/7N12aX1pUsY-ZmXTfaB85IyVkav4SVb14dc-74U5o10'), ('filename', 'PACE-5000-2020.jpg'), ('size', 12803), ('type', 'image/jpeg'), ('thumbnails', OrderedDict([('small', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/WNF8qCtLQb4IqMgdbABJLg/YFZftzgCZQJ9TXTksb0w_fb_oRWrtRnhQeytWK_PUZjXe2aOgfYQMtD2cCNs4_NOdQPvPZ9almYgWqpdAL7f0Q/Ru7ilk-eaGcI8WTsAGgNYQGywauVT2rVpSyW11skJ-Q'), ('width', 48), ('height', 36)])), ('large', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/Yoi0zAwikOqtekET2OoRdw/2L88dqAuIot0xUPL-8BUFnUg5zfo9zGEf04OGem0GHWNY0tsuyYIrhMfv_4iz1fTQ8QOzbgRs800MG5NhoeNwA/_T-67MQgSGuohSc41ldILuy2R1yCz1NxKeIomO2HqWc'), ('width', 660), ('height', 495)])), ('full', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/5IAkVBFJRdXV51LgKYEPOQ/Apbn9vTbAm2l5-NhfGKiTSXuZE0NY2s6Nyqr2Cf5jfl0jp62qqX3Qz8-WjRGTiaa6xXzpQsXB-25E3hCNZqFyw/J41FoHsmy8wRYbntjt2xdddun1j-IZjYEYtQu2XhhtY'), ('width', 3000), ('height', 3000)]))]))])]",https://www.instrumart.com/products/24809/druck-pace5000-pace6000-modular-pressure-controller,https://github.com/tiagocoutinho/gepace/blob/master/gepace/tango/server/pace.py,https://pypi.org/project/sinstruments/,2800.0,,,,"import asyncio
+import urllib.parse
+
+import tango
+from tango.server import Device, attribute, command, device_property
+
+from connio import connection_for_url
+from gepace.pace import Pace as PaceHW, Mode, RateMode
+
+
+def create_connection(address, connection_timeout=1, timeout=1):
+    if address.startswith(""tcp://""):
+        address = address[6:]
+        pars = address.split("":"")
+        host = pars[0]
+        port = int(pars[1]) if len(pars) > 1 else 5025
+        conn = TCP(host, port,
+                   connection_timeout=connection_timeout,
+                   timeout=timeout)
+        return conn
+    else:
+        raise NotImplementedError(
+            ""address {!r} not supported"".format(address))
+
+
+ATTR_MAP = {
+    ""idn"": lambda pace: pace.idn(),
+    ""startup_mode"": lambda pace: pace.startup_mode(),
+    ""pressure1"": lambda pace: pace[1].pressure(),
+    ""src_pressure1"": lambda pace: pace[1].src_pressure(),
+    ""pressure1_setpoint"": lambda pace: pace[1].src_pressure_setpoint(),
+    ""pressure1_overshoot"": lambda pace: pace[1].src_pressure_rate_overshoot(),
+    ""pressure1_rate_mode"": lambda pace: pace[1].src_pressure_rate_mode(),
+    ""pressure1_rate"": lambda pace: pace[1].src_pressure_rate(),
+    ""pressure1_control"": lambda pace: pace[1].pressure_control(),
+    ""unit1"": lambda pace: pace[1].unit(),
+    ""error"": lambda pace: pace.error()
+}
+
+
+class Pace(Device):
+
+    green_mode = tango.GreenMode.Asyncio
+
+    url = device_property(dtype=str)
+    baudrate = device_property(dtype=int, default_value=9600)
+    bytesize = device_property(dtype=int, default_value=8)
+    parity = device_property(dtype=str, default_value='N')
+
+    # If true, when setting a new setpoint, will also update the startup setpoint.
+    # This is useful is the device needs to be restarted in the same conditions it was stopped
+    sync_startup_set_point = device_property(dtype=bool, default_value=True)
+
+    async def init_device(self):
+        await super().init_device()
+        self.lock = asyncio.Lock()
+        kwargs = dict(concurrency=""async"")
+        if self.url.startswith(""serial:"") or self.url.startswith(""rfc2217:""):
+            kwargs.update(dict(baudrate=self.baudrate, bytesize=self.bytesize,
+                               parity=self.parity))
+        elif self.url.startswith(""tcp:""):
+            addr = urllib.parse.urlparse(self.url)
+            if addr.port is None:
+                self.url += "":5025""
+            kwargs[""timeout""] = 1
+            kwargs[""connection_timeout""] = 1
+        self.connection = connection_for_url(self.url, **kwargs)
+        self.pace = PaceHW(self.connection)
+        self.last_values = {}
+
+    async def delete_device(self):
+        await super().delete_device()
+        await self.pace.close()
+
+    async def read_attr_hardware(self, indexes):
+        multi_attr = self.get_device_attr()
+        names = [
+            multi_attr.get_attr_by_ind(index).get_name().lower()
+            for index in indexes
+        ]
+        funcs = [ATTR_MAP[name] for name in names]
+        async with self.pace as group:
+            [func(self.pace) for func in funcs]
+        values = group.replies
+        self.last_values = dict(zip(names, values))
+
+    async def dev_state(self):
+        try:
+            control = await self.pace[1].pressure_control()
+        except Exception:
+            state = tango.DevState.FAULT
+        else:
+            state = tango.DevState.ON if control else tango.DevState.OFF
+        self.set_state(state)
+        return state
+
+    async def dev_status(self):
+        try:
+            return await self._dev_status()
+        except Exception as error:
+            return repr(error)
+
+    async def _dev_status(self):
+        try:
+            control = await self.pace[1].pressure_control()
+        except Exception as error:
+            self.__status = ""Disconnected: {!r}\n"".format(error)
+        else:
+            state = ""Control (ON)"" if control else ""Measurement (OFF)""
+            self.__status = ""Connected; In {}"".format(state)
+        self.set_status(self.__status)
+        return self.__status
+
+    @attribute(dtype=str, description=""Identification"")
+    def idn(self):
+        return self.last_values[""idn""]
+
+    @attribute(dtype=float, unit=""bar"", label=""Pressure"")
+    def pressure1(self):
+        return self.last_values[""pressure1""]
+
+    @attribute(dtype=float, unit=""bar"", label=""Source pressure"",
+               description=""Source pressure (+ve)"")
+    def src_pressure1(self):
+        return self.last_values[""src_pressure1""]
+
+    @attribute(dtype=float, unit=""bar"", label=""Pressure setpoint"",
+               description=""Pressure setpoint"")
+    def pressure1_setpoint(self):
+        return self.last_values[""pressure1_setpoint""]
+
+    @pressure1_setpoint.write
+    async def pressure1_setpoint(self, value):
+        await self.pace[1].src_pressure_setpoint(value)
+        if self.sync_startup_set_point:
+            mode, set_point = await self.pace.startup_mode()
+            if set_point != value:
+                await self.pace.startup_mode([mode, value])
+
+    @attribute(dtype=bool, label=""Overshoot"",
+               description=""pressure overshoot active?"")
+    def pressure1_overshoot(self):
+        return self.last_values[""pressure1_overshoot""]
+
+    @pressure1_overshoot.write
+    async def pressure1_overshoot(self, value):
+        await self.pace[1].src_pressure_rate_overshoot(value)
+
+    @attribute(dtype=str, label=""Rate mode"",
+               description=""Rate mode (linear or maximum) case insensitive"")
+    def pressure1_rate_mode(self):
+        return self.last_values[""pressure1_rate_mode""].name
+
+    @pressure1_rate_mode.write
+    async def pressure1_rate_mode(self, value):
+        value = RateMode[value.capitalize()]
+        await self.pace[1].src_pressure_rate_mode(value)
+
+    @attribute(dtype=float, unit=""bar/s"", label=""Rate"",
+               description=""Pressure rate"")
+    def pressure1_rate(self):
+        return self.last_values[""pressure1_rate""]
+
+    @pressure1_rate.write
+    async def pressure1_rate(self, value):
+        await self.pace[1].src_pressure_rate(value)
+
+    @attribute(dtype=bool, label=""Control"",
+               description=""Control active?"")
+    def pressure1_control(self):
+        return self.last_values[""pressure1_control""]
+
+    @pressure1_control.write
+    async def pressure1_control(self, value):
+        await self.pace[1].pressure_control(value)
+
+    @attribute(dtype=[str], max_dim_x=2, label=""Startup mode"",
+               description=""Mode and pressure applied at startup"")
+    def startup_mode(self):
+        mode, setpoint = self.last_values[""startup_mode""]
+        return [mode.name, str(setpoint)]
+
+    @startup_mode.write
+    async def startup_mode(self, value):
+        mode = Mode[value[0].capitalize()]
+        setpoint = float(value[1])
+        await self.pace.startup_mode([mode, setpoint])
+
+    @attribute(dtype=str)
+    def error(self):
+        code, error = self.last_values[""error""]
+        return ""{}: {}"".format(code, error) if code else """"
+
+    @attribute(dtype=str, label=""Unit"")
+    def unit1(self):
+        return self.last_values[""unit1""]
+
+    @unit1.write
+    async def unit1(self, value):
+        await self.pace[1].unit(value)
+
+    @command(dtype_in=str)
+    async def write(self, data):
+        async with self.lock:
+            await self.conn.write(data.encode())
+
+    @command(dtype_in=str, dtype_out=str)
+    async def write_readline(self, data):
+        async with self.lock:
+            return (await self.conn.write_readline(data.encode())).decode()
+
+
+if __name__ == ""__main__"":
+    import logging
+    fmt = ""%(asctime)s %(levelname)s %(name)s %(message)s""
+    logging.basicConfig(level=""DEBUG"", format=fmt)
+    GEPace.run_server()
+"
+13,110.6,"Cleveland, Ohio, United States",This Class Allows You To Control All Keithley Electrometers ( With Either Ddc Or Scpi Commands ) ...,Keithleyelectrometers,204.0,"Keithley Instruments is a measurement and instrument company headquartered in Solon, Ohio, that develops, manufactures, markets, and sells data acquisition products, as well as complete systems for high-volume production and assembly testing.
+",Pytango,Keithley,"[OrderedDict([('id', 'att7PoO6FUHxnCmlK'), ('width', 900), ('height', 500), ('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/NeO02HKgoFPV3DNb9vOFuQ/oUOnoE3G5-QeCMyfgXyg8FqsnOeauIly5GBoFYr9Za8Zrr0680YSs6QaLZbjSLo7PoMQ00w0RPeo8KNMcbYt2atP2MKHb0B4-GyFD_CU3NjI0vDcK8LLowKujulyPoKADY3pAVNPMgBCEnKshd91bg/0TQRCCKsz0gJy1NFGfGsJsjM3QdRGQ8MoPDdSPPJdCA'), ('filename', 'keithley-a-tektronix-company-vector-logo.png'), ('size', 4698), ('type', 'image/png'), ('thumbnails', OrderedDict([('small', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/ZnO_WGoJzGnSlUctBDqWew/3IevGml9FN4w1wC95p0SxkWfy9Or2KbV9QY3D0d1q_Sej0Zp6VH3gJgIsG75z_GB4Ob04GciukrNLZqRSkqxUA/uTVK9YUV68keAgFRR7IKhzRM4i5JrKr9C0Qtw0T9sOo'), ('width', 65), ('height', 36)])), ('large', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/qLTzFSMkPTLA6g9lkPJmsg/zyqBAfflKt_8lvw15arx51Xd9fYqp17v4WFX71buJSr6egMKaBsN1l-whDpCpYtjxp2PsM9RQH8m8m3yxtquXw/52L-EUk-XUGAnw0eN3grANao1iKKOIuxmavJUlgreXQ'), ('width', 900), ('height', 500)])), ('full', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/DD76F3FSvA0sLYAXfST7DA/Y9vIBAtL1_Fy2BC2SLgyVwDmN2BpqCN-RepHfRd6uBzNVwzsKrLvHbBvYJti5ZoIf_VLDikmzoIRrzQ6Veuw7g/bIGTWhsUS3UoKan-BcRmMtd0TCP2TPvDoZpnD5k1pXQ'), ('width', 3000), ('height', 3000)]))]))])]",https://www.tek.com/en,Write a Python script that uses Pytango to connect to a {Device name} ,,,,,,,,,,,,,,
+22,110.6,"Cleveland, Ohio, United States",Combines Commands For More Than One Keithley.,Keithley 6485 ML,222.0,"Keithley Instruments is a measurement and instrument company headquartered in Solon, Ohio, that develops, manufactures, markets, and sells data acquisition products, as well as complete systems for high-volume production and assembly testing.
+",Pytango,Keithley,"[OrderedDict([('id', 'att7PoO6FUHxnCmlK'), ('width', 900), ('height', 500), ('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/NeO02HKgoFPV3DNb9vOFuQ/oUOnoE3G5-QeCMyfgXyg8FqsnOeauIly5GBoFYr9Za8Zrr0680YSs6QaLZbjSLo7PoMQ00w0RPeo8KNMcbYt2atP2MKHb0B4-GyFD_CU3NjI0vDcK8LLowKujulyPoKADY3pAVNPMgBCEnKshd91bg/0TQRCCKsz0gJy1NFGfGsJsjM3QdRGQ8MoPDdSPPJdCA'), ('filename', 'keithley-a-tektronix-company-vector-logo.png'), ('size', 4698), ('type', 'image/png'), ('thumbnails', OrderedDict([('small', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/ZnO_WGoJzGnSlUctBDqWew/3IevGml9FN4w1wC95p0SxkWfy9Or2KbV9QY3D0d1q_Sej0Zp6VH3gJgIsG75z_GB4Ob04GciukrNLZqRSkqxUA/uTVK9YUV68keAgFRR7IKhzRM4i5JrKr9C0Qtw0T9sOo'), ('width', 65), ('height', 36)])), ('large', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/qLTzFSMkPTLA6g9lkPJmsg/zyqBAfflKt_8lvw15arx51Xd9fYqp17v4WFX71buJSr6egMKaBsN1l-whDpCpYtjxp2PsM9RQH8m8m3yxtquXw/52L-EUk-XUGAnw0eN3grANao1iKKOIuxmavJUlgreXQ'), ('width', 900), ('height', 500)])), ('full', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/DD76F3FSvA0sLYAXfST7DA/Y9vIBAtL1_Fy2BC2SLgyVwDmN2BpqCN-RepHfRd6uBzNVwzsKrLvHbBvYJti5ZoIf_VLDikmzoIRrzQ6Veuw7g/bIGTWhsUS3UoKan-BcRmMtd0TCP2TPvDoZpnD5k1pXQ'), ('width', 3000), ('height', 3000)]))]))])]",https://www.tek.com/en,Write a Python script that uses Pytango to connect to a {Device name} ,,,,,,,,,,,,,,
+52,114.0,Netherland,Compact Mass Flow and Pressure Controller for Gases,"Bronkhorst - FlexiFlow
+",111.0,"Bronkhorst offers a wide product portfolio of gas and liquid flow meters for low flow rates
+",Pytango,Bronkhorst,"[OrderedDict([('id', 'att7iQKZY4wGMsYuU'), ('width', 1024), ('height', 428), ('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/i4k6xKCSTkTTmqVxd0RqrA/koBbmlO_iiksuiXciH0K5byhLzKlsRr_jLQBLDznKv3RSfJcS3QeXTR1ZadhSFxOOR0MslNf4Tdv8PmeTVSSz7JzsdeFqMwveq_KtES19IJIoWIrvUIJiLe9KOydsubL/MRQ0aiW61ID2FX90fVdzqt8LbAPBfPL6hnFYw5qFQu8'), ('filename', 'bronkhorst-logo-1024x428.jpg'), ('size', 35457), ('type', 'image/jpeg'), ('thumbnails', OrderedDict([('small', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/SGATf_iC4crXD_V0vd9v7Q/KMGH6BQCOGc9cEHk4yFMeEnsAgBbmAkrNNZxllnOnUAxo9ZxVR03UZMkFSMcbSmGN008zCIz-wP9RcbiTNVabw/wUj6y7XpWBrydTiHx-1yW_JxQ0C1jwvDhQoLDGfIwc8'), ('width', 86), ('height', 36)])), ('large', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/FVstowKGyTHzMfYfrE0WGg/UsE3CWmodp43Y1wXSU6ZH1WWFhgi3_AVVowm_B_HlSZO2zokN4AdFYRWYUgbvG5KUmOr6pguat95_dW6ZslMkQ/MgFUUr0XyMMR_k3hypZ2MbndNuNeGsT6BehCZDJZK5o'), ('width', 1024), ('height', 428)])), ('full', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/X0H6SPyu7KGkIy2ZiWFiFQ/FUauhFUIZeNBFWGX_s3yVp5ml7R5OICS_72I9VgcDG4QTOKeDc9cjYRMM9Q5PT1fpllAtrCgwrMLZvFUAFeCLQ/LHu3owy_vNRUcUc7U9Sst_oQCATvcW3cLHmG02oGe3M'), ('width', 3000), ('height', 3000)]))]))])]",https://www.bronkhorst.com/int/,Write a Python script that uses Pytango to connect to a FF-C1X Mass Controller,"https://www.horiba.com/int/fluid-measurement-and-control/#:~:text=What%20is%20a%20Mass%20Flow,volumetric%20flow%20and%20mass%20flow.",['Mass Controller'],"A mass flow controller automatically controls the flow rate of a gas according to a set flow rate sent as an electric signal, without being affected by use conditions or changes in gas pressure",FF-C1X,https://www.bronkhorst.com/int/products/gas-flow/flexi-flow/ff-c1x/?pdf=true,"[OrderedDict([('id', 'attc1EK9KRUyVtT28'), ('width', 362), ('height', 374), ('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/qCheTMDIq_E5ohufNenrcw/WL1QUyg37BLj7fFkIiimTnjSvvS35ILM3f_Z0xpKPM6Sdl1M5xoZOxYjFhjNXAupkyAoJ3UHyJR2MVESXRgmRMf1SmnFURCJGRoYbTLPZ28/cAEAoKbeKLRBUWO3YqGA4LoZ9rs3MXVjjnKits55q7w'), ('filename', 'FF-C1x_.png'), ('size', 122798), ('type', 'image/png'), ('thumbnails', OrderedDict([('small', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/ZzNXVR_eYM84L_eR-n_YKw/BQWWQbGxbEvqxmQVnGTKEKRZbMM69zF7MOQZIwYeAZrMpQuzvaeeptjdzR9xrSMBTK6L4GQ_mW-VfduxX4cfUg/tIxF62zHM0wYzV_YPgwVOVluBIUTHqFIsVI0nKvWU3s'), ('width', 35), ('height', 36)])), ('large', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/PLhePI9oRn2eYKqTM7lwUw/XbxA9W6_XknPi1Nb243bseRTG5pvfR6Q9kYDvtr5SyMjcybLcVMYpdq6JTtihzyD9U0PRfH0qZU7R7VRO1Xihg/katN98DcyaHBilTBZSNJyQumafG7QCIK-zongAuJHnQ'), ('width', 362), ('height', 374)])), ('full', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/Q0kb2_EH_nqPGcglKe_CHw/uAXsKCVi3BDpSkRmNY6ZQx7Uo9dUo9wCbj5PVbmpZ7byRAIVT5hdX9ql8dhH3vfyDfsbE0qAoZzo_6n7bAOuhQ/UbusvZwOWwa8DH01f0XvFbCgaT-krHOL42dUJJd68Vk'), ('width', 3000), ('height', 3000)]))]))])]",https://www.bronkhorst.com/int/products/gas-flow/flexi-flow/ff-c1x/,https://pypi.org/project/bronkhorst-propar/,https://www.bronkhorst.com/int/products/accessories-and-software/flowware/python/,,,,Replaced Github Link with Pypi package,
+56,14.7,"Berlin, Germany","The PicoHarp 300 is a high-end, easy to use, plug and play Time-Correlated Single Photon Counting (TCSPC) system. It is connected to a PC through a USB 2.0 interface. The high quality and reliability of the PicoHarp 300 is expressed by a unique 5-year limited warranty.
+
+",PH Photoncounter,418.0,"The PicoQuant group was founded in 1996 to develop robust, compact, and easy to use time-resolved instrumentation and systems. Since April 2008 sales and support in North America is handled by PicoQuant Photonics North America Inc. In January 2010, the PicoQuant group was extended by PicoQuant Innovations, which was founded to support the increasing activities in the field of teaching, customer support, and event organization.
+",Pytango,Picoquant,"[OrderedDict([('id', 'att3Ffml7HIC1nRMD'), ('width', 177), ('height', 152), ('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/Db0U5Ps3vmoAiy2Xz-7pAA/rDMAufWCsPj6LP_FB_VcMUYj1BO00bZip5JpWalg5JJjZ_dqnKVEPZ78tOgY4L3hJ2te1FBdFIzzW4S35R2eAfb2FcBkNut3vZFpmYWEgDU/UNJr7IDMSdKu8yEyr8U1tTaYSEU_hOkd1K4jMXeR4-w'), ('filename', 'logo-white.png'), ('size', 58557), ('type', 'image/png'), ('thumbnails', OrderedDict([('small', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/F2tVGv26sDzzhHdb-HZSpA/BTYzPRvPDc8qsgRxDSwr03jSt9oD-9EO30vqi_8un1BzBQf2gMhgapafjaGAWrIUwIZFVE8DH-AgiBOV79tCjA/nBvx6703MQZKuOnMGdEtG1E8sea_8d9dozETK9rToBE'), ('width', 42), ('height', 36)])), ('large', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/ZGNqUoNapkp8ayOEKwzU3Q/vHuSBv5-xPS9R1QkH628u6uBG7qzFYtnizTq5dWPoVNN9UF3vaVu_vAM3XF3BFYBPfEUQMfJrtztptuV49tESg/MHXHz8roYFZlvWf6qarbiw0MhdX_Jn4kmWZIWfYn6Gw'), ('width', 177), ('height', 152)])), ('full', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/9rVDSowty7IQ7NzmJBmIxg/Yj8JhKQrDM3ZWtfCEONbDLLhyG3bAUD8yaD8O4l9N81c1jN2uu4fliyQUPAK_2579BBl0Zl7R5m8GCrof36gig/OQlZYm26pKHcUNF5Lv2VPOV9xOzI_pcIESVyy0ZLskQ'), ('width', 3000), ('height', 3000)]))]))])]",https://www.picoquant.com/,Write a Python script that uses Pytango to connect to a PicoHarp 300 Photon Counting System,https://en.wikipedia.org/wiki/Photon_counting,['Photon Counting System'],Photon counting is a technique in which individual photons are counted using a single-photon detector (SPD). A single-photon detector emits a pulse of signal for each detected photon. The counting efficiency is determined by the quantum efficiency and the system's electronic losses.,PicoHarp 300,https://www.picoquant.com/images/uploads/downloads/7304-picoharp300.pdf,"[OrderedDict([('id', 'attoIvJqIq4JWowuN'), ('width', 300), ('height', 170), ('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/sGK4O9ahuEjYDbC6ZZbxEA/DbNcRoVayN-vBSH9mMciDEJ3WeMMeS5PFWsLzjSKkB2MAIDxDzgyGX0tNG2krvWBUeL62xEu03LusYZXbKTeXgGzjo-zKbG_fa-qoEByxDtw9-8az8aYMXT5NJUMKYp6/xMs02yfPe8OwQMpLYd4-eyjVpcF-5DFfrvwjSewy0RU'), ('filename', 'picoharp_large__small.jpg'), ('size', 31031), ('type', 'image/jpeg'), ('thumbnails', OrderedDict([('small', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/5N72V3cSzbotiGU8p889-g/Q79vRNlbR8pF9J19nJ_BSpYosP2YRQiF4wD_pWre4iY6RG8DRwm3EiypxcgmYtGJ9CJ1DrWtopHtwJlWleOTCg/anIS_gY2zqWLb-cWDMhgpnMfvqwKiNjpANFUhjoPEI8'), ('width', 64), ('height', 36)])), ('large', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/ZlddCkr3zZgO2dMDKzlJ6w/IDlKb0qHtH6HhdV34sAepOrunJ25qEIGVQ9pIQ40sc4fXXIKblun52_6Ozhn3-fWjN2p2y4gLRexqEGwG0JHHA/KD6psvi2RvATAqssiUQGxj6r2xYy1rIBdsQEO0ZMTtQ'), ('width', 300), ('height', 170)])), ('full', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/NfFNqiOn3AzdCJY58h-PdA/TxRQGl_8FJNEu9s4Jq3i6B7vAa8k2Y5y-xisPi6-TBbycC2Cg1aaLXj_eTLDggPQur03etTyGjnvX282B9uEuA/B0IwEmMCFHDYfb_mSehSE36mzxyrwcZwDoykfhGGwy0'), ('width', 3000), ('height', 3000)]))]))])]",https://www.picoquant.com/products/category/tcspc-and-time-tagging-modules/picoharp-300-stand-alone-tcspc-module-with-usb-interface,https://github.com/PicoQuant/PH300-v3.x-Demos/blob/master/64/python/Standard/dlldemo.py,https://www.esrf.fr/computing/cs/tango/tango_doc/ds_doc/tango-ds/MeasureInstruments/PicoHarp300/index.html,,,,,"# Demo for access to PicoHarp 300 Hardware via PHLIB.DLL v 3.0.
+# The program performs a measurement based on hard coded settings.
+# The resulting histogram (65536 channels) is stored in an ASCII output file.
+#
+# Keno Goertz, PicoQuant GmbH, February 2018
+
+import time
+import ctypes as ct
+from ctypes import byref
+
+# From phdefin.h
+LIB_VERSION = ""3.0""
+HISTCHAN = 65536
+MAXDEVNUM = 8
+MODE_HIST = 0
+FLAG_OVERFLOW = 0x0040
+
+# Measurement parameters, these are hardcoded since this is just a demo
+binning = 0 # you can change this
+offset = 0
+tacq = 1000 # Measurement time in millisec, you can change this
+syncDivider = 1 # you can change this 
+CFDZeroCross0 = 10 # you can change this (in mV)
+CFDLevel0 = 100 # you can change this (in mV)
+CFDZeroCross1 = 10 # you can change this (in mV)
+CFDLevel1 = 50 # you can change this (in mV)
+cmd = 0
+
+# Variables to store information read from DLLs
+counts = (ct.c_uint * HISTCHAN)()
+dev = []
+libVersion = ct.create_string_buffer(b"""", 8)
+hwSerial = ct.create_string_buffer(b"""", 8)
+hwPartno = ct.create_string_buffer(b"""", 8)
+hwVersion = ct.create_string_buffer(b"""", 8)
+hwModel = ct.create_string_buffer(b"""", 16)
+errorString = ct.create_string_buffer(b"""", 40)
+resolution = ct.c_double()
+countRate0 = ct.c_int()
+countRate1 = ct.c_int()
+flags = ct.c_int()
+
+phlib = ct.CDLL(""phlib64.dll"")
+
+def closeDevices():
+    for i in range(0, MAXDEVNUM):
+        phlib.PH_CloseDevice(ct.c_int(i))
+    exit(0)
+
+def tryfunc(retcode, funcName):
+    if retcode < 0:
+        phlib.PH_GetErrorString(errorString, ct.c_int(retcode))
+        print(""PH_%s error %d (%s). Aborted."" % (funcName, retcode,\
+              errorString.value.decode(""utf-8"")))
+        closeDevices()
+
+phlib.PH_GetLibraryVersion(libVersion)
+print(""Library version is %s"" % libVersion.value.decode(""utf-8""))
+if libVersion.value.decode(""utf-8"") != LIB_VERSION:
+    print(""Warning: The application was built for version %s"" % LIB_VERSION)
+
+outputfile = open(""dlldemo.out"", ""w+"")
+
+outputfile.write(""Binning           : %d\n"" % binning)
+outputfile.write(""Offset            : %d\n"" % offset)
+outputfile.write(""AcquisitionTime   : %d\n"" % tacq)
+outputfile.write(""SyncDivider       : %d\n"" % syncDivider)
+outputfile.write(""CFDZeroCross0     : %d\n"" % CFDZeroCross0)
+outputfile.write(""CFDLevel0         : %d\n"" % CFDLevel0)
+outputfile.write(""CFDZeroCross1     : %d\n"" % CFDZeroCross1)
+outputfile.write(""CFDLevel1         : %d\n"" % CFDLevel1)
+
+print(""\nSearching for PicoHarp devices..."")
+print(""Devidx     Status"")
+
+for i in range(0, MAXDEVNUM):
+    retcode = phlib.PH_OpenDevice(ct.c_int(i), hwSerial)
+    if retcode == 0:
+        print(""  %1d        S/N %s"" % (i, hwSerial.value.decode(""utf-8"")))
+        dev.append(i)
+    else:
+        if retcode == -1: # ERROR_DEVICE_OPEN_FAIL
+            print(""  %1d        no device"" % i)
+        else:
+            phlib.PH_GetErrorString(errorString, ct.c_int(retcode))
+            print(""  %1d        %s"" % (i, errorString.value.decode(""utf8"")))
+
+# In this demo we will use the first PicoHarp device we find, i.e. dev[0].
+# You can also use multiple devices in parallel.
+# You can also check for specific serial numbers, so that you always know 
+# which physical device you are talking to.
+
+if len(dev) < 1:
+    print(""No device available."")
+    closeDevices()
+print(""Using device #%1d"" % dev[0])
+print(""\nInitializing the device..."")
+
+tryfunc(phlib.PH_Initialize(ct.c_int(dev[0]), ct.c_int(MODE_HIST)), ""Initialize"")
+
+# Only for information
+tryfunc(phlib.PH_GetHardwareInfo(dev[0], hwModel, hwPartno, hwVersion),\
+        ""GetHardwareInfo"")
+print(""Found Model %s Part no %s Version %s"" % (hwModel.value.decode(""utf-8""),\
+    hwPartno.value.decode(""utf-8""), hwVersion.value.decode(""utf-8"")))
+
+print(""\nCalibrating..."")
+tryfunc(phlib.PH_Calibrate(ct.c_int(dev[0])), ""Calibrate"")
+
+tryfunc(phlib.PH_SetSyncDiv(ct.c_int(dev[0]), ct.c_int(syncDivider)), ""SetSyncDiv"")
+
+tryfunc(
+    phlib.PH_SetInputCFD(ct.c_int(dev[0]), ct.c_int(0), ct.c_int(CFDLevel0),\
+                         ct.c_int(CFDZeroCross0)),\
+    ""SetInputCFD""
+)
+
+tryfunc(
+    phlib.PH_SetInputCFD(ct.c_int(dev[0]), ct.c_int(1), ct.c_int(CFDLevel1),\
+                         ct.c_int(CFDZeroCross1)),\
+    ""SetInputCFD""
+)
+
+tryfunc(phlib.PH_SetBinning(ct.c_int(dev[0]), ct.c_int(binning)), ""SetBinning"")
+tryfunc(phlib.PH_SetOffset(ct.c_int(dev[0]), ct.c_int(offset)), ""SetOffset"")
+tryfunc(phlib.PH_GetResolution(ct.c_int(dev[0]), byref(resolution)), ""GetResolution"")
+
+# Note: after Init or SetSyncDiv you must allow 100 ms for valid count rate readings
+time.sleep(0.2)
+
+tryfunc(phlib.PH_GetCountRate(ct.c_int(dev[0]), ct.c_int(0), byref(countRate0)),\
+        ""GetCountRate"")
+tryfunc(phlib.PH_GetCountRate(ct.c_int(dev[0]), ct.c_int(1), byref(countRate1)),\
+        ""GetCountRate"")
+
+print(""Resolution=%lf Countrate0=%d/s Countrate1=%d/s"" % (resolution.value,\
+      countRate0.value, countRate1.value))
+
+tryfunc(phlib.PH_SetStopOverflow(ct.c_int(dev[0]), ct.c_int(1), ct.c_int(65535)),\
+        ""SetStopOverflow"")
+
+while cmd != ""q"":
+    # Always use block 0 if not routing
+    tryfunc(phlib.PH_ClearHistMem(ct.c_int(dev[0]), ct.c_int(0)), ""ClearHistMeM"")
+
+    print(""press RETURN to start measurement"")
+    input()
+
+    tryfunc(phlib.PH_GetCountRate(ct.c_int(dev[0]), ct.c_int(0), byref(countRate0)),\
+            ""GetCountRate"")
+    tryfunc(phlib.PH_GetCountRate(ct.c_int(dev[0]), ct.c_int(1), byref(countRate1)),\
+            ""GetCountRate"")
+    
+    print(""Countrate0=%d/s Countrate1=%d/s"" % (countRate0.value, countRate1.value))
+    
+    tryfunc(phlib.PH_StartMeas(ct.c_int(dev[0]), ct.c_int(tacq)), ""StartMeas"")
+        
+    print(""\nMeasuring for %d milliseconds..."" % tacq)
+    
+    waitloop = 0
+    ctcstatus = ct.c_int(0)
+    while ctcstatus.value == 0:
+        tryfunc(phlib.PH_CTCStatus(ct.c_int(dev[0]), byref(ctcstatus)), ""CTCStatus"")
+        waitloop+=1
+        
+    tryfunc(phlib.PH_StopMeas(ct.c_int(dev[0])), ""StopMeas"")
+    tryfunc(phlib.PH_GetHistogram(ct.c_int(dev[0]), byref(counts), ct.c_int(0)),\
+            ""GetHistogram"")
+    tryfunc(phlib.PH_GetFlags(ct.c_int(dev[0]), byref(flags)), ""GetFlags"")
+    
+    integralCount = 0
+    for i in range(0, HISTCHAN):
+        integralCount += counts[i]
+    
+    print(""\nWaitloop=%1d  TotalCount=%1.0lf"" % (waitloop, integralCount))
+    
+    if flags.value & FLAG_OVERFLOW > 0:
+        print(""  Overflow."")
+
+    print(""Enter c to continue or q to quit and save the count data."")
+    cmd = input()
+
+for i in range(0, HISTCHAN):
+    outputfile.write(""\n%5d "" % counts[i])
+
+closeDevices()
+outputfile.close()"
+57,110.6,"Cleveland, Ohio, United States","The Model 6220 DC Current Source and Model 6221 AC and DC Current Source combine ease of use with exceptionally low current noise. Low current sourcing is critical to applications in test environments ranging from R&D to production, especially in the semiconductor, nanotechnology, and superconductor industries. High DC power supply sourcing accuracy and built-in control functions make the Models 6220 and 6221 ideal for applications like Hall measurements, resistance measurements using delta mode, pulsed measurements, and differential conductance measurements.",Keithley 6220,231.0,"Keithley Instruments is a measurement and instrument company headquartered in Solon, Ohio, that develops, manufactures, markets, and sells data acquisition products, as well as complete systems for high-volume production and assembly testing.
+",Pytango,Keithley,"[OrderedDict([('id', 'att7PoO6FUHxnCmlK'), ('width', 900), ('height', 500), ('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/NeO02HKgoFPV3DNb9vOFuQ/oUOnoE3G5-QeCMyfgXyg8FqsnOeauIly5GBoFYr9Za8Zrr0680YSs6QaLZbjSLo7PoMQ00w0RPeo8KNMcbYt2atP2MKHb0B4-GyFD_CU3NjI0vDcK8LLowKujulyPoKADY3pAVNPMgBCEnKshd91bg/0TQRCCKsz0gJy1NFGfGsJsjM3QdRGQ8MoPDdSPPJdCA'), ('filename', 'keithley-a-tektronix-company-vector-logo.png'), ('size', 4698), ('type', 'image/png'), ('thumbnails', OrderedDict([('small', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/ZnO_WGoJzGnSlUctBDqWew/3IevGml9FN4w1wC95p0SxkWfy9Or2KbV9QY3D0d1q_Sej0Zp6VH3gJgIsG75z_GB4Ob04GciukrNLZqRSkqxUA/uTVK9YUV68keAgFRR7IKhzRM4i5JrKr9C0Qtw0T9sOo'), ('width', 65), ('height', 36)])), ('large', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/qLTzFSMkPTLA6g9lkPJmsg/zyqBAfflKt_8lvw15arx51Xd9fYqp17v4WFX71buJSr6egMKaBsN1l-whDpCpYtjxp2PsM9RQH8m8m3yxtquXw/52L-EUk-XUGAnw0eN3grANao1iKKOIuxmavJUlgreXQ'), ('width', 900), ('height', 500)])), ('full', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/DD76F3FSvA0sLYAXfST7DA/Y9vIBAtL1_Fy2BC2SLgyVwDmN2BpqCN-RepHfRd6uBzNVwzsKrLvHbBvYJti5ZoIf_VLDikmzoIRrzQ6Veuw7g/bIGTWhsUS3UoKan-BcRmMtd0TCP2TPvDoZpnD5k1pXQ'), ('width', 3000), ('height', 3000)]))]))])]",https://www.tek.com/en,Write a Python script that uses Pytango to connect to a {Device name} Power Meters,https://en.wikipedia.org/wiki/Electricity_meter,['Power Meters'],"An electricity meter, electric meter, electrical meter, energy meter, or kilowatt-hour meter is a device that measures the amount of electric energy consumed by a residence, a business, or an electrically powered device.",,https://www.farnell.com/datasheets/1765491.pdf,"[OrderedDict([('id', 'attdoiRLK6g3JNoW5'), ('width', 320), ('height', 138), ('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/Muf-Dl6c-l8yCxEJvGZIAQ/FlGsP3w0U3GEJ5GgUzDet6JdhB2VFxv7CA2_EkBXRRTmk1LjflEgVVVxSoS4T9ghAPfCNLX64bNmR8NLRRp1FKkr0bdrIhoG3d8oS304BMQ/W6BhnT5g842D8XgC0CAmRJmjcABZT2GtzDkVFtISHnA'), ('filename', '6220.webp'), ('size', 4548), ('type', 'image/webp'), ('thumbnails', OrderedDict([('small', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/u0tTTVokTHazyIyzSEby8A/xHhh9dgG4UJGJYpIbY310hNQs_qwI9N2pkSrHdF8kFpU8f5tYTEp59_iqd27wntf6qzZEksFs5Pcjbv7lAby4SGaVf920-yBihmVq0lQiuI/iW3hc3dw6zMAKMYB2bR-xICvgEe-rgUnf3cxE0Pd8iM'), ('width', 83), ('height', 36)])), ('large', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/iRolOhomjciHM3LxhHI14Q/pipFe02E7D5JXxHvjkDB3UZnLZvaScDrFlojArkYZduNqjEDW5iBJbrFreJnUROOnBMbBBmWEQVG9BImdhVT3g-RsPoAOEsHGq8ScF0-HcQ/frnMNIL4-NCE_jHcTSG99qwzxM4R9M_5OU5qtxVo7Pw'), ('width', 320), ('height', 138)])), ('full', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/Zpiz3WU6kZdqaC9dW9gi3Q/6BF7ulojm5tACCgNOzs-24w9ETculPGGRoxVG5XK0IFi08mqPgJEoPoL_SfS9HcKfiXPnfVtjNM8FObr9zoFPQScyOAIbwTA7f5cfUV0NoM/vHeInJEIP3IPtKDv4GbSMbmnGYke8X3xYIBV9sUcZ0o'), ('width', 3000), ('height', 3000)]))]))])]",https://canada.newark.com/keithley/6220/source-meter-dc-current-11w/dp/43K0016,,,8631.9,,,,
+65,2500.0,"Munich, Germany","This Class Handles Rohdes And Schwarz Signal Generators. Supported Models Are: -Smg -Smx. The Rohde & Schwarz SMG is a  fasl, high-resolution synthesizers featuring great ease of operation as well as versatile modulation and sweep capabilities, High spectral purity and short setting times make the SMG deal signal generotors for communications systems, EMC/EMS measuring systems, IF components of satellite transmission as well as radar, avionics and navigation equipment.",Rohdeschwarzsmgx,474.0,"Rohde & Schwarz GmbH & Co KG is an international electronics group specializing in the fields of electronic test equipment, broadcast & media, cybersecurity, radiomonitoring and radiolocation, and radiocommunication.
+",Pytango,Rohdes And Schwarz,"[OrderedDict([('id', 'attgThuQed8Zn1CUa'), ('width', 119), ('height', 31), ('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/9cHh-T5DiH-7n6lLjMACLA/bDi2rAgBKKv-UvdRleHzviIH4GcH8AtS2mvdp-g9F5fqCVLRPlAnSBTRQa-Runosj2pUwoAlhqQuz5TbVkWsAPnNM3W2hWam9hmsDAI-rL4/dffvM0sgfAmzoe43t-msnU6e8D0UM-OZGHt_kN6EI98'), ('filename', 'download (7).png'), ('size', 735), ('type', 'image/png'), ('thumbnails', OrderedDict([('small', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/g--_RRN7TAxVYvYfZsfJAQ/7QuUf0QEBkC8SMdK1bmt-YbCN0y4Vh7DjHjVWWAwYMWJee9W1_UqwdojXEJzVUALXPhc6LnhN-lsQmk6w-lHDw/6fec6hnAGzjzj0BDv0TEHJtermLLj4Z3b2m6J6dHT1A'), ('width', 119), ('height', 31)])), ('large', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/oMsz97Tz22aazBF2MmRx0A/qA2gKhQNxFidpSGhEU04F-OoIhF7BfJmWCmPJxKK-IF58k94GMqfn4_xpOfpg48Eyj-YsME_D_oNERlbxBoo6Q/RSM8ZcvfANnn-GXOF96XT_DsItZl0IBVWIuKqbrwXeg'), ('width', 119), ('height', 31)])), ('full', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/UFP-LpUBl8Q8A7_iSD2G2w/fk4nHw-_8wbi1zc78qVKGp5QIQa5f6pWrMFe_z4VK3PuoJe9nupme35Ujw9iTJ3dDShi9V7nI3fIVSaUd5ZLfQ/me0jTPIgCb0Zr4R8FOD7PLpLUZFfzzDCdVKiQlrBrqU'), ('width', 3000), ('height', 3000)]))]))])]",https://www.rohde-schwarz.com/ca/home_48230.html,Write a Python script that uses Pytango to connect to a SMG RF Signal Generator,https://en.wikipedia.org/wiki/Signal_generator,['RF Signal Generator'],"A signal generator is one of a class of electronic devices that generates electrical signals with set properties of amplitude, frequency, and wave shape. These generated signals are used as a stimulus for electronic measurements, typically used in designing, testing, troubleshooting, and repairing electronic or electroacoustic devices, though it often has artistic uses as well",SMG,https://www.testequipmenthq.com/datasheets/Rohde-Schwarz-SMG-Datasheet.pdf,"[OrderedDict([('id', 'attHpBtW51bpq9oIU'), ('width', 562), ('height', 300), ('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/WO50kN0wud56PbT_ZfNmhA/38_cIWO0ZEUM6z-SRjpt6UzCRHgdqQkcnA5_gdneBO4SETWU-IT5wDLyMtDI8y0GJECKjiL25RoXaIb8pen8_cHA-K-d7iSs8KLoWDy1E2VYfmEEFUUOCj_g8xZvVvmZ/eCUeUh8sJXPmFeLYVRnOsD1RlbJaSbC-wEHlLGJZT_s'), ('filename', 'Rohde-Schwarz-SMG-300H.jpg'), ('size', 76206), ('type', 'image/jpeg'), ('thumbnails', OrderedDict([('small', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/RVtfehpUoB8LwALxLgQ56Q/w7ypJU-qALn1rm891UgjIFyCmuXAvQUjNlM4Uf9A8Cdwgw58NtVwy2VycEeZd7sgLvyKWlphSLYTXlwmKDHsnQ/Iz8K_iXc5yK_Q6Qf9HYDy603663_rH89-jrgHc2yDns'), ('width', 67), ('height', 36)])), ('large', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/m_U8oX6RHR7Vhp_uM_pVzQ/DfDlnqbB6r13fpOj9frduFWNd9CFPlw4Sb-3XqhtJDZ2VnlMutUeWTJ3Os7zFQqqs8p8U50EGQI0NHVcEolwdg/hHo73SD6PCIiCniIhxbQnfcPQEQMyyi1GV-1rbDsu3Y'), ('width', 562), ('height', 300)])), ('full', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/StgY2pXxf21KgPuhShEqBQ/TOhmDZZZzaF7-3Z2RxrkAIJSI3wwGvjb5MXwUsj5A-1tuK_g13ZUakZCq1esWo_0NotspG1mMPlgHn0Ov5qeZw/2mfQZlRJYkVBc4V79M_uZC-wvO95LIdHaTi87b6PN8Y'), ('width', 3000), ('height', 3000)]))]))])]",https://www.testequipmenthq.com/product/rohde-schwarz-smg,,https://www.tango-controls.org/developers/dsc/ds/360/,,,True,,
+72,110.6,"Cleveland, Ohio, United States",Class For Controlling The Keithley428 Current Amplifier.,Keithley 428,229.0,"Keithley Instruments is a measurement and instrument company headquartered in Solon, Ohio, that develops, manufactures, markets, and sells data acquisition products, as well as complete systems for high-volume production and assembly testing.
+",Pytango,Keithley,"[OrderedDict([('id', 'att7PoO6FUHxnCmlK'), ('width', 900), ('height', 500), ('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/NeO02HKgoFPV3DNb9vOFuQ/oUOnoE3G5-QeCMyfgXyg8FqsnOeauIly5GBoFYr9Za8Zrr0680YSs6QaLZbjSLo7PoMQ00w0RPeo8KNMcbYt2atP2MKHb0B4-GyFD_CU3NjI0vDcK8LLowKujulyPoKADY3pAVNPMgBCEnKshd91bg/0TQRCCKsz0gJy1NFGfGsJsjM3QdRGQ8MoPDdSPPJdCA'), ('filename', 'keithley-a-tektronix-company-vector-logo.png'), ('size', 4698), ('type', 'image/png'), ('thumbnails', OrderedDict([('small', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/ZnO_WGoJzGnSlUctBDqWew/3IevGml9FN4w1wC95p0SxkWfy9Or2KbV9QY3D0d1q_Sej0Zp6VH3gJgIsG75z_GB4Ob04GciukrNLZqRSkqxUA/uTVK9YUV68keAgFRR7IKhzRM4i5JrKr9C0Qtw0T9sOo'), ('width', 65), ('height', 36)])), ('large', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/qLTzFSMkPTLA6g9lkPJmsg/zyqBAfflKt_8lvw15arx51Xd9fYqp17v4WFX71buJSr6egMKaBsN1l-whDpCpYtjxp2PsM9RQH8m8m3yxtquXw/52L-EUk-XUGAnw0eN3grANao1iKKOIuxmavJUlgreXQ'), ('width', 900), ('height', 500)])), ('full', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/DD76F3FSvA0sLYAXfST7DA/Y9vIBAtL1_Fy2BC2SLgyVwDmN2BpqCN-RepHfRd6uBzNVwzsKrLvHbBvYJti5ZoIf_VLDikmzoIRrzQ6Veuw7g/bIGTWhsUS3UoKan-BcRmMtd0TCP2TPvDoZpnD5k1pXQ'), ('width', 3000), ('height', 3000)]))]))])]",https://www.tek.com/en,Write a Python script that uses Pytango to connect to a {Device name} ,,,,,https://www.testequipmenthq.com/datasheets/KEITHLEY-428-Datasheet.pdf,,,,,,,,,
+110,110.6,"Cleveland, Ohio, United States","The two-channel Model 2182A Nanovoltmeter is optimized for making stable, low noise voltage measurements and for characterizing low resistance materials and devices reliably and repeatably. It provides higher measurement speed and significantly better noise performance than alternative low voltage measurement solutions. It offers a simplified delta mode for making resistance measurements in combination with a reversing current source, such as the Model 6220 or 6221.",Keithley 2182 A,225.0,"Keithley Instruments is a measurement and instrument company headquartered in Solon, Ohio, that develops, manufactures, markets, and sells data acquisition products, as well as complete systems for high-volume production and assembly testing.
+",Pytango,Keithley,"[OrderedDict([('id', 'att7PoO6FUHxnCmlK'), ('width', 900), ('height', 500), ('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/NeO02HKgoFPV3DNb9vOFuQ/oUOnoE3G5-QeCMyfgXyg8FqsnOeauIly5GBoFYr9Za8Zrr0680YSs6QaLZbjSLo7PoMQ00w0RPeo8KNMcbYt2atP2MKHb0B4-GyFD_CU3NjI0vDcK8LLowKujulyPoKADY3pAVNPMgBCEnKshd91bg/0TQRCCKsz0gJy1NFGfGsJsjM3QdRGQ8MoPDdSPPJdCA'), ('filename', 'keithley-a-tektronix-company-vector-logo.png'), ('size', 4698), ('type', 'image/png'), ('thumbnails', OrderedDict([('small', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/ZnO_WGoJzGnSlUctBDqWew/3IevGml9FN4w1wC95p0SxkWfy9Or2KbV9QY3D0d1q_Sej0Zp6VH3gJgIsG75z_GB4Ob04GciukrNLZqRSkqxUA/uTVK9YUV68keAgFRR7IKhzRM4i5JrKr9C0Qtw0T9sOo'), ('width', 65), ('height', 36)])), ('large', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/qLTzFSMkPTLA6g9lkPJmsg/zyqBAfflKt_8lvw15arx51Xd9fYqp17v4WFX71buJSr6egMKaBsN1l-whDpCpYtjxp2PsM9RQH8m8m3yxtquXw/52L-EUk-XUGAnw0eN3grANao1iKKOIuxmavJUlgreXQ'), ('width', 900), ('height', 500)])), ('full', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/DD76F3FSvA0sLYAXfST7DA/Y9vIBAtL1_Fy2BC2SLgyVwDmN2BpqCN-RepHfRd6uBzNVwzsKrLvHbBvYJti5ZoIf_VLDikmzoIRrzQ6Veuw7g/bIGTWhsUS3UoKan-BcRmMtd0TCP2TPvDoZpnD5k1pXQ'), ('width', 3000), ('height', 3000)]))]))])]",https://www.tek.com/en,Write a Python script that uses Pytango to connect to a Keithley 2182A Power Meters,https://en.wikipedia.org/wiki/Voltmeter,['Power Meters'],A voltmeter is an instrument used for measuring electric potential difference between two points in an electric circuit. It is connected in parallel. It usually has a high resistance so that it takes negligible current from the circuit.,Keithley 2182A,https://www.farnell.com/datasheets/1481206.pdf?_ga=2.224053912.226103945.1688393955-1873056764.1688393955,"[OrderedDict([('id', 'attKCSe2wix9ghzw6'), ('width', 500), ('height', 375), ('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/pIYh5wNHL1jBzhXTknwllg/mCaoUWPX9Qtch1qCCeS3LUUa7-8MQsZUEDqpI2EijUqRw4KMNHKhHtAl_wl0tLL_LLnRf9W1nDdLu9k292xhdw/bXK7I5tITNEd7LuIVY2rPVVz07VWCFe5IUj00k8A6hU'), ('filename', '2182.jpg'), ('size', 23819), ('type', 'image/jpeg'), ('thumbnails', OrderedDict([('small', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/MtFaFRohvYjv3kvGz8vFqw/wYEa2VWsFQKmkIn1lUIa9yLAg9j1PVPsVgfKjrfyqXtOaD_03nB97hIrFTvRTrIFtqJXN_hLV_oaEiNft8tRrQ/ExWyWTyXH5PMwMr_ggwY-eqDB6hWp7JSYjWUQRZqD2A'), ('width', 48), ('height', 36)])), ('large', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/-Lj4qgtF0nEfVQY0lggerg/U70oon2ZzhdtEEvLx4zw9K7q2SmP7MmkpB5euYp9iyoMm-qPly7Sz07LbXy6tjNChvR5hW3uVHZrqWCznaSaBQ/PEqiADAltRzLlUYsjYlWxLKDanyD4OFyoADVyCN427s'), ('width', 500), ('height', 375)])), ('full', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/ZzchJCzgtPXeCb2hntw4dg/LupUhcSuhr-Uzc5RPXJo7djB0xBEAYZr8nZ1MFMEtzttsDlj9qYEMjd5ZMF-u0_I-kirHhB4v_UPFEFtznB8_w/JzxF6WzizNeSNWqFfeavdaTqp9VVsxHF9Y31qc456LA'), ('width', 3000), ('height', 3000)]))]))])]",https://www.tek.com/en/products/keithley/low-level-sensitive-and-specialty-instruments/nanovoltmeter-model-2182a,,,7500.0,,,,
+123,114.0,Netherland,Compact Mass Flow and Pressure Controller for Gases,Bronkhorstmassflowctrl,110.0,"Bronkhorst offers a wide product portfolio of gas and liquid flow meters for low flow rates
+",Pytango,Bronkhorst,"[OrderedDict([('id', 'att7iQKZY4wGMsYuU'), ('width', 1024), ('height', 428), ('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/i4k6xKCSTkTTmqVxd0RqrA/koBbmlO_iiksuiXciH0K5byhLzKlsRr_jLQBLDznKv3RSfJcS3QeXTR1ZadhSFxOOR0MslNf4Tdv8PmeTVSSz7JzsdeFqMwveq_KtES19IJIoWIrvUIJiLe9KOydsubL/MRQ0aiW61ID2FX90fVdzqt8LbAPBfPL6hnFYw5qFQu8'), ('filename', 'bronkhorst-logo-1024x428.jpg'), ('size', 35457), ('type', 'image/jpeg'), ('thumbnails', OrderedDict([('small', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/SGATf_iC4crXD_V0vd9v7Q/KMGH6BQCOGc9cEHk4yFMeEnsAgBbmAkrNNZxllnOnUAxo9ZxVR03UZMkFSMcbSmGN008zCIz-wP9RcbiTNVabw/wUj6y7XpWBrydTiHx-1yW_JxQ0C1jwvDhQoLDGfIwc8'), ('width', 86), ('height', 36)])), ('large', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/FVstowKGyTHzMfYfrE0WGg/UsE3CWmodp43Y1wXSU6ZH1WWFhgi3_AVVowm_B_HlSZO2zokN4AdFYRWYUgbvG5KUmOr6pguat95_dW6ZslMkQ/MgFUUr0XyMMR_k3hypZ2MbndNuNeGsT6BehCZDJZK5o'), ('width', 1024), ('height', 428)])), ('full', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/X0H6SPyu7KGkIy2ZiWFiFQ/FUauhFUIZeNBFWGX_s3yVp5ml7R5OICS_72I9VgcDG4QTOKeDc9cjYRMM9Q5PT1fpllAtrCgwrMLZvFUAFeCLQ/LHu3owy_vNRUcUc7U9Sst_oQCATvcW3cLHmG02oGe3M'), ('width', 3000), ('height', 3000)]))]))])]",https://www.bronkhorst.com/int/,Write a Python script that uses Pytango to connect to a ALL FLOW-BUS Mass Controller,"https://www.horiba.com/int/fluid-measurement-and-control/#:~:text=What%20is%20a%20Mass%20Flow,volumetric%20flow%20and%20mass%20flow.",['Mass Controller'],"A mass flow controller automatically controls the flow rate of a gas according to a set flow rate sent as an electric signal, without being affected by use conditions or changes in gas pressure",ALL FLOW-BUS,https://www.bronkhorst.com/int/products/gas-flow/flexi-flow/ff-c1x/?pdf=true,"[OrderedDict([('id', 'attc1EK9KRUyVtT28'), ('width', 362), ('height', 374), ('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/qCheTMDIq_E5ohufNenrcw/WL1QUyg37BLj7fFkIiimTnjSvvS35ILM3f_Z0xpKPM6Sdl1M5xoZOxYjFhjNXAupkyAoJ3UHyJR2MVESXRgmRMf1SmnFURCJGRoYbTLPZ28/cAEAoKbeKLRBUWO3YqGA4LoZ9rs3MXVjjnKits55q7w'), ('filename', 'FF-C1x_.png'), ('size', 122798), ('type', 'image/png'), ('thumbnails', OrderedDict([('small', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/ZzNXVR_eYM84L_eR-n_YKw/BQWWQbGxbEvqxmQVnGTKEKRZbMM69zF7MOQZIwYeAZrMpQuzvaeeptjdzR9xrSMBTK6L4GQ_mW-VfduxX4cfUg/tIxF62zHM0wYzV_YPgwVOVluBIUTHqFIsVI0nKvWU3s'), ('width', 35), ('height', 36)])), ('large', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/PLhePI9oRn2eYKqTM7lwUw/XbxA9W6_XknPi1Nb243bseRTG5pvfR6Q9kYDvtr5SyMjcybLcVMYpdq6JTtihzyD9U0PRfH0qZU7R7VRO1Xihg/katN98DcyaHBilTBZSNJyQumafG7QCIK-zongAuJHnQ'), ('width', 362), ('height', 374)])), ('full', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/Q0kb2_EH_nqPGcglKe_CHw/uAXsKCVi3BDpSkRmNY6ZQx7Uo9dUo9wCbj5PVbmpZ7byRAIVT5hdX9ql8dhH3vfyDfsbE0qAoZzo_6n7bAOuhQ/UbusvZwOWwa8DH01f0XvFbCgaT-krHOL42dUJJd68Vk'), ('width', 3000), ('height', 3000)]))]))])]",https://www.bronkhorst.com/int/products/gas-flow/?page=1,https://pypi.org/project/bronkhorst-propar/,https://www.bronkhorst.com/int/products/accessories-and-software/flowware/python/,,,,Replaced Github Link with Pypi package,
+125,110.6,"Cleveland, Ohio, United States",Class For Getting Data From The Keihtley Of The Photon-Ion Spectrometer (Pipe).,Pipekeithley,212.0,"Keithley Instruments is a measurement and instrument company headquartered in Solon, Ohio, that develops, manufactures, markets, and sells data acquisition products, as well as complete systems for high-volume production and assembly testing.
+",Pytango,Keithley,"[OrderedDict([('id', 'att7PoO6FUHxnCmlK'), ('width', 900), ('height', 500), ('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/NeO02HKgoFPV3DNb9vOFuQ/oUOnoE3G5-QeCMyfgXyg8FqsnOeauIly5GBoFYr9Za8Zrr0680YSs6QaLZbjSLo7PoMQ00w0RPeo8KNMcbYt2atP2MKHb0B4-GyFD_CU3NjI0vDcK8LLowKujulyPoKADY3pAVNPMgBCEnKshd91bg/0TQRCCKsz0gJy1NFGfGsJsjM3QdRGQ8MoPDdSPPJdCA'), ('filename', 'keithley-a-tektronix-company-vector-logo.png'), ('size', 4698), ('type', 'image/png'), ('thumbnails', OrderedDict([('small', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/ZnO_WGoJzGnSlUctBDqWew/3IevGml9FN4w1wC95p0SxkWfy9Or2KbV9QY3D0d1q_Sej0Zp6VH3gJgIsG75z_GB4Ob04GciukrNLZqRSkqxUA/uTVK9YUV68keAgFRR7IKhzRM4i5JrKr9C0Qtw0T9sOo'), ('width', 65), ('height', 36)])), ('large', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/qLTzFSMkPTLA6g9lkPJmsg/zyqBAfflKt_8lvw15arx51Xd9fYqp17v4WFX71buJSr6egMKaBsN1l-whDpCpYtjxp2PsM9RQH8m8m3yxtquXw/52L-EUk-XUGAnw0eN3grANao1iKKOIuxmavJUlgreXQ'), ('width', 900), ('height', 500)])), ('full', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/DD76F3FSvA0sLYAXfST7DA/Y9vIBAtL1_Fy2BC2SLgyVwDmN2BpqCN-RepHfRd6uBzNVwzsKrLvHbBvYJti5ZoIf_VLDikmzoIRrzQ6Veuw7g/bIGTWhsUS3UoKan-BcRmMtd0TCP2TPvDoZpnD5k1pXQ'), ('width', 3000), ('height', 3000)]))]))])]",https://www.tek.com/en,Write a Python script that uses Pytango to connect to a {Device name} ,,,,,,,,,https://www.tango-controls.org/developers/dsc/ds/1164/,,,,,
+128,110.6,"Cleveland, Ohio, United States","Class For Controlling The Keithley 6487 Connecting To A Gpibdeviceserver. The 5½-digit Model 6487 Picoammeter/Voltage Source improves on the measurement capability of the award-winning Model 6485, and adds a high resolution 500V source. It provides higher accuracy and faster rise times than the 6485, as well as a damping function for use with capacitive devices. With eight current measurement ranges and high speed autoranging, this cost effective instrument can measure currents from 20fA to 20mA, take measurements at speeds up to 1000 readings per second, and source voltage from 200μV to 505V. The Model 6487’s 10fA resolution, superior sensitivity, voltage sweeping, and Alternating Voltage resistance measurements make it well suited for characterising low current devices. Using the latest current measurement technology, it is significantly less expensive than other instruments that perform similar functions, such as optical power meters, tera-ohmmeters, competitive picoammeters, or user-designed solutions.",Keithley 6487,221.0,"Keithley Instruments is a measurement and instrument company headquartered in Solon, Ohio, that develops, manufactures, markets, and sells data acquisition products, as well as complete systems for high-volume production and assembly testing.
+",Pytango,Keithley,"[OrderedDict([('id', 'att7PoO6FUHxnCmlK'), ('width', 900), ('height', 500), ('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/NeO02HKgoFPV3DNb9vOFuQ/oUOnoE3G5-QeCMyfgXyg8FqsnOeauIly5GBoFYr9Za8Zrr0680YSs6QaLZbjSLo7PoMQ00w0RPeo8KNMcbYt2atP2MKHb0B4-GyFD_CU3NjI0vDcK8LLowKujulyPoKADY3pAVNPMgBCEnKshd91bg/0TQRCCKsz0gJy1NFGfGsJsjM3QdRGQ8MoPDdSPPJdCA'), ('filename', 'keithley-a-tektronix-company-vector-logo.png'), ('size', 4698), ('type', 'image/png'), ('thumbnails', OrderedDict([('small', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/ZnO_WGoJzGnSlUctBDqWew/3IevGml9FN4w1wC95p0SxkWfy9Or2KbV9QY3D0d1q_Sej0Zp6VH3gJgIsG75z_GB4Ob04GciukrNLZqRSkqxUA/uTVK9YUV68keAgFRR7IKhzRM4i5JrKr9C0Qtw0T9sOo'), ('width', 65), ('height', 36)])), ('large', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/qLTzFSMkPTLA6g9lkPJmsg/zyqBAfflKt_8lvw15arx51Xd9fYqp17v4WFX71buJSr6egMKaBsN1l-whDpCpYtjxp2PsM9RQH8m8m3yxtquXw/52L-EUk-XUGAnw0eN3grANao1iKKOIuxmavJUlgreXQ'), ('width', 900), ('height', 500)])), ('full', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/DD76F3FSvA0sLYAXfST7DA/Y9vIBAtL1_Fy2BC2SLgyVwDmN2BpqCN-RepHfRd6uBzNVwzsKrLvHbBvYJti5ZoIf_VLDikmzoIRrzQ6Veuw7g/bIGTWhsUS3UoKan-BcRmMtd0TCP2TPvDoZpnD5k1pXQ'), ('width', 3000), ('height', 3000)]))]))])]",https://www.tek.com/en,Write a Python script that uses Pytango to connect to a {Device name} Power Meters,https://en.wikipedia.org/wiki/Ammeter,['Power Meters'],"A picoammeter, or pico ammeter, measures very low electric current, usually from the picoampere range at the lower end to the milliampere range at the upper end. Picoammeters are used where the current being measured is below the limits of sensitivity of other devices, such as multimeters.",,https://www.testequipmenthq.com/datasheets/KEITHLEY-6487-Datasheet.pdf,"[OrderedDict([('id', 'attxNqR972uZtRDmO'), ('width', 320), ('height', 175), ('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/fy8CD_vfyFkgSg1ljeGXOg/ISENGUbVcvy_36lxqoHvQAQFSxkRlcexT86fBbZ-diuzbNfVn_y7tyZVw-zpFK3D_l9dIWKE-GoZz-Jn3uRhtvMVGYZ77g-Id4uJzGwkHy0/1GnWmxcCwnVJKrnRcP7cCNOtBwKGSvg3ugh3A7_qbbY'), ('filename', '6487.webp'), ('size', 3810), ('type', 'image/webp'), ('thumbnails', OrderedDict([('small', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/JrmE1Iz418dEZLWjjQD_vg/ySwamMGMR5XJDU2AOy051aT4uFabFW5qM1plSsicdT9vNGR9IYsZYEsOGSOvdpTD7eGum2hkOPbJ3tslvip6jVZLy0-Sg1yqbOKF-nli6q8/tXSiUe2MOG3HHoJvbVWkFAesnLp90KE6stwrfDO2Cr0'), ('width', 66), ('height', 36)])), ('large', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/9CKQoAjbJGOmRb2GmVMnag/1kPPkyTDp_4Zr2fcD9YlQIgEyeOJXcv5QOCAU-PFURKCccSQ4efLn2AlyXzUnyoWkChHE_Ohv4tsyCZZwiZ_yz7fJRtTzR70dlaTMlS6YCg/eRmpDImxlDvhGdzP3s-KAZp03tRR8OThjBr6vT9fNRI'), ('width', 320), ('height', 175)])), ('full', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/NtFUmK5xKAPLsJOrZDnmWQ/BcEfxA5w6Ckf5XhGkceo37BkILKTxpJx0TrQPLTvqqjVPylJhEWR1v_xxJfz2a-qU9YzGldX_0BRwmvwu5oOc29Ha5O25aZrfCUhTiZsX1o/A6t6aqNR9WtpPwovJuVpI8NS4bBdhLFYhNhu32knr1Y'), ('width', 3000), ('height', 3000)]))]))])]",https://canada.newark.com/keithley/6487/picoammeter-voltage-source/dp/32M6464,https://github.com/EPFL-LPI/keithley-picoammeter-controller,https://www.esrf.fr/computing/cs/tango/tango_doc/ds_doc/tango-ds/MeasureInstruments/Keithley6487/index.html,8937.7,,,,
+130,21.4,"Westerville, Ohio, USA",Class Connecting To The Lakeshore 425 Gaussmeter,LKS 425 Gaussmeterctrl,344.0,"Supporting advanced scientific research, Lake Shore is a leading global innovator in measurement and control solutions.
+",Pytango,Lakeshore,"[OrderedDict([('id', 'attzehTVrrXJAMgad'), ('width', 256), ('height', 72), ('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/6WgWgYzcnadqtQAsudq-EQ/qBMiciOZubDp7AaEQb1Tv-1U7eOQy4PGJ_AMUo3dTbb-Pm8GYMROAQ5fttNK1jW0qJU0F_aSSOYUidImJnZwIqJCOqvuAe5gHRBm6AHjZ10/F119v_xcdXTD3MkzuV2EejAV_L48lDkINVwOof3RvIk'), ('filename', 'lake-shore-logo.svg'), ('size', 11991), ('type', 'image/svg+xml'), ('thumbnails', OrderedDict([('small', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/WQmuNgpMl44p6V9XmZ4CyQ/VdzncpNu4Dlldt-i-xrpQM74B3f6bDLTaP0ie7-T7n0hZK37WfnL-v3ss9yYKa0y5lc58Ghyk7omaX-5odAxJNwzaTPatTY72Z-oKOjyfiM/_QAqiUYoQZu56EGbkjlIF-HpunexUq5tQDhy3Tr_ees'), ('width', 128), ('height', 36)])), ('large', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/qB77VOwXqmX7ni1DyoSpdA/C1ho5lb9cSlVTcsONgw9K2Ge-vBjQmxzNmaUhFDgUmH8r2L3uXqv5KBe-nsatdxn3GxAFHK34MBKdCc0wQfoa4ldCEorN3IH5V9DrMzhJWU/wodeRmUKgG9QfZMfQh9drX3ilz8sIWSWqDCXSD_ogqE'), ('width', 256), ('height', 72)])), ('full', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/_138iKkNN5kpXaPATAYnsw/oA-4OBF8ojXeHh3X37Mpe3HKE7SCUItHGxgJv5X3ZDhGXNXe1y3Aq1aDhpuQVDsX4WgdMgUUKiWfDUhaANRWCTvATEnw_afgI6F5R89tpdM/tSHU0OcwY60JScIOEF2BOGOKZpsJVHz5m4XQ420dbKk'), ('width', 3000), ('height', 3000)]))]))])]",https://www.lakeshore.com/home,Write a Python script that uses Pytango to connect to a {Device name} ,,,,,,,,,,,,,,
+133,2500.0,"Munich, Germany","This Class Handles Rohdes And Schwarz Sma Signal Generators. Supported Model Is: -Sma100A. Signal quality, speed and flexibility these are the criteria by which signal generators are measured today. The R&S SMA100A perfectly meets these criteria, and thus is a premium-class analog generator that sets standards due to its outstanding characteristics.",Rohdeschwarzsma,475.0,"Rohde & Schwarz GmbH & Co KG is an international electronics group specializing in the fields of electronic test equipment, broadcast & media, cybersecurity, radiomonitoring and radiolocation, and radiocommunication.
+",Pytango,Rohdes And Schwarz,"[OrderedDict([('id', 'attgThuQed8Zn1CUa'), ('width', 119), ('height', 31), ('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/9cHh-T5DiH-7n6lLjMACLA/bDi2rAgBKKv-UvdRleHzviIH4GcH8AtS2mvdp-g9F5fqCVLRPlAnSBTRQa-Runosj2pUwoAlhqQuz5TbVkWsAPnNM3W2hWam9hmsDAI-rL4/dffvM0sgfAmzoe43t-msnU6e8D0UM-OZGHt_kN6EI98'), ('filename', 'download (7).png'), ('size', 735), ('type', 'image/png'), ('thumbnails', OrderedDict([('small', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/g--_RRN7TAxVYvYfZsfJAQ/7QuUf0QEBkC8SMdK1bmt-YbCN0y4Vh7DjHjVWWAwYMWJee9W1_UqwdojXEJzVUALXPhc6LnhN-lsQmk6w-lHDw/6fec6hnAGzjzj0BDv0TEHJtermLLj4Z3b2m6J6dHT1A'), ('width', 119), ('height', 31)])), ('large', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/oMsz97Tz22aazBF2MmRx0A/qA2gKhQNxFidpSGhEU04F-OoIhF7BfJmWCmPJxKK-IF58k94GMqfn4_xpOfpg48Eyj-YsME_D_oNERlbxBoo6Q/RSM8ZcvfANnn-GXOF96XT_DsItZl0IBVWIuKqbrwXeg'), ('width', 119), ('height', 31)])), ('full', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/UFP-LpUBl8Q8A7_iSD2G2w/fk4nHw-_8wbi1zc78qVKGp5QIQa5f6pWrMFe_z4VK3PuoJe9nupme35Ujw9iTJ3dDShi9V7nI3fIVSaUd5ZLfQ/me0jTPIgCb0Zr4R8FOD7PLpLUZFfzzDCdVKiQlrBrqU'), ('width', 3000), ('height', 3000)]))]))])]",https://www.rohde-schwarz.com/ca/home_48230.html,Write a Python script that uses Pytango to connect to a SMA100A RF Signal Generator,https://en.wikipedia.org/wiki/Signal_generator,['RF Signal Generator'],"A signal generator is one of a class of electronic devices that generates electrical signals with set properties of amplitude, frequency, and wave shape. These generated signals are used as a stimulus for electronic measurements, typically used in designing, testing, troubleshooting, and repairing electronic or electroacoustic devices, though it often has artistic uses as well",SMA100A,https://scdn.rohde-schwarz.com/ur/pws/dl_downloads/dl_common_library/dl_brochures_and_datasheets/pdf_1/SMA100A_dat-sw_en_5213-6412-22_v0700.pdf,"[OrderedDict([('id', 'attnFBdOKF66mG3zi'), ('width', 640), ('height', 360), ('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/erQy0FJHXIebjD9QIN_pfw/RwEBe27dN5g5u-haGywNhKVRfUemWxfnUrIleepHwWrefyOiNAD6Pi_DuGwgqpfFG_yIyDuvd-lTt1pmA416IvA2I_3rHb4hW02RKl4ActUuyLlJewmrQmqAtFg6fggje1wJOwiIwj9ocD9kepoJycO6xSpBuwYRXngT1V1MzPgkMkg4DsAvyWRN9mQSlWKe/YRAQyAw_F6KXcIBwJ1Cbc8S04XsJuO9mXt77ozK4zzA'), ('filename', 'sma100a-signal-generator-front-view-rohde-schwarz_200_11643_640_360_1.jpg'), ('size', 27478), ('type', 'image/jpeg'), ('thumbnails', OrderedDict([('small', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/JPCsgZ4l4HDpemtI9Etfqg/FrcZcj4fgNdUHWqamc5WzeQPDF7RmBiA5h8TaywXNauTuhQM2qaEssIMj9WZDVerHueW8HIEbeRY8mXLNCI2Pw/IuKX1pHpF2bkX8PcyCzgzRudqAMaTViF__zKd_k0hcM'), ('width', 64), ('height', 36)])), ('large', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/F2QQ8GKCmPhgY9Y6M-JTaw/pJS6oOryZ6wzyA2mx55Gm7hEZkXGGzjDO7e6sCMSblrmQrNF2o9sRKmdvMtFB2eC_RlvEwF-1EgwVZO3z7Vzlg/XxxUvumoVghrXGCdBw8FV5wo-A1K0-YYzaBpRVXcio0'), ('width', 640), ('height', 360)])), ('full', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/Q1jBh6tkurY-w0oyqndLhg/t8gub8XfsdbSbr2fBpN1rr7eBKPuleafptlhgjheWC3-cpn9s2FWXR2d4UKjPVqi-Ow7aK-N8WitmJjMDEC7Uw/-WsPWFRPI4Xpnm-v2el9gyYEivXi95MUGJ0NXtBxS6A'), ('width', 3000), ('height', 3000)]))]))])]",https://www.trsrentelco.com/products/rohde-schwarz-sma100a?utm_source=google&utm_medium=cpc&utm_campaign={campaign}&utm_agid=149466169157&kwd=&ad_type=659559970489&device=c&placement=&match_type=&gclid=CjwKCAjw-vmkBhBMEiwAlrMeF7nEwWEXPs-pvwkAj_KACe-B9wh-YsMCFtR6IjOqYHd6SGWzf_tTIBoCZgkQAvD_BwE&gad=1,https://github.com/Rohde-Schwarz/Examples/blob/main/SignalGenerators/Python/RsSmab_ScpiPackage/RsSmab_FileTransferWithProgress_Example.py,https://www.esrf.fr/computing/cs/tango/tango_doc/ds_doc/tango-ds/MeasureInstruments/RohdeSchwarzSMa/index.html,,,True,,"""""""Example showing how you can transfer a big file to the instrument and from the instrument with showing the progress.
+Since the SMA100B is quite fast on data transfer, we slow it down by waiting for 100ms between each chunk transfer (1MB)
+This way we see the transfer progress better and we do not need a file that is so big - let's take cca 20MB.
+For big files, use the example without the time.sleep(0.1)""""""
+
+import time
+import numpy as np
+from RsSmab import *
+
+
+def my_transfer_handler(args):
+    """"""Function called each time a chunk of data is transferred""""""
+    total_size = args.total_size if args.total_size is not None else ""unknown""
+    print(f""Context: '{args.context}{'with opc' if args.opc_sync else ''}', ""
+          f""chunk {args.chunk_ix}, ""
+          f""transferred {args.transferred_size} bytes, ""
+          f""total size {total_size}, ""
+          f""direction {'reading' if args.reading else 'writing'}, ""
+          f""data '{args.data}'"")
+    if args.end_of_transfer:
+        print('End of Transfer')
+    # Slow down the transfer by 200ms to see the progress better
+    time.sleep(0.1)
+
+
+RsSmab.assert_minimum_version('4.70.300')
+smab = RsSmab('TCPIP::10.112.1.64::HISLIP')
+print(smab.utilities.idn_string)
+smab.utilities.reset()
+
+pc_file = r'c:\temp\bigFile.bin'
+instr_file = '/var/user/bigFileInstr.bin'
+pc_file_back = r'c:\temp\bigFileBack.bin'
+
+# Generate a random file of 20MB size
+x1mb = 1024 * 1024
+with open(pc_file, 'wb') as file:
+    for x in range(20):
+        file.write(np.random.bytes(x1mb))
+
+# Send the file to the instrument with events
+smab.events.on_write_handler = my_transfer_handler
+smab.utilities.data_chunk_size = x1mb
+print(f'Sending file to the instrument...')
+smab.utilities.send_file_from_pc_to_instrument(pc_file, instr_file)
+smab.events.on_write_handler = None
+print(f'Receiving file from the instrument...')
+smab.events.on_read_handler = my_transfer_handler
+smab.utilities.read_file_from_instrument_to_pc(instr_file, pc_file_back)
+smab.events.on_read_handler = None
+smab.close()
+"
+139,110.6,"Cleveland, Ohio, United States",Device Server For Keithley Voltmeter,Keithleyvdc,206.0,"Keithley Instruments is a measurement and instrument company headquartered in Solon, Ohio, that develops, manufactures, markets, and sells data acquisition products, as well as complete systems for high-volume production and assembly testing.
+",Pytango,Keithley,"[OrderedDict([('id', 'att7PoO6FUHxnCmlK'), ('width', 900), ('height', 500), ('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/NeO02HKgoFPV3DNb9vOFuQ/oUOnoE3G5-QeCMyfgXyg8FqsnOeauIly5GBoFYr9Za8Zrr0680YSs6QaLZbjSLo7PoMQ00w0RPeo8KNMcbYt2atP2MKHb0B4-GyFD_CU3NjI0vDcK8LLowKujulyPoKADY3pAVNPMgBCEnKshd91bg/0TQRCCKsz0gJy1NFGfGsJsjM3QdRGQ8MoPDdSPPJdCA'), ('filename', 'keithley-a-tektronix-company-vector-logo.png'), ('size', 4698), ('type', 'image/png'), ('thumbnails', OrderedDict([('small', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/ZnO_WGoJzGnSlUctBDqWew/3IevGml9FN4w1wC95p0SxkWfy9Or2KbV9QY3D0d1q_Sej0Zp6VH3gJgIsG75z_GB4Ob04GciukrNLZqRSkqxUA/uTVK9YUV68keAgFRR7IKhzRM4i5JrKr9C0Qtw0T9sOo'), ('width', 65), ('height', 36)])), ('large', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/qLTzFSMkPTLA6g9lkPJmsg/zyqBAfflKt_8lvw15arx51Xd9fYqp17v4WFX71buJSr6egMKaBsN1l-whDpCpYtjxp2PsM9RQH8m8m3yxtquXw/52L-EUk-XUGAnw0eN3grANao1iKKOIuxmavJUlgreXQ'), ('width', 900), ('height', 500)])), ('full', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/DD76F3FSvA0sLYAXfST7DA/Y9vIBAtL1_Fy2BC2SLgyVwDmN2BpqCN-RepHfRd6uBzNVwzsKrLvHbBvYJti5ZoIf_VLDikmzoIRrzQ6Veuw7g/bIGTWhsUS3UoKan-BcRmMtd0TCP2TPvDoZpnD5k1pXQ'), ('width', 3000), ('height', 3000)]))]))])]",https://www.tek.com/en,Write a Python script that uses Pytango to connect to a {Device name} ,,,,,,,,,,,,,,
+144,110.6,"Cleveland, Ohio, United States","The Model 3706A system switch with high performance DMM contains six slots for plug-in cards in a compact 2U high enclosure that easily accommodates the needs of medium to high channel count applications. When fully loaded, a mainframe can support up to 576 two-wire multiplexer channels for unrivaled density and economical per channel costs. The result is a tightly integrated switch and measurement solution that’s equally at home on the bench or in the rack.",Keithley 3706,228.0,"Keithley Instruments is a measurement and instrument company headquartered in Solon, Ohio, that develops, manufactures, markets, and sells data acquisition products, as well as complete systems for high-volume production and assembly testing.
+",Pytango,Keithley,"[OrderedDict([('id', 'att7PoO6FUHxnCmlK'), ('width', 900), ('height', 500), ('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/NeO02HKgoFPV3DNb9vOFuQ/oUOnoE3G5-QeCMyfgXyg8FqsnOeauIly5GBoFYr9Za8Zrr0680YSs6QaLZbjSLo7PoMQ00w0RPeo8KNMcbYt2atP2MKHb0B4-GyFD_CU3NjI0vDcK8LLowKujulyPoKADY3pAVNPMgBCEnKshd91bg/0TQRCCKsz0gJy1NFGfGsJsjM3QdRGQ8MoPDdSPPJdCA'), ('filename', 'keithley-a-tektronix-company-vector-logo.png'), ('size', 4698), ('type', 'image/png'), ('thumbnails', OrderedDict([('small', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/ZnO_WGoJzGnSlUctBDqWew/3IevGml9FN4w1wC95p0SxkWfy9Or2KbV9QY3D0d1q_Sej0Zp6VH3gJgIsG75z_GB4Ob04GciukrNLZqRSkqxUA/uTVK9YUV68keAgFRR7IKhzRM4i5JrKr9C0Qtw0T9sOo'), ('width', 65), ('height', 36)])), ('large', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/qLTzFSMkPTLA6g9lkPJmsg/zyqBAfflKt_8lvw15arx51Xd9fYqp17v4WFX71buJSr6egMKaBsN1l-whDpCpYtjxp2PsM9RQH8m8m3yxtquXw/52L-EUk-XUGAnw0eN3grANao1iKKOIuxmavJUlgreXQ'), ('width', 900), ('height', 500)])), ('full', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/DD76F3FSvA0sLYAXfST7DA/Y9vIBAtL1_Fy2BC2SLgyVwDmN2BpqCN-RepHfRd6uBzNVwzsKrLvHbBvYJti5ZoIf_VLDikmzoIRrzQ6Veuw7g/bIGTWhsUS3UoKan-BcRmMtd0TCP2TPvDoZpnD5k1pXQ'), ('width', 3000), ('height', 3000)]))]))])]",https://www.tek.com/en,Write a Python script that uses Pytango to connect to a {Device name} Multimeters,https://en.wikipedia.org/wiki/Multimeter,['Multimeters'],"A multimeter (also known as a volt-ohm-milliammeter, volt-ohmmeter or VOM) is a measuring instrument that can measure multiple electrical properties. A typical multimeter can measure voltage, resistance, and current, in which case can be used as a voltmeter, ammeter, and ohmmeter. Some feature the measurement of additional properties such as temperature and capacitance.",,https://www.testequipmentdepot.com/media/akeneo_connector/asset_files/3/7/3700a_datasheet_99d2.pdf,"[OrderedDict([('id', 'att5DpqBAEQuD5qpR'), ('width', 320), ('height', 171), ('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/W6ZtZz1kZS1cjMLa86tyvA/xENUs4DPFqBRzAMUIPP6McZJyGLhvBAnlty2cUrlf9rZuuXDfaM7mDjI77FfJbZhYvnYHt3UfBLKajBa3-HQteAblNdQ5Ru3_PnHjQSxKFI/M3VI5MiQ15myJBR0QoIikuL06ibEJZ9CAC2YYjjPIic'), ('filename', '3706a.webp'), ('size', 2692), ('type', 'image/webp'), ('thumbnails', OrderedDict([('small', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/KQa8_QGiL2RnYFfWAKrEAA/b8uYOWKmfsgEGb3EDUKDn1TxRwTSNO0O4bQRDgG65tMvYIkiZmN2UyiB5wPedybCOR4XUCsfQ0h2KUZklW-j5-mgfYlOGuMsXECNVbnR0-k/tJvoYk-p7Y2aZpXC2YmebVjY7QkNPBocjuhpxGeO6c0'), ('width', 67), ('height', 36)])), ('large', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/yw46IUP53e4sMuCBdI4UBQ/OJtCqfMZFsYuN9khj2yJVGk9ku_Addxl21se0CfBBTvtG-GqzArxKEEne8WfgKWCgc9bBfrHExQXvIS18QADVLyaEu6wHVHEmQs2dnLpxNI/PXpa-EkvuExCek5QJUrNJcReyfYOzHitb_GBR_v8BT8'), ('width', 320), ('height', 171)])), ('full', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/-fuP9DP6LtPklAaP38HG-A/vjmJ4V_aTzme-B02RgPVgnUqkyKYyUDbDAyIssBBln5F2r7Oyvv8TSwEAvT0gvoVsFLvOGLHopGuvzMumtbGkNOz2t1sFNlDwotfcztj3wM/2SPlRjQ3MIts43E6HdAOw4V4VDZiHJ-2NaVmKpiFD90'), ('width', 3000), ('height', 3000)]))]))])]",https://www.tek.com/en/products/keithley/switching-and-data-acquisition-systems/3700a-systems-switch-multimeter,https://github.com/dhidas/Keithley3706TemperatureIOC,https://www.tango-controls.org/developers/dsc/ds/598/,5000.0,,,,
+150,110.6,"Cleveland, Ohio, United States","The 5½-digit Model 6485 Picoammeter combines Keithley’s expertise in sensitive current measurement instrumentation with enhanced speed and a robust design. With eight current measurement ranges and high speed autoranging, this cost effective instrument can measure currents from 2nA to 20mA, taking measurements at speeds up to 1000 readings per second. The Model 6485’s 10fA resolution and superior sensitivity make it well suited for characterising low current phenomena, while its 20mA range lets it measure currents high enough for applications such as measuring 4-20mA sensor loops.",Keithley 6485,223.0,"Keithley Instruments is a measurement and instrument company headquartered in Solon, Ohio, that develops, manufactures, markets, and sells data acquisition products, as well as complete systems for high-volume production and assembly testing.
+",Pytango,Keithley,"[OrderedDict([('id', 'att7PoO6FUHxnCmlK'), ('width', 900), ('height', 500), ('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/NeO02HKgoFPV3DNb9vOFuQ/oUOnoE3G5-QeCMyfgXyg8FqsnOeauIly5GBoFYr9Za8Zrr0680YSs6QaLZbjSLo7PoMQ00w0RPeo8KNMcbYt2atP2MKHb0B4-GyFD_CU3NjI0vDcK8LLowKujulyPoKADY3pAVNPMgBCEnKshd91bg/0TQRCCKsz0gJy1NFGfGsJsjM3QdRGQ8MoPDdSPPJdCA'), ('filename', 'keithley-a-tektronix-company-vector-logo.png'), ('size', 4698), ('type', 'image/png'), ('thumbnails', OrderedDict([('small', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/ZnO_WGoJzGnSlUctBDqWew/3IevGml9FN4w1wC95p0SxkWfy9Or2KbV9QY3D0d1q_Sej0Zp6VH3gJgIsG75z_GB4Ob04GciukrNLZqRSkqxUA/uTVK9YUV68keAgFRR7IKhzRM4i5JrKr9C0Qtw0T9sOo'), ('width', 65), ('height', 36)])), ('large', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/qLTzFSMkPTLA6g9lkPJmsg/zyqBAfflKt_8lvw15arx51Xd9fYqp17v4WFX71buJSr6egMKaBsN1l-whDpCpYtjxp2PsM9RQH8m8m3yxtquXw/52L-EUk-XUGAnw0eN3grANao1iKKOIuxmavJUlgreXQ'), ('width', 900), ('height', 500)])), ('full', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/DD76F3FSvA0sLYAXfST7DA/Y9vIBAtL1_Fy2BC2SLgyVwDmN2BpqCN-RepHfRd6uBzNVwzsKrLvHbBvYJti5ZoIf_VLDikmzoIRrzQ6Veuw7g/bIGTWhsUS3UoKan-BcRmMtd0TCP2TPvDoZpnD5k1pXQ'), ('width', 3000), ('height', 3000)]))]))])]",https://www.tek.com/en,Write a Python script that uses Pytango to connect to a {Device name} Power Meters,https://en.wikipedia.org/wiki/Ammeter,['Power Meters'],"An ammeter (abbreviation of Ampere meter) is an instrument used to measure the current in a circuit. Electric currents are measured in amperes (A), hence the name. For direct measurement, the ammeter is connected in series with the circuit in which the current is to be measured. An ammeter usually has low resistance so that it does not cause a significant voltage drop in the circuit being measured.",,https://www.testequipmenthq.com/datasheets/KEITHLEY-6485-Datasheet.pdf,,https://canada.newark.com/keithley/6485/dc-picoammeter-bench-2na-to-20ma/dp/42J5237,,https://www.esrf.fr/computing/cs/tango/tango_doc/ds_doc/tango-ds/MeasureInstruments/Keithley6485/index.html,4072.7,,,,
+158,110.6,"Cleveland, Ohio, United States","The Keithley 6517A 5 1/2 digit Electrometer / High Resistance Meter offers extreme accuracy and sensitivity specifications. It also offers a variety of features that simplify measuring high resistances and the resistivity of insulating materials. With reading rates of up to 125 readings/ second, the Keithley 6517A is also significantly faster than competitive electrometers, so it offers a quick, easy way to measure low-level curs.The half-rack-sized Keithley 6517A has a special low cur input amplifier with an input bias cur ofThe Keithley 6517A offers full autoranging over the full span of ranges on cur, resistance, voltage, and charge measurements",Keithley 6517 A,203.0,"Keithley Instruments is a measurement and instrument company headquartered in Solon, Ohio, that develops, manufactures, markets, and sells data acquisition products, as well as complete systems for high-volume production and assembly testing.
+",Pytango,Keithley,"[OrderedDict([('id', 'att7PoO6FUHxnCmlK'), ('width', 900), ('height', 500), ('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/NeO02HKgoFPV3DNb9vOFuQ/oUOnoE3G5-QeCMyfgXyg8FqsnOeauIly5GBoFYr9Za8Zrr0680YSs6QaLZbjSLo7PoMQ00w0RPeo8KNMcbYt2atP2MKHb0B4-GyFD_CU3NjI0vDcK8LLowKujulyPoKADY3pAVNPMgBCEnKshd91bg/0TQRCCKsz0gJy1NFGfGsJsjM3QdRGQ8MoPDdSPPJdCA'), ('filename', 'keithley-a-tektronix-company-vector-logo.png'), ('size', 4698), ('type', 'image/png'), ('thumbnails', OrderedDict([('small', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/ZnO_WGoJzGnSlUctBDqWew/3IevGml9FN4w1wC95p0SxkWfy9Or2KbV9QY3D0d1q_Sej0Zp6VH3gJgIsG75z_GB4Ob04GciukrNLZqRSkqxUA/uTVK9YUV68keAgFRR7IKhzRM4i5JrKr9C0Qtw0T9sOo'), ('width', 65), ('height', 36)])), ('large', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/qLTzFSMkPTLA6g9lkPJmsg/zyqBAfflKt_8lvw15arx51Xd9fYqp17v4WFX71buJSr6egMKaBsN1l-whDpCpYtjxp2PsM9RQH8m8m3yxtquXw/52L-EUk-XUGAnw0eN3grANao1iKKOIuxmavJUlgreXQ'), ('width', 900), ('height', 500)])), ('full', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/DD76F3FSvA0sLYAXfST7DA/Y9vIBAtL1_Fy2BC2SLgyVwDmN2BpqCN-RepHfRd6uBzNVwzsKrLvHbBvYJti5ZoIf_VLDikmzoIRrzQ6Veuw7g/bIGTWhsUS3UoKan-BcRmMtd0TCP2TPvDoZpnD5k1pXQ'), ('width', 3000), ('height', 3000)]))]))])]",https://www.tek.com/en,Write a Python script that uses Pytango to connect to a Keithley 6517A Power Meters,https://en.wikipedia.org/wiki/Electrometer,['Power Meters'],"An electrometer is an electrical instrument for measuring electric charge or electrical potential difference.[1] There are many different types, ranging from historical handmade mechanical instruments to high-precision electronic devices. Modern electrometers based on vacuum tube or solid-state technology can be used to make voltage and charge measurements with very low leakage currents, down to 1 femtoampere. A simpler but related instrument, the electroscope, works on similar principles but only indicates the relative magnitudes of voltages or charges.",Keithley 6517A,https://www.testequipmenthq.com/datasheets/KEITHLEY-6517A-Datasheet.pdf,"[OrderedDict([('id', 'atto8lu3YYQRLjggT'), ('width', 500), ('height', 289), ('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/IsJNcwwtNJKxmdxZwf6xHA/nlVyEv7sOJXneitxtLxNEiEBGdCV2fz0Yjmo2yKkVZz5ll1S89UmqKUpKx1ctlRO2zFCmT2nYZYrVL89nuahiiGNyLHQm3NGhBQSMGEPin4/gtqthVtbf73Gl1PNJ7dXZkwScWJrfS5opRB1TLCZBsQ'), ('filename', '6517a.jpg'), ('size', 12864), ('type', 'image/jpeg'), ('thumbnails', OrderedDict([('small', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/Zijx1rPkeLJvAVxISYrfRA/sPPIoXm53YEX76LQyvR2sVEPldkdbI3R2BOTzkYePgzy0D-J_FBay3TTfVuq0iWZMomw8p4uVDzdmpQtkpFaIw/noWFlHJcKxh6vCqqwGCqe6F0iTeSBqN4QwvT3KUAwyw'), ('width', 62), ('height', 36)])), ('large', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/h7F_D4zXRAyHw3U8kBe36Q/S5-3iY_QWOqvMYonnaT4FVMyGMD5qYiSeUbvMPIixeMmUkvYMifY5JT0J4WqG_yHGtuDjNy-EYkv500b37HZkw/TGrmlnS60PfljP3c_t6SFI1CCFxH0Nkcwsul3MooVhw'), ('width', 500), ('height', 289)])), ('full', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/3WlCutuXokH1LwA5lZpYrA/aLL3UV2-JvRb7P7oY2a5RqsWzND2xXDeSAhgEU1t9LBnWWQZB_ZpdQs9Tz0eQ8ztQY-sxb1B7J5Z87OsIItfMg/XI-szsq4O5p7FIdQC9XQBl0N5YpOXuW0Uv4-LGhx-7M'), ('width', 3000), ('height', 3000)]))]))])]",https://www.testwall.com/product/keithley-6517a/,https://github.com/jablevin/kiv/blob/master/kiv/Keithley_IV.py,,3895.0,,,,"import sys
+import matplotlib.pyplot as plt
+from matplotlib.lines import Line2D
+import matplotlib
+import numpy as np
+from scipy import stats
+import pyvisa as visa
+import time
+import pint
+
+
+class Keithley6487_IV(object):
+    """"""
+    This class is built to run IV measurments for the Keithley 6487 DMM
+    Parameters:
+        start:    The voltage to start IV sweep
+                  No default
+        stop:     The voltage to end IV sweep
+                  No default
+        stepsize: The size of the voltage steps to be used in the sweep.
+                  Absolute value is taken of this value
+                  Default=0.1
+        delay:    Determines the amount of time voltage is held at each step before
+                  a measurement is taken
+                  Default=2
+        repeat:   The number of times that the measurement is conducted; is used
+                  for error analysis
+                  Default=1
+        sleep:    The amount of time between repeat measurements; allows voltage
+                  to completely drain before restarting
+                  default=30
+        ID:       The local address of the Keithley 6487
+                  Default='GPIB0::22::INSTR'
+    """"""
+    def __init__(self, start, stop, stepsize=0.1, delay=5, nplc=1, ID='GPIB0::22::INSTR'):
+        self.start = start
+        self.stop = stop
+        self.stepsize = stepsize
+        self.delay = delay
+        self.nplc = nplc
+        self.nsteps = int(abs((stop - start) / stepsize) + 1)
+
+        self.connect_keithley(ID)
+        self.timeout()
+        self.program_sens()
+        self.program_sour()
+        self.program_form()
+        self.program_trig()
+        self.program_syst()
+
+
+    def connect_keithley(self, ID):
+        """""" Starts Connection to Keithley Meter """"""
+        rm = visa.ResourceManager()
+        self.keithley = rm.open_resource(ID)
+        self.keithley.write(""*RST"")
+
+
+    def timeout(self):
+        """""" Sets timout so that longer measurements are not cut short """"""
+        self.keithley.timeout = (self.nsteps * (self.delay + self.nplc/50)) * 1000 + 10000
+
+
+    def program_sens(self):
+        """""" Setting parameters in SENSor SCPI commands """"""
+        self.keithley.write("":SENS:FUNC 'CURR:DC' "")
+        self.keithley.write("":SENS:CURR:RANG:AUTO ON"")
+        self.keithley.write("":SENS:CURR:NPLC "", str(self.nplc))
+
+
+    def program_sour(self):
+        """""" Setting parameters in SOURce SCPI commands """"""
+        self.keithley.write("":SOUR:VOLT:SWE:STAR "", str(self.start))
+        self.keithley.write("":SOUR:VOLT:SWE:STOP "", str(self.stop))
+        self.keithley.write("":SOUR:VOLT:SWE:STEP "", str(self.stepsize))
+        self.keithley.write("":SOUR:VOLT:SWE:DEL "", str(self.delay))
+
+
+    def program_form(self):
+        """""" Setting parameters in FORMat SCPI commands """"""
+        self.keithley.write("":FORM:DATA ASC"")
+        self.keithley.write("":FORM:ELEM READ,VSO"")
+
+
+    def program_trig(self):
+        """""" Setting parameters in TRIGger SCPI commands """"""
+        self.keithley.write("":TRIG:SOUR IMM"")
+        self.keithley.write("":TRIG:COUN "", str(self.nsteps))
+
+
+    def program_syst(self):
+        """""" Setting parameters in SYSTem SCPI commands """"""
+        self.keithley.write(""SYST:ZCH OFF"")
+
+
+    @property
+    def runtime(self):
+        """""" Provides an estimated runtime of complete measurement cycle """"""
+        return (self.nsteps * (self.delay + self.nplc/50)) + 5
+
+
+    def begin_runs(self):
+        """"""
+        Begins the measurement cycle and stores values
+        vso: The voltage source list
+        curr: Current list in ohms
+        """"""
+        self.keithley.write("":SOUR:VOLT:SWE:INIT"")
+        self.result = self.keithley.query("":READ?"")
+        self.yvalues = np.array(self.keithley.query_ascii_values("":FETC?""))
+        self.curr = np.array(self.yvalues[0::2])
+        self.vso = np.array(self.yvalues[1::2])
+
+
+    def calc_resistance(self):
+        """""" Calculates resistance (in ohms) from slope of linear fit to IV data """"""
+        self.slope, self.intercept, self.r, self.p, self.std_error = stats.linregress(self.vso, self.curr)
+        self.resistance = (1 / self.slope)
+
+
+    def calc_resistivity(self, length=None, SA=None, U=None, units=None):
+        """""" Calculates resistivity based on input length and surface area (SA)
+        of sample under measurement. Requires units from pint UnitRegistry
+        U is the variable assigned from pint such as U=pint.UnitRegistry() and
+        units is formatted such as units=U.Tohms*U.cm to achieve resistivity in
+        units of Teraohms*cm. length and SA both require attached units """"""
+        self.calc_resistance()
+        if length and SA and U and units:
+            self.resistivity = (self.resistance*U.ohms * SA / length).to(units)
+
+
+    def plot(self, fit=False, save=None):
+        """""" Automatically plots the acquired data. Fit is set to true when
+        a linear line should be fit to data and plotted. Save is the name of
+        figure to be saved as, will not be saved unless provided.
+        """"""
+        legend = [Line2D([0], [0], marker='o', color='w', label='Datapoints',
+                                  markerfacecolor='navy', markersize=15)]
+        if fit:
+            self.calc_resistance()
+            legend.append(Line2D([0], [0], color='darkorange', lw=4, label='Fitted Linear Line'))
+            legend.append(Line2D([0], [0], color='white', label='$R^2$: '+str(self.r**2)[:5]))
+            legend.append(Line2D([0], [0], color='white', label='Resistance: '+str(self.resistance)+
+                                  '$\; \Omega$'))
+
+        matplotlib.rcParams.update({'font.size': 12})
+        plt.figure(figsize=(12,8))
+        plt.scatter(self.vso, self.curr, color='navy')
+        if fit:
+            plt.plot(self.vso, self.slope*self.vso + self.intercept, color='darkorange')
+        plt.xlabel('Voltage (V)')
+        plt.ylabel('Current (A)')
+        plt.title('IV Curve')
+        plt.legend(handles=legend)
+        plt.tight_layout()
+        if save:
+            plt.savefig(save)
+        else:
+            plt.show()
+
+    def write_csv(self, filename):
+        """""" Writes data to CSV file """"""
+        data = np.array((self.vso, self.curr)).transpose()
+        np.savetxt(filename, data, delimiter=',')
+
+
+    def close_keithley(self):
+        """""" Call this function to close connection to Keithley 6487  """"""
+        self.keithley.close()
+
+
+
+
+
+class Keithley6517B_IV(object):
+    """"""
+    This class is built to run IV measurments for the Keithley 6487 DMM
+    Parameters:
+        start:    The voltage to start IV sweep
+                  No default
+        stop:     The voltage to end IV sweep
+                  No default
+        stepsize: The size of the voltage steps to be used in the sweep.
+                  If incorrect sign is given, automatically corrected to match
+                  start and stop value requirements
+                  Default=0.1
+        delay:    Determines the amount of time voltage is held at each step before
+                  a measurement is taken
+                  Default=2
+        repeat:   The number of times that the measurement is conducted; is used
+                  for error analysis
+                  Default=1
+        sleep:    The amount of time between repeat measurements; allows voltage
+                  to completely drain before restarting
+                  default=30
+        ID:       The local address of the Keithley 6487
+                  Default='GPIB0::22::INSTR'
+    """"""
+    def __init__(self, start, stop, stepsize=0.1, delay=5, nplc=1, temperature=False, ID='GPIB0::22::INSTR'):
+        self.start = start
+        self.stop = stop
+
+        if start > stop and stepsize > 0:
+            self.stepsize = -stepsize
+        elif start > stop and stepsize < 0:
+            self.stepsize = stepsize
+        elif start < stop and stepsize > 0:
+            self.stepsize = stepsize
+        elif start < stop and stepsize < 0:
+            self.stepsize = -stepsize
+
+        self.delay = delay
+        self.nsteps = int(abs((stop - start) / stepsize) + 1)
+        self.nplc = nplc
+        if temperature:
+            self.data_out = 'READ,VSO,ETEM'
+        else:
+            self.data_out = 'READ,VSO'
+        self.data_count = self.data_count.count(',') + 1
+
+        self.connect_keithley(ID)
+        self.timeout()
+        self.program_sens()
+        self.program_tseq()
+        self.program_form()
+        self.program_trig()
+        self.program_syst()
+
+
+    def connect_keithley(self, ID):
+        """""" Starts Connection to Keithley Meter """"""
+        rm = visa.ResourceManager()
+        self.keithley = rm.open_resource(ID)
+        self.keithley.write(""*RST"")
+
+
+    def timeout(self):
+        """""" Sets timout so that longer measurements are not cut short """"""
+        self.keithley.timeout = (self.nsteps * (self.delay + self.nplc/50)) * 1000 + 10000
+
+
+    def program_sens(self):
+        """""" Setting parameters in SENSor SCPI commands """"""
+        self.keithley.write("":SENS:FUNC 'CURR:DC' "")
+        self.keithley.write("":SENS:CURR:RANG:AUTO ON"")
+        self.keithley.write("":SENS:CURR:NPLC "", str(self.nplc))
+
+
+    def program_tseq(self):
+        """""" Setting parameters in SOURce SCPI commands """"""
+        self.keithley.write("":TSEQ:STSW:STAR "", str(self.start))
+        self.keithley.write("":TSEQ:STSW:STOP "", str(self.stop))
+        self.keithley.write("":TSEQ:STSW:STEP "", str(self.stepsize))
+        self.keithley.write("":TSEQ:STSW:STIME "", str(self.delay))
+        self.keithley.write("":TSEQ:TYPE STSW"")
+        self.keithley.write("":TSEQ:TSO BUS"")
+
+
+    def program_form(self):
+        """""" Setting parameters in FORMat SCPI commands """"""
+        self.keithley.write("":FORM:DATA ASC"")
+        self.keithley.write("":FORM:ELEM "", self.data_out)
+
+
+    def program_trig(self):
+        """""" Setting parameters in TRIGger SCPI commands """"""
+        self.keithley.write("":TRIG:COUN "", str(self.nsteps*self.data_count))
+
+
+    def program_syst(self):
+        """""" Setting parameters in SYSTem SCPI commands """"""
+        self.keithley.write(""SYST:ZCH OFF"")
+        if 'ETEM' in self.data_out:
+            self.keithley.write(""SYST:TSC ON"")
+
+
+    @property
+    def runtime(self):
+        """""" Provides an estimated runtime of complete measurement cycle """"""
+        return (self.nsteps * (self.delay + self.nplc/50)) + 5
+
+
+    def begin_runs(self):
+        """"""
+        Begins the measurement cycle and stores values
+        vso: The voltage source list
+        curr: Current list in ohms
+        temperature: list of temperatures at each measurement datapoint
+        """"""
+        self.keithley.write("":TSEQ:ARM"")
+        self.keithley.write(""*TRG"")
+        time.sleep(int(self.runtime)+5)
+        self.yvalues = np.array(self.keithley.query_ascii_values("":TRACE:DATA?""))
+        if 'ETEM' in self.data_out:
+            self.curr = np.array(self.yvalues[0::3])
+            self.temperature = np.array(self.yvalues[1::3])
+            self.vso = np.array(self.yvalues[2::3])
+        else:
+            self.curr = np.array(self.yvalues[0::2])
+            self.vso = np.array(self.yvalues[1::2])
+
+
+    def calc_resistance(self):
+        """""" Calculates resistance (in ohms) from slope of linear fit to IV data """"""
+        self.slope, self.intercept, self.r, self.p, self.std_error = stats.linregress(self.vso, self.curr)
+        self.resistance = (1 / self.slope)
+
+
+    def calc_resistivity(self, length=None, SA=None, U=None, units=None):
+        """""" Calculates resistivity based on input length and surface area (SA)
+        of sample under measurement. Requires units from pint UnitRegistry
+        U is the variable assigned from pint such as U=pint.UnitRegistry() and
+        units is formatted such as units=U.Tohms*U.cm to achieve resistivity in
+        units of Teraohms*cm. length and SA both require attached units """"""
+        self.calc_resistance()
+        if length and SA and U and units:
+            self.resistivity = (self.resistance*U.ohms * SA / length).to(units)
+
+
+    def plot(self, fit=False, save=None):
+        """""" Automatically plots the acquired data. Fit is set to true when
+        a linear line should be fit to data and plotted. Save is the name of
+        figure to be saved as, will not be saved unless provided.
+        """"""
+        legend = [Line2D([0], [0], marker='o', color='w', label='Datapoints',
+                                  markerfacecolor='navy', markersize=15)]
+        if fit:
+            self.calc_resistance()
+            legend.append(Line2D([0], [0], color='darkorange', lw=4, label='Fitted Linear Line'))
+            legend.append(Line2D([0], [0], color='white', label='$R^2$: '+str(self.r**2)[:5]))
+            legend.append(Line2D([0], [0], color='white', label='Resistance: '+str(self.resistance)+
+                                  '$\; \Omega$'))
+
+        matplotlib.rcParams.update({'font.size': 12})
+        plt.figure(figsize=(12,8))
+        plt.scatter(self.vso, self.curr, color='navy')
+        if fit:
+            plt.plot(self.vso, self.slope*self.vso + self.intercept, color='darkorange')
+        plt.xlabel('Voltage (V)')
+        plt.ylabel('Current (A)')
+        plt.title('IV Curve')
+        plt.legend(handles=legend)
+        plt.tight_layout()
+        if save:
+            plt.savefig(save)
+        else:
+            plt.show()
+
+
+    def write_csv(self, filename):
+        """""" Writes data to CSV file """"""
+        if 'ETEM' in self.data_out:
+            data = np.array((self.vso, self.curr, self.temperature)).transpose()
+            np.savetxt(filename, data, delimiter=',')
+        else:
+            data = np.array((self.vso, self.curr)).transpose()
+            np.savetxt(filename, data, delimiter=',')
+
+    def close_keithley(self):
+        """""" Call this function to close connection to Keithley 6487 """"""
+        self.keithley.close()
+"
+167,110.6,"Cleveland, Ohio, United States","The 6221 AC and DC Current Source combine ease of use with exceptionally low current noise. Low current sourcing is critical to applications in test environments ranging from R&D to production, especially in the semiconductor, nanotechnology, and superconductor industries. High sourcing accuracy and built-in control functions make the 6221 ideal for applications like Hall measurements, resistance measurements using delta mode, pulsed measurements, and differential conductance measurements.",Keithley 6221,232.0,"Keithley Instruments is a measurement and instrument company headquartered in Solon, Ohio, that develops, manufactures, markets, and sells data acquisition products, as well as complete systems for high-volume production and assembly testing.
+",Pytango,Keithley,"[OrderedDict([('id', 'att7PoO6FUHxnCmlK'), ('width', 900), ('height', 500), ('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/NeO02HKgoFPV3DNb9vOFuQ/oUOnoE3G5-QeCMyfgXyg8FqsnOeauIly5GBoFYr9Za8Zrr0680YSs6QaLZbjSLo7PoMQ00w0RPeo8KNMcbYt2atP2MKHb0B4-GyFD_CU3NjI0vDcK8LLowKujulyPoKADY3pAVNPMgBCEnKshd91bg/0TQRCCKsz0gJy1NFGfGsJsjM3QdRGQ8MoPDdSPPJdCA'), ('filename', 'keithley-a-tektronix-company-vector-logo.png'), ('size', 4698), ('type', 'image/png'), ('thumbnails', OrderedDict([('small', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/ZnO_WGoJzGnSlUctBDqWew/3IevGml9FN4w1wC95p0SxkWfy9Or2KbV9QY3D0d1q_Sej0Zp6VH3gJgIsG75z_GB4Ob04GciukrNLZqRSkqxUA/uTVK9YUV68keAgFRR7IKhzRM4i5JrKr9C0Qtw0T9sOo'), ('width', 65), ('height', 36)])), ('large', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/qLTzFSMkPTLA6g9lkPJmsg/zyqBAfflKt_8lvw15arx51Xd9fYqp17v4WFX71buJSr6egMKaBsN1l-whDpCpYtjxp2PsM9RQH8m8m3yxtquXw/52L-EUk-XUGAnw0eN3grANao1iKKOIuxmavJUlgreXQ'), ('width', 900), ('height', 500)])), ('full', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/DD76F3FSvA0sLYAXfST7DA/Y9vIBAtL1_Fy2BC2SLgyVwDmN2BpqCN-RepHfRd6uBzNVwzsKrLvHbBvYJti5ZoIf_VLDikmzoIRrzQ6Veuw7g/bIGTWhsUS3UoKan-BcRmMtd0TCP2TPvDoZpnD5k1pXQ'), ('width', 3000), ('height', 3000)]))]))])]",https://www.tek.com/en,Write a Python script that uses Pytango to connect to a {Device name} Power Supplies,https://en.wikipedia.org/wiki/Power_supply,['Power Supplies'],"A power supply is an electrical device that supplies electric power to an electrical load. The main purpose of a power supply is to convert electric current from a source to the correct voltage, current, and frequency to power the load. As a result, power supplies are sometimes referred to as electric power converters. Some power supplies are separate standalone pieces of equipment, while others are built into the load appliances that they power.",,https://www.testequipmenthq.com/datasheets/KEITHLEY-6221-Datasheet.pdf,"[OrderedDict([('id', 'attAMc0ndlQOH57r9'), ('width', 218), ('height', 200), ('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/lIbQ9FKR-8ZLCtsfekBs6w/LHuZDDeyBd_sEiMBmEuCa-Hn6pdw_LueAQPTqShAugYmvd1-unYLxkiaA3jhpEa5idN14AzfFGT8OQU50Xo1Exx6r74sbdvaTmMV3os1WIc/fTmHb1KfG6EN0rdEeE8x4z4xCOK1YgLr35nMxcpwTHk'), ('filename', '6221.webp'), ('size', 4854), ('type', 'image/webp'), ('thumbnails', OrderedDict([('small', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/rGt0XDmQ1Xy1fcsoefL0oA/uFU0xoSnndlSZ3prk0i4NN6ioe4QlF5gvIkTUA6G9NcbfZYzKbTopGJroq70rzp_FnUOOEeaKy2Gg89W24dhjhw188Hw8zC40WArwQLVAvU/9jKCNaEO-EoYfn1R3hrRI1j9SzHXgQiPLaS1WJA-8wI'), ('width', 39), ('height', 36)])), ('large', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/zmgTmWoO_BP4wli2pLPPJA/ushfERtAvbyrtG_mSQFu2a4i639ZCZrNwfQSRanxqzcnVOR6kLlDf7vapyL0RjUTylIld0Y2ldhRUyj3cVR_A9SZ1wkkK0WR3gXG0CKV4Wc/kv5Mvh-a92fa1MkC2msIaMNxUc4AG5GyLFp3o_iKBHI'), ('width', 218), ('height', 200)])), ('full', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/M7FVJpp-DtpKMV7S6D0j7Q/Er1gMXNDjF2sI7k0s2ptovwTHK__zq9AlpFuDLvsMbIezFu-wDKvSI6Ckd1YHWzxCQF608fj6Oameuo0_QNpUoSwnoOIBYF1mHwfV5IjWNE/Z-P0P_A4pWN0SmHBexlav_qErqusYdn1Sni_cpOAUTI'), ('width', 3000), ('height', 3000)]))]))])]",https://canada.newark.com/keithley/6221/source-meter-ac-dc-current-11w/dp/54K3077,https://github.com/lordonium/Pulse-Measurement-System,https://www.esrf.fr/computing/cs/tango/tango_doc/ds_doc/tango-ds/MeasureInstruments/Keithley6221/index.html,11620.4,,,,
+170,,"California, USA",Controller Device Class For Smaract Picoscale Interferometer,Picoscalectrl,510.0,"SmarAct GmbH is an innovative company in the high-tech industry and offers high-performance products for micro and nano positioning.
+",Pytango,Smartact,"[OrderedDict([('id', 'attl1u7x1Xu2tEubD'), ('width', 160), ('height', 39), ('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/XXMmg9W_1hr7zgD04lg5jA/EJdPSTVp0kkLwaD_UNNFFhAriRQqLXCBUycJdq4SeGdjn3jzsCMeBjVyqsvg3heyF4SaphkBdp2_g1fwFT4k69XcDC2C4LuFEXGFjeT2_qg/BdsGSFFRBbSuea5i2U8fvOcY95P7TCARhokh-Cz6xaY'), ('filename', 'logo.fe3efdf2.svg'), ('size', 5868), ('type', 'image/svg+xml'), ('thumbnails', OrderedDict([('small', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/L2hOrjb2Olg9dIOE1O_MCQ/0E4-93i55wlmMehOiPgP4o4wmYCpPugrQeyj2JjWECYCPRxoZccnUXjG-bcZOerktXb478fNp6SZH-dPSIKKOMcwqZEri_B53q-OPNDO_Uc/p_SXIeiIUKRupOgJ3URvbqFYdKjOuWDbW-5PzQbd1vI'), ('width', 148), ('height', 36)])), ('large', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/eVxwcMoJPNXzkqgOFE4prA/IPZsMkU--NgW4KCz8EuoI5S7pLvvRG6zzXjcw6gLv7uZSVRjALKBnkpjffpMepkVCUJMop7odY2pLN05WM_pYGtl33nMEriJUoBpdRZEnxM/cLMKd3_F38LvRvh7cf_S7alb2qFxBa7Fvd6n__VnEYs'), ('width', 160), ('height', 39)])), ('full', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/l-W9cgTi17QfK8Vq9RMHcQ/pQ8MNWJeDxKNNO2aCOrCsUMKFsgfNkZi_o90j8WD8OIJRy_sBk1ChzLcUh-fl1lFMwfGEUlKMZQgLK-x7PdSoNJ_PUjNO1U0czLujBPVQ6c/JHcNjd76jSWQgIBbEr7ogZr705wimEVjnyZ0Wirtfa4'), ('width', 3000), ('height', 3000)]))]))])]",https://www.smaract.com/en/,Write a Python script that uses Pytango to connect to a {Device name} ,,,,,,,,,,,,,,
+181,110.6,"Cleveland, Ohio, United States","The Model 2000 6½-Digit Multimeter is part of Keithley’s family of high performance DMMs. Based on the same high speed, low noise A/D converter
+technology as the Model 2001 and 2002, the 2000 is a fast, accurate,
+and highly stable instrument that’s as easy to operate as it is to afford. It
+combines broad measurement ranges with superior accuracy specifications",Keithley 2000,224.0,"Keithley Instruments is a measurement and instrument company headquartered in Solon, Ohio, that develops, manufactures, markets, and sells data acquisition products, as well as complete systems for high-volume production and assembly testing.
+",Pytango,Keithley,"[OrderedDict([('id', 'att7PoO6FUHxnCmlK'), ('width', 900), ('height', 500), ('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/NeO02HKgoFPV3DNb9vOFuQ/oUOnoE3G5-QeCMyfgXyg8FqsnOeauIly5GBoFYr9Za8Zrr0680YSs6QaLZbjSLo7PoMQ00w0RPeo8KNMcbYt2atP2MKHb0B4-GyFD_CU3NjI0vDcK8LLowKujulyPoKADY3pAVNPMgBCEnKshd91bg/0TQRCCKsz0gJy1NFGfGsJsjM3QdRGQ8MoPDdSPPJdCA'), ('filename', 'keithley-a-tektronix-company-vector-logo.png'), ('size', 4698), ('type', 'image/png'), ('thumbnails', OrderedDict([('small', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/ZnO_WGoJzGnSlUctBDqWew/3IevGml9FN4w1wC95p0SxkWfy9Or2KbV9QY3D0d1q_Sej0Zp6VH3gJgIsG75z_GB4Ob04GciukrNLZqRSkqxUA/uTVK9YUV68keAgFRR7IKhzRM4i5JrKr9C0Qtw0T9sOo'), ('width', 65), ('height', 36)])), ('large', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/qLTzFSMkPTLA6g9lkPJmsg/zyqBAfflKt_8lvw15arx51Xd9fYqp17v4WFX71buJSr6egMKaBsN1l-whDpCpYtjxp2PsM9RQH8m8m3yxtquXw/52L-EUk-XUGAnw0eN3grANao1iKKOIuxmavJUlgreXQ'), ('width', 900), ('height', 500)])), ('full', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/DD76F3FSvA0sLYAXfST7DA/Y9vIBAtL1_Fy2BC2SLgyVwDmN2BpqCN-RepHfRd6uBzNVwzsKrLvHbBvYJti5ZoIf_VLDikmzoIRrzQ6Veuw7g/bIGTWhsUS3UoKan-BcRmMtd0TCP2TPvDoZpnD5k1pXQ'), ('width', 3000), ('height', 3000)]))]))])]",https://www.tek.com/en,Write a Python script that uses Pytango to connect to a {Device name} Multimeters,https://en.wikipedia.org/wiki/Multimeter,['Multimeters'],"A multimeter (also known as a volt-ohm-milliammeter, volt-ohmmeter or VOM) is a measuring instrument that can measure multiple electrical properties. A typical multimeter can measure voltage, resistance, and current, in which case can be used as a voltmeter, ammeter, and ohmmeter. Some feature the measurement of additional properties such as temperature and capacitance.",,https://download.tek.com/datasheet/2000-DMM-Data-Sheet-1KW612970.pdf,"[OrderedDict([('id', 'attCEhcR8XZUmMJ2j'), ('width', 288), ('height', 192), ('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/S_d4EdLDmzd6PtWm2wDOyg/3oyB_l-vfl3PAEhPPbntnKFzfNjfYsJGqYP2cTFhCMfr2hDZWnNPC1VvR1d6fF1VKAVVdyL_ldenJV4s3uduaFNKqj7LWsB4h5IicdtB9Eo/3VjECyqPrgXnQ_eDbt0BKiogZrEEE9m8s9ukrqZcrBw'), ('filename', '2000.webp'), ('size', 6118), ('type', 'image/webp'), ('thumbnails', OrderedDict([('small', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/yDIYNmDwI1Q3rRarzExnvA/mxY2VlBo5jwAmKl-9YVHy93a70sEjP9Uy4twWf_qFRc4NKWuuj98X4WjmTtXIdkEae8vmEEt4rSRKQpdDaAOnRmHwKGLxHYMZzndE4t_dJ8/TdTT9S3j8s1Kuq03IbUMEczAmTUIkYRAtfcBx0OvJYo'), ('width', 54), ('height', 36)])), ('large', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/keq10gztyk0J2mD_2I4t5Q/sEMEDyVnb3ScphOptKj1IS4GfCEAvqc7GiWX1MagjWXpp9mCjusrRwJ_zwUiEO_l266rO7dMO96TNZZgeyHv1giR8AhSvO50fJ6CHLinDYs/u6hjcY-EIGVglNv5Kt1oi_E7MX2IHx3hRdq-_hE2atA'), ('width', 288), ('height', 192)])), ('full', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/zsp68Iy_LqE4lFyDivVR_A/ukAF_04ZqhAAEN96lpEB9GHM3hahhqW7wXUOnbqCwoX2ef5d38oVrvR2Jj_j1ClZyxkrqg9wkZNABYoTdvgBZxBsOw8Ph0zzBT997mVf8gY/C2sO-Zz3TIb_ArpDAevWogy1cHUaMlpe9SI8wOHFPIU'), ('width', 3000), ('height', 3000)]))]))])]",https://download.tek.com/datasheet/2000-DMM-Data-Sheet-1KW612970.pdf,,https://www.esrf.fr/computing/cs/tango/tango_doc/ds_doc/tango-ds/MeasureInstruments/Keithley2000/index.html,,,True,,
+185,3500.0,"Irvine, California, United States","Device Server To Show The Omega Strain Gage From Newport, In A Tango System.",Newportomega,389.0,"Newport provides a wide range of photonics technology and products designed to enhance the capabilities and productivity of our customers' applications.
+",Pytango,Newport,"[OrderedDict([('id', 'attXej1yb0ZjvVVtv'), ('width', 119), ('height', 119), ('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/eJF3UbuXimfV1ihP9bpJbA/aUuQ3ySKJ3Ck7iVo_ttsIYwQYPIPPbW-ymksVpBwfMe-w5ld6x3Jh8N8iEcxVd2FJlnsRm4kZ8Z0AlnnXvdLsLjgt2lHWAUg5pGRgiWing0/cQ7xieJDgP0gXAdYteL8KICPVcN6GPgJHEIBNF93VoM'), ('filename', 'download (4).png'), ('size', 1554), ('type', 'image/png'), ('thumbnails', OrderedDict([('small', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/sUivBL_K7azt26iNB3Tshw/xhA4U9s8liX3z0U23n6TKINZ4QI7N9tsDVuO1SP0WhZc_oXoUBHeNsKyb7dZH8w-nsltXwRFd7PaocFJ-MdUcQ/EKtnn7Re9BcgDyKHCIBYI98vX1ZWnm1SKaAE33PmUXQ'), ('width', 36), ('height', 36)])), ('large', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/Ii7mKuM-BnbGEVA8WXszCg/hRwzRTc7Orc7Ckc-pcBWPqOG2cLXBR-VPFP40XU6keLSWkwjLcNVphU3uWS8R7GvT0DYir1pNTc1wydz5QeqbA/yOl2VlnroxlPhZM7jhR2Ndj749JLIlLNhHUsAwMzq78'), ('width', 119), ('height', 119)])), ('full', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/YAUQVRx7gEmmEhPpt9cbAQ/aTYL4VMJe9WxFwtJerL5-KZ6n1bszVY8CRHFuLc-7NDV2R770SqIBOLoVhDQHB1ELoEEkn2F9xJWqK6ok9DhPw/lJaUVpWFk-Sx7N9ATCoaKUz88h2gxXL3ClbGSaaq5Xc'), ('width', 3000), ('height', 3000)]))]))])]",https://www.newport.com/,Write a Python script that uses Pytango to connect to a {Device name} ,,,,,,,,,https://www.tango-controls.org/developers/dsc/ds/142/,,,,,
+225,,,"Orbit 3 is a wireless sensor for ambient temperature and humidity monitoring. Install Orbit 3 at a suitable location, and it will wirelessly transmit temperature and humidity readings continuously. It can be used in precast factories, concrete laboratories, on-site – or wherever ambient climate creates value for you.",Orbit 3 Sensor,395.0,,Pytango,Orbit3,,,Write a Python script that uses Pytango to connect to a {Device name} ,,,,,,"[OrderedDict([('id', 'attzyvS9MbjMwlnPo'), ('width', 1024), ('height', 768), ('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/UWCIx8kUKy6d1VNTwAP8Nw/0nJYZTKfkkEbSU6OtOA1S4Kqlz37bes60hB6B1BtVPAr7JhA_aZq5EnTgI3FrPuozqOBgDwymtZCipR6iAW-AC-Gkjx2wNiu_Ik5rE-lld8/co81lMtH1Ss0XyyNct5GA5tpFXg_RcG-3bGeaGzg8Oo'), ('filename', 'Orbi3_05.webp'), ('size', 16610), ('type', 'image/webp'), ('thumbnails', OrderedDict([('small', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/YQ_xnfg6t5BnDSWmI7midQ/QaFSW9TtJMjl69qA54_bkLYvK9gy1E-DG5mD70Vme0ENxLGDAv8P8y_ljRgcDkX_ex0nemrer5gwwh-9_sZufW7pNx8FZ0v9XAhWQ3XNa4o/Xc-R5eE2KCCgjFqFP4rPExT7y8e0zUxT6o568fyL9Xk'), ('width', 48), ('height', 36)])), ('large', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/Xz7G2WeNjHJATUk9kM7pnw/N5L8LYpUgksfr8vXeFkCYRuLqKY-hoxvgjQnqp5R17suvJowiQ2wKyvfq792fnDj1u7UF7D4_PLq7HRIC9_V5VMc1Jz8tTa3LTBobYsfZ2Q/lpbIZXpZDBlpKGUxATt_bz_w-8EGntxNeoa5XlsL9EA'), ('width', 683), ('height', 512)])), ('full', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/_dnxoKWnN17Y2JdCpAZoNQ/VVmnrdoCCkkd64lQ1wQLNnQddlNPsAYMx2dH__FFryTVo_7bH14hsZcn4wk1lVkKYUJxuxeirmBzcnTp7okwumCPpT2ZmeoAipc9ChBJJxU/jgCGdcZRuYAPohnGcpmR-o01bxTItpFP9V7hoy8u-vk'), ('width', 3000), ('height', 3000)]))]))])]",https://maturix.com/sensors/orbit-3/,,https://www.esrf.fr/computing/cs/tango/tango_doc/ds_doc/tango-ds/MeasureInstruments/Orbit3Sensor/index.html,,,,,
+227,110.6,"Cleveland, Ohio, United States","The Keithley Integra Series Multimeter/ Data Acquisition / Switch Systems systems (2700, 2701, 2750) combine precision measurement, switching, and control in a single, tightly integrated enclosure for either rack-mounted or benchtop applications. These cost-effective, high performance test platforms offer affordable alternatives to separate DMMs and switch systems, dataloggers/ recorders, plug-in card data acquisition equipment, and VXI/PXI systems. The Integra Series plug-in switching and control modules offer unmatched flexibility and testing efficiency for a wide range of industries and applications. System builders can create test solutions with a combination of channel count, cost per channel, and system performance unmatched by any other single-box measurement system. The input modules provide the flexibility to vary the channel count from 20 to 200 (2-pole), apply a stimulus to the device under test, route signals, control system components, and make precision measurements with up to 14 functions. Robust digital I/O capabilities can be used for triggering, handshaking with other automation equipment, and alarm limit outputs. Scan rates of up to 500 channels/second (up to 3500 readings/second on a single channel) will increase test productivity.",Keithley 2701,227.0,"Keithley Instruments is a measurement and instrument company headquartered in Solon, Ohio, that develops, manufactures, markets, and sells data acquisition products, as well as complete systems for high-volume production and assembly testing.
+",Pytango,Keithley,"[OrderedDict([('id', 'att7PoO6FUHxnCmlK'), ('width', 900), ('height', 500), ('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/NeO02HKgoFPV3DNb9vOFuQ/oUOnoE3G5-QeCMyfgXyg8FqsnOeauIly5GBoFYr9Za8Zrr0680YSs6QaLZbjSLo7PoMQ00w0RPeo8KNMcbYt2atP2MKHb0B4-GyFD_CU3NjI0vDcK8LLowKujulyPoKADY3pAVNPMgBCEnKshd91bg/0TQRCCKsz0gJy1NFGfGsJsjM3QdRGQ8MoPDdSPPJdCA'), ('filename', 'keithley-a-tektronix-company-vector-logo.png'), ('size', 4698), ('type', 'image/png'), ('thumbnails', OrderedDict([('small', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/ZnO_WGoJzGnSlUctBDqWew/3IevGml9FN4w1wC95p0SxkWfy9Or2KbV9QY3D0d1q_Sej0Zp6VH3gJgIsG75z_GB4Ob04GciukrNLZqRSkqxUA/uTVK9YUV68keAgFRR7IKhzRM4i5JrKr9C0Qtw0T9sOo'), ('width', 65), ('height', 36)])), ('large', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/qLTzFSMkPTLA6g9lkPJmsg/zyqBAfflKt_8lvw15arx51Xd9fYqp17v4WFX71buJSr6egMKaBsN1l-whDpCpYtjxp2PsM9RQH8m8m3yxtquXw/52L-EUk-XUGAnw0eN3grANao1iKKOIuxmavJUlgreXQ'), ('width', 900), ('height', 500)])), ('full', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/DD76F3FSvA0sLYAXfST7DA/Y9vIBAtL1_Fy2BC2SLgyVwDmN2BpqCN-RepHfRd6uBzNVwzsKrLvHbBvYJti5ZoIf_VLDikmzoIRrzQ6Veuw7g/bIGTWhsUS3UoKan-BcRmMtd0TCP2TPvDoZpnD5k1pXQ'), ('width', 3000), ('height', 3000)]))]))])]",https://www.tek.com/en,Write a Python script that uses Pytango to connect to a {Device name} Multimeters,https://en.wikipedia.org/wiki/Multimeter,['Multimeters'],"A multimeter (also known as a volt-ohm-milliammeter, volt-ohmmeter or VOM) is a measuring instrument that can measure multiple electrical properties. A typical multimeter can measure voltage, resistance, and current, in which case can be used as a voltmeter, ammeter, and ohmmeter. Some feature the measurement of additional properties such as temperature and capacitance.",,https://www.testequipmenthq.com/datasheets/KEITHLEY-2701-Datasheet.pdf,"[OrderedDict([('id', 'attLInGgFEcBo6bM2'), ('width', 521), ('height', 445), ('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/0qG73-1UuizeGHYB0MDA6Q/aIT7e1c1j69ko0dAe9rE6CPrEt1_xNUPU4L_BQkU1cq9ndIVa1-OvrkE_iE6Nle8N6geVTnva3J0mYKaJJBAqg/5r_GZF1EMshvkqZ1T8beYFlBk8fnGpOL3Bo3vICxEOg'), ('filename', '2701.jpg'), ('size', 24322), ('type', 'image/jpeg'), ('thumbnails', OrderedDict([('small', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/VCPIP4f94yiV3FxWdZN0Mg/RxqbscM4P5clzlBe35_6lLDEzsJJxccKn5iJVLFm89r6WvB13WeAVvFk9IhXCO3cJKjt54YrB3NfnOwrInvEng/Y7IHr3Wt_ZxpbLhPpUcFy6A5P_6rrl8pJ5mO_GqD7-A'), ('width', 42), ('height', 36)])), ('large', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/8E_5XzlYT1VlpTV7UVkcxA/5mygb8nOqXsYO1J6nalaHuKL4MuNB0lvcWbTsZAe8pje0aWp7D3h3B2jvx96ULvkng5l87dW4u-gO_g6_lDQ_w/48uzxhCAqGn971DdXoJgc2aP1Ls6T_0OXohbXq6g7c8'), ('width', 521), ('height', 445)])), ('full', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/nVKv4zL41Ha1yX_X81KAyw/AI2OQHzAjdnQ3N0VmadTg3QiC4ZHIQkFYn1D5rPl9Q4lheLjCyTducNFDvH9snNx5LS2z3gLKXa0yL3RgILsMQ/WwoIVaOWo2keahcPtyMsMh0VrpuQvxBbhwMKZlcDcVw'), ('width', 3000), ('height', 3000)]))]))])]",https://www.artisantg.com/TestMeasurement/64645-3/Keithley-2701-Ethernet-Multimeter-Data-Acquisition-System,,https://www.esrf.fr/computing/cs/tango/tango_doc/ds_doc/tango-ds/MeasureInstruments/Keithley2701/index.html,1295.0,,,,
+245,,,Control Of Sanchez Tech Apd Pressure Controller For Diamond Anvil Cell Application,Pressurecontroller,498.0,,Pytango,Sanchez Tech,,,Write a Python script that uses Pytango to connect to a {Device name} ,,,,,,,,,,,,,,
+246,110.6,"Cleveland, Ohio, United States","Device Which Controls A Channel Switch System
+Supported Model(S) : 7001",Kchannelswitch,236.0,"Keithley Instruments is a measurement and instrument company headquartered in Solon, Ohio, that develops, manufactures, markets, and sells data acquisition products, as well as complete systems for high-volume production and assembly testing.
+",Pytango,Keithley,"[OrderedDict([('id', 'att7PoO6FUHxnCmlK'), ('width', 900), ('height', 500), ('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/NeO02HKgoFPV3DNb9vOFuQ/oUOnoE3G5-QeCMyfgXyg8FqsnOeauIly5GBoFYr9Za8Zrr0680YSs6QaLZbjSLo7PoMQ00w0RPeo8KNMcbYt2atP2MKHb0B4-GyFD_CU3NjI0vDcK8LLowKujulyPoKADY3pAVNPMgBCEnKshd91bg/0TQRCCKsz0gJy1NFGfGsJsjM3QdRGQ8MoPDdSPPJdCA'), ('filename', 'keithley-a-tektronix-company-vector-logo.png'), ('size', 4698), ('type', 'image/png'), ('thumbnails', OrderedDict([('small', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/ZnO_WGoJzGnSlUctBDqWew/3IevGml9FN4w1wC95p0SxkWfy9Or2KbV9QY3D0d1q_Sej0Zp6VH3gJgIsG75z_GB4Ob04GciukrNLZqRSkqxUA/uTVK9YUV68keAgFRR7IKhzRM4i5JrKr9C0Qtw0T9sOo'), ('width', 65), ('height', 36)])), ('large', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/qLTzFSMkPTLA6g9lkPJmsg/zyqBAfflKt_8lvw15arx51Xd9fYqp17v4WFX71buJSr6egMKaBsN1l-whDpCpYtjxp2PsM9RQH8m8m3yxtquXw/52L-EUk-XUGAnw0eN3grANao1iKKOIuxmavJUlgreXQ'), ('width', 900), ('height', 500)])), ('full', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/DD76F3FSvA0sLYAXfST7DA/Y9vIBAtL1_Fy2BC2SLgyVwDmN2BpqCN-RepHfRd6uBzNVwzsKrLvHbBvYJti5ZoIf_VLDikmzoIRrzQ6Veuw7g/bIGTWhsUS3UoKan-BcRmMtd0TCP2TPvDoZpnD5k1pXQ'), ('width', 3000), ('height', 3000)]))]))])]",https://www.tek.com/en,Write a Python script that uses Pytango to connect to a {Device name} ,,,,,,,,,,,,,,
+256,110.6,"Cleveland, Ohio, United States","The 2410 from Keithley is a 1000V, 1A, 20W SourceMeter® unit (SMU) instrument. It is designed specifically for test applications that demand tightly coupled sourcing and measurement. This SMU provides precision voltage and current sourcing as well as measurement capabilities. It includes both a highly stable DC power source and true instrument grade 6.5 digit multimeter. The power source characteristics include low noise, precision and readback. The multimeter capabilities include high repeatability and low noise. The result is a compact, single channel, DC parametric tester. In operation, it can act as voltage source, current source, voltage meter, current meter and ohmmeter. In operation, this instruments can act as a voltage source, a current source, a voltage meter, a current meter, and an ohmmeter.",Keithley 2410,226.0,"Keithley Instruments is a measurement and instrument company headquartered in Solon, Ohio, that develops, manufactures, markets, and sells data acquisition products, as well as complete systems for high-volume production and assembly testing.
+",Pytango,Keithley,"[OrderedDict([('id', 'att7PoO6FUHxnCmlK'), ('width', 900), ('height', 500), ('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/NeO02HKgoFPV3DNb9vOFuQ/oUOnoE3G5-QeCMyfgXyg8FqsnOeauIly5GBoFYr9Za8Zrr0680YSs6QaLZbjSLo7PoMQ00w0RPeo8KNMcbYt2atP2MKHb0B4-GyFD_CU3NjI0vDcK8LLowKujulyPoKADY3pAVNPMgBCEnKshd91bg/0TQRCCKsz0gJy1NFGfGsJsjM3QdRGQ8MoPDdSPPJdCA'), ('filename', 'keithley-a-tektronix-company-vector-logo.png'), ('size', 4698), ('type', 'image/png'), ('thumbnails', OrderedDict([('small', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/ZnO_WGoJzGnSlUctBDqWew/3IevGml9FN4w1wC95p0SxkWfy9Or2KbV9QY3D0d1q_Sej0Zp6VH3gJgIsG75z_GB4Ob04GciukrNLZqRSkqxUA/uTVK9YUV68keAgFRR7IKhzRM4i5JrKr9C0Qtw0T9sOo'), ('width', 65), ('height', 36)])), ('large', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/qLTzFSMkPTLA6g9lkPJmsg/zyqBAfflKt_8lvw15arx51Xd9fYqp17v4WFX71buJSr6egMKaBsN1l-whDpCpYtjxp2PsM9RQH8m8m3yxtquXw/52L-EUk-XUGAnw0eN3grANao1iKKOIuxmavJUlgreXQ'), ('width', 900), ('height', 500)])), ('full', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/DD76F3FSvA0sLYAXfST7DA/Y9vIBAtL1_Fy2BC2SLgyVwDmN2BpqCN-RepHfRd6uBzNVwzsKrLvHbBvYJti5ZoIf_VLDikmzoIRrzQ6Veuw7g/bIGTWhsUS3UoKan-BcRmMtd0TCP2TPvDoZpnD5k1pXQ'), ('width', 3000), ('height', 3000)]))]))])]",https://www.tek.com/en,Write a Python script that uses Pytango to connect to a {Device name} Power Supplies,https://en.wikipedia.org/wiki/Power_supply,['Power Supplies'],"A power supply is an electrical device that supplies electric power to an electrical load. The main purpose of a power supply is to convert electric current from a source to the correct voltage, current, and frequency to power the load. As a result, power supplies are sometimes referred to as electric power converters. Some power supplies are separate standalone pieces of equipment, while others are built into the load appliances that they power.",,https://www.testequipmenthq.com/datasheets/KEITHLEY-2410-Datasheet.pdf,"[OrderedDict([('id', 'attqiYJXCKprM9uQO'), ('width', 320), ('height', 147), ('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/5THbtPFn7yi7-xPR7rupfg/tFdSX8xalzLi6rNPzsYoG_mbgjXs5Kuvb-GLlxEVlLEnm533K8Te2YHGvvVL_zJLwan7k-ETIAZRN5FqEE8R5z7pKfGeBtibH_quca-67B4/j1IsNIDI9d6n4Err2ZB0BKXYwX3jb-kxDPKPQbhUgV0'), ('filename', '2410.webp'), ('size', 7664), ('type', 'image/webp'), ('thumbnails', OrderedDict([('small', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/YD5hmqHyO_XaOhfA5CkPJQ/m-xIj9mAykUD-AaoxKvLcLpZVjQa-WhzUE_ZpB3Ao2iOEbeskZOX2NLXdQEwmD3OgWqfA4nrmnldA3yi9l-rbuK3EHzFd36flz87n5o-rAw/wpJzMXjtVrUrYnaMhiytcbyfTKDtdkzc_wS69WGWpuQ'), ('width', 78), ('height', 36)])), ('large', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/dN2_DMauvuNTcefO4MhXCw/XwSLIdyzMR_KvcVe7e7pUn94I2GbDkvk_OsdEyqPr8FIA8dNEYe3vJhJMny5m0jifuIgjTQmXerK0p1-hT9Z3LSlB_i0fhdIQ3-nCclLxTs/Yy7FokRUY0sntfQXPW14ooG4AjZy2Yk0dnWMIR5Ts10'), ('width', 320), ('height', 147)])), ('full', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/EaG1phiBHjcyrtTNKSI0Kg/LjgTV9UR-1TejDy6kmKi44TlvpMicB5q_Sn1fZDBWdf-DYylpJz8KU3F-rwPqIA5yL0QAbzU6jVZplLzcRZIpCl_c4NHus7dYnzBtsvLOJM/xboJDWzwtkUwlMT1RCs9PdtQWZtMFN3okp5TTS5W-DI'), ('width', 3000), ('height', 3000)]))]))])]",https://canada.newark.com/keithley/2410/source-meter-dc-voltage-current/dp/19K4451,,,19599.0,,,,
+264,,"California, USA",...,Picoscaleaxis,511.0,"SmarAct GmbH is an innovative company in the high-tech industry and offers high-performance products for micro and nano positioning.
+",Pytango,Smartact,"[OrderedDict([('id', 'attl1u7x1Xu2tEubD'), ('width', 160), ('height', 39), ('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/XXMmg9W_1hr7zgD04lg5jA/EJdPSTVp0kkLwaD_UNNFFhAriRQqLXCBUycJdq4SeGdjn3jzsCMeBjVyqsvg3heyF4SaphkBdp2_g1fwFT4k69XcDC2C4LuFEXGFjeT2_qg/BdsGSFFRBbSuea5i2U8fvOcY95P7TCARhokh-Cz6xaY'), ('filename', 'logo.fe3efdf2.svg'), ('size', 5868), ('type', 'image/svg+xml'), ('thumbnails', OrderedDict([('small', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/L2hOrjb2Olg9dIOE1O_MCQ/0E4-93i55wlmMehOiPgP4o4wmYCpPugrQeyj2JjWECYCPRxoZccnUXjG-bcZOerktXb478fNp6SZH-dPSIKKOMcwqZEri_B53q-OPNDO_Uc/p_SXIeiIUKRupOgJ3URvbqFYdKjOuWDbW-5PzQbd1vI'), ('width', 148), ('height', 36)])), ('large', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/eVxwcMoJPNXzkqgOFE4prA/IPZsMkU--NgW4KCz8EuoI5S7pLvvRG6zzXjcw6gLv7uZSVRjALKBnkpjffpMepkVCUJMop7odY2pLN05WM_pYGtl33nMEriJUoBpdRZEnxM/cLMKd3_F38LvRvh7cf_S7alb2qFxBa7Fvd6n__VnEYs'), ('width', 160), ('height', 39)])), ('full', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/l-W9cgTi17QfK8Vq9RMHcQ/pQ8MNWJeDxKNNO2aCOrCsUMKFsgfNkZi_o90j8WD8OIJRy_sBk1ChzLcUh-fl1lFMwfGEUlKMZQgLK-x7PdSoNJ_PUjNO1U0czLujBPVQ6c/JHcNjd76jSWQgIBbEr7ogZr705wimEVjnyZ0Wirtfa4'), ('width', 3000), ('height', 3000)]))]))])]",https://www.smaract.com/en/,Write a Python script that uses Pytango to connect to a {Device name} ,,,,,,,,,,,,,,
+276,178.0,"s	Chestnut Ridge, New York, USA","This Class Allows The Acquisition Of A Waveform (The Description And The Data), From A Specific C...",Acquirewaveformlecroy,367.0,"Teledyne LeCroy, Inc. manufactures and distributes electronic measuring instruments. The Company produces analyzers, measurement, and testing solutions including oscilloscopes, production test digitizers, and electronic components. Teledyne LeCroy serves customers worldwide.
+
+
+",Pytango,Lecroy,"[OrderedDict([('id', 'att8OZpUeT43PIZJv'), ('width', 2700), ('height', 438), ('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/6KPkQSgR9nqCmcUi7EvMFw/m0-3MqDxRsMo2qCkDbMLkwwNpsxhNQeK-XHD6BaUShuCNXxby_pCs5jvIOt4vVpWhIIq_cFSkP8f6wcByKi33Q/TRUHeP3SZ9EuiUZ7VXoNDmMOX2SZsTsxhJq2_aUC1ig'), ('filename', '1.jpeg'), ('size', 127698), ('type', 'image/jpeg'), ('thumbnails', OrderedDict([('small', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/K41EkSYIggZvWsKslkJglQ/nIBZVwIrqMO-mzNQbL0ZpGmLoOH0xYxgC2-V3wbidVPqIdefXb_KJOXeXIX82Uxzm7jB2eBQTJUpawTIVIN3Zw/sVCmKaJ5r2gwyF2-zPeKl-wrTSTNGzxP0F0hyGS43ls'), ('width', 222), ('height', 36)])), ('large', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/OFWF7OOoNzXrbmSaOp9SvA/fjZgGkCeFpqBXLWueAkftOSIxGColVgncE6LxjMeVXrhA_6a1plbdI36Rflg5IAfckWdsn5sE-_7-GCAMHFOww/cbLfpaK4ewau6xsoDWJCS_hpVdEccKDj36ws1h7iBTE'), ('width', 2700), ('height', 438)])), ('full', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/9bHRifRDe0E2da_mjEkxmQ/Ea28R8n5mrY2ofaUUcn6wgSWNEOjcy2I9pnw3K5Yr8aaIna7b94WwdtlCYVhbVebMDhjpKHnxW0LvxkJ9mFlJg/pLcna4sD0OyPZ1H3J4HDUIgsuLqY9Jbi2OTEePvS9tU'), ('width', 3000), ('height', 3000)]))]))])]",https://www.teledynelecroy.com/,Write a Python script that uses Pytango to connect to a {Device name} ,,,,,,,,,,,,,,
+302,21.4,"Westerville, Ohio, USA","Lake Shore Model 425 gaussmeter provides high-end functionality and performance in an affordable desktop instrument. Magnet testing and sorting have never been easier. When used in combination with the built-in relay and audible alarm features, the Model 425 takes the guesswork out of pass/fail criteria. Additional features including DC to 10 kHz AC frequency response, max hold and relative measurement make the Model 425 the ideal tool for your manufacturing, quality control and R&D flux density measurement applications. Put the Model 425 gaussmeter to use with confidence knowing it’s supported by industry leading experts in magnet measurement instrument, sensor, and Hall probe technology.",LKS 425 Gaussmeter,343.0,"Supporting advanced scientific research, Lake Shore is a leading global innovator in measurement and control solutions.
+",Pytango,Lakeshore,"[OrderedDict([('id', 'attzehTVrrXJAMgad'), ('width', 256), ('height', 72), ('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/6WgWgYzcnadqtQAsudq-EQ/qBMiciOZubDp7AaEQb1Tv-1U7eOQy4PGJ_AMUo3dTbb-Pm8GYMROAQ5fttNK1jW0qJU0F_aSSOYUidImJnZwIqJCOqvuAe5gHRBm6AHjZ10/F119v_xcdXTD3MkzuV2EejAV_L48lDkINVwOof3RvIk'), ('filename', 'lake-shore-logo.svg'), ('size', 11991), ('type', 'image/svg+xml'), ('thumbnails', OrderedDict([('small', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/WQmuNgpMl44p6V9XmZ4CyQ/VdzncpNu4Dlldt-i-xrpQM74B3f6bDLTaP0ie7-T7n0hZK37WfnL-v3ss9yYKa0y5lc58Ghyk7omaX-5odAxJNwzaTPatTY72Z-oKOjyfiM/_QAqiUYoQZu56EGbkjlIF-HpunexUq5tQDhy3Tr_ees'), ('width', 128), ('height', 36)])), ('large', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/qB77VOwXqmX7ni1DyoSpdA/C1ho5lb9cSlVTcsONgw9K2Ge-vBjQmxzNmaUhFDgUmH8r2L3uXqv5KBe-nsatdxn3GxAFHK34MBKdCc0wQfoa4ldCEorN3IH5V9DrMzhJWU/wodeRmUKgG9QfZMfQh9drX3ilz8sIWSWqDCXSD_ogqE'), ('width', 256), ('height', 72)])), ('full', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/_138iKkNN5kpXaPATAYnsw/oA-4OBF8ojXeHh3X37Mpe3HKE7SCUItHGxgJv5X3ZDhGXNXe1y3Aq1aDhpuQVDsX4WgdMgUUKiWfDUhaANRWCTvATEnw_afgI6F5R89tpdM/tSHU0OcwY60JScIOEF2BOGOKZpsJVHz5m4XQ420dbKk'), ('width', 3000), ('height', 3000)]))]))])]",https://www.lakeshore.com/home,Write a Python script that uses Pytango to connect to a {Device name} Power Meters,https://en.wikipedia.org/wiki/Magnetometer,['Power Meters'],"A magnetometer is a device that measures magnetic field or magnetic dipole moment. Different types of magnetometers measure the direction, strength, or relative change of a magnetic field at a particular location. A compass is one such device, one that measures the direction of an ambient magnetic field, in this case, the Earth's magnetic field. Other magnetometers measure the magnetic dipole moment of a magnetic material such as a ferromagnet, for example by recording the effect of this magnetic dipole on the induced current in a coil.",,https://www.lakeshore.com/docs/default-source/product-downloads/catalog/425.pdf?sfvrsn=1581d8be_6,"[OrderedDict([('id', 'attqoQm3frhx3s4le'), ('width', 505), ('height', 268), ('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/poLvWiyXEqKUEQ_HupeBTA/vbZDxE4qG6wzgCyG8CzDYRJRkChn91GgKZsg2qH-TUdiKWsShZwmnXUjzrvQfDH3ep468YQnHp7B0RkrUQXvLQ/loBKYrHoiXTUHzkpmGAldV6nZ6KA0q0IZ2_a5GVNV5c'), ('filename', '425.png'), ('size', 159132), ('type', 'image/png'), ('thumbnails', OrderedDict([('small', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/FQ5u9YAYB1fZyiwVztQJww/cuY76TSzKZ71o6oGBLMzw801XEotvZTfQW8SAayPMJxLJzfKvx-IfgnIeuesNV28jmOt8jDJ7RDorjoKW0Y9fA/WLQf_qIJu6-LqTHbqLNrqsSAwo3Wvm3tlkTrzUDhbGI'), ('width', 68), ('height', 36)])), ('large', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/j5OaZU1J-YPwS2SC1hDpkg/M2I771myA5XOhyxZVNTbrb2sA799yGp-ciAgEfRRjBHrgjkLhRhPxWcNqOZD5mZxQSpZMavKihNq1rZOiDzblg/qlHzi-nezQzbRDSrzRUo8nallipMh6ahlMn7QWjeCi4'), ('width', 505), ('height', 268)])), ('full', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/bSBJRejjiL3hci93z0pebg/BjgA6fiVIF6tjPgouEZVjAmoyhzchvEiHv8SxlelvLJVrig0l2o4sDUsXRDh6YP98USA5RzufyC0USd4GhAiOg/yA4ZpXvgLjddXTgA530rt7EQwjqovBaRtiGz9yV1dsA'), ('width', 3000), ('height', 3000)]))]))])]",https://www.lakeshore.com/products/categories/overview/magnetic-products/gaussmeters-teslameters/model-425-gaussmeter,https://github.com/lakeshorecryotronics/python-driver/blob/main/lakeshore/model_425.py,https://www.esrf.fr/computing/cs/tango/tango_doc/ds_doc/tango-ds/MeasureInstruments/LKS425Gaussmeter/index.html,2315.0,,,,"""""""Implements functionality unique to the Lake Shore Model 425 Gaussmeter.""""""
+import serial
+
+from .generic_instrument import GenericInstrument
+
+
+class Model425(GenericInstrument):
+    """"""A class object representing the Lake Shore Model 425 Gaussmeter.""""""
+
+    vid_pid = [(0x1FB9, 0x0401)]
+
+    def __init__(self,
+                 serial_number=None,
+                 com_port=None,
+                 baud_rate=57600,
+                 data_bits=7,
+                 stop_bits=1,
+                 parity=serial.PARITY_ODD,
+                 flow_control=False,
+                 handshaking=False,
+                 timeout=2.0,
+                 ip_address=None,
+                 tcp_port=7777,
+                 **kwargs):
+
+        # Call the parent init, then fill in values specific to the 121
+        GenericInstrument.__init__(self, serial_number, com_port, baud_rate, data_bits, stop_bits, parity, flow_control,
+                                   handshaking, timeout, ip_address, tcp_port, **kwargs)
+"
+314,5420.0,USA,This Classe Handle Agilent 4395A Device.,Agilent 4395 A,36.0,"**Keysight Technologies**, or **Keysight**, is an American company that manufactures electronics test and measurement equipment and software
+",Pytango,Agilent,"[OrderedDict([('id', 'attxJubS6tzqQdYIo'), ('width', 212), ('height', 75), ('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/7JdB5Ps5sb9lON7o2hs_cg/G_dWwrATA_PZK-Jdl1XeU4SYJeERXHMx6V-dcXKWfnpPRVYF2gXOcttAN5e9EB09eka1wpg62FwReTjpF0n-KFkJqXbhTeUQgiPXSJfyXmw/jW35gvn15o5qMGLQCwboHzN8qiJl8BT_XwfO06ug6pM'), ('filename', 'keysight-logo.svg'), ('size', 2285), ('type', 'image/svg+xml'), ('thumbnails', OrderedDict([('small', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/1_ixEDlmlfiZQjeOAckvkg/javy_dt6gin5x_EBJhEP7Whi8_K6fWMcLlDdSR6JAHLigXNmKyHpf2TYQhDbB-PgHc-QO1tvSRq242gmF-LYveZFg9aomxbN7PdXkyrNZ68/1Gp9ARcz50CZjCn9gQa4S0ohH1037Jnd3WuDRilV_YY'), ('width', 102), ('height', 36)])), ('large', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/3r5dQebSee-0_JpNmjbLoA/aLoVVpenkX74XezRaFJvM9y7oNImUldrSfH6wlKmsHe4fz9Pkpf1dx6riu4oF7KY2qFNdShu6M65uzZHsHmZMFhJ0WVjCY19kddSfJNcAZE/9SJCRgr-RHecaYlt1XTfvdX4OP1pfjWyOHLYpwcETHk'), ('width', 212), ('height', 75)])), ('full', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/DTloRSvSIjfSjnvKRlAhQA/wfVX-PUQlPVlvEM_n8DDJ10rnOSxskecmyxLvOw1XX2_3Hr02_YKL5f11rgVjsYjzPhmbruXS3jzNThnyIHg5D39RCDZUaJSMcFrNCWint0/Gm9TJgBRPm_4Ybpu5AbRheZZlezqsnGQDXrky1OmnYM'), ('width', 3000), ('height', 3000)]))]))])]",https://www.keysight.com/us/en/home.html,Write a Python script that uses Pytango to connect to a Agilent 4395 A Network Analyzer,https://en.wikipedia.org/wiki/Network_analyzer_(electrical),['Network Analyzer'],"Vector network analyzers are crucial for the characterization of the devices and components used in radio frequency and microwave systems. This includes network testing for wifi, computer networks, cell phone coverage, and much more. These powerful devices are used in various stages of product development and can be used to verify the performance of various components such as antennas, amplifiers, cables, and many other active or passive devices. We use network analyzers to test these components to verify specifications of building blocks for more complex RF systems. Testing these systems ensures distortion-free transmission of communication signals and ensures a good match when absorbing power.",Agilent 4395 A,https://www.alliancetesteq.com/equipment/agilent-hp-keysight-4395a?gad=1&gclid=Cj0KCQjw7uSkBhDGARIsAMCZNJtj_oCgy6K02xvVWWHIRrieNxwEw5tvTrpKQFldlDfx_-FwfZajnjMaAnNoEALw_wcB,"[OrderedDict([('id', 'attNktmDQ6qyoZpvX'), ('width', 2546), ('height', 1780), ('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/CaNBJblWGy3T-stmmro26w/K8ZWilkh-XONLWzctXR2r72QzuNI7wt-mVl7gkZ2gCMqBo6jadtA33wE9YsDxXsjfza0adFJ_pF6QHARyOwnDvpCMkJNeMWDCHLfWgUAvL0/u1FB4_BmY0JDWrz5Tkxja_S4WHyJVVUUhCEwJ3lbNJU'), ('filename', 'Agilent 4395 A.png'), ('size', 4456962), ('type', 'image/png'), ('thumbnails', OrderedDict([('small', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/Ko-hjF0Z4-APdb5CWMTifw/Ra39DVeAA3vAx8Risdh9_MHlMFxIsVleNBrkdjfahM5Xg_aEcjUfaRRHEQJAtgx4TXFMaf0OpoDd4rytv0pktg/PqobVMbvUcYWbNifv_o0DqYnHQk858a5g9rYrQNCe5g'), ('width', 51), ('height', 36)])), ('large', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/HYsXoPIrlCmNhS60BDYvpw/bqc704UhZUZfGUkNJF46Q8-if8JCKdfWrvvevulltRrGx1IXTDRk6DFJzfVXaR4KiYeFOLuJynynvLM8e5yOyQ/Rg-Sil0Z6NokEXPoc9vDYU8O3sBmifszAV48YLklJ30'), ('width', 732), ('height', 512)])), ('full', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/0SC2j-G1BjMB8VzRtSWU6g/Oytosn0iCzVpEShRoVuMnGDJMA1ghlbwrA0nLo_RnLEKDrucQ1cHPsjMIV_vCJ6y4Gu46AxPz8_1meQbu-W4HA/z_PKxN1YSAjdsRxe0D6CIIf4yxPnJLdqNwMvu9zN74A'), ('width', 3000), ('height', 3000)]))]))])]",https://www.alliancetesteq.com/equipment/agilent-hp-keysight-4395a?gad=1&gclid=Cj0KCQjw7uSkBhDGARIsAMCZNJtj_oCgy6K02xvVWWHIRrieNxwEw5tvTrpKQFldlDfx_-FwfZajnjMaAnNoEALw_wcB,https://github.com/grkz/ag4395a/blob/master/get_data.py,,,"
+",True,,"import os.path
+import math
+from functions import *
+
+fn = raw_input(""enter filename (overwrites existing files in 'data' dir): "")
+mode = raw_input(""Enter S (noise/spectrum) or N (network): "")
+
+if mode == ""S"":
+	n = int(raw_input(""Enter number of measurements: ""))
+	get_spectrum(os.path.join('data', fn), n)
+elif mode == ""N"":
+	get_tf(os.path.join('data', fn))
+"
+320,5420.0,USA,This Class Implements The Standard Signal Generator Interface For The Agilent E4421B Signal Gener...,Agilente 4421 B,38.0,"**Keysight Technologies**, or **Keysight**, is an American company that manufactures electronics test and measurement equipment and software
+",Pytango,Agilent,"[OrderedDict([('id', 'attxJubS6tzqQdYIo'), ('width', 212), ('height', 75), ('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/7JdB5Ps5sb9lON7o2hs_cg/G_dWwrATA_PZK-Jdl1XeU4SYJeERXHMx6V-dcXKWfnpPRVYF2gXOcttAN5e9EB09eka1wpg62FwReTjpF0n-KFkJqXbhTeUQgiPXSJfyXmw/jW35gvn15o5qMGLQCwboHzN8qiJl8BT_XwfO06ug6pM'), ('filename', 'keysight-logo.svg'), ('size', 2285), ('type', 'image/svg+xml'), ('thumbnails', OrderedDict([('small', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/1_ixEDlmlfiZQjeOAckvkg/javy_dt6gin5x_EBJhEP7Whi8_K6fWMcLlDdSR6JAHLigXNmKyHpf2TYQhDbB-PgHc-QO1tvSRq242gmF-LYveZFg9aomxbN7PdXkyrNZ68/1Gp9ARcz50CZjCn9gQa4S0ohH1037Jnd3WuDRilV_YY'), ('width', 102), ('height', 36)])), ('large', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/3r5dQebSee-0_JpNmjbLoA/aLoVVpenkX74XezRaFJvM9y7oNImUldrSfH6wlKmsHe4fz9Pkpf1dx6riu4oF7KY2qFNdShu6M65uzZHsHmZMFhJ0WVjCY19kddSfJNcAZE/9SJCRgr-RHecaYlt1XTfvdX4OP1pfjWyOHLYpwcETHk'), ('width', 212), ('height', 75)])), ('full', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/DTloRSvSIjfSjnvKRlAhQA/wfVX-PUQlPVlvEM_n8DDJ10rnOSxskecmyxLvOw1XX2_3Hr02_YKL5f11rgVjsYjzPhmbruXS3jzNThnyIHg5D39RCDZUaJSMcFrNCWint0/Gm9TJgBRPm_4Ybpu5AbRheZZlezqsnGQDXrky1OmnYM'), ('width', 3000), ('height', 3000)]))]))])]",https://www.keysight.com/us/en/home.html,Write a Python script that uses Pytango to connect to a E4421B - ESG-A RF Signal Generator,https://en.wikipedia.org/wiki/Signal_generator,['RF Signal Generator'],"RF Signal Generator - 3GHz
+",E4421B - ESG-A,https://www.keysight.com/us/en/support/E4421B/esga-series-analog-rf-signal-generator-3-ghz.html#drivers,"[OrderedDict([('id', 'attk5dLJHjGQNZJWZ'), ('width', 482), ('height', 272), ('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/3kuHSnD3gl5lM9rSFmC1zw/ta8ZIExzKPYj7IHxvnlwFZl9SB3I7Sl_pjyH5D_UcWbnrr6_vLOfaMBb-Ox2zOT6JozlMqDFGCL8JEYmGmyn5L9n_pjVHAqox1dUuHix_b42Sqlt5PWsoz3wU8yA496j/kb7np8mDBs3_CBrfJENpqxxUFMJKt8LUOu2cZvgupcU'), ('filename', 'PROD-1000002804.epsg.pro-01.webp'), ('size', 4172), ('type', 'image/webp'), ('thumbnails', OrderedDict([('small', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/zulAK0gzavHbs5ttHTy7_w/aU9vLjFu-3ECrqcjsL2VB5Yx2KLXFfXHCO75QKNXXKuj7NtVMbDKUNBKtqFPNBqYJkub4AaTkoOOabgqouMR7p98dpr7IsBW51hSdXIPrrs/eyr-eDnu2MsNaxvyuI28lJcczer16B8e_VOWB8LJ8fc'), ('width', 64), ('height', 36)])), ('large', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/rgjQsQXAUWDn8ibG87MKag/HaZ44bdgPy7UihmL_Plz80gYgORHa9kHE1omQrV1At1xAMfZkZJCT78rVIG2sWBxE5kcTxTaN4ICnileP7tJ9B5vRvtBjZpFZw5HPCo2DCY/CB98nZGrwrys9cML4fe7FVeJZcf5TyyAVelPvI9zTTE'), ('width', 482), ('height', 272)])), ('full', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/N-WCvq8vUTZw71xJL0TJLQ/yovyuvPfaYttFRwW-FIfuunBH_jXfjfUYIYA4lFjbxAvtcpWssFjmD_ipkMb5wmEQDTmt4VK7Pg-pkzfR9HuXfROb6tZsEJxoappe4ZrFVc/lF-sSCBPZn5kwtos_uWHDNOhT5kmy2a87ULek1voDs0'), ('width', 3000), ('height', 3000)]))]))])]",https://www.keysight.com/us/en/product/E4421B/esga-series-analog-rf-signal-generator-3-ghz.html,https://github.com/python-ivi/python-ivi/blob/master/ivi/agilent/agilentE4421B.py,,,"
+",True,,"""""""
+
+Python Interchangeable Virtual Instrument Library
+
+Copyright (c) 2014-2017 Alex Forencich
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the ""Software""), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED ""AS IS"", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+""""""
+
+from .agilentBaseESG import *
+
+class agilentE4421B(agilentBaseESG):
+    ""Agilent E4421B ESG-A IVI RF signal generator driver""
+
+    def __init__(self, *args, **kwargs):
+        self.__dict__.setdefault('_instrument_id', 'ESG-A4000B')
+
+        super(agilentE4421B, self).__init__(*args, **kwargs)
+
+        self._frequency_low = 250e3
+        self._frequency_high = 3e9
+
+
+"
+322,24.0,"Texas, United States",The PT-104 is a four-channel temperature measuring data logger. It offers the ultimate in resolution (0.001 °C) and accuracy (0.015 °C). Along with temperature it can also be used to measure resistance.,PT 104 Picoch,416.0,"Pico Technology was established in 1991 and soon became a leader in the field of [PC Oscilloscopes](https://www.picotech.com/products/oscilloscope) and [data loggers](https://www.picotech.com/products/data-logger).
+Pico has always been recognized for providing innovative, cost-effective alternatives to traditional test equipment and data acquisition products. In doing so, we have made high-quality instrumentation affordable.
+",Pytango,Pico Technology ,"[OrderedDict([('id', 'attlBZbcdzvNqgFdf'), ('width', 142), ('height', 71), ('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/kci6lyPgxX5XKU_iOLCR1Q/9nHu3MiIIAD4Ich82LPHM3BiThXGuK3BZ1Ogn-p1AQ_s7gvSooqlpy9zkgixrPWM9EaJ-ashhDrxSeYZdc71cV5PhFa2-A_gCWDZkJMneOM/YxK4KkSdlDMlQnYbOstsd6-0YurKMdYrPjCWweFQmEA'), ('filename', 'pico-logo.svg'), ('size', 13692), ('type', 'image/svg+xml'), ('thumbnails', OrderedDict([('small', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/RyRgFbLGBjqSnSNjSdrMKQ/qszLyVkAE4SFvInMwbOe22AihNmLZb76r9DLOhYyl7CDfWrSc4szhRypBZr--3LIKUbVSb2VZuscgRHZs1yHId-BfWUSDUe8KntxeoSH6SM/rJnlNnN3Iw465-k-MUaZjope0A3p_7q4cEb6yTGJUuA'), ('width', 72), ('height', 36)])), ('large', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/oevlB-0aKgxBEmb-FSjMWQ/gK8V-WX_UiPMedSxEOtGBrl-Cw6GFogqq80xw3VMzyMs_Rbv5syG5FHZSVS8aE7EbeIn8pDnaaAP1HCTWs-8_v5Z1cwRosmVfuoendGzHAM/DvlYPUIKU-WmhWNt1XumLx97mJRPgk7X-8Lq5LOAhBw'), ('width', 142), ('height', 71)])), ('full', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/xTFcf7LtdBPpfpbCzrSpXw/HxY8ITwvPkkqE-semsLnAjp7RaNscOgX_AnAzsFOLqGygpJaQx5rSoLCvCeZL9hHrbjkD4YE4PAkxrfyrrrihC77UElmBbiQjsL9WbiMmJw/oI_qIMGQBBxZMsFDWAQRRI2hQfAeDWJnuxTfG_5WtFA'), ('width', 3000), ('height', 3000)]))]))])]",https://www.picotech.com/,Write a Python script that uses Pytango to connect to a {Device name} Thermometer,https://en.wikipedia.org/wiki/Thermometer,['Thermometer'],"A thermometer is a device that measures temperature or a temperature gradient (the degree of hotness or coldness of an object). A thermometer has two important elements: (1) a temperature sensor (e.g. the bulb of a mercury-in-glass thermometer or the pyrometric sensor in an infrared thermometer) in which some change occurs with a change in temperature; and (2) some means of converting this change into a numerical value (e.g. the visible scale that is marked on a mercury-in-glass thermometer or the digital readout on an infrared model). Thermometers are widely used in technology and industry to monitor processes, in meteorology, in medicine, and in scientific research.",,https://www.picotech.com/download/datasheets/usb-pt-104-prt-data-logger-data-sheet.pdf,"[OrderedDict([('id', 'attiSwWMUoYEaVdb8'), ('width', 350), ('height', 175), ('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/Ev5Ea-Ds8zlaRK8xBoaYYg/eMbaU0sgoDdUY2dav7mE_37PK9hqw1yr7dBkn-JAC5l3FTM3cDDWPEbcX65AE3M5PrPQRHAPFxGd-FvaxBM_90AQAwfmL5C134cBQF6SfMw/lG4ax0CPQ5nQN4FcvGmqc1dNW8-bByQRfSc3PHY29QA'), ('filename', 'pt104_35.jpg'), ('size', 7263), ('type', 'image/jpeg'), ('thumbnails', OrderedDict([('small', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/IIWc_nhKpAwUDHBXlbBMfA/W8zmf_AGIKS6fUsMJVtB_aSyfzLcQtvo8GyTBE662ajZuK2DBRFfak9BgCO9vlHA_M3EFcPigIKaOdkEtAXi7w/-VFSN7dHcJsDQbRVQoI3N_bRqGKEMvcIyMJOH2MQsl0'), ('width', 72), ('height', 36)])), ('large', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/mWKLKUtND2g8Bw2Tnmwpng/8ywMj7O63k-r0zSuGPS2kdkI82rTsPTQCBYZxAzjQuUXlWShBM6yzmEx7AVGQlW70AFUx_P2aF6JsZ5NT-yEhw/JOsrydNQOIo82hRBLjtuVpALY-kpdPVfuM6gTTYbmpM'), ('width', 350), ('height', 175)])), ('full', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/uwm1aRpvQ3BGN2yLoWaC-w/pNR4QjFrwKACMMjKDWgQ94MKIF7CrDYIbT8wBXR94YBQIDunnjZjKDU1AckQYHG_DiXioAaKV_RQo7E_QAGhsg/fPFjfqY0O5Qb3cKPMfCbCyaF1hzRsHfYHruqHKv6pYU'), ('width', 3000), ('height', 3000)]))]))])]",https://www.picotech.com/data-logger/pt-104/high-accuracy-temperature-daq,https://github.com/picotech/picosdk-usbpt104-matlab-examples/blob/master/USBPT104Example.m,https://www.esrf.fr/computing/cs/tango/tango_doc/ds_doc/tango-ds/MeasureInstruments/PT104Pico/index.html,600.0,,,,"%% USB PT-104 Platinum Resistance Temperature Data Logger Example
+%
+% This script demonstrates how to:
+%
+% * Enumerate devices connected to the PC
+% * Open a connection to a USB PT-104 data logger
+% * Display unit information
+% * Set mains rejection
+% * Configure a channel
+% * Take readings
+% * Plot data
+% * Close the connection to the unit
+%
+% Please refer to the
+% <https://www.picotech.com/download/manuals/usb-pt104-rtd-data-logger-programmers-guide.pdf PT-104 USB/Ethernet RTD Data Logger Programmer's Guide> for further information.
+% This file can be edited to suit application requirements.
+%
+% *Copyright:* � 2016-2017 Pico Technology Ltd. See LICENSE file for terms.
+
+%% Close any open figures, clear console window
+
+close all;
+clc;
+clear;
+
+disp('USB PT-104 Platinum Resistance Data Logger Example')
+
+%% Load configuration information
+
+USBPT104Config;
+
+%% Load shared library
+
+% Indentify architecture and obtain function handle for the correct
+% prototype file.
+    
+archStr = computer('arch');
+
+usbpt104MFile = str2func(strcat('usbpt104MFile_', archStr));
+
+if (ismac())
+    
+    [usbpt104NotFound, usbpt104Warnings] = loadlibrary('libusbpt104.dylib', usbpt104MFile, 'alias', 'usbpt104');
+    
+    % Check if the library is loaded
+    if ~libisloaded('usbpt104')
+    
+        error('USBPT104Example:LibaryNotLoaded', 'Library libusbpt104.dylib not loaded.');
+    
+    end
+    
+elseif (isunix())
+    
+    [usbpt104NotFound, usbpt104Warnings] = loadlibrary('libusbpt104.so', usbpt104MFile, 'alias', 'usbpt104');
+    
+    % Check if the library is loaded
+    if ~libisloaded('usbpt104')
+    
+        error('USBPT104Example:LibaryNotLoaded', 'Library libusbpt104.so not loaded.');
+    
+    end
+
+elseif (ispc())
+    
+    [usbpt104NotFound, usbpt104Warnings] = loadlibrary('usbpt104.dll', usbpt104MFile);
+
+    if ~libisloaded('usbpt104')
+
+        error('USBPT104Example:LibaryNotLoaded', 'Library usbpt104.dll not loaded.');
+
+    end
+    
+else
+    
+    error('USBPT104Example:OSNotSupported', 'Operating system not supported, please contact support@picotech.com');
+
+end
+
+%% Enumerate units
+% Identify any PT-104 units connected via USB and Ethernet
+
+details             = blanks(100);
+detailsLth          = length(details);
+communicationType   = usbpt104Enuminfo.enCommunicationType.CT_ALL;
+
+fprintf('\nEnumerating units...\n');
+
+[status.enumerateUnits, details, detailsLth] = calllib('usbpt104', 'UsbPt104Enumerate', details, detailsLth, communicationType);
+
+if (status.enumerateUnits == PicoStatus.PICO_OK)
+   
+    fprintf('Details: %s\n', details);
+    
+else
+    
+    error('USBPT104Example:EnumerateUnitsError', 'Enumerate units status code: %d', status.enumerateUnits);
+    
+end
+
+%% Open communication
+% In this example, a connection is opened via USB
+
+handlePtr = libpointer('int16Ptr', 0);
+serial    = [];
+
+status.open = calllib('usbpt104', 'UsbPt104OpenUnit', handlePtr, serial);
+
+if (status.open == PicoStatus.PICO_OK)
+
+    handle = get(handlePtr, 'Value');
+    
+elseif (status.open == PicoStatus.PICO_NOT_FOUND)
+   
+    error('USBPT104Example:UnitNotFound', 'USB PT-104 Unit not found.');
+    
+else
+    
+    error('USBPT104Example:OpenUnitError', 'Open unit status code: %d', status.openUnit);
+    
+end
+
+%% Display unit information
+
+fprintf('\nUnit information:-\n\n');
+
+information = {'Driver version: ', 'USB Version: ', 'Hardware version: ', 'Variant: ', 'Batch/Serial: ', 'Cal. date: ', 'Kernel driver version: '};
+
+pRequiredSize = libpointer('int16Ptr', 0);
+
+status.unitInfo = zeros(length(information), 1, 'uint32');
+
+% Loop through each information type
+for n = 1:length(information)
+    
+    infoLine = blanks(100);
+
+    [status.unitInfo(n), infoLine1] = calllib('usbpt104', 'UsbPt104GetUnitInfo', handle, infoLine, length(infoLine), pRequiredSize, (n-1));
+    
+    if (status.unitInfo(n) == PicoStatus.PICO_OK)
+    
+        disp([information{n} infoLine1]);
+    
+    end
+    
+end
+
+fprintf('\n');
+    
+%% Noise Rejection
+
+status.setMains = calllib('usbpt104', 'UsbPt104SetMains', handle, 0); % 0 for 50 Hz, 1 for 60 Hz
+
+%% Set channel
+% Set channel 1 for a PT-100 sensor
+
+channel1    = usbpt104Enuminfo.enUsbPt104Channels.USBPT104_CHANNEL_1;
+dataType    = usbpt104Enuminfo.enUsbPt104DataType.USBPT104_PT100; 
+
+status.setChannel = calllib('usbpt104', 'UsbPt104SetChannel', handle, channel1, dataType, 4); %handle, channel, data type, noOfWires
+
+pause(2) % Wait for device to make conversion before going on to get value or no value will show.
+
+%% Get value
+% Retrieve filtered data value for channel 1.
+% The data value returned will be a scaled value (refer to the function
+% definition in the Programmer's Guide).
+
+disp('Collecting data...');
+
+% Define the number of samples to collect
+numSamples = 30;
+dataValues = zeros(numSamples,1);
+
+for n = 1:numSamples
+
+    valuePtr = libpointer('int32Ptr', 0);
+
+    status.getValue = calllib('usbpt104', 'UsbPt104GetValue', handle, channel1, valuePtr, 1);
+
+    dataValues(n,1) = get(valuePtr, 'Value');
+    
+    % Convert the data using the appropriate scale
+    if (dataType == usbpt104Enuminfo.enUsbPt104DataType.USBPT104_PT100)
+       
+        dataValues(n,1) = dataValues(n,1) / 1000;
+        
+    end
+    
+    % Wait for one second
+    pause(1);
+    
+end
+
+disp('Data collection complete.');
+
+%% Process the data
+% In this example, the data is shown on a plot
+
+% Plot the data
+figure('Name','USB PT-104 Platinum Resistance Data Logger Example', ...
+    'NumberTitle', 'off');
+
+hold on;
+
+plot(1:numSamples, dataValues);
+
+title('Plot of Temperature vs. Sample');
+xlabel('Sample')
+ylabel('Temperature (�C)')
+
+legend('Channel 1')
+grid on;
+
+hold off;
+
+%% Close connection to device
+
+calllib('usbpt104', 'UsbPt104CloseUnit', handle);
+
+%% Unload library
+
+unloadlibrary('usbpt104');"
+335,,,Class For Controlling The 4-Channels Low Current Monitor From Enz,Locum 4 ENZ,120.0,,Pytango,ENZ,,,Write a Python script that uses Pytango to connect to a Locum 4 ENZ ,,,,Locum 4 ENZ,,,,,,,,,,
+336,110.6,"Cleveland, Ohio, United States","The Keithley Model 617 Programmable Electrometer is a highly sensitive instrument designed to measure voltage, current, charge, and resistance. Two forms of resistance measurements are included in the standard configuration: a constant current method, and a constant voltage method that uses a built in voltage source for greater sensitivity. The measuring range of the Model 617 is between 10uV and 200V for voltage measurements, 0.1fA and 20mA in the current mode, 0.1 ohm and 200 Gohm (up to 10^16 ohm using the built in voltage source), and 10fC and 20nC in the coulombs mode. The very high input impedance and extremely low input offset current allow accurate measurement in situations where many other instruments would have detrimental effects on the circuit being measured. A 4-1/2 digit display and standard IEEE-488 interface give the user easy access to instrument data.",Keithley 617,230.0,"Keithley Instruments is a measurement and instrument company headquartered in Solon, Ohio, that develops, manufactures, markets, and sells data acquisition products, as well as complete systems for high-volume production and assembly testing.
+",Pytango,Keithley,"[OrderedDict([('id', 'att7PoO6FUHxnCmlK'), ('width', 900), ('height', 500), ('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/NeO02HKgoFPV3DNb9vOFuQ/oUOnoE3G5-QeCMyfgXyg8FqsnOeauIly5GBoFYr9Za8Zrr0680YSs6QaLZbjSLo7PoMQ00w0RPeo8KNMcbYt2atP2MKHb0B4-GyFD_CU3NjI0vDcK8LLowKujulyPoKADY3pAVNPMgBCEnKshd91bg/0TQRCCKsz0gJy1NFGfGsJsjM3QdRGQ8MoPDdSPPJdCA'), ('filename', 'keithley-a-tektronix-company-vector-logo.png'), ('size', 4698), ('type', 'image/png'), ('thumbnails', OrderedDict([('small', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/ZnO_WGoJzGnSlUctBDqWew/3IevGml9FN4w1wC95p0SxkWfy9Or2KbV9QY3D0d1q_Sej0Zp6VH3gJgIsG75z_GB4Ob04GciukrNLZqRSkqxUA/uTVK9YUV68keAgFRR7IKhzRM4i5JrKr9C0Qtw0T9sOo'), ('width', 65), ('height', 36)])), ('large', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/qLTzFSMkPTLA6g9lkPJmsg/zyqBAfflKt_8lvw15arx51Xd9fYqp17v4WFX71buJSr6egMKaBsN1l-whDpCpYtjxp2PsM9RQH8m8m3yxtquXw/52L-EUk-XUGAnw0eN3grANao1iKKOIuxmavJUlgreXQ'), ('width', 900), ('height', 500)])), ('full', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/DD76F3FSvA0sLYAXfST7DA/Y9vIBAtL1_Fy2BC2SLgyVwDmN2BpqCN-RepHfRd6uBzNVwzsKrLvHbBvYJti5ZoIf_VLDikmzoIRrzQ6Veuw7g/bIGTWhsUS3UoKan-BcRmMtd0TCP2TPvDoZpnD5k1pXQ'), ('width', 3000), ('height', 3000)]))]))])]",https://www.tek.com/en,Write a Python script that uses Pytango to connect to a Keithley 617 Power Meters,https://en.wikipedia.org/wiki/Electrometer,['Power Meters'],"An electrometer is an electrical instrument for measuring electric charge or electrical potential difference.[1] There are many different types, ranging from historical handmade mechanical instruments to high-precision electronic devices. Modern electrometers based on vacuum tube or solid-state technology can be used to make voltage and charge measurements with very low leakage currents, down to 1 femtoampere. A simpler but related instrument, the electroscope, works on similar principles but only indicates the relative magnitudes of voltages or charges.",Keithley 617,https://www.artisantg.com/TestMeasurement/51803-1/Keithley-617-Programmable-Electrometer,"[OrderedDict([('id', 'att9k9UszPRroli7J'), ('width', 600), ('height', 410), ('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/sQG0Nw-oCtM6f_kbEFuRmA/3Rw_VzGL4Z6O0xFwrNY0P8QeeqVmrJPo5I9wG6SaEskgepxJ6OnacXl_DsiJ9udAxx061XmgDkMfoUAUPkrpYw/Py-qr7TpsGuBXHgO9IqcEA6dPHkqAlpWl4tgibPKJT4'), ('filename', '617.jpg'), ('size', 32828), ('type', 'image/jpeg'), ('thumbnails', OrderedDict([('small', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/OeupTY5T7JUN_U7FY3hJJQ/FZCkAHlCaQ82Fp3gi_x8yr3eLJVI-xIahBOQazo0M0FXh6ldgrXawdwBUUb27bjzRlyrZGe9ul8ckrHVMcJJFQ/LoEsL0gTeujv-7rX7yerwWJi4x24lQcUwIO0GYHFv6g'), ('width', 53), ('height', 36)])), ('large', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/DduqioXykTjoxQ6NY2kXLA/1PyYQgpo5tF-Ojv5vN7vXuvpL4-bsgPZICqPJ6SD3RV9zx2_KKXQdDU-9iciEAOEKTmIo9wFZMOi_NrL5mLu4A/sktUHl_Ti3yzAUcakuQpk3JKko0o33aTQ6zx8sy1Q-8'), ('width', 600), ('height', 410)])), ('full', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/fW0qxo5gW-udCVDIXSn8iA/C-pwoq-cP6aVqmeQwrRH55Ig64Wx-LamVEZky8KHbXSSZYhIIZeg56wWNLvGMi_SKWYV8RTevG4cGeDC6BGO3A/KLKIVbmU_-NYPGSgpuWQYmSerQqvs8dB5_qSfOWaShs'), ('width', 3000), ('height', 3000)]))]))])]",https://www.artisantg.com/TestMeasurement/51803-1/Keithley-617-Programmable-Electrometer,,https://www.esrf.fr/computing/cs/tango/tango_doc/ds_doc/tango-ds/MeasureInstruments/Keithley617/index.html,2495.0,,,,
+366,,"California, USA","The controller contains the laser, detection electronics and provides all data via several interfaces.
+
+The PICOSCALE Interferometer is a powerful system for contact-free displacement measurements. The PICOSCALE Interferometer Controller contains a laser source and all necessary electronics to evaluate optical signals. These signals are generated in the sensor heads which are connected to the Controller via optical fibers. A beam splitter divides the laser beam into a reference and a measurement beam which are reflected off a reference mirror (typically inside the sensor head) and a target, respectively.",Picoscaleinterferometer,509.0,"SmarAct GmbH is an innovative company in the high-tech industry and offers high-performance products for micro and nano positioning.
+",Pytango,Smartact,"[OrderedDict([('id', 'attl1u7x1Xu2tEubD'), ('width', 160), ('height', 39), ('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/XXMmg9W_1hr7zgD04lg5jA/EJdPSTVp0kkLwaD_UNNFFhAriRQqLXCBUycJdq4SeGdjn3jzsCMeBjVyqsvg3heyF4SaphkBdp2_g1fwFT4k69XcDC2C4LuFEXGFjeT2_qg/BdsGSFFRBbSuea5i2U8fvOcY95P7TCARhokh-Cz6xaY'), ('filename', 'logo.fe3efdf2.svg'), ('size', 5868), ('type', 'image/svg+xml'), ('thumbnails', OrderedDict([('small', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/L2hOrjb2Olg9dIOE1O_MCQ/0E4-93i55wlmMehOiPgP4o4wmYCpPugrQeyj2JjWECYCPRxoZccnUXjG-bcZOerktXb478fNp6SZH-dPSIKKOMcwqZEri_B53q-OPNDO_Uc/p_SXIeiIUKRupOgJ3URvbqFYdKjOuWDbW-5PzQbd1vI'), ('width', 148), ('height', 36)])), ('large', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/eVxwcMoJPNXzkqgOFE4prA/IPZsMkU--NgW4KCz8EuoI5S7pLvvRG6zzXjcw6gLv7uZSVRjALKBnkpjffpMepkVCUJMop7odY2pLN05WM_pYGtl33nMEriJUoBpdRZEnxM/cLMKd3_F38LvRvh7cf_S7alb2qFxBa7Fvd6n__VnEYs'), ('width', 160), ('height', 39)])), ('full', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/l-W9cgTi17QfK8Vq9RMHcQ/pQ8MNWJeDxKNNO2aCOrCsUMKFsgfNkZi_o90j8WD8OIJRy_sBk1ChzLcUh-fl1lFMwfGEUlKMZQgLK-x7PdSoNJ_PUjNO1U0czLujBPVQ6c/JHcNjd76jSWQgIBbEr7ogZr705wimEVjnyZ0Wirtfa4'), ('width', 3000), ('height', 3000)]))]))])]",https://www.smaract.com/en/,Write a Python script that uses Pytango to connect to a {Device name} ,,,,,https://www.smaract.com/pdf-details/en/picoscale-interferometer,"[OrderedDict([('id', 'attgXJfA48JKMvxOI'), ('width', 416), ('height', 320), ('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/R5Eg5bxDEeDt7306QWrbeg/G6qp9Oh06DR49dgRjesna-N-RY_9C1rXq2ShBSBvjzFvh3bVVhxNg1KgN7iBlguHbfs7ThhVOabXEF1YVWMjZkUHeSZwm9uQ43dM0Wft-3w/YQu47hNe5IgosEuNGQDhW8eMNSVPcbGdTK7BImISKfM'), ('filename', 'P1000291-2-c415305d.jpg'), ('size', 8076), ('type', 'image/jpeg'), ('thumbnails', OrderedDict([('small', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/kHtANqBPPWSchwh18BBCbQ/gxbLrm1grJoFpVswggFuXvUaWjnqEijDa9nw9wnxd_QYcnlEfAWk8rQZXpNoZ_gXBE53AoshmqX691sLj-Ff1g/d8ifB7EzLyv656spYL3pSs4hxc-6ub00joxSa1njCBQ'), ('width', 47), ('height', 36)])), ('large', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/BexBbiXF-dhMWlvAjDxz_A/YWBMLyLnc0terhiA9LKMwI-0eHQeEGSKp2BSxqjEidZBR_W2_cB5AK479ruilNWrRiwrRg6Pam37VqaMX81TnQ/_IV37tAb6X1uZ-RNcqNX22TJPnjvbl0LLzkaOlJUBIs'), ('width', 416), ('height', 320)])), ('full', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/mbgnmUciXjFhOSeYSrLioQ/2LWkmyw5hFr4dHx6oB9Gwe7eIsyNpXpv3X2JTPqg_-DBfadYj4wTOrOs1VcsZzb_fFcsf8VowHMkWzMfbQAymw/yQDJ6o42ScRz4j0ZECvkpoXHhpk11ulXLR-aZSf80PY'), ('width', 3000), ('height', 3000)]))]))])]",https://www.smaract.com/en/picoscale-accessories/product/picoscale-interferometer,,https://www.esrf.fr/computing/cs/tango/tango_doc/ds_doc/tango-ds/MeasureInstruments/Picoscale/index.html,,,,,
+367,5800.0,USA,Device Server Designed To Control The Tektronix'S Oscilloscopes Model Dpo7254,Tekdpo 7000,543.0,"Tektronix, Inc., historically widely known as Tek, is an American company best known for manufacturing test and measurement devices such as [oscilloscopes](https://en.wikipedia.org/wiki/Oscilloscope), [logic analyzers](https://en.wikipedia.org/wiki/Logic_analyzer), and video and mobile test protocol equipment.
+",Pytango,Tektronix,"[OrderedDict([('id', 'attzfMoJltngjLsme'), ('width', 2700), ('height', 487), ('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/Yk4fEYS3Xg6iwQd4rYZnTw/7Zkla4HnvscO18VYF5kzAoEARNa8vsmJ4FgDw0s3WFz3XC3uiSo4Y-tNO4a7Lx3Q8T-u01JdeaNcHAgj_-uthw/GGWzcoJGXu4lukgV27iMaGFDO1ZgnMIO_CUGN7O7rJk'), ('filename', 'tek.jfif'), ('size', 88833), ('type', 'image/jpeg'), ('thumbnails', OrderedDict([('small', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/h2qL_vjOhZaWUJioVUwfTg/yPEjUaHraXCNuyRFhfVmkUF7uYlChxENVTNI3BPd6LecpsmxmwYkair9LwGP4Bt9AoPnMWLJ1cyq6DHBFozQJg/epibu-T1Te-uMYfpIVGa6Ffj9OhMYrhgGsY6iukjioM'), ('width', 200), ('height', 36)])), ('large', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/aaQhd1e3804Uwh6S8RvZRQ/l0HPovgnMh9YIQIbwIQf5yfJP5hH70TcJEbi-H_573m_d2tBL45xhI35idMX3ynREnZmtNCV4A8duWfqRIKJaQ/t74DbaTyCi0Q-gIyx_DIKFemz6pS8VLtp2fX2zYbo4U'), ('width', 2700), ('height', 487)])), ('full', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/1qbO_LRtT23qEeaQkpiUyQ/FlzQjfMYno5DLhp3eGZzg5pVuL81DX3ypxZ-DrxvpoWwsEoYXWjjBAsvhRY23xXCOnuoQZSsdXjoDtmW5DnuCg/zpmOx-ced12Bk2CsL2EUFpbLLlIotLiDK-7N2KfqbMA'), ('width', 3000), ('height', 3000)]))]))])]",https://www.tek.com/en,Write a Python script that uses Pytango to connect to a DPO7000 ,,,,DPO7000,,,,,,,,,,
+371,2500.0,"Munich, Germany","This Class Handles Rohdes And Schwarz Signal Generators. Supported Model Is: -Sml01. The Signal Generator family R&S SML offers all features required of a state-of-the-art general-purpose signal generator: wide frequency range, large variety of modulation functions and high reliability – at an extremely attractive price. The fields of application of the R&S SML are virtually unlimited in development, servicing or production where it is used as a flexible signal source in automatic test systems. R&S SML benefits both from our long-standing experience in the field of signal generators and the latest technology. Its uses are as versatile as its functionalities.",Rohdeschwarzsml,473.0,"Rohde & Schwarz GmbH & Co KG is an international electronics group specializing in the fields of electronic test equipment, broadcast & media, cybersecurity, radiomonitoring and radiolocation, and radiocommunication.
+",Pytango,Rohdes And Schwarz,"[OrderedDict([('id', 'attgThuQed8Zn1CUa'), ('width', 119), ('height', 31), ('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/9cHh-T5DiH-7n6lLjMACLA/bDi2rAgBKKv-UvdRleHzviIH4GcH8AtS2mvdp-g9F5fqCVLRPlAnSBTRQa-Runosj2pUwoAlhqQuz5TbVkWsAPnNM3W2hWam9hmsDAI-rL4/dffvM0sgfAmzoe43t-msnU6e8D0UM-OZGHt_kN6EI98'), ('filename', 'download (7).png'), ('size', 735), ('type', 'image/png'), ('thumbnails', OrderedDict([('small', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/g--_RRN7TAxVYvYfZsfJAQ/7QuUf0QEBkC8SMdK1bmt-YbCN0y4Vh7DjHjVWWAwYMWJee9W1_UqwdojXEJzVUALXPhc6LnhN-lsQmk6w-lHDw/6fec6hnAGzjzj0BDv0TEHJtermLLj4Z3b2m6J6dHT1A'), ('width', 119), ('height', 31)])), ('large', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/oMsz97Tz22aazBF2MmRx0A/qA2gKhQNxFidpSGhEU04F-OoIhF7BfJmWCmPJxKK-IF58k94GMqfn4_xpOfpg48Eyj-YsME_D_oNERlbxBoo6Q/RSM8ZcvfANnn-GXOF96XT_DsItZl0IBVWIuKqbrwXeg'), ('width', 119), ('height', 31)])), ('full', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/UFP-LpUBl8Q8A7_iSD2G2w/fk4nHw-_8wbi1zc78qVKGp5QIQa5f6pWrMFe_z4VK3PuoJe9nupme35Ujw9iTJ3dDShi9V7nI3fIVSaUd5ZLfQ/me0jTPIgCb0Zr4R8FOD7PLpLUZFfzzDCdVKiQlrBrqU'), ('width', 3000), ('height', 3000)]))]))])]",https://www.rohde-schwarz.com/ca/home_48230.html,Write a Python script that uses Pytango to connect to a SML01 RF Signal Generator,https://en.wikipedia.org/wiki/Signal_generator,['RF Signal Generator'],"A signal generator is one of a class of electronic devices that generates electrical signals with set properties of amplitude, frequency, and wave shape. These generated signals are used as a stimulus for electronic measurements, typically used in designing, testing, troubleshooting, and repairing electronic or electroacoustic devices, though it often has artistic uses as well",SML01,https://www.testequipmenthq.com/datasheets/Rohde-Schwarz-SML01-Datasheet.pdf,"[OrderedDict([('id', 'attielAtiQZnX9yQv'), ('width', 300), ('height', 250), ('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/VBrj1OaVniT3l44qQHiAEA/qY7TTbTqYOz63TN_kbeXKbxbJfH9ktAKOPb7DgaYDwWsVg0LzX7W4GJ9V07dsdPeyogLhfXFLLt2orWeKyqK_VPJlhIV6eDBCXASdF9Gbiw/bqirgPPv-8xcupq4pKoJPBJtvOhU7XxnL83_W-c0184'), ('filename', '60936.jpg'), ('size', 6842), ('type', 'image/jpeg'), ('thumbnails', OrderedDict([('small', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/40W_r0lEiBlDtANDxMc5xg/fI8-83GLry30HIo_pEUy7W6-Vj-6xe4vETiFziv7ZBffKgffFAnsRzWosWqsFOBIHnfabu48W5yO4vzCBXWo3g/sFKsdJJ388XqoLqazfMkuIYLM5WSqyn8tbu5TgcjcWA'), ('width', 43), ('height', 36)])), ('large', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/rhj4lATixaPNDDHy_0O7dg/MBWlSevIbOpsWhTLTZM0ah4rme-4iU7Ef4VqM7dls0ADnIYZPJ4QXEV06bZAQRdUNqJFlNS1LX91KoZFVBOf-g/n0tQ8eHTZThv6mMMIO6x9Tt_E0RXwWU0LCBW1AXT_-M'), ('width', 300), ('height', 250)])), ('full', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/RmgnzPl5zPSb3Fz_yXDtig/TIf-cdrv_Y101Zsv-OHiXC021vPAAt1lmh7vEo7_-aaoRrpn9V1IG4kOnwTSgqsKdSF7XKLMicgJnhw7V-Eq_A/Z__kUQ3Kxoc68GJjvg5Eo2n8t9lC_sRAomeJB6HOBfg'), ('width', 3000), ('height', 3000)]))]))])]",https://www.brltest.com/index.php?main_page=product_info&products_id=6835,,https://www.esrf.fr/computing/cs/tango/tango_doc/ds_doc/tango-ds/MeasureInstruments/RohdeSchwarzSMl/index.html,,,,,
+411,5420.0,USA,"53131A 225 MHz Universal Frequency Counter/Timer
+",HP 53131 A,152.0,"Keysight Technologies, or Keysight, is an American company that manufactures electronics test and measurement equipment and software
+
+",Pytango,HP,"[OrderedDict([('id', 'attc6xrG2EsYbFAYl'), ('width', 212), ('height', 75), ('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/fQUxMyvye7LkRNrW_9LpDw/a1a72T_ybNDngFNeEthdujK-3J411WCU7p5oSDUdZQKBnyItPISoB5kGTdXbBoZHMWn8OVlfLkqUORBw0cWhS3FAreUOnbjBjTSb7AkMQD0/aWKCcUbxs_atz78f_o0gyPdiOT19I4BOaetlO7zRc7s'), ('filename', 'keysight-logo.svg'), ('size', 2285), ('type', 'image/svg+xml'), ('thumbnails', OrderedDict([('small', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/JMLOejSs0sNQqebza0_O4g/ptnoLe_aT143RHRw7XWGMF2Rbl_oJh18VP8XlO3pEzBdEpOleXMyRBWqTWt9h3Cvnv1NVgGzBSewM34fGtz6_G2zfORynLBJVLQttq4CERA/6RykqSNQV6z5GqlyNFAHFATyDxsZtr_dkrebBGCHQqo'), ('width', 102), ('height', 36)])), ('large', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/55V5uSdPbh0zNz0Drmxo7A/nDDnQrgWyg3uGnPFSTEbFZFZg8lh6PmAa0gqcuhRBMy8ux1D1qEeynNZZfXB5RCYzdvd11mgkZDaWWL4zMTDdVK3jm-U_9HlUEEdEIRTjf8/-82nBzlZVRi4Izj7vfypYX3HzbD-Usw5_Owv_MfRxgU'), ('width', 212), ('height', 75)])), ('full', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/RWWIIc79xTTZegoK7wkprg/VCK9-LQrz8PtqcOTSmaZiNVa5dpQ2eq5sIELnqJMdDY0-qksJXtd4reH5o2nSEl2SeAVkYTwBrC4ZfMl2h_DMHsN8FrQO1wuGgXs-cNLh60/mZHEAeKa58qt39N5aX3_5o_zlOkrLoir5OMzhvImp8k'), ('width', 3000), ('height', 3000)]))]))])]",https://www.keysight.com/us/en/home.html,Write a Python script that uses Pytango to connect to a Keysight 53131A Oscilloscopes,https://en.wikipedia.org/wiki/Oscilloscope,['Oscilloscopes'],An oscilloscope (informally scope or O-scope) is a type of electronic test instrument that graphically displays varying voltages of one or more signals as a function of time.,Keysight 53131A,https://www.keysight.com/us/en/assets/7018-06688/data-sheets/5967-6039.pdf,"[OrderedDict([('id', 'atta8xAXtVumF6EoB'), ('width', 482), ('height', 272), ('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/cNXznSZlaM82EfTuDKP2vg/VPbVThz7ypqP4N3NUK0KUoCCA9-2PGi4mAUNMgh-hePxqlKiwtR048bHJrQUeaVh5jv7wEnXo79Yb0x7ySVOxUFnYtr_NsIofFJZMhQXV1VaKoJ33ZHXrUQufBobvlro/hdBnEOEuUlPvhAtZBPsUJ1LQgU6nt7MatUYIpY3YM34'), ('filename', 'PROD-1000001385.epsg.pro-02.webp'), ('size', 19042), ('type', 'image/webp'), ('thumbnails', OrderedDict([('small', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/WQjWh_nLx-Jq5LsaMq4Z4Q/B5z8Er5FmC6ld3QUlv4j80BQkf1jtJFHgW4VmDB4aQJzPBpKIf5ry3AzIEf4ebolH2hPcLKePk7ig7TmzlbFe8jAf8CUEUjvurBBWeCbIIc/fa8kzkxx8qfi-P4HSa6b6HlcOvsYJzLerBhxfOPSguQ'), ('width', 64), ('height', 36)])), ('large', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/tvY3IdhoSIGiJCOjsWdg6A/7opsJcmyy12KZKy9uRMnROHonznqTvUHVH-kg89ECFnKneKpS4-muIsTiqcTuAoP2KJEu9XBj4gQoSk2IElHtMlD_8A4hEtNLAcxg4vrzjQ/DfhoUWOHWwJ2sJVGoi2E1FNRQZMeK5ukf4FoR_oM-yc'), ('width', 482), ('height', 272)])), ('full', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/trynB2AO0ulP6j0o21ow5w/GnBzYUCWZWb4mUp7nySt8M2VozsLqkzIqd2Z8r38xZGelkaOyeup9ha-AfCfqhpjs4U8diEFG0VpJdpUpuuC_2GX5lr6H6KLsAtteZwLntQ/lhMXXnFZUseXOvmJGM4LZEUYv2GzMz3mnOLNTdOwyNQ'), ('width', 3000), ('height', 3000)]))]))])]",https://www.keysight.com/us/en/product/53131A/225-mhz-universal-frequency-countertimer.html,https://github.com/phsommer/scpi-python/blob/master/agilent-53131A/frequency-channel1.py,https://github.com/ragges/hp_display,,,True,,"#!/usr/bin/python
+
+
+from Gpib import *
+from time import sleep
+from numpy import *
+import sys
+import pylab as pl
+from libnienet import *
+
+
+# replace with hostname of the device
+host = ""hostname""
+
+# connect to device over GPIB/Ethernet
+l = EnetLib(host)
+ud = l.ibdev(pad=3,sad=0, tmo=10, eot=1, eos=0) # primary address = 3 (GPIB)
+
+# clear device
+l.ibclr(ud)
+
+# reset device
+l.ibwrt(ud, ""*RST"")
+
+# get device identification
+l.ibwrt(ud, ""*IDN?"")
+[status, response] = l.ibrd(ud, 4096)
+print ""Device found: "", response
+
+
+# configure frequency measurement
+l.ibwrt(ud, "":CONF:FREQ 1MHz, 0.001 HZ, (@1)"")
+
+# start measurement
+l.ibwrt(ud, "":READ?"")
+
+# wait for result
+sleep(5)
+
+[status, result] = l.ibrd(ud, 4096)
+print ""Frequency[Hz]:"", float(result)
+
+# disconnect
+l.ibonl(ud, 1)
+"
+418,69.0,Canada,"Control Of The Jumo Quantrol Lc100/Lc200/Lc300, Universal Pid Controller",Jumoquantrollc,200.0,"**JUMO** is your expert partner and manufacturer for industrial sensor technology up to the automation solution for temperature, pressure, and liquids.
+",Pytango,Jumo,"[OrderedDict([('id', 'attdbHMNNWuuTTg9v'), ('width', 900), ('height', 500), ('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/l2DK9wyCIzuZJuibMAQtIw/AJLN-rEbe_CXjBFpC5LTwiaSXcymyhnN4xelu3UccF7bWDsyqPCbMHJEuYRqqjt5jhnZZZAA81muqhQXFii97oVweRr_wcGVl6gUCLwlO-cRC-0q6JK4kwl2gbyi_qFv/r47gU7GqxtLWExZwQOPyEH8Hk7nYVusQwo8dAsE75VQ'), ('filename', 'jumo-gmbh-and-co-kg-vector-logo.png'), ('size', 7799), ('type', 'image/png'), ('thumbnails', OrderedDict([('small', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/n0rs_5CGWgYERns1AcXLiw/LnSxpuSeYzSO8lYAgBxbcfP6FQkIE7FLWI86ptBLi0t2cWjhA52TvxUQGyidUzEtRXfIEo05UYWb03chI63Llw/642QIxMmFluGgAD6MwhRGyWuwzbBKq66TnJZb5Xa38M'), ('width', 65), ('height', 36)])), ('large', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/-LJZqRv68JHelJE-lP_Jig/SFCOUnYOLiQOy8l6k5-H5-MINS7cKUHmIfpEBhDCXHIxq_vNTfbKde_votLCG4K9H4U1pq5hKfuWeYOERzPeQg/0tgJPvFkP0yxz1ShUgKLJgxhKa0AQkJOa7r1O4EEAZw'), ('width', 900), ('height', 500)])), ('full', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/WzPLOrxSddrAUv0dIMOrFg/DuaiLvp358zl9VtfmEMsM7ot5-eovw7TTXpuScSCNmAje2ZUmtfjuuxgSSK9Vuq86bjkARsSAOJTX2dcqBqmcA/vgND2cVSbO2OiB-TRPPSVdbrkLicD8H9s1owCm3DjpY'), ('width', 3000), ('height', 3000)]))]))])]",https://jumo.ca/,Write a Python script that uses Pytango to connect to a Jumoquantrollc Temperature Controllers,https://en.wikipedia.org/wiki/Temperature_control,['Temperature Controllers'],"Temperature control is a process in which change of temperature of a space (and objects collectively there within), or of a substance, is measured or otherwise detected, and the passage of heat energy into or out of the space or substance is adjusted to achieve a desired temperature",Jumoquantrollc,https://www.jumo.net/attachments/JUMO/attachmentdownload?id=64643,"[OrderedDict([('id', 'attkvnF1BwobpzeRv'), ('width', 793), ('height', 619), ('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/3sRO_IB1mo3gbpV9PAengw/SNjM4p-UFzGMR3rFtDXMNccqq_qnhz0h5WybyK1Gxd8-RdXKKEAvDNKSj_3UIWO72BOYW9i8SuAKEf_uAZdMlXl9mhze_U7o3lGZ9eWtVd8/maSeJWAc2KXfxgpBVkiiF66GKGgzmJr5liBvHLEHLIw'), ('filename', 'LC100.jpg'), ('size', 54744), ('type', 'image/jpeg'), ('thumbnails', OrderedDict([('small', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/J1wasNz8bPfi6aEq_IdVlg/LL5drf7EYqikTl8OPmA57_XE1cWrWEFH5Xmi1c8jbp-kmtP77428TKp-afj_WhpFyukUNYmZgL2bsz_aC-OjRw/8hkmkgmny-xgckpq7NpDrS5ufWFMaQcjBjeymIdqBAo'), ('width', 46), ('height', 36)])), ('large', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/q_bIcugkRZOKktx8bMUQDw/1AEfhAK60t4nYymyMk7fUNbaZjoFKLmEy5jEMiJvr8xPxx7Zs7Onv5mIIva9W6E62gD-4VaJHV824TAhI1oBSA/R5iUgFAPLsMg5thjJaMFqVw2VjMR3bPfLqRXao2qcao'), ('width', 656), ('height', 512)])), ('full', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/HcOvh4J72bM7BKbluo_bEQ/0fyPyBQ5nPG1qPq4Y513KOKAgVWMWFYKjzEzNUOZMCtZ8tYlH8vsITZs0es366qW2XhPRpaqXv2YNKGagSMu-Q/NUROPxC9uRs1L0RUGGY-gIfDW9TYfV1027KjPVUT2CY'), ('width', 3000), ('height', 3000)]))]))])]",https://fr.jumo.ca/web/products/apps/productdetailpage?pdpId=702030,http://svn.code.sf.net/p/tango-ds/code/DeviceClasses/MeasureInstruments/JumoQuantrolLC/trunk/JumoQuantrolLC.py,https://www.tango-controls.org/developers/dsc/ds/1840/,,,,,
+424,36.7,"Orlando, Florida, United States",This Class Controls An Ocean Optics Spectrometer Interfaced In Usb,Spectrometer,393.0,"Ocean Insight is the Applied Spectral Knowledge company. We use spectral technology, application expertise, and manufacturing scalability to help customers take on important challenges for a safer, cleaner, healthier future.
+
+
+",Pytango,Ocean Optics,"[OrderedDict([('id', 'attLii3baiThq2uqx'), ('width', 900), ('height', 500), ('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/yZZVepOqtCdiWJb_rP2ikA/2eZ7hTpOZdysMFjKMfLvtYrzF7tS44QCBcFNqu1_LKngcANc3_4OgbgwU3UdCExyOohdiFDW916MKJ6DU5fqJ7CimeaMGpfjELJFIedeoxq4talb_lNa5H2DiujZrC1U/RMlNiOryglXH-Kizbtj20N0F7AZCpuUEh0f2JtfvPXc'), ('filename', 'ocean-insight-logo-vector.png'), ('size', 6494), ('type', 'image/png'), ('thumbnails', OrderedDict([('small', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/2YHmw8dZFFFQgHUYqBFKxg/eUFwsFvWfRazpMnbLi7yZ8j5cjyX4TZ1U6aqnLp77gQ1x7kchM0u93EyX8BZ9erEPe1NQ4zQIs07vUzk0zFhmw/QNK6pR7kJDn6_Y2zzyPgjoTMYahxBVmcG2dO7PmuwMA'), ('width', 65), ('height', 36)])), ('large', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/thLo0xI45KvuKH4vI-gMRQ/fRcp2oJgFxd0L9OPgoX2bvic2UNLIdNPa6eF6lcpr9uiz2iDdbSw-_h2r5cmy6n-RrD3dC0Ff6iv4BWoc9ZDeA/srt_Bpb5-Z-kC8M5kK7yVWg-bjeypUiHBmDC3QPP4LY'), ('width', 900), ('height', 500)])), ('full', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/s2-1_fBKofx34VS4JyTQhQ/IVreFnwK9cR4lb7PYtVxqgbO7fIGDLX_BIPTaFBK4diPraEtDSLknNwXI7_UZidWMV_Iaee5sN7myspSxWPmBA/zUt4dk7E7q7R9V8RSDucdmY_-8OpqdpJAqKb83n7_lc'), ('width', 3000), ('height', 3000)]))]))])]",https://www.oceaninsight.com/?utm_campaign=Z.+Global++-+OO+branding&utm_term=ocean%20optics&utm_medium=ppc&utm_source=adwords&hsa_kw=ocean%20optics&hsa_mt=e&hsa_grp=135401276593&hsa_tgt=kwd-299324163738&hsa_net=adwords&hsa_cam=6445725285&hsa_ver=3&hsa_acc=5588456569&hsa_src=g&hsa_ad=585422656214&gclid=CjwKCAjw44mlBhAQEiwAqP3eVs0H5mxBhFW58hjWc8xXZAzJBrVFh-OIPMzSkz7JlQSj8ZBTaPlMxhoCDdkQAvD_BwE,Write a Python script that uses Pytango to connect to a {Device name} Spectrometers,https://andor.oxinst.com/learning/view/article/what-is-an-optical-spectrometer,['Spectrometers'],"The core of any optical spectrometer is a component that separates light by wavelength. Most commonly this component is a diffraction grating – a sheet of material etched with repeating grooves that causes light reflected from it or transmitted through it to diffract and bend at an angle proportional to its wavelength.  Prisms – or a combination of gratings and prisms - can also be used to bend and separate light in this way. This bending and separation by wavelength is referred to as dispersion. If a camera is placed after the dispersive element, we can determine where on the camera different wavelengths will fall. 
+
+",,,"[OrderedDict([('id', 'attHmE6WZzhh1QXp7'), ('width', 300), ('height', 237), ('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/GWyxvOUVyoO7t8QlqELe8g/Yi8wRlIpRTfbuChoswXNS2VG0fLHrd0TyrLlhjcGteYljtCgidzpsrFHrNoJxxLcVBmiP3fKnEhPi_Xbz-YP2Ja-fVmxPdgUInZY9ZIHGsY/msP0inc_stNA1nqjm4ZLFyb_K1etP6mNzsQSf3xcQQU'), ('filename', 'thumbnail_25793.jpg'), ('size', 19355), ('type', 'image/jpeg'), ('thumbnails', OrderedDict([('small', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/nkRbPunfEgGpwCA97c2Vqw/9XzxkkkS8E0xPPBRBV5x2R4dBLoE-uLjuF2pCvqml9fkdnoV2YzyRrtXBBuqHwgdzNhk8s5N6-xQE2LYxsGlBQ/qAQtjz3v09nZqgzEwYE1F_JkvEum5k66T7_9kVecnG0'), ('width', 46), ('height', 36)])), ('large', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/kWOxBd0ERYsKKl0imY8OKA/0Ha_XZtKGeVSnGd_w84v4thnXQlFVY6VFoOD0DcfYN8wkXkoFJzYf2yeUkfCq89WQe7vBiaq-ehCAaABStiIjw/CSrZbNN9f5eoBsopp_iD101I7ISWUcv4yWKSgW1Bsqk'), ('width', 300), ('height', 237)])), ('full', OrderedDict([('url', 'https://v5.airtableusercontent.com/v1/18/18/1689537600000/euK8Pu0A-PgQanZI8ResmQ/RynmjzLzyq2dKErkRWQ6fQUSq31QdPsnZrJYG1Wb2jVpjFFBd1WtjfNvzTELMrEYvdu-znB0zl0-Sa2UiUpIOQ/lY7xeDZG98v0PytxRqOy6Ir1bRvg81q3QnH2E43Y3-U'), ('width', 3000), ('height', 3000)]))]))])]",https://www.esrf.fr/computing/cs/tango/tango_doc/ds_doc/tango-ds/MeasureInstruments/Spectrometer/index.html,,https://www.esrf.fr/computing/cs/tango/tango_doc/ds_doc/tango-ds/MeasureInstruments/Spectrometer/index.html,,,,,

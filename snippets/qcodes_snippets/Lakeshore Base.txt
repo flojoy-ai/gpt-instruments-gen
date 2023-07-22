@@ -1,0 +1,19 @@
+```python
+import qcodes as qc
+from qcodes.instrument_drivers.Lakeshore import Model_336
+
+# Connect to the Lakeshore Base
+base = qc.Instrument(Model_336, 'base', address='GPIB0::1::INSTR')
+
+# Print the identification string of the Lakeshore Base
+print(base.IDN())
+
+# Close the connection to the Lakeshore Base
+base.close()
+```
+
+Explanation:
+1. Import the necessary modules: `qcodes` and the `Model_336` driver from `qcodes.instrument_drivers.Lakeshore`.
+2. Connect to the Lakeshore Base by creating an instance of the `Model_336` driver and assigning it to the variable `base`. The `address` parameter specifies the GPIB address of the instrument.
+3. Print the identification string of the Lakeshore Base using the `IDN()` method of the `base` instrument.
+4. Close the connection to the Lakeshore Base using the `close()` method of the `base` instrument.

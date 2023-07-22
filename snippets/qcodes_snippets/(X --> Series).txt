@@ -1,0 +1,21 @@
+Sure! Here's a Python script that uses Qcodes to connect to an X-Series instrument:
+
+```python
+import qcodes as qc
+from qcodes.instrument_drivers.Keysight.Keysight_XSeries import Keysight_XSeries
+
+# Connect to the instrument
+instrument = Keysight_XSeries("XSeries", "TCPIP0::xxx.xxx.xxx.xxx::inst0::INSTR")
+
+# Print the instrument ID
+print(instrument.IDN())
+
+# Close the connection
+instrument.close()
+```
+
+In this script, we import the necessary modules and classes from Qcodes. Then, we create an instance of the `Keysight_XSeries` instrument driver, passing the instrument name and the connection string as arguments. Replace `"TCPIP0::xxx.xxx.xxx.xxx::inst0::INSTR"` with the actual IP address or VISA resource string of your X-Series instrument.
+
+We can then use the `instrument` object to interact with the instrument. In this example, we simply print the instrument ID using the `IDN()` method. Finally, we close the connection to the instrument using the `close()` method.
+
+Note: Make sure you have installed the necessary dependencies and drivers for your X-Series instrument before running this script.

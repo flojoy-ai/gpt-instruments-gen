@@ -1,0 +1,24 @@
+To connect to a MT Standard Interface Communication Software using Instrumentkit, you can use the `SerialInstrument` class. Here's an example script:
+
+```python
+from instrumentkit import SerialInstrument
+
+# Create a SerialInstrument object
+instrument = SerialInstrument()
+
+# Set the serial port parameters
+instrument.port = '/dev/ttyUSB0'  # Replace with the actual serial port
+instrument.baudrate = 9600  # Replace with the desired baudrate
+
+# Open the serial connection
+instrument.open()
+
+# Send commands and receive responses
+instrument.write('CMD1')  # Replace with the actual command
+response = instrument.read()  # Replace with the expected response
+
+# Close the serial connection
+instrument.close()
+```
+
+Make sure to replace `/dev/ttyUSB0` with the actual serial port that your MT Standard Interface Communication Software is connected to. Also, replace `'CMD1'` with the actual command you want to send and modify the `response` variable to handle the expected response from the instrument.

@@ -1,0 +1,40 @@
+Here's the equivalent code using Pytango to connect to a Keysight 53131A Oscilloscope:
+
+```python
+import PyTango
+
+# replace with hostname of the device
+host = "hostname"
+
+# connect to device over GPIB/Ethernet
+dev = PyTango.DeviceProxy("tango://{}:10000/sys/tg_test/1".format(host))
+
+# clear device
+dev.Clear()
+
+# reset device
+dev.Reset()
+
+# get device identification
+response = dev.IdnQuery()
+print("Device found:", response)
+
+# configure frequency measurement
+dev.Write(":CONF:FREQ 1MHz, 0.001 HZ, (@1)")
+
+# start measurement
+dev.Write(":READ?")
+
+# wait for result
+time.sleep(5)
+
+# read result
+result = dev.Read()
+
+print("Frequency[Hz]:", float(result))
+
+# disconnect
+dev.Disconnect()
+```
+
+Note: The code assumes that the device is accessible via the Tango server at the specified hostname and port (10000). You may need to adjust the Tango device address according to your specific setup.

@@ -1,0 +1,26 @@
+```python
+from pymeasure.instruments.danfysik import Danfysik8500
+
+# Connect to the power supply
+power_supply = Danfysik8500("COM1")
+
+# Set the voltage to 10 V
+power_supply.voltage = 10
+
+# Set the current limit to 2 A
+power_supply.current_limit = 2
+
+# Enable the output
+power_supply.output = True
+
+# Disconnect from the power supply
+power_supply.disconnect()
+```
+
+Explanation:
+1. Import the `Danfysik8500` class from the `pymeasure.instruments.danfysik` module.
+2. Create an instance of the `Danfysik8500` class and pass the serial port (e.g., "COM1") as an argument to connect to the power supply.
+3. Set the voltage to 10 V by assigning the desired value to the `voltage` attribute of the power supply object.
+4. Set the current limit to 2 A by assigning the desired value to the `current_limit` attribute of the power supply object.
+5. Enable the output by assigning `True` to the `output` attribute of the power supply object.
+6. Disconnect from the power supply by calling the `disconnect()` method of the power supply object.

@@ -1,0 +1,14 @@
+```python
+import PyTango
+
+# Create a DeviceProxy object to connect to the Keithley 617 Power Meter
+device_proxy = PyTango.DeviceProxy("device_name")
+
+# Read the power value from the power meter
+power_value = device_proxy.read_attribute("attribute_name").value
+
+# Print the power value
+print(power_value)
+```
+
+In the code above, replace "device_name" with the actual name of the Keithley 617 Power Meter device in your Tango database, and replace "attribute_name" with the name of the attribute you want to read from the power meter.

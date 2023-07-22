@@ -1,0 +1,29 @@
+Sure! Here's a Python script that uses Pymeasure to connect to an AFG3152C Function Generator:
+
+```python
+from pymeasure.adapters import VISAAdapter
+from pymeasure.instruments import AFG3152C
+
+# Create a VISA adapter and connect to the instrument
+adapter = VISAAdapter("GPIB::1")
+instrument = AFG3152C(adapter)
+
+# Reset the instrument to default settings
+instrument.reset()
+
+# Set the shape, unit, amplitude, frequency, and enable the output for Channel 1
+instrument.ch1.shape = "sinusoidal"
+instrument.ch1.unit = "VPP"
+instrument.ch1.amp_vpp = 1
+instrument.ch1.frequency = 1e3
+instrument.ch1.enable()
+
+# Beep and check for operation completion
+instrument.beep()
+instrument.opc()
+
+# Disconnect from the instrument
+instrument.disconnect()
+```
+
+This script connects to the AFG3152C Function Generator using a VISA adapter and creates an instance of the `AFG3152C` instrument. It then resets the instrument to default settings, sets the shape, unit, amplitude, and frequency for Channel 1, and enables the output. Finally, it beeps and checks for operation completion before disconnecting from the instrument.

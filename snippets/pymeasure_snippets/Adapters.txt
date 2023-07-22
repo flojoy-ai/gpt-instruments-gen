@@ -1,0 +1,27 @@
+Sure! Here's an example of a Python script that uses Pymeasure to connect to an adapter:
+
+```python
+from pymeasure.adapters import Adapter
+
+# Create an instance of the Adapter class
+adapter = Adapter()
+
+# Connect to the adapter
+adapter.open()
+
+# Send a command to the adapter
+adapter.send("COMMAND")
+
+# Receive a response from the adapter
+response = adapter.recv()
+
+# Print the response
+print(response)
+
+# Close the connection to the adapter
+adapter.close()
+```
+
+In this example, we import the `Adapter` class from the `pymeasure.adapters` module. We then create an instance of the `Adapter` class and call the `open()` method to establish a connection to the adapter. We can then use the `send()` method to send commands to the adapter and the `recv()` method to receive responses from the adapter. Finally, we close the connection to the adapter using the `close()` method.
+
+Note that you will need to replace `"COMMAND"` with the actual command you want to send to the adapter.

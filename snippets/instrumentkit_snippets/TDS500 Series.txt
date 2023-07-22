@@ -1,0 +1,27 @@
+Sure! Here's an example Python script that uses Instrumentkit to connect to a TDS500 Series Oscilloscope:
+
+```python
+import instrumentkit as ik
+
+# Connect to the TDS500 Series Oscilloscope
+scope = ik.tektronix.TDS500.open_gpibusb("/dev/ttyUSB0", 1)
+
+# Set the timebase and voltage scale
+scope.timebase = 1e-6  # 1 microsecond per division
+scope.channel[0].voltage_scale = 0.1  # 0.1 volts per division
+
+# Acquire a waveform
+waveform = scope.acquire_waveform(channel=1)
+
+# Plot the waveform
+import matplotlib.pyplot as plt
+plt.plot(waveform.time, waveform.voltage)
+plt.xlabel("Time (s)")
+plt.ylabel("Voltage (V)")
+plt.show()
+
+# Disconnect from the oscilloscope
+scope.close()
+```
+
+Make sure to replace `"/dev/ttyUSB0"` with the correct serial port of your TDS500 Series Oscilloscope, and `1` with the correct GPIB address of the oscilloscope.

@@ -1,0 +1,35 @@
+Sure! Here's an example Python script that uses Qcodes to connect to a PL303QMT-P Power Supply:
+
+```python
+import qcodes as qc
+from qcodes.instrument_drivers.oxford.pl303qmt import PL303QMT
+
+# Connect to the power supply
+power_supply = PL303QMT('power_supply', 'ASRLCOM3::INSTR')
+
+# Print the power supply IDN
+print(power_supply.IDN())
+
+# Set the output voltage to 5V
+power_supply.voltage(5)
+
+# Enable the output
+power_supply.output('on')
+
+# Disable the output after 2 seconds
+qc.sleep(2)
+power_supply.output('off')
+
+# Close the connection to the power supply
+power_supply.close()
+```
+
+In this script, we first import the necessary modules: `qcodes` and the `PL303QMT` driver from `qcodes.instrument_drivers.oxford.pl303qmt`. 
+
+We then create an instance of the `PL303QMT` driver, passing it a name ('power_supply') and the connection string ('ASRLCOM3::INSTR') for the power supply. You may need to modify the connection string to match the actual address of your power supply.
+
+We can then use the various methods and properties of the `PL303QMT` driver to interact with the power supply. In this example, we print the power supply's IDN, set the output voltage to 5V, enable the output, wait for 2 seconds, and then disable the output.
+
+Finally, we close the connection to the power supply using the `close()` method.
+
+Note: Make sure you have installed the necessary dependencies, including `qcodes` and the `pyvisa` package, before running this script.

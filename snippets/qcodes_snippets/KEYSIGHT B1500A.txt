@@ -1,0 +1,19 @@
+```python
+import qcodes as qc
+from qcodes.instrument_drivers.Keysight.Keysight_B1500A import Keysight_B1500A
+
+# Connect to the instrument
+b1500a = Keysight_B1500A('b1500a', 'TCPIP0::192.168.1.1::inst0::INSTR')
+
+# Print the instrument ID
+print(b1500a.IDN())
+
+# Close the connection
+b1500a.close()
+```
+
+Explanation:
+1. Import the necessary modules: `qcodes` and `Keysight_B1500A` from `qcodes.instrument_drivers.Keysight.Keysight_B1500A`.
+2. Create an instance of the `Keysight_B1500A` instrument by providing a name for the instrument (`b1500a`) and the connection string (`TCPIP0::192.168.1.1::inst0::INSTR`). Replace the connection string with the appropriate IP address and instrument name.
+3. Print the instrument identification string using the `IDN()` method.
+4. Close the connection to the instrument using the `close()` method.

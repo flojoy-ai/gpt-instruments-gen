@@ -1,0 +1,22 @@
+```python
+import qcodes as qc
+from qcodes.instrument_drivers.oxford.pl303qmd import PL303QMD
+
+# Connect to the power supply
+power_supply = PL303QMD('power_supply', 'ASRL1::INSTR')
+
+# Set the voltage to 5V
+power_supply.voltage(5)
+
+# Set the current limit to 1A
+power_supply.current_limit(1)
+
+# Enable the output
+power_supply.output('on')
+
+# Disable the output
+power_supply.output('off')
+
+# Close the connection to the power supply
+power_supply.close()
+```

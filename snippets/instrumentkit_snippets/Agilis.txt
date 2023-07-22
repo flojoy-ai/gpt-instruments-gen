@@ -1,0 +1,39 @@
+Sure! Here's an example Python script that uses Instrumentkit to connect to an Agilis Positional Controller:
+
+```python
+import instrumentkit as ik
+
+# Connect to the Agilis Positional Controller
+agl = ik.newport.AGUC2.open_serial(port='COM5', baud=921600)
+
+# Reset the controller
+agl.reset_controller()
+
+# Print the firmware version
+print(agl.firmware_version)
+
+# Move the X axis relative by 1000 steps
+agl.axis["X"].move_relative(1000)
+
+# Activate jogging in mode 3 for the Y axis
+agl.axis["Y"].jog = 3
+
+# Wait for 5 seconds
+import time
+time.sleep(5)
+
+# Stop the Y axis jogging
+agl.axis["Y"].stop()
+
+# Query the step amplitude for the X axis
+step_amplitude = agl.axis["X"].step_amplitude
+print(f"Step amplitude for X axis: {step_amplitude}")
+
+# Set the step amplitude for the X axis to 10 in positive direction and -20 in negative direction
+agl.axis["X"].step_amplitude = (10, -20)
+
+# Close the connection to the Agilis Positional Controller
+agl.close()
+```
+
+Make sure to replace `'COM5'` with the correct serial port for your Agilis Positional Controller.

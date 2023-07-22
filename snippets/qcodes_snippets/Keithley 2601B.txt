@@ -1,0 +1,26 @@
+```python
+import qcodes as qc
+from qcodes.instrument_drivers.tektronix.Keithley_2600_channels import Keithley_2600
+
+# Connect to the Keithley 2601B Power Supply
+keithley = Keithley_2600('keithley', 'TCPIP0::192.168.1.1::inst0::INSTR')
+
+# Print the instrument ID
+print(keithley.IDN())
+
+# Set the voltage to 1V on channel A
+keithley.channel_A.voltage.set(1)
+
+# Set the current limit to 100mA on channel A
+keithley.channel_A.current_limit.set(0.1)
+
+# Enable output on channel A
+keithley.channel_A.output.set(True)
+
+# Disable output on channel A
+keithley.channel_A.output.set(False)
+
+# Close the connection to the instrument
+keithley.close()
+```
+This code imports the necessary modules and connects to a Keithley 2601B Power Supply using its IP address. It then prints the instrument ID, sets the voltage and current limit on channel A, enables and disables the output on channel A, and finally closes the connection to the instrument.

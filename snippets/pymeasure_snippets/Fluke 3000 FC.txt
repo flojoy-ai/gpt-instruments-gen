@@ -1,0 +1,22 @@
+Sure! Here's a Python script that uses Pymeasure to connect to a Fluke 3000 FC Multimeter:
+
+```python
+from pymeasure.instruments.fluke import Fluke3000FC
+
+# Connect to the Fluke 3000 FC Multimeter
+multimeter = Fluke3000FC("COM1")  # Replace "COM1" with the actual port name
+
+# Initialize the multimeter
+multimeter.initialize()
+
+# Read the voltage measurement
+voltage = multimeter.voltage_dc
+
+# Print the measurement
+print("Voltage: {} V".format(voltage))
+
+# Disconnect from the multimeter
+multimeter.disconnect()
+```
+
+Make sure to replace `"COM1"` with the actual port name where your Fluke 3000 FC Multimeter is connected.

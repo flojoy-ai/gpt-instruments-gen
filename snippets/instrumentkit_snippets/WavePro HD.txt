@@ -1,0 +1,34 @@
+Sure! Here's an example script that uses Instrumentkit to connect to a WavePro HD Oscilloscope:
+
+```python
+import instrumentkit as ik
+
+# Connect to the oscilloscope
+oscilloscope = ik.teledyne.WaveProHD.open_visa("TCPIP0::192.168.0.10::INSTR")
+
+# Print the oscilloscope information
+print(oscilloscope.show_id())
+
+# Set the time per division to 200 ns
+oscilloscope.time_div = 200 * ik.units.ns
+
+# Enable the first channel and set the vertical scale to 1 V/division
+channel = oscilloscope.channel[0]
+channel.trace = True
+channel.scale = 1 * ik.units.V
+
+# Start the trigger in automatic mode
+oscilloscope.run()
+
+# Read a waveform from the channel
+xdat, ydat = channel.read_waveform()
+
+# Print the first 10 data points
+for x, y in zip(xdat[:10], ydat[:10]):
+    print(f"Time: {x}, Voltage: {y}")
+
+# Disconnect from the oscilloscope
+oscilloscope.close()
+```
+
+Make sure to replace `"TCPIP0::192.168.0.10::INSTR"` with the actual VISA address of your WavePro HD Oscilloscope.

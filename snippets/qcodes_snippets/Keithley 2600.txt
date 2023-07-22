@@ -1,0 +1,19 @@
+```python
+import qcodes as qc
+from qcodes.instrument_drivers.tektronix.Keithley_2600_channels import Keithley_2600
+
+# Connect to the Keithley 2600
+keithley = Keithley_2600('keithley', 'TCPIP0::192.168.1.1::inst0::INSTR')
+
+# Print the instrument ID
+print(keithley.IDN())
+
+# Close the connection
+keithley.close()
+```
+
+Explanation:
+1. Import the necessary modules: `qcodes` and `Keithley_2600` from `qcodes.instrument_drivers.tektronix.Keithley_2600_channels`.
+2. Create an instance of the `Keithley_2600` instrument with a name 'keithley' and the appropriate connection string. Replace `'TCPIP0::192.168.1.1::inst0::INSTR'` with the actual connection string for your Keithley 2600.
+3. Print the instrument ID using the `IDN()` method.
+4. Close the connection to the instrument using the `close()` method.

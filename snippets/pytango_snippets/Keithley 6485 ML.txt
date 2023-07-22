@@ -1,0 +1,22 @@
+```python
+import PyTango
+
+# Create a DeviceProxy object to connect to the Keithley 6485 ML device
+device_proxy = PyTango.DeviceProxy("device/hostname/Keithley6485ML/1")
+
+# Connect to the device
+device_proxy.connect()
+
+# Perform operations on the device
+# ...
+
+# Disconnect from the device
+device_proxy.disconnect()
+```
+
+Explanation:
+1. Import the `PyTango` module.
+2. Create a `DeviceProxy` object by providing the device's Tango address (`device/hostname/Keithley6485ML/1`).
+3. Connect to the device using the `connect()` method of the `DeviceProxy` object.
+4. Perform any desired operations on the device.
+5. Disconnect from the device using the `disconnect()` method of the `DeviceProxy` object.

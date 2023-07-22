@@ -1,0 +1,32 @@
+```python
+import qcodes as qc
+from qcodes.instrument_drivers.tektronix.DPO7000xx import TektronixDPO7000xx
+
+# Connect to the oscilloscope
+oscilloscope = TektronixDPO7000xx("oscilloscope", "TCPIP::1.2.3.4::INSTR")
+
+# Print the available channels
+print(oscilloscope.channel)
+
+# Set the time per division
+oscilloscope.horizontal.scale(1e-6)  # 1 microsecond per division
+
+# Set the trigger type and source
+oscilloscope.trigger.A.type("edge")
+oscilloscope.trigger.A.source("CH1")
+
+# Enable the measurement and set the measurement type
+measurement = oscilloscope.measurement.measurement1
+measurement.state(1)
+measurement.type("amplitude")
+
+# Get the measurement value
+amplitude = measurement.get()
+
+# Print the amplitude
+print(f"Amplitude: {amplitude} V")
+
+# Disconnect from the oscilloscope
+oscilloscope.close()
+```
+Note: Replace `"TCPIP::1.2.3.4::INSTR"` with the actual address of your oscilloscope.

@@ -1,0 +1,26 @@
+Sure! Here's an example Python script that uses Qcodes Community to connect to a Bluefors temperature controller:
+
+```python
+import qcodes as qc
+from qcodes.instrument_drivers.Bluefors.Bluefors import Bluefors
+
+# Connect to the Bluefors temperature controller
+bluefors = Bluefors("bluefors", "COM1")  # Replace "COM1" with the actual serial port of the temperature controller
+
+# Print the current temperature
+print(bluefors.temperature())
+
+# Set the temperature setpoint to 4 Kelvin
+bluefors.temperature(4)
+
+# Close the connection to the temperature controller
+bluefors.close()
+```
+
+In this example, we import the necessary modules and classes from Qcodes Community. We then create an instance of the `Bluefors` class, passing the name of the instrument and the serial port to connect to. Replace `"COM1"` with the actual serial port of your Bluefors temperature controller.
+
+We can then use the `temperature()` method to get the current temperature reading from the temperature controller. The `temperature()` method can also be used to set the temperature setpoint by passing a value as an argument.
+
+Finally, we close the connection to the temperature controller using the `close()` method.
+
+Note: Make sure you have installed the necessary dependencies for Qcodes Community and the Bluefors instrument driver before running this script.

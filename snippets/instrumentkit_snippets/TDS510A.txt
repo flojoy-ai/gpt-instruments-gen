@@ -1,0 +1,23 @@
+To connect to a TDS510A Oscilloscope using Instrumentkit, you can use the `instruments.tektronix.TDS510A` class. Here's an example script that demonstrates how to connect to the oscilloscope and read a waveform:
+
+```python
+import instruments as ik
+
+# Connect to the TDS510A Oscilloscope
+oscilloscope = ik.tektronix.TDS510A.open_gpibusb("/dev/ttyUSB0", 1)
+
+# Set the timebase and voltage scale
+oscilloscope.timebase = 1e-6  # 1 microsecond per division
+oscilloscope.channel[1].voltage_scale = 0.1  # 0.1 volts per division
+
+# Acquire a waveform
+waveform = oscilloscope.acquire_waveform(channel=1)
+
+# Print the waveform data
+print(waveform.data)
+
+# Disconnect from the oscilloscope
+oscilloscope.close()
+```
+
+Make sure to replace `"/dev/ttyUSB0"` with the appropriate device path for your oscilloscope. Also, adjust the timebase and voltage scale values according to your measurement requirements.

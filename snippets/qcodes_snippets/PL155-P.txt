@@ -1,0 +1,28 @@
+```python
+import qcodes as qc
+from qcodes.instrument_drivers.tektronix.PL155 import PL155
+
+# Connect to the power supply
+pl155 = PL155('pl155', 'TCPIP0::192.168.1.1::inst0::INSTR')
+
+# Print the power supply IDN
+print(pl155.IDN())
+
+# Set the output voltage to 5V
+pl155.voltage(5)
+
+# Set the output current limit to 1A
+pl155.current_limit(1)
+
+# Enable the output
+pl155.output_enable(True)
+
+# Disable the output after 5 seconds
+qc.sleep(5)
+pl155.output_enable(False)
+
+# Close the connection to the power supply
+pl155.close()
+```
+
+This code imports the necessary modules and creates an instance of the `PL155` class from the `qcodes.instrument_drivers.tektronix.PL155` module. It then connects to the power supply using the specified IP address. The code prints the power supply's identification (IDN) string, sets the output voltage to 5V, sets the output current limit to 1A, enables the output, waits for 5 seconds, and then disables the output. Finally, it closes the connection to the power supply.

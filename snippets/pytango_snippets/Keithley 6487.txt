@@ -1,0 +1,24 @@
+Sure! Here's a Python script that uses Pytango to connect to a Keithley 6487 Power Meter:
+
+```python
+import PyTango
+
+# Create a DeviceProxy for the Keithley 6487 Power Meter
+device_proxy = PyTango.DeviceProxy("device/proxy/name")
+
+# Connect to the device
+device_proxy.connect()
+
+# Read the measurement value from the power meter
+measurement = device_proxy.read_attribute("attribute_name").value
+
+# Print the measurement value
+print(measurement)
+
+# Disconnect from the device
+device_proxy.disconnect()
+```
+
+In the code above, you need to replace `"device/proxy/name"` with the actual name of the device proxy for the Keithley 6487 Power Meter. Similarly, replace `"attribute_name"` with the name of the attribute you want to read from the power meter.
+
+Make sure you have PyTango installed in your Python environment before running this script.

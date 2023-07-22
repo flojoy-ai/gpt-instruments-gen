@@ -1,0 +1,32 @@
+Here is a Python script that uses Pymeasure to connect to a Keysight 33120A Function Generator:
+
+```python
+from pymeasure import instrument
+
+# Connect to the function generator
+generator = instrument.Instrument('GPIB::1', 'HP_33120A')
+
+# Set the frequency to 1 kHz
+generator.frequency = 1000
+
+# Set the amplitude to 2 V
+generator.amplitude = 2
+
+# Set the offset to 0 V
+generator.offset = 0
+
+# Enable burst mode with a count of 10
+generator.burst_status = 'on'
+generator.burst_count = 10
+
+# Set the function shape to sine
+generator.set_function_shape('SIN')
+
+# Send a trigger to start the burst
+generator.send_trigger()
+
+# Disconnect from the function generator
+generator.disconnect()
+```
+
+This script connects to the function generator using the GPIB address 'GPIB::1' and the instrument class 'HP_33120A'. It then sets the frequency, amplitude, offset, burst status, burst count, and function shape of the function generator. Finally, it sends a trigger to start the burst and disconnects from the function generator.

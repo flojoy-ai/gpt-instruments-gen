@@ -1,0 +1,7 @@
+openai 
+tiktoken 
+jupyter
+pandas 
+numpy
+instrumentkit
+airtable

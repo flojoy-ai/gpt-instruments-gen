@@ -1,0 +1,36 @@
+Sure! Here's an example script that uses Instrumentkit to connect to a WaveSurfer 4000HD Oscilloscope:
+
+```python
+import instrumentkit as ik
+import instrumentkit.devices.teledyne as teledyne
+
+# Connect to the oscilloscope
+oscilloscope = teledyne.WaveSurfer4000HD.open_visa("TCPIP0::192.168.0.10::INSTR")
+
+# Print the oscilloscope information
+print(oscilloscope.show_id())
+
+# Set up the first channel
+channel = oscilloscope.channel[0]
+channel.trace = True  # Turn on the trace
+channel.coupling = channel.Coupling.dc50  # Set the coupling to 50 Ohm
+channel.scale = ik.Quantity(1, ik.units.V)  # Set the vertical scale to 1V/division
+
+# Start the trigger in automatic mode
+oscilloscope.run()
+
+# Print the trigger state
+print(oscilloscope.trigger_state)
+
+# Set the time per division to 20 ns
+oscilloscope.time_div = ik.Quantity(20, ik.units.ns)
+
+# Read a waveform from the channel
+xdat, ydat = channel.read_waveform()
+
+# Print the waveform data
+print("Time:", xdat)
+print("Signal:", ydat)
+```
+
+Make sure to replace `"TCPIP0::192.168.0.10::INSTR"` with the actual VISA address of your WaveSurfer 4000HD Oscilloscope.

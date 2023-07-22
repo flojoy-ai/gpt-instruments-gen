@@ -1,0 +1,43 @@
+To connect to a KIM101 Positional Controller using Instrumentkit, you can use the following Python script:
+
+```python
+from instrumentkit import Instrument, VISAInstrumentDriver
+
+class KIM101(Instrument):
+    """
+    Instrument class for the KIM101 Positional Controller.
+    """
+
+    def __init__(self, resource_name):
+        super().__init__(VISAInstrumentDriver(resource_name))
+
+    def move_to_position(self, position):
+        """
+        Moves the KIM101 Positional Controller to the specified position.
+
+        :param float position: The position to move to.
+        """
+        self.driver.send_command(f"MOVE {position}")
+
+    def get_position(self):
+        """
+        Gets the current position of the KIM101 Positional Controller.
+
+        :return: The current position.
+        :rtype: float
+        """
+        response = self.driver.query("POS?")
+        return float(response)
+
+# Connect to the KIM101 Positional Controller
+controller = KIM101("USB0::0x1234::0x5678::12345678::INSTR")
+
+# Move to position 10
+controller.move_to_position(10)
+
+# Get the current position
+position = controller.get_position()
+print(f"Current position: {position}")
+```
+
+Make sure to replace `"USB0::0x1234::0x5678::12345678::INSTR"` with the actual resource name of your KIM101 Positional Controller.

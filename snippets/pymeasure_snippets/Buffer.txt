@@ -1,0 +1,29 @@
+Sure! Here's a Python script that uses Pymeasure to connect to a Buffer:
+
+```python
+from pymeasure.adapters import VISAAdapter
+from pymeasure.instruments import Buffer
+
+# Create a VISA adapter for communication
+adapter = VISAAdapter()
+
+# Connect to the Buffer instrument
+buffer = Buffer(adapter, "GPIB::1::INSTR")
+
+# Read data from the Buffer
+data = buffer.read()
+
+# Print the data
+print(data)
+
+# Disconnect from the Buffer
+buffer.disconnect()
+```
+
+In this script, we first import the necessary modules from Pymeasure. We create a `VISAAdapter` object to handle communication with the instrument. Then, we create a `Buffer` object by passing the adapter and the instrument address (e.g., "GPIB::1::INSTR") to the constructor.
+
+We can then use the `read()` method of the `Buffer` object to read data from the instrument. The data is stored in the `data` variable.
+
+Finally, we print the data and disconnect from the Buffer instrument using the `disconnect()` method.
+
+Note: Make sure you have the necessary VISA drivers installed and the correct instrument address specified in the script.

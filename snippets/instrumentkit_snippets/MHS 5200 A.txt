@@ -1,0 +1,31 @@
+Sure! Here's an example Python script that uses Instrumentkit to connect to a MHS 5200 A Function Generator:
+
+```python
+import instrumentkit as ik
+
+# Connect to the MHS 5200 A Function Generator
+mhs = ik.minghe.MHS5200.open_serial(vid=1027, pid=24577, baud=19200, timeout=1)
+
+# Set the frequency of channel 1 to 1 kHz
+mhs.channel[0].frequency = 1e3
+
+# Set the amplitude of channel 1 to 2 V peak-to-peak
+mhs.channel[0].amplitude = 2
+
+# Enable channel 1
+mhs.channel[0].enable = True
+
+# Set the frequency of channel 2 to 2 kHz
+mhs.channel[1].frequency = 2e3
+
+# Set the amplitude of channel 2 to 1 V rms
+mhs.channel[1].amplitude = 1
+
+# Enable channel 2
+mhs.channel[1].enable = True
+
+# Disconnect from the MHS 5200 A Function Generator
+mhs.close()
+```
+
+Make sure to replace the `vid`, `pid`, `baud`, and `timeout` values with the appropriate values for your specific MHS 5200 A Function Generator.

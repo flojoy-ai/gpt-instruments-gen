@@ -1,0 +1,57 @@
+To connect to a HS 9008B Frequency synthesizer using Instrumentkit, you can follow the steps below:
+
+1. Install the Instrumentkit library by running `pip install instrumentkit` in your terminal.
+
+2. Import the necessary modules:
+
+```python
+from instrumentkit import Instrument, SCPIInstrument
+from instrumentkit import usb
+```
+
+3. Define a class for the HS 9008B Frequency synthesizer:
+
+```python
+class HS9008B(SCPIInstrument):
+    def __init__(self, resource):
+        super().__init__(resource)
+```
+
+4. Implement the necessary SCPI commands for the HS 9008B Frequency synthesizer:
+
+```python
+    def set_frequency(self, frequency):
+        self.write(f"FREQ {frequency}")
+
+    def get_frequency(self):
+        return self.query("FREQ?")
+
+    def set_power(self, power):
+        self.write(f"POWER {power}")
+
+    def get_power(self):
+        return self.query("POWER?")
+```
+
+5. Create an instance of the HS9008B class and connect to the instrument:
+
+```python
+if __name__ == "__main__":
+    resource = usb.find("HS 9008B")
+    hs9008b = HS9008B(resource)
+    hs9008b.connect()
+```
+
+6. Use the instrument to set and get the frequency and power:
+
+```python
+    hs9008b.set_frequency(1000)  # Set frequency to 1000 Hz
+    frequency = hs9008b.get_frequency()  # Get the current frequency
+    print(f"Frequency: {frequency} Hz")
+
+    hs9008b.set_power(10)  # Set power to 10 dBm
+    power = hs9008b.get_power()  # Get the current power
+    print(f"Power: {power} dBm")
+```
+
+That's it! You can now use the Instrumentkit library to connect to and control the HS 9008B Frequency synthesizer.

@@ -1,0 +1,28 @@
+Sure! Here's an example Python script that uses Instrumentkit to connect to a DS345 Function Generator:
+
+```python
+import instrumentkit as ik
+import instrumentkit.io as io
+import instrumentkit.drivers.srs as srs
+
+# Connect to the DS345 Function Generator
+with io.open_gpib('/dev/ttyUSB0', 1) as connection:
+    ds345 = srs.SRS345(connection)
+
+    # Set the output frequency to 1 MHz
+    ds345.frequency = 1 * ik.units.MHz
+
+    # Print the current offset voltage
+    print(ds345.offset)
+
+    # Set the output function to triangle
+    ds345.function = ds345.Function.triangle
+```
+
+Make sure you have Instrumentkit installed (`pip install instrumentkit`) before running this script. Also, replace `/dev/ttyUSB0` with the correct serial port for your DS345 Function Generator.
+
+This script connects to the DS345 Function Generator using the `open_gpib` function from `instrumentkit.io`. It then creates an instance of the `SRS345` class from the `instrumentkit.drivers.srs` module, passing in the connection object.
+
+You can then use the various properties and methods of the `SRS345` class to interact with the DS345 Function Generator. In the example script, it sets the output frequency to 1 MHz, prints the current offset voltage, and sets the output function to triangle.
+
+Feel free to modify the script to suit your specific needs and use cases.

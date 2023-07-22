@@ -1,0 +1,40 @@
+Here is a Python script that uses Pymeasure to connect to a Lakeshore 421 Power Meter:
+
+```python
+from pymeasure.adapters import SerialAdapter
+from pymeasure.instruments.lakeshore import LakeShore421
+
+# Create a serial adapter for the instrument
+adapter = SerialAdapter(port="COM1", baud_rate=9600)
+
+# Create an instance of the LakeShore421 instrument
+gaussmeter = LakeShore421(adapter)
+
+# Connect to the instrument
+gaussmeter.connect()
+
+# Set the unit to Tesla
+gaussmeter.unit = "T"
+
+# Turn on auto-range
+gaussmeter.auto_range = True
+
+# Turn on fast-mode
+gaussmeter.fast_mode = True
+
+# Read the magnetic field
+field = gaussmeter.field
+print("Magnetic Field:", field)
+
+# Set the field range to 300 Gauss
+gaussmeter.field_range = 300
+
+# Read the field range
+field_range = gaussmeter.field_range
+print("Field Range:", field_range)
+
+# Disconnect from the instrument
+gaussmeter.disconnect()
+```
+
+This script creates a `SerialAdapter` to connect to the instrument using the specified port and baud rate. Then, it creates an instance of the `LakeShore421` instrument using the adapter. The script connects to the instrument, sets the unit to Tesla, turns on auto-range and fast-mode, reads the magnetic field, sets the field range to 300 Gauss, reads the field range, and finally disconnects from the instrument.

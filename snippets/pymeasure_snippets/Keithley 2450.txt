@@ -1,0 +1,27 @@
+Here is a Python script that uses Pymeasure to connect to a Keithley 2450 Power Supply:
+
+```python
+from pymeasure.adapters import VISAAdapter
+from pymeasure.instruments.keithley import Keithley2450
+
+# Create a connection to the instrument
+adapter = VISAAdapter("GPIB::1")
+keithley = Keithley2450(adapter)
+
+# Configure the instrument
+keithley.apply_current()
+keithley.source_current_range = 10e-3
+keithley.compliance_voltage = 10
+keithley.source_current = 0
+keithley.enable_source()
+
+# Perform measurements
+keithley.measure_voltage()
+keithley.ramp_to_current(5e-3)
+print(keithley.voltage)
+
+# Shutdown the instrument
+keithley.shutdown()
+```
+
+This script connects to the Keithley 2450 Power Supply using a VISA adapter with the GPIB address "GPIB::1". It then configures the instrument to apply a current, sets the current range, compliance voltage, and source current. It enables the source output and performs voltage measurements. It ramps the current to 5 mA and prints the measured voltage. Finally, it shuts down the instrument by ramping the current to 0 mA and disabling the output.

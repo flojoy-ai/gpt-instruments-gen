@@ -1,0 +1,24 @@
+Here is a Python script that uses Pymeasure to connect to a Keithley 2750 Multimeter:
+
+```python
+from pymeasure.adapters import VISAAdapter
+from pymeasure.instruments.keithley import Keithley2750
+
+# Create a VISA adapter for communication
+adapter = VISAAdapter("GPIB0::22::INSTR")
+
+# Create an instance of the Keithley2750 instrument
+multimeter = Keithley2750(adapter)
+
+# Open a connection to the instrument
+multimeter.open()
+
+# Perform measurements or other operations with the instrument
+# For example, to read the list of closed channels:
+closed_channels = multimeter.closed_channels
+
+# Close the connection to the instrument
+multimeter.close()
+```
+
+Note: Make sure to replace `"GPIB0::22::INSTR"` with the appropriate address for your instrument.

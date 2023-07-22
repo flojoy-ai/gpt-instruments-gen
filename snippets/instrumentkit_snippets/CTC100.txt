@@ -1,0 +1,26 @@
+To connect to a CTC100 Temperature Controller using Instrumentkit, you can use the following Python script:
+
+```python
+from instrumentkit import CTC100
+
+# Create an instance of the CTC100 Temperature Controller
+ctc = CTC100()
+
+# Connect to the CTC100 Temperature Controller
+ctc.connect()
+
+# Perform temperature control operations here
+
+# Disconnect from the CTC100 Temperature Controller
+ctc.disconnect()
+```
+
+This script creates an instance of the `CTC100` class from the `instrumentkit` module and connects to the temperature controller using the `connect()` method. You can then perform temperature control operations using the `ctc` object. Finally, the `disconnect()` method is called to disconnect from the temperature controller.
+
+Please note that you may need to install the `instrumentkit` module before running this script. You can install it using pip:
+
+```
+pip install instrumentkit
+```
+
+Make sure to consult the documentation for the `instrumentkit` module and the specific CTC100 Temperature Controller for more details on how to use the available methods and perform temperature control operations.

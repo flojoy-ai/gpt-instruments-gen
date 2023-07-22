@@ -1,0 +1,23 @@
+Sure! Here's an example Python script that uses Qcodes to connect to a SP983c IV Converter:
+
+```python
+import qcodes as qc
+from qcodes.instrument_drivers.Keysight.Keysight_B1500 import Keysight_B1500
+
+# Connect to the SP983c IV Converter
+iv_converter = Keysight_B1500('iv_converter', 'TCPIP0::192.168.1.1::inst0::INSTR')
+
+# Print the instrument ID
+print(iv_converter.IDN())
+
+# Close the connection
+iv_converter.close()
+```
+
+In this script, we import the necessary modules and classes from Qcodes. We then create an instance of the `Keysight_B1500` class, which represents the SP983c IV Converter. The first argument to the constructor is the name of the instrument, and the second argument is the connection string. In this example, we use a TCP/IP connection with the IP address `192.168.1.1`.
+
+We can then use the `IDN()` method to query the instrument identification information and print it to the console.
+
+Finally, we close the connection to the instrument using the `close()` method.
+
+Note that you may need to install the necessary dependencies and drivers for the SP983c IV Converter and adjust the connection details according to your specific setup.

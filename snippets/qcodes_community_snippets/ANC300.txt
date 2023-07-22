@@ -1,0 +1,43 @@
+The provided code is not using Qcodes Community to connect to the ANC300 Positional Controller. It is using the `telnetlib` library to establish a telnet connection and send commands to the controller.
+
+If you want to use Qcodes Community to connect to the ANC300 Positional Controller, you would need to install the `qcodes` library and use its functionality to communicate with the controller. Here's an example of how you can modify the code to use Qcodes Community:
+
+```python
+from qcodes.instrument_drivers.anc300 import ANC300
+
+class ANC300Controller:
+    def __init__(self):
+        self.controller = ANC300('ANC300', 'TCPIP0::192.168.10.3::inst0::INSTR')
+        self.connected = False
+
+    def connect(self):
+        try:
+            self.controller.connect()
+            self.connected = True
+        except Exception as e:
+            print(f"Failed to connect to ANC300 controller: {str(e)}")
+            self.connected = False
+
+    def go(self, command):
+        if not self.connected:
+            print("ANC300 controller is not connected.")
+            return
+
+        try:
+            response = self.controller.ask(command)
+            return response
+        except Exception as e:
+            print(f"Failed to send command to ANC300 controller: {str(e)}")
+            return None
+```
+
+In this modified code, we create a `ANC300Controller` class that uses the `ANC300` instrument driver from Qcodes Community. The `connect` method establishes a connection to the ANC300 controller, and the `go` method sends a command to the controller and returns the response.
+
+Note that you need to install the `qcodes` library and the `qcodes_contrib_drivers` package to use the `ANC300` instrument driver. You can install them using pip:
+
+```
+pip install qcodes
+pip install qcodes_contrib_drivers
+```
+
+Make sure to replace the instrument address `'TCPIP0::192.168.10.3::inst0::INSTR'` with the correct address of your ANC300 controller.

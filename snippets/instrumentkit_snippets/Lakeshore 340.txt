@@ -1,0 +1,23 @@
+To connect to a Lakeshore 340 Temperature Controller using Instrumentkit, you can use the following Python script:
+
+```python
+import instrumentkit as ik
+
+# Connect to the Lakeshore 340 Temperature Controller
+inst = ik.lakeshore.Lakeshore340.open_gpibusb('/dev/ttyUSB0', 1)
+
+# Read the temperature from the first sensor
+temperature = inst.sensor[0].temperature
+print(f"Temperature: {temperature:.2f} K")
+
+# Read the temperature from the second sensor
+temperature = inst.sensor[1].temperature
+print(f"Temperature: {temperature:.2f} K")
+
+# Close the connection
+inst.close()
+```
+
+Make sure to replace `'/dev/ttyUSB0'` with the correct serial port of your Lakeshore 340 Temperature Controller. The second argument `1` represents the GPIB address of the instrument.
+
+This script connects to the Lakeshore 340 Temperature Controller, reads the temperature from the first and second sensors, and then closes the connection. The temperature is printed in Kelvin.

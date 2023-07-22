@@ -1,0 +1,30 @@
+Sure! Here's an example Python script that uses Instrumentkit to connect to a Keithley 580 Power Meter:
+
+```python
+import instrumentkit as ik
+
+# Connect to the Keithley 580 Power Meter
+power_meter = ik.keithley.Keithley580.open_gpibusb('/dev/ttyUSB0', 12)
+
+# Set the measurement mode to power
+power_meter.mode = power_meter.Mode.power
+
+# Set the range to auto
+power_meter.input_range = 'auto'
+
+# Measure the power
+power_measurement = power_meter.measure()
+
+# Print the power measurement
+print(f"Power: {power_measurement:.3f} {power_measurement.units}")
+```
+
+Make sure to replace `'/dev/ttyUSB0'` with the correct serial port of your Keithley 580 Power Meter. You can also adjust the measurement mode and range according to your needs.
+
+Note that you'll need to have Instrumentkit installed in order to run this script. You can install it using pip:
+
+```
+pip install instrumentkit
+```
+
+I hope this helps! Let me know if you have any further questions.

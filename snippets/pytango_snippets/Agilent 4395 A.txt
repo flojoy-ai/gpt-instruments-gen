@@ -1,0 +1,13 @@
+import PyTango
+
+# Create a DeviceProxy for the Agilent 4395 A Network Analyzer
+dev_proxy = PyTango.DeviceProxy("device_name")
+
+# Connect to the device
+dev_proxy.Connect()
+
+# Perform operations on the device
+# ...
+
+# Disconnect from the device
+dev_proxy.Disconnect()

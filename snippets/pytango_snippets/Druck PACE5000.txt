@@ -1,0 +1,47 @@
+The provided code is a Tango device server implementation for controlling a Druck PACE5000 Pressure Controller. To use Pytango to connect to this device, you can follow these steps:
+
+1. Install Pytango: You need to install the Pytango library to interact with Tango devices. You can install it using pip:
+
+   ```shell
+   pip install pytango
+   ```
+
+2. Import the necessary modules: In your Python script, import the required modules from Pytango:
+
+   ```python
+   import tango
+   ```
+
+3. Create a Tango device proxy: Use the `tango.DeviceProxy` class to create a proxy object for the Druck PACE5000 Pressure Controller device. Pass the Tango device name as an argument to the constructor:
+
+   ```python
+   device_proxy = tango.DeviceProxy("device_name")
+   ```
+
+   Replace `"device_name"` with the actual Tango device name of your Druck PACE5000 Pressure Controller.
+
+4. Read device attributes: You can read the device attributes using the `read_attribute` method of the device proxy. Pass the attribute name as an argument to the method:
+
+   ```python
+   attribute_value = device_proxy.read_attribute("attribute_name").value
+   ```
+
+   Replace `"attribute_name"` with the actual attribute name you want to read.
+
+5. Write device attributes: You can write to device attributes using the `write_attribute` method of the device proxy. Pass the attribute name and the value to be written as arguments to the method:
+
+   ```python
+   device_proxy.write_attribute("attribute_name", attribute_value)
+   ```
+
+   Replace `"attribute_name"` with the actual attribute name you want to write, and `attribute_value` with the value you want to set.
+
+6. Call device commands: You can call device commands using the `command_inout` method of the device proxy. Pass the command name and any input parameters as arguments to the method:
+
+   ```python
+   result = device_proxy.command_inout("command_name", command_input)
+   ```
+
+   Replace `"command_name"` with the actual command name you want to call, and `command_input` with any input parameters required by the command.
+
+That's it! You can now use Pytango to connect to and interact with the Druck PACE5000 Pressure Controller device.

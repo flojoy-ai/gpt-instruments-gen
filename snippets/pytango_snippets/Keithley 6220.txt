@@ -1,0 +1,17 @@
+```python
+import PyTango
+
+# Create a DeviceProxy object to connect to the Keithley 6220 Power Meter
+device_proxy = PyTango.DeviceProxy("device_name")
+
+# Read a property value from the device
+property_value = device_proxy.read_attribute("property_name").value
+
+# Write a value to a property of the device
+device_proxy.write_attribute("property_name", value)
+
+# Call a command on the device
+device_proxy.command_inout("command_name", command_argument)
+```
+
+In the code above, replace "device_name" with the actual name of the Keithley 6220 Power Meter device. Replace "property_name" with the name of the property you want to read or write, and replace "command_name" with the name of the command you want to call. Replace "value" with the value you want to write to a property, and replace "command_argument" with the argument you want to pass to a command.

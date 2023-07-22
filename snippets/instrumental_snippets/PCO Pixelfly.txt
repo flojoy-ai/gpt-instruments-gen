@@ -1,0 +1,34 @@
+The provided code is a PyQt4 application that creates a GUI window and connects to a PCO Pixelfly camera using the `core.pco_gui.CameraWidget` class. It sets the window title, tries to set a window icon, creates an instance of `CameraWidget`, and displays the window.
+
+To connect to a PCO Pixelfly camera using Instrumental, you would need to modify the code as follows:
+
+```python
+__author__ = 'Polychronis Patapis'
+from PyQt4 import QtGui
+from core.pco_gui import CameraWidget
+import sys
+from instrumental import instrument, list_instruments
+
+if __name__ == "__main__":
+    app = QtGui.QApplication(sys.argv)
+    window = QtGui.QMainWindow()
+    window.setWindowTitle('PCO.PixelFly                    -ETH Zurich- ')
+    try:
+        icon = QtGui.QIcon('App.ico')
+        window.setWindowIcon(icon)
+    except:
+        pass
+    pco_ui = CameraWidget(parent=None)
+    pco_ui.create_gui(window)
+    window.show()
+    
+    # Connect to PCO Pixelfly camera using Instrumental
+    instruments = list_instruments()
+    pco_camera = instrument(instruments[0])  # Assuming the camera is the first instrument in the list
+    
+    sys.exit(app.exec_())
+```
+
+Note that you need to import `instrument` and `list_instruments` from the `instrumental` module. The `list_instruments` function returns a list of available instruments, and `instrument` function is used to connect to a specific instrument by providing its name or address.
+
+In the modified code, after displaying the window, it retrieves the list of available instruments using `list_instruments` and connects to the PCO Pixelfly camera by passing its name or address to the `instrument` function.

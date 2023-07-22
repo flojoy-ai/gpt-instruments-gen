@@ -1,0 +1,30 @@
+Unfortunately, the given documentation is not sufficient to provide a complete solution. The documentation snippet provided, ```nan```, does not provide any information about the SC10 instrument or how to connect to it using Instrumentkit.
+
+To provide a solution, we would need more detailed documentation or specifications for the SC10 instrument, including the communication protocol, connection method (e.g., USB, Ethernet), and any required drivers or libraries.
+
+Once we have the necessary information, we can use Instrumentkit to connect to the SC10 instrument and perform various operations. Here's a general outline of how the code might look:
+
+```python
+import instrumentkit
+
+# Create a connection to the SC10 instrument
+connection = instrumentkit.Connection(<connection_parameters>)
+
+# Create an instance of the SC10 instrument
+sc10 = instrumentkit.SC10(connection)
+
+# Perform operations on the SC10 instrument
+sc10.set_parameter(<parameter_name>, <value>)
+result = sc10.get_measurement(<measurement_type>)
+
+# Close the connection
+connection.close()
+```
+
+Replace `<connection_parameters>` with the appropriate parameters for connecting to the SC10 instrument, such as the communication interface (e.g., USB, Ethernet) and any required addresses or settings.
+
+Replace `<parameter_name>` and `<value>` with the specific parameter you want to set on the SC10 instrument, such as the voltage or frequency.
+
+Replace `<measurement_type>` with the specific measurement you want to retrieve from the SC10 instrument, such as the current or power.
+
+Note that the actual code will depend on the specific implementation details of the SC10 instrument and the Instrumentkit library.

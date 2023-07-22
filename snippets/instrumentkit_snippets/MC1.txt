@@ -1,0 +1,29 @@
+Sure! Here's an example Python script that uses Instrumentkit to connect to a MC1 Positional Controller:
+
+```python
+from instrumentkit import ik
+from instrumentkit.contrib.qubitekk import MC1
+
+# Connect to the MC1 Positional Controller
+mc1 = MC1.open_serial('COM8', 19200, timeout=1)
+
+# Set the position of the MC1
+mc1.position = 10.0  # Set the position to 10.0 mm
+
+# Get the current position of the MC1
+position = mc1.position
+print(f"Current position: {position} mm")
+
+# Move the MC1 to a new position
+new_position = 20.0  # New position to move to
+mc1.move_to(new_position)
+
+# Close the connection to the MC1
+mc1.close()
+```
+
+Make sure to replace `'COM8'` with the correct serial port of your MC1 Positional Controller. You can also adjust the baud rate (`19200`) and timeout (`1`) according to your specific setup.
+
+This script demonstrates how to connect to the MC1 Positional Controller, set and get the position, and move the MC1 to a new position. Finally, it closes the connection to the MC1.
+
+Note: This script assumes that you have already installed Instrumentkit and its dependencies. If not, you can install it using `pip install instrumentkit`.

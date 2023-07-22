@@ -1,0 +1,27 @@
+To connect to a Keithley 6517A Power Meter using Pytango, you can use the following code:
+
+```python
+import pytango as pt
+
+# Define the device name
+device_name = "sys/tg_test/1"
+
+# Create a DeviceProxy for the Keithley 6517A Power Meter
+keithley = pt.DeviceProxy(device_name)
+
+# Call the methods of the Keithley 6517A Power Meter
+keithley.connect_keithley("GPIB0::22::INSTR")
+keithley.timeout()
+keithley.program_sens()
+keithley.program_tseq()
+keithley.program_form()
+keithley.program_trig()
+keithley.program_syst()
+
+# Perform other operations with the Keithley 6517A Power Meter
+
+# Close the connection to the Keithley 6517A Power Meter
+keithley.close_keithley()
+```
+
+Note: Replace `"sys/tg_test/1"` with the actual device name of your Keithley 6517A Power Meter.

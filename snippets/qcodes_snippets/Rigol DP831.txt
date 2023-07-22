@@ -1,0 +1,17 @@
+```python
+import qcodes as qc
+from qcodes.instrument_drivers.rigol.DP831 import RigolDP831
+
+# Create an instance of the RigolDP831 driver
+dp831 = RigolDP831('dp831', 'TCPIP0::192.168.1.10::INSTR')
+
+# Connect to the instrument
+dp831.connect()
+
+# Perform operations with the instrument
+
+# Disconnect from the instrument
+dp831.disconnect()
+```
+
+This code imports the necessary modules and creates an instance of the `RigolDP831` driver. It then connects to the instrument using the specified address. After connecting, you can perform various operations with the instrument. Finally, it disconnects from the instrument.

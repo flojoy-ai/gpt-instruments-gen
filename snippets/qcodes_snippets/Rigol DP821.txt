@@ -1,0 +1,17 @@
+```python
+import qcodes as qc
+from qcodes.instrument_drivers.rigol.DP8xx import RigolDP821
+
+# Create an instance of the RigolDP821 driver
+dp821 = RigolDP821('dp821', 'TCPIP0::192.168.1.100::INSTR')
+
+# Connect to the instrument
+dp821.connect()
+
+# Perform operations using the instrument
+
+# Disconnect from the instrument
+dp821.disconnect()
+```
+
+Note: Replace `'TCPIP0::192.168.1.100::INSTR'` with the actual IP address or VISA resource string of your Rigol DP821 Power Supply.

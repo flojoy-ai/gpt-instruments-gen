@@ -1,0 +1,29 @@
+Sure! Here's a Python script that uses Pymeasure to connect to an MS9740A Spectrum Analyzer:
+
+```python
+from pymeasure.instruments.yokogawa import MS9740A
+
+# Connect to the Spectrum Analyzer
+spectrum_analyzer = MS9740A("TCPIP::192.168.1.1::INSTR")
+
+# Initialize the instrument
+spectrum_analyzer.reset()
+spectrum_analyzer.display_on()
+spectrum_analyzer.set_center_frequency(1e9)
+spectrum_analyzer.set_span(1e6)
+spectrum_analyzer.set_resolution_bandwidth(1e3)
+spectrum_analyzer.set_video_bandwidth(1e3)
+spectrum_analyzer.set_reference_level(0)
+
+# Perform measurements
+spectrum_analyzer.single_sweep()
+trace = spectrum_analyzer.fetch_trace()
+
+# Print the trace data
+print(trace)
+
+# Disconnect from the instrument
+spectrum_analyzer.disconnect()
+```
+
+Make sure to replace `"TCPIP::192.168.1.1::INSTR"` with the actual IP address of your MS9740A Spectrum Analyzer.

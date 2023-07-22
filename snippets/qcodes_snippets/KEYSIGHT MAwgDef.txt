@@ -1,0 +1,26 @@
+Here is an example Python script using Qcodes to connect to a KEYSIGHT MAwgDef RF Signal Generator:
+
+```python
+import qcodes as qc
+from qcodes.instrument_drivers.Keysight.Keysight_MAwgDef import Keysight_MAwgDef
+
+# Connect to the instrument
+mawg = Keysight_MAwgDef('mawg', 'TCPIP0::192.168.1.1::inst0::INSTR')
+
+# Print the instrument identification
+print(mawg.IDN())
+
+# Set the output frequency to 1 GHz
+mawg.frequency(1e9)
+
+# Set the output power to -10 dBm
+mawg.power(-10)
+
+# Enable the output
+mawg.output(True)
+
+# Disconnect from the instrument
+mawg.close()
+```
+
+Note: Replace `'TCPIP0::192.168.1.1::inst0::INSTR'` with the actual VISA address of your KEYSIGHT MAwgDef RF Signal Generator.

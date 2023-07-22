@@ -1,0 +1,36 @@
+```python
+from qcodes.instrument_drivers.Keysight.Keysight_E4980A import Keysight_E4980A
+
+# Connect to the instrument
+instrument = Keysight_E4980A("instrument_name", "TCPIP0::192.168.1.1::inst0::INSTR")
+
+# Print the instrument ID
+print(instrument.IDN())
+
+# Set the frequency
+instrument.frequency(1000)
+
+# Set the voltage level
+instrument.voltage_level(1)
+
+# Set the current level
+instrument.current_level(0.01)
+
+# Perform a measurement
+measurement = instrument.measure_impedance()
+print(measurement.get())
+
+# Enable DC bias
+instrument.dc_bias_enabled(True)
+
+# Set the DC bias voltage level
+instrument.dc_bias_voltage_level(10)
+
+# Perform another measurement
+measurement = instrument.measure_impedance()
+print(measurement.get())
+
+# Disconnect from the instrument
+instrument.close()
+```
+Note: Replace `"instrument_name"` and `"TCPIP0::192.168.1.1::inst0::INSTR"` with the appropriate values for your instrument.

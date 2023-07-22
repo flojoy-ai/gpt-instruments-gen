@@ -1,0 +1,32 @@
+To connect to a HF2LI Lockin Amplifier using Qcodes Community, you can use the following Python script:
+
+```python
+import qcodes as qc
+from qcodes.instrument_drivers.zhinst import HF2LI
+
+# Create an instance of the HF2LI instrument
+hf2li = HF2LI('hf2li', 'dev204', demod=1, sigout=0, auxouts={'X': 0, 'Y': 3})
+
+# Connect to the instrument
+hf2li.connect()
+
+# Now you can use the instrument to perform various operations
+# For example, you can get the phase value
+phase = hf2li.phase()
+print(f"Phase: {phase} degrees")
+
+# You can also set the phase value
+hf2li.phase(45)
+
+# You can get the gain for the X output
+gain_x = hf2li.gain_X()
+print(f"Gain for X output: {gain_x} V/Vrms")
+
+# You can set the gain for the X output
+hf2li.gain_X(0.5)
+
+# Disconnect from the instrument
+hf2li.disconnect()
+```
+
+Note: Make sure you have installed the necessary dependencies, including `qcodes` and `zhinst`.

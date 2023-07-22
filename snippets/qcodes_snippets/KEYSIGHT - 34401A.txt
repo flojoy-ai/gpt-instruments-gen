@@ -1,0 +1,19 @@
+```python
+import qcodes as qc
+from qcodes.instrument_drivers.Keysight.Keysight_344XXA import Keysight_344XXA
+
+# Connect to the multimeter
+multimeter = Keysight_344XXA('multimeter', 'TCPIP0::192.168.1.1::INSTR')
+
+# Print the multimeter ID
+print(multimeter.IDN())
+
+# Close the connection
+multimeter.close()
+```
+
+Explanation:
+1. Import the necessary modules: `qcodes` and `Keysight_344XXA` from `qcodes.instrument_drivers.Keysight`.
+2. Create an instance of the `Keysight_344XXA` class and pass the desired name for the instrument and the connection string as arguments. The connection string should be in the format `'TCPIP0::<IP_ADDRESS>::INSTR'`, where `<IP_ADDRESS>` is the IP address of the multimeter.
+3. Use the `IDN()` method to retrieve and print the identification string of the multimeter.
+4. Close the connection to the multimeter using the `close()` method.

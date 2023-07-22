@@ -1,0 +1,30 @@
+Here is an example Python script that uses Qcodes Community to connect to a LDA-102 digital attenuator:
+
+```python
+from qcodes import Station
+from qcodes_contrib_drivers.drivers.Vaunix_LDA import LDA
+
+# Create a station to hold the instruments
+station = Station()
+
+# Connect to the LDA-102 digital attenuator
+lda = LDA('lda', serial_number=55102, dll_path='path/to/dll')
+
+# Add the LDA to the station
+station.add_component(lda)
+
+# Print the IDN of the LDA
+print(lda.get_idn())
+
+# Set the attenuation to 10 dB
+lda.attenuation(10)
+
+# Close the connection to the LDA
+lda.close()
+```
+
+Note: Replace `'path/to/dll'` with the actual path to the directory that contains the Vaunix LDA DLLs (`VNX_atten64.dll` for 64-bit Windows or `VNX_atten.dll` for 32-bit Windows).
+
+This script creates a `Station` object to hold the instruments. It then connects to the LDA-102 digital attenuator using the `LDA` driver from the `qcodes_contrib_drivers` package. The `serial_number` argument is set to the serial number of the LDA-102 device. The `dll_path` argument is set to the path of the directory that contains the Vaunix LDA DLLs.
+
+The LDA is added to the station using the `add_component` method. The IDN of the LDA is printed using the `get_idn` method. The attenuation is set to 10 dB using the `attenuation` parameter. Finally, the connection to the LDA is closed using the `close` method.

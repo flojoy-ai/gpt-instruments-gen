@@ -1,0 +1,26 @@
+Sure! Here's an example Python script that uses Qcodes Community to connect to an IDUS 401 CCD Spectrometer:
+
+```python
+import qcodes as qc
+from qcodes.instrument_drivers.Andor.IDUS import IDUS
+
+# Connect to the IDUS 401 CCD Spectrometer
+idus = IDUS("idus", "USB0::0xXXXX::0xXXXX::XXXXXXXX::INSTR")
+
+# Print the instrument ID
+print(idus.IDN())
+
+# Set the exposure time to 1 second
+idus.exposure_time(1)
+
+# Acquire a single spectrum
+spectrum = idus.acquire_spectrum()
+
+# Print the acquired spectrum
+print(spectrum)
+
+# Disconnect from the instrument
+idus.close()
+```
+
+Make sure to replace `"USB0::0xXXXX::0xXXXX::XXXXXXXX::INSTR"` with the actual VISA address of your IDUS 401 CCD Spectrometer.

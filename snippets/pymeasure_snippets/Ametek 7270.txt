@@ -1,0 +1,41 @@
+Sure! Here's a Python script that uses Pymeasure to connect to an Ametek 7270 Lockin Amplifier:
+
+```python
+from pymeasure.instruments.ametek import Ametek7270
+
+# Connect to the lock-in amplifier
+lockin = Ametek7270("GPIB0::1::INSTR")
+
+# Set the reference frequency to 1 kHz
+lockin.frequency = 1000
+
+# Set the input configuration to A-B mode
+lockin.input_configuration = 'AB'
+
+# Enable the internal reference oscillator
+lockin.reference_oscillator = 'internal'
+
+# Enable the input filter
+lockin.input_filter = True
+
+# Read the X and Y components of the signal
+x = lockin.X
+y = lockin.Y
+
+# Print the X and Y values
+print("X:", x)
+print("Y:", y)
+
+# Disconnect from the lock-in amplifier
+lockin.disconnect()
+```
+
+This script first imports the `Ametek7270` class from the `pymeasure.instruments.ametek` module. It then creates an instance of the `Ametek7270` class, specifying the GPIB address of the lock-in amplifier.
+
+The script then sets various parameters of the lock-in amplifier, such as the reference frequency, input configuration, reference oscillator, and input filter. These parameters can be adjusted according to your specific requirements.
+
+Next, the script reads the X and Y components of the signal using the `X` and `Y` properties of the lock-in amplifier object. These properties return the corresponding values as floating-point numbers.
+
+Finally, the script prints the X and Y values and disconnects from the lock-in amplifier using the `disconnect()` method.
+
+Note: Make sure you have the necessary dependencies installed, such as `pymeasure` and the appropriate GPIB driver for your system.
