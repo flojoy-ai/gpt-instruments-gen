@@ -1,0 +1,45 @@
+
+# KEYSIGHT N3300A
+
+## Instrument Card
+
+The Keysight N3300A is a full-rack width mainframe with 6-slots that accepts combinations of N330x user-installable load modules (150 W to 600 W) for easy system configuration and future reconfiguration. The N3300A holds up to six N3302A, N3303A, N3304A, N3307A load modules, or three N3305A, N3306A double-wide modules, allowing a total up to 1,800 watts of maximum power.
+
+<details open>
+<summary><h2>Manufacturer Card</h2></summary>
+Keysight Technologies, or Keysight, is an American company that manufactures electronics test and measurement equipment and software. <a href=https://www.keysight.com/us/en/home.html>Website</a>.
+
+<ul>
+  <li>Headquarters: USA</li>
+  <li>Yearly Revenue (millions, USD): 5420.0</li>
+</ul>
+</details>
+
+## Connect to the KEYSIGHT N3300A in Python
+
+[Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
+
+
+### Qcodes Community
+
+To connect to a KEYSIGHT N3300A Electronic Load using Qcodes Community, you can use the following Python script:
+
+```python
+from qcodes.instrument_drivers.Keysight.Keysight_N3300A import Keysight_N3300A
+
+# Create an instance of the instrument
+load = Keysight_N3300A('load', 'TCPIP0::192.168.1.1::inst0::INSTR')
+
+# Connect to the instrument
+load.connect()
+
+# Now you can use the instrument to perform operations
+# For example, you can set the load current
+load.current.set(1)  # Set the load current to 1 Ampere
+
+# Disconnect from the instrument
+load.disconnect()
+```
+
+Note: Replace `'TCPIP0::192.168.1.1::inst0::INSTR'` with the actual VISA address of your KEYSIGHT N3300A Electronic Load.
+

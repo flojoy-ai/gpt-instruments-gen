@@ -1,0 +1,45 @@
+
+# Keithley 6430
+
+## Instrument Card
+
+he 6½-digit Model 6430 Sub-Femtoamp Remote SourceMeter SMU Instrument can measure current with 1aA sensitivity. Its low noise and drift performance make it ideal for research on single electron devices, highly resistive nanowires and nanotubes, polymers, and electrochemical applications.
+
+<details open>
+<summary><h2>Manufacturer Card</h2></summary>
+Keithley Instruments is a measurement and instrument company headquartered in Solon, Ohio, that develops, manufactures, markets, and sells data acquisition products, as well as complete systems for high-volume production and assembly testing. <a href=https://www.tek.com/en>Website</a>.
+
+<ul>
+  <li>Headquarters: Cleveland, Ohio, United States</li>
+  <li>Yearly Revenue (millions, USD): 110.6</li>
+</ul>
+</details>
+
+## Connect to the Keithley 6430 in Python
+
+[Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
+
+
+### Qcodes Community
+
+To connect to a Keithley 6430 Multimeter using Qcodes Community, you can use the following Python script:
+
+```python
+from qcodes.instrument_drivers.tektronix.Keithley_6430 import Keithley_6430
+
+# Create an instance of the Keithley_6430 driver
+keithley = Keithley_6430('keithley', 'TCPIP0::192.168.1.1::INSTR')
+
+# Connect to the instrument
+keithley.connect()
+
+# Perform operations with the instrument
+keithley.source_current(0.1)  # Set the source current to 0.1 A
+voltage, current, resistance = keithley.read()  # Read the voltage, current, and resistance
+
+# Disconnect from the instrument
+keithley.disconnect()
+```
+
+Note: Replace `'TCPIP0::192.168.1.1::INSTR'` with the actual address of your Keithley 6430 Multimeter.
+

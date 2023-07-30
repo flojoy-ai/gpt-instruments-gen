@@ -1,0 +1,60 @@
+
+# KEYSIGHT 8722ES 
+
+## Instrument Card
+
+The Agilent 8722ES Vector Network Analyzer (VNA) allows users to test a RF device’s amplitude and phase with one instrument. It works within 50 MHz to 40 GHz and enables the complete characterization of a device or network.
+
+<details open>
+<summary><h2>Manufacturer Card</h2></summary>
+Keysight Technologies, or Keysight, is an American company that manufactures electronics test and measurement equipment and software. <a href=https://www.keysight.com/us/en/home.html>Website</a>.
+
+<ul>
+  <li>Headquarters: USA</li>
+  <li>Yearly Revenue (millions, USD): 5420.0</li>
+</ul>
+</details>
+
+## Connect to the KEYSIGHT 8722ES  in Python
+
+[Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
+
+
+### Pymeasure
+
+
+```python
+from pymeasure.adapters import VISAAdapter
+from pymeasure.instruments.agilent import Agilent8722ES
+
+# Create a VISA adapter
+adapter = VISAAdapter("GPIB0::9::INSTR")
+
+# Connect to the Agilent 8722ES Network Analyzer
+analyzer = Agilent8722ES(adapter)
+
+# Set the start and stop frequencies
+analyzer.start_frequency = 1e6  # 1 MHz
+analyzer.stop_frequency = 1e9  # 1 GHz
+
+# Set the number of scan points
+analyzer.scan_points = 101
+
+# Perform a single scan
+analyzer.scan_single()
+
+# Get the frequencies and data from the scan
+frequencies = analyzer.frequencies
+data_magnitude = analyzer.data_magnitude
+data_phase = analyzer.data_phase
+
+# Print the frequencies and data
+for frequency, magnitude, phase in zip(frequencies, data_magnitude, data_phase):
+    print(f"Frequency: {frequency} Hz, Magnitude: {magnitude} dB, Phase: {phase} degrees")
+
+# Disconnect from the analyzer
+analyzer.disconnect()
+```
+
+This script connects to the KEYSIGHT 8722ES Network Analyzer using a VISA adapter and the GPIB address "GPIB0::9::INSTR". It sets the start and stop frequencies, the number of scan points, and performs a single scan. It then retrieves the frequencies, magnitude, and phase data from the scan and prints them. Finally, it disconnects from the analyzer.
+

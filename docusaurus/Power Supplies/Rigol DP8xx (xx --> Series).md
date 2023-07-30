@@ -1,0 +1,142 @@
+
+# Rigol DP8xx (xx --> Series)
+
+## Instrument Card
+
+The DP800 Series Power Supplies combine the ability to source, analyze, and coordinate over time on a powerful platform. The DP800 Series is a family of linear power supplies systems with 1, 2, or 3 outputs and 140 to 200 Watts in total. With one channel isolated users can reconfigure instruments into any number of systems or applications. Built in V, A, and W measurements make power monitoring easy, but additional wave tracking, timing, and analysis features in the advanced "A" models means there are even more ways to use the instruments. Digital triggering between instruments also makes it possible to reliably combine and connect supplies together. Intuitive to use for everything from education labs to the R & D bench, the DP800 family of power supplies provide incredible value for any application. Select the value models for best price performance or upgrade to the "A" model to improve resolution and add advanced monitoring, triggering, and programming capabilities.
+
+<details open>
+<summary><h2>Manufacturer Card</h2></summary>
+RIGOL Technologies, Inc. specializes in development and production of test and measuring equipment and is one of the fastest growing Chinese companies in this sphere.
+RIGOL’s line of products includes [digital storage oscilloscopes](https://www.tmatlantic.com/e-store/index.php?SECTION_ID=227), [function/arbitrary waveform generators](https://www.tmatlantic.com/e-store/index.php?SECTION_ID=230), [digital multimeters](https://www.tmatlantic.com/e-store/index.php?SECTION_ID=233), PC-based devices compatible with LXI standard etc. <a href=https://www.rigol.com/>Website</a>.
+
+<ul>
+  <li>Headquarters: Beijing, China</li>
+  <li>Yearly Revenue (millions, USD): 23.0</li>
+</ul>
+</details>
+
+## Connect to the Rigol DP8xx (xx --> Series) in Python
+
+[Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
+
+
+### Qcodes
+
+Here is a Python script that uses Qcodes to connect to a Rigol DP8xx Power Supply:
+
+```python
+from qcodes.instrument.visa import VisaInstrument
+from qcodes.instrument.channel import ChannelList
+from qcodes.instrument.parameter import Parameter
+from qcodes import validators as vals
+from typing import Any, Tuple, Sequence
+
+
+class RigolDP8xxChannel(Parameter):
+    def __init__(
+        self,
+        parent: "_RigolDP8xx",
+        name: str,
+        channel: int,
+        ch_range: Tuple[float, float],
+        ovp_range: Tuple[float, float],
+        ocp_range: Tuple[float, float],
+    ):
+        super().__init__(name, label=name, unit='', vals=vals.Anything(), set_cmd=None, get_cmd=None)
+
+        self.vmax = ch_range[0]
+        self.imax = ch_range[1]
+        self.ovp_range = ovp_range
+        self.ocp_range = ocp_range
+
+        select_cmd = f":INSTrument:NSELect {channel};"
+
+        def strstrip(s: str) -> str:
+            return str(s).strip()
+
+        self.set_cmd = f"{select_cmd} :SOURce:VOLTage:LEVel:IMMediate:AMPLitude {{}}".format
+        self.get_cmd = f"{select_cmd} :SOURce:VOLTage:LEVel:IMMediate:AMPLitude?".format
+        self.get_parser = float
+        self.vals = vals.Numbers(min(0, self.vmax), max(0, self.vmax))
+
+        self.parent = parent
+        self.name = name
+
+    def get_raw(self) -> float:
+        return self.get_parser(self.parent.ask(self.get_cmd()))
+
+    def set_raw(self, value: float) -> None:
+        self.parent.write(self.set_cmd(value))
+
+
+class _RigolDP8xx(VisaInstrument):
+    def __init__(
+        self,
+        name: str,
+        address: str,
+        channels_ranges: Sequence[Tuple[float, float]],
+        ovp_ranges: Tuple[Sequence[Tuple[float, float]], Sequence[Tuple[float, float]]],
+        ocp_ranges: Tuple[Sequence[Tuple[float, float]], Sequence[Tuple[float, float]]],
+        **kwargs: Any,
+    ):
+        super().__init__(name, address, **kwargs)
+
+        # Check if precision extension has been installed
+        opt = self.installed_options()
+        if 'DP8-ACCURACY' in opt:
+            ovp_ranges_selected = ovp_ranges[1]
+            ocp_ranges_selected = ocp_ranges[1]
+        else:
+            ovp_ranges_selected = ovp_ranges[0]
+            ocp_ranges_selected = ocp_ranges[0]
+
+        # channel-specific parameters
+        channels = ChannelList(self, "SupplyChannel")
+        for ch_num, channel_range in enumerate(channels_ranges):
+            ch_name = f"ch{ch_num + 1}"
+            channel = RigolDP8xxChannel(
+                self,
+                ch_name,
+                ch_num + 1,
+                channel_range,
+                ovp_ranges_selected[ch_num],
+                ocp_ranges_selected[ch_num]
+            )
+            channels.append(channel)
+            self.add_submodule(ch_name, channel)
+        self.add_submodule("channels", channels.to_channel_tuple())
+
+        self.connect_message()
+
+    def installed_options(self) -> list[str]:
+        opt = self.ask("*OPT?")
+        optl = opt.strip().split(',')
+        optl_clean = [x for x in optl if x != '0']
+        return optl_clean
+
+
+# Connect to the Rigol DP8xx Power Supply
+dp8xx = _RigolDP8xx(
+    name="dp8xx",
+    address="<VISA_ADDRESS>",
+    channels_ranges=[(0, 30), (0, 5)],  # Example channel voltage/current ranges
+    ovp_ranges=([(0, 35), (0, 6)], [(0, 36), (0, 7)]),  # Example OVP voltage ranges
+    ocp_ranges=([(0, 6), (0, 1)], [(0, 7), (0, 2)])  # Example OCP current ranges
+)
+
+# Access the channels and set voltage/current
+channel1 = dp8xx.channels.ch1
+channel1.set_voltage(10)  # Set voltage to 10V
+channel1.set_current(1)  # Set current to 1A
+
+# Get measured voltage/current
+voltage = channel1.voltage()
+current = channel1.current()
+
+print(f"Measured Voltage: {voltage} V")
+print(f"Measured Current: {current} A")
+```
+
+Replace `<VISA_ADDRESS>` with the actual VISA address of your Rigol DP8xx Power Supply.
+
