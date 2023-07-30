@@ -8,7 +8,7 @@ All SCPI Multimeters
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>
 . <a href=nan>Website</a>.
-
+<br>
 <ul>
   <li>Headquarters: nan</li>
   <li>Yearly Revenue (millions, USD): nan</li>

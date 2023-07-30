@@ -8,7 +8,7 @@ The APSINXXG is an analog signal generator (analog signal source) series coverin
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>
 **AnaPico** is an ISO 9001:2015 certified technology leader, developing, manufacturing and supplying RF and MW test & measurement instruments. <a href=https://www.anapico.com/>Website</a>.
-
+<br>
 <ul>
   <li>Headquarters: Switzerland</li>
   <li>Yearly Revenue (millions, USD): 5.0</li>
