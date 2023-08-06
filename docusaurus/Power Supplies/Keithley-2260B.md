@@ -7,7 +7,7 @@ Source a wide range of voltages and currents with the 360W, 720W, or 1080W Serie
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>
-Keithley Instruments is a measurement and instrument company headquartered in Solon, Ohio, that develops, manufactures, markets, and sells data acquisition products, as well as complete systems for high-volume production and assembly testing. <a href=https://www.tek.com/en>Website</a>.
+Keithley Instruments is a measurement and instrument company headquartered in Solon, Ohio, that develops, manufactures, markets, and sells data acquisition products, as well as complete systems for high-volume production and assembly testing. <a href="https://www.tek.com/en">Website</a>.
 <br></br>
 <ul>
   <li>Headquarters: Cleveland, Ohio, United States</li>
@@ -19,39 +19,4 @@ Keithley Instruments is a measurement and instrument company headquartered in So
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
 
-
-### Pymeasure
-
-Here is a Python script that uses Pymeasure to connect to a Keithley 2260B Power Supply:
-
-```python
-from pymeasure.instruments.keithley import Keithley2260B
-
-# Create a connection to the Keithley 2260B Power Supply
-power_supply = Keithley2260B("GPIB::1")
-
-# Enable the output of the power supply
-power_supply.output_enabled = True
-
-# Set the voltage setpoint to 5 volts
-power_supply.voltage_setpoint = 5
-
-# Read the voltage, current, and power values from the power supply
-voltage = power_supply.voltage
-current = power_supply.current
-power = power_supply.power
-
-# Print the values
-print("Voltage: {} V".format(voltage))
-print("Current: {} A".format(current))
-print("Power: {} W".format(power))
-
-# Disable the output of the power supply
-power_supply.output_enabled = False
-
-# Close the connection to the power supply
-power_supply.shutdown()
-```
-
-This script connects to a Keithley 2260B Power Supply using the GPIB interface. It enables the output of the power supply, sets the voltage setpoint to 5 volts, and then reads the voltage, current, and power values from the power supply. Finally, it disables the output of the power supply and closes the connection.
 

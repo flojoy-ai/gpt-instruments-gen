@@ -7,7 +7,7 @@ The Model 370 AC resistance bridge is designed for precise, accurate, low noise,
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>
-Supporting advanced scientific research, Lake Shore is a leading global innovator in measurement and control solutions. <a href=https://www.lakeshore.com/home>Website</a>.
+Supporting advanced scientific research, Lake Shore is a leading global innovator in measurement and control solutions. <a href="https://www.lakeshore.com/home">Website</a>.
 <br></br>
 <ul>
   <li>Headquarters: Westerville, Ohio, USA</li>
@@ -19,25 +19,4 @@ Supporting advanced scientific research, Lake Shore is a leading global innovato
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
 
-
-### Instrumentkit
-
-To connect to a Lakeshore 370 AC resistance bridge using Instrumentkit, you can use the following Python script:
-
-```python
-import instrumentkit as ik
-
-# Connect to the Lakeshore 370 AC resistance bridge
-bridge = ik.lakeshore.Lakeshore370.open_gpibusb('/dev/ttyUSB0', 1)
-
-# Get the resistance of the first channel
-resistance = bridge.channel[0].resistance
-
-# Print the resistance
-print(resistance)
-```
-
-This script imports the `instrumentkit` module as `ik` and uses the `open_gpibusb` method of the `Lakeshore370` class to connect to the Lakeshore 370 AC resistance bridge. The `open_gpibusb` method takes the device path (`'/dev/ttyUSB0'`) and the GPIB address (`1`) as arguments.
-
-After connecting to the bridge, the script retrieves the resistance of the first channel using the `resistance` property of the `Channel` class. Finally, it prints the resistance value.
 

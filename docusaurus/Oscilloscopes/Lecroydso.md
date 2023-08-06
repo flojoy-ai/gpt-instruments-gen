@@ -8,7 +8,7 @@ This Class Allows The Acquisition Of A Waveform (The Description And The Data), 
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>
-Teledyne LeCroy, Inc. manufactures and distributes electronic measuring instruments. The Company produces analyzers, measurement, and testing solutions including oscilloscopes, production test digitizers, and electronic components. Teledyne LeCroy serves customers worldwide. <a href=https://www.teledynelecroy.com/>Website</a>.
+Teledyne LeCroy, Inc. manufactures and distributes electronic measuring instruments. The Company produces analyzers, measurement, and testing solutions including oscilloscopes, production test digitizers, and electronic components. Teledyne LeCroy serves customers worldwide. <a href="https://www.teledynelecroy.com/">Website</a>.
 <br></br>
 <ul>
   <li>Headquarters: s	Chestnut Ridge, New York, USA</li>
@@ -21,33 +21,4 @@ Teledyne LeCroy, Inc. manufactures and distributes electronic measuring instrum
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
 
-
-### Pytango
-
-To connect to a LeCroy Oscilloscope using Pytango, you can use the following code:
-
-```python
-import PyTango
-from lecroydso import DSOConnection
-from lecroydso import LeCroyDSO
-
-# Create a connection to the oscilloscope
-connection = DSOConnection("your_oscilloscope_address")
-
-# Connect to the oscilloscope
-connection.connect()
-
-# Create an instance of the LeCroyDSO class
-lecroy_dso = LeCroyDSO(connection)
-
-# Now you can use the LeCroyDSO instance to interact with the oscilloscope
-# For example, you can get the serial number of the oscilloscope
-serial_number = lecroy_dso.get_serial_number()
-print("Serial Number:", serial_number)
-
-# Disconnect from the oscilloscope
-connection.disconnect()
-```
-
-Note: Replace "your_oscilloscope_address" with the actual address of your LeCroy Oscilloscope.
 

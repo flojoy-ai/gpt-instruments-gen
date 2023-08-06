@@ -7,7 +7,7 @@ The two-channel Model 2182A Nanovoltmeter is optimized for making stable, low no
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>
-Keithley Instruments is a measurement and instrument company headquartered in Solon, Ohio, that develops, manufactures, markets, and sells data acquisition products, as well as complete systems for high-volume production and assembly testing. <a href=https://www.tek.com/en>Website</a>.
+Keithley Instruments is a measurement and instrument company headquartered in Solon, Ohio, that develops, manufactures, markets, and sells data acquisition products, as well as complete systems for high-volume production and assembly testing. <a href="https://www.tek.com/en">Website</a>.
 <br></br>
 <ul>
   <li>Headquarters: Cleveland, Ohio, United States</li>
@@ -19,27 +19,4 @@ Keithley Instruments is a measurement and instrument company headquartered in So
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
 
-
-### Instrumentkit
-
-To connect to a Keithley 2182 Power Meter using Instrumentkit, you can use the following Python script:
-
-```python
-import instrumentkit as ik
-
-# Connect to the Keithley 2182 Power Meter
-meter = ik.keithley.Keithley2182.open_gpibusb("/dev/ttyUSB0", 10)
-
-# Perform a measurement
-measurement = meter.measure(meter.Mode.voltage_dc)
-
-# Print the measurement value
-print(measurement)
-```
-
-This script imports the `instrumentkit` module and uses the `open_gpibusb` method of the `Keithley2182` class to connect to the Keithley 2182 Power Meter. The first argument of `open_gpibusb` is the device path (`/dev/ttyUSB0` in this example) and the second argument is the GPIB address (10 in this example).
-
-After connecting to the power meter, the script performs a measurement using the `measure` method of the `Keithley2182` class. The measurement mode is specified as `meter.Mode.voltage_dc`, which represents the DC voltage measurement mode.
-
-Finally, the script prints the measurement value.
 

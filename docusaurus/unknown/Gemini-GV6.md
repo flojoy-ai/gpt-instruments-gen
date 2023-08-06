@@ -16,7 +16,7 @@ Wide range of PWM frequencies for linear motor support
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>
-Parker Hannifin Corporation, originally Parker Appliance Company, usually referred to as just Parker, is an American corporation specializing in motion and control technologies. <a href=https://www.parker.com/us/en/home.html>Website</a>.
+Parker Hannifin Corporation, originally Parker Appliance Company, usually referred to as just Parker, is an American corporation specializing in motion and control technologies. <a href="https://www.parker.com/us/en/home.html">Website</a>.
 <br></br>
 <ul>
   <li>Headquarters: USA</li>
@@ -28,37 +28,4 @@ Parker Hannifin Corporation, originally Parker Appliance Company, usually referr
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
 
-
-### Pymeasure
-
-
-```python
-from pymeasure.instruments.parker import ParkerGV6
-
-# Create an instance of the ParkerGV6 instrument
-motor = ParkerGV6("ASRL1::INSTR")
-
-# Connect to the motor controller
-motor.connect()
-
-# Enable the motor
-motor.enable()
-
-# Set the motor velocity to 5 revolutions per second
-motor.velocity = 5
-
-# Move the motor to a specific angle
-motor.angle = 90
-
-# Check if the motor is currently moving
-is_moving = motor.is_moving()
-
-# Disable the motor
-motor.disable()
-
-# Disconnect from the motor controller
-motor.disconnect()
-```
-
-This script creates an instance of the `ParkerGV6` instrument, connects to the motor controller using the specified address (e.g., `"ASRL1::INSTR"`), enables the motor, sets the velocity, moves the motor to a specific angle, checks if the motor is moving, disables the motor, and finally disconnects from the motor controller.
 

@@ -7,7 +7,7 @@ Metrology-grade analog signal generator offering industry-leading output power, 
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>
-Keysight Technologies, or Keysight, is an American company that manufactures electronics test and measurement equipment and software. <a href=https://www.keysight.com/us/en/home.html>Website</a>.
+Keysight Technologies, or Keysight, is an American company that manufactures electronics test and measurement equipment and software. <a href="https://www.keysight.com/us/en/home.html">Website</a>.
 <br></br>
 <ul>
   <li>Headquarters: USA</li>
@@ -19,44 +19,4 @@ Keysight Technologies, or Keysight, is an American company that manufactures el
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
 
-
-### Qcodes
-
-To connect to a KEYSIGHT E8257D RF Signal Generator using Qcodes, you can use the following Python script:
-
-```python
-import qcodes as qc
-from qcodes.instrument_drivers.Keysight.Keysight_E8257D import Keysight_E8257D
-
-# Create an instance of the instrument
-signal_generator = Keysight_E8257D("signal_generator", "TCPIP0::192.168.1.1::INSTR")
-
-# Connect to the instrument
-signal_generator.connect()
-
-# Print the instrument ID
-print("Instrument ID:", signal_generator.IDN())
-
-# Set the frequency to 1 GHz
-signal_generator.frequency(1e9)
-
-# Set the power to -10 dBm
-signal_generator.power(-10)
-
-# Enable the output
-signal_generator.output_enabled(True)
-
-# Disable the output after 1 second
-qc.sleep(1)
-signal_generator.output_enabled(False)
-
-# Disconnect from the instrument
-signal_generator.disconnect()
-```
-
-This script imports the necessary modules and creates an instance of the `Keysight_E8257D` instrument class from the Qcodes library. It then connects to the instrument using the specified address (replace `"TCPIP0::192.168.1.1::INSTR"` with the actual address of your signal generator).
-
-After connecting, you can use the instrument's methods and parameters to control the signal generator. In the example script, it sets the frequency to 1 GHz, power to -10 dBm, and enables the output. After 1 second, it disables the output and then disconnects from the instrument.
-
-Note: Make sure you have Qcodes and the necessary dependencies installed before running this script.
 

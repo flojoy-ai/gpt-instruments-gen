@@ -7,7 +7,7 @@ The 2612B from Keithley is a 2600B series dual channel system SourceMeter® (SMU
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>
-Keithley Instruments is a measurement and instrument company headquartered in Solon, Ohio, that develops, manufactures, markets, and sells data acquisition products, as well as complete systems for high-volume production and assembly testing. <a href=https://www.tek.com/en>Website</a>.
+Keithley Instruments is a measurement and instrument company headquartered in Solon, Ohio, that develops, manufactures, markets, and sells data acquisition products, as well as complete systems for high-volume production and assembly testing. <a href="https://www.tek.com/en">Website</a>.
 <br></br>
 <ul>
   <li>Headquarters: Cleveland, Ohio, United States</li>
@@ -19,31 +19,4 @@ Keithley Instruments is a measurement and instrument company headquartered in So
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
 
-
-### Qcodes
-
-To connect to a Keithley 2612B Power Supply using Qcodes, you can use the following Python script:
-
-```python
-from qcodes.instrument_drivers.tektronix.Keithley_2600 import Keithley2600
-
-# Create an instance of the Keithley2612B driver
-keithley = Keithley2600('keithley', 'TCPIP0::192.168.1.1::INSTR')
-
-# Connect to the instrument
-keithley.connect()
-
-# Perform operations with the instrument
-
-# Disconnect from the instrument
-keithley.disconnect()
-```
-
-In this script, we import the `Keithley2600` class from the `qcodes.instrument_drivers.tektronix.Keithley_2600` module. Then, we create an instance of the `Keithley2600` driver, passing a name for the instrument and the connection string as arguments to the constructor.
-
-The connection string `'TCPIP0::192.168.1.1::INSTR'` should be replaced with the appropriate connection details for your specific instrument. You may need to modify the IP address or other parameters depending on your setup.
-
-After creating the instrument instance, we can call the `connect()` method to establish a connection to the instrument. Once connected, you can perform various operations with the instrument.
-
-Finally, we call the `disconnect()` method to close the connection to the instrument.
 

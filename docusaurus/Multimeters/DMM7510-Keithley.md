@@ -7,7 +7,7 @@ The DMM7510 7.5 digit multimeter combines a precision, high-resolution digital m
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>
-Keithley Instruments is a measurement and instrument company headquartered in Solon, Ohio, that develops, manufactures, markets, and sells data acquisition products, as well as complete systems for high-volume production and assembly testing. <a href=https://www.tek.com/en>Website</a>.
+Keithley Instruments is a measurement and instrument company headquartered in Solon, Ohio, that develops, manufactures, markets, and sells data acquisition products, as well as complete systems for high-volume production and assembly testing. <a href="https://www.tek.com/en">Website</a>.
 <br></br>
 <ul>
   <li>Headquarters: Cleveland, Ohio, United States</li>
@@ -19,32 +19,4 @@ Keithley Instruments is a measurement and instrument company headquartered in So
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
 
-
-### Qcodes
-
-```python
-import qcodes as qc
-from qcodes.instrument_drivers.tektronix.Keithley_7510 import Keithley7510
-
-# Connect to the instrument
-dmm = Keithley7510("dmm", "TCPIP::192.168.1.1::INSTR")
-
-# Print the available sense functions
-print(dmm.sense_function.vals)
-
-# Set the sense function to voltage
-dmm.sense_function("voltage")
-
-# Set the range to 10V
-dmm.sense.voltage.range(10)
-
-# Make a measurement
-measurement = dmm.sense.voltage()
-
-# Print the measurement
-print(f"Voltage: {measurement} V")
-
-# Disconnect from the instrument
-dmm.close()
-```
 

@@ -7,7 +7,7 @@ Quantum Design's DynaCool™ PPMS® performs electrical, thermal and magnetic me
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>
-Quantum Design manufactures automated temperature and magnetic field testing platforms. <a href=https://www.qdusa.com/>Website</a>.
+Quantum Design manufactures automated temperature and magnetic field testing platforms. <a href="https://www.qdusa.com/">Website</a>.
 <br></br>
 <ul>
   <li>Headquarters: San Diego, California</li>
@@ -19,35 +19,4 @@ Quantum Design manufactures automated temperature and magnetic field testing pla
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
 
-
-### Qcodes
-
-Here is an example Python script that uses Qcodes to connect to a PPMS DynaCool Spectrometer:
-
-```python
-import qcodes as qc
-from qcodes.instrument_drivers.QuantumDesign.DynaCoolPPMS import DynaCool
-
-# Connect to the DynaCool instrument
-dynacool = DynaCool('dynacool', 'TCPIP0::127.0.0.1::5000::SOCKET')
-
-# Print the instrument ID
-print(dynacool.get_idn())
-
-# Set the temperature setpoint to 10 K
-dynacool.temperature_setpoint(10)
-
-# Ramp the field to 1 T in blocking mode
-dynacool.field_target(1)
-dynacool.ramp(mode='blocking')
-
-# Get the measured field
-field = dynacool.field_measured()
-print(f"Measured field: {field} T")
-
-# Close the connection to the instrument
-dynacool.close()
-```
-
-This script connects to the DynaCool instrument using the IP address and port specified in the `address` argument of the `DynaCool` constructor. It then sets the temperature setpoint to 10 K and ramps the field to 1 T in blocking mode. Finally, it retrieves the measured field value and prints it. The connection to the instrument is closed at the end of the script using the `close()` method.
 

@@ -7,7 +7,7 @@ The model 8742 is a 4-axis open-loop intelligent motion controller/driver that p
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>
-Newport provides a wide range of photonics technology and products designed to enhance the capabilities and productivity of our customers' applications. <a href=https://www.newport.com/>Website</a>.
+Newport provides a wide range of photonics technology and products designed to enhance the capabilities and productivity of our customers' applications. <a href="https://www.newport.com/">Website</a>.
 <br></br>
 <ul>
   <li>Headquarters: Irvine, California, United States</li>
@@ -19,33 +19,4 @@ Newport provides a wide range of photonics technology and products designed to e
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
 
-
-### Instrumentkit
-
-To connect to a Picomotorcontroller 8742 Positional Controller using Instrumentkit, you can use the following code:
-
-```python
-import instrumentkit as ik
-
-# Define the IP address and port of the controller
-ip = "192.168.1.2"
-port = 23
-
-# Open a TCP/IP connection to the controller
-controller = ik.newport.PicoMotorController8742.open_tcpip(ip, port)
-
-# Set the controller address (if using multiple controllers)
-controller.controller_address = 1
-
-# Get the first axis of the controller
-axis = controller.axis[0]
-
-# Move the motor relative to its current position
-axis.move_relative = 100
-
-# Close the connection to the controller
-controller.close()
-```
-
-This code establishes a TCP/IP connection to the Picomotorcontroller 8742 at the specified IP address and port. It then sets the controller address (if using multiple controllers) and gets the first axis of the controller. Finally, it moves the motor relative to its current position by 100 steps and closes the connection to the controller.
 

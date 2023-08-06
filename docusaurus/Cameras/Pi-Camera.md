@@ -7,7 +7,7 @@ The v2 Camera Module has a Sony IMX219 8-megapixel sensor (compared to the 5-meg
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>
-**Raspberry Pi** is a series of small single-board computers (SBCs) developed in the United Kingdom by the **Raspberry Pi** Foundation in association with Broadcom. <a href=https://www.raspberrypi.org/>Website</a>.
+**Raspberry Pi** is a series of small single-board computers (SBCs) developed in the United Kingdom by the **Raspberry Pi** Foundation in association with Broadcom. <a href="https://www.raspberrypi.org/">Website</a>.
 <br></br>
 <ul>
   <li>Headquarters: UK</li>
@@ -19,38 +19,4 @@ The v2 Camera Module has a Sony IMX219 8-megapixel sensor (compared to the 5-meg
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
 
-
-### Instrumental
-
-To use Instrumental to connect to a Pi Camera, you can follow these steps:
-
-1. Import the necessary modules:
-```python
-from instrumental import instrument, list_instruments
-```
-
-2. List the available instruments:
-```python
-instruments = list_instruments()
-print(instruments)
-```
-
-3. Connect to a Pi Camera:
-```python
-camera = instrument(instruments[0])
-```
-
-4. Use the camera to capture an image:
-```python
-image = camera.grab_image()
-```
-
-5. Display the captured image:
-```python
-import matplotlib.pyplot as plt
-plt.imshow(image)
-plt.show()
-```
-
-Note: Make sure you have the necessary dependencies installed, such as `numpy`, `matplotlib`, and `picamera`.
 

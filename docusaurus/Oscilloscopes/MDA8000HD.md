@@ -7,7 +7,7 @@ The Motor Drive Analyzer is built on an 8 channel, 12-bit resolution oscilloscop
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>
-Teledyne LeCroy is an American manufacturer of oscilloscopes, protocol analyzers and other test equipment. LeCroy is now a subsidiary of Teledyne Technologies. <a href=https://www.teledynelecroy.com/>Website</a>.
+Teledyne LeCroy is an American manufacturer of oscilloscopes, protocol analyzers and other test equipment. LeCroy is now a subsidiary of Teledyne Technologies. <a href="https://www.teledynelecroy.com/">Website</a>.
 <br></br>
 <ul>
   <li>Headquarters: USA</li>

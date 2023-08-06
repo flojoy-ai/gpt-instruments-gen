@@ -7,7 +7,7 @@ Lake Shore Model 425 gaussmeter provides high-end functionality and performance 
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>
-Supporting advanced scientific research, Lake Shore is a leading global innovator in measurement and control solutions. <a href=https://www.lakeshore.com/home>Website</a>.
+Supporting advanced scientific research, Lake Shore is a leading global innovator in measurement and control solutions. <a href="https://www.lakeshore.com/home">Website</a>.
 <br></br>
 <ul>
   <li>Headquarters: Westerville, Ohio, USA</li>
@@ -19,33 +19,4 @@ Supporting advanced scientific research, Lake Shore is a leading global innovato
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
 
-
-### Pytango
-
-To connect to a Lake Shore Model 425 Gaussmeter using Pytango, you can use the following code:
-
-```python
-import PyTango
-
-# Create a DeviceProxy for the Gaussmeter
-gaussmeter_proxy = PyTango.DeviceProxy("device/hostname/instance")
-
-# Call the relevant methods on the Gaussmeter proxy
-# For example, to get the serial number:
-serial_number = gaussmeter_proxy.read_attribute("SerialNumber").value
-
-# To get the current magnetic field reading:
-magnetic_field = gaussmeter_proxy.read_attribute("MagneticField").value
-
-# To set the measurement range:
-gaussmeter_proxy.write_attribute("MeasurementRange", 1)
-
-# To start a measurement:
-gaussmeter_proxy.command_inout("StartMeasurement")
-
-# To stop a measurement:
-gaussmeter_proxy.command_inout("StopMeasurement")
-```
-
-Note that you need to replace `"device/hostname/instance"` with the actual Tango device name or alias for your Lake Shore Model 425 Gaussmeter.
 

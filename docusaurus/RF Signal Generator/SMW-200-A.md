@@ -7,7 +7,7 @@ The R&S®SMW200A offers integrated channel emulation for up to 800 MHz of fading
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>
-Rohde & Schwarz GmbH & Co KG is an international electronics group specializing in the fields of electronic test equipment, broadcast & media, cybersecurity, radiomonitoring and radiolocation, and radiocommunication. <a href=https://www.rohde-schwarz.com/ca/home_48230.html>Website</a>.
+Rohde & Schwarz GmbH & Co KG is an international electronics group specializing in the fields of electronic test equipment, broadcast & media, cybersecurity, radiomonitoring and radiolocation, and radiocommunication. <a href="https://www.rohde-schwarz.com/ca/home_48230.html">Website</a>.
 <br></br>
 <ul>
   <li>Headquarters: Munich, Germany</li>
@@ -19,29 +19,4 @@ Rohde & Schwarz GmbH & Co KG is an international electronics group specializing 
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
 
-
-### Qcodes Community
-
-To connect to the SMW 200 A RF Signal Generator using Qcodes, you can use the following code:
-
-```python
-from qcodes.instrument_drivers.rohde_schwarz.SMWSMU import SMWSMU
-
-# Create an instance of the SMWSMU driver
-smw = SMWSMU('smw', 'TCPIP0::192.168.0.1::inst0::INSTR')
-
-# Connect to the instrument
-smw.connect()
-
-# Now you can use the instrument to perform various operations
-# For example, you can set the output power
-smw.output_power(0)  # Set the output power to 0 dBm
-
-# Disconnect from the instrument
-smw.disconnect()
-```
-
-This code creates an instance of the `SMWSMU` driver and connects to the SMW 200 A RF Signal Generator using the specified VISA address. You can then use the various methods provided by the driver to control the instrument, such as setting the output power.
-
-Note that you need to replace `'TCPIP0::192.168.0.1::inst0::INSTR'` with the actual VISA address of your instrument.
 

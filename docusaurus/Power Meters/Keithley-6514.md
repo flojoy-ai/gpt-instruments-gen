@@ -7,7 +7,7 @@
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>
-Keithley Instruments is a measurement and instrument company headquartered in Solon, Ohio, that develops, manufactures, markets, and sells data acquisition products, as well as complete systems for high-volume production and assembly testing. <a href=https://www.tek.com/en>Website</a>.
+Keithley Instruments is a measurement and instrument company headquartered in Solon, Ohio, that develops, manufactures, markets, and sells data acquisition products, as well as complete systems for high-volume production and assembly testing. <a href="https://www.tek.com/en">Website</a>.
 <br></br>
 <ul>
   <li>Headquarters: Cleveland, Ohio, United States</li>
@@ -19,39 +19,4 @@ Keithley Instruments is a measurement and instrument company headquartered in So
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
 
-
-### Instrumentkit
-
-Here is an example Python script that uses Instrumentkit to connect to a Keithley 6514 electrometer:
-
-```python
-import instrumentkit as ik
-
-# Connect to the Keithley 6514 electrometer
-dmm = ik.keithley.Keithley6514.open_gpibusb('/dev/ttyUSB0', 12)
-
-# Set the measurement mode to voltage
-dmm.mode = ik.keithley.Keithley6514.Mode.voltage
-
-# Set the input range to 10 V
-dmm.input_range = 10 * ik.units.volt
-
-# Enable auto range
-dmm.auto_range = True
-
-# Perform an auto configuration for the current mode
-dmm.auto_config(ik.keithley.Keithley6514.Mode.voltage)
-
-# Fetch the latest reading
-reading, timestamp = dmm.fetch()
-
-# Print the reading and timestamp
-print(f"Reading: {reading}")
-print(f"Timestamp: {timestamp}")
-
-# Close the connection to the Keithley 6514 electrometer
-dmm.close()
-```
-
-This script demonstrates how to connect to the Keithley 6514 electrometer, set the measurement mode to voltage, set the input range, enable auto range, perform an auto configuration, fetch the latest reading, and print the reading and timestamp. Finally, it closes the connection to the electrometer.
 

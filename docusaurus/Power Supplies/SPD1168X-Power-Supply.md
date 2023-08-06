@@ -9,7 +9,7 @@ Because higher currents supplied through smaller gauge wire or longer distances 
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>
-**iglent** is a China-based manufacturer specializing in electronic test & measurement instruments. Siglent founders began a preliminary study of digital oscilloscopes in 2002. It founded in 2007, and now Siglent has extended its product line to include digital oscilloscopes, function / arbitrary waveform generators, RF generators，digital multi-meters, DC power supplies, spectrum analyzers, spectrum & vector network analyzers, isolated handheld oscilloscopes, DC electronic loads and other general test instruments.Siglent also manufactured entry-level products for Lecroy. <a href=https://siglentna.com/>Website</a>.
+**iglent** is a China-based manufacturer specializing in electronic test & measurement instruments. Siglent founders began a preliminary study of digital oscilloscopes in 2002. It founded in 2007, and now Siglent has extended its product line to include digital oscilloscopes, function / arbitrary waveform generators, RF generators，digital multi-meters, DC power supplies, spectrum analyzers, spectrum & vector network analyzers, isolated handheld oscilloscopes, DC electronic loads and other general test instruments.Siglent also manufactured entry-level products for Lecroy. <a href="https://siglentna.com/">Website</a>.
 <br></br>
 <ul>
   <li>Headquarters: Shenzhen, China</li>
@@ -21,36 +21,4 @@ Because higher currents supplied through smaller gauge wire or longer distances 
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
 
-
-### Pymeasure
-
-
-```python
-from pymeasure.adapters import VISAAdapter
-from pymeasure.instruments.siglenttechnologies import SPD1168X
-
-# Create a VISA adapter for communication with the instrument
-adapter = VISAAdapter("USB0::0xF4EC::0xEE3A::SPD1168X-1000-1168X-1000-1168XN1P1R1::INSTR")
-
-# Create an instance of the SPD1168X power supply
-power_supply = SPD1168X(adapter)
-
-# Connect to the power supply
-power_supply.connect()
-
-# Now you can use the power supply to perform various operations
-# For example, to set the output voltage to 5V:
-power_supply.ch_1.voltage = 5
-
-# To turn on the output:
-power_supply.ch_1.output_enabled = True
-
-# To read the current output voltage:
-voltage = power_supply.ch_1.voltage
-
-# Disconnect from the power supply
-power_supply.disconnect()
-```
-
-Note: Make sure to replace the VISA address in the `VISAAdapter` constructor with the appropriate address for your instrument.
 

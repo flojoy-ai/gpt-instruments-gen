@@ -8,7 +8,7 @@ Infiniium DCA Wide-Bandwidth Oscilloscope / up to 50 GHz
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>
-Keysight Technologies, or Keysight, is an American company that manufactures electronics test and measurement equipment and software. <a href=https://www.keysight.com/us/en/home.html>Website</a>.
+Keysight Technologies, or Keysight, is an American company that manufactures electronics test and measurement equipment and software. <a href="https://www.keysight.com/us/en/home.html">Website</a>.
 <br></br>
 <ul>
   <li>Headquarters: USA</li>
@@ -20,10 +20,4 @@ Keysight Technologies, or Keysight, is an American company that manufactures el
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
 
-
-### Instrumental
-
-```python
-Unfortunately, the provided code is for connecting to a Tektronix oscilloscope, not a KEYSIGHT 86100A oscilloscope. Therefore, it cannot be used to connect to the KEYSIGHT oscilloscope.
-```
 

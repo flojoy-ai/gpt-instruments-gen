@@ -7,7 +7,7 @@ The 3800 is a microprocessor-based programmer and controller. The programmer fun
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>
-**Thermotron** is a worldwide temperature chamber, humidity chamber, and vibration testing equipment manufacturer. View our testing equipment today!. <a href=https://thermotron.com/>Website</a>.
+**Thermotron** is a worldwide temperature chamber, humidity chamber, and vibration testing equipment manufacturer. View our testing equipment today!. <a href="https://thermotron.com/">Website</a>.
 <br></br>
 <ul>
   <li>Headquarters: USA</li>
@@ -19,51 +19,4 @@ The 3800 is a microprocessor-based programmer and controller. The programmer fun
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
 
-
-### Pymeasure
-
-
-```python
-from pymeasure.adapters import VISAAdapter
-from pymeasure.instruments.thermotron import Thermotron3800
-
-# Create a VISA adapter for communication with the instrument
-adapter = VISAAdapter("TCPIP::192.168.1.1::INSTR")  # Replace with the actual IP address of the instrument
-
-# Create an instance of the Thermotron3800 instrument
-thermotron = Thermotron3800(adapter)
-
-# Connect to the instrument
-thermotron.connect()
-
-# Read the instrument identification
-id = thermotron.id
-print("Instrument ID:", id)
-
-# Read the current temperature of the oven
-temperature = thermotron.temperature
-print("Temperature:", temperature)
-
-# Get the operating mode of the oven
-mode = thermotron.mode
-print("Operating Mode:", mode)
-
-# Set the setpoint of the oven to 50 degrees Celsius
-thermotron.setpoint = 50
-
-# Start temperature forcing
-thermotron.run()
-
-# Wait for the oven to reach the setpoint
-while thermotron.temperature < thermotron.setpoint:
-    pass
-
-# Stop temperature forcing
-thermotron.stop()
-
-# Disconnect from the instrument
-thermotron.disconnect()
-```
-
-Note: Replace `"TCPIP::192.168.1.1::INSTR"` with the actual VISA address of the Thermotron 3800 Temperature Controller.
 

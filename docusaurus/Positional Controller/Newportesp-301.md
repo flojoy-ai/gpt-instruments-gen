@@ -7,7 +7,7 @@ The ESP301-3N 3 Axis Motion Controller and Driver is the successor of the popula
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>
-Newport provides a wide range of photonics technology and products designed to enhance the capabilities and productivity of our customers' applications. <a href=https://www.newport.com/>Website</a>.
+Newport provides a wide range of photonics technology and products designed to enhance the capabilities and productivity of our customers' applications. <a href="https://www.newport.com/">Website</a>.
 <br></br>
 <ul>
   <li>Headquarters: Irvine, California, United States</li>
@@ -19,29 +19,4 @@ Newport provides a wide range of photonics technology and products designed to e
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
 
-
-### Instrumentkit
-
-To connect to a Newport ESP-301 Positional Controller using Instrumentkit, you can use the following code:
-
-```python
-from instrumentkit import NewportESP301
-
-# Connect to the controller
-controller = NewportESP301.open_serial("COM3")
-
-# Access the axis of the controller
-axis = controller.axis[0]
-
-# Move the axis to a specific position
-axis.move(0.001, absolute=False)
-
-# Wait for the motion to finish
-axis.wait_for_motion()
-
-# Disconnect from the controller
-controller.close()
-```
-
-This code connects to the Newport ESP-301 controller using the `open_serial` method, which takes the serial port as an argument. It then accesses the first axis of the controller using `controller.axis[0]`. You can perform various operations on the axis, such as moving it to a specific position using the `move` method, waiting for the motion to finish using the `wait_for_motion` method, and closing the connection using the `close` method.
 

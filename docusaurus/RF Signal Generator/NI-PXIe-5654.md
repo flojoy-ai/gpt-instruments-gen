@@ -7,7 +7,7 @@ PXIe, 250 kHz to 20 GHz, PXI RF Analog Signal Generator—The PXIe-5654 features
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>
-A producer of automated test equipment and virtual instrumentation software. Common applications include data acquisition, instrument control and machine vision. <a href=https://www.ni.com/en-ca.html>Website</a>.
+A producer of automated test equipment and virtual instrumentation software. Common applications include data acquisition, instrument control and machine vision. <a href="https://www.ni.com/en-ca.html">Website</a>.
 <br></br>
 <ul>
   <li>Headquarters: Austin, Texas, USA</li>
@@ -19,35 +19,4 @@ A producer of automated test equipment and virtual instrumentation software. Com
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
 
-
-### Qcodes Community
-
-To connect to a NI PXIe-5654 RF Signal Generator using Qcodes Community, you can use the following Python script:
-
-```python
-import qcodes as qc
-from qcodes_contrib_drivers.drivers.NationalInstruments.NI_PXIe_5654 import NI_PXIe_5654
-
-# Create an instance of the instrument
-signal_generator = NI_PXIe_5654('signal_generator', 'PXI1Slot2')
-
-# Connect to the instrument
-signal_generator.connect()
-
-# Perform operations with the instrument
-frequency = 1e6  # Set the frequency to 1 MHz
-signal_generator.frequency(frequency)
-
-power_level = 0  # Set the power level to 0 dBm
-signal_generator.power_level(power_level)
-
-# Disconnect from the instrument
-signal_generator.disconnect()
-```
-
-Make sure you have installed the `qcodes_contrib_drivers` package, which contains the `NI_PXIe_5654` driver. You can install it using `pip install qcodes_contrib_drivers`.
-
-Replace `'PXI1Slot2'` with the appropriate resource name for your specific setup.
-
-The script creates an instance of the `NI_PXIe_5654` driver, connects to the instrument, sets the frequency and power level, and then disconnects from the instrument.
 

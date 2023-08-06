@@ -7,7 +7,7 @@ The APT™ MST602 module is a dual-channel, high-resolution, rack-mounted steppe
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>
-Thorlabs, Inc. is an American privately held optical equipment company headquartered in Newton, New Jersey. The company was founded in 1989 by Alex Cable, who serves as its current president and CEO. As of 2018, Thorlabs has annual sales of approximately $500 million. <a href=https://www.thorlabs.com/>Website</a>.
+Thorlabs, Inc. is an American privately held optical equipment company headquartered in Newton, New Jersey. The company was founded in 1989 by Alex Cable, who serves as its current president and CEO. As of 2018, Thorlabs has annual sales of approximately $500 million. <a href="https://www.thorlabs.com/">Website</a>.
 <br></br>
 <ul>
   <li>Headquarters: USA</li>
@@ -19,30 +19,4 @@ Thorlabs, Inc. is an American privately held optical equipment company headquart
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
 
-
-### Instrumentkit
-
-To connect to an APT Stepper Motor Control Module Positional Controller using Instrumentkit, you can use the following code:
-
-```python
-import instrumentkit as ik
-
-# Connect to the APT Stepper Motor Control Module Positional Controller
-controller = ik.thorlabs.APTMotorController.open_serial("/dev/ttyUSB0", baud=115200)
-
-# Get the first channel of the controller
-channel = controller.channel[0]
-
-# Set the motor model for the channel
-channel.motor_model = "PRM1-Z8"
-
-# Move the motor to a specific position
-channel.move(1000)  # Move to position 1000 (encoder counts)
-
-# Get the current position of the motor
-position = channel.position
-print(f"Current position: {position}")
-```
-
-This code connects to the APT Stepper Motor Control Module Positional Controller using the `open_serial` method, specifying the serial port and baud rate. It then gets the first channel of the controller and sets the motor model to "PRM1-Z8". Finally, it moves the motor to position 1000 and retrieves the current position of the motor.
 

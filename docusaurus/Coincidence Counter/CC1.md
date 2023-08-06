@@ -7,7 +7,7 @@ Qubitekk’s 2-channel Coincidence Counter provides researchers with a low-cost 
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>
-Qubitekk provides reliable products for generating, preparing, distributing, detecting, correlating and storing photonic qubits. The hardware that is needed to strengthen American leadership in quantum computing, communications, and sensing solutions is being developed and manufactured in San Diego County, CA. <a href=https://qubitekk.com/>Website</a>.
+Qubitekk provides reliable products for generating, preparing, distributing, detecting, correlating and storing photonic qubits. The hardware that is needed to strengthen American leadership in quantum computing, communications, and sensing solutions is being developed and manufactured in San Diego County, CA. <a href="https://qubitekk.com/">Website</a>.
 <br></br>
 <ul>
   <li>Headquarters: Vista, California, United States</li>

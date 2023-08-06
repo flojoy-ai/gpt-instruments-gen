@@ -7,7 +7,7 @@ Data acquisition (DAQ) is the process of measuring an electrical or physical phe
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>
-A producer of automated test equipment and virtual instrumentation software. Common applications include data acquisition, instrument control and machine vision. <a href=https://www.ni.com/en-ca.html>Website</a>.
+A producer of automated test equipment and virtual instrumentation software. Common applications include data acquisition, instrument control and machine vision. <a href="https://www.ni.com/en-ca.html">Website</a>.
 <br></br>
 <ul>
   <li>Headquarters: Austin, Texas, USA</li>

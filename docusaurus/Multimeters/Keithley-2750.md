@@ -7,7 +7,7 @@ The 2750 offers a cost-effective, high performance, affordable alternatives to s
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>
-Keithley Instruments is a measurement and instrument company headquartered in Solon, Ohio, that develops, manufactures, markets, and sells data acquisition products, as well as complete systems for high-volume production and assembly testing. <a href=https://www.tek.com/en>Website</a>.
+Keithley Instruments is a measurement and instrument company headquartered in Solon, Ohio, that develops, manufactures, markets, and sells data acquisition products, as well as complete systems for high-volume production and assembly testing. <a href="https://www.tek.com/en">Website</a>.
 <br></br>
 <ul>
   <li>Headquarters: Cleveland, Ohio, United States</li>
@@ -19,31 +19,4 @@ Keithley Instruments is a measurement and instrument company headquartered in So
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
 
-
-### Pymeasure
-
-Here is a Python script that uses Pymeasure to connect to a Keithley 2750 Multimeter:
-
-```python
-from pymeasure.adapters import VISAAdapter
-from pymeasure.instruments.keithley import Keithley2750
-
-# Create a VISA adapter for communication
-adapter = VISAAdapter("GPIB0::22::INSTR")
-
-# Create an instance of the Keithley2750 instrument
-multimeter = Keithley2750(adapter)
-
-# Open a connection to the instrument
-multimeter.open()
-
-# Perform measurements or other operations with the instrument
-# For example, to read the list of closed channels:
-closed_channels = multimeter.closed_channels
-
-# Close the connection to the instrument
-multimeter.close()
-```
-
-Note: Make sure to replace `"GPIB0::22::INSTR"` with the appropriate address for your instrument.
 

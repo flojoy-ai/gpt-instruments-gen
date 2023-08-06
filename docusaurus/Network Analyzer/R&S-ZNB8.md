@@ -7,7 +7,7 @@ The R&S ZNB8 from Rohde & Schwarz is a Vector Network Analyzer with Frequency 9 
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>
-Rohde & Schwarz GmbH & Co KG is an international electronics group specializing in the fields of electronic test equipment, broadcast & media, cybersecurity, radiomonitoring and radiolocation, and radiocommunication. <a href=https://www.rohde-schwarz.com/ca/home_48230.html>Website</a>.
+Rohde & Schwarz GmbH & Co KG is an international electronics group specializing in the fields of electronic test equipment, broadcast & media, cybersecurity, radiomonitoring and radiolocation, and radiocommunication. <a href="https://www.rohde-schwarz.com/ca/home_48230.html">Website</a>.
 <br></br>
 <ul>
   <li>Headquarters: Munich, Germany</li>
@@ -19,33 +19,4 @@ Rohde & Schwarz GmbH & Co KG is an international electronics group specializing 
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
 
-
-### Qcodes
-
-To connect to a Rohde & Schwarz ZNB8 Network Analyzer using Qcodes, you can use the following Python script:
-
-```python
-from qcodes.instrument_drivers.rohde_schwarz.ZNB import RohdeSchwarzZNB8
-
-# Create an instance of the RohdeSchwarzZNB8 driver
-znb = RohdeSchwarzZNB8("znb", "TCPIP0::192.168.1.1::inst0::INSTR")
-
-# Connect to the instrument
-znb.connect()
-
-# Now you can use the instrument for measurements
-# For example, you can query the instrument's ID
-print(znb.IDN())
-
-# Close the connection to the instrument
-znb.disconnect()
-```
-
-In this script, we import the `RohdeSchwarzZNB8` class from the `qcodes.instrument_drivers.rohde_schwarz.ZNB` module. We then create an instance of the `RohdeSchwarzZNB8` driver, passing a name for the instrument and the instrument's address (in this case, a TCP/IP address).
-
-Next, we connect to the instrument using the `connect()` method. Once connected, we can use the instrument for measurements. In this example, we query the instrument's ID using the `IDN()` method and print the result.
-
-Finally, we disconnect from the instrument using the `disconnect()` method.
-
-Note: Make sure to replace `"TCPIP0::192.168.1.1::inst0::INSTR"` with the actual address of your Rohde & Schwarz ZNB8 Network Analyzer.
 

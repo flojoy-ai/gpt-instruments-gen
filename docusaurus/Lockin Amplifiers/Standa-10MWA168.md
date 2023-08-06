@@ -7,7 +7,7 @@ Motorized Variable Two Wheels Attenuators 10MWA168 consists of two filter wheels
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>
-Standa has it's own industrial base that includes CNC turning, milling, grinding machines. Standa's design department, while developing standard products presented in Standa's catalogue (such as motorized and manual translation and rotation stages, motion controllers, optical tables, vibration isolation systems, optical mounts and holders, optics, dpss lasers and etc.) also develops the equipment for OEM customers. Some examples of it, after the agreement with OEM customers, are shown on this website. Standa currently has several laser product development laboratories. <a href=https://www.standa.lt/>Website</a>.
+Standa has it's own industrial base that includes CNC turning, milling, grinding machines. Standa's design department, while developing standard products presented in Standa's catalogue (such as motorized and manual translation and rotation stages, motion controllers, optical tables, vibration isolation systems, optical mounts and holders, optics, dpss lasers and etc.) also develops the equipment for OEM customers. Some examples of it, after the agreement with OEM customers, are shown on this website. Standa currently has several laser product development laboratories. <a href="https://www.standa.lt/">Website</a>.
 <br></br>
 <ul>
   <li>Headquarters: Lithuania</li>
@@ -19,40 +19,4 @@ Standa has it's own industrial base that includes CNC turning, milling, grinding
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
 
-
-### Qcodes Community
-
-To connect to a Standa 10MWA168 Lockin Amplifier using Qcodes Community, you can use the following Python script:
-
-```python
-from qcodes import Station
-from qcodes.instrument_drivers.standa.standa_10mwa168 import Standa_10MWA168
-
-# Create a station to hold the instrument
-station = Station()
-
-# Create an instance of the Standa_10MWA168 instrument
-standa = Standa_10MWA168('standa', serial_number='your_serial_number', dll_path='path_to_dll')
-
-# Add the instrument to the station
-station.add_component(standa)
-
-# Connect to the instrument
-standa.connect()
-
-# Now you can use the instrument methods and parameters
-# For example, to get the current position:
-position = standa.position.get()
-print('Current position:', position)
-
-# To set the transmittance:
-standa.transmittance.set(2)  # Set transmittance to 0.9
-
-# Disconnect from the instrument
-standa.disconnect()
-```
-
-Make sure to replace `'your_serial_number'` with the actual serial number of your Standa 10MWA168 Lockin Amplifier, and `'path_to_dll'` with the actual path to the `libximc.dll` file.
-
-Note: The script assumes that you have already installed the necessary dependencies, including Qcodes Community and the Standa instrument driver.
 

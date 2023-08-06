@@ -7,7 +7,7 @@ Kiralux 12.3 MP Monochrome CMOS Camera, Hermetically Sealed Cooled Package, USB 
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>
-Thorlabs, Inc. is an American privately held optical equipment company headquartered in Newton, New Jersey. The company was founded in 1989 by Alex Cable, who serves as its current president and CEO. As of 2018, Thorlabs has annual sales of approximately $500 million. <a href=https://www.thorlabs.com/>Website</a>.
+Thorlabs, Inc. is an American privately held optical equipment company headquartered in Newton, New Jersey. The company was founded in 1989 by Alex Cable, who serves as its current president and CEO. As of 2018, Thorlabs has annual sales of approximately $500 million. <a href="https://www.thorlabs.com/">Website</a>.
 <br></br>
 <ul>
   <li>Headquarters: USA</li>
@@ -19,38 +19,4 @@ Thorlabs, Inc. is an American privately held optical equipment company headquart
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
 
-
-### Instrumental
-
-I'm sorry, but I cannot generate code for connecting to a CC126Mu camera using Instrumental as I do not have access to the Instrumental library. However, I can provide you with an example of how you can use the `TSI_Camera` class from the code you provided to connect to a camera:
-
-```python
-from instrumental import instrument, list_instruments
-
-# List available cameras
-cameras = list_instruments()
-print(cameras)
-
-# Connect to a camera
-camera = instrument(cameras[0])
-
-# Set camera parameters
-camera.exposure_time = 100  # Set exposure time to 100 ms
-camera.width = 640  # Set image width to 640 pixels
-camera.height = 480  # Set image height to 480 pixels
-
-# Start live video
-camera.start_live_video()
-
-# Capture an image
-image = camera.grab_image()
-
-# Stop live video
-camera.stop_live_video()
-
-# Disconnect from the camera
-camera.close()
-```
-
-Please note that you need to have the `instrumental` library installed in order to run this code.
 

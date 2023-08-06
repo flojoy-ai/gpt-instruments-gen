@@ -7,7 +7,7 @@ The Zurich Instruments MFLI is a digital lock-in amplifier that covers the frequ
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>
-Zurich Instruments Ltd. is a privately owned company developing and selling advanced test and measurement instruments equipped with software for dynamic signal analysis. <a href=https://www.zhinst.com/americas/en>Website</a>.
+Zurich Instruments Ltd. is a privately owned company developing and selling advanced test and measurement instruments equipped with software for dynamic signal analysis. <a href="https://www.zhinst.com/americas/en">Website</a>.
 <br></br>
 <ul>
   <li>Headquarters: Switzerland</li>

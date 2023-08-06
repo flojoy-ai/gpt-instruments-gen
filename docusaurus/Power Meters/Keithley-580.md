@@ -9,7 +9,7 @@ The Keithley 580 can test more devices by enabling both test current polarity an
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>
-Keithley Instruments is a measurement and instrument company headquartered in Solon, Ohio, that develops, manufactures, markets, and sells data acquisition products, as well as complete systems for high-volume production and assembly testing. <a href=https://www.tek.com/en>Website</a>.
+Keithley Instruments is a measurement and instrument company headquartered in Solon, Ohio, that develops, manufactures, markets, and sells data acquisition products, as well as complete systems for high-volume production and assembly testing. <a href="https://www.tek.com/en">Website</a>.
 <br></br>
 <ul>
   <li>Headquarters: Cleveland, Ohio, United States</li>
@@ -21,39 +21,4 @@ Keithley Instruments is a measurement and instrument company headquartered in So
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
 
-
-### Instrumentkit
-
-To connect to a Keithley 580 Power Meter using Instrumentkit, you can use the following Python script:
-
-```python
-import instrumentkit as ik
-
-# Connect to the Keithley 580 Power Meter
-keithley = ik.keithley.Keithley580.open_gpibusb('/dev/ttyUSB0', 1)
-
-# Set the polarity to positive
-keithley.polarity = keithley.Polarity.positive
-
-# Set the drive mode to pulsed
-keithley.drive = keithley.Drive.pulsed
-
-# Enable the dry circuit test mode
-keithley.dry_circuit_test = True
-
-# Enable the operate mode
-keithley.operate = True
-
-# Set the input range to auto
-keithley.input_range = "auto"
-
-# Perform a measurement
-measurement = keithley.measure()
-print(f"Resistance: {measurement}")
-
-# Close the connection
-keithley.close()
-```
-
-This script connects to the Keithley 580 Power Meter using the `open_gpibusb` method, sets various properties of the instrument such as polarity, drive mode, dry circuit test mode, operate mode, and input range, performs a measurement using the `measure` method, and then closes the connection using the `close` method. The measured resistance is printed to the console.
 

@@ -7,7 +7,7 @@ The 2602B from Keithley is a 2600B series dual channel system SourceMeter® (SMU
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>
-Keithley Instruments is a measurement and instrument company headquartered in Solon, Ohio, that develops, manufactures, markets, and sells data acquisition products, as well as complete systems for high-volume production and assembly testing. <a href=https://www.tek.com/en>Website</a>.
+Keithley Instruments is a measurement and instrument company headquartered in Solon, Ohio, that develops, manufactures, markets, and sells data acquisition products, as well as complete systems for high-volume production and assembly testing. <a href="https://www.tek.com/en">Website</a>.
 <br></br>
 <ul>
   <li>Headquarters: Cleveland, Ohio, United States</li>
@@ -19,29 +19,4 @@ Keithley Instruments is a measurement and instrument company headquartered in So
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
 
-
-### Qcodes
-
-To connect to a Keithley 2602B Power Supply using Qcodes, you can use the following Python script:
-
-```python
-from qcodes.instrument_drivers.tektronix.Keithley_2600 import Keithley2602B
-
-# Create an instance of the Keithley2602B instrument
-keithley = Keithley2602B('keithley', 'TCPIP::192.168.1.1::INSTR')
-
-# Connect to the instrument
-keithley.connect()
-
-# Perform operations with the instrument
-
-# Disconnect from the instrument
-keithley.disconnect()
-```
-
-In this script, we import the `Keithley2602B` class from the `qcodes.instrument_drivers.tektronix.Keithley_2600` module. We then create an instance of the `Keithley2602B` instrument, providing a name for the instrument ('keithley') and the connection string ('TCPIP::192.168.1.1::INSTR').
-
-Next, we connect to the instrument using the `connect()` method. You can perform various operations with the instrument, such as setting voltage or current, measuring voltage or current, etc.
-
-Finally, we disconnect from the instrument using the `disconnect()` method.
 

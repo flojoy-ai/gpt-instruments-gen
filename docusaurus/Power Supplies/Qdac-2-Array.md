@@ -7,7 +7,7 @@ QDAC-II is the next generation of the successful QDAC from QDevil. It has all th
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>
-Founded in 2016, QDevil is an international quantum technology company focused on developing and manufacturing auxiliary electronics and specialized components, operating from mK to room temperature. The mission is to accelerate research and development in quantum electronics labs. To fulfill the mission QDevil helps customers around the world by supplying world-class auxiliary electronics. <a href=https://qdevil.com/>Website</a>.
+Founded in 2016, QDevil is an international quantum technology company focused on developing and manufacturing auxiliary electronics and specialized components, operating from mK to room temperature. The mission is to accelerate research and development in quantum electronics labs. To fulfill the mission QDevil helps customers around the world by supplying world-class auxiliary electronics. <a href="https://qdevil.com/">Website</a>.
 <br></br>
 <ul>
   <li>Headquarters: COPENHAGEN, DENMARK</li>
@@ -19,26 +19,4 @@ Founded in 2016, QDevil is an international quantum technology company focused o
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
 
-
-### Qcodes Community
-
-To connect to a Qdac 2 Array Power Supplies using Qcodes Community, you can use the following code:
-
-```python
-from qcodes.instrument_drivers.QDevil.QDAC2 import QDac2_Array
-
-# Create an instance of the QDac2_Array driver
-qdac_array = QDac2_Array(controller, listeners)
-
-# Connect to the Qdac 2 Array Power Supplies
-qdac_array.sync()
-
-# Perform operations on the Qdac 2 Array Power Supplies
-# ...
-
-# Close the connection to the Qdac 2 Array Power Supplies
-qdac_array.close()
-```
-
-In the code above, you need to replace `controller` and `listeners` with the actual instances of the QDac2 instruments that you want to connect to. The `sync()` method is used to synchronize the array of QDac2 instruments. You can then perform various operations on the Qdac 2 Array Power Supplies using the `qdac_array` object. Finally, you can close the connection using the `close()` method.
 

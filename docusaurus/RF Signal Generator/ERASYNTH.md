@@ -8,7 +8,7 @@ ERASynth removes the cost barriers and makes quality RF signal synthesis accessi
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>
-**ERA Instruments** is a startup technology company based in Istanbul, Turkey. With its young and dynamic engineering team, ERA specializes in: RF Signal Generators. <a href=https://erainstruments.com/#home>Website</a>.
+**ERA Instruments** is a startup technology company based in Istanbul, Turkey. With its young and dynamic engineering team, ERA specializes in: RF Signal Generators. <a href="https://erainstruments.com/#home">Website</a>.
 <br></br>
 <ul>
   <li>Headquarters: Turkey</li>
@@ -21,31 +21,4 @@ ERASynth removes the cost barriers and makes quality RF signal synthesis accessi
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
 
-
-### Qcodes Community
-
-
-```python
-from qcodes_contrib_drivers.drivers.ERAInstruments import ERASynth
-
-# Connect to the ERASynth signal generator
-lo = ERASynth("ERASynth", 'ASRL/dev/cu.usbmodem14101::INSTR')
-
-# Turn off the output
-lo.off()
-
-# Print updated snapshot once to make sure the snapshot will be up-to-date
-# This may take a few seconds
-lo.print_readable_snapshot(update=True)
-
-# Configure the local oscillator
-lo.ref_osc_source("int")  # Use internal reference
-lo.frequency(4.7e9)
-lo.power(10)  # Set the amplitude to 10 dBm
-lo.on()  # Turn on the output
-```
-
-This script connects to the ERASynth signal generator using the specified address (`ASRL/dev/cu.usbmodem14101::INSTR`). It then turns off the RF output, prints the updated snapshot of the instrument, configures the local oscillator to use the internal reference, sets the frequency to 4.7 GHz, sets the power to 10 dBm, and finally turns on the output.
-
-Note: Make sure to replace `'ASRL/dev/cu.usbmodem14101::INSTR'` with the actual address of your ERASynth signal generator.
 

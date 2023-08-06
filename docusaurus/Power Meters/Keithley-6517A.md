@@ -7,7 +7,7 @@ The Keithley 6517A 5 1/2 digit Electrometer / High Resistance Meter offers extre
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>
-Keithley Instruments is a measurement and instrument company headquartered in Solon, Ohio, that develops, manufactures, markets, and sells data acquisition products, as well as complete systems for high-volume production and assembly testing. <a href=https://www.tek.com/en>Website</a>.
+Keithley Instruments is a measurement and instrument company headquartered in Solon, Ohio, that develops, manufactures, markets, and sells data acquisition products, as well as complete systems for high-volume production and assembly testing. <a href="https://www.tek.com/en">Website</a>.
 <br></br>
 <ul>
   <li>Headquarters: Cleveland, Ohio, United States</li>
@@ -19,44 +19,4 @@ Keithley Instruments is a measurement and instrument company headquartered in So
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
 
-
-### Pymeasure
-
-
-```python
-from pymeasure.adapters import VISAAdapter
-from pymeasure.instruments.keithley import Keithley6517B
-
-# Create a VISA adapter for the instrument
-adapter = VISAAdapter("GPIB::1")
-
-# Connect to the Keithley 6517A Power Meter
-keithley = Keithley6517B(adapter)
-
-# Enable the source output
-keithley.enable_source()
-
-# Set the source voltage range to 200 V
-keithley.source_voltage_range = 200
-
-# Set the source voltage to 20 V
-keithley.source_voltage = 20
-
-# Set up to measure resistance
-keithley.measure_resistance()
-
-# Ramp the voltage to 50 V
-keithley.ramp_to_voltage(50)
-
-# Print the measured resistance in Ohms
-print(keithley.resistance)
-
-# Ramp the voltage to 0 V and disable the output
-keithley.shutdown()
-
-# Disconnect from the instrument
-keithley.disconnect()
-```
-
-This script connects to the Keithley 6517A Power Meter using a VISA adapter and creates an instance of the `Keithley6517B` class. It then enables the source output, sets the source voltage range and voltage, and configures the instrument to measure resistance. It ramps the voltage to 50 V and prints the measured resistance. Finally, it ramps the voltage to 0 V and disables the output before disconnecting from the instrument.
 

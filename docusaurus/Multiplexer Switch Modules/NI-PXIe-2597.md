@@ -7,7 +7,7 @@
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>
-A producer of automated test equipment and virtual instrumentation software. Common applications include data acquisition, instrument control and machine vision. <a href=https://www.ni.com/en-ca.html>Website</a>.
+A producer of automated test equipment and virtual instrumentation software. Common applications include data acquisition, instrument control and machine vision. <a href="https://www.ni.com/en-ca.html">Website</a>.
 <br></br>
 <ul>
   <li>Headquarters: Austin, Texas, USA</li>
@@ -19,40 +19,4 @@ A producer of automated test equipment and virtual instrumentation software. Com
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
 
-
-### Qcodes Community
-
-To connect to a NI PXIe-2597 Multiplexer Switch Module using Qcodes Community, you can use the following Python script:
-
-```python
-from qcodes import Station
-from qcodes.instrument_drivers.ni.NI_PXIe_2597 import NI_PXIe_2597
-
-# Create a station to hold the instrument
-station = Station()
-
-# Connect to the NI PXIe-2597 switch module
-switch = NI_PXIe_2597('switch', 'PXI1Slot2', reset_device=True)
-
-# Add the switch to the station
-station.add_component(switch)
-
-# Print the available channels
-print("Available channels:", switch.channel.vals)
-
-# Set the active channel to 'ch1'
-switch.channel('ch1')
-
-# Get the active channel
-active_channel = switch.channel()
-print("Active channel:", active_channel)
-```
-
-This script creates a `Station` object to hold the instrument and then connects to the NI PXIe-2597 switch module using the `NI_PXIe_2597` driver. The `reset_device` argument is set to `True` to reset the device on initialization.
-
-The script adds the switch to the station using the `add_component` method. It then prints the available channels using the `vals` attribute of the `channel` parameter.
-
-The active channel is set to 'ch1' using the `channel` parameter as a function. The active channel is retrieved using the `channel` parameter as a function without any arguments.
-
-Note: Make sure to replace `'PXI1Slot2'` with the appropriate resource address for your specific setup.
 

@@ -7,7 +7,7 @@ The Keithley 195A Digital Multimeter is a fully programmable instrument with a 5
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>
-Keithley Instruments is a measurement and instrument company headquartered in Solon, Ohio, that develops, manufactures, markets, and sells data acquisition products, as well as complete systems for high-volume production and assembly testing. <a href=https://www.tek.com/en>Website</a>.
+Keithley Instruments is a measurement and instrument company headquartered in Solon, Ohio, that develops, manufactures, markets, and sells data acquisition products, as well as complete systems for high-volume production and assembly testing. <a href="https://www.tek.com/en">Website</a>.
 <br></br>
 <ul>
   <li>Headquarters: Cleveland, Ohio, United States</li>
@@ -19,27 +19,4 @@ Keithley Instruments is a measurement and instrument company headquartered in So
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
 
-
-### Instrumentkit
-
-To connect to a Keithley 195 Multimeter using Instrumentkit, you can use the following code:
-
-```python
-import instrumentkit as ik
-
-# Connect to the Keithley 195 Multimeter
-dmm = ik.keithley.Keithley195.open_gpibusb('/dev/ttyUSB0', 12)
-
-# Perform a measurement
-measurement = dmm.measure(dmm.Mode.resistance)
-
-# Print the measurement result
-print(measurement)
-```
-
-This code imports the `instrumentkit` module and uses the `open_gpibusb` method from the `ik.keithley.Keithley195` class to connect to the Keithley 195 Multimeter. The `open_gpibusb` method takes the device path (`'/dev/ttyUSB0'`) and the GPIB address (`12`) as arguments.
-
-After connecting, you can use the `measure` method to perform a measurement. In this example, the measurement mode is set to resistance (`dmm.Mode.resistance`), but you can change it to other modes like voltage_dc or current_dc.
-
-Finally, the measurement result is printed to the console.
 
