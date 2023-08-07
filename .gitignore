@@ -1,5 +1,5 @@
 *.zip
 .ipynb_checkpoints
 .DS_STORE
-.venv
+venv
 __pycache__
