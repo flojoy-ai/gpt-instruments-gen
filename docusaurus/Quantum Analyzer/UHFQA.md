@@ -3,8 +3,19 @@
 
 ## Instrument Card
 
-<img src="https://v5.airtableusercontent.com/v1/19/19/1691539200000/fGYedkuCjZ6b_vtLqcp8RA/s3Ogwn3uGgB0aTGikYsgwrebNFQ6JXOW4i697ihvjj-ihfdK_pKt-pdiRX8Z-ZYFOmCqk_ECfq_9aGDy78zy6hVUgulqRBadvmgcfc2SYjUZ0BOnTyyOzYeE1P5Z1ztp/YkNUWMNlSAmOquw-4B9Ev7pfcxrSVWZSyo4euQWaRXk"/>
-<p>The Zurich Instruments UHFQA Quantum Analyzer is a unique instrument for parallel readout of up to 10 superconducting or spin qubits with highest speed and fidelity. The UHFQA operates on a frequency span of up to ±600 MHz with nanosecond timing resolution, and it features 2 signal inputs and outputs for IQ base-band operation. Thanks to its low-latency signal processing chain of matched filters, real-time matrix operations, and state discrimination, the UHFQA supports the development of ambitious quantum computing projects for 100 qubits and more.</p>
+<div className="flex">
+
+<div>
+
+The Zurich Instruments UHFQA Quantum Analyzer is a unique instrument for parallel readout of up to 10 superconducting or spin qubits with highest speed and fidelity. The UHFQA operates on a frequency span of up to ±600 MHz with nanosecond timing resolution, and it features 2 signal inputs and outputs for IQ base-band operation. Thanks to its low-latency signal processing chain of matched filters, real-time matrix operations, and state discrimination, the UHFQA supports the development of ambitious quantum computing projects for 100 qubits and more.
+
+</div>
+
+<img width="256" src="https://v5.airtableusercontent.com/v1/19/19/1691539200000/fGYedkuCjZ6b_vtLqcp8RA/s3Ogwn3uGgB0aTGikYsgwrebNFQ6JXOW4i697ihvjj-ihfdK_pKt-pdiRX8Z-ZYFOmCqk_ECfq_9aGDy78zy6hVUgulqRBadvmgcfc2SYjUZ0BOnTyyOzYeE1P5Z1ztp/YkNUWMNlSAmOquw-4B9Ev7pfcxrSVWZSyo4euQWaRXk"/>
+
+</div>
+
+The Zurich Instruments UHFQA Quantum Analyzer is a unique instrument for parallel readout of up to 10 superconducting or spin qubits with highest speed and fidelity. The UHFQA operates on a frequency span of up to ±600 MHz with nanosecond timing resolution, and it features 2 signal inputs and outputs for IQ base-band operation. Thanks to its low-latency signal processing chain of matched filters, real-time matrix operations, and state discrimination, the UHFQA supports the development of ambitious quantum computing projects for 100 qubits and more.>
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>

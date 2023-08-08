@@ -3,8 +3,19 @@
 
 ## Instrument Card
 
-<img src="https://v5.airtableusercontent.com/v1/19/19/1691539200000/fk9GcQKAP8afi0w03TSpIA/D1F26Bntfi8Xm-4mX-mnq3VxiAThqqJFGCxCM_yOrC8WVkw573bJV_se41-8-nW40DK9slx30I9jAaLmToCrc02hKfrVGu8H_E3fYTXLnC0/qu1eS-_qV3c8pCv-fWG8iQIqe-b_wi5UBnIiCUiffLA"/>
-<p>The LDA-602Q Lab Brick USB programmable 50 Ohm high resolution digital attenuator has an input power of up to +28 dBm, and offers frequency coverage of 200 to 6,000 MHz. It has an attenuation range of 120 dB and a step size of 0.1 dB. The unit is powered and controlled by USB connection to a PC or self-powered hub, and is programmable for fixed attenuation or swept attenuation ramps directly from the included graphical user interface (GUI) software.</p>
+<div className="flex">
+
+<div>
+
+The LDA-602Q Lab Brick USB programmable 50 Ohm high resolution digital attenuator has an input power of up to +28 dBm, and offers frequency coverage of 200 to 6,000 MHz. It has an attenuation range of 120 dB and a step size of 0.1 dB. The unit is powered and controlled by USB connection to a PC or self-powered hub, and is programmable for fixed attenuation or swept attenuation ramps directly from the included graphical user interface (GUI) software.
+
+</div>
+
+<img width="256" src="https://v5.airtableusercontent.com/v1/19/19/1691539200000/fk9GcQKAP8afi0w03TSpIA/D1F26Bntfi8Xm-4mX-mnq3VxiAThqqJFGCxCM_yOrC8WVkw573bJV_se41-8-nW40DK9slx30I9jAaLmToCrc02hKfrVGu8H_E3fYTXLnC0/qu1eS-_qV3c8pCv-fWG8iQIqe-b_wi5UBnIiCUiffLA"/>
+
+</div>
+
+The LDA-602Q Lab Brick USB programmable 50 Ohm high resolution digital attenuator has an input power of up to +28 dBm, and offers frequency coverage of 200 to 6,000 MHz. It has an attenuation range of 120 dB and a step size of 0.1 dB. The unit is powered and controlled by USB connection to a PC or self-powered hub, and is programmable for fixed attenuation or swept attenuation ramps directly from the included graphical user interface (GUI) software.>
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>

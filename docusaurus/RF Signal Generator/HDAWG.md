@@ -3,8 +3,19 @@
 
 ## Instrument Card
 
-<img src="https://v5.airtableusercontent.com/v1/19/19/1691539200000/7k12-tiQDHeKvUEhpflLQg/NTjB1IAp2vr2nKAzTPmGJu0qgre2522uo89KT-rPTS8pXClNt1Q5mSDVgonllf4SUIVYQ00w-A2DOmj0VNo_RUvu1gOhPrudAuwJqt_J5Vea_XC32oPyIs9R8B-v36pm/djSOkai7Maaoz-84ITDZbcbjIkl_4PmOqGnTR0lmJ5g"/>
-<p>The Zurich Instruments HDAWG multi-channel Arbitrary Waveform Generator has one of the highest channel densities available in its class and is designed for advanced signal generation up to 750 MHz bandwidth. The HDAWG comes with either 4 or 8 DC-coupled, single-ended analog output channels with 16-bit vertical resolution.</p>
+<div className="flex">
+
+<div>
+
+The Zurich Instruments HDAWG multi-channel Arbitrary Waveform Generator has one of the highest channel densities available in its class and is designed for advanced signal generation up to 750 MHz bandwidth. The HDAWG comes with either 4 or 8 DC-coupled, single-ended analog output channels with 16-bit vertical resolution.
+
+</div>
+
+<img width="256" src="https://v5.airtableusercontent.com/v1/19/19/1691539200000/7k12-tiQDHeKvUEhpflLQg/NTjB1IAp2vr2nKAzTPmGJu0qgre2522uo89KT-rPTS8pXClNt1Q5mSDVgonllf4SUIVYQ00w-A2DOmj0VNo_RUvu1gOhPrudAuwJqt_J5Vea_XC32oPyIs9R8B-v36pm/djSOkai7Maaoz-84ITDZbcbjIkl_4PmOqGnTR0lmJ5g"/>
+
+</div>
+
+The Zurich Instruments HDAWG multi-channel Arbitrary Waveform Generator has one of the highest channel densities available in its class and is designed for advanced signal generation up to 750 MHz bandwidth. The HDAWG comes with either 4 or 8 DC-coupled, single-ended analog output channels with 16-bit vertical resolution.>
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>

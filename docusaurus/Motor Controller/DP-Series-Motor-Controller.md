@@ -3,8 +3,19 @@
 
 ## Instrument Card
 
-<img src="nan"/>
-<p>Anaheim Automation manufactures a variety of Stepper Motor Driver Packs with Programmable Controllers. The DPC50501 contains a single-axis bipolar microstep driver with an output capacity of 0.5 to 5 Amps, and incorporates a simple 18-command programmable controller, with a power supply in an enclosure. Models DPY50601 and DPY50611 each contain a single-axis bipolar microstep driver with an output capacity of 0.5 to 5 Amps, and a 40-command programmable controller, packaged with a power supply in an enclosure. The DPD75601 contains a single-axis bilevel driver with an output capacity of 1 to 7 Amps, and a 40-command programmable controller, with a power supply packaged in an enclosure.</p>
+<div className="flex">
+
+<div>
+
+Anaheim Automation manufactures a variety of Stepper Motor Driver Packs with Programmable Controllers. The DPC50501 contains a single-axis bipolar microstep driver with an output capacity of 0.5 to 5 Amps, and incorporates a simple 18-command programmable controller, with a power supply in an enclosure. Models DPY50601 and DPY50611 each contain a single-axis bipolar microstep driver with an output capacity of 0.5 to 5 Amps, and a 40-command programmable controller, packaged with a power supply in an enclosure. The DPD75601 contains a single-axis bilevel driver with an output capacity of 1 to 7 Amps, and a 40-command programmable controller, with a power supply packaged in an enclosure.
+
+</div>
+
+<img width="256" src="nan"/>
+
+</div>
+
+Anaheim Automation manufactures a variety of Stepper Motor Driver Packs with Programmable Controllers. The DPC50501 contains a single-axis bipolar microstep driver with an output capacity of 0.5 to 5 Amps, and incorporates a simple 18-command programmable controller, with a power supply in an enclosure. Models DPY50601 and DPY50611 each contain a single-axis bipolar microstep driver with an output capacity of 0.5 to 5 Amps, and a 40-command programmable controller, packaged with a power supply in an enclosure. The DPD75601 contains a single-axis bilevel driver with an output capacity of 1 to 7 Amps, and a 40-command programmable controller, with a power supply packaged in an enclosure.>
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>

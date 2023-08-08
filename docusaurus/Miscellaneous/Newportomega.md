@@ -3,8 +3,19 @@
 
 ## Instrument Card
 
-<img src="nan"/>
-<p>Device Server To Show The Omega Strain Gage From Newport, In A Tango System.</p>
+<div className="flex">
+
+<div>
+
+Device Server To Show The Omega Strain Gage From Newport, In A Tango System.
+
+</div>
+
+<img width="256" src="nan"/>
+
+</div>
+
+Device Server To Show The Omega Strain Gage From Newport, In A Tango System.>
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>

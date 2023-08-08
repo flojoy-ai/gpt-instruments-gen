@@ -3,8 +3,19 @@
 
 ## Instrument Card
 
-<img src="https://v5.airtableusercontent.com/v1/19/19/1691539200000/FV0MVGRCz-rsH8eCBewCDQ/uFhley4Iha0X8m7W6uyOhABf4kl-yy3zxF1-q-8mpLc_tKrfckmMbwSdaIVz4BqXQce-R3vvrFpj3Tsi93-UVyuE13VxadwfNJhwUFmbeTg/l6lArfshQ4JwmvIfMyVYeLgLki43oMmq__UBtt51_6Y"/>
-<p>The LDA-906V Digital Attenuator is a highly accurate, bidirectional, 50 Ohm step attenuator. The LDA-906V provides calibrated attenuation from 200 to 6000 MHz with an amazing step size of 0.1 dB and typical accuracy <0.25 dB over 90 dB of control range. The attenuators are easily programmable for fixed attenuation, swept attenuation ramps and fading profiles directly from the included Graphical User Interface (GUI). Alternatively, for users wishing to develop their own interface, Vaunix supplies LabVIEW drivers, Windows API DLL files, Linux drivers, Python examples and much more.</p>
+<div className="flex">
+
+<div>
+
+The LDA-906V Digital Attenuator is a highly accurate, bidirectional, 50 Ohm step attenuator. The LDA-906V provides calibrated attenuation from 200 to 6000 MHz with an amazing step size of 0.1 dB and typical accuracy <0.25 dB over 90 dB of control range. The attenuators are easily programmable for fixed attenuation, swept attenuation ramps and fading profiles directly from the included Graphical User Interface (GUI). Alternatively, for users wishing to develop their own interface, Vaunix supplies LabVIEW drivers, Windows API DLL files, Linux drivers, Python examples and much more.
+
+</div>
+
+<img width="256" src="https://v5.airtableusercontent.com/v1/19/19/1691539200000/FV0MVGRCz-rsH8eCBewCDQ/uFhley4Iha0X8m7W6uyOhABf4kl-yy3zxF1-q-8mpLc_tKrfckmMbwSdaIVz4BqXQce-R3vvrFpj3Tsi93-UVyuE13VxadwfNJhwUFmbeTg/l6lArfshQ4JwmvIfMyVYeLgLki43oMmq__UBtt51_6Y"/>
+
+</div>
+
+The LDA-906V Digital Attenuator is a highly accurate, bidirectional, 50 Ohm step attenuator. The LDA-906V provides calibrated attenuation from 200 to 6000 MHz with an amazing step size of 0.1 dB and typical accuracy <0.25 dB over 90 dB of control range. The attenuators are easily programmable for fixed attenuation, swept attenuation ramps and fading profiles directly from the included Graphical User Interface (GUI). Alternatively, for users wishing to develop their own interface, Vaunix supplies LabVIEW drivers, Windows API DLL files, Linux drivers, Python examples and much more.>
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>

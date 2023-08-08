@@ -3,8 +3,19 @@
 
 ## Instrument Card
 
-<img src="https://v5.airtableusercontent.com/v1/19/19/1691539200000/GF32RfcgSJuXy9C_wvKA1Q/fV9OV0Tlc8CO2xMnTUK3eVjPF5VJ3XsO9BL1iubZ0WYiv_TJKMSqkErqn8fpzPLSRA6yT0k1KvX0JjQ89aYaF1GjNRTkkpKkvsc-pOzxBWo/fBfRgjoh5EmX0U2XY-vmfVRoG7JQhVg3YkG2nFyd8h4"/>
-<p>Spectrum Control's Weinschel brand Model 8320 Series Multi-channel Programmable Attenuator systems allow for multiple attenuator channels to be controlled across a variety of interfaces, or via a front panel.</p>
+<div className="flex">
+
+<div>
+
+Spectrum Control's Weinschel brand Model 8320 Series Multi-channel Programmable Attenuator systems allow for multiple attenuator channels to be controlled across a variety of interfaces, or via a front panel.
+
+</div>
+
+<img width="256" src="https://v5.airtableusercontent.com/v1/19/19/1691539200000/GF32RfcgSJuXy9C_wvKA1Q/fV9OV0Tlc8CO2xMnTUK3eVjPF5VJ3XsO9BL1iubZ0WYiv_TJKMSqkErqn8fpzPLSRA6yT0k1KvX0JjQ89aYaF1GjNRTkkpKkvsc-pOzxBWo/fBfRgjoh5EmX0U2XY-vmfVRoG7JQhVg3YkG2nFyd8h4"/>
+
+</div>
+
+Spectrum Control's Weinschel brand Model 8320 Series Multi-channel Programmable Attenuator systems allow for multiple attenuator channels to be controlled across a variety of interfaces, or via a front panel.>
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>

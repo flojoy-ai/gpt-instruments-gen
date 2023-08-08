@@ -3,8 +3,19 @@
 
 ## Instrument Card
 
-<img src="https://v5.airtableusercontent.com/v1/19/19/1691539200000/UPnQpTP0MIDdOJhCrcI8_Q/Goy-bRlxP4vn8HHXVEjBrGgQhM1q6Q4teDFHTEhrSq-Gt47pdRbKX0PsaoMPlCQ_pAk7Q8oZOCZw1FttkiDQu8pFsoB4nDj2VqT4WkG0wFr8n01e1HZA0m5kDYml_is5/gHeYilMA7rsZSF0HmzCCP8OpG3vpOe4_M4i3_K02hjY"/>
-<p>The LDA-802EH Digital Attenuator is a high dynamic range, bidirectional, 50 Ohm step attenuator. The LDA-802EH provides 120 dB of attenuation control range from 200 to 8000 MHz with a step size of 0.1 dB. The attenuators are easily programmable for fixed attenuation, swept attenuation ramps and fading profiles directly from the included Graphical User Interface (GUI). Alternatively, for users wishing to develop their own interface, Vaunix supplies LabVIEW drivers, Windows API DLL files, Linux drivers, Python examples and much more.</p>
+<div className="flex">
+
+<div>
+
+The LDA-802EH Digital Attenuator is a high dynamic range, bidirectional, 50 Ohm step attenuator. The LDA-802EH provides 120 dB of attenuation control range from 200 to 8000 MHz with a step size of 0.1 dB. The attenuators are easily programmable for fixed attenuation, swept attenuation ramps and fading profiles directly from the included Graphical User Interface (GUI). Alternatively, for users wishing to develop their own interface, Vaunix supplies LabVIEW drivers, Windows API DLL files, Linux drivers, Python examples and much more.
+
+</div>
+
+<img width="256" src="https://v5.airtableusercontent.com/v1/19/19/1691539200000/UPnQpTP0MIDdOJhCrcI8_Q/Goy-bRlxP4vn8HHXVEjBrGgQhM1q6Q4teDFHTEhrSq-Gt47pdRbKX0PsaoMPlCQ_pAk7Q8oZOCZw1FttkiDQu8pFsoB4nDj2VqT4WkG0wFr8n01e1HZA0m5kDYml_is5/gHeYilMA7rsZSF0HmzCCP8OpG3vpOe4_M4i3_K02hjY"/>
+
+</div>
+
+The LDA-802EH Digital Attenuator is a high dynamic range, bidirectional, 50 Ohm step attenuator. The LDA-802EH provides 120 dB of attenuation control range from 200 to 8000 MHz with a step size of 0.1 dB. The attenuators are easily programmable for fixed attenuation, swept attenuation ramps and fading profiles directly from the included Graphical User Interface (GUI). Alternatively, for users wishing to develop their own interface, Vaunix supplies LabVIEW drivers, Windows API DLL files, Linux drivers, Python examples and much more.>
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>

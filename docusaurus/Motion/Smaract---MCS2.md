@@ -3,10 +3,23 @@
 
 ## Instrument Card
 
-<img src="https://v5.airtableusercontent.com/v1/19/19/1691539200000/ikTGxRbn37ZQV2QI-Ep21w/pPu_fK5GCZjlrOP0Dvp_nK_1Tvh6WOQ1WGl9MTOqsY3OKeLbNjSQO_cxWQuOYaceGClWcOxkAqCe4TcdERRkbtSHOjjyLxIaAWVXoJS2bNs/dI5_aY9KloBFvMfmAcB_qzILot8A4COjp7QdPXsnRSw"/>
-<p>The MCS2 is SmarAct’s most versatile and modular control system.
+<div className="flex">
 
-Its stringent modular design approach makes it the perfect choice for all field of applications</p>
+<div>
+
+The MCS2 is SmarAct’s most versatile and modular control system.
+
+Its stringent modular design approach makes it the perfect choice for all field of applications
+
+</div>
+
+<img width="256" src="https://v5.airtableusercontent.com/v1/19/19/1691539200000/ikTGxRbn37ZQV2QI-Ep21w/pPu_fK5GCZjlrOP0Dvp_nK_1Tvh6WOQ1WGl9MTOqsY3OKeLbNjSQO_cxWQuOYaceGClWcOxkAqCe4TcdERRkbtSHOjjyLxIaAWVXoJS2bNs/dI5_aY9KloBFvMfmAcB_qzILot8A4COjp7QdPXsnRSw"/>
+
+</div>
+
+The MCS2 is SmarAct’s most versatile and modular control system.
+
+Its stringent modular design approach makes it the perfect choice for all field of applications>
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>

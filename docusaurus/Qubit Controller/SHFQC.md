@@ -3,8 +3,19 @@
 
 ## Instrument Card
 
-<img src="https://v5.airtableusercontent.com/v1/19/19/1691539200000/SMHzbpI4__ex949zrz-Dbg/3vLrwi4R70ocE6yJM2AuWq9T2BMVp8dRwP_WDymWY8JeZ3059-M5bVUie3C6E467Aak7j438b8Wc4EKfhbzxNCoEH8MlzKpV8j5mf1JOPEF-6KsvRQ3XBKQEDsm7bmUk/xOAcSEn2iIKipetfZ0hgOEGmSfgUXl241Kh98bElvP4"/>
-<p>The SHFQC Qubit Controller can control, read out and provide fast feedback on up to 6 superconducting qubits. It integrates the functionality of the SHFQA Quantum Analyzer, the SHFSG Signal Generator and more in a single instrument.</p>
+<div className="flex">
+
+<div>
+
+The SHFQC Qubit Controller can control, read out and provide fast feedback on up to 6 superconducting qubits. It integrates the functionality of the SHFQA Quantum Analyzer, the SHFSG Signal Generator and more in a single instrument.
+
+</div>
+
+<img width="256" src="https://v5.airtableusercontent.com/v1/19/19/1691539200000/SMHzbpI4__ex949zrz-Dbg/3vLrwi4R70ocE6yJM2AuWq9T2BMVp8dRwP_WDymWY8JeZ3059-M5bVUie3C6E467Aak7j438b8Wc4EKfhbzxNCoEH8MlzKpV8j5mf1JOPEF-6KsvRQ3XBKQEDsm7bmUk/xOAcSEn2iIKipetfZ0hgOEGmSfgUXl241Kh98bElvP4"/>
+
+</div>
+
+The SHFQC Qubit Controller can control, read out and provide fast feedback on up to 6 superconducting qubits. It integrates the functionality of the SHFQA Quantum Analyzer, the SHFSG Signal Generator and more in a single instrument.>
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>

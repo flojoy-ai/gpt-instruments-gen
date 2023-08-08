@@ -3,8 +3,19 @@
 
 ## Instrument Card
 
-<img src="nan"/>
-<p>Instrument class to communicate with Mettler Toledo balances using the MT-SICS Standared Interface Command Set.</p>
+<div className="flex">
+
+<div>
+
+Instrument class to communicate with Mettler Toledo balances using the MT-SICS Standared Interface Command Set.
+
+</div>
+
+<img width="256" src="nan"/>
+
+</div>
+
+Instrument class to communicate with Mettler Toledo balances using the MT-SICS Standared Interface Command Set.>
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>

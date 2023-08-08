@@ -3,8 +3,19 @@
 
 ## Instrument Card
 
-<img src="nan"/>
-<p>All SCPI Instrument</p>
+<div className="flex">
+
+<div>
+
+All SCPI Instrument
+
+</div>
+
+<img width="256" src="nan"/>
+
+</div>
+
+All SCPI Instrument>
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>

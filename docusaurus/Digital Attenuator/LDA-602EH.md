@@ -3,8 +3,19 @@
 
 ## Instrument Card
 
-<img src="https://v5.airtableusercontent.com/v1/19/19/1691539200000/UPnQpTP0MIDdOJhCrcI8_Q/Goy-bRlxP4vn8HHXVEjBrGgQhM1q6Q4teDFHTEhrSq-Gt47pdRbKX0PsaoMPlCQ_pAk7Q8oZOCZw1FttkiDQu8pFsoB4nDj2VqT4WkG0wFr8n01e1HZA0m5kDYml_is5/gHeYilMA7rsZSF0HmzCCP8OpG3vpOe4_M4i3_K02hjY"/>
-<p>The LDA-602EH Lab Brick USB programmable 50 Ohm high resolution digital attenuator has an input power of up to +28 dBm, and offers frequency coverage of 200 to 6,000 MHz. It has an attenuation range of 120 dB and a step size of 0.1 dB. The unit is powered and controlled by USB connection to a PC or self-powered hub, and is programmable for fixed attenuation or swept attenuation ramps directly from the included graphical user interface (GUI) software.</p>
+<div className="flex">
+
+<div>
+
+The LDA-602EH Lab Brick USB programmable 50 Ohm high resolution digital attenuator has an input power of up to +28 dBm, and offers frequency coverage of 200 to 6,000 MHz. It has an attenuation range of 120 dB and a step size of 0.1 dB. The unit is powered and controlled by USB connection to a PC or self-powered hub, and is programmable for fixed attenuation or swept attenuation ramps directly from the included graphical user interface (GUI) software.
+
+</div>
+
+<img width="256" src="https://v5.airtableusercontent.com/v1/19/19/1691539200000/UPnQpTP0MIDdOJhCrcI8_Q/Goy-bRlxP4vn8HHXVEjBrGgQhM1q6Q4teDFHTEhrSq-Gt47pdRbKX0PsaoMPlCQ_pAk7Q8oZOCZw1FttkiDQu8pFsoB4nDj2VqT4WkG0wFr8n01e1HZA0m5kDYml_is5/gHeYilMA7rsZSF0HmzCCP8OpG3vpOe4_M4i3_K02hjY"/>
+
+</div>
+
+The LDA-602EH Lab Brick USB programmable 50 Ohm high resolution digital attenuator has an input power of up to +28 dBm, and offers frequency coverage of 200 to 6,000 MHz. It has an attenuation range of 120 dB and a step size of 0.1 dB. The unit is powered and controlled by USB connection to a PC or self-powered hub, and is programmable for fixed attenuation or swept attenuation ramps directly from the included graphical user interface (GUI) software.>
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>
