@@ -3,7 +3,8 @@
 
 ## Instrument Card
 
-Keithley’s Standard Series 2400 Source Measure Unit (SMU) Instruments offer four-quadrant precision voltage and current source/load coupled with measurement. Each SMU instrument is both a highly stable DC power source and a true instrument-grade 6½-digit multimeter. The power source characteristics include low noise, precision, and readback. The multimeter capabilities include high repeatability and low noise.
+<img src="https://v5.airtableusercontent.com/v1/19/19/1691539200000/zwg4Sp_aHv09CcrQd7D8ow/tG8pYla7craEzbOcxeor-5tOmnhTpu42RgNx_sSCQxCzgqH-0K3IEb-DMdJmgg_RqTKVLCcsf-853-KAh5Zpi-gkai2dc_fh9dz_mVDb2Mg/8iPZYTrQKCGHHMW-yNUwEOnPUiUnL_fvOBm31qrSfTU"/>
+<p>Keithley’s Standard Series 2400 Source Measure Unit (SMU) Instruments offer four-quadrant precision voltage and current source/load coupled with measurement. Each SMU instrument is both a highly stable DC power source and a true instrument-grade 6½-digit multimeter. The power source characteristics include low noise, precision, and readback. The multimeter capabilities include high repeatability and low noise.</p>
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>

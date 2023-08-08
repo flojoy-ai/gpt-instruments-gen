@@ -3,8 +3,9 @@
 
 ## Instrument Card
 
-Keysight 86100A
-Infiniium DCA Wide-Bandwidth Oscilloscope / up to 50 GHz
+<img src="https://v5.airtableusercontent.com/v1/19/19/1691539200000/UPegMydQrwXr8GT7TwLP6g/FKAkMkEdUi06IvXA6aFxn26431-zXgO0QmmgnSECSGeUgpaerAEPzD1SGjlthjTG0Gga7b5jJia-WB4i20Nhk1Te6zXvHZHlhiRPNua7wqU/XHApPBZFSFCjfQ-_l2QwDv8-DHxN1p_n6b0nPYw41yk"/>
+<p>Keysight 86100A
+Infiniium DCA Wide-Bandwidth Oscilloscope / up to 50 GHz</p>
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>

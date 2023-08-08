@@ -3,7 +3,8 @@
 
 ## Instrument Card
 
-The Keysight 34934A module for the 34980A Multifunction Switch/Measure Unit offers the highest density matrix for connecting paths between your device under test and your test equipment, allowing for multiple instrument connections to multiple points on your device under test at the same time.
+<img src="https://v5.airtableusercontent.com/v1/19/19/1691539200000/BubPjGOg26Cyl6oASN5LKA/dwgqGpurj8PXyBTNg3lNX37Ps2xK0Osjh66sM67qPGQmHUwHROEtOWXlNxvfjSiHwR1bQuVs4yucG1cYMfrbJSG_JJ00HzgzZ4V8_yCJ6lEHLz_pZgbL2_4-4QTjfgsO/j_DNsiqBL_hx6g7u43Zz9ebJolPEJd6fdHPllcT_opU"/>
+<p>The Keysight 34934A module for the 34980A Multifunction Switch/Measure Unit offers the highest density matrix for connecting paths between your device under test and your test equipment, allowing for multiple instrument connections to multiple points on your device under test at the same time.</p>
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>

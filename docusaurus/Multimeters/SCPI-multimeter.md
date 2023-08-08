@@ -3,7 +3,8 @@
 
 ## Instrument Card
 
-All SCPI Multimeters
+<img src="nan"/>
+<p>All SCPI Multimeters</p>
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>

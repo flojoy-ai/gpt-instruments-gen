@@ -3,7 +3,8 @@
 
 ## Instrument Card
 
-The Agilent 8722ES Vector Network Analyzer (VNA) allows users to test a RF device’s amplitude and phase with one instrument. It works within 50 MHz to 40 GHz and enables the complete characterization of a device or network.
+<img src="https://v5.airtableusercontent.com/v1/19/19/1691539200000/0XfWKq4WDeSnDoOgXTe3Fg/hWWfb4PQ5fGytv-LfFD3KBV41To9llNTBKrawS5FrIYT56_M1LIWALIuJIgP33bEz2-7fkObISib9oLEyM2CrpsKsHth3tGjEQjdzwtRjto/0CypwZ_b6D-loxojNwJvVNHWaJMrzCvcRNOkDvHNqhk"/>
+<p>The Agilent 8722ES Vector Network Analyzer (VNA) allows users to test a RF device’s amplitude and phase with one instrument. It works within 50 MHz to 40 GHz and enables the complete characterization of a device or network.</p>
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>

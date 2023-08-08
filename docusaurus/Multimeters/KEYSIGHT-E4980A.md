@@ -3,7 +3,8 @@
 
 ## Instrument Card
 
-The E4980A precision LCR meter provides the best combination of accuracy, speed, and versatility for a wide range of component measurements.
+<img src="https://v5.airtableusercontent.com/v1/19/19/1691539200000/hp3xkXSGwQGZY1ZshjXLaw/x7qk3fyH8RXb-dGC5k1sRJncyQ8rhYzjJAfyod865tu7OaIG1wCMA8iaUTmvftcIX_kPSq8y6_iTRqSvhU-pWQ/IBtVKvS4slJ2d3gjlDi148SCdaMxQeAphC26_LsCDFs"/>
+<p>The E4980A precision LCR meter provides the best combination of accuracy, speed, and versatility for a wide range of component measurements.</p>
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>

@@ -3,7 +3,8 @@
 
 ## Instrument Card
 
-
+<img src="nan"/>
+<p></p>
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>

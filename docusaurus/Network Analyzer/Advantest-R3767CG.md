@@ -3,7 +3,8 @@
 
 ## Instrument Card
 
-The Advantest R3765CG/R3767CG network analyzers are vector network analyzers that incorporate a new RF circuit analysis technique.
+<img src="https://v5.airtableusercontent.com/v1/19/19/1691539200000/MeQKSLjp-kx7LCYabjSAMw/oT08q9I6t3IO-as2oUTgMXQ835gSul6RzgS19iEfI09xhLemfchOni1prp_OL5Hn89zjDyiMWEoHdXCXJeKbxz2cvhkBSNNDxjHaCBcp9h6iKvP63umsrPY6Dq5Nx05r/e6OIB6ci1L9-d2urv52yaGdvn4GCWcBbNRCQdx_Y2Ao"/>
+<p>The Advantest R3765CG/R3767CG network analyzers are vector network analyzers that incorporate a new RF circuit analysis technique.</p>
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>

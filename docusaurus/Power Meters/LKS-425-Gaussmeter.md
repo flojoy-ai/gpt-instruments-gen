@@ -3,7 +3,8 @@
 
 ## Instrument Card
 
-Lake Shore Model 425 gaussmeter provides high-end functionality and performance in an affordable desktop instrument. Magnet testing and sorting have never been easier. When used in combination with the built-in relay and audible alarm features, the Model 425 takes the guesswork out of pass/fail criteria. Additional features including DC to 10 kHz AC frequency response, max hold and relative measurement make the Model 425 the ideal tool for your manufacturing, quality control and R&D flux density measurement applications. Put the Model 425 gaussmeter to use with confidence knowing it’s supported by industry leading experts in magnet measurement instrument, sensor, and Hall probe technology.
+<img src="https://v5.airtableusercontent.com/v1/19/19/1691539200000/Dfbx0rpd-dbak2DEaU0XNA/rjP8sOqcmFDr9RA7uKIyZ7SjKK8mPmd5RjdyaYrcS-Br_nFJs8CBOmOcONa-lyIZkyXPzgSCF6A54DF9QpkIvA/siyZUlAV_QVVW9pRsmU6NM7Vy-2pWs0fkpzIZn7R8jc"/>
+<p>Lake Shore Model 425 gaussmeter provides high-end functionality and performance in an affordable desktop instrument. Magnet testing and sorting have never been easier. When used in combination with the built-in relay and audible alarm features, the Model 425 takes the guesswork out of pass/fail criteria. Additional features including DC to 10 kHz AC frequency response, max hold and relative measurement make the Model 425 the ideal tool for your manufacturing, quality control and R&D flux density measurement applications. Put the Model 425 gaussmeter to use with confidence knowing it’s supported by industry leading experts in magnet measurement instrument, sensor, and Hall probe technology.</p>
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>

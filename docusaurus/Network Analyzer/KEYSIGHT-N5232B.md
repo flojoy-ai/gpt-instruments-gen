@@ -3,7 +3,8 @@
 
 ## Instrument Card
 
-The Keysight N5232B PNA-L series network analyzer is designed for S-parameter and simple nonlinear testing of passive components, amplifiers, and frequency converters. With the same core firmware as the PNA, the PNA-L offers the perfect balance of value and performance. The PNA-L provides efficiency and flexibility in both manufacturing and R&D applications, for industries ranging from mobile-telecomm and wireless-LAN component production to aerospace and defense.
+<img src="https://v5.airtableusercontent.com/v1/19/19/1691539200000/D76lU5WaECJ16jk9gO5VBw/XOzdMUwIOwdKRhhHqDr32AcTcNhgjStx7xsewG7hHYuXJHbvUqxxqasno5AvtiSNG2MEIjCPZ6sCiWnQQLqRK5WXqU9Wm8jk7VmHTvQzYMI/b0SBFD4g6GoVve8FwscOVFNfJxYBzLREivvbi5hTwxw"/>
+<p>The Keysight N5232B PNA-L series network analyzer is designed for S-parameter and simple nonlinear testing of passive components, amplifiers, and frequency converters. With the same core firmware as the PNA, the PNA-L offers the perfect balance of value and performance. The PNA-L provides efficiency and flexibility in both manufacturing and R&D applications, for industries ranging from mobile-telecomm and wireless-LAN component production to aerospace and defense.</p>
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>

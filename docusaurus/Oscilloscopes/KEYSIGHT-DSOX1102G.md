@@ -3,7 +3,8 @@
 
 ## Instrument Card
 
-The DSOX1102G oscilloscope provides 70, 100 MHz of bandwidth on 2 analog channels, and waveform generator
+<img src="https://v5.airtableusercontent.com/v1/19/19/1691539200000/wTCBTW3jJZUgyqjrjTDq-A/UjoVUa7aucTowfoBAVmg-nF59IoQ2kou2FdUT0QdxvBeK5XXThSAAf1vK20c4Hgrzj9N6K8-CtL9XZcnwDOlPELx6jiYJATcdcGjm4G0V94/G14cdVmXgxIiWkqB8h9UJaXueDh380Euow71NOaLSgk"/>
+<p>The DSOX1102G oscilloscope provides 70, 100 MHz of bandwidth on 2 analog channels, and waveform generator</p>
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>

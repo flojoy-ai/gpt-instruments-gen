@@ -3,8 +3,9 @@
 
 ## Instrument Card
 
-Keysight 81110A
-Pulse Pattern Generator / 165/330 MHz
+<img src="https://v5.airtableusercontent.com/v1/19/19/1691539200000/JbYz4aHXbR4cAEfcsHdwhg/5ImqctPPmq9aSWmeBYR5ouSQ0vqio9qgvoF1bZhdRokZNcnA8Cq9IskgUtGgSDutOHYZHoAx7Dsvfbfua4yNyjgwLm1x4wp7lshnvpyAkXs/_dJ03GUUH95aQd29eYwMbBnO8g0K8BT4xxrFuFBOBj4"/>
+<p>Keysight 81110A
+Pulse Pattern Generator / 165/330 MHz</p>
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>

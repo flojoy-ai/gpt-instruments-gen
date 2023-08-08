@@ -3,7 +3,8 @@
 
 ## Instrument Card
 
-The Scientific Grade, 1024 x 127 deep depletion spectroscopy CCD camera is ideally suited to rapid analysis, multi-channel and low-light applications including fluorescence and Raman spectroscopy.
+<img src="https://v5.airtableusercontent.com/v1/19/19/1691539200000/XGeXyrlTGeEUPL4BW8CZCg/qeOKrWrOa4kEuH3rUNqk7OYCxvrQRquQG1EbZHi3FDMhTa9j5UL2xDcmpGWMj_LlarJ42z6GTkblVTI6J13qW-mqstyk-URmAZbMiO_P94Y/JDkZrXqH3fRZjXCqRP5p6rvAPucBuiWhoVAZztzjGnQ"/>
+<p>The Scientific Grade, 1024 x 127 deep depletion spectroscopy CCD camera is ideally suited to rapid analysis, multi-channel and low-light applications including fluorescence and Raman spectroscopy.</p>
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>

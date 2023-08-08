@@ -3,7 +3,8 @@
 
 ## Instrument Card
 
-The R&S®SGS100A is an RF source designed to meet the requirements of automated test systems. It is available as a CW source or as a vector signal generator with an integrated I/Q modulator. With its frequency range of up to 12.75 GHz, the vector signal generation version covers the essential digital signals. The CW version can be used as a flexible local oscillator and for interference testing against mobile radio standards.
+<img src="https://v5.airtableusercontent.com/v1/19/19/1691539200000/PsE5uRIrpsTNrwc1zKtsgw/abrPCl3Wt2WnWbpjpZWY2lChqNc91nJyxk3ju5Daut1mXKHQOypZO5A4gBs5sB0yKZxDg8cO7SM6OVQhK4BYdDeLER9ESn8H7um8DPKK-wwORdoi5w9EY9zrUpy6XeyjlU5hvbMDFKp_3VZwWuDV0IcS_JFoOCCHl5kWqFDvI0o/wkRYiZZ7Nrbs8HDa3tfTYI8kVD6uUIzIODd-hbHell0"/>
+<p>The R&S®SGS100A is an RF source designed to meet the requirements of automated test systems. It is available as a CW source or as a vector signal generator with an integrated I/Q modulator. With its frequency range of up to 12.75 GHz, the vector signal generation version covers the essential digital signals. The CW version can be used as a flexible local oscillator and for interference testing against mobile radio standards.</p>
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>

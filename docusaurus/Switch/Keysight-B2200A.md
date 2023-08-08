@@ -3,7 +3,8 @@
 
 ## Instrument Card
 
-The Keysight B2200A fA leakage switch mainframe reduces the cost of test by enabling automatic characterization tests without compromising the measurement performance of the semiconductor parameter analyzer.
+<img src="https://v5.airtableusercontent.com/v1/19/19/1691539200000/FcaqkDrUMOXmtiryoWaR3Q/_MTgGCAwkrprNX8anACCbc6-3g28yH0wIHpSGocJkLlmQ0cHtQqS4BF18wFCOj7R2417gi4OGwfgHJXkAfgS2O8td0DTdn6pqSqnJd_UNq0/WpH8LPQFEhsFX5XpwuZLkbH9WUcpBagh553xYH4HJYk"/>
+<p>The Keysight B2200A fA leakage switch mainframe reduces the cost of test by enabling automatic characterization tests without compromising the measurement performance of the semiconductor parameter analyzer.</p>
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>

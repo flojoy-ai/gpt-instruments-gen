@@ -3,7 +3,8 @@
 
 ## Instrument Card
 
-Incorporates all of the powerful features of the Gemini GV digital servo drive
+<img src="https://v5.airtableusercontent.com/v1/19/19/1691539200000/7bp8jKMeVxSIUj5X-gR-lg/s-xe5SwuUzg9FLSbB-3uNy50mcdLcWQFXRZvjd4tu5akaSA5ip3OBkh7UN8u6udH0KVAxi6CdwyVb-75rUAazwUvMN_wpml5U1Lyj-Vvcug/dkkHpg7_yQtXEtS9Uu4obzp0JikbqHTP6pQVxXVB4VA"/>
+<p>Incorporates all of the powerful features of the Gemini GV digital servo drive
 Provides six power ranges for up to 11.8 kW of continuous power
 Stand-alone servo controller and drive in one small package
 Full ASCII communications capability
@@ -12,7 +13,7 @@ Program storage: Up to 32 programs or 190 lines of program code
 Daisy chain up to 99 units
 Simplified configuration and tuning
 8 programmable inputs and 6 programmable outputs
-Wide range of PWM frequencies for linear motor support
+Wide range of PWM frequencies for linear motor support</p>
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>

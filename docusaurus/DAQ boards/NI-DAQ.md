@@ -3,7 +3,8 @@
 
 ## Instrument Card
 
-Data acquisition (DAQ) is the process of measuring an electrical or physical phenomenon, such as voltage, current, temperature, pressure, or sound. A DAQ system consists of sensors, DAQ measurement hardware, and a computer with programmable software such as LabVIEW.
+<img src="https://v5.airtableusercontent.com/v1/19/19/1691539200000/clu-gUwWi4ILx0XrCKVhtQ/HgmHlt9Pm7lP_U2vwAboVyfEGAK7e40xNpRfBY7hiU-dCpfG73x8rcYwDbiHaLxTdpdVuFDgH8Bd0JXOCJOmb1eTtRtHKo33WLx4l-qi07U/rZh2Y6XsrxfF79KizWPbVK2pzCGGRumnPdCuODv3kJc"/>
+<p>Data acquisition (DAQ) is the process of measuring an electrical or physical phenomenon, such as voltage, current, temperature, pressure, or sound. A DAQ system consists of sensors, DAQ measurement hardware, and a computer with programmable software such as LabVIEW.</p>
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>

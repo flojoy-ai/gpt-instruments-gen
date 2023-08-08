@@ -3,7 +3,8 @@
 
 ## Instrument Card
 
-3456A 6 1/2 Digit Digital Multimeter
+<img src="https://v5.airtableusercontent.com/v1/19/19/1691539200000/19DExDiquj7SHF0R7eZkkw/-Z3PaN8SqtBblhDtTfi_RO2yem1MBpTpFvxIMi_fBaqxqxnikjEOQPl-RmCcw8uEDqXhtnWUKyOlvzJxUfLSYhTAKvtEKk5iNtoHT9ARglk/M68YE1lS2P6syEKDe6Ca9sP5QFynn2Ata6D-pmA7rWQ"/>
+<p>3456A 6 1/2 Digit Digital Multimeter</p>
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>

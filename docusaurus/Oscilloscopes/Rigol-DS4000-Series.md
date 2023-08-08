@@ -3,7 +3,8 @@
 
 ## Instrument Card
 
-The Rigol DS4000 series consists of 8 high level Oscilloscopes for professional operation, which come off very well compared to higher prices models of other brands.
+<img src="nan"/>
+<p>The Rigol DS4000 series consists of 8 high level Oscilloscopes for professional operation, which come off very well compared to higher prices models of other brands.</p>
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>

@@ -3,7 +3,8 @@
 
 ## Instrument Card
 
-Control Of The Jumo Quantrol Lc100/Lc200/Lc300, Universal Pid Controller
+<img src="https://v5.airtableusercontent.com/v1/19/19/1691539200000/EzqDIavTWLhdRCEigeDOrA/LVogj1MM2HswFTWgkcatD9GsU1Sp59J_YTFh82RgRiBVo720KpRp05UWp4YZyHEERXxuiYAVOp7UoCMCBq6AcGu92QpnBjHrLVC-bEDI3Qk/pcB9zJXAumzZS2q1flBArm7ecVgAbOIL5wmKVTYr2G8"/>
+<p>Control Of The Jumo Quantrol Lc100/Lc200/Lc300, Universal Pid Controller</p>
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>

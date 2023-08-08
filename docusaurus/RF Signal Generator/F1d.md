@@ -3,7 +3,8 @@
 
 ## Instrument Card
 
-The F1d module is an IQ demodulator ranging from 40 MHz to 1.4 GHz. It was initially designed for reflectometry and to be used in conjuction with the S5i RF source and the M2j low noise amplifier.
+<img src="https://v5.airtableusercontent.com/v1/19/19/1691539200000/KI1EAsiCN6vI8zzi_YxfkQ/cO66Z5O4-MDrwEU1Kc1QruddOna5OH9IvSuSjDdbq8OevJc4TTKgWNOr4CeUzz53UmYsf_ZtiteplC57QiYJuBlOxiL6CiW0nTQt054HLfs/fK5rcKE1fDvj8jyzAd8wSzPFvyiIEnLhjahBy0Vghmk"/>
+<p>The F1d module is an IQ demodulator ranging from 40 MHz to 1.4 GHz. It was initially designed for reflectometry and to be used in conjuction with the S5i RF source and the M2j low noise amplifier.</p>
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>

@@ -3,7 +3,8 @@
 
 ## Instrument Card
 
-The Model 2750 offers extended low ohms measurement capability and supports up to 5 7700 Switch cards for a maximum 200, 2-pole multiplexed channels. It also contains a built-in 20mV clamp that helps protect sensitive devices from damage and prevents self-heating errors during dry circuit testing.
+<img src="https://v5.airtableusercontent.com/v1/19/19/1691539200000/Ux1cxVK5j_tQyfABVM9muw/XxqW1doTl0nkAd3VE4q3adrnEfjRWrSXbTZF5umK_jZbg_kn7MEtSni_k441plS7mzlTIHSIzwmyoIfD945aebNbs1xz93DWewbi1hJPgxM/AzqEbMKRq2_EaZCSF6r_l8kRNdRXc8MrcAPStNyWyPA"/>
+<p>The Model 2750 offers extended low ohms measurement capability and supports up to 5 7700 Switch cards for a maximum 200, 2-pole multiplexed channels. It also contains a built-in 20mV clamp that helps protect sensitive devices from damage and prevents self-heating errors during dry circuit testing.</p>
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>

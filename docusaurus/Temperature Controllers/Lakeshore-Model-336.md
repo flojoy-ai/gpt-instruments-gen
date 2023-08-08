@@ -3,7 +3,8 @@
 
 ## Instrument Card
 
-The Model 336 supports the industry’s most advanced line of cryogenic temperature sensors as manufactured by Lake Shore, including diodes, resistance temperature detectors (RTDs), and thermocouples. The controller’s zone tuning feature allows you to measure and control temperatures seamlessly from 300 mK to over 1,500 K by automatically switching temperature sensor inputs when your temperature range goes beyond the usable range of a given sensor.
+<img src="https://v5.airtableusercontent.com/v1/19/19/1691539200000/KIqQE39fF8dz2s7eL7EqFg/gO4dh36-9bY4zXoAvCswtcNAL771k7LdWhEy8r25an5tvVKQBXY6B34f2aURyc0e7tizM7qmxeyMBDyTzuwcAQ/AqNPiGNHpB3p4rEmYidc4vTSMwZ0PqtYYYVBfWbDseI"/>
+<p>The Model 336 supports the industry’s most advanced line of cryogenic temperature sensors as manufactured by Lake Shore, including diodes, resistance temperature detectors (RTDs), and thermocouples. The controller’s zone tuning feature allows you to measure and control temperatures seamlessly from 300 mK to over 1,500 K by automatically switching temperature sensor inputs when your temperature range goes beyond the usable range of a given sensor.</p>
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>

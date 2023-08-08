@@ -3,7 +3,8 @@
 
 ## Instrument Card
 
-
+<img src="https://v5.airtableusercontent.com/v1/19/19/1691539200000/PpB01l8UeH_ZOEG6zZmUgw/DdESMUGZV2w7knvcVqLngDYG3gwUQE7hz_DLNWWdxEgLIIZQnOt4QhQmimrdk7RMrLJxEgOMbvCUPr6ko0CRokatpszo0J1itmxXAYm_v88/0MA2zlVS_2RrzOCl6o0PdAj98MAGAye4zTwWy3FcqT8"/>
+<p></p>
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>

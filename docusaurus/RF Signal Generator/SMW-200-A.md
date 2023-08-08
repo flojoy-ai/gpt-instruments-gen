@@ -3,7 +3,8 @@
 
 ## Instrument Card
 
-The R&S®SMW200A offers integrated channel emulation for up to 800 MHz of fading bandwidth. Fading profiles for all major standards are available as presets. With up to 64 fading channels, all key MIMO fading scenarios such as 2x2, 3x3, 4x4, 8x4, 4x8 and 8x8 can be configured in a single instrument.
+<img src="https://v5.airtableusercontent.com/v1/19/19/1691539200000/LIKXaGcG8yOFd4qEO6Z63A/VRIIbwHhdyCZdzFptoloxFoceIgcuc9WYOQk_GS9MdMjmrSSYCi3ntywY3rbHVI2P3n1DOVyznnf7URirpqV3IOUgIE0IIAK7ppZsxSkKpQwDLerwlAZh0kIMak_EeKMY8uN9X5pOh-ToNtY0gHqG0u2ZwJsxyzpj4HuUPAYLjwgXbHdQq5xxInqUcDKgaEh/4RIWCphuwU3oVfNh5AfzKaL4IH47NIng3KKSsct8Aig"/>
+<p>The R&S®SMW200A offers integrated channel emulation for up to 800 MHz of fading bandwidth. Fading profiles for all major standards are available as presets. With up to 64 fading channels, all key MIMO fading scenarios such as 2x2, 3x3, 4x4, 8x4, 4x8 and 8x8 can be configured in a single instrument.</p>
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>

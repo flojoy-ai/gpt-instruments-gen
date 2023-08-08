@@ -3,10 +3,11 @@
 
 ## Instrument Card
 
-Flexible probe configurations to suit your application.
+<img src="https://v5.airtableusercontent.com/v1/19/19/1691539200000/icPwgtuWWp0yDqA36hMzmQ/nxSJitLaNaEkebzGUdZPvusvCpwtyIws9rc5Dyy4BOyEoEloVsJJMSCHxjsjO-C3s9zPfkK-zh-krhXukr28jz_sN5Ax7txWcVQxSC0pd_k/wjMZTCMl0UTeQ-c91T9NNFYXmM6q_LpmX0I7u-CcHP8"/>
+<p>Flexible probe configurations to suit your application.
 Several sensor types available with different performance characteristics.
 Most suited for field levels from earth field to very large electromagnets.
-Application-specific probe customization available.
+Application-specific probe customization available.</p>
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>

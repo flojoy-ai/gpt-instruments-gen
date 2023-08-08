@@ -7,6 +7,7 @@ import numpy as np
 AIRTABLE_API_KEY = os.environ["AIRTABLE_API_KEY"]
 LOCAL_FILE_NAME = "data/device_data.csv"
 
+
 class Cols:
     device_name = "Device"
     correct_device_name = "Corrected device name"
@@ -23,10 +24,13 @@ class Cols:
     category = "Device Category"
     headquarters = "Vendor headquarters"
     revenue = "Yearly revenue (millions, USD)"
+    device_picture = "Device picture"
 
 
 def use_device_name_when_no_correct(row: pd.Series):
-    if (row[Cols.correct_device_name] is np.nan) or (row[Cols.correct_device_name] == "??"):
+    if (row[Cols.correct_device_name] is np.nan) or (
+        row[Cols.correct_device_name] == "??"
+    ):
         return row[Cols.device_name]
     return row[Cols.correct_device_name]
 
@@ -34,7 +38,7 @@ def use_device_name_when_no_correct(row: pd.Series):
 def load_data():
     if os.path.isfile(LOCAL_FILE_NAME):
         return pd.read_csv(LOCAL_FILE_NAME)
-    at = airtable.Airtable('appltTe3yZzVV3Ouj', AIRTABLE_API_KEY)
+    at = airtable.Airtable("appltTe3yZzVV3Ouj", AIRTABLE_API_KEY)
     all_data = []
     offset = None
     while True:
@@ -49,6 +53,7 @@ def load_data():
     df[Cols.correct_device_name] = df.apply(use_device_name_when_no_correct, axis=1)
     df.to_csv("device_data.csv", index=False)
     return df
+
 
 df = load_data()
 df.head(2)

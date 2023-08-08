@@ -3,7 +3,8 @@
 
 ## Instrument Card
 
-Qubitekk’s 2-channel Coincidence Counter provides researchers with a low-cost solution for nanosecond resolution coincidence counting. A third gating channel makes the counter suitable for use with pulsed sources.
+<img src="https://v5.airtableusercontent.com/v1/19/19/1691539200000/BjWWKvrUmD3eeMPTthb8IQ/9mm99kx5_egt_2-Sz2w9G6E7VXKh510vdD-l872vYAVI6bjOuXFnpbUb9vIWB0HrVxfNf0xKUdSqYUvTDC4bTAxcMr60O6tz6QzHIsEjcKt4YE-hrGzTfvguH6LQxztn/n-xwIyg2bNVcMYpbYFXFa17JWSih4qrlxYL_0uDHmqQ"/>
+<p>Qubitekk’s 2-channel Coincidence Counter provides researchers with a low-cost solution for nanosecond resolution coincidence counting. A third gating channel makes the counter suitable for use with pulsed sources.</p>
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>

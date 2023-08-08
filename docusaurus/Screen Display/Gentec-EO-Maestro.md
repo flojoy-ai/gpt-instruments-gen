@@ -3,7 +3,8 @@
 
 ## Instrument Card
 
-Touchscreen display device for power & energy measurement. Single-channel, multiple outputs (USB, Ethernet, analog).
+<img src="https://v5.airtableusercontent.com/v1/19/19/1691539200000/I1zlqtsO8RqfAIY1dKOfLQ/0NJqDzo4C3lhyzZrH2yJC4qSVGVJSrVE7tuV7HX9UFQzFWhpzmRPg0hj3iwX9og2gl8IeNjG3bkJyr3vHDIuzuRZAY7YvWY2VXW5QwfYkgA/zN923MRAzlGjFgKv5lV_CM7I2gHGgVuh5ItDIORjjNE"/>
+<p>Touchscreen display device for power & energy measurement. Single-channel, multiple outputs (USB, Ethernet, analog).</p>
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>

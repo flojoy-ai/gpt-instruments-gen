@@ -3,7 +3,8 @@
 
 ## Instrument Card
 
-The v2 Camera Module has a Sony IMX219 8-megapixel sensor (compared to the 5-megapixel OmniVision OV5647 sensor of the original camera).
+<img src="https://v5.airtableusercontent.com/v1/19/19/1691539200000/vPWF0U3Ql-LFi8Oi5kkkLA/r-DpMFUAuQwTK1MOKvnhrx0irYmxtXoYowgPetNpWR0CB_gw2GB6zY2jmEv38gJBG2hrrBGlE4AUivrHhyzap6jG3qOBM2VbRVFxX1HN0dM/fuj6b0rqaAoWae9DzcX93Ml843Cy-Dlex4KOx0LL-GQ"/>
+<p>The v2 Camera Module has a Sony IMX219 8-megapixel sensor (compared to the 5-megapixel OmniVision OV5647 sensor of the original camera).</p>
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>

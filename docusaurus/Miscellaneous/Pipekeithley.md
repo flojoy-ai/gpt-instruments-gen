@@ -3,7 +3,8 @@
 
 ## Instrument Card
 
-Class For Getting Data From The Keihtley Of The Photon-Ion Spectrometer (Pipe).
+<img src="nan"/>
+<p>Class For Getting Data From The Keihtley Of The Photon-Ion Spectrometer (Pipe).</p>
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>

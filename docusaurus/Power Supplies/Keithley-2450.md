@@ -3,7 +3,8 @@
 
 ## Instrument Card
 
-The 2450 is Keithley's next-generation SourceMeter source measure unit (SMU) instrument that truly brings Ohm's law (current, voltage, and resistance) testing right to your fingertips. Its innovative graphical user interface (GUI) and advanced, capacitive touchscreen technology allow intuitive usage and minimize the learning curve to enable engineers and scientists to learn faster, work smarter, and invent easier. The 2450 is the SMU for everyone: a versatile instrument, particularly well-suited for characterizing modern scaled semiconductors, nano-scale devices and materials, organic semiconductors, printed electronics, and other small-geometry and low-power devices.
+<img src="https://v5.airtableusercontent.com/v1/19/19/1691539200000/6-yK-cN5Z0TRiTtfAab1HQ/F3TYsE3_9fID5l0F991wScXTydyAHc1DeKM2M74mSQgEHCKr_2nA93DZoDlrcc02SdF4GhR1iQT6thX1gQMsZw/uKMmmUupi0TRm4ambJqRr2AnUj3hSf-SyPXtsmSrnoE"/>
+<p>The 2450 is Keithley's next-generation SourceMeter source measure unit (SMU) instrument that truly brings Ohm's law (current, voltage, and resistance) testing right to your fingertips. Its innovative graphical user interface (GUI) and advanced, capacitive touchscreen technology allow intuitive usage and minimize the learning curve to enable engineers and scientists to learn faster, work smarter, and invent easier. The 2450 is the SMU for everyone: a versatile instrument, particularly well-suited for characterizing modern scaled semiconductors, nano-scale devices and materials, organic semiconductors, printed electronics, and other small-geometry and low-power devices.</p>
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>

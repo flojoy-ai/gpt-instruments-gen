@@ -3,7 +3,8 @@
 
 ## Instrument Card
 
-The Rigol DP821 is a dual channel, remote sense programmable DC Power Supply. It has excellent performance, including various analysis functions and has USB Host and Device with LXI option. All of this makes it suitable to meet a wide range of testing requirements.
+<img src="https://v5.airtableusercontent.com/v1/19/19/1691539200000/UTcdTcbVk2iT7XiXzrrauA/QFyqe81TLW0LFT1P4KVAn1MhwZ44sqpY_Oxfmjq6zv-UUWuLGYGVIqQup4nJmC2ScoGSjHCSzuMO5uLP-ZAqUAZEFjWOoCot1dPKICXTRH0/puQylQh1Z9D3fa0ZZo0ynIX3b68jBIKFU6D8Jpi3uOg"/>
+<p>The Rigol DP821 is a dual channel, remote sense programmable DC Power Supply. It has excellent performance, including various analysis functions and has USB Host and Device with LXI option. All of this makes it suitable to meet a wide range of testing requirements.</p>
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>

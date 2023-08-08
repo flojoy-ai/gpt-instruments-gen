@@ -3,7 +3,8 @@
 
 ## Instrument Card
 
-Agilis™ Piezo Motion Controllers provide convenient and compact fine positioning control of the Agilis family of piezo motion stages and mounts.
+<img src="https://v5.airtableusercontent.com/v1/19/19/1691539200000/WD9PjpwtVmbeUnHqJl_ScQ/LzrYifqMK7H7spjiPZu1SxWFRH4pQuVd03MFcdrnG2R4gPGzxVFqo3d48TKswgrxurCSh8ocIE_nt7RCLYVw2pAygWYwjrxkMQxtHXDenkg/yRPkm2FcYa4IU1y_Q5SLL8untizVZ_4enxbcTkYKcKk"/>
+<p>Agilis™ Piezo Motion Controllers provide convenient and compact fine positioning control of the Agilis family of piezo motion stages and mounts.</p>
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>

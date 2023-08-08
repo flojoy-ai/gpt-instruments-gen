@@ -3,7 +3,8 @@
 
 ## Instrument Card
 
-The AH 2500A offers unparalleled stability, resolution and accuracy in a capacitance/loss1 bridge (whether manual or automatic)
+<img src="https://v5.airtableusercontent.com/v1/19/19/1691539200000/OJ8aDNGwpZEKTfUhYimiKg/oo1A5GsLzqNps0RZwbywc7IUujNVQUnZhW2RUffTfrOMG9Xdoq1tGxt1XI4q_UnBYne6IDhVOmb8lvbvdc5rNj5qBnVX1HNECzm8neFPOPk/1mpuWRsuPNg1FCoRn4cWxXkrh-HgpGsGDuyx1JQFUD0"/>
+<p>The AH 2500A offers unparalleled stability, resolution and accuracy in a capacitance/loss1 bridge (whether manual or automatic)</p>
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>

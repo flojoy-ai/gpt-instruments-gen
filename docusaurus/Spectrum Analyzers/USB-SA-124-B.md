@@ -3,7 +3,8 @@
 
 ## Instrument Card
 
-The Signal Hound USB-SA44B is a Software Defined Receiver (SDR) optimized as a narrow-band real-time RF spectrum analyzer. It is a compact, simple to use, effective troubleshooting tool for the general lab user, engineering students, and ham radio enthusiast.
+<img src="https://v5.airtableusercontent.com/v1/19/19/1691539200000/hKsSzUAb6HSxQMzIwu2W1A/mABRsO9wrE6YEMKqN50gjqKlTlNykCnmTQc4NkxXR09yL8dtQSi_CnZo-DKIkTgUFA-BS_z-bgEXrYE7pKXhtor94gG8glhyYl1iXUy8soM/Jfms2w1m1zmqATu-pgcmzuB2GGvvKJctxycrS9mV2b8"/>
+<p>The Signal Hound USB-SA44B is a Software Defined Receiver (SDR) optimized as a narrow-band real-time RF spectrum analyzer. It is a compact, simple to use, effective troubleshooting tool for the general lab user, engineering students, and ham radio enthusiast.</p>
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>

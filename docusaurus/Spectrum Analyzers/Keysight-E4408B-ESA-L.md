@@ -3,7 +3,8 @@
 
 ## Instrument Card
 
-E4408B ESA-L Basic Spectrum Analyzer, 9 kHz to 26.5 GHz
+<img src="https://v5.airtableusercontent.com/v1/19/19/1691539200000/wEYztaYoQN4bZH33OvC9Mg/ZehZt23pmUp7kWP1r6V6fjZu6KbD1TYMZ4DQop0MX6qKpK63xcsY0pjMrlL-Hhxq-tnhWkaXEr3EemTLX2dOik1fNfK-Xl1LJ59um0SDzxI/3jk30Hjt_h6O5SV4PWFRmHF7ZrnZNmuWpwPsWdlmwBY"/>
+<p>E4408B ESA-L Basic Spectrum Analyzer, 9 kHz to 26.5 GHz</p>
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>

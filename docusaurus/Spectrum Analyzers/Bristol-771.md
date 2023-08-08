@@ -3,7 +3,8 @@
 
 ## Instrument Card
 
-The 771 Series Laser Spectrum Analyzer combines proven Michelson interferometer technology with fast Fourier transform analysis resulting in a unique instrument that operates as both a high-resolution spectrum analyzer and a high-accuracy wavelength meter.
+<img src="https://v5.airtableusercontent.com/v1/19/19/1691539200000/S1vHRlIXiyzwEwxfSlMQ8Q/vkS8p8SfOqvYTuKGXbsMsCmQ9DsBZn7TJwstz6-BlDk7F05bOPMcQl7h0j9o1Z6NhWdNFiL7_2P5_4ij7gN-5cIBR2ksZwbetNEIBAvdrIQ/_fAh6_zv2wE6aAOnkl_b7H0DsWgyMui8HjAJlRAnh-o"/>
+<p>The 771 Series Laser Spectrum Analyzer combines proven Michelson interferometer technology with fast Fourier transform analysis resulting in a unique instrument that operates as both a high-resolution spectrum analyzer and a high-accuracy wavelength meter.</p>
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>

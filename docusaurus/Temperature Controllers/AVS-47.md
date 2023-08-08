@@ -3,7 +3,8 @@
 
 ## Instrument Card
 
-The Picowatt AVS 47 is a resistance bridge used to measure the resistance of low-temperature sensors.
+<img src="https://v5.airtableusercontent.com/v1/19/19/1691539200000/k0HZ1RfEAfVO4-srzVVPqw/1G72hPSI5aMXTYMmYGSfH4015SWbfMesI0Rh2X7AhU44BAlMAE4gNXruYvIYlTlKGUFlNTcStXhZmpymWYXxhsKAvtctnbXycwI4Xi3MVAGCpnNncNteqRbekJ0hIEbd/KMphc--ItslC_z9PBOhfQQTMaeGX6gMb-rBHJcLUrlM"/>
+<p>The Picowatt AVS 47 is a resistance bridge used to measure the resistance of low-temperature sensors.</p>
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>

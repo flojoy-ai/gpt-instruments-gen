@@ -3,7 +3,8 @@
 
 ## Instrument Card
 
-Bench/System Linear Regulated DC Power Supply Dual Output, 2 x 30V/3A, USB, RS232 & LAN Interfaces
+<img src="https://v5.airtableusercontent.com/v1/19/19/1691539200000/DHndhhA3OxAhp5PaKmSSUQ/jbJKAnGqo0NbiB6wejxKNdiD5m9DTzpB4QrYNx9_I5mABdd10IvMtwEjxP-nUmJlUb2E3b3Pss0Crb0Rf3T5H-PQvFdO5O6IXvJTCJamXbw/mLJ49Xruo68Q5-CGQ0jXNSVHweE9C-pgEvOQRJEmBGU"/>
+<p>Bench/System Linear Regulated DC Power Supply Dual Output, 2 x 30V/3A, USB, RS232 & LAN Interfaces</p>
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>

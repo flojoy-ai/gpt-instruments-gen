@@ -3,7 +3,8 @@
 
 ## Instrument Card
 
-The DMM7510 7.5 digit multimeter combines a precision, high-resolution digital multimeter (DMM), graphical touchscreen display, and high-speed, high-resolution digitizer to create the first graphical sampling multimeter. With pA-level sensitivity and 1Msample/s sampling, it accurately measures ultra-low sleep mode currents and transmit drain currents from wireless devices.
+<img src="https://v5.airtableusercontent.com/v1/19/19/1691539200000/prctKT7AT4RN5gjlO2OSDw/EudpatJSN-FkzdbCV2tAwygNAtnmZ1M64rpNjX1_P_Cf8xZ4TINJsqJhijDWcCkjET9PVS0jB7jOnkoFhIkXOWg-lgMr6KEGMjEkdOL88Ho/n3O4lk0Fq1YGgtuS9bQ7BYHCiSmzKkS839HndKr-oKQ"/>
+<p>The DMM7510 7.5 digit multimeter combines a precision, high-resolution digital multimeter (DMM), graphical touchscreen display, and high-speed, high-resolution digitizer to create the first graphical sampling multimeter. With pA-level sensitivity and 1Msample/s sampling, it accurately measures ultra-low sleep mode currents and transmit drain currents from wireless devices.</p>
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>

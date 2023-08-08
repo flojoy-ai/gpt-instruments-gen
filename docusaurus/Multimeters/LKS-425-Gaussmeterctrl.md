@@ -3,7 +3,8 @@
 
 ## Instrument Card
 
-Class Connecting To The Lakeshore 425 Gaussmeter
+<img src="nan"/>
+<p>Class Connecting To The Lakeshore 425 Gaussmeter</p>
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>

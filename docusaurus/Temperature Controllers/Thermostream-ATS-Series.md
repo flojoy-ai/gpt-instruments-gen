@@ -3,7 +3,8 @@
 
 ## Instrument Card
 
-Temptronic ThermoStreams are portable systems that deliver clean dry air for precision temperature testing or conditioning of electronics (ICs, MEMS, transceivers, or circuits) and materials. No other systems can bring your test subjects to temperature faster with precise control
+<img src="https://v5.airtableusercontent.com/v1/19/19/1691539200000/v7LF1sCEAw0pm2YXP-6kXg/KkCaQILzETGlT1TGWNgp366pFQTABgIkjs0ZarBlHIRYtOfHdmbk-1HvQDWjyAEANGCV4OngjLzGZDP_2dJDjl1Ur1mBos_1xc355Do0kB13uOLM4PK9OZSfeGpbU-Ad/SSJzD6bWkoXjD_WNdzfIjWSJX5C6xN55fRXnsEUTuFI"/>
+<p>Temptronic ThermoStreams are portable systems that deliver clean dry air for precision temperature testing or conditioning of electronics (ICs, MEMS, transceivers, or circuits) and materials. No other systems can bring your test subjects to temperature faster with precise control</p>
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>

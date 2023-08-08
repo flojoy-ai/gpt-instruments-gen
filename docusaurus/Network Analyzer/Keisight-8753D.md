@@ -3,7 +3,8 @@
 
 ## Instrument Card
 
-8753D Network Analyzer, 30 kHz to 3 GHz
+<img src="https://v5.airtableusercontent.com/v1/19/19/1691539200000/S67ZstcvTmNttCLpjveduw/nbKIIDOsGZBTKeimHEm-E8QxHTWpG9xPUwMUZEFKcTpbcgOQsYlHOtyp0eOfAW1KvVAifmBA2TKb533F5oIm3P5MxMh4xnT1hfCPb-UDRN8/GrwD_qhrtETMJ-33S1M3Qnx8Phn3WY6_YMVV7lW3xCU"/>
+<p>8753D Network Analyzer, 30 kHz to 3 GHz</p>
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>

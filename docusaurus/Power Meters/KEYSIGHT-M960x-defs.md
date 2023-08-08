@@ -3,7 +3,8 @@
 
 ## Instrument Card
 
-PXI source/measure units are the source and measurement resources of voltage and current for test applications requiring high accuracy, high resolution, and measurement flexibility
+<img src="https://v5.airtableusercontent.com/v1/19/19/1691539200000/38Bsp073Q66e6Ha4EL-DvA/JA3c2u1YRxJ46jWYbt5Yi-WJQq0TNsKu0G-zZNKIoYvALD-36dnIVTVgU_HPBdSLHI3ABkqEWEd31eRBSSGGvG75mGWaVdDj0BEHQlWW-6g/0A5QZCrxbNskr_yUuazhY2oibThfm73NHz4ayYJXMqE"/>
+<p>PXI source/measure units are the source and measurement resources of voltage and current for test applications requiring high accuracy, high resolution, and measurement flexibility</p>
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>

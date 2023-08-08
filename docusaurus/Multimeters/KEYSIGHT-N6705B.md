@@ -3,9 +3,10 @@
 
 ## Instrument Card
 
-The N6705B is a 4-slot mainframe that accepts up to 4 DC Power Modules, and up to 600 W total DC Power Module output power. The modules are ordered separately. 
+<img src="https://v5.airtableusercontent.com/v1/19/19/1691539200000/CTCY2821NfUO_GXQ668twQ/kE386tuiij1VkrIkimd6K3q8yT0Ec81MPpsU7fWzqTPVabquozed0Z70JVMBwGTCF6Hyl5K_JqKisX-9oV0VMcq54JucaSF8fCFHV544PkA/DWvx0OR8nogOls318vleGPH-t5xMhBwdvMdcFmexD4g"/>
+<p>The N6705B is a 4-slot mainframe that accepts up to 4 DC Power Modules, and up to 600 W total DC Power Module output power. The modules are ordered separately. 
 
-N6705B accepts the same modules as N6700 Modular Power System, with over 30 modules to choose from
+N6705B accepts the same modules as N6700 Modular Power System, with over 30 modules to choose from</p>
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>

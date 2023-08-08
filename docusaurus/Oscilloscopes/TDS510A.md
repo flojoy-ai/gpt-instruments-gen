@@ -3,7 +3,8 @@
 
 ## Instrument Card
 
-The TDS510A Digital Oscilloscope is a full-featured, cost-effective, versatile oscilloscope which meets the measurement requirements for general-purpose research and design. Its industry-preferred graphical user interface makes it easy to learn and efficient to use. The TDS510A advanced trigger capability allows the user to trigger and view signals in a wide variety of simple as well as complex design and analysis settings. With four channels, 50 K points per channel record length, and powerful waveform acquisition modes, the TDS510A can satisfy most complex design, debug, and analysis requirements.
+<img src="https://v5.airtableusercontent.com/v1/19/19/1691539200000/rnWOl-sRxtA4REh_a9gLkQ/vAXmN1QvOb27E3dkC0lfKorJ6iu_I5SY1WMb34UyLyi7WCC3EUVxW8lobBi28rcsbmCoMPBXtltdIpvsqVdTBrzSuecHBobYOzeQZIorqzQ/Y5HTeZj-QI9Q4KFmhbC3z5vmf0uHgXf05SRvft17SGU"/>
+<p>The TDS510A Digital Oscilloscope is a full-featured, cost-effective, versatile oscilloscope which meets the measurement requirements for general-purpose research and design. Its industry-preferred graphical user interface makes it easy to learn and efficient to use. The TDS510A advanced trigger capability allows the user to trigger and view signals in a wide variety of simple as well as complex design and analysis settings. With four channels, 50 K points per channel record length, and powerful waveform acquisition modes, the TDS510A can satisfy most complex design, debug, and analysis requirements.</p>
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>

@@ -3,7 +3,8 @@
 
 ## Instrument Card
 
-8116A 50 MHZ PULSE/FUNCTION GENERATOR
+<img src="https://v5.airtableusercontent.com/v1/19/19/1691539200000/g7ZPextTWNpyVcA_AxSKKA/ayVSLBQeUDvgmPAGYsF-JBdzKm1xDdPTFoOOxT8r7EL_Bp19N0CtgvhKkyqeBljO9RcMdw0JFZUhunusjljFXnc5Pn9i4HIgkNp7DTIdd3Q/3p_4aPT2C8JacQlnWkT610jdRD4gS6gmUX2ReM8WqKU"/>
+<p>8116A 50 MHZ PULSE/FUNCTION GENERATOR</p>
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>

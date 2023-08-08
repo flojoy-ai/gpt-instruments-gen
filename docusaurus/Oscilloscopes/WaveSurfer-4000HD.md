@@ -3,7 +3,8 @@
 
 ## Instrument Card
 
-WaveSurfer 4000HD extends Teledyne LeCroy’s leadership in High Definition Oscilloscopes with a bright, 12.1” touch screen display, performance without compromise, and price points that fit your budget.
+<img src="https://v5.airtableusercontent.com/v1/19/19/1691539200000/AiVdIo19tuVsoO90EJIGKA/1FPtfQmcKnzCDGKZezh_RapI7W7X5pMNIAvuC3X_DeQuMMiIqYhQ5EKue_BePPAaNk9leDl9ND_Ez9H-0zk6A7i6VWo5bdaVeiqa7uSWNVg/rx9OFmV9yu4uI8EsWotCs1Ywo429GnoN1vK8Ks0I6N4"/>
+<p>WaveSurfer 4000HD extends Teledyne LeCroy’s leadership in High Definition Oscilloscopes with a bright, 12.1” touch screen display, performance without compromise, and price points that fit your budget.</p>
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>

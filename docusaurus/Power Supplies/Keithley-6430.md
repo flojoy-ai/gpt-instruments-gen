@@ -3,7 +3,8 @@
 
 ## Instrument Card
 
-he 6½-digit Model 6430 Sub-Femtoamp Remote SourceMeter SMU Instrument can measure current with 1aA sensitivity. Its low noise and drift performance make it ideal for research on single electron devices, highly resistive nanowires and nanotubes, polymers, and electrochemical applications.
+<img src="https://v5.airtableusercontent.com/v1/19/19/1691539200000/rDW_dKruduPjYngWcVKLXA/WfDua0xbzvChNw8mlmVM5y1WpeCtNOfU14nUjiUPPnnjka2xfs22zADsJt5sip3hmWpHbL5MYhxyzjYcOP5MLRSd4_nD_2nBoF4cHYPwWwePDWgpNqUiFd0zQWI_yxO6/Gxg7zNAGoTm1gqJUuIzd84flRr7dW6f4aJpJwzL4sQk"/>
+<p>he 6½-digit Model 6430 Sub-Femtoamp Remote SourceMeter SMU Instrument can measure current with 1aA sensitivity. Its low noise and drift performance make it ideal for research on single electron devices, highly resistive nanowires and nanotubes, polymers, and electrochemical applications.</p>
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>

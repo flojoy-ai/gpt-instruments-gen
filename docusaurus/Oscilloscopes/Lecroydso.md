@@ -4,7 +4,8 @@
 
 ## Instrument Card
 
-This Class Allows The Acquisition Of A Waveform (The Description And The Data), From A Specific C...
+<img src="nan"/>
+<p>This Class Allows The Acquisition Of A Waveform (The Description And The Data), From A Specific C...</p>
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>

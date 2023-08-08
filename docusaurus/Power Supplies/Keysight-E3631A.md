@@ -3,7 +3,8 @@
 
 ## Instrument Card
 
-E3631A 80W Triple Output Power Supply, 6V, 5A & ±25V, 1A
+<img src="https://v5.airtableusercontent.com/v1/19/19/1691539200000/Qe3zxD3aa4ZZy-YZfqkPug/yoQD-HKDu99Y6IKt18jimpwStozaz6P8dmiVUcJ1-TeUwy-cpBA9-glfjUbdZPQNU55NjTFSepC6ZBJxNVhqRQkOScD_gWxUxmNGs3Mq4nw/6XxZpR73IbJTe_yQReHyuK7hv5ynpd8kYBqNcWsOWlM"/>
+<p>E3631A 80W Triple Output Power Supply, 6V, 5A & ±25V, 1A</p>
 
 <details open>
 <summary><h2>Manufacturer Card</h2></summary>
