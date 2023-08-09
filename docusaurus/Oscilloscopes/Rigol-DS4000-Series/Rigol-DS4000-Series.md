@@ -11,7 +11,7 @@ The Rigol DS4000 series consists of 8 high level Oscilloscopes for professional 
 
 </div>
 
-<img width="256" src="docs/Instruments/Oscilloscopes/Rigol-DS4000-Series/Rigol-DS4000-Series.jpg"/>
+![](./Rigol-DS4000-Series.jpg)
 
 </div>
 

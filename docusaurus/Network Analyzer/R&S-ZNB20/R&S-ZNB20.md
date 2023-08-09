@@ -11,7 +11,7 @@ The R&S ZNB20 from R&S is a mid range vector network analyzer with two or four t
 
 </div>
 
-<img width="256" src="docs/Instruments/Network Analyzer/R&S-ZNB20/R&S-ZNB20.jpg"/>
+![](./R&S-ZNB20.jpg)
 
 </div>
 

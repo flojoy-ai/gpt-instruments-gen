@@ -11,7 +11,7 @@ The single output, 1500 W N5767A, provides universal AC input, GPIB, LAN, USB, L
 
 </div>
 
-<img width="256" src="docs/Instruments/Power Supplies/Keysight-N5767A/Keysight-N5767A.jpg"/>
+![](./Keysight-N5767A.jpg)
 
 </div>
 

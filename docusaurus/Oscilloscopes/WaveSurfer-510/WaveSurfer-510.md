@@ -11,7 +11,7 @@ The WaveSurfer 510 combines the MAUI with OneTouch user interface with powerful 
 
 </div>
 
-<img width="256" src="docs/Instruments/Oscilloscopes/WaveSurfer-510/WaveSurfer-510.jpg"/>
+![](./WaveSurfer-510.jpg)
 
 </div>
 

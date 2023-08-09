@@ -11,7 +11,7 @@ N5183B MXG X-Series microwave analog signal generator offers 9 kHz to 40 GHz fre
 
 </div>
 
-<img width="256" src="docs/Instruments/RF Signal Generator/Keysight-N5183B-MXG/Keysight-N5183B-MXG.jpg"/>
+![](./Keysight-N5183B-MXG.jpg)
 
 </div>
 

@@ -11,7 +11,7 @@ The ESP301-3N 3 Axis Motion Controller and Driver is the successor of the popula
 
 </div>
 
-<img width="256" src="docs/Instruments/Positional Controller/Newportesp-301/Newportesp-301.jpg"/>
+![](./Newportesp-301.jpg)
 
 </div>
 

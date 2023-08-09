@@ -11,7 +11,7 @@
 
 </div>
 
-<img width="256" src="docs/Instruments/Multimeters/DMM6500-Keithley/DMM6500-Keithley.jpg"/>
+![](./DMM6500-Keithley.jpg)
 
 </div>
 

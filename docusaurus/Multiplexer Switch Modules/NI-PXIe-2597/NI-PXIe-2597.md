@@ -11,7 +11,7 @@
 
 </div>
 
-<img width="256" src="docs/Instruments/Multiplexer Switch Modules/NI-PXIe-2597/NI-PXIe-2597.jpg"/>
+![](./NI-PXIe-2597.jpg)
 
 </div>
 

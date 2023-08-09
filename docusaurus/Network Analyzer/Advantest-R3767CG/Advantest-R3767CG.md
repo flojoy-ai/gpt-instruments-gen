@@ -11,7 +11,7 @@ The Advantest R3765CG/R3767CG network analyzers are vector network analyzers tha
 
 </div>
 
-<img width="256" src="docs/Instruments/Network Analyzer/Advantest-R3767CG/Advantest-R3767CG.jpg"/>
+![](./Advantest-R3767CG.jpg)
 
 </div>
 

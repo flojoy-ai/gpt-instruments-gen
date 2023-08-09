@@ -11,7 +11,7 @@ The Model 2601B SourceMeter SMU instrument, is a new and improved one channel SM
 
 </div>
 
-<img width="256" src="docs/Instruments/Power Supplies/Keithley-2601B/Keithley-2601B.jpg"/>
+![](./Keithley-2601B.jpg)
 
 </div>
 

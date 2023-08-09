@@ -11,7 +11,7 @@ The PicoHarp 300 is a high-end, easy to use, plug and play Time-Correlated Singl
 
 </div>
 
-<img width="256" src="docs/Instruments/Photon Counting System/PicoHarp-300/PicoHarp-300.jpg"/>
+![](./PicoHarp-300.jpg)
 
 </div>
 

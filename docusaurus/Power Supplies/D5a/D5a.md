@@ -11,7 +11,7 @@ The D5a module contains 16 18-bit DACs (Digital to Analog Converters), initially
 
 </div>
 
-<img width="256" src="docs/Instruments/Power Supplies/D5a/D5a.jpg"/>
+![](./D5a.jpg)
 
 </div>
 

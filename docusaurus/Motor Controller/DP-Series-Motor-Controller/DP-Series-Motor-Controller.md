@@ -11,7 +11,7 @@ Anaheim Automation manufactures a variety of Stepper Motor Driver Packs with Pro
 
 </div>
 
-<img width="256" src="docs/Instruments/Motor Controller/DP-Series-Motor-Controller/DP-Series-Motor-Controller.jpg"/>
+![](./DP-Series-Motor-Controller.jpg)
 
 </div>
 

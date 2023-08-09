@@ -11,7 +11,7 @@ The APT™ MST602 module is a dual-channel, high-resolution, rack-mounted steppe
 
 </div>
 
-<img width="256" src="docs/Instruments/Positional Controller/APT-Stepper-Motor-Control-Module/APT-Stepper-Motor-Control-Module.jpg"/>
+![](./APT-Stepper-Motor-Control-Module.jpg)
 
 </div>
 

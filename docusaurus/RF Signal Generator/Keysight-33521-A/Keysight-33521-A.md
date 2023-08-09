@@ -11,7 +11,7 @@ Keysight 33500 Series function/arbitrary waveform generators offer the highest s
 
 </div>
 
-<img width="256" src="docs/Instruments/RF Signal Generator/Keysight-33521-A/Keysight-33521-A.jpg"/>
+![](./Keysight-33521-A.jpg)
 
 </div>
 

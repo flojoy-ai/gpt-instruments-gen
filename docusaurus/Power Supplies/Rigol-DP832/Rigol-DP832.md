@@ -16,7 +16,7 @@ Built in V, A, W measurements and waveform display
 
 </div>
 
-<img width="256" src="docs/Instruments/Power Supplies/Rigol-DP832/Rigol-DP832.jpg"/>
+![](./Rigol-DP832.jpg)
 
 </div>
 

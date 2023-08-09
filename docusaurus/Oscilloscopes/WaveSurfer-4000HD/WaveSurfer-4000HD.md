@@ -11,7 +11,7 @@ WaveSurfer 4000HD extends Teledyne LeCroy’s leadership in High Definition Osci
 
 </div>
 
-<img width="256" src="docs/Instruments/Oscilloscopes/WaveSurfer-4000HD/WaveSurfer-4000HD.jpg"/>
+![](./WaveSurfer-4000HD.jpg)
 
 </div>
 

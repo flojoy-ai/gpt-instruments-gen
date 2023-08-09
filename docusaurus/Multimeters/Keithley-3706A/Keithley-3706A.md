@@ -11,7 +11,7 @@ The Model 3706A system switch with high performance DMM contains six slots for p
 
 </div>
 
-<img width="256" src="docs/Instruments/Multimeters/Keithley-3706A/Keithley-3706A.jpg"/>
+![](./Keithley-3706A.jpg)
 
 </div>
 

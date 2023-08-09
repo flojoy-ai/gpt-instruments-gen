@@ -11,7 +11,7 @@ QDAC is a high-precision, 25-bit resolution, ultra-low-noise computer-controlled
 
 </div>
 
-<img width="256" src="docs/Instruments/Digital-Analog Converter/QDAC/QDAC.jpg"/>
+![](./QDAC.jpg)
 
 </div>
 

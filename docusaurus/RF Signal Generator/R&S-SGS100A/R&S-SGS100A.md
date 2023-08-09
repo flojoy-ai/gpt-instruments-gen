@@ -11,7 +11,7 @@ The R&S®SGS100A is an RF source designed to meet the requirements of automated 
 
 </div>
 
-<img width="256" src="docs/Instruments/RF Signal Generator/R&S-SGS100A/R&S-SGS100A.jpg"/>
+![](./R&S-SGS100A.jpg)
 
 </div>
 

@@ -11,7 +11,7 @@ The LabMaster 10 Zi is the world's highest-performance modular oscilloscope - it
 
 </div>
 
-<img width="256" src="docs/Instruments/Oscilloscopes/LabMaster-10-Zi-A/LabMaster-10-Zi-A.jpg"/>
+![](./LabMaster-10-Zi-A.jpg)
 
 </div>
 

@@ -11,7 +11,7 @@ The E8267D PSG Vector Signal Generator is the highest performance, fully-integra
 
 </div>
 
-<img width="256" src="docs/Instruments/RF Signal Generator/Keysight-E8267D-PSG/Keysight-E8267D-PSG.jpg"/>
+![](./Keysight-E8267D-PSG.jpg)
 
 </div>
 

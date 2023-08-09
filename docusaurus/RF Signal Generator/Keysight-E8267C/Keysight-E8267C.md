@@ -11,7 +11,7 @@ E8267C PSG Vector Signal Generator, up to 20 GHz
 
 </div>
 
-<img width="256" src="docs/Instruments/RF Signal Generator/Keysight-E8267C/Keysight-E8267C.jpg"/>
+![](./Keysight-E8267C.jpg)
 
 </div>
 

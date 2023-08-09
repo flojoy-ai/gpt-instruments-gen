@@ -14,7 +14,7 @@ are in need of a new, cost-effective alternative
 
 </div>
 
-<img width="256" src="docs/Instruments/Multimeters/Keysight-34980A-Submodules/Keysight-34980A-Submodules.jpg"/>
+![](./Keysight-34980A-Submodules.jpg)
 
 </div>
 

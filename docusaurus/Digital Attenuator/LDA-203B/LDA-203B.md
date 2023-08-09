@@ -11,7 +11,7 @@ The LDA-203B Digital Attenuator is a bidirectional, 50 Ohm step attenuator. The 
 
 </div>
 
-<img width="256" src="docs/Instruments/Digital Attenuator/LDA-203B/LDA-203B.jpg"/>
+![](./LDA-203B.jpg)
 
 </div>
 

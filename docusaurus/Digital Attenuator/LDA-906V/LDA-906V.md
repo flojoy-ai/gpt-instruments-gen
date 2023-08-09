@@ -11,7 +11,7 @@ The LDA-906V Digital Attenuator is a highly accurate, bidirectional, 50 Ohm step
 
 </div>
 
-<img width="256" src="docs/Instruments/Digital Attenuator/LDA-906V/LDA-906V.jpg"/>
+![](./LDA-906V.jpg)
 
 </div>
 

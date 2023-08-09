@@ -11,7 +11,7 @@ Quantum Design's DynaCool™ PPMS® performs electrical, thermal and magnetic me
 
 </div>
 
-<img width="256" src="docs/Instruments/Power Meters/PPMS-Dynacool/PPMS-Dynacool.jpg"/>
+![](./PPMS-Dynacool.jpg)
 
 </div>
 

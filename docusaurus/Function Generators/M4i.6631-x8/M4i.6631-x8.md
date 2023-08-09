@@ -11,7 +11,7 @@ The M4i.66xx-x8 series arbitrary waveform generators (AWG) deliver the highest p
 
 </div>
 
-<img width="256" src="docs/Instruments/Function Generators/M4i.6631-x8/M4i.6631-x8.jpg"/>
+![](./M4i.6631-x8.jpg)
 
 </div>
 

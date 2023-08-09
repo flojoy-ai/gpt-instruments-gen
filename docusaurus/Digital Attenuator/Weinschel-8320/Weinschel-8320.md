@@ -11,7 +11,7 @@ Spectrum Control's Weinschel brand Model 8320 Series Multi-channel Programmable 
 
 </div>
 
-<img width="256" src="docs/Instruments/Digital Attenuator/Weinschel-8320/Weinschel-8320.jpg"/>
+![](./Weinschel-8320.jpg)
 
 </div>
 

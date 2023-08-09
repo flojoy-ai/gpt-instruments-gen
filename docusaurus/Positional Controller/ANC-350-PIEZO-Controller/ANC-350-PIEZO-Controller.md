@@ -11,7 +11,7 @@ multi-functional piezo controller for closed loop positioners
 
 </div>
 
-<img width="256" src="docs/Instruments/Positional Controller/ANC-350-PIEZO-Controller/ANC-350-PIEZO-Controller.jpg"/>
+![](./ANC-350-PIEZO-Controller.jpg)
 
 </div>
 

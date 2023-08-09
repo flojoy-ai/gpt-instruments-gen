@@ -12,7 +12,7 @@ Built in 2 channel 25MHz waveform generator
 
 </div>
 
-<img width="256" src="docs/Instruments/Oscilloscopes/Rigol-DS1074Z/Rigol-DS1074Z.jpg"/>
+![](./Rigol-DS1074Z.jpg)
 
 </div>
 

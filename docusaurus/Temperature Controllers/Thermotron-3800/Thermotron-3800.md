@@ -11,7 +11,7 @@ The 3800 is a microprocessor-based programmer and controller. The programmer fun
 
 </div>
 
-<img width="256" src="docs/Instruments/Temperature Controllers/Thermotron-3800/Thermotron-3800.jpg"/>
+![](./Thermotron-3800.jpg)
 
 </div>
 

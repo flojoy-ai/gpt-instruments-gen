@@ -11,7 +11,7 @@ The 2450 is Keithley's next-generation SourceMeter source measure unit (SMU) ins
 
 </div>
 
-<img width="256" src="docs/Instruments/Power Supplies/Keithley-2450/Keithley-2450.jpg"/>
+![](./Keithley-2450.jpg)
 
 </div>
 

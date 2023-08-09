@@ -11,7 +11,7 @@ Source a wide range of voltages and currents with the 360W, 720W, or 1080W Serie
 
 </div>
 
-<img width="256" src="docs/Instruments/Power Supplies/Keithley-2260B/Keithley-2260B.jpg"/>
+![](./Keithley-2260B.jpg)
 
 </div>
 

@@ -11,7 +11,7 @@ Class Connecting To The Lakeshore 425 Gaussmeter
 
 </div>
 
-<img width="256" src="docs/Instruments/Multimeters/LKS-425-Gaussmeterctrl/LKS-425-Gaussmeterctrl.jpg"/>
+![](./LKS-425-Gaussmeterctrl.jpg)
 
 </div>
 

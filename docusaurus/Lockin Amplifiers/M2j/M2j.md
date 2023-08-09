@@ -11,7 +11,7 @@ The M2j module is a low noise amplifier initially designed for use in reflectome
 
 </div>
 
-<img width="256" src="docs/Instruments/Lockin Amplifiers/M2j/M2j.jpg"/>
+![](./M2j.jpg)
 
 </div>
 

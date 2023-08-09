@@ -11,7 +11,7 @@ The 6221 AC and DC Current Source combine ease of use with exceptionally low cur
 
 </div>
 
-<img width="256" src="docs/Instruments/Power Supplies/Keithley-6221/Keithley-6221.jpg"/>
+![](./Keithley-6221.jpg)
 
 </div>
 

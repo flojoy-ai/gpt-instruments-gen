@@ -12,7 +12,7 @@ With a modern and intuitive user interface, you gain direct control and overview
 
 </div>
 
-<img width="256" src="docs/Instruments/Temperature Controllers/Bluefors-temperature-controller/Bluefors-temperature-controller.jpg"/>
+![](./Bluefors-temperature-controller.jpg)
 
 </div>
 

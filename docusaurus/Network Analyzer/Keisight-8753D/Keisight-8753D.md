@@ -11,7 +11,7 @@
 
 </div>
 
-<img width="256" src="docs/Instruments/Network Analyzer/Keisight-8753D/Keisight-8753D.jpg"/>
+![](./Keisight-8753D.jpg)
 
 </div>
 

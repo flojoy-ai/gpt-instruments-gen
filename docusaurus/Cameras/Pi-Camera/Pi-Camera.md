@@ -11,7 +11,7 @@ The v2 Camera Module has a Sony IMX219 8-megapixel sensor (compared to the 5-meg
 
 </div>
 
-<img width="256" src="docs/Instruments/Cameras/Pi-Camera/Pi-Camera.jpg"/>
+![](./Pi-Camera.jpg)
 
 </div>
 

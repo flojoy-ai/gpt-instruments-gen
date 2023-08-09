@@ -11,7 +11,7 @@ The Model 331 cryogenic temperature controller combines the easy operation and u
 
 </div>
 
-<img width="256" src="docs/Instruments/Temperature Controllers/Lakeshore-331/Lakeshore-331.jpg"/>
+![](./Lakeshore-331.jpg)
 
 </div>
 

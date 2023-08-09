@@ -11,7 +11,7 @@ The Model 336 supports the industry’s most advanced line of cryogenic temperat
 
 </div>
 
-<img width="256" src="docs/Instruments/Temperature Controllers/Lakeshore-Model-336/Lakeshore-Model-336.jpg"/>
+![](./Lakeshore-Model-336.jpg)
 
 </div>
 

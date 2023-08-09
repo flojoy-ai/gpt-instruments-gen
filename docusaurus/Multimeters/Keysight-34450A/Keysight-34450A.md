@@ -11,7 +11,7 @@ Turbo charge your production line with the Keysight 34450A 5.5-digit multimeter 
 
 </div>
 
-<img width="256" src="docs/Instruments/Multimeters/Keysight-34450A/Keysight-34450A.jpg"/>
+![](./Keysight-34450A.jpg)
 
 </div>
 

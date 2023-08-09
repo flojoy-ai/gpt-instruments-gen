@@ -11,7 +11,7 @@ The Model 2750 offers extended low ohms measurement capability and supports up t
 
 </div>
 
-<img width="256" src="docs/Instruments/Multimeters/Keithley-2700/Keithley-2700.jpg"/>
+![](./Keithley-2700.jpg)
 
 </div>
 

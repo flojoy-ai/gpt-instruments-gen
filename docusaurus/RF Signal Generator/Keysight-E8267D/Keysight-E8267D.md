@@ -11,7 +11,7 @@ E8267D PSG Vector Signal Generator, 100 kHz to 44 GHz
 
 </div>
 
-<img width="256" src="docs/Instruments/RF Signal Generator/Keysight-E8267D/Keysight-E8267D.jpg"/>
+![](./Keysight-E8267D.jpg)
 
 </div>
 

@@ -17,7 +17,7 @@ Basic Edition software is also available.
 
 </div>
 
-<img width="256" src="docs/Instruments/Power Supplies/Keithley-2600/Keithley-2600.jpg"/>
+![](./Keithley-2600.jpg)
 
 </div>
 

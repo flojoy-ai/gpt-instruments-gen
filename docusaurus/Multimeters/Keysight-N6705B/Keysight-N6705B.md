@@ -13,7 +13,7 @@ N6705B accepts the same modules as N6700 Modular Power System, with over 30 modu
 
 </div>
 
-<img width="256" src="docs/Instruments/RF Signal Generator/Keysight-N6705B/Keysight-N6705B.jpg"/>
+![](./Keysight-N6705B.jpg)
 
 </div>
 

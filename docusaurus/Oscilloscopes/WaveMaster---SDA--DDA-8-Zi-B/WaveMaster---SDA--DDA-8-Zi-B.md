@@ -11,7 +11,7 @@ The WaveMaster 8 Zi-B combines the performance, signal fidelity and feature set 
 
 </div>
 
-<img width="256" src="docs/Instruments/Oscilloscopes/WaveMaster---SDA--DDA-8-Zi-B/WaveMaster---SDA--DDA-8-Zi-B.jpg"/>
+![](./WaveMaster---SDA--DDA-8-Zi-B.jpg)
 
 </div>
 

@@ -11,7 +11,7 @@
 
 </div>
 
-<img width="256" src="docs/Instruments/Multimeters/Keysight-3456A/Keysight-3456A.jpg"/>
+![](./Keysight-3456A.jpg)
 
 </div>
 

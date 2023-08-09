@@ -12,7 +12,7 @@ This Class Allows The Acquisition Of A Waveform (The Description And The Data), 
 
 </div>
 
-<img width="256" src="docs/Instruments/Oscilloscopes/Lecroydso/Lecroydso.jpg"/>
+![](./Lecroydso.jpg)
 
 </div>
 

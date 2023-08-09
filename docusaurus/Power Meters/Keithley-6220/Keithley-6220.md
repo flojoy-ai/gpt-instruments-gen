@@ -11,7 +11,7 @@ The Model 6220 DC Current Source and Model 6221 AC and DC Current Source combine
 
 </div>
 
-<img width="256" src="docs/Instruments/Power Meters/Keithley-6220/Keithley-6220.jpg"/>
+![](./Keithley-6220.jpg)
 
 </div>
 

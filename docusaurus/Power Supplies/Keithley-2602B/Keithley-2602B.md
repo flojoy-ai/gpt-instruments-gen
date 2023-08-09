@@ -11,7 +11,7 @@ The 2602B from Keithley is a 2600B series dual channel system SourceMeter® (SMU
 
 </div>
 
-<img width="256" src="docs/Instruments/Power Supplies/Keithley-2602B/Keithley-2602B.jpg"/>
+![](./Keithley-2602B.jpg)
 
 </div>
 

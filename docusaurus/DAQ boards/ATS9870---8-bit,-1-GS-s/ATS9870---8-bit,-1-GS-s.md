@@ -11,7 +11,7 @@ ATS9870 is the world's first Giga-sample waveform digitizer based on the 8-lane 
 
 </div>
 
-<img width="256" src="docs/Instruments/DAQ boards/ATS9870---8-bit,-1-GS-s/ATS9870---8-bit,-1-GS-s.jpg"/>
+![](./ATS9870---8-bit,-1-GS-s.jpg)
 
 </div>
 

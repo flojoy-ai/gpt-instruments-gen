@@ -11,7 +11,7 @@
 
 </div>
 
-<img width="256" src="docs/Instruments/RF Signal Generator/KtMAwg-IVI-C/KtMAwg-IVI-C.jpg"/>
+![](./KtMAwg-IVI-C.jpg)
 
 </div>
 

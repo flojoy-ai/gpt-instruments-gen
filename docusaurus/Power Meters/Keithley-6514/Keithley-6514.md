@@ -11,7 +11,7 @@
 
 </div>
 
-<img width="256" src="docs/Instruments/Power Meters/Keithley-6514/Keithley-6514.jpg"/>
+![](./Keithley-6514.jpg)
 
 </div>
 

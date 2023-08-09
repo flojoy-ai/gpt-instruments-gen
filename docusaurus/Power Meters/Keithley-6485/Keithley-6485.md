@@ -11,7 +11,7 @@ The 5½-digit Model 6485 Picoammeter combines Keithley’s expertise in sensitiv
 
 </div>
 
-<img width="256" src="docs/Instruments/Power Meters/Keithley-6485/Keithley-6485.jpg"/>
+![](./Keithley-6485.jpg)
 
 </div>
 

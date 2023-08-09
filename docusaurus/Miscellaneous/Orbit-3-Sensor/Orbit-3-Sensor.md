@@ -11,7 +11,7 @@ Orbit 3 is a wireless sensor for ambient temperature and humidity monitoring. In
 
 </div>
 
-<img width="256" src="docs/Instruments/Miscellaneous/Orbit-3-Sensor/Orbit-3-Sensor.jpg"/>
+![](./Orbit-3-Sensor.jpg)
 
 </div>
 

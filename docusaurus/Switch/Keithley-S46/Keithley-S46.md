@@ -11,7 +11,7 @@ S46 Microwave Switch Systems are designed to simplify the automated switching ne
 
 </div>
 
-<img width="256" src="docs/Instruments/Switch/Keithley-S46/Keithley-S46.jpg"/>
+![](./Keithley-S46.jpg)
 
 </div>
 

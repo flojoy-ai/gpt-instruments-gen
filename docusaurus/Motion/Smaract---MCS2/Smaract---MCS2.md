@@ -13,7 +13,7 @@ Its stringent modular design approach makes it the perfect choice for all field 
 
 </div>
 
-<img width="256" src="docs/Instruments/Motion/Smaract---MCS2/Smaract---MCS2.jpg"/>
+![](./Smaract---MCS2.jpg)
 
 </div>
 

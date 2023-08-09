@@ -11,7 +11,7 @@ Control Of The Jumo Quantrol Lc100/Lc200/Lc300, Universal Pid Controller
 
 </div>
 
-<img width="256" src="docs/Instruments/Temperature Controllers/Jumoquantrollc/Jumoquantrollc.jpg"/>
+![](./Jumoquantrollc.jpg)
 
 </div>
 

@@ -11,7 +11,7 @@ The 33512B provides Keysight’s exclusive Trueform technology which offers unma
 
 </div>
 
-<img width="256" src="docs/Instruments/RF Signal Generator/Keysight-33512B/Keysight-33512B.jpg"/>
+![](./Keysight-33512B.jpg)
 
 </div>
 

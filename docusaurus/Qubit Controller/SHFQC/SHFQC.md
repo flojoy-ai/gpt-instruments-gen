@@ -11,7 +11,7 @@ The SHFQC Qubit Controller can control, read out and provide fast feedback on up
 
 </div>
 
-<img width="256" src="docs/Instruments/Qubit Controller/SHFQC/SHFQC.jpg"/>
+![](./SHFQC.jpg)
 
 </div>
 

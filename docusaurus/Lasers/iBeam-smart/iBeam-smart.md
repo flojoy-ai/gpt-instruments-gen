@@ -11,7 +11,7 @@ The iBeam smart is the ultimate choice when looking for a high-performance, ultr
 
 </div>
 
-<img width="256" src="docs/Instruments/Lasers/iBeam-smart/iBeam-smart.jpg"/>
+![](./iBeam-smart.jpg)
 
 </div>
 

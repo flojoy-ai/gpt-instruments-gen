@@ -13,7 +13,7 @@ RF upconverter, 5 to 1000 MHz, with high frequency resolution (1 Hz)
 
 </div>
 
-<img width="256" src="docs/Instruments/RF Signal Generator/SFM/SFM.jpg"/>
+![](./SFM.jpg)
 
 </div>
 

@@ -11,7 +11,7 @@ Temptronic ThermoStreams are portable systems that deliver clean dry air for pre
 
 </div>
 
-<img width="256" src="docs/Instruments/Temperature Controllers/Thermostream-ATS-Series/Thermostream-ATS-Series.jpg"/>
+![](./Thermostream-ATS-Series.jpg)
 
 </div>
 

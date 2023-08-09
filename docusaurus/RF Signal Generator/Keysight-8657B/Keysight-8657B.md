@@ -11,7 +11,7 @@ The Agilent Technologies 8657A and 8657B signal generators are designed to test 
 
 </div>
 
-<img width="256" src="docs/Instruments/RF Signal Generator/Keysight-8657B/Keysight-8657B.jpg"/>
+![](./Keysight-8657B.jpg)
 
 </div>
 

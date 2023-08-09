@@ -11,7 +11,7 @@ The Zurich Instruments UHFLI is a digital lock-in amplifier that covers the freq
 
 </div>
 
-<img width="256" src="docs/Instruments/Lockin Amplifiers/UHFLI/UHFLI.jpg"/>
+![](./UHFLI.jpg)
 
 </div>
 

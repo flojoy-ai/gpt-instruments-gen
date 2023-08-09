@@ -15,7 +15,7 @@ controls the retardance of the LC device.
 
 </div>
 
-<img width="256" src="docs/Instruments/Power Supplies/LCC25/LCC25.jpg"/>
+![](./LCC25.jpg)
 
 </div>
 

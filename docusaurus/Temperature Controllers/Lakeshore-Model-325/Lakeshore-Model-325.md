@@ -11,7 +11,7 @@ The Model 325 dual-channel cryogenic temperature controller is capable of suppor
 
 </div>
 
-<img width="256" src="docs/Instruments/Temperature Controllers/Lakeshore-Model-325/Lakeshore-Model-325.jpg"/>
+![](./Lakeshore-Model-325.jpg)
 
 </div>
 

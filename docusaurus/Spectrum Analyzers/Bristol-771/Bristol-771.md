@@ -11,7 +11,7 @@ The 771 Series Laser Spectrum Analyzer combines proven Michelson interferometer 
 
 </div>
 
-<img width="256" src="docs/Instruments/Spectrum Analyzers/Bristol-771/Bristol-771.jpg"/>
+![](./Bristol-771.jpg)
 
 </div>
 

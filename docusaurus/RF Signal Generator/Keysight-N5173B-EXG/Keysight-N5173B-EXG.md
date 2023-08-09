@@ -11,7 +11,7 @@ The Keysight N5173B EXG microwave analog signal generator is the cost-effective 
 
 </div>
 
-<img width="256" src="docs/Instruments/RF Signal Generator/Keysight-N5173B-EXG/Keysight-N5173B-EXG.jpg"/>
+![](./Keysight-N5173B-EXG.jpg)
 
 </div>
 

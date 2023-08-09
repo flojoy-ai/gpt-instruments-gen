@@ -11,7 +11,7 @@ The Keysight B1500A semiconductor parameter analyzer is an all-in-one device cha
 
 </div>
 
-<img width="256" src="docs/Instruments/Spectrum Analyzers/Keysight-B1500A/Keysight-B1500A.jpg"/>
+![](./Keysight-B1500A.jpg)
 
 </div>
 

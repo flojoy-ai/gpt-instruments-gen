@@ -11,7 +11,7 @@ The 2611B from Keithley is a 2600B series dual channel system SourceMeter® (SMU
 
 </div>
 
-<img width="256" src="docs/Instruments/Power Supplies/Keithley-2611B/Keithley-2611B.jpg"/>
+![](./Keithley-2611B.jpg)
 
 </div>
 

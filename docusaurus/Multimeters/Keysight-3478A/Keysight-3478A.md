@@ -11,7 +11,7 @@ The HP 3478A 5.5 digit DMM with HP-IB interface
 
 </div>
 
-<img width="256" src="docs/Instruments/Multimeters/Keysight-3478A/Keysight-3478A.jpg"/>
+![](./Keysight-3478A.jpg)
 
 </div>
 

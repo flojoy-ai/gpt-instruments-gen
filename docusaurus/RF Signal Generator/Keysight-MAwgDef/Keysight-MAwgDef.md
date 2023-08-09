@@ -11,7 +11,7 @@
 
 </div>
 
-<img width="256" src="docs/Instruments/RF Signal Generator/Keysight-MAwgDef/Keysight-MAwgDef.jpg"/>
+![](./Keysight-MAwgDef.jpg)
 
 </div>
 

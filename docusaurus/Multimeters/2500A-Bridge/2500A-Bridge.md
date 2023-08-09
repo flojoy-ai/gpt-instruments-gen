@@ -11,7 +11,7 @@ The AH 2500A offers unparalleled stability, resolution and accuracy in a capacit
 
 </div>
 
-<img width="256" src="docs/Instruments/Multimeters/2500A-Bridge/2500A-Bridge.jpg"/>
+![](./2500A-Bridge.jpg)
 
 </div>
 

@@ -16,7 +16,7 @@ controlled strains and stresses to the material.
 
 </div>
 
-<img width="256" src="docs/Instruments/Power Supplies/Razorbill-RP100/Razorbill-RP100.jpg"/>
+![](./Razorbill-RP100.jpg)
 
 </div>
 

@@ -11,7 +11,7 @@ The Keysight N5232B PNA-L series network analyzer is designed for S-parameter an
 
 </div>
 
-<img width="256" src="docs/Instruments/Network Analyzer/Keysight-N5232B/Keysight-N5232B.jpg"/>
+![](./Keysight-N5232B.jpg)
 
 </div>
 

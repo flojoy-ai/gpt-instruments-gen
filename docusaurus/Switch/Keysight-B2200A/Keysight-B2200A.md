@@ -11,7 +11,7 @@ The Keysight B2200A fA leakage switch mainframe reduces the cost of test by enab
 
 </div>
 
-<img width="256" src="docs/Instruments/Switch/Keysight-B2200A/Keysight-B2200A.jpg"/>
+![](./Keysight-B2200A.jpg)
 
 </div>
 

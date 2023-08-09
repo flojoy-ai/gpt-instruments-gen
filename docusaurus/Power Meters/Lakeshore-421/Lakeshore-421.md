@@ -14,7 +14,7 @@ Application-specific probe customization available.
 
 </div>
 
-<img width="256" src="docs/Instruments/Power Meters/Lakeshore-421/Lakeshore-421.jpg"/>
+![](./Lakeshore-421.jpg)
 
 </div>
 

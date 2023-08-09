@@ -11,7 +11,7 @@ The Model 372 AC resistance bridge and temperature controller builds on the soli
 
 </div>
 
-<img width="256" src="docs/Instruments/Power Meters/Lakeshore-Model-372/Lakeshore-Model-372.jpg"/>
+![](./Lakeshore-Model-372.jpg)
 
 </div>
 

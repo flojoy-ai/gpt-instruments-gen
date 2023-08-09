@@ -11,7 +11,7 @@
 
 </div>
 
-<img width="256" src="docs/Instruments/Oscilloscopes/TDS500-Series/TDS500-Series.jpg"/>
+![](./TDS500-Series.jpg)
 
 </div>
 

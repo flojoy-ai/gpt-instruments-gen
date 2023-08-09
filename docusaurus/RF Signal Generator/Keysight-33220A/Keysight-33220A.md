@@ -11,7 +11,7 @@ The Keysight 33220A is a 20 MHz synthesized function generator with built-in arb
 
 </div>
 
-<img width="256" src="docs/Instruments/RF Signal Generator/Keysight-33220A/Keysight-33220A.jpg"/>
+![](./Keysight-33220A.jpg)
 
 </div>
 

@@ -11,7 +11,7 @@ Lake Shore combined the technical advantages of digital signal processing with
 
 </div>
 
-<img width="256" src="docs/Instruments/Power Meters/Lakeshore-475/Lakeshore-475.jpg"/>
+![](./Lakeshore-475.jpg)
 
 </div>
 

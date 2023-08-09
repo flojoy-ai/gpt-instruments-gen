@@ -11,7 +11,7 @@
 
 </div>
 
-<img width="256" src="docs/Instruments/Miscellaneous/Stahl/Stahl.jpg"/>
+![](./Stahl.jpg)
 
 </div>
 

@@ -11,7 +11,7 @@ Metrology-grade analog signal generator offering industry-leading output power, 
 
 </div>
 
-<img width="256" src="docs/Instruments/RF Signal Generator/Keysight-E8257D/Keysight-E8257D.jpg"/>
+![](./Keysight-E8257D.jpg)
 
 </div>
 

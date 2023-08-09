@@ -11,7 +11,7 @@ The model 8742 is a 4-axis open-loop intelligent motion controller/driver that p
 
 </div>
 
-<img width="256" src="docs/Instruments/Positional Controller/Picomotorcontroller-8742/Picomotorcontroller-8742.jpg"/>
+![](./Picomotorcontroller-8742.jpg)
 
 </div>
 

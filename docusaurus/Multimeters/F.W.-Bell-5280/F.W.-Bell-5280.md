@@ -11,7 +11,7 @@ Handheld single-axis digital magnetometer gauss / tesla meter for measuring magn
 
 </div>
 
-<img width="256" src="docs/Instruments/Multimeters/F.W.-Bell-5280/F.W.-Bell-5280.jpg"/>
+![](./F.W.-Bell-5280.jpg)
 
 </div>
 

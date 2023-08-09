@@ -11,7 +11,7 @@ The LDA-102N Lab Brick USB programmable 50 Ohm digital attenuator has an input p
 
 </div>
 
-<img width="256" src="docs/Instruments/Digital Attenuator/LDA-102N/LDA-102N.jpg"/>
+![](./LDA-102N.jpg)
 
 </div>
 

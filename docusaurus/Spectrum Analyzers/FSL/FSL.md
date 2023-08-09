@@ -13,7 +13,7 @@ These analyzers are ideal for a large number of applications in development, ser
 
 </div>
 
-<img width="256" src="docs/Instruments/Spectrum Analyzers/FSL/FSL.jpg"/>
+![](./FSL.jpg)
 
 </div>
 

@@ -11,7 +11,7 @@ The ECC100 is a state-ofthe-art motion controller, allowing the simultaneous ope
 
 </div>
 
-<img width="256" src="docs/Instruments/Motion/Attocube-ECC-100/Attocube-ECC-100.jpg"/>
+![](./Attocube-ECC-100.jpg)
 
 </div>
 

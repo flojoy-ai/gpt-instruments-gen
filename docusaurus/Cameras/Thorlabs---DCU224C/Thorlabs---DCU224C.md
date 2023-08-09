@@ -11,7 +11,7 @@ DCU224C - CCD Camera, 1280 x 1024 Resolution, Color, USB 2.0
 
 </div>
 
-<img width="256" src="docs/Instruments/Cameras/Thorlabs---DCU224C/Thorlabs---DCU224C.jpg"/>
+![](./Thorlabs---DCU224C.jpg)
 
 </div>
 

@@ -11,7 +11,7 @@ TOPTICA’s TopMode lasers operate as easily as a HeNe, but also offer higher po
 
 </div>
 
-<img width="256" src="docs/Instruments/Lasers/TopMode/TopMode.jpg"/>
+![](./TopMode.jpg)
 
 </div>
 

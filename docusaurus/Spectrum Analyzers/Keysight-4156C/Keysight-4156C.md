@@ -11,7 +11,7 @@
 
 </div>
 
-<img width="256" src="docs/Instruments/Spectrum Analyzers/Keysight-4156C/Keysight-4156C.jpg"/>
+![](./Keysight-4156C.jpg)
 
 </div>
 

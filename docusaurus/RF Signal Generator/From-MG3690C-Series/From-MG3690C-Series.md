@@ -11,7 +11,7 @@ The MG3690C series of broadband signal generators covers audio, HF, VHF, UHF, RF
 
 </div>
 
-<img width="256" src="docs/Instruments/RF Signal Generator/From-MG3690C-Series/From-MG3690C-Series.jpg"/>
+![](./From-MG3690C-Series.jpg)
 
 </div>
 

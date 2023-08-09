@@ -11,7 +11,7 @@ Kiralux 12.3 MP Monochrome CMOS Camera, Hermetically Sealed Cooled Package, USB 
 
 </div>
 
-<img width="256" src="docs/Instruments/Cameras/CC126Mu/CC126Mu.jpg"/>
+![](./CC126Mu.jpg)
 
 </div>
 

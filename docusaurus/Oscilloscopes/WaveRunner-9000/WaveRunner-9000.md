@@ -11,7 +11,7 @@ WaveRunner 9000 oscilloscopes have the industry's widest and deepest collection 
 
 </div>
 
-<img width="256" src="docs/Instruments/Oscilloscopes/WaveRunner-9000/WaveRunner-9000.jpg"/>
+![](./WaveRunner-9000.jpg)
 
 </div>
 

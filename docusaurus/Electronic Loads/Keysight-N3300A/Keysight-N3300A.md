@@ -11,7 +11,7 @@ The Keysight N3300A is a full-rack width mainframe with 6-slots that accepts com
 
 </div>
 
-<img width="256" src="docs/Instruments/Electronic Loads/Keysight-N3300A/Keysight-N3300A.jpg"/>
+![](./Keysight-N3300A.jpg)
 
 </div>
 

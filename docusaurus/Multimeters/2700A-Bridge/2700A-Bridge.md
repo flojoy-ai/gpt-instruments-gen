@@ -15,7 +15,7 @@ The AH2700A-E is the pinnacle of decades of Andeen-Hagerling experience in bridg
 
 </div>
 
-<img width="256" src="docs/Instruments/Multimeters/2700A-Bridge/2700A-Bridge.jpg"/>
+![](./2700A-Bridge.jpg)
 
 </div>
 

@@ -11,7 +11,7 @@ PXA signal analyzers are ideally suited for high-performance research and develo
 
 </div>
 
-<img width="256" src="docs/Instruments/RF Signal Generator/Keysight-N9030B-PXA/Keysight-N9030B-PXA.jpg"/>
+![](./Keysight-N9030B-PXA.jpg)
 
 </div>
 

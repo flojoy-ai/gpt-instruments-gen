@@ -11,7 +11,7 @@ The DP800 Series Power Supplies combine the ability to source, analyze, and coor
 
 </div>
 
-<img width="256" src="docs/Instruments/Power Supplies/Rigol-DP8xx-Series/Rigol-DP8xx-Series.jpg"/>
+![](./Rigol-DP8xx-Series.jpg)
 
 </div>
 

@@ -11,7 +11,7 @@ Motorized Variable Two Wheels Attenuators 10MWA168 consists of two filter wheels
 
 </div>
 
-<img width="256" src="docs/Instruments/Lockin Amplifiers/Standa-10MWA168/Standa-10MWA168.jpg"/>
+![](./Standa-10MWA168.jpg)
 
 </div>
 

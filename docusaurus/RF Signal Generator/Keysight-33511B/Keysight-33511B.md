@@ -11,7 +11,7 @@ The 33511B waveform generator provides Keysight's exclusive Trueform technology 
 
 </div>
 
-<img width="256" src="docs/Instruments/RF Signal Generator/Keysight-33511B/Keysight-33511B.jpg"/>
+![](./Keysight-33511B.jpg)
 
 </div>
 

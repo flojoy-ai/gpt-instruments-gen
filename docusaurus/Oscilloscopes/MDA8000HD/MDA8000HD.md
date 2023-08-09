@@ -11,7 +11,7 @@ The Motor Drive Analyzer is built on an 8 channel, 12-bit resolution oscilloscop
 
 </div>
 
-<img width="256" src="docs/Instruments/Oscilloscopes/MDA8000HD/MDA8000HD.jpg"/>
+![](./MDA8000HD.jpg)
 
 </div>
 

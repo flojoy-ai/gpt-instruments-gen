@@ -11,7 +11,7 @@ The WaveSurfer 3000z has a 10.1" capacitive touch display, the longest memory, a
 
 </div>
 
-<img width="256" src="docs/Instruments/Oscilloscopes/WaveSurfer-3000z/WaveSurfer-3000z.jpg"/>
+![](./WaveSurfer-3000z.jpg)
 
 </div>
 

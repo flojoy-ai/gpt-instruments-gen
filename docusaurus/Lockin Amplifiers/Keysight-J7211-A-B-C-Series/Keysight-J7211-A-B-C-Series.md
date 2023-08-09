@@ -11,7 +11,7 @@
 
 </div>
 
-<img width="256" src="docs/Instruments/Lockin Amplifiers/Keysight-J7211-A-B-C-Series/Keysight-J7211-A-B-C-Series.jpg"/>
+![](./Keysight-J7211-A-B-C-Series.jpg)
 
 </div>
 

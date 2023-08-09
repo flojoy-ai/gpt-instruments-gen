@@ -11,7 +11,7 @@ The pco.pixelfly™ 1.3 SWIR is a high-performance machine vision camera due to 
 
 </div>
 
-<img width="256" src="docs/Instruments/Cameras/PCO-Pixelfly/PCO-Pixelfly.jpg"/>
+![](./PCO-Pixelfly.jpg)
 
 </div>
 

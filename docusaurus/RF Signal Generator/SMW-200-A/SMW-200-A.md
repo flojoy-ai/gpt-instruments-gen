@@ -11,7 +11,7 @@ The R&S®SMW200A offers integrated channel emulation for up to 800 MHz of fading
 
 </div>
 
-<img width="256" src="docs/Instruments/RF Signal Generator/SMW-200-A/SMW-200-A.jpg"/>
+![](./SMW-200-A.jpg)
 
 </div>
 

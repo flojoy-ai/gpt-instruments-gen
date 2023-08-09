@@ -11,7 +11,7 @@ The 2635B SourceMeter SMU instrument, is a new and improved one-channel SMU inst
 
 </div>
 
-<img width="256" src="docs/Instruments/Power Supplies/Keithley-2635B/Keithley-2635B.jpg"/>
+![](./Keithley-2635B.jpg)
 
 </div>
 

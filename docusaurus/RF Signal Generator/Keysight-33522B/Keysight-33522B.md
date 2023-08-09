@@ -11,7 +11,7 @@ Keysight 33500B Series waveform generators with exclusive Trueform signal genera
 
 </div>
 
-<img width="256" src="docs/Instruments/RF Signal Generator/Keysight-33522B/Keysight-33522B.jpg"/>
+![](./Keysight-33522B.jpg)
 
 </div>
 

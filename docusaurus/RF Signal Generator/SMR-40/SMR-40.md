@@ -11,7 +11,7 @@ The R&S SMR40 Signal Generator is designed as CW generator with pulse modulation
 
 </div>
 
-<img width="256" src="docs/Instruments/RF Signal Generator/SMR-40/SMR-40.jpg"/>
+![](./SMR-40.jpg)
 
 </div>
 

@@ -11,7 +11,7 @@ QDAC-II is the next generation of the successful QDAC from QDevil. It has all th
 
 </div>
 
-<img width="256" src="docs/Instruments/Digital-Analog Converter/Qdac-2-Array/Qdac-2-Array.jpg"/>
+![](./Qdac-2-Array.jpg)
 
 </div>
 

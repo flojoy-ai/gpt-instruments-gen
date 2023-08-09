@@ -11,7 +11,7 @@ The Model 340 cryogenic temperature controller is our most advanced temperature 
 
 </div>
 
-<img width="256" src="docs/Instruments/Temperature Controllers/Lakeshore-340/Lakeshore-340.jpg"/>
+![](./Lakeshore-340.jpg)
 
 </div>
 

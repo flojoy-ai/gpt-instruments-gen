@@ -11,7 +11,7 @@
 
 </div>
 
-<img width="256" src="docs/Instruments/Function Generators/Keysight-33120A/Keysight-33120A.jpg"/>
+![](./Keysight-33120A.jpg)
 
 </div>
 

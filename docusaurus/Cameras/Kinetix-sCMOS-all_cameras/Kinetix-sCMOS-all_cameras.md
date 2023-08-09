@@ -11,7 +11,7 @@ The Kinetix sCMOS delivers the highest speed and largest field of view with near
 
 </div>
 
-<img width="256" src="docs/Instruments/Cameras/Kinetix-sCMOS-all_cameras/Kinetix-sCMOS-all_cameras.jpg"/>
+![](./Kinetix-sCMOS-all_cameras.jpg)
 
 </div>
 

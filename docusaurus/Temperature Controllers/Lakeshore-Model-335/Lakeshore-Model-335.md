@@ -11,7 +11,7 @@ The Model 335 supports the industry's most advanced line of cryogenic temperatur
 
 </div>
 
-<img width="256" src="docs/Instruments/Temperature Controllers/Lakeshore-Model-335/Lakeshore-Model-335.jpg"/>
+![](./Lakeshore-Model-335.jpg)
 
 </div>
 

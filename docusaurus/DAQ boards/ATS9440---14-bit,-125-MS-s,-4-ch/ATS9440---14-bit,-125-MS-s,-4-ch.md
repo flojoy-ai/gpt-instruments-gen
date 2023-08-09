@@ -11,7 +11,7 @@ ATS9440 is a 4-channel, 14-bit, 125 MS/s waveform digitizer based on the 8-lane 
 
 </div>
 
-<img width="256" src="docs/Instruments/DAQ boards/ATS9440---14-bit,-125-MS-s,-4-ch/ATS9440---14-bit,-125-MS-s,-4-ch.jpg"/>
+![](./ATS9440---14-bit,-125-MS-s,-4-ch.jpg)
 
 </div>
 

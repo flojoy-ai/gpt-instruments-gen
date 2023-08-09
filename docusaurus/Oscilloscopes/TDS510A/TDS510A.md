@@ -11,7 +11,7 @@ The TDS510A Digital Oscilloscope is a full-featured, cost-effective, versatile o
 
 </div>
 
-<img width="256" src="docs/Instruments/Oscilloscopes/TDS510A/TDS510A.jpg"/>
+![](./TDS510A.jpg)
 
 </div>
 

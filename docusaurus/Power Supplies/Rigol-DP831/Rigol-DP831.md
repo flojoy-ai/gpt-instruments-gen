@@ -11,7 +11,7 @@ The Rigol DP831 features a relative large (8.9 cm / 3.5") and easy to read TFT m
 
 </div>
 
-<img width="256" src="docs/Instruments/Power Supplies/Rigol-DP831/Rigol-DP831.jpg"/>
+![](./Rigol-DP831.jpg)
 
 </div>
 

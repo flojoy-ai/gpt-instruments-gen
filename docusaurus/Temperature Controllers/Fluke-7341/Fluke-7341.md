@@ -11,7 +11,7 @@ Deep-Well Compact Bath, –45 °C to 150 °C
 
 </div>
 
-<img width="256" src="docs/Instruments/Temperature Controllers/Fluke-7341/Fluke-7341.jpg"/>
+![](./Fluke-7341.jpg)
 
 </div>
 

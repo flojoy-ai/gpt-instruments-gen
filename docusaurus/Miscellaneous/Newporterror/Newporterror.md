@@ -11,7 +11,7 @@
 
 </div>
 
-<img width="256" src="docs/Instruments/Miscellaneous/Newporterror/Newporterror.jpg"/>
+![](./Newporterror.jpg)
 
 </div>
 

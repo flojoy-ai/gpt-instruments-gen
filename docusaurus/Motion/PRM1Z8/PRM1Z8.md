@@ -11,7 +11,7 @@ The PRM1Z8 is a small, compact, DC servo motorized 360° rotation mount and stag
 
 </div>
 
-<img width="256" src="docs/Instruments/Motion/PRM1Z8/PRM1Z8.jpg"/>
+![](./PRM1Z8.jpg)
 
 </div>
 

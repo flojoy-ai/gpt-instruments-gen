@@ -11,7 +11,7 @@ The 34411A offers Temperature and Capacitance capabilities, in addition to those
 
 </div>
 
-<img width="256" src="docs/Instruments/Multimeters/Keysight-34470A-Submodules/Keysight-34470A-Submodules.jpg"/>
+![](./Keysight-34470A-Submodules.jpg)
 
 </div>
 

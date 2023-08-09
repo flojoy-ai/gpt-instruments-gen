@@ -11,7 +11,7 @@ All SCPI Instrument
 
 </div>
 
-<img width="256" src="docs/Instruments/Miscellaneous/SCPI-Instrument/SCPI-Instrument.jpg"/>
+![](./SCPI-Instrument.jpg)
 
 </div>
 

@@ -11,7 +11,7 @@ The LDA-602N Lab Brick USB programmable 50 Ohm digital attenuator has an input p
 
 </div>
 
-<img width="256" src="docs/Instruments/Digital Attenuator/LDA-602N/LDA-602N.jpg"/>
+![](./LDA-602N.jpg)
 
 </div>
 

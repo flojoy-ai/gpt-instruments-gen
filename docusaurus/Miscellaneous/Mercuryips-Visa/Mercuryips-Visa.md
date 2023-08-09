@@ -11,7 +11,7 @@
 
 </div>
 
-<img width="256" src="docs/Instruments/Miscellaneous/Mercuryips-Visa/Mercuryips-Visa.jpg"/>
+![](./Mercuryips-Visa.jpg)
 
 </div>
 

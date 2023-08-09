@@ -11,7 +11,7 @@ The S5i module is a RF source ranging from 40 MHz to 4 GHz, initially designed f
 
 </div>
 
-<img width="256" src="docs/Instruments/RF Signal Generator/S5i/S5i.jpg"/>
+![](./S5i.jpg)
 
 </div>
 

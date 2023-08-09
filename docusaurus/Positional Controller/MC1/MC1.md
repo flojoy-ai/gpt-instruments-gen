@@ -11,7 +11,7 @@
 
 </div>
 
-<img width="256" src="docs/Instruments/Positional Controller/MC1/MC1.jpg"/>
+![](./MC1.jpg)
 
 </div>
 

@@ -13,7 +13,7 @@ The Keithley 580 can test more devices by enabling both test current polarity an
 
 </div>
 
-<img width="256" src="docs/Instruments/Power Meters/Keithley-580/Keithley-580.jpg"/>
+![](./Keithley-580.jpg)
 
 </div>
 

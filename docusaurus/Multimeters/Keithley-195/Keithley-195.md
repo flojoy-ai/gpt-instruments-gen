@@ -11,7 +11,7 @@ The Keithley 195A Digital Multimeter is a fully programmable instrument with a 5
 
 </div>
 
-<img width="256" src="docs/Instruments/Multimeters/Keithley-195/Keithley-195.jpg"/>
+![](./Keithley-195.jpg)
 
 </div>
 

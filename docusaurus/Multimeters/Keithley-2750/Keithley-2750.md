@@ -11,7 +11,7 @@ The 2750 offers a cost-effective, high performance, affordable alternatives to s
 
 </div>
 
-<img width="256" src="docs/Instruments/Multimeters/Keithley-2750/Keithley-2750.jpg"/>
+![](./Keithley-2750.jpg)
 
 </div>
 
