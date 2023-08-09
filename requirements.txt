@@ -6,3 +6,4 @@ beautifulsoup4
 openai
 airtable
 tiktoken
+pillow
