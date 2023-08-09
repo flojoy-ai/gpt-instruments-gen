@@ -11,7 +11,7 @@
 
 </div>
 
-![](./Kelvinox.jpg)
+<img src={require("./Kelvinox.jpg").default} width="256" height="150"/>
 
 </div>
 

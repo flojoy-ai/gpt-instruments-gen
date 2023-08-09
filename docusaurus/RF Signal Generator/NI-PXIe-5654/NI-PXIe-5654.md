@@ -11,7 +11,7 @@ PXIe, 250 kHz to 20 GHz, PXI RF Analog Signal Generator—The PXIe-5654 features
 
 </div>
 
-![](./NI-PXIe-5654.jpg)
+<img src={require("./NI-PXIe-5654.jpg").default} width="256" height="150"/>
 
 </div>
 

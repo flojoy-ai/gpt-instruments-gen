@@ -13,7 +13,7 @@ Its stringent modular design approach makes it the perfect choice for all field 
 
 </div>
 
-![](./Smaract---MCS2.jpg)
+<img src={require("./Smaract---MCS2.jpg").default} width="256" height="150"/>
 
 </div>
 

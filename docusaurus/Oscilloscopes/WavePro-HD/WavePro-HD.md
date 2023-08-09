@@ -11,7 +11,7 @@ WavePro HD High-Definition oscilloscopes employ unique Teledyne LeCroy HD4096 te
 
 </div>
 
-![](./WavePro-HD.jpg)
+<img src={require("./WavePro-HD.jpg").default} width="256" height="150"/>
 
 </div>
 

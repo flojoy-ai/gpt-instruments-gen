@@ -11,7 +11,7 @@ The Picowatt AVS 47 is a resistance bridge used to measure the resistance of low
 
 </div>
 
-![](./AVS-47.jpg)
+<img src={require("./AVS-47.jpg").default} width="256" height="150"/>
 
 </div>
 

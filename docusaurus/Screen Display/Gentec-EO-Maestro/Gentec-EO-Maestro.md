@@ -11,7 +11,7 @@ Touchscreen display device for power & energy measurement. Single-channel, multi
 
 </div>
 
-![](./Gentec-EO-Maestro.jpg)
+<img src={require("./Gentec-EO-Maestro.jpg").default} width="256" height="150"/>
 
 </div>
 

@@ -16,7 +16,7 @@ Built in V, A, W measurements and waveform display
 
 </div>
 
-![](./Rigol-DP832.jpg)
+<img src={require("./Rigol-DP832.jpg").default} width="256" height="150"/>
 
 </div>
 

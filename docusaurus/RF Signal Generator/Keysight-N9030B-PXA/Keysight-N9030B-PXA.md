@@ -11,7 +11,7 @@ PXA signal analyzers are ideally suited for high-performance research and develo
 
 </div>
 
-![](./Keysight-N9030B-PXA.jpg)
+<img src={require("./Keysight-N9030B-PXA.jpg").default} width="256" height="150"/>
 
 </div>
 

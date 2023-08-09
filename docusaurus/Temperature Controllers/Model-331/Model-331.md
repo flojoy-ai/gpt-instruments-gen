@@ -11,7 +11,7 @@ The Model 331 cryogenic temperature controller combines the easy operation and u
 
 </div>
 
-![](./Model-331.jpg)
+<img src={require("./Model-331.jpg").default} width="256" height="150"/>
 
 </div>
 

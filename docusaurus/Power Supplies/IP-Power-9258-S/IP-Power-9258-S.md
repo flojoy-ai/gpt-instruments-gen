@@ -11,7 +11,7 @@ IP9258 is a web controller which can be easily used in the industry field
 
 </div>
 
-![](./IP-Power-9258-S.jpg)
+<img src={require("./IP-Power-9258-S.jpg").default} width="256" height="150"/>
 
 </div>
 

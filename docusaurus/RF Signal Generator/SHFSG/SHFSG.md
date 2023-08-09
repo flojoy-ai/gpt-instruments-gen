@@ -11,7 +11,7 @@ The Zurich Instruments SHFSG Signal Generator produces qubit control signals in 
 
 </div>
 
-![](./SHFSG.jpg)
+<img src={require("./SHFSG.jpg").default} width="256" height="150"/>
 
 </div>
 

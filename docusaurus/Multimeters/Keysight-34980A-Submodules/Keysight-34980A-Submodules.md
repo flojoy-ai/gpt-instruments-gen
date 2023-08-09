@@ -14,7 +14,7 @@ are in need of a new, cost-effective alternative
 
 </div>
 
-![](./Keysight-34980A-Submodules.jpg)
+<img src={require("./Keysight-34980A-Submodules.jpg").default} width="256" height="150"/>
 
 </div>
 

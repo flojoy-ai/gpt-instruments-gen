@@ -11,7 +11,7 @@ Metrology-grade analog signal generator offering industry-leading output power, 
 
 </div>
 
-![](./Keysight-E8257D.jpg)
+<img src={require("./Keysight-E8257D.jpg").default} width="256" height="150"/>
 
 </div>
 

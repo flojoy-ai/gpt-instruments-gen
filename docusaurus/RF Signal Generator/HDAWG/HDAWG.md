@@ -11,7 +11,7 @@ The Zurich Instruments HDAWG multi-channel Arbitrary Waveform Generator has one 
 
 </div>
 
-![](./HDAWG.jpg)
+<img src={require("./HDAWG.jpg").default} width="256" height="150"/>
 
 </div>
 

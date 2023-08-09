@@ -16,7 +16,7 @@ controlled strains and stresses to the material.
 
 </div>
 
-![](./Razorbill-RP100.jpg)
+<img src={require("./Razorbill-RP100.jpg").default} width="256" height="150"/>
 
 </div>
 

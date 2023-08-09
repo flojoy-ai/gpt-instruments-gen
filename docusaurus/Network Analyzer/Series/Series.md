@@ -11,7 +11,7 @@
 
 </div>
 
-![](./Series.jpg)
+<img src={require("./Series.jpg").default} width="256" height="150"/>
 
 </div>
 

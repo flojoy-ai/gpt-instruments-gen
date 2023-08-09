@@ -11,7 +11,7 @@ The AG-UC8 Agilis™ Controller provides USB computer control of up to eight Agi
 
 </div>
 
-![](./AG-UC-8.jpg)
+<img src={require("./AG-UC-8.jpg").default} width="256" height="150"/>
 
 </div>
 

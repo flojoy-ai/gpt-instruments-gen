@@ -11,7 +11,7 @@ The Zurich Instruments PQSC Programmable Quantum System Controller brings togeth
 
 </div>
 
-![](./PQSC.jpg)
+<img src={require("./PQSC.jpg").default} width="256" height="150"/>
 
 </div>
 

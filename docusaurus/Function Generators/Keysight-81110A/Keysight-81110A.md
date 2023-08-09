@@ -12,7 +12,7 @@ Pulse Pattern Generator / 165/330 MHz
 
 </div>
 
-![](./Keysight-81110A.jpg)
+<img src={require("./Keysight-81110A.jpg").default} width="256" height="150"/>
 
 </div>
 

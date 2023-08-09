@@ -11,7 +11,7 @@ The M5180 is a 2-port, 18 GHz Vector Network Analyzer that delivers metrology-gr
 
 </div>
 
-![](./M5180-2-Port-18-GHz-Analyzer.jpg)
+<img src={require("./M5180-2-Port-18-GHz-Analyzer.jpg").default} width="256" height="150"/>
 
 </div>
 

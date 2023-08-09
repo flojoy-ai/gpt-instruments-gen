@@ -11,7 +11,7 @@ The E4980A precision LCR meter provides the best combination of accuracy, speed,
 
 </div>
 
-![](./Keysight-E4980A.jpg)
+<img src={require("./Keysight-E4980A.jpg").default} width="256" height="150"/>
 
 </div>
 

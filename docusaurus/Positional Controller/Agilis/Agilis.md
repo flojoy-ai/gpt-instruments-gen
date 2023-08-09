@@ -11,7 +11,7 @@ Agilis™ Piezo Motion Controllers provide convenient and compact fine positioni
 
 </div>
 
-![](./Agilis.jpg)
+<img src={require("./Agilis.jpg").default} width="256" height="150"/>
 
 </div>
 

@@ -11,7 +11,7 @@ The 2634B SourceMeter SMU instrument is a new dual-channel SMU instrument with b
 
 </div>
 
-![](./Keithley-2634B.jpg)
+<img src={require("./Keithley-2634B.jpg").default} width="256" height="150"/>
 
 </div>
 

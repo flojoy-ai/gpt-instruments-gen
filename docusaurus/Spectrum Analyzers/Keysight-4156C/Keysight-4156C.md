@@ -11,7 +11,7 @@
 
 </div>
 
-![](./Keysight-4156C.jpg)
+<img src={require("./Keysight-4156C.jpg").default} width="256" height="150"/>
 
 </div>
 

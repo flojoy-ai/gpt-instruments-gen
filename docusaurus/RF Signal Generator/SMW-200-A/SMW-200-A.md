@@ -11,7 +11,7 @@ The R&S®SMW200A offers integrated channel emulation for up to 800 MHz of fading
 
 </div>
 
-![](./SMW-200-A.jpg)
+<img src={require("./SMW-200-A.jpg").default} width="256" height="150"/>
 
 </div>
 

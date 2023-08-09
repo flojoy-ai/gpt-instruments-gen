@@ -11,7 +11,7 @@ Data acquisition (DAQ) is the process of measuring an electrical or physical phe
 
 </div>
 
-![](./NI-DAQ.jpg)
+<img src={require("./NI-DAQ.jpg").default} width="256" height="150"/>
 
 </div>
 

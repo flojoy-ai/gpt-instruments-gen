@@ -11,7 +11,7 @@ Lake Shore Model 425 gaussmeter provides high-end functionality and performance 
 
 </div>
 
-![](./Lakeshore-425.jpg)
+<img src={require("./Lakeshore-425.jpg").default} width="256" height="150"/>
 
 </div>
 

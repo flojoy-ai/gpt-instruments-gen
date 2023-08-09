@@ -11,7 +11,7 @@ The R&S ZNB8 from Rohde & Schwarz is a Vector Network Analyzer with Frequency 9 
 
 </div>
 
-![](./R&S-ZNB8.jpg)
+<img src={require("./R&S-ZNB8.jpg").default} width="256" height="150"/>
 
 </div>
 

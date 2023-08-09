@@ -11,7 +11,7 @@
 
 </div>
 
-![](./Mercuryips-Visa.jpg)
+<img src={require("./Mercuryips-Visa.jpg").default} width="256" height="150"/>
 
 </div>
 

@@ -11,7 +11,7 @@ WaveSurfer 4000HD extends Teledyne LeCroy’s leadership in High Definition Osci
 
 </div>
 
-![](./WaveSurfer-4000HD.jpg)
+<img src={require("./WaveSurfer-4000HD.jpg").default} width="256" height="150"/>
 
 </div>
 

@@ -17,7 +17,7 @@ Basic Edition software is also available.
 
 </div>
 
-![](./Keithley-2600.jpg)
+<img src={require("./Keithley-2600.jpg").default} width="256" height="150"/>
 
 </div>
 

@@ -11,7 +11,7 @@ E4408B ESA-L Basic Spectrum Analyzer, 9 kHz to 26.5 GHz
 
 </div>
 
-![](./Keysight-E4408B-ESA-L.jpg)
+<img src={require("./Keysight-E4408B-ESA-L.jpg").default} width="256" height="150"/>
 
 </div>
 

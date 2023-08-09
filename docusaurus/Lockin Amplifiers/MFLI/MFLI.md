@@ -11,7 +11,7 @@ The Zurich Instruments MFLI is a digital lock-in amplifier that covers the frequ
 
 </div>
 
-![](./MFLI.jpg)
+<img src={require("./MFLI.jpg").default} width="256" height="150"/>
 
 </div>
 

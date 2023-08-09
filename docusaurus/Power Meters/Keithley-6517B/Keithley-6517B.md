@@ -11,7 +11,7 @@
 
 </div>
 
-![](./Keithley-6517B.jpg)
+<img src={require("./Keithley-6517B.jpg").default} width="256" height="150"/>
 
 </div>
 

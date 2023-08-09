@@ -11,7 +11,7 @@ The LDA-302P-H Lab Brick USB programmable 50 Ohm digital attenuator has an input
 
 </div>
 
-![](./LDA-302P-H.jpg)
+<img src={require("./LDA-302P-H.jpg").default} width="256" height="150"/>
 
 </div>
 

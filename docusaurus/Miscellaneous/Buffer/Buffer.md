@@ -11,7 +11,7 @@
 
 </div>
 
-![](./Buffer.jpg)
+<img src={require("./Buffer.jpg").default} width="256" height="150"/>
 
 </div>
 

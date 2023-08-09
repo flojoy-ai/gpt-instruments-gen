@@ -11,7 +11,7 @@
 
 </div>
 
-![](./NI-PXIe-2597.jpg)
+<img src={require("./NI-PXIe-2597.jpg").default} width="256" height="150"/>
 
 </div>
 

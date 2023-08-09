@@ -11,7 +11,7 @@
 
 </div>
 
-![](./TDS500-Series.jpg)
+<img src={require("./TDS500-Series.jpg").default} width="256" height="150"/>
 
 </div>
 

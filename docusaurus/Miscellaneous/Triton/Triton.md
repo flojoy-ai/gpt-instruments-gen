@@ -11,7 +11,7 @@
 
 </div>
 
-![](./Triton.jpg)
+<img src={require("./Triton.jpg").default} width="256" height="150"/>
 
 </div>
 

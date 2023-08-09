@@ -11,7 +11,7 @@
 
 </div>
 
-![](./KtMAwg-IVI-C.jpg)
+<img src={require("./KtMAwg-IVI-C.jpg").default} width="256" height="150"/>
 
 </div>
 

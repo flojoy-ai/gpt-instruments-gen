@@ -11,7 +11,7 @@ An ohmmeter is an electrical instrument that measures electrical resistance (the
 
 </div>
 
-![](./IVVI.jpg)
+<img src={require("./IVVI.jpg").default} width="256" height="150"/>
 
 </div>
 

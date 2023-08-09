@@ -11,7 +11,7 @@ The 3800 is a microprocessor-based programmer and controller. The programmer fun
 
 </div>
 
-![](./Thermotron-3800.jpg)
+<img src={require("./Thermotron-3800.jpg").default} width="256" height="150"/>
 
 </div>
 

@@ -11,7 +11,7 @@ The original and popular QDAC from QDevil is a high-precision low-noise computer
 
 </div>
 
-![](./Qdac-1.jpg)
+<img src={require("./Qdac-1.jpg").default} width="256" height="150"/>
 
 </div>
 

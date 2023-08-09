@@ -11,7 +11,7 @@ The Keysight (formerly Agilent) 33210A is the latest function/arbitrary waveform
 
 </div>
 
-![](./Keysight-33210A.jpg)
+<img src={require("./Keysight-33210A.jpg").default} width="256" height="150"/>
 
 </div>
 
