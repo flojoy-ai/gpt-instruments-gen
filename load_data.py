@@ -25,6 +25,9 @@ class Cols:
     headquarters = "Vendor headquarters"
     revenue = "Yearly revenue (millions, USD)"
     device_picture = "Device picture"
+    device_image_url = "Image URL"
+    vendor_logo = "Vendor logo"
+    vendor_logo_url = "Vendor logo URL"
 
 
 def use_device_name_when_no_correct(row: pd.Series):
