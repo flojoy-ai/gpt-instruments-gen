@@ -18,7 +18,6 @@ class Cols:
     docstring = "docstring"
     category = "Device Category"
     github_link = "GitHub link to Python driver (NOT LINK TO DOCS ON GITHUB)"
-    vendor = "Vendor"
     vendor_website = "Vendor website"
     vendor_desc = "Vendor wikipedia or cruncbase description"
     category = "Device Category"
