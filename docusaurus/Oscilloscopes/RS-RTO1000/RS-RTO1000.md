@@ -13,7 +13,7 @@ The R&S MXO 4 oscilloscopes offer the world's highest update rate of 4.5 million
 
 </div>
 
-<img src="nan" style={{width:"256px", height: "200px"}} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1691782452/Instruments/Oscilloscopes/RS-RTO1000/RS-RTO1000.jpg" style={{width:"256px", height: "200px"}} />
 
 </div>
 

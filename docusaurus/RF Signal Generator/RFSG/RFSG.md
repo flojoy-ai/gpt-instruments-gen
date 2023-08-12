@@ -11,7 +11,7 @@
 
 </div>
 
-<img src="nan" style={{width:"256px", height: "200px"}} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1691782517/Instruments/RF%20Signal%20Generator/RFSG/RFSG.png" style={{width:"256px", height: "200px"}} />
 
 </div>
 

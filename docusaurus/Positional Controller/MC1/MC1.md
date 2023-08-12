@@ -11,7 +11,7 @@
 
 </div>
 
-<img src="nan" style={{width:"256px", height: "200px"}} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1691782575/Instruments/Positional%20Controller/MC1/MC1.jpg" style={{width:"256px", height: "200px"}} />
 
 </div>
 

@@ -11,7 +11,7 @@ The Zurich Instruments UHFQA Quantum Analyzer is a unique instrument for paralle
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1691782431/Instruments/Quantum%20Analyzer/UHFQA/UHFQA.webp" style={{width:"256px", height: "200px"}} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1691792451/Instruments/Quantum%20Analyzer/UHFQA/UHFQA.webp" style={{width:"256px", height: "200px"}} />
 
 </div>
 

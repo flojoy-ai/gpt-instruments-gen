@@ -11,7 +11,7 @@
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1691782463/Instruments/Photon%20Counting%20System/PicoHarp-300/PicoHarp-300.jpg" style={{width:"256px", height: "200px"}} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1691782750/Instruments/Photon%20Counting%20System/Singlequantum/Singlequantum.jpg" style={{width:"256px", height: "200px"}} />
 
 </div>
 

@@ -11,7 +11,7 @@ The 7651 is a general-purpose DC source developed on YOKOGAWA's state-of-the-art
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1691782436/Instruments/Power%20Supplies/Yokogawa-7651/Yokogawa-7651.jpg" style={{width:"256px", height: "200px"}} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1691792457/Instruments/Power%20Supplies/Yokogawa-7651/Yokogawa-7651.jpg" style={{width:"256px", height: "200px"}} />
 
 </div>
 

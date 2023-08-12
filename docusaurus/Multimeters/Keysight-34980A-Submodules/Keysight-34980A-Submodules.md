@@ -14,7 +14,7 @@ are in need of a new, cost-effective alternative
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1691782733/Instruments/DAQ%20boards/Keysight-34980A-Submodules/Keysight-34980A-Submodules.png" style={{width:"256px", height: "200px"}} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1691782734/Instruments/Multimeters/Keysight-34980A-Submodules/Keysight-34980A-Submodules.png" style={{width:"256px", height: "200px"}} />
 
 </div>
 

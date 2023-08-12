@@ -14,7 +14,7 @@ Application-specific probe customization available.
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1691782424/Instruments/Power%20Meters/Lakeshore-421/Lakeshore-421.png" style={{width:"256px", height: "200px"}} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1691792444/Instruments/Power%20Meters/Lakeshore-421/Lakeshore-421.png" style={{width:"256px", height: "200px"}} />
 
 </div>
 

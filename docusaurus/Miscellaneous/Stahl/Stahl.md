@@ -11,7 +11,7 @@
 
 </div>
 
-<img src="nan" style={{width:"256px", height: "200px"}} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1691782700/Instruments/Miscellaneous/Stahl/Stahl.webp" style={{width:"256px", height: "200px"}} />
 
 </div>
 

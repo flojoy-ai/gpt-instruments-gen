@@ -13,7 +13,7 @@ Its stringent modular design approach makes it the perfect choice for all field 
 
 </div>
 
-<img src="nan" style={{width:"256px", height: "200px"}} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1691782724/Instruments/Motion/Smaract---MCS2/Smaract---MCS2.jpg" style={{width:"256px", height: "200px"}} />
 
 </div>
 

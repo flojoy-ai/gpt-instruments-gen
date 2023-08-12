@@ -11,7 +11,7 @@ All SCPI Instrument
 
 </div>
 
-<img src="nan" style={{width:"256px", height: "200px"}} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1691782693/Instruments/Miscellaneous/SCPI-Instrument/SCPI-Instrument.png" style={{width:"256px", height: "200px"}} />
 
 </div>
 

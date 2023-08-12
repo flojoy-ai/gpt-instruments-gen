@@ -11,7 +11,7 @@ The Keysight Technologies, Inc. 34410A and 34411A 6½-Digit DMMs build on the ph
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1691782435/Instruments/Multimeters/Keysight-34410A/Keysight-34410A.png" style={{width:"256px", height: "200px"}} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1691792456/Instruments/Multimeters/Keysight-34410A/Keysight-34410A.png" style={{width:"256px", height: "200px"}} />
 
 </div>
 

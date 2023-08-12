@@ -11,7 +11,7 @@
 
 </div>
 
-<img src="nan" style={{width:"256px", height: "200px"}} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1691782443/Instruments/Miscellaneous/Buffer/Buffer.jpg" style={{width:"256px", height: "200px"}} />
 
 </div>
 

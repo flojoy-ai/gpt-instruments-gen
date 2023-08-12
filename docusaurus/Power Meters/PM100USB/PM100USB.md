@@ -13,7 +13,7 @@ This interface can be operated and powered by a PC via the mini-USB port. A read
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1691782423/Instruments/Power%20Meters/PM100USB/PM100USB.jpg" style={{width:"256px", height: "200px"}} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1691792442/Instruments/Power%20Meters/PM100USB/PM100USB.jpg" style={{width:"256px", height: "200px"}} />
 
 </div>
 
