@@ -17,7 +17,7 @@ Basic Edition software is also available.
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1691818073/Instruments/Power%20Supplies/Keithley-2600/Keithley-2600.jpg" style={{width:"256px", height: "200px"}} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1691943646/Instruments/Power%20Supplies/Keithley-2600/Keithley-2600.jpg" style={{width:"256px", height: "200px"}} />
 
 </div>
 
