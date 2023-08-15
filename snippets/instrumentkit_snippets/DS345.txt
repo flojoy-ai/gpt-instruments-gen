@@ -2,13 +2,14 @@ To connect to a DS345 Function Generator using Instrumentkit, you can use the fo
 
 ```python
 import instrumentkit as ik
-import instrumentkit.devices.srs as srs
+import instrumentkit.srs as srs
+import instrumentkit.units as u
 
 # Connect to the DS345 Function Generator
 srs345 = srs.SRS345.open_gpib('/dev/ttyUSB0', 1)
 
-# Set the frequency to 1 MHz
-srs345.frequency = 1 * ik.units.MHz
+# Set the output frequency to 1 MHz
+srs345.frequency = 1 * u.MHz
 
 # Get the offset voltage
 offset_voltage = srs345.offset
@@ -17,8 +18,12 @@ offset_voltage = srs345.offset
 srs345.function = srs345.Function.triangle
 ```
 
-This script imports the necessary modules from Instrumentkit and specifically imports the `SRS345` class from the `instrumentkit.devices.srs` module. It then connects to the DS345 Function Generator using the `open_gpib` method, specifying the appropriate device address.
+This script imports the necessary modules from Instrumentkit (`instrumentkit`), as well as the specific module for the SRS DS345 Function Generator (`instrumentkit.srs`). It also imports the units module (`instrumentkit.units`) for specifying the frequency and voltage units.
 
-Once connected, you can interact with the function generator by setting and getting various properties. In the example script, it sets the frequency to 1 MHz using the `frequency` property, gets the offset voltage using the `offset` property, and sets the output function to triangle using the `function` property.
+The script then connects to the DS345 Function Generator using the `open_gpib` method, specifying the device path (`/dev/ttyUSB0`) and the GPIB address (1).
 
-Note that the script assumes you have Instrumentkit and its dependencies installed.
+After connecting, it sets the output frequency to 1 MHz by assigning the desired frequency to the `frequency` property of the `srs345` object.
+
+Next, it retrieves the offset voltage by accessing the `offset` property of the `srs345` object.
+
+Finally, it sets the output function to triangle by assigning the `srs345.Function.triangle` value to the `function` property of the `srs345` object.

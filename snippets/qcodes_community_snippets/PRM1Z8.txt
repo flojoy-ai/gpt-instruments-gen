@@ -31,4 +31,4 @@ We then create a Station object and add the PRM1Z8 instrument to it. Finally, we
 
 After connecting, we can use the instrument's methods and parameters. In this example, we retrieve the current position using the `position` parameter and print it. Then, we set the position to 45 degrees using the `position` parameter.
 
-Note: Make sure you have the necessary dependencies installed, including Qcodes and the Thorlabs APT Python package.
+Note: Make sure you have the necessary dependencies installed, including the Qcodes library and the Thorlabs APT Python package.

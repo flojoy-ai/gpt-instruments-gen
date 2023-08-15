@@ -1,0 +1,34 @@
+Sure! Here's an example Python script that uses Pymeasure to connect to an Ametek 7270 Lockin Amplifier:
+
+```python
+from pymeasure.adapters import VISAAdapter
+from pymeasure.instruments.ametek import Ametek7270
+
+# Create a connection to the instrument
+adapter = VISAAdapter("GPIB::1::INSTR")
+lockin = Ametek7270(adapter)
+
+# Set the instrument to voltage control mode
+lockin.set_voltage_mode()
+
+# Set the sensitivity to 100 nV
+lockin.sensitivity = 100e-9
+
+# Set the filter slope to 12 dB/octave
+lockin.slope = 12
+
+# Read the X and Y values
+x_value = lockin.x
+y_value = lockin.y
+
+# Print the X and Y values
+print("X value:", x_value)
+print("Y value:", y_value)
+
+# Close the connection to the instrument
+lockin.shutdown()
+```
+
+This script connects to the Ametek 7270 Lockin Amplifier using a VISA adapter and sets the instrument to voltage control mode. It then sets the sensitivity to 100 nV and the filter slope to 12 dB/octave. The script reads the X and Y values from the lockin amplifier and prints them. Finally, it shuts down the instrument and closes the connection.
+
+Note: Make sure to install the necessary dependencies (`pymeasure`, `pyvisa`, etc.) before running the script.

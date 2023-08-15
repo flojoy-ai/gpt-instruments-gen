@@ -1,0 +1,27 @@
+Here is a Python script that uses Pymeasure to connect to a Keysight 33521A RF Signal Generator:
+
+```python
+from pymeasure.adapters import VISAAdapter
+from pymeasure.instruments import Agilent33500
+
+# Create a connection to the instrument
+adapter = VISAAdapter("GPIB::1")
+generator = Agilent33500(adapter)
+
+# Set the output waveform shape to sine
+generator.shape = 'SIN'
+
+# Set the frequency to 1 kHz
+generator.frequency = 1e3
+
+# Set the amplitude to 1 Vpp
+generator.amplitude = 1
+
+# Enable the output
+generator.output = True
+
+# Disconnect from the instrument
+generator.disconnect()
+```
+
+This script connects to the instrument using the VISAAdapter and creates an instance of the Agilent33500 class. It then sets the output waveform shape to sine, frequency to 1 kHz, amplitude to 1 Vpp, and enables the output. Finally, it disconnects from the instrument.

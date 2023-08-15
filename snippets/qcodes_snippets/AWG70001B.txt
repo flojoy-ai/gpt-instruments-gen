@@ -14,11 +14,10 @@ awg.connect()
 awg.ch1.awg_amplitude(0.5)
 
 # You can also play a waveform or sequence
-awg.ch1.setWaveform('waveform_name')
 awg.play()
 
-# Remember to disconnect from the instrument when you are done
+# Disconnect from the instrument
 awg.disconnect()
 ```
 
-Please note that you need to replace `'TCPIP0::192.168.1.1::inst0::INSTR'` with the actual VISA resource name or IP address of your AWG70001B RF Signal Generator.
+Note that you need to replace `'TCPIP0::192.168.1.1::inst0::INSTR'` with the actual VISA resource name of your AWG70001B RF Signal Generator.

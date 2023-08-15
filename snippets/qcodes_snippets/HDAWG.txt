@@ -2,7 +2,7 @@
 import qcodes as qc
 from qcodes.instrument_drivers.zhinst import HDAWG
 
-# Connect to the HDAWG instrument
+# Connect to the HDAWG RF Signal Generator
 hdawg = HDAWG("hdawg", "dev1234")
 
 # Enable QCCS mode
@@ -20,12 +20,12 @@ sequencer_program = """
 hdawg.awgs[0].load_sequencer_program(sequencer_program)
 
 # Enable the sequencer on AWG channel 0
-hdawg.awgs[0].enable_sequencer(single=True)
+hdawg.awgs[0].enable_sequencer(single=False)
 
 # Wait for the AWG to finish
 hdawg.awgs[0].wait_done()
 
-# Disconnect from the instrument
+# Disconnect from the HDAWG RF Signal Generator
 hdawg.close()
 ```
-This script connects to a HDAWG instrument, enables QCCS mode, loads a sequencer program to AWG channel 0, enables the sequencer, waits for the AWG to finish, and then disconnects from the instrument.
+This script connects to the HDAWG RF Signal Generator with the device ID "dev1234" and enables QCCS mode. It then loads a sequencer program to AWG channel 0, enables the sequencer, waits for the AWG to finish, and finally disconnects from the device.

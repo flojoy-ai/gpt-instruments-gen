@@ -1,0 +1,20 @@
+To connect to the SMW 200 A RF Signal Generator using Qcodes, you can use the following code:
+
+```python
+from qcodes.instrument_drivers.rohde_schwarz.SMWSMU import SMWSMU
+
+# Create an instance of the SMWSMU driver
+smw = SMWSMU('smw', 'TCPIP0::192.168.0.1::inst0::INSTR')
+
+# Connect to the instrument
+smw.connect()
+
+# Now you can use the instrument to perform various operations
+# For example, you can set the output power
+smw.output_power(0)  # Set the output power to 0 dBm
+
+# Disconnect from the instrument
+smw.disconnect()
+```
+
+Note that you need to replace `'TCPIP0::192.168.0.1::inst0::INSTR'` with the actual VISA address of your SMW 200 A RF Signal Generator.

@@ -11,6 +11,6 @@ temperature = inst.sensor[0].temperature
 print(temperature)
 ```
 
-This script imports the `instrumentkit` module and uses the `open_gpibusb` method of the `Lakeshore340` class to connect to the temperature controller. The `open_gpibusb` method takes the device path (`/dev/ttyUSB0`) and the GPIB address (1) as arguments.
+This script imports the `instrumentkit` module as `ik` and uses the `open_gpibusb` method of the `Lakeshore340` class to connect to the Temperature Controller. The `open_gpibusb` method takes the device path (`'/dev/ttyUSB0'`) and the GPIB address (`1`) as arguments.
 
 After connecting, the script reads the temperature of the first sensor by accessing the `temperature` property of the `sensor[0]` object. The temperature is then printed to the console.

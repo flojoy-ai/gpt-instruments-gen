@@ -1,10 +1,10 @@
-Sure! Here's a Python script that uses Instrumentkit to connect to a Keysight 3456A Multimeter:
+Here is an example Python script that uses Instrumentkit to connect to a Keysight 3456A Multimeter:
 
 ```python
 import instrumentkit as ik
 
 # Connect to the multimeter
-multimeter = ik.keysight.Keysight3456A.open_gpibusb("/dev/ttyUSB0", 22)
+multimeter = ik.create_instrument("hp.hp3456a", "/dev/ttyUSB0", 22)
 
 # Set the measurement mode to DC voltage
 multimeter.mode = multimeter.Mode.dcv
@@ -13,13 +13,13 @@ multimeter.mode = multimeter.Mode.dcv
 measurement = multimeter.measure()
 
 # Print the measurement result
-print(f"Measurement: {measurement}")
+print("Measurement: ", measurement)
 ```
 
-In this script, we first import the `instrumentkit` module and then use the `open_gpibusb` method of the `ik.keysight.Keysight3456A` class to connect to the multimeter. You'll need to replace `"/dev/ttyUSB0"` with the appropriate device path for your system.
+In this script, we first import the `instrumentkit` module. Then, we use the `ik.create_instrument` function to create an instance of the `hp.hp3456a` instrument, specifying the serial port and GPIB address of the multimeter.
 
 Next, we set the measurement mode to DC voltage by assigning the `multimeter.Mode.dcv` value to the `mode` property of the multimeter object.
 
-Finally, we use the `measure` method of the multimeter object to perform a measurement and store the result in the `measurement` variable. We then print the measurement result.
+Finally, we perform a measurement by calling the `measure` method of the multimeter object. The result is stored in the `measurement` variable, which we then print to the console.
 
-Note that this script assumes you have already installed the `instrumentkit` library. If not, you can install it using `pip install instrumentkit`.
+Note: Make sure to replace `/dev/ttyUSB0` with the correct serial port of your multimeter, and `22` with the correct GPIB address.

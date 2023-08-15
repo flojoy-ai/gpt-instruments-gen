@@ -1,20 +1,72 @@
-To connect to a SRS 830 Lock-In Amplifier using Instrumentkit, you can use the following code:
+Here is an example Python script that uses Instrumentkit to connect to a SRS 830 Lockin Amplifier:
 
 ```python
 import instrumentkit as ik
 
-# Connect to the lock-in amplifier
-srs = ik.srs.SRS830.open_gpibusb('/dev/ttyUSB0', 1)
+# Connect to the SRS 830 Lockin Amplifier
+lockin = ik.srs.SRS830.open_gpib('/dev/ttyUSB0', 1)
 
-# Set the lock-in frequency
-srs.frequency = 1000 * ik.units.hertz
+# Set the frequency to 1 kHz
+lockin.frequency = 1 * ik.units.kHz
 
-# Take a measurement with a sample rate of 1Hz and 10 samples
-data = srs.take_measurement(1, 10)
+# Set the input sensitivity to 10 V
+lockin.sensitivity = 10 * ik.units.V
+
+# Enable the internal reference oscillator
+lockin.reference_source = lockin.ReferenceSource.internal
+
+# Enable the internal reference phase adjustment
+lockin.reference_phase_mode = lockin.ReferencePhaseMode.internal
+
+# Enable the internal reference frequency adjustment
+lockin.reference_frequency_mode = lockin.ReferenceFrequencyMode.internal
+
+# Enable the internal reference amplitude adjustment
+lockin.reference_amplitude_mode = lockin.ReferenceAmplitudeMode.internal
+
+# Set the time constant to 100 ms
+lockin.time_constant = 100 * ik.units.ms
+
+# Set the input coupling to AC
+lockin.input_coupling = lockin.InputCoupling.ac
+
+# Set the input mode to A
+lockin.input_mode = lockin.InputMode.a
+
+# Set the input reserve mode to high reserve
+lockin.input_reserve_mode = lockin.InputReserveMode.high_reserve
+
+# Set the output mode to XY
+lockin.output_mode = lockin.OutputMode.xy
+
+# Set the output display to R and θ
+lockin.display_mode = lockin.DisplayMode.r_theta
+
+# Set the output filter slope to 12 dB/octave
+lockin.filter_slope = lockin.FilterSlope.slope_12_dB_per_octave
+
+# Set the output harmonic to 1
+lockin.harmonic = 1
+
+# Set the output phase to 0 degrees
+lockin.phase = 0 * ik.units.degree
+
+# Set the output amplitude to 1 V
+lockin.amplitude = 1 * ik.units.V
+
+# Enable the output
+lockin.output_enabled = True
+
+# Read the X and Y values from the lockin amplifier
+x_value = lockin.x
+y_value = lockin.y
+
+# Print the X and Y values
+print(f"X: {x_value}")
+print(f"Y: {y_value}")
+
+# Close the connection to the lockin amplifier
+lockin.close()
 ```
 
-This code imports the `instrumentkit` module and uses the `open_gpibusb` method from the `ik.srs.SRS830` class to connect to the lock-in amplifier. The first argument is the device path (`/dev/ttyUSB0` in this example) and the second argument is the GPIB address of the lock-in amplifier.
-
-Once connected, you can set the lock-in frequency using the `frequency` property. In this example, it is set to 1000 Hz.
-
-Finally, you can use the `take_measurement` method to take a measurement with a specified sample rate and number of samples. In this example, it takes a measurement with a sample rate of 1 Hz and 10 samples, and the result is stored in the `data` variable.
+Note: This code assumes that you have already installed the Instrumentkit library and imported it as `instrumentkit` or `ik`.

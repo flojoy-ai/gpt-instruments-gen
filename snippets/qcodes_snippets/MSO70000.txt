@@ -9,7 +9,7 @@ oscilloscope = TektronixDPO7000xx("oscilloscope", "TCPIP::1.2.3.4::INSTR")
 print(oscilloscope.channel)
 
 # Set the time per division
-oscilloscope.horizontal.scale(1e-6)
+oscilloscope.horizontal.scale(1e-6)  # 1 microsecond per division
 
 # Set the trigger type and source
 oscilloscope.trigger.A.type("edge")
@@ -21,9 +21,12 @@ measurement.state(1)
 measurement.type("amplitude")
 
 # Get the measurement value
-value = measurement.get()
-print(value)
+amplitude = measurement.get()
+
+# Print the amplitude
+print(f"Amplitude: {amplitude} V")
 
 # Disconnect from the oscilloscope
 oscilloscope.close()
 ```
+This script connects to a Tektronix MSO70000 Oscilloscope using the QCoDeS driver. It sets the time per division to 1 microsecond, sets the trigger type to "edge" and the trigger source to "CH1". It enables the measurement and sets the measurement type to "amplitude". It then retrieves the amplitude measurement value and prints it. Finally, it disconnects from the oscilloscope.

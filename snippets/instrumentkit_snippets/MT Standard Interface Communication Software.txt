@@ -25,4 +25,4 @@ weight_mode = inst.weight_mode
 inst.close()
 ```
 
-Note: This script assumes that you have installed the `instrumentkit` package and imported it as `ik`.
+Note: This script assumes that you have installed the `instrumentkit` package and have the necessary permissions to access the serial port (`/dev/ttyUSB0`).

@@ -1,0 +1,28 @@
+To connect to a PCO Pixelfly camera using Instrumental, you can use the following Python script:
+
+```python
+from instrumental import instrument, list_instruments
+
+# List all available PCO Pixelfly cameras
+cameras = list_instruments()
+
+# Connect to the first camera
+camera = instrument(cameras[0])
+
+# Set the camera mode
+camera.set_mode(shutter='single', trig='software', exposure='10ms', hbin=1, vbin=1, gain='low', depth=12)
+
+# Start live video
+camera.start_live_video()
+
+# Capture an image
+image = camera.latest_frame()
+
+# Stop live video
+camera.stop_live_video()
+
+# Close the camera connection
+camera.close()
+```
+
+This script first lists all available PCO Pixelfly cameras using the `list_instruments()` function from Instrumental. It then connects to the first camera using the `instrument()` function. The camera mode is set using the `set_mode()` method, and live video is started using the `start_live_video()` method. An image is captured using the `latest_frame()` method, and live video is stopped using the `stop_live_video()` method. Finally, the camera connection is closed using the `close()` method.

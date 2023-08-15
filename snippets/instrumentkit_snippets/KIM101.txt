@@ -1,25 +1,25 @@
-To connect to a KIM101 Positional Controller using Instrumentkit, you can use the following code:
+Here is an example Python script that uses Instrumentkit to connect to a KIM101 Positional Controller:
 
 ```python
-import instrumentkit as ik
+from instrumentkit import KIM101
 
-# Connect to the KIM101 controller
-controller = ik.thorlabs.APTPiezoInertiaActuator.open_serial("/dev/ttyUSB0", baud=115200)
+# Connect to the KIM101 Positional Controller
+controller = KIM101()
 
-# Get the first channel of the controller
-channel = controller.channel[0]
+# Set the position to 0
+controller.position = 0
 
-# Enable the channel
-channel.enabled_single = True
+# Move the position to 10
+controller.move_to(10)
 
-# Set the drive parameters for the channel
-max_volts = ik.units.Quantity(110, ik.units.V)
-step_rate = ik.units.Quantity(1000, 1/ik.units.s)
-acceleration = ik.units.Quantity(10000, 1/ik.units.s**2)
-channel.drive_op_parameters = [max_volts, step_rate, acceleration]
-
-# Move the channel to a specific position
-channel.move_abs(1000)
+# Get the current position
+position = controller.position
+print(f"Current position: {position}")
 ```
 
-This code connects to the KIM101 controller, enables the first channel, sets the drive parameters, and moves the channel to a specific position.
+Explanation of the code:
+1. Import the `KIM101` class from the `instrumentkit` module.
+2. Create an instance of the `KIM101` class, which represents the KIM101 Positional Controller.
+3. Set the position of the controller to 0 using the `position` property.
+4. Move the position to 10 using the `move_to()` method.
+5. Get the current position using the `position` property and print it.

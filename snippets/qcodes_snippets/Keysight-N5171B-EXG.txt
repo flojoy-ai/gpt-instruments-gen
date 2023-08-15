@@ -1,0 +1,27 @@
+```python
+from qcodes import Instrument
+
+# Create an instance of the N51x1 instrument
+n5171b = N51x1('n5171b', 'TCPIP0::192.168.1.1::inst0::INSTR')
+
+# Connect to the instrument
+n5171b.connect()
+
+# Get the IDN information of the instrument
+idn = n5171b.get_idn()
+print(idn)
+
+# Set the power to -10 dBm
+n5171b.power.set(-10)
+
+# Set the frequency to 1 GHz
+n5171b.frequency.set(1e9)
+
+# Enable the RF output
+n5171b.rf_output.set(1)
+
+# Disconnect from the instrument
+n5171b.disconnect()
+```
+
+This script connects to a Keysight N5171B EXG RF Signal Generator using the Qcodes library. It retrieves the IDN information of the instrument, sets the power to -10 dBm, sets the frequency to 1 GHz, and enables the RF output. Finally, it disconnects from the instrument.

@@ -1,0 +1,38 @@
+To connect to a Keysight E8267C RF Signal Generator using Qcodes, you can use the following Python script:
+
+```python
+from qcodes.instrument.visa import VisaInstrument
+
+# Create a class for the Keysight E8267C RF Signal Generator
+class KeysightE8267C(VisaInstrument):
+    def __init__(self, name, address, **kwargs):
+        super().__init__(name, address, terminator="\n", **kwargs)
+        # Add parameters and commands specific to the Keysight E8267C
+        self.add_parameter(
+            name="frequency",
+            label="Frequency",
+            unit="Hz",
+            get_cmd="FREQ?",
+            set_cmd="FREQ {}",
+            get_parser=float,
+            vals=Numbers(min_value=100e3, max_value=40e9),
+        )
+        # Add other parameters and commands as needed
+
+# Create an instance of the Keysight E8267C RF Signal Generator
+signal_generator = KeysightE8267C("signal_generator", "TCPIP0::192.168.1.1::INSTR")
+
+# Connect to the signal generator
+signal_generator.connect()
+
+# Example usage: Set the frequency to 1 GHz
+signal_generator.frequency(1e9)
+
+# Example usage: Get the current frequency
+current_frequency = signal_generator.frequency()
+
+# Disconnect from the signal generator
+signal_generator.disconnect()
+```
+
+Note: Replace `"TCPIP0::192.168.1.1::INSTR"` with the actual address of your Keysight E8267C RF Signal Generator.

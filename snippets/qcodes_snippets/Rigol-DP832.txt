@@ -1,0 +1,18 @@
+```python
+import qcodes as qc
+from qcodes.instrument_drivers.rigol.DP8xx import RigolDP832
+
+# Create an instance of the RigolDP832 driver
+dp832 = RigolDP832('dp832', 'TCPIP0::192.168.1.10::INSTR')
+
+# Connect to the instrument
+dp832.connect()
+
+# Perform operations using the instrument
+# ...
+
+# Disconnect from the instrument
+dp832.disconnect()
+```
+
+This code imports the necessary modules and creates an instance of the `RigolDP832` driver. It then connects to the instrument using the specified IP address. You can perform various operations using the `dp832` object, and finally disconnect from the instrument.

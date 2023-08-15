@@ -1,0 +1,29 @@
+To connect to a MHS 5200 A Function Generator using Instrumentkit, you can use the following Python script:
+
+```python
+import instrumentkit as ik
+
+# Connect to the MHS 5200 A Function Generator
+mhs = ik.minghe.MHS5200.open_serial(vid=1027, pid=24577, baud=19200, timeout=1)
+
+# Access the channels of the function generator
+channel_1 = mhs.channel[0]
+channel_2 = mhs.channel[1]
+
+# Set the frequency of channel 1 to 1 kHz
+channel_1.frequency = 1e3
+
+# Set the amplitude of channel 2 to 2 V peak-to-peak
+channel_2.amplitude = 2, ik.VoltageMode.peak_to_peak
+
+# Enable channel 1
+channel_1.enable = True
+
+# Disable channel 2
+channel_2.enable = False
+
+# Disconnect from the function generator
+mhs.close()
+```
+
+This script connects to the MHS 5200 A Function Generator using the `open_serial` method from the `MHS5200` class in the `minghe` module of Instrumentkit. It then accesses the channels of the function generator using the `channel` property, and sets the frequency and amplitude of the channels using the corresponding properties. Finally, it enables or disables the channels using the `enable` property, and closes the connection to the function generator using the `close` method.

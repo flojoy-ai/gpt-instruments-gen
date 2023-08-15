@@ -1,0 +1,18 @@
+Here is a Python script that uses Qcodes to connect to a Keysight 34401A Multimeter:
+
+```python
+from qcodes.instrument_drivers.Keysight.Keysight_344XXA import Keysight_344XXA
+
+# Create an instance of the Keysight_344XXA driver
+multimeter = Keysight_344XXA('multimeter', 'TCPIP0::192.168.1.1::INSTR')
+
+# Connect to the multimeter
+multimeter.connect()
+
+# Perform measurements or set parameters using the multimeter object
+
+# Disconnect from the multimeter
+multimeter.disconnect()
+```
+
+Note: Replace `'TCPIP0::192.168.1.1::INSTR'` with the actual VISA resource name of your Keysight 34401A Multimeter.

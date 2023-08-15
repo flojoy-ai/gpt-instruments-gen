@@ -1,0 +1,33 @@
+Sure! Here's a Python script that uses Qcodes Community to connect to a HMP 2020 Power Supply:
+
+```python
+import qcodes as qc
+from qcodes.instrument_drivers.rohde_schwarz.HMP2020 import HMP2020
+
+# Connect to the power supply
+power_supply = HMP2020('power_supply', 'TCPIP0::192.168.0.1::inst0::INSTR')
+
+# Print the power supply IDN
+print(power_supply.IDN())
+
+# Set the output voltage to 5V
+power_supply.voltage(5)
+
+# Enable the output
+power_supply.output('on')
+
+# Disable the output after 2 seconds
+qc.sleep(2)
+power_supply.output('off')
+
+# Close the connection to the power supply
+power_supply.close()
+```
+
+In this script, we first import the necessary modules: `qcodes` and the `HMP2020` driver from the `rohde_schwarz` package.
+
+Then, we create an instance of the `HMP2020` driver and connect to the power supply using its IP address. Replace `'TCPIP0::192.168.0.1::inst0::INSTR'` with the actual IP address of your power supply.
+
+We can then use the `power_supply` object to interact with the power supply. In this example, we print the power supply's IDN, set the output voltage to 5V, enable the output, wait for 2 seconds, and then disable the output.
+
+Finally, we close the connection to the power supply using `power_supply.close()`.

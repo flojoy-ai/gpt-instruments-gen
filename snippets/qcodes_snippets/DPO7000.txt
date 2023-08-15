@@ -1,27 +1,24 @@
+Here is an example Python script that uses Qcodes to connect to a DPO7000 Oscilloscope:
+
 ```python
 import qcodes as qc
 from qcodes.instrument_drivers.tektronix.Tektronix_DPO7000xx import TektronixDPO7000xx
 
 # Connect to the oscilloscope
-oscilloscope = TektronixDPO7000xx("oscilloscope", "TCPIP::1.2.3.4::INSTR")
+oscilloscope = TektronixDPO7000xx("oscilloscope", "TCPIP0::192.168.1.1::INSTR")
 
 # Print the available channels
-print(oscilloscope.channel)
+print(oscilloscope.channel.names)
 
 # Set the time per division
-oscilloscope.horizontal.scale(1e-6)  # 1 microsecond per division
+oscilloscope.channel1.scale(0.1)  # Set channel 1 time per division to 0.1s
 
-# Set the trigger type and source
-oscilloscope.trigger.A.type("edge")
-oscilloscope.trigger.A.source("CH1")
+# Acquire and plot a waveform
+waveform = oscilloscope.channel1.waveform()
+waveform.plot()
 
-# Enable the measurement and set the measurement type
-measurement = oscilloscope.measurement.measurement1
-measurement.state(1)
-measurement.type("amplitude")
-
-# Read the measurement value
-print(measurement.get())
+# Close the connection to the oscilloscope
+oscilloscope.close()
 ```
 
-Note: Replace `"TCPIP::1.2.3.4::INSTR"` with the actual address of your oscilloscope.
+This script connects to the oscilloscope using the IP address "192.168.1.1" and creates an instance of the `TektronixDPO7000xx` driver. It then prints the names of the available channels, sets the time per division for channel 1 to 0.1s, acquires a waveform from channel 1, and plots it. Finally, it closes the connection to the oscilloscope.

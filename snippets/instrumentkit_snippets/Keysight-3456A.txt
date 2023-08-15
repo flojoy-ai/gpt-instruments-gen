@@ -1,0 +1,25 @@
+Here is a Python script that uses Instrumentkit to connect to a Keysight 3456A Multimeter:
+
+```python
+from instrumentkit import hp
+
+# Connect to the multimeter
+dmm = hp.HP3456a.open_gpibusb("/dev/ttyUSB0", 22)
+
+# Set the measurement mode to DC voltage
+dmm.mode = dmm.Mode.dcv
+
+# Perform a measurement
+measurement = dmm.measure()
+
+# Print the measurement result
+print("Measurement: {}".format(measurement))
+```
+
+This script first imports the `hp` module from Instrumentkit. It then connects to the multimeter using the `open_gpibusb` function, specifying the device path and GPIB address of the multimeter.
+
+Next, it sets the measurement mode to DC voltage using the `mode` property of the multimeter object. In this case, we are using the `Mode.dcv` option.
+
+Finally, it performs a measurement using the `measure` method of the multimeter object and stores the result in the `measurement` variable. The measurement result is then printed to the console.
+
+Note: Make sure to replace `"/dev/ttyUSB0"` with the correct device path for your system, and `22` with the correct GPIB address of your multimeter.

@@ -1,0 +1,26 @@
+To connect to a Keysight 33522B RF Signal Generator using Qcodes, you can use the following Python script:
+
+```python
+from qcodes.instrument_drivers.Keysight.Keysight_33XXX import WaveformGenerator_33XXX
+
+# Create an instance of the instrument
+signal_generator = WaveformGenerator_33XXX('signal_generator', 'TCPIP0::192.168.1.1::INSTR')
+
+# Connect to the instrument
+signal_generator.connect_message()
+
+# Now you can use the instrument to control the signal generator
+# For example, to set the frequency of channel 1 to 1 MHz:
+signal_generator.ch1.frequency(1e6)
+
+# To turn on the output of channel 1:
+signal_generator.ch1.output('ON')
+
+# To turn off the output of channel 1:
+signal_generator.ch1.output('OFF')
+
+# To disconnect from the instrument
+signal_generator.close()
+```
+
+Note: Replace `'TCPIP0::192.168.1.1::INSTR'` with the actual VISA resource name or address of your Keysight 33522B RF Signal Generator.

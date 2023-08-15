@@ -1,0 +1,33 @@
+Sure! Here's an example Python script that uses Instrumentkit to connect to a Rigol DS1000-Series Oscilloscope:
+
+```python
+from instrumentkit import RigolDS1000Series
+
+# Connect to the oscilloscope
+oscilloscope = RigolDS1000Series("USB0::0x1AB1::0x04CE::DS1ZA123456789::INSTR")
+
+# Print the available channels
+print("Available Channels:")
+for channel in oscilloscope.channel:
+    print(channel.name)
+
+# Set the acquisition type to normal
+oscilloscope.acquire_type = RigolDS1000Series.AcquisitionType.normal
+
+# Set the number of averages to 8
+oscilloscope.acquire_averages = 8
+
+# Force a trigger
+oscilloscope.force_trigger()
+
+# Start running the oscilloscope trigger
+oscilloscope.run()
+
+# Stop running the oscilloscope trigger
+oscilloscope.stop()
+
+# Disconnect from the oscilloscope
+oscilloscope.disconnect()
+```
+
+Note: Replace `"USB0::0x1AB1::0x04CE::DS1ZA123456789::INSTR"` with the actual VISA resource string for your oscilloscope.

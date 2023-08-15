@@ -1,0 +1,34 @@
+Sure! Here's an example Python script that uses Pymeasure to connect to an IPS 120-10 Power Supply:
+
+```python
+from pymeasure.instruments import OxfordInstrumentsIPS120_10
+
+# Connect to the IPS 120-10 Power Supply
+ips = OxfordInstrumentsIPS120_10("GPIB::25")
+
+# Enable control of the power supply
+ips.enable_control()
+
+# Train the magnet after it has been cooled-down
+training_scheme = [
+    (11.8, 1.0),
+    (13.9, 0.4),
+    (14.9, 0.2),
+    (16.0, 0.1),
+]
+ips.train_magnet(training_scheme)
+
+# Set the magnetic field to 12 Tesla
+ips.set_field(12)
+
+# Print the current field
+print(ips.field)
+
+# Set the magnetic field to 0 Tesla
+ips.set_field(0)
+
+# Disable control of the power supply
+ips.disable_control()
+```
+
+Note: Make sure to replace `"GPIB::25"` with the appropriate address for your IPS 120-10 Power Supply.

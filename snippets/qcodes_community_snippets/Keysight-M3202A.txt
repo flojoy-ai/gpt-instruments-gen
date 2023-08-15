@@ -1,0 +1,24 @@
+To connect to a Keysight M3202A RF Signal Generator using Qcodes Community, you can use the following Python script:
+
+```python
+from qcodes.instrument_drivers.Keysight.KeysightM3202A import M3202A
+
+# Create an instance of the M3202A driver
+awg = M3202A('awg', chassis=0, slot=2)
+
+# Connect to the instrument
+awg.connect()
+
+# Now you can use the instrument for various operations
+# For example, you can upload a waveform
+waveform = [0, 0.1, 0.2, 0.3, 0.4, 0.5]
+ref = awg.upload_waveform(waveform)
+
+# Queue the waveform for output on channel 1
+awg.awg_queue_waveform(1, ref, awg.SD_TriggerModes.EXTTRIG, 0, 1, 0)
+
+# Disconnect from the instrument
+awg.disconnect()
+```
+
+Note: Make sure you have installed the necessary dependencies and have the correct drivers installed for the Keysight M3202A RF Signal Generator.

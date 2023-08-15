@@ -7,13 +7,15 @@ import instrumentkit as ik
 oscilloscope = ik.teledyne.MAUI.open_visa("TCPIP0::192.168.0.10::INSTR")
 
 # Perform operations on the oscilloscope
-# For example, you can read the waveform from a channel
+# For example, you can set the time per division
+oscilloscope.time_div = 200 * ik.units.ns
+
+# You can also read waveform data from a channel
 channel = oscilloscope.channel[0]
 xdat, ydat = channel.read_waveform()
 
-# Print the waveform data
-print("X Data:", xdat)
-print("Y Data:", ydat)
+# Disconnect from the oscilloscope
+oscilloscope.close()
 ```
 
-This code connects to the oscilloscope at the specified IP address ("TCPIP0::192.168.0.10::INSTR") using the VISA protocol. It then reads the waveform data from the first channel and prints it.
+Note: Replace `"TCPIP0::192.168.0.10::INSTR"` with the actual VISA address of your WaveRunner 9000 Oscilloscope.

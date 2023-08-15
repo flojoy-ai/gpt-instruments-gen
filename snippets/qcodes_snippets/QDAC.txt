@@ -30,4 +30,4 @@ qdac.print_overview()
 qdac.close()
 ```
 
-Note: Replace `'TCPIP0::192.168.1.1::inst0::INSTR'` with the actual VISA address of your QDAC Power Supply.
+Note: Make sure to replace `'TCPIP0::192.168.1.1::inst0::INSTR'` with the actual VISA address of your QDAC Power Supply.
