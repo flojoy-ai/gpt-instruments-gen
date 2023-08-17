@@ -1,0 +1,32 @@
+Here is an example Python script that uses Qcodes to connect to an Infiniium oscilloscope:
+
+```python
+import qcodes as qc
+from qcodes.instrument_drivers.Keysight.KeysightInfiniium import KeysightInfiniium
+
+# Connect to the oscilloscope
+oscilloscope = KeysightInfiniium("oscilloscope", "TCPIP0::192.168.1.1::INSTR")
+
+# Print the IDN of the oscilloscope
+print(oscilloscope.IDN())
+
+# Set up the oscilloscope parameters
+oscilloscope.run_mode("STOP")
+oscilloscope.acquire_points(1000)
+oscilloscope.sample_rate(1e9)
+
+# Take a single acquisition
+oscilloscope.single()
+
+# Read the waveform data from channel 1
+channel1 = oscilloscope.channels[0]
+waveform_data = channel1.trace()
+
+# Print the waveform data
+print(waveform_data)
+
+# Disconnect from the oscilloscope
+oscilloscope.close()
+```
+
+Note: Replace `"TCPIP0::192.168.1.1::INSTR"` with the actual VISA address of your oscilloscope.

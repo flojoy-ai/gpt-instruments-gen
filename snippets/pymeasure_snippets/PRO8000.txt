@@ -57,28 +57,29 @@ class ThorlabsPro8000(Instrument):
                                            """Control TEC temperature""")
 ```
 
-The code provided defines a class `ThorlabsPro8000` that represents the Thorlabs Pro 8000 modular laser driver. It is a subclass of `Instrument` from the `pymeasure.instruments` module.
+The code defines a class `ThorlabsPro8000` that represents the Thorlabs Pro 8000 modular laser driver. It inherits from the `Instrument` class provided by the `pymeasure.instruments` module.
 
-The class has several attributes and methods that allow control of the laser diode and TEC (Thermoelectric Cooler) functionalities of the Pro 8000.
+The class has several class-level variables defined:
+- `SLOTS` is a range from 1 to 8, representing the available slots in the laser driver.
+- `LDC_POLARITIES` is a list of allowed laser diode polarities, which can be either 'AG' or 'CG'.
+- `STATUS` is a list of allowed status values, which can be either 'ON' or 'OFF'.
 
-The class attributes include:
-- `SLOTS`: A range of valid slot numbers (1 to 8) for selecting the daughter board.
-- `LDC_POLARITIES`: A list of valid laser diode polarities ('AG' and 'CG').
-- `STATUS`: A list of valid status values ('ON' and 'OFF').
+The `__init__` method initializes the instrument by calling the `Instrument` class's `__init__` method and passing the provided `adapter`, `name`, and any additional keyword arguments.
 
-The class constructor `__init__` initializes the instrument by calling the parent class constructor and sending a command to the instrument.
+The class also defines several instrument controls using the `Instrument.control` decorator. These controls allow you to interact with the instrument by sending commands and receiving responses.
 
-The class also defines several control properties using the `Instrument.control` decorator. These control properties allow reading and writing of instrument parameters using the specified SCPI commands.
+- `slot` is a control for selecting the slot. It uses the command `:SLOT?` to query the current slot and `:SLOT %d` to set the slot. The allowed values for the slot are specified as `SLOTS`, and the `strict_discrete_set` validator is used to ensure that only valid values are used.
 
-The control properties include:
-- `slot`: Control the slot selection.
-- `LDCCurrent`: Control the laser current.
-- `LDCCurrentLimit`: Set the software current limit.
-- `LDCPolarity`: Set the laser diode polarity.
-- `LDCStatus`: Set the laser diode status.
-- `TEDStatus`: Control the TEC status.
-- `TEDSetTemperature`: Control the TEC temperature.
+- `LDCCurrent` is a control for controlling the laser current. It uses the command `:ILD:SET?` to query the current laser current and `:ILD:SET %g` to set the laser current.
 
-Each control property is associated with a specific SCPI command and has additional information such as a description, validator, and allowed values.
+- `LDCCurrentLimit` is a control for setting the software current limit. It uses the command `:LIMC:SET?` to query the current software current limit and `:LIMC:SET %g` to set the software current limit.
 
-This code provides a convenient way to interact with the Thorlabs Pro 8000 laser driver using the PyMeasure library.
+- `LDCPolarity` is a control for setting the laser diode polarity. It uses the command `:LIMC:SET?` to query the current laser diode polarity and `:LIMC:SET %s` to set the laser diode polarity. The allowed values for the polarity are specified as `LDC_POLARITIES`, and the `strict_discrete_set` validator is used to ensure that only valid values are used.
+
+- `LDCStatus` is a control for setting the laser diode status. It uses the command `:LASER?` to query the current laser diode status and `:LASER %s` to set the laser diode status. The allowed values for the status are specified as `STATUS`, and the `strict_discrete_set` validator is used to ensure that only valid values are used.
+
+- `TEDStatus` is a control for controlling the TEC status. It uses the command `:TEC?` to query the current TEC status and `:TEC %s` to set the TEC status. The allowed values for the status are specified as `STATUS`, and the `strict_discrete_set` validator is used to ensure that only valid values are used.
+
+- `TEDSetTemperature` is a control for controlling the TEC temperature. It uses the command `:TEMP:SET?` to query the current TEC temperature and `:TEMP:SET %g` to set the TEC temperature.
+
+These controls provide a convenient way to interact with the Thorlabs Pro 8000 modular laser driver using the PyMeasure library.

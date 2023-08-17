@@ -27,17 +27,20 @@ d5a = D5a("D5a", spi_rack, module=1)
 d5a.connect()
 
 # Now you can use the D5a Power Supply
-# For example, to set DAC 1 to a voltage of 2.5V:
+# For example, to set DAC1 voltage to 2.5V:
 d5a.dac1(2.5)
 
-# To get the current voltage of DAC 1:
-voltage = d5a.dac1()
+# To get the minimum step size of DAC2:
+step_size = d5a.stepsize2()
 
-# To set all DACs to zero voltage:
+# To change the output span of DAC3 to '4v bi':
+d5a.span3('4v bi')
+
+# To reset all DACs to zero voltage:
 d5a.set_dacs_zero()
 
 # Disconnect from the D5a Power Supply
 d5a.disconnect()
 ```
 
-Note: Replace `"COM1"` with the appropriate port name for your SPI rack.
+Note: Replace `"COM1"` with the appropriate port name for your SPI rack connection.

@@ -1,0 +1,39 @@
+To connect to a Keysight E8257D RF Signal Generator using Qcodes, you can use the following Python script:
+
+```python
+import qcodes as qc
+from qcodes.instrument_drivers.Keysight.Keysight_E8257D import Keysight_E8257D
+
+# Create an instance of the instrument
+signal_generator = Keysight_E8257D("signal_generator", "TCPIP0::192.168.1.1::INSTR")
+
+# Connect to the instrument
+signal_generator.connect()
+
+# Print the instrument ID
+print("Instrument ID:", signal_generator.IDN())
+
+# Set the frequency to 1 GHz
+signal_generator.frequency(1e9)
+
+# Set the power to -10 dBm
+signal_generator.power(-10)
+
+# Enable the output
+signal_generator.output_enabled(True)
+
+# Disable the output after 1 second
+qc.sleep(1)
+signal_generator.output_enabled(False)
+
+# Disconnect from the instrument
+signal_generator.disconnect()
+```
+
+This script creates an instance of the `Keysight_E8257D` instrument class from the Qcodes driver. It then connects to the instrument using the specified address (`TCPIP0::192.168.1.1::INSTR`). The instrument ID is printed using the `IDN()` method.
+
+The frequency is set to 1 GHz using the `frequency()` method, and the power is set to -10 dBm using the `power()` method. The output is enabled using the `output_enabled()` method.
+
+After a delay of 1 second, the output is disabled by setting `output_enabled` to `False`.
+
+Finally, the script disconnects from the instrument using the `disconnect()` method.

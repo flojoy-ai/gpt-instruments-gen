@@ -17,7 +17,7 @@ python generate_snippets.py
 In this repo, the data and results are all cached. If you want to re-run this from scratch (ie a change was made to airtable), run
 ```
 rm -rf data snippets
-python python generate_snippets.py
+python generate_snippets.py
 ```
 
 ## Details

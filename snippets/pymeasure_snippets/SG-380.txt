@@ -1,0 +1,31 @@
+```python
+from pymeasure.adapters import VISAAdapter
+from pymeasure.instruments import SG380
+
+# Create a VISA adapter for communication with the instrument
+adapter = VISAAdapter("TCPIP::192.168.1.1::INSTR")
+
+# Create an instance of the SG380 RF Signal Generator
+sg = SG380(adapter)
+
+# Connect to the instrument
+sg.open()
+
+# Access the properties and methods of the instrument
+frequency = sg.frequency
+print("Current frequency: {} Hz".format(frequency))
+
+sg.frequency = 1E6
+print("Frequency set to 1 MHz")
+
+mod_type = sg.mod_type
+print("Current modulation type: {}".format(mod_type))
+
+sg.mod_type = 'AM'
+print("Modulation type set to AM")
+
+# Close the connection to the instrument
+sg.close()
+```
+
+This script demonstrates how to connect to an SG380 RF Signal Generator using Pymeasure. It creates a VISA adapter for communication, creates an instance of the SG380 instrument, opens the connection, and then accesses and sets various properties of the instrument. Finally, it closes the connection.

@@ -1,0 +1,22 @@
+```python
+from pymeasure.adapters import VISAAdapter
+from pymeasure.instruments.temptronic.eco560 import ECO560
+
+# Create a VISA adapter for communication
+adapter = VISAAdapter("TCPIP::192.168.1.1::INSTR")
+
+# Create an instance of the ECO560 instrument
+eco560 = ECO560(adapter)
+
+# Connect to the instrument
+eco560.connect()
+
+# Perform operations with the instrument
+temperature = eco560.temperature
+print("Current temperature:", temperature)
+
+# Disconnect from the instrument
+eco560.disconnect()
+```
+
+This script uses Pymeasure to connect to an ECO 560 Temperature Controller. It creates a VISA adapter for communication, creates an instance of the ECO560 instrument, connects to the instrument, performs operations with the instrument (which are not shown in the provided code), and finally disconnects from the instrument.

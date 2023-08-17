@@ -4,22 +4,18 @@ To connect to an ANC300 Positional Controller using Qcodes Community, you can us
 from qcodes_contrib_drivers.drivers.Attocube.ANC300 import ANC300
 
 # Create an instance of the ANC300 driver
-controller = ANC300('controller', 'USB0::0xAAAA::0xBBBB::XXXXXXXX::INSTR')
+anc300 = ANC300('anc300', 'TCPIP0::192.168.1.1::inst0::INSTR')
 
-# Connect to the controller
-controller.connect()
+# Connect to the ANC300 controller
+anc300.connect()
 
-# Perform operations on the controller
-# For example, get the version information
-version_info = controller.version()
+# Perform operations on the ANC300 controller
+# For example, you can read the version information
+version_info = anc300.version()
 print(version_info)
 
-# Close the connection to the controller
-controller.close()
+# Close the connection to the ANC300 controller
+anc300.close()
 ```
 
-In the script above, replace `'USB0::0xAAAA::0xBBBB::XXXXXXXX::INSTR'` with the actual VISA address of your ANC300 controller. This address can be obtained from the instrument manager or by using a VISA address finder tool.
-
-The script creates an instance of the `ANC300` driver and connects to the controller using the `connect()` method. It then performs operations on the controller, such as getting the version information. Finally, it closes the connection using the `close()` method.
-
-Note: Make sure you have the necessary dependencies installed, such as `qcodes` and `pyvisa`.
+This script creates an instance of the ANC300 driver and connects to the ANC300 controller using the specified address (replace `'TCPIP0::192.168.1.1::inst0::INSTR'` with the actual address of your ANC300 controller). You can then perform operations on the ANC300 controller, such as reading the version information. Finally, the script closes the connection to the ANC300 controller.

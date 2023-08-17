@@ -1,0 +1,18 @@
+To connect to a Keysight 34410A Multimeter using Qcodes, you can use the following Python script:
+
+```python
+from qcodes.instrument_drivers.Keysight.Keysight_344XXA import Keysight_344XXA
+
+# Create an instance of the Keysight_344XXA driver
+multimeter = Keysight_344XXA('multimeter', 'TCPIP0::192.168.1.1::INSTR')
+
+# Connect to the multimeter
+multimeter.connect()
+
+# Perform measurements or set parameters using the multimeter object
+
+# Disconnect from the multimeter
+multimeter.disconnect()
+```
+
+This script imports the `Keysight_344XXA` driver from the `qcodes.instrument_drivers.Keysight` module. It then creates an instance of the driver, specifying a name for the instrument and the VISA resource address of the multimeter. The `connect()` method is called to establish a connection to the multimeter. You can then perform measurements or set parameters using the `multimeter` object. Finally, the `disconnect()` method is called to disconnect from the multimeter.

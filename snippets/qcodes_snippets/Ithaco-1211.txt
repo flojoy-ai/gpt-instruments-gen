@@ -1,0 +1,35 @@
+To connect to an Ithaco 1211 Lockin Amplifier using Qcodes, you can use the following Python script:
+
+```python
+from qcodes.instrument.base import Instrument
+from qcodes.instrument_drivers.ithaco.ithaco_1211 import Ithaco_1211
+
+# Create an instance of the Ithaco_1211 instrument
+ithaco = Ithaco_1211('ithaco', address='COM1')
+
+# Connect to the instrument
+ithaco.connect()
+
+# Print the instrument's ID information
+print(ithaco.get_idn())
+
+# Set the sensitivity of the amplifier
+ithaco.sens(1e-8)
+
+# Set the output inversion
+ithaco.invert(True)
+
+# Set the sensitivity factor
+ithaco.sens_factor(1)
+
+# Set the suppression
+ithaco.suppression(1e-7)
+
+# Set the rise time
+ithaco.risetime(0.3)
+
+# Disconnect from the instrument
+ithaco.disconnect()
+```
+
+This script creates an instance of the `Ithaco_1211` instrument, connects to it, and then performs various operations such as setting the sensitivity, inversion, sensitivity factor, suppression, and rise time. Finally, it disconnects from the instrument.

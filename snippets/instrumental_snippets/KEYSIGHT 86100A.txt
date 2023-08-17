@@ -1,1 +1,0 @@
-Unfortunately, the provided code is for connecting to a Tektronix oscilloscope, not a KEYSIGHT 86100A oscilloscope. Therefore, it cannot be used to connect to the KEYSIGHT oscilloscope.

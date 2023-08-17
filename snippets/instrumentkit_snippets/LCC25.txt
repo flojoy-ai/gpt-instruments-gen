@@ -5,41 +5,31 @@ from instrumentkit import Instrument, ConnectionType
 from instrumentkit.contrib.thorlabs import LCC25
 
 # Connect to the LCC25 Power Supply
-instrument = Instrument(
-    LCC25,
-    connection_type=ConnectionType.SERIAL,
-    port="COM1",  # Replace with the actual serial port
-    baudrate=9600,  # Replace with the actual baudrate
-)
+instrument = Instrument.from_uri("tcp://<ip_address>:<port>", LCC25, connection_type=ConnectionType.TCP_IP)
 
-# Initialize the instrument
-instrument.initialize()
-
-# Get the name and version number of the device
-name = instrument.name
-print(f"Device Name: {name}")
+# Print the name and version number of the device
+print(instrument.name)
 
 # Set the frequency at which the LCC oscillates between the two voltages
-frequency = 10  # Hz
-instrument.frequency = frequency
+instrument.frequency = 10  # 10 Hz
 
 # Set the output mode of the LCC25
-mode = LCC25.Mode.voltage1
-instrument.mode = mode
+instrument.mode = LCC25.Mode.voltage1
 
 # Enable the output
 instrument.enable = True
 
-# Set the voltage values for output 1 and output 2
-voltage1 = 10  # Volts
-voltage2 = 20  # Volts
-instrument.voltage1 = voltage1
-instrument.voltage2 = voltage2
+# Set the voltage value for output 1
+instrument.voltage1 = 5  # 5 Volts
 
-# Perform other operations as needed
+# Set the voltage value for output 2
+instrument.voltage2 = 10  # 10 Volts
 
-# Close the connection to the instrument
-instrument.close()
+# Save the current settings to memory
+instrument.save()
+
+# Disconnect from the LCC25 Power Supply
+instrument.disconnect()
 ```
 
-Note: Replace `"COM1"` with the actual serial port that the LCC25 Power Supply is connected to, and replace `9600` with the actual baudrate if it's different.
+Note: Replace `<ip_address>` and `<port>` with the actual IP address and port number of the LCC25 Power Supply.
