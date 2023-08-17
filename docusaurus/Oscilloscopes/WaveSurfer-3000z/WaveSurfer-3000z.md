@@ -17,7 +17,7 @@ The WaveSurfer 3000z has a 10.1" capacitive touch display, the longest memory, a
 
 The WaveSurfer 3000z has a 10.1" capacitive touch display, the longest memory, and the deepest toolbox – all at an affordable price.>
 
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692125958/Instruments/Vendor%20Logos/Teledyne.png" style={{ width: "100%", objectFit: "cover" }} />
@@ -33,5 +33,4 @@ Teledyne LeCroy is an American manufacturer of oscilloscopes, protocol analyzers
 ## Connect to the WaveSurfer 3000z in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
 

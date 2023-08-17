@@ -11,13 +11,13 @@
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692118805/Instruments/Miscellaneous/Stahl/Stahl.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692242578/Instruments/Miscellaneous/Stahl/Stahl.png" style={{ width: "325px" }} />
 
 </div>
 
 >
 
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692142672/Instruments/Vendor%20Logos/FLOJOY_TEXT.png" style={{ width: "100%", objectFit: "cover" }} />
@@ -33,7 +33,6 @@ Unable to find Vendor Description. <a href="https://r-stahl.com/en/global/home/"
 ## Connect to the Stahl in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
 
 ### Qcodes
 

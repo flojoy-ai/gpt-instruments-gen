@@ -17,7 +17,7 @@ The Advantest R3765CG/R3767CG network analyzers are vector network analyzers tha
 
 The Advantest R3765CG/R3767CG network analyzers are vector network analyzers that incorporate a new RF circuit analysis technique.>
 
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125967/Instruments/Vendor%20Logos/Advantest.png" style={{ width: "100%", height: "150px",objectFit: "cover" }} />
@@ -33,5 +33,4 @@ Advantest manufactures and sells semiconductor and component test system product
 ## Connect to the Advantest R3767CG in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
 

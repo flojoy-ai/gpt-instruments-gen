@@ -18,7 +18,7 @@ This Class Allows The Acquisition Of A Waveform (The Description And The Data), 
 
 This Class Allows The Acquisition Of A Waveform (The Description And The Data), From A Specific C...>
 
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125968/Instruments/Vendor%20Logos/Lecroy.png" style={{ width: "100%", objectFit: "cover" }} />
@@ -35,5 +35,4 @@ Teledyne LeCroy, Inc. manufactures and distributes electronic measuring instrum
  in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
 

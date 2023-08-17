@@ -17,7 +17,7 @@ The LDA-302P-2N Lab Brick USB programmable 50 Ohm digital attenuator has an inpu
 
 The LDA-302P-2N Lab Brick USB programmable 50 Ohm digital attenuator has an input power of up to +33 dBm, and offers frequency coverage of 10 to 3,000 MHz. It has an attenuation range of 90 dB and a step size of 2.0 dB. The unit is powered and controlled by USB connection to a PC or self-powered hub, and is programmable for fixed attenuation or swept attenuation ramps directly from the included graphical user interface (GUI) software.>
 
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125985/Instruments/Vendor%20Logos/Vaunix.png" style={{ width: "100%", objectFit: "cover" }} />
@@ -33,7 +33,6 @@ Vaunix Technology Corp. designs, manufactures, and services RF and microwave tes
 ## Connect to the LDA-302P-2N in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
 
 ### Qcodes Community
 

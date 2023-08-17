@@ -17,7 +17,7 @@ The Keysight N5173B EXG microwave analog signal generator is the cost-effective 
 
 The Keysight N5173B EXG microwave analog signal generator is the cost-effective choice when you need to balance budget and performance. It provides the essential signals that address parametric testing of broadband filters, amplifiers, receivers, and more. Perform basic LO upconversion or CW blocking with low-cost coverage to 13, 20, 31.8, or 40 GHz. Characterize broadband microwave components such as filters and amplifiers with the best combination of output power (+20 dBm at 20 GHz), low harmonics (≤ –55 dBc), and full step attenuation. Use as a high-stability system reference with standard high-performance OCXO at an aging rate of less than ± 5 parts per billion per day.>
 
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125973/Instruments/Vendor%20Logos/Keysight.png" style={{ width: "100%", height: "150px",objectFit: "cover" }} />
@@ -33,5 +33,4 @@ Keysight Technologies, or Keysight, is an American company that manufactures el
 ## Connect to the Keysight N5173B EXG in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
 

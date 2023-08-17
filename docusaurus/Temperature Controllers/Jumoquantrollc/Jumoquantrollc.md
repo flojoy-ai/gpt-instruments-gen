@@ -17,7 +17,7 @@ Control Of The Jumo Quantrol Lc100/Lc200/Lc300, Universal Pid Controller
 
 Control Of The Jumo Quantrol Lc100/Lc200/Lc300, Universal Pid Controller>
 
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692126003/Instruments/Vendor%20Logos/Jumo.png" style={{ width: "100%", objectFit: "cover" }} />
@@ -33,7 +33,6 @@ Control Of The Jumo Quantrol Lc100/Lc200/Lc300, Universal Pid Controller>
 ## Connect to the Jumoquantrollc in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
 
 ### Pytango
 

@@ -17,7 +17,7 @@ Basic Edition software is also available.
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692144653/Instruments/Power%20Supplies/Keithley-2600/Keithley-2600.png" style={{ width: "325px", height: "200px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692242640/Instruments/Power%20Supplies/Keithley-2600/Keithley-2600.png" style={{ width: "325px", height: "200px" }} />
 
 </div>
 
@@ -29,7 +29,7 @@ Test Script Processor (TSP) architecture, along with other new capabilities such
 To simplify the testing, verification, and analysis of semiconductor components, the optional ACS
 Basic Edition software is also available.>
 
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692126010/Instruments/Vendor%20Logos/Keithley.png" style={{ width: "100%", objectFit: "cover" }} />
@@ -45,5 +45,4 @@ Keithley Instruments is a measurement and instrument company headquartered in So
 ## Connect to the Keithley 2600 in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
 

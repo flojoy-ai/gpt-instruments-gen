@@ -17,7 +17,7 @@ The F1d module is an IQ demodulator ranging from 40 MHz to 1.4 GHz. It was initi
 
 The F1d module is an IQ demodulator ranging from 40 MHz to 1.4 GHz. It was initially designed for reflectometry and to be used in conjuction with the S5i RF source and the M2j low noise amplifier.>
 
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125978/Instruments/Vendor%20Logos/QuTech.png" style={{ width: "100%", height: "150px",objectFit: "cover" }} />
@@ -33,5 +33,4 @@ At QuTech, we work on a radically new technology with world-changing potential. 
 ## Connect to the F1d	 in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
 

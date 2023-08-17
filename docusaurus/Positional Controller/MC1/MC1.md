@@ -11,13 +11,13 @@
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692118588/Instruments/Positional%20Controller/MC1/MC1.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692242380/Instruments/Positional%20Controller/MC1/MC1.png" style={{ width: "325px" }} />
 
 </div>
 
 >
 
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125997/Instruments/Vendor%20Logos/Qubitekk.png" style={{ width: "100%", objectFit: "cover" }} />
@@ -33,7 +33,6 @@ Qubitekk provides reliable products for generating, preparing, distributing, det
 ## Connect to the MC1 in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
 
 ### Instrumentkit
 

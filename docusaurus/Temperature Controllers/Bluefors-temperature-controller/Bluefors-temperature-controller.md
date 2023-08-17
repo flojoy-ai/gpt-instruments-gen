@@ -18,7 +18,7 @@ With a modern and intuitive user interface, you gain direct control and overview
 
 With a modern and intuitive user interface, you gain direct control and overview of the dilution refrigerator system’s temperature status.>
 
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692126011/Instruments/Vendor%20Logos/Bluefors.png" style={{ width: "100%", objectFit: "cover" }} />
@@ -35,5 +35,4 @@ With a modern and intuitive user interface, you gain direct control and overview
  in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
 

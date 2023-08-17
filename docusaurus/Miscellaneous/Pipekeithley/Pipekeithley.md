@@ -11,13 +11,13 @@ Class For Getting Data From The Keihtley Of The Photon-Ion Spectrometer (Pipe).
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692077856/Instruments/Miscellaneous/Pipekeithley/Pipekeithley.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692242280/Instruments/Miscellaneous/Pipekeithley/Pipekeithley.png" style={{ width: "325px" }} />
 
 </div>
 
 Class For Getting Data From The Keihtley Of The Photon-Ion Spectrometer (Pipe).>
 
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692126010/Instruments/Vendor%20Logos/Keithley.png" style={{ width: "100%", objectFit: "cover" }} />
@@ -33,7 +33,6 @@ Keithley Instruments is a measurement and instrument company headquartered in So
 ## Connect to the Pipekeithley in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
 
 ### Pytango
 

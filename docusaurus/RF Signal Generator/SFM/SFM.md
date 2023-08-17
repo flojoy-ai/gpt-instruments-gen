@@ -21,7 +21,7 @@ Generation of standard TV signals (standards B&G, D&K, L&L, I, M, N, K1) includi
 Double-sideband test modulator for all IFs between 32 and 46 MHz
 RF upconverter, 5 to 1000 MHz, with high frequency resolution (1 Hz)>
 
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692139604/Instruments/Vendor%20Logos/RohdeSchwarz.png" style={{ width: "100%", objectFit: "cover" }} />
@@ -37,7 +37,6 @@ Rohde & Schwarz GmbH & Co KG is an international electronics group specializing 
 ## Connect to the SFM in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
 
 ### Pymeasure
 

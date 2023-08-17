@@ -17,7 +17,7 @@ IP9258 is a web controller which can be easily used in the industry field
 
 IP9258 is a web controller which can be easily used in the industry field>
 
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692126000/Instruments/Vendor%20Logos/Aviosys.png" style={{ width: "100%", objectFit: "cover" }} />
@@ -33,5 +33,4 @@ IP9258 is a web controller which can be easily used in the industry field>
 ## Connect to the IP Power 9258 S in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
 

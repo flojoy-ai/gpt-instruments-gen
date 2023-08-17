@@ -25,7 +25,7 @@ Communications support a full range of interface options (Ethernet, USB, RS232, 
 Quench protection and auto-rundown. The MercuryiPS can be programmed to run the magnet down safely in the event of magnet temperature rise, low cryogen levels or if triggered by an external TTL signal.
 The MercuryiPS has an on-board temperature sensor for diagnostic monitoring of the magnet temperature.>
 
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125988/Instruments/Vendor%20Logos/Oxford_Instruments.png" style={{ width: "100%", objectFit: "cover" }} />
@@ -41,5 +41,4 @@ Oxford Instruments plc is a United Kingdom manufacturing and research company th
 ## Connect to the MercuryiPS in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
 

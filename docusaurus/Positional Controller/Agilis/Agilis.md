@@ -17,7 +17,7 @@ Agilis™ Piezo Motion Controllers provide convenient and compact fine positioni
 
 Agilis™ Piezo Motion Controllers provide convenient and compact fine positioning control of the Agilis family of piezo motion stages and mounts.>
 
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125992/Instruments/Vendor%20Logos/Newport.png" style={{ width: "100%", height: "150px",objectFit: "cover" }} />
@@ -33,7 +33,6 @@ Newport provides a wide range of photonics technology and products designed to e
 ## Connect to the Agilis in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
 
 ### Instrumentkit
 

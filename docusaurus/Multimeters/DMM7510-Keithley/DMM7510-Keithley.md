@@ -17,7 +17,7 @@ The DMM7510 7.5 digit multimeter combines a precision, high-resolution digital m
 
 The DMM7510 7.5 digit multimeter combines a precision, high-resolution digital multimeter (DMM), graphical touchscreen display, and high-speed, high-resolution digitizer to create the first graphical sampling multimeter. With pA-level sensitivity and 1Msample/s sampling, it accurately measures ultra-low sleep mode currents and transmit drain currents from wireless devices.>
 
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692126010/Instruments/Vendor%20Logos/Keithley.png" style={{ width: "100%", objectFit: "cover" }} />
@@ -33,5 +33,4 @@ Keithley Instruments is a measurement and instrument company headquartered in So
 ## Connect to the DMM7510 Keithley  in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
 

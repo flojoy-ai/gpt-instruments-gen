@@ -21,7 +21,7 @@ The Keithley 580 Micro-ohmmeter combines high accuracy, resolution, and sensitiv
 
 The Keithley 580 can test more devices by enabling both test current polarity and waveform (DC or pulsed) to be selected. When using pulsed test current, the Model 580 automatically compensates for thermoelectric EMFs. Tests on inductive devices are best performed using DC test current, as this avoids the effects of time constants on pulsed current resistance measurements. For temperature-sensitive components, a single trigger mode of operation minimizes power delivered to the device.>
 
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692126010/Instruments/Vendor%20Logos/Keithley.png" style={{ width: "100%", objectFit: "cover" }} />
@@ -37,5 +37,4 @@ Keithley Instruments is a measurement and instrument company headquartered in So
 ## Connect to the Keithley 580 in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
 

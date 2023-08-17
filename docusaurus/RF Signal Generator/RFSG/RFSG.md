@@ -11,13 +11,13 @@
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692077858/Instruments/RF%20Signal%20Generator/RFSG/RFSG.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692242282/Instruments/RF%20Signal%20Generator/RFSG/RFSG.png" style={{ width: "325px" }} />
 
 </div>
 
 >
 
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125989/Instruments/Vendor%20Logos/National_Instruments.png" style={{ width: "100%", objectFit: "cover" }} />
@@ -33,7 +33,6 @@ A producer of automated test equipment and virtual instrumentation software. Com
 ## Connect to the RFSG in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
 
 ### Qcodes Community
 

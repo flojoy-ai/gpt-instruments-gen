@@ -17,7 +17,7 @@ The AG-UC2 Agilis™ Controller provides USB computer control for two Agilis axe
 
 The AG-UC2 Agilis™ Controller provides USB computer control for two Agilis axes. The AG-UC2 controller features two sets of push buttons for each Agilis axis; one set for step size settings, and the other set for precise low speed adjustments and fast coarse motion. Power is supplied through the USB port and if not available, the USB-CH power supply can independently power the Agilis controller. USB hubs may also be used for power and communication, but must provide the required 5 V supply, e.g. must feature an external power supply.>
 
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125992/Instruments/Vendor%20Logos/Newport.png" style={{ width: "100%", height: "150px",objectFit: "cover" }} />
@@ -33,5 +33,4 @@ Newport provides a wide range of photonics technology and products designed to e
 ## Connect to the AG-UC2 in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
 

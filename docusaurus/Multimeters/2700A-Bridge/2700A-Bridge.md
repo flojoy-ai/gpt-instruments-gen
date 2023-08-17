@@ -25,7 +25,7 @@ The new AH 2700A-E offers substantially improved resolution over the entire oper
 
 The AH2700A-E is the pinnacle of decades of Andeen-Hagerling experience in bridge design and manufacture, and is complemented by its sister model, the AH2700A-E-C that offers continuous frequency scanning.>
 
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692126007/Instruments/Vendor%20Logos/Andeen_Hagerling.png" style={{ width: "100%", objectFit: "cover" }} />
@@ -41,5 +41,4 @@ The AH2700A-E is the pinnacle of decades of Andeen-Hagerling experience in bridg
 ## Connect to the 2700A Bridge in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
 

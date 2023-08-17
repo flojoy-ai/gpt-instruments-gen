@@ -17,7 +17,7 @@ Class Connecting To The Lakeshore 425 Gaussmeter
 
 Class Connecting To The Lakeshore 425 Gaussmeter>
 
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125966/Instruments/Vendor%20Logos/Lakeshore.png" style={{ width: "100%", objectFit: "cover" }} />
@@ -33,5 +33,4 @@ Supporting advanced scientific research, Lake Shore is a leading global innovato
 ## Connect to the Lakeshore 425 in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
 

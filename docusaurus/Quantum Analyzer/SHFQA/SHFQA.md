@@ -17,7 +17,7 @@ The Zurich Instruments SHFQA Quantum Analyzer integrates in a single instrument 
 
 The Zurich Instruments SHFQA Quantum Analyzer integrates in a single instrument a full real-time readout setup for up to 64 superconducting and spin qubits. The SHFQA operates in a frequency range from 0.5 to 8.5 GHz with a clean analysis bandwidth of 1 GHz and without the need for mixer calibration. Each of its 2 or 4 readout channels can analyze up to 16 qubits, 8 qutrits or 5 ququads>
 
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692126012/Instruments/Vendor%20Logos/Zurich_Instruments.png" style={{ width: "100%", objectFit: "cover" }} />
@@ -33,7 +33,6 @@ Zurich Instruments Ltd. is a privately owned company developing and selling adv
 ## Connect to the SHFQA in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
 
 ### Qcodes
 

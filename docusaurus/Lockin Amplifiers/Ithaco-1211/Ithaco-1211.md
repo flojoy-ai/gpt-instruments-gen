@@ -17,7 +17,7 @@ The Ithaco 1211 Current Preamplifier measures current with full scale sensitivit
 
 The Ithaco 1211 Current Preamplifier measures current with full scale sensitivity ranging from 10-2 to 10-12 amperes>
 
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692125969/Instruments/Vendor%20Logos/Ithaco.png" style={{ width: "100%", objectFit: "cover" }} />
@@ -33,5 +33,4 @@ Artisan Technology Group ® is a team of top-talent engineers and customer servi
 ## Connect to the Ithaco 1211 in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
 

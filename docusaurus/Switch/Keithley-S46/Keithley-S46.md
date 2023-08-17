@@ -17,7 +17,7 @@ S46 Microwave Switch Systems are designed to simplify the automated switching ne
 
 S46 Microwave Switch Systems are designed to simplify the automated switching needed to test a wide range of RF and telecommunication products and devices. The S46 can control 32 relay contacts in a package as small as a 2U high (3.5 in) full-rack enclosure.>
 
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692126010/Instruments/Vendor%20Logos/Keithley.png" style={{ width: "100%", objectFit: "cover" }} />
@@ -33,5 +33,4 @@ Keithley Instruments is a measurement and instrument company headquartered in So
 ## Connect to the Keithley S46 in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
 

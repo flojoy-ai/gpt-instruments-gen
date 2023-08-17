@@ -17,7 +17,7 @@ The AG-UC8 Agilis™ Controller provides USB computer control of up to eight Agi
 
 The AG-UC8 Agilis™ Controller provides USB computer control of up to eight Agilis axes. Power is supplied through the same USB port used for communication. USB hubs may also be used for powering and communication, but must provide the required 5 V supply, e.g. must feature an external power supply. Two holes in the controller allow stacking of several controllers and attachment to optical tables.>
 
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125992/Instruments/Vendor%20Logos/Newport.png" style={{ width: "100%", height: "150px",objectFit: "cover" }} />
@@ -33,5 +33,4 @@ Newport provides a wide range of photonics technology and products designed to e
 ## Connect to the AG UC 8 in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
 

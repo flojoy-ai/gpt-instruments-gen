@@ -17,7 +17,7 @@ Touchscreen display device for power & energy measurement. Single-channel, multi
 
 Touchscreen display device for power & energy measurement. Single-channel, multiple outputs (USB, Ethernet, analog).>
 
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692125988/Instruments/Vendor%20Logos/Gentec_Eo.png" style={{ width: "100%", height: "150px",objectFit: "cover" }} />
@@ -33,5 +33,4 @@ Gentec-EO is a manufacturer of laser beam measurement technologies. <a href="htt
 ## Connect to the Gentec EO Maestro in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
 

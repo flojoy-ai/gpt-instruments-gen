@@ -17,7 +17,7 @@ QDAC is a high-precision, 25-bit resolution, ultra-low-noise computer-controlled
 
 QDAC is a high-precision, 25-bit resolution, ultra-low-noise computer-controlled DAC with 24 voltage channel generators operating at a sample rate of 1MS/s. It is designed for DC and intermediate-frequency control of quantum devices, including, for example, gate electrodes and flux bias coils in qubits. It is also a very versatile instrument that can be used for many other purposes.>
 
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125970/Instruments/Vendor%20Logos/QDevils.png" style={{ width: "100%", objectFit: "cover" }} />
@@ -33,7 +33,6 @@ Founded in 2016, QDevil is an international quantum technology company focused o
 ## Connect to the QDAC in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
 
 ### Qcodes
 

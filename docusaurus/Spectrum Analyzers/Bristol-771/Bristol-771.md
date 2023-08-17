@@ -17,7 +17,7 @@ The 771 Series Laser Spectrum Analyzer combines proven Michelson interferometer 
 
 The 771 Series Laser Spectrum Analyzer combines proven Michelson interferometer technology with fast Fourier transform analysis resulting in a unique instrument that operates as both a high-resolution spectrum analyzer and a high-accuracy wavelength meter.>
 
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125996/Instruments/Vendor%20Logos/Bristol_Instruments.png" style={{ width: "100%", objectFit: "cover" }} />
@@ -33,5 +33,4 @@ The 771 Series Laser Spectrum Analyzer combines proven Michelson interferometer 
 ## Connect to the Bristol 771  in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
 

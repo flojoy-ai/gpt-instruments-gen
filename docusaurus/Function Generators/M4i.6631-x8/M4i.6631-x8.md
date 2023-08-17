@@ -17,7 +17,7 @@ The M4i.66xx-x8 series arbitrary waveform generators (AWG) deliver the highest p
 
 The M4i.66xx-x8 series arbitrary waveform generators (AWG) deliver the highest performance in both speed and resolution. The series includes PCIe cards with either one, two or four synchronous channels. The large onboard memory can be segmented to replay different waveform sequences. The AWG features a PCI Express x8 Gen 2 interface that offers outstanding data streaming performance. The interface and Spectrum’s optimized drivers enable data transfer rates in excess of 2.8 GB/s so that signals can continuously replayed at a high output rate. While the cards have been designed using the latest technology they are still software compatible with the drivers from earlier Spectrum waveform generators. So, existing customers can use the same software they developed for a 10 year old 20 MS/s AWG card and for an M4i series 625 MS/s AWG.>
 
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692125992/Instruments/Vendor%20Logos/Spectrum.png" style={{ width: "100%", objectFit: "cover" }} />
@@ -33,7 +33,6 @@ Spectrum Instrumentation manufactures high-speed, high-resolution PC measurement
 ## Connect to the M4i.6631-x8 in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
 
 ### Qcodes Community
 

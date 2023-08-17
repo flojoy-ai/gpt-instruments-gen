@@ -21,7 +21,7 @@ The N6705B is a 4-slot mainframe that accepts up to 4 DC Power Modules, and up t
 
 N6705B accepts the same modules as N6700 Modular Power System, with over 30 modules to choose from>
 
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125973/Instruments/Vendor%20Logos/Keysight.png" style={{ width: "100%", height: "150px",objectFit: "cover" }} />
@@ -37,5 +37,4 @@ Keysight Technologies, or Keysight, is an American company that manufactures el
 ## Connect to the Keysight N6705B in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
 

@@ -17,7 +17,7 @@ The Picowatt AVS 47 is a resistance bridge used to measure the resistance of low
 
 The Picowatt AVS 47 is a resistance bridge used to measure the resistance of low-temperature sensors.>
 
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692125957/Instruments/Vendor%20Logos/Picowatt.png" style={{ width: "100%", objectFit: "cover" }} />
@@ -33,5 +33,4 @@ RV-Elektroniikka Oy PICOWATT is specialized in manufacturing instruments for the
 ## Connect to the AVS 47 in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
 

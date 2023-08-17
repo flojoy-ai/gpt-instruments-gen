@@ -17,7 +17,7 @@ The ECC100 is a state-ofthe-art motion controller, allowing the simultaneous ope
 
 The ECC100 is a state-ofthe-art motion controller, allowing the simultaneous operation of up to three positioners from attocube’s industrial ECS Drive series.>
 
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692125972/Instruments/Vendor%20Logos/Attocube.png" style={{ width: "100%", objectFit: "cover" }} />
@@ -33,5 +33,4 @@ The ECC100 is a state-ofthe-art motion controller, allowing the simultaneous ope
 ## Connect to the Attocube ECC 100 in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
 

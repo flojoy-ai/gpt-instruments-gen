@@ -18,7 +18,7 @@ ERASynth removes the cost barriers and makes quality RF signal synthesis accessi
 
 ERASynth removes the cost barriers and makes quality RF signal synthesis accessible to everyone, especially budget-conscious makers.>
 
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692139600/Instruments/Vendor%20Logos/ERAInstruments.png" style={{ width: "100%", objectFit: "cover" }} />
@@ -35,5 +35,4 @@ ERASynth removes the cost barriers and makes quality RF signal synthesis accessi
  in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
 

@@ -17,7 +17,7 @@ The M5180 is a 2-port, 18 GHz Vector Network Analyzer that delivers metrology-gr
 
 The M5180 is a 2-port, 18 GHz Vector Network Analyzer that delivers metrology-grade performance in a more economical package that excludes a number of advanced features>
 
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125964/Instruments/Vendor%20Logos/Coppermountain.png" style={{ width: "100%", objectFit: "cover" }} />
@@ -33,5 +33,4 @@ The M5180 is a 2-port, 18 GHz Vector Network Analyzer that delivers metrology-gr
 ## Connect to the M5180 2-Port 18 GHz Analyzer in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
 

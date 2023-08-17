@@ -17,7 +17,7 @@ multi-functional piezo controller for closed loop positioners
 
 multi-functional piezo controller for closed loop positioners>
 
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692125972/Instruments/Vendor%20Logos/Attocube.png" style={{ width: "100%", objectFit: "cover" }} />
@@ -33,5 +33,4 @@ multi-functional piezo controller for closed loop positioners>
 ## Connect to the ANC 350 PIEZO Controller in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
 

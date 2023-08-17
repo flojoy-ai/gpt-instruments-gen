@@ -21,7 +21,7 @@ The PM100USB Power and Energy Meter Interface is compatible with all our C-Serie
 
 This interface can be operated and powered by a PC via the mini-USB port. A readout rate of 300 samples per second allows active signal monitoring while the interface is in use.>
 
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692126009/Instruments/Vendor%20Logos/Thorlabs.png" style={{ width: "100%", objectFit: "cover" }} />
@@ -37,7 +37,6 @@ Thorlabs, Inc. is an American privately held optical equipment company headquart
 ## Connect to the PM100USB in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
 
 ### Instrumentkit
 

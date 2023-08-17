@@ -17,7 +17,7 @@ The Motor Drive Analyzer is built on an 8 channel, 12-bit resolution oscilloscop
 
 The Motor Drive Analyzer is built on an 8 channel, 12-bit resolution oscilloscope platform. It acquires any signal and performs three-phase electrical and mechanical power calculations. It provides complete power section and embedded control test coverage.>
 
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692125958/Instruments/Vendor%20Logos/Teledyne.png" style={{ width: "100%", objectFit: "cover" }} />
@@ -33,7 +33,6 @@ Teledyne LeCroy is an American manufacturer of oscilloscopes, protocol analyzers
 ## Connect to the MDA8000HD in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
 
 ### Instrumentkit
 

@@ -17,7 +17,7 @@ The Zurich Instruments HDAWG multi-channel Arbitrary Waveform Generator has one 
 
 The Zurich Instruments HDAWG multi-channel Arbitrary Waveform Generator has one of the highest channel densities available in its class and is designed for advanced signal generation up to 750 MHz bandwidth. The HDAWG comes with either 4 or 8 DC-coupled, single-ended analog output channels with 16-bit vertical resolution.>
 
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692126012/Instruments/Vendor%20Logos/Zurich_Instruments.png" style={{ width: "100%", objectFit: "cover" }} />
@@ -33,7 +33,6 @@ Zurich Instruments Ltd. is a privately owned company developing and selling adv
 ## Connect to the HDAWG in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
 
 ### Qcodes Community
 

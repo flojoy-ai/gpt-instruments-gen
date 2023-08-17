@@ -17,7 +17,7 @@ The PT-104 is a four-channel temperature measuring data logger. It offers the ul
 
 The PT-104 is a four-channel temperature measuring data logger. It offers the ultimate in resolution (0.001 °C) and accuracy (0.015 °C). Along with temperature it can also be used to measure resistance.>
 
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125986/Instruments/Vendor%20Logos/PicoTechnology.png" style={{ width: "100%", objectFit: "cover" }} />
@@ -34,5 +34,4 @@ Pico has always been recognized for providing innovative, cost-effective alterna
 ## Connect to the PT 104 Picoch in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
 

@@ -17,7 +17,7 @@
 
 >
 
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692126005/Instruments/Vendor%20Logos/SingleQuantum.png" style={{ width: "100%", objectFit: "cover" }} />
@@ -33,7 +33,6 @@ At Single Quantum, we confront every challenge with innovation, dedication, and 
 ## Connect to the Singlequantum in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
 
 ### Qcodes Community
 

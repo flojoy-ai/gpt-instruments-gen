@@ -17,7 +17,7 @@ The pco.pixelfly™ 1.3 SWIR is a high-performance machine vision camera due to 
 
 The pco.pixelfly™ 1.3 SWIR is a high-performance machine vision camera due to its special InGaAs image sensor which is sensitive in the shortwave infrared, near infrared and visible range of the electromagnetic spectrum.>
 
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125982/Instruments/Vendor%20Logos/PCO.png" style={{ width: "100%", objectFit: "cover" }} />
@@ -33,5 +33,4 @@ The pco.pixelfly™ 1.3 SWIR is a high-performance machine vision camera due to 
 ## Connect to the PCO Pixelfly in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
 

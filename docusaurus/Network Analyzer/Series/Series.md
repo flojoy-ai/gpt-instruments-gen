@@ -11,13 +11,13 @@
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692120101/Instruments/Network%20Analyzer/Series/Series.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692242672/Instruments/Network%20Analyzer/Series/Series.png" style={{ width: "325px" }} />
 
 </div>
 
 >
 
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692139604/Instruments/Vendor%20Logos/RohdeSchwarz.png" style={{ width: "100%", objectFit: "cover" }} />
@@ -33,7 +33,6 @@ Rohde & Schwarz GmbH & Co KG is an international electronics group specializing 
 ## Connect to the Series in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
 
 ### Qcodes
 

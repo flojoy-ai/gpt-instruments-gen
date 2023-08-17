@@ -11,13 +11,13 @@ Instrument class to communicate with Mettler Toledo balances using the MT-SICS S
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692118741/Instruments/Miscellaneous/MT-Standard-Interface-Communication-Software/MT-Standard-Interface-Communication-Software.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692242520/Instruments/Miscellaneous/MT-Standard-Interface-Communication-Software/MT-Standard-Interface-Communication-Software.png" style={{ width: "325px" }} />
 
 </div>
 
 Instrument class to communicate with Mettler Toledo balances using the MT-SICS Standared Interface Command Set.>
 
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125974/Instruments/Vendor%20Logos/Mettler_Toledo.png" style={{ width: "100%", height: "150px",objectFit: "cover" }} />
@@ -33,5 +33,4 @@ Mettler Toledo (NYSE: MTD) is a multinational manufacturer of scales and analyti
 ## Connect to the MT Standard Interface Communication Software in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
 

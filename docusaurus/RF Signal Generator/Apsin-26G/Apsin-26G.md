@@ -17,7 +17,7 @@ The APSINXXG is an analog signal generator (analog signal source) series coverin
 
 The APSINXXG is an analog signal generator (analog signal source) series covering RF and microwave frequency ranges from 9 kHz to 12, 20 and 26.5 GHz>
 
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125957/Instruments/Vendor%20Logos/Anapico.png" style={{ width: "100%", objectFit: "cover" }} />
@@ -33,5 +33,4 @@ The APSINXXG is an analog signal generator (analog signal source) series coverin
 ## Connect to the Apsin 26G in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
 

@@ -27,7 +27,7 @@ with the corresponding range of compatible Razorbill Instruments
 products to tune the electronic properties of materials by applying
 controlled strains and stresses to the material.>
 
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692125964/Instruments/Vendor%20Logos/Razorbill_Instruments.png" style={{ width: "100%", objectFit: "cover" }} />
@@ -43,5 +43,4 @@ Manufacturer of precision instruments intended for use in fundamental physics an
 ## Connect to the Razorbill RP100 in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
 

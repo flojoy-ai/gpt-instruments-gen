@@ -17,7 +17,7 @@ This Class Handles Rohdes And Schwarz Sma Signal Generators. Supported Model Is:
 
 This Class Handles Rohdes And Schwarz Sma Signal Generators. Supported Model Is: -Sma100A. Signal quality, speed and flexibility these are the criteria by which signal generators are measured today. The R&S SMA100A perfectly meets these criteria, and thus is a premium-class analog generator that sets standards due to its outstanding characteristics.>
 
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692139604/Instruments/Vendor%20Logos/RohdeSchwarz.png" style={{ width: "100%", objectFit: "cover" }} />
@@ -33,7 +33,6 @@ Rohde & Schwarz GmbH & Co KG is an international electronics group specializing 
 ## Connect to the SMA100A in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
 
 ### Pytango
 

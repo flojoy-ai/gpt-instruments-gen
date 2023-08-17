@@ -17,7 +17,7 @@ The PicoHarp 300 is a high-end, easy to use, plug and play Time-Correlated Singl
 
 The PicoHarp 300 is a high-end, easy to use, plug and play Time-Correlated Single Photon Counting (TCSPC) system. It is connected to a PC through a USB 2.0 interface. The high quality and reliability of the PicoHarp 300 is expressed by a unique 5-year limited warranty.>
 
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125981/Instruments/Vendor%20Logos/PicoQuant.png" style={{ width: "100%", objectFit: "cover" }} />
@@ -33,5 +33,4 @@ The PicoQuant group was founded in 1996 to develop robust, compact, and easy to 
 ## Connect to the PicoHarp 300 in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
 

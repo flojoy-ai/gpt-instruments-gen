@@ -11,13 +11,13 @@
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692118379/Instruments/Miscellaneous/Newporterror/Newporterror.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692242171/Instruments/Miscellaneous/Newporterror/Newporterror.png" style={{ width: "325px" }} />
 
 </div>
 
 >
 
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125992/Instruments/Vendor%20Logos/Newport.png" style={{ width: "100%", height: "150px",objectFit: "cover" }} />
@@ -33,7 +33,6 @@ Newport provides a wide range of photonics technology and products designed to e
 ## Connect to the Newporterror in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
 
 ### Instrumentkit
 

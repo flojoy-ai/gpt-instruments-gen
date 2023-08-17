@@ -17,7 +17,7 @@ Kiralux 12.3 MP Monochrome CMOS Camera, Hermetically Sealed Cooled Package, USB 
 
 Kiralux 12.3 MP Monochrome CMOS Camera, Hermetically Sealed Cooled Package, USB 3.0 Interface, 1/4"-20 Taps>
 
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692126009/Instruments/Vendor%20Logos/Thorlabs.png" style={{ width: "100%", objectFit: "cover" }} />
@@ -33,5 +33,4 @@ Thorlabs, Inc. is an American privately held optical equipment company headquart
 ## Connect to the CC126Mu in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
 

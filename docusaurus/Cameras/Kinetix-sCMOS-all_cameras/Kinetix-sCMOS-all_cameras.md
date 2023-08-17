@@ -1,5 +1,5 @@
 
-# Kinetix sCMOS-all_cameras
+# Kinetix sCMOS all_cameras
 
 ## Instrument Card
 
@@ -17,7 +17,7 @@ The Kinetix sCMOS delivers the highest speed and largest field of view with near
 
 The Kinetix sCMOS delivers the highest speed and largest field of view with near-perfect 96% quantum efficiency>
 
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125958/Instruments/Vendor%20Logos/Teledyne.png" style={{ width: "100%", objectFit: "cover" }} />
@@ -30,8 +30,7 @@ The Kinetix sCMOS delivers the highest speed and largest field of view with near
 </ul>
 </details>
 
-## Connect to the Kinetix sCMOS-all_cameras in Python
+## Connect to the Kinetix sCMOS all_cameras in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
 

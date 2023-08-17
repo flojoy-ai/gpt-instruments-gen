@@ -17,7 +17,7 @@ The Zurich Instruments PQSC Programmable Quantum System Controller brings togeth
 
 The Zurich Instruments PQSC Programmable Quantum System Controller brings together the instrumentation required for quantum computers with up to 100 qubits. Its ZSync low-latency, real-time communication links are designed specifically for quantum computing: the PQSC overcomes the practical limitations of traditional control methods, making automated and rapid qubit calibration routines a reality. Programming access to the powerful Xilinx UltraScale+ FPGA is the basis for developing new and optimized processing solutions for rapid tune-up and error correction adapted to the specific algorithm and computer architecture in use.>
 
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692126012/Instruments/Vendor%20Logos/Zurich_Instruments.png" style={{ width: "100%", objectFit: "cover" }} />
@@ -33,7 +33,6 @@ Zurich Instruments Ltd. is a privately owned company developing and selling adv
 ## Connect to the PQSC in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
 
 ### Qcodes
 

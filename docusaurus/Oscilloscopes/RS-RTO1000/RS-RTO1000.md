@@ -21,7 +21,7 @@ With an acquisition memory of 400 Mpts per channel simultaneously for all four c
 
 The R&S MXO 4 oscilloscopes offer the world's highest update rate of 4.5 million waveforms per second.>
 
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692139604/Instruments/Vendor%20Logos/RohdeSchwarz.png" style={{ width: "100%", objectFit: "cover" }} />
@@ -37,5 +37,4 @@ Rohde & Schwarz GmbH & Co KG is an international electronics group specializing 
 ## Connect to the R&S RTO1000 in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
 

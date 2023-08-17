@@ -21,7 +21,7 @@ Siglent’s SPD1305X Series Programmable Linear DC Power Supply has a 2.8 inch T
 
 Because higher currents supplied through smaller gauge wire or longer distances can cause a drop in voltage to the supplied load, the SPD1305X incorporates Remote Sensing in order to measure the actual supplied voltage at the load. The remote sensed voltage is fed back to the power supply and output voltage is adjusted almost instantaneously.>
 
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692126014/Instruments/Vendor%20Logos/Siglent.png" style={{ width: "100%", height: "150px",objectFit: "cover" }} />
@@ -37,5 +37,4 @@ Because higher currents supplied through smaller gauge wire or longer distances 
 ## Connect to the SPD1305X Power Supply in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
 

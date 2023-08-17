@@ -17,7 +17,7 @@ The v2 Camera Module has a Sony IMX219 8-megapixel sensor (compared to the 5-meg
 
 The v2 Camera Module has a Sony IMX219 8-megapixel sensor (compared to the 5-megapixel OmniVision OV5647 sensor of the original camera).>
 
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692125961/Instruments/Vendor%20Logos/RaspberryPi.png" style={{ width: "100%", objectFit: "cover" }} />
@@ -33,5 +33,4 @@ The v2 Camera Module has a Sony IMX219 8-megapixel sensor (compared to the 5-meg
 ## Connect to the Pi Camera in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
 

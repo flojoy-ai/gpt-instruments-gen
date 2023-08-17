@@ -17,7 +17,7 @@ The SHFQC Qubit Controller can control, read out and provide fast feedback on up
 
 The SHFQC Qubit Controller can control, read out and provide fast feedback on up to 6 superconducting qubits. It integrates the functionality of the SHFQA Quantum Analyzer, the SHFSG Signal Generator and more in a single instrument.>
 
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692126012/Instruments/Vendor%20Logos/Zurich_Instruments.png" style={{ width: "100%", objectFit: "cover" }} />
@@ -33,7 +33,6 @@ Zurich Instruments Ltd. is a privately owned company developing and selling adv
 ## Connect to the SHFQC in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
 
 ### Qcodes
 

@@ -17,7 +17,7 @@ PXIe, 250 kHz to 20 GHz, PXI RF Analog Signal Generator—The PXIe-5654 features
 
 PXIe, 250 kHz to 20 GHz, PXI RF Analog Signal Generator—The PXIe-5654 features a combination of exceptional phase noise and frequency tuning time. These features address applications such as blocker test/receiver desensitization, high-performance intermodulation distortion measurements, and various electronic warfare applications. The PXIe-5654 is designed to meet the challenging requirements of RFIC characterization, satellite test, and radar applications. Some PXIe-5654 options include a PXIe-5696 Amplitude Extender Module. The PXIe-5696 supports a frequency range of 250 kHz to 20 GHz and an extended amplitude range up to 27 dBm.>
 
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125989/Instruments/Vendor%20Logos/National_Instruments.png" style={{ width: "100%", objectFit: "cover" }} />
@@ -33,5 +33,4 @@ A producer of automated test equipment and virtual instrumentation software. Com
 ## Connect to the NI PXIe-5654 in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
 

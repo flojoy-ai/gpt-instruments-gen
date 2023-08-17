@@ -17,7 +17,7 @@ The Zurich Instruments UHFQA Quantum Analyzer is a unique instrument for paralle
 
 The Zurich Instruments UHFQA Quantum Analyzer is a unique instrument for parallel readout of up to 10 superconducting or spin qubits with highest speed and fidelity. The UHFQA operates on a frequency span of up to ±600 MHz with nanosecond timing resolution, and it features 2 signal inputs and outputs for IQ base-band operation. Thanks to its low-latency signal processing chain of matched filters, real-time matrix operations, and state discrimination, the UHFQA supports the development of ambitious quantum computing projects for 100 qubits and more.>
 
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692126012/Instruments/Vendor%20Logos/Zurich_Instruments.png" style={{ width: "100%", objectFit: "cover" }} />
@@ -33,7 +33,6 @@ Zurich Instruments Ltd. is a privately owned company developing and selling adv
 ## Connect to the UHFQA in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
 
 ### Qcodes
 

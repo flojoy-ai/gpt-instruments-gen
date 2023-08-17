@@ -17,7 +17,7 @@
 
 >
 
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125988/Instruments/Vendor%20Logos/Oxford_Instruments.png" style={{ width: "100%", objectFit: "cover" }} />
@@ -33,5 +33,4 @@ Oxford Instruments plc is a United Kingdom manufacturing and research company th
 ## Connect to the Kelvinox IGH in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
 

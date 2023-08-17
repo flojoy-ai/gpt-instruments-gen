@@ -21,7 +21,7 @@ The R&S FSL series Spectrum Analyzer – are a lightweight and compact range of 
 
 These analyzers are ideal for a large number of applications in development, service and production.>
 
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692139604/Instruments/Vendor%20Logos/RohdeSchwarz.png" style={{ width: "100%", objectFit: "cover" }} />
@@ -37,7 +37,6 @@ Rohde & Schwarz GmbH & Co KG is an international electronics group specializing 
 ## Connect to the FSL in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
 
 ### Pymeasure
 

@@ -27,7 +27,7 @@ Channel isolation: CH1 || CH2,CH3
 OVP/OCP/OTP protection functions
 Built in V, A, W measurements and waveform display>
 
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125991/Instruments/Vendor%20Logos/Rigol.png" style={{ width: "100%", height: "150px",objectFit: "cover" }} />
@@ -44,5 +44,4 @@ RIGOL’s line of products includes [digital storage oscilloscopes](https://www
 ## Connect to the Rigol DP832 in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
 

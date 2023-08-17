@@ -17,7 +17,7 @@ The Model 2601B SourceMeter SMU instrument, is a new and improved one channel SM
 
 The Model 2601B SourceMeter SMU instrument, is a new and improved one channel SMU instrument with a tightly integrated four-quadrant design that allows it to simultaneously source and measure both voltage and current to boost productivity in applications ranging from R&D to automated production test. In addition to retaining all the features of the Model 2601A, the Model 2601B has 6½-digit resolution, USB 2.0 connectivity, and software command emulation of the Model 2400 SourceMeter SMU Instrument that enables easy migration of legacy test code. The Model 2601B model is equipped with Keithley's high speed TSP technology (over 190% faster than traditional PC-to-instrument communication techniques,) which dramatically improves the system-level speed to lower the cost of test.>
 
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692126010/Instruments/Vendor%20Logos/Keithley.png" style={{ width: "100%", objectFit: "cover" }} />
@@ -33,5 +33,4 @@ Keithley Instruments is a measurement and instrument company headquartered in So
 ## Connect to the Keithley 2601B in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
 

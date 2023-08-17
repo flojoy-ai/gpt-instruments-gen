@@ -35,7 +35,7 @@ Simplified configuration and tuning
 8 programmable inputs and 6 programmable outputs
 Wide range of PWM frequencies for linear motor support>
 
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125990/Instruments/Vendor%20Logos/Parker.png" style={{ width: "100%", objectFit: "cover" }} />
@@ -51,5 +51,4 @@ Parker Hannifin Corporation, originally Parker Appliance Company, usually referr
 ## Connect to the Gemini GV6 in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
 

@@ -17,7 +17,7 @@ Temptronic ThermoStreams are portable systems that deliver clean dry air for pre
 
 Temptronic ThermoStreams are portable systems that deliver clean dry air for precision temperature testing or conditioning of electronics (ICs, MEMS, transceivers, or circuits) and materials. No other systems can bring your test subjects to temperature faster with precise control>
 
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692125985/Instruments/Vendor%20Logos/Temptronic.png" style={{ width: "100%", objectFit: "cover" }} />
@@ -33,5 +33,4 @@ Temptronic ThermoStreams are portable systems that deliver clean dry air for pre
 ## Connect to the Thermostream ATS Series in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
 
