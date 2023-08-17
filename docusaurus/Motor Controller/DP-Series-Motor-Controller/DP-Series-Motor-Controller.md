@@ -22,14 +22,14 @@ Anaheim Automation manufactures a variety of Stepper Motor Driver Packs with Pro
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692106942/Instruments/Motor%20Controller/DP-Series-Motor-Controller/file.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692106942/Instruments/Motor%20Controller/DP-Series-Motor-Controller/file.png" style={{ width: "325px", height: "200px", objectFit: "scale-down" }} />
 
 </div>
 
 <details>
 <summary><h2>Manufacturer Card</h2></summary>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692125991/Instruments/Vendor%20Logos/Anaheim_Automation.png" style={{ width: "100%", objectFit: "cover" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692125991/Instruments/Vendor%20Logos/Anaheim_Automation.png" style={{ width: "100%", height: "170px",objectFit: "scale-down" }} />
 
 Unable to find Vendor Description. <a href="https://www.anaheimautomation.com/?gclid=Cj0KCQjwib2mBhDWARIsAPZUn_m78imRVeC4iew-ALEMOH2ABgkCznvLz8KJ7IP3DU4ltd1my9bdZrgaAo0jEALw_wcB">Website</a>.
 
@@ -42,8 +42,6 @@ Unable to find Vendor Description. <a href="https://www.anaheimautomation.com/?g
 ## Connect to the DP Series Motor Controller in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
-
 <Tabs>
 <TabItem value="Pymeasure" label="Pymeasure">
 

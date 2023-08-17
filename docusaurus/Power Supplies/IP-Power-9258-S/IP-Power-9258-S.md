@@ -22,14 +22,14 @@ IP9258 is a web controller which can be easily used in the industry field
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692107055/Instruments/Power%20Supplies/IP-Power-9258-S/file.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692107055/Instruments/Power%20Supplies/IP-Power-9258-S/file.png" style={{ width: "325px", height: "200px", objectFit: "scale-down" }} />
 
 </div>
 
 <details>
 <summary><h2>Manufacturer Card</h2></summary>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692126000/Instruments/Vendor%20Logos/Aviosys.png" style={{ width: "100%", objectFit: "cover" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692126000/Instruments/Vendor%20Logos/Aviosys.png" style={{ width: "100%", height: "170px",objectFit: "scale-down" }} />
 
 **Aviosys** IP POWER is a remote power management device that allows you to control power on/off and monitor power status of connected devices. <a href="https://www.aviosys.com/">Website</a>.
 
@@ -42,8 +42,6 @@ IP9258 is a web controller which can be easily used in the industry field
 ## Connect to the IP Power 9258 S in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
-
 <Tabs>
 <TabItem value="Qcodes Community" label="Qcodes Community">
 

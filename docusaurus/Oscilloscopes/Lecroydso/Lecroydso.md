@@ -25,14 +25,14 @@ This Class Allows The Acquisition Of A Waveform (The Description And The Data), 
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692106981/Instruments/Oscilloscopes/Lecroydso/file.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692106981/Instruments/Oscilloscopes/Lecroydso/file.png" style={{ width: "325px", height: "200px", objectFit: "scale-down" }} />
 
 </div>
 
 <details>
 <summary><h2>Manufacturer Card</h2></summary>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125968/Instruments/Vendor%20Logos/Lecroy.png" style={{ width: "100%", objectFit: "cover" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125968/Instruments/Vendor%20Logos/Lecroy.png" style={{ width: "100%", height: "170px",objectFit: "scale-down" }} />
 
 Teledyne LeCroy, Inc. manufactures and distributes electronic measuring instruments. The Company produces analyzers, measurement, and testing solutions including oscilloscopes, production test digitizers, and electronic components. Teledyne LeCroy serves customers worldwide. <a href="https://www.teledynelecroy.com/">Website</a>.
 
@@ -46,8 +46,6 @@ Teledyne LeCroy, Inc. manufactures and distributes electronic measuring instrum
  in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
-
 <Tabs>
 <TabItem value="Pytango" label="Pytango">
 

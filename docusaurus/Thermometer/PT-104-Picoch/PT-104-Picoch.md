@@ -22,14 +22,14 @@ The PT-104 is a four-channel temperature measuring data logger. It offers the ul
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201200/Instruments/Thermometer/PT-104-Picoch/file.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201200/Instruments/Thermometer/PT-104-Picoch/file.png" style={{ width: "325px", height: "200px", objectFit: "scale-down" }} />
 
 </div>
 
 <details>
 <summary><h2>Manufacturer Card</h2></summary>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125986/Instruments/Vendor%20Logos/PicoTechnology.png" style={{ width: "100%", objectFit: "cover" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125986/Instruments/Vendor%20Logos/PicoTechnology.png" style={{ width: "100%", height: "170px",objectFit: "scale-down" }} />
 
 Pico Technology was established in 1991 and soon became a leader in the field of [PC Oscilloscopes](https://www.picotech.com/products/oscilloscope) and [data loggers](https://www.picotech.com/products/data-logger).
 Pico has always been recognized for providing innovative, cost-effective alternatives to traditional test equipment and data acquisition products. In doing so, we have made high-quality instrumentation affordable. <a href="https://www.picotech.com/">Website</a>.
@@ -43,8 +43,6 @@ Pico has always been recognized for providing innovative, cost-effective alterna
 ## Connect to the PT 104 Picoch in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
-
 <Tabs>
 <TabItem value="Pytango" label="Pytango">
 

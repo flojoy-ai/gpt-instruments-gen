@@ -22,14 +22,14 @@ The 3800 is a microprocessor-based programmer and controller. The programmer fun
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201081/Instruments/Temperature%20Controllers/Thermotron-3800/file.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201081/Instruments/Temperature%20Controllers/Thermotron-3800/file.png" style={{ width: "325px", height: "200px", objectFit: "scale-down" }} />
 
 </div>
 
 <details>
 <summary><h2>Manufacturer Card</h2></summary>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125971/Instruments/Vendor%20Logos/Thermotron.png" style={{ width: "100%", objectFit: "cover" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125971/Instruments/Vendor%20Logos/Thermotron.png" style={{ width: "100%", height: "170px",objectFit: "scale-down" }} />
 
 **Thermotron** is a worldwide temperature chamber, humidity chamber, and vibration testing equipment manufacturer. View our testing equipment today!. <a href="https://thermotron.com/">Website</a>.
 
@@ -42,8 +42,6 @@ The 3800 is a microprocessor-based programmer and controller. The programmer fun
 ## Connect to the Thermotron 3800 in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
-
 <Tabs>
 <TabItem value="Pymeasure" label="Pymeasure">
 

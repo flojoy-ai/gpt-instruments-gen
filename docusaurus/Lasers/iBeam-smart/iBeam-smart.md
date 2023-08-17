@@ -22,14 +22,14 @@ The iBeam smart is the ultimate choice when looking for a high-performance, ultr
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201062/Instruments/Lasers/iBeam-smart/file.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201062/Instruments/Lasers/iBeam-smart/file.png" style={{ width: "325px", height: "200px", objectFit: "scale-down" }} />
 
 </div>
 
 <details>
 <summary><h2>Manufacturer Card</h2></summary>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125974/Instruments/Vendor%20Logos/Toptica.png" style={{ width: "100%", objectFit: "cover" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125974/Instruments/Vendor%20Logos/Toptica.png" style={{ width: "100%", height: "170px",objectFit: "scale-down" }} />
 
 TOPTICA Photonics is a manufacturer of [lasers](https://en.wikipedia.org/wiki/Laser) for quantum technologies, biophotonics and material inspection. <a href="https://www.toptica.com/">Website</a>.
 
@@ -42,8 +42,6 @@ TOPTICA Photonics is a manufacturer of [lasers](https://en.wikipedia.org/wiki/
 ## Connect to the iBeam smart in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
-
 <Tabs>
 <TabItem value="Pymeasure" label="Pymeasure">
 

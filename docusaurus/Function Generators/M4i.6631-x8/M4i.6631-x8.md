@@ -22,14 +22,14 @@ The M4i.66xx-x8 series arbitrary waveform generators (AWG) deliver the highest p
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692106847/Instruments/Function%20Generators/M4i.6631-x8/file.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692106847/Instruments/Function%20Generators/M4i.6631-x8/file.png" style={{ width: "325px", height: "200px", objectFit: "scale-down" }} />
 
 </div>
 
 <details>
 <summary><h2>Manufacturer Card</h2></summary>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692125992/Instruments/Vendor%20Logos/Spectrum.png" style={{ width: "100%", objectFit: "cover" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692125992/Instruments/Vendor%20Logos/Spectrum.png" style={{ width: "100%", height: "170px",objectFit: "scale-down" }} />
 
 Spectrum Instrumentation manufactures high-speed, high-resolution PC measurement equipment for the most demanding applications. 200+ products are available for your Perfect Fit Solution, combined with intuitive measurement software, support directly from the engineers and five years warranty. Spectrum products and solutions are used by leading companies and research institutes worldwide. <a href="https://spectrum-instrumentation.com/">Website</a>.
 
@@ -42,8 +42,6 @@ Spectrum Instrumentation manufactures high-speed, high-resolution PC measurement
 ## Connect to the M4i.6631-x8 in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
-
 <Tabs>
 <TabItem value="Qcodes Community" label="Qcodes Community">
 

@@ -31,14 +31,14 @@ Wide range of PWM frequencies for linear motor support
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692285821/Instruments/Motor%20Controller/Gemini-GV6/file.png" style={{ width: "325px", height: "200px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692285821/Instruments/Motor%20Controller/Gemini-GV6/file.png" style={{ width: "325px", height: "200px", objectFit: "scale-down" }} />
 
 </div>
 
 <details>
 <summary><h2>Manufacturer Card</h2></summary>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125990/Instruments/Vendor%20Logos/Parker.png" style={{ width: "100%", objectFit: "cover" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125990/Instruments/Vendor%20Logos/Parker.png" style={{ width: "100%", height: "170px",objectFit: "scale-down" }} />
 
 Parker Hannifin Corporation, originally Parker Appliance Company, usually referred to as just Parker, is an American corporation specializing in motion and control technologies. <a href="https://www.parker.com/us/en/home.html">Website</a>.
 
@@ -51,8 +51,6 @@ Parker Hannifin Corporation, originally Parker Appliance Company, usually referr
 ## Connect to the Gemini GV6 in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
-
 <Tabs>
 <TabItem value="Pymeasure" label="Pymeasure">
 

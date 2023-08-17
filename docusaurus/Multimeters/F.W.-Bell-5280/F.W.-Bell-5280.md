@@ -22,14 +22,14 @@ Handheld single-axis digital magnetometer gauss / tesla meter for measuring magn
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201239/Instruments/Multimeters/F.W.-Bell-5280/file.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201239/Instruments/Multimeters/F.W.-Bell-5280/file.png" style={{ width: "325px", height: "200px", objectFit: "scale-down" }} />
 
 </div>
 
 <details>
 <summary><h2>Manufacturer Card</h2></summary>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692125981/Instruments/Vendor%20Logos/F.W.Bell.png" style={{ width: "100%", objectFit: "cover" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692125981/Instruments/Vendor%20Logos/F.W.Bell.png" style={{ width: "100%", height: "170px",objectFit: "scale-down" }} />
 
 Technology leaders in instrumentation. Designing and manufacturing **F.W. Bell** gaussmeters, probes, current sensors and Hall generators for over 60 years. <a href="https://fwbell.com/">Website</a>.
 
@@ -42,8 +42,6 @@ Technology leaders in instrumentation. Designing and manufacturing **F.W. Bell*
 ## Connect to the F.W. Bell 5280 in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
-
 <Tabs>
 <TabItem value="Pymeasure" label="Pymeasure">
 

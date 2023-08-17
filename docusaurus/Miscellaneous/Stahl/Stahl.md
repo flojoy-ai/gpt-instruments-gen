@@ -4,7 +4,7 @@ sidebar_label: Stahl
 description: Currently no description
 keywords: [miscellaneous, Stahl, Qcodes]
 slug: /instruments-wiki/miscellaneous/stahl/stahl
-image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201225/Instruments/Miscellaneous/Stahl/file.png
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692303086/Instruments/Miscellaneous/Stahl/file.png
 ---
 
 import Tabs from '@theme/Tabs';
@@ -22,14 +22,14 @@ Currently no description
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201225/Instruments/Miscellaneous/Stahl/file.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692303086/Instruments/Miscellaneous/Stahl/file.png" style={{ width: "325px", height: "200px", objectFit: "scale-down" }} />
 
 </div>
 
 <details>
 <summary><h2>Manufacturer Card</h2></summary>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692142672/Instruments/Vendor%20Logos/FLOJOY_TEXT.png" style={{ width: "100%", objectFit: "cover" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692142672/Instruments/Vendor%20Logos/FLOJOY_TEXT.png" style={{ width: "100%", height: "170px",objectFit: "scale-down" }} />
 
 Unable to find Vendor Description. <a href="https://r-stahl.com/en/global/home/">Website</a>.
 
@@ -42,8 +42,6 @@ Unable to find Vendor Description. <a href="https://r-stahl.com/en/global/home/"
 ## Connect to the Stahl in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
-
 <Tabs>
 <TabItem value="Qcodes" label="Qcodes">
 

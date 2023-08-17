@@ -4,7 +4,7 @@ sidebar_label: MT Standard Interface Communication Software
 description: Instrument class to communicate with Mettler Toledo balances using the MT-SICS Standared Interface Command Set.
 keywords: [miscellaneous, Mettler Toledo, Instrumentkit]
 slug: /instruments-wiki/miscellaneous/mettler-toledo/mt-standard-interface-communication-software
-image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201157/Instruments/Miscellaneous/MT-Standard-Interface-Communication-Software/file.png
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692301745/Instruments/Miscellaneous/MT-Standard-Interface-Communication-Software/file.png
 ---
 
 import Tabs from '@theme/Tabs';
@@ -22,14 +22,14 @@ Instrument class to communicate with Mettler Toledo balances using the MT-SICS S
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201157/Instruments/Miscellaneous/MT-Standard-Interface-Communication-Software/file.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692301745/Instruments/Miscellaneous/MT-Standard-Interface-Communication-Software/file.png" style={{ width: "325px", height: "200px", objectFit: "scale-down" }} />
 
 </div>
 
 <details>
 <summary><h2>Manufacturer Card</h2></summary>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125974/Instruments/Vendor%20Logos/Mettler_Toledo.png" style={{ width: "100%", height: "150px",objectFit: "cover" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125974/Instruments/Vendor%20Logos/Mettler_Toledo.png" style={{ width: "100%", height: "170px",objectFit: "scale-down" }} />
 
 Mettler Toledo (NYSE: MTD) is a multinational manufacturer of scales and analytical instruments. It is the largest provider of weighing instruments for use in laboratory, industrial, and food retailing applications. The company also provides various analytical instruments, process analytics instruments, and end-of-line inspection systems. The company operates worldwide with 70% of net sales, derived in equal parts, from Europe and from the Americas. Asian business is included in the remaining 30%.[2] Mettler Toledo is headquartered in Switzerland and incorporated in the United States.[4]. <a href="https://www.mt.com/ca/en/home.html">Website</a>.
 
@@ -42,8 +42,6 @@ Mettler Toledo (NYSE: MTD) is a multinational manufacturer of scales and analyti
 ## Connect to the MT Standard Interface Communication Software in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
-
 <Tabs>
 <TabItem value="Instrumentkit" label="Instrumentkit">
 

@@ -22,14 +22,14 @@ The Picowatt AVS 47 is a resistance bridge used to measure the resistance of low
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201292/Instruments/Temperature%20Controllers/AVS-47/file.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201292/Instruments/Temperature%20Controllers/AVS-47/file.png" style={{ width: "325px", height: "200px", objectFit: "scale-down" }} />
 
 </div>
 
 <details>
 <summary><h2>Manufacturer Card</h2></summary>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692125957/Instruments/Vendor%20Logos/Picowatt.png" style={{ width: "100%", objectFit: "cover" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692125957/Instruments/Vendor%20Logos/Picowatt.png" style={{ width: "100%", height: "170px",objectFit: "scale-down" }} />
 
 RV-Elektroniikka Oy PICOWATT is specialized in manufacturing instruments for thermometry at ultralow temperatures. Founded in February 1978, we have gathered 45 years of experience in designing and manufacturing low-noise precision. <a href="https://www.picowatt.fi/index1.html">Website</a>.
 
@@ -42,8 +42,6 @@ RV-Elektroniikka Oy PICOWATT is specialized in manufacturing instruments for the
 ## Connect to the AVS 47 in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
-
 <Tabs>
 <TabItem value="Instrumentkit" label="Instrumentkit">
 

@@ -22,14 +22,14 @@ The model 7270 sets a new standard for general-purpose DSP lock-in amplifiers.
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201032/Instruments/Lockin%20Amplifiers/Ametek-7270/file.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201032/Instruments/Lockin%20Amplifiers/Ametek-7270/file.png" style={{ width: "325px", height: "200px", objectFit: "scale-down" }} />
 
 </div>
 
 <details>
 <summary><h2>Manufacturer Card</h2></summary>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125962/Instruments/Vendor%20Logos/Ametek.png" style={{ width: "100%", height: "150px",objectFit: "cover" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125962/Instruments/Vendor%20Logos/Ametek.png" style={{ width: "100%", height: "170px",objectFit: "scale-down" }} />
 
 Since 1930, our talented and diverse workforce has been delivering **differentiated technology solutions** to create strong, sustainable and profitable growth. <a href="https://www.ametek.com/">Website</a>.
 
@@ -42,8 +42,6 @@ Since 1930, our talented and diverse workforce has been delivering **differenti
 ## Connect to the Ametek 7270 in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
-
 <Tabs>
 <TabItem value="Pymeasure" label="Pymeasure">
 

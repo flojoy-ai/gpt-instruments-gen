@@ -22,14 +22,14 @@ The GS200 is a low voltage/current DC source with high accuracy, high stability,
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201246/Instruments/Power%20Supplies/Yokogawa-GS-200/file.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201246/Instruments/Power%20Supplies/Yokogawa-GS-200/file.png" style={{ width: "325px", height: "200px", objectFit: "scale-down" }} />
 
 </div>
 
 <details>
 <summary><h2>Manufacturer Card</h2></summary>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125993/Instruments/Vendor%20Logos/Yokogawa.png" style={{ width: "100%", objectFit: "cover" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125993/Instruments/Vendor%20Logos/Yokogawa.png" style={{ width: "100%", height: "170px",objectFit: "scale-down" }} />
 
 Yokogawa is a leading provider of Industrial Automation and Test and Measurement solutions. Combining superior technology with engineering services, project management, and maintenance, Yokogawa delivers field proven operational efficiency, safety, quality, and reliability. <a href="https://www.yokogawa.com/">Website</a>.
 
@@ -42,8 +42,6 @@ Yokogawa is a leading provider of Industrial Automation and Test and Measurement
 ## Connect to the Yokogawa GS 200 in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
-
 <Tabs>
 <TabItem value="Pymeasure" label="Pymeasure">
 
