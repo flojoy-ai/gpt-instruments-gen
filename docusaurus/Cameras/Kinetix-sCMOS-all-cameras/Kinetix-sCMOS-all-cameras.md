@@ -1,5 +1,6 @@
 ---
-title: Kinetix sCMOS all-cameras
+title: Connecting to Kinetix sCMOS all-cameras by Pvcam in Python
+sidebar_label: Kinetix sCMOS all-cameras
 description: The Kinetix sCMOS delivers the highest speed and largest field of view with near-perfect 96% quantum efficiency
 keywords: [cameras, Pvcam, Instrumental]
 slug: /instruments-wiki/cameras/pvcam/kinetix-sCMOS-all-cameras
