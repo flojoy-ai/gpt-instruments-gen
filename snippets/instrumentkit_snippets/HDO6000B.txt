@@ -4,7 +4,9 @@ To connect to a HDO6000B Oscilloscope using Instrumentkit, you can use the follo
 import instrumentkit as ik
 
 # Connect to the oscilloscope
-oscilloscope = ik.teledyne.MAUI.open_visa("TCPIP0::192.168.0.10::INSTR")
+address = "TCPIP0::192.168.0.10::INSTR"
+oscilloscope = ik.teledyne.MAUI.open_visa(address)
+
 
 # Perform operations on the oscilloscope
 oscilloscope.run()

@@ -9,12 +9,10 @@ dg645 = ik.srs.SRSDG645.open_gpibusb('/dev/ttyUSB0', 1)
 # Example usage
 dg645.channel[dg645.Channels.A].delay = (dg645.channel[dg645.Channels.T0], 10 * ik.units.ns)
 dg645.output[dg645.Outputs.AB].level_amplitude = 4.0 * ik.units.V
+# Close the connection
+dg645.close()
 ```
 
 This code imports the `instrumentkit` module and opens a connection to the DG645 Pulse Generator using the `open_gpibusb` method of the `SRSDG645` class. The first argument is the device path (`'/dev/ttyUSB0'`) and the second argument is the GPIB address (`1`).
 
-After connecting, you can use the `channel` property to access specific channels of the DG645 Pulse Generator. In the example, it sets the delay of channel A to 10 nanoseconds relative to channel T0.
-
-Similarly, you can use the `output` property to access specific outputs of the DG645 Pulse Generator. In the example, it sets the amplitude of output AB to 4.0 volts.
-
-Note: This code assumes that you have already installed the `instrumentkit` package and its dependencies.
+After connecting, you can access the channels and outputs of the DG645 Pulse Generator using the `channel` and `output` properties. In the example usage, it sets the delay of channel A to 10 nanoseconds relative to channel T0 and sets the amplitude of output AB to 4.0 volts.

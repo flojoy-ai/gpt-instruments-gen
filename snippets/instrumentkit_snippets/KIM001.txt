@@ -3,8 +3,12 @@ To connect to a KIM001 Positional Controller using Instrumentkit, you can use th
 ```python
 import instrumentkit as ik
 
+# Define the connection parameters
+port = "/dev/ttyUSB0"
+baudrate = 115200
+
 # Connect to the KIM001 controller
-controller = ik.thorlabs.APTPiezoInertiaActuator.open_serial("/dev/ttyUSB0", baud=115200)
+controller = ik.thorlabs.APTPiezoInertiaActuator.open_serial(port, baud=baudrate)
 
 # Get the first channel of the controller
 channel = controller.channel[0]

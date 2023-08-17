@@ -1,3 +1,14 @@
+---
+title: Connecting to S5i by Qutech in Python
+sidebar_label: S5i
+description: The S5i module is a RF source ranging from 40 MHz to 4 GHz, initially designed for reflectometry. The output power of the fundamental frequency ranges from -20 dBm to 14 dBm and can be controlled by both the front panel and via software. The RF output can be muted by an external source, which gives an on/off ratio of larger than 60 dB.
+keywords: [rf signal generator, Qutech, Qcodes Community]
+slug: /instruments-wiki/rf-signal-generator/qutech/s5i
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692107044/Instruments/RF%20Signal%20Generator/S5i/file.png
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 # S5i
 
@@ -11,14 +22,14 @@ The S5i module is a RF source ranging from 40 MHz to 4 GHz, initially designed f
 
 </div>
 
-<img src={require("./S5i.jpg").default} style={{width:"256px", height: "200px"}} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692107044/Instruments/RF%20Signal%20Generator/S5i/file.png" style={{ width: "325px" }} />
 
 </div>
 
-The S5i module is a RF source ranging from 40 MHz to 4 GHz, initially designed for reflectometry. The output power of the fundamental frequency ranges from -20 dBm to 14 dBm and can be controlled by both the front panel and via software. The RF output can be muted by an external source, which gives an on/off ratio of larger than 60 dB.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
+
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125978/Instruments/Vendor%20Logos/QuTech.png" style={{ width: "100%", height: "150px",objectFit: "cover" }} />
 
 At QuTech, we work on a radically new technology with world-changing potential. Our mission: to develop scalable prototypes of a quantum computer and an inherently safe quantum internet, based on the fundamental laws of quantum mechanics. <a href="https://qutech.nl/">Website</a>.
 
@@ -33,7 +44,8 @@ At QuTech, we work on a radically new technology with world-changing potential. 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
 
 
-### Qcodes Community
+<Tabs>
+<TabItem value="Qcodes Community" label="Qcodes Community">
 
 To connect to an S5i RF Signal Generator using Qcodes Community, you can use the following Python script:
 
@@ -55,21 +67,20 @@ s5i = S5i('s5i', spi_rack, module=1)
 s5i.connect()
 
 # Now you can use the S5i RF Signal Generator
-# For example, to enable the RF output:
+# For example, you can enable the RF output
 s5i.output_enabled(True)
 
-# To set the frequency:
-s5i.frequency(42e6)
+# Set the frequency to 50 MHz
+s5i.frequency(50e6)
 
-# To set the output power:
-s5i.power(10)
+# Set the output power to -10 dBm
+s5i.power(-10)
 
-# To optimize the stepsize for the current frequency:
-s5i.optimize_for_frequency()
-
-# To disconnect from the S5i RF Signal Generator:
+# Disconnect from the S5i RF Signal Generator
 s5i.disconnect()
 ```
 
-Note: In the above code, make sure to replace `SPI_rack()` with the appropriate initialization of the SPI_rack class from the spirack package.
+Note: In the above code, make sure to replace `SPI_rack()` with the appropriate initialization code for your specific SPI rack.
 
+</TabItem>
+</Tabs>

@@ -1,3 +1,14 @@
+---
+title: Connecting to UHFLI by Zurich Instruments in Python
+sidebar_label: UHFLI
+description: The Zurich Instruments UHFLI is a digital lock-in amplifier that covers the frequency range from DC to 600 MHz. It offers a time constant of 30 ns for demodulation – resulting in a demodulation bandwidth that exceeds 5 MHz.
+keywords: [lockin amplifiers, Zurich Instruments, Qcodes]
+slug: /instruments-wiki/lockin-amplifiers/zurich-instruments/uhfli
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201068/Instruments/Lockin%20Amplifiers/UHFLI/file.png
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 # UHFLI
 
@@ -11,14 +22,14 @@ The Zurich Instruments UHFLI is a digital lock-in amplifier that covers the freq
 
 </div>
 
-<img src={require("./UHFLI.jpg").default} style={{width:"256px", height: "200px"}} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201068/Instruments/Lockin%20Amplifiers/UHFLI/file.png" style={{ width: "325px" }} />
 
 </div>
 
-The Zurich Instruments UHFLI is a digital lock-in amplifier that covers the frequency range from DC to 600 MHz. It offers a time constant of 30 ns for demodulation – resulting in a demodulation bandwidth that exceeds 5 MHz.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
+
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692126012/Instruments/Vendor%20Logos/Zurich_Instruments.png" style={{ width: "100%", objectFit: "cover" }} />
 
 Zurich Instruments Ltd. is a privately owned company developing and selling advanced test and measurement instruments equipped with software for dynamic signal analysis. <a href="https://www.zhinst.com/americas/en">Website</a>.
 
@@ -33,7 +44,8 @@ Zurich Instruments Ltd. is a privately owned company developing and selling adv
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
 
 
-### Qcodes
+<Tabs>
+<TabItem value="Qcodes" label="Qcodes">
 
 Here is an example Python script that uses Qcodes to connect to a UHFLI Lockin Amplifier:
 
@@ -78,3 +90,5 @@ uhfli.close()
 
 Note: Replace `"dev1234"` with the actual device ID or address of your UHFLI Lockin Amplifier.
 
+</TabItem>
+</Tabs>

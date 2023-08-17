@@ -13,10 +13,10 @@ awg.connect()
 # For example, you can set the amplitude of channel 1 to 0.5 V
 awg.ch1.awg_amplitude(0.5)
 
-# You can also play a waveform on channel 2
-awg.ch2.setWaveform('waveform_name')
+# You can also play a waveform or sequence
+awg.play()
 
-# Finally, you can disconnect from the instrument
+# When you are done, remember to disconnect from the instrument
 awg.disconnect()
 ```
 

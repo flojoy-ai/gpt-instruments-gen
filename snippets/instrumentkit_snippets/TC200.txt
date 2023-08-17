@@ -56,7 +56,7 @@ degrees = tc200.degrees
 print(f"Temperature Units: {degrees}")
 
 # Set the temperature units to degrees Fahrenheit
-tc200.degrees = u.degF
+tc200.degrees = 'degF'
 
 # Get the current thermistor type
 sensor = tc200.sensor
@@ -83,4 +83,4 @@ tc200.max_power = 10
 tc200.close()
 ```
 
-Note: Make sure to replace `/dev/ttyUSB0` with the appropriate serial port for your TC200 Temperature Controller.
+This script demonstrates how to connect to the TC200 Temperature Controller, retrieve and set various properties such as output mode, enable status, temperature, maximum temperature, temperature setpoint, PID gains, temperature units, thermistor type, beta value, and maximum power. Finally, it closes the connection to the TC200 Temperature Controller.

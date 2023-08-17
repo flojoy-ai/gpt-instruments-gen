@@ -1,3 +1,14 @@
+---
+title: Connecting to RFSG by National Instruments in Python
+sidebar_label: RFSG
+description: Currently no description
+keywords: [rf signal generator, National Instruments, Qcodes Community]
+slug: /instruments-wiki/rf-signal-generator/national-instruments/rfsg
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692106850/Instruments/RF%20Signal%20Generator/RFSG/file.png
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 # RFSG
 
@@ -7,18 +18,18 @@
 
 <div>
 
-
-
-</div>
-
-<img src={require("./RFSG.jpg").default} style={{width:"256px", height: "200px"}} />
+Currently no description
 
 </div>
 
->
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692106850/Instruments/RF%20Signal%20Generator/RFSG/file.png" style={{ width: "325px" }} />
 
-<details open>
+</div>
+
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
+
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125989/Instruments/Vendor%20Logos/National_Instruments.png" style={{ width: "100%", objectFit: "cover" }} />
 
 A producer of automated test equipment and virtual instrumentation software. Common applications include data acquisition, instrument control and machine vision. <a href="https://www.ni.com/en-ca.html">Website</a>.
 
@@ -33,16 +44,17 @@ A producer of automated test equipment and virtual instrumentation software. Com
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
 
 
-### Qcodes Community
+<Tabs>
+<TabItem value="Qcodes Community" label="Qcodes Community">
 
 Here is an example Python script that uses Qcodes Community to connect to a RFSG RF Signal Generator:
 
 ```python
 import qcodes as qc
-from qcodes.instrument_drivers.ni.NIRFSG import NI_RFSG
+from qcodes_contrib_drivers.drivers.NationalInstruments.NIRFSG import NI_RFSG
 
 # Connect to the RF Signal Generator
-rfsg = NI_RFSG('rfsg', 'PXI1Slot2')
+rfsg = NI_RFSG("rfsg", "PXI1Slot2")
 
 # Print the IDN information
 print(rfsg.get_idn())
@@ -58,5 +70,7 @@ rfsg.output_enabled(True)
 rfsg.close()
 ```
 
-Note: Make sure you have installed the `qcodes` package and the necessary dependencies before running this script.
+Note: Make sure you have installed the `qcodes_contrib_drivers` package before running this script.
 
+</TabItem>
+</Tabs>

@@ -1,3 +1,14 @@
+---
+title: Connecting to Series by Rohde Schwarz in Python
+sidebar_label: Series
+description: Currently no description
+keywords: [network analyzer, Rohde Schwarz, Qcodes]
+slug: /instruments-wiki/network-analyzer/rohde-schwarz/series
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201332/Instruments/Network%20Analyzer/Series/file.png
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 # Series
 
@@ -7,18 +18,18 @@
 
 <div>
 
-
-
-</div>
-
-<img src={require("./Series.jpg").default} style={{width:"256px", height: "200px"}} />
+Currently no description
 
 </div>
 
->
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201332/Instruments/Network%20Analyzer/Series/file.png" style={{ width: "325px" }} />
 
-<details open>
+</div>
+
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
+
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692139604/Instruments/Vendor%20Logos/RohdeSchwarz.png" style={{ width: "100%", objectFit: "cover" }} />
 
 Rohde & Schwarz GmbH & Co KG is an international electronics group specializing in the fields of electronic test equipment, broadcast & media, cybersecurity, radiomonitoring and radiolocation, and radiocommunication. <a href="https://www.rohde-schwarz.com/ca/home_48230.html">Website</a>.
 
@@ -33,7 +44,8 @@ Rohde & Schwarz GmbH & Co KG is an international electronics group specializing 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
 
 
-### Qcodes
+<Tabs>
+<TabItem value="Qcodes" label="Qcodes">
 
 ```python
 import qcodes as qc
@@ -70,3 +82,5 @@ znb.close()
 ```
 Note: Replace `"TCPIP0::192.168.15.100::inst0::INSTR"` with the actual address of your Series Network Analyzer.
 
+</TabItem>
+</Tabs>

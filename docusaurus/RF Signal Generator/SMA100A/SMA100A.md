@@ -1,3 +1,14 @@
+---
+title: Connecting to SMA100A by Rohdes And Schwarz in Python
+sidebar_label: SMA100A
+description: This Class Handles Rohdes And Schwarz Sma Signal Generators. Supported Model Is-> -Sma100A. Signal quality, speed and flexibility these are the criteria by which signal generators are measured today. The R&S SMA100A perfectly meets these criteria, and thus is a premium-class analog generator that sets standards due to its outstanding characteristics.
+keywords: [rf signal generator, Rohdes And Schwarz, Pytango]
+slug: /instruments-wiki/rf-signal-generator/rohdes-and-schwarz/sma100a
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200912/Instruments/RF%20Signal%20Generator/SMA100A/file.png
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 # SMA100A
 
@@ -11,14 +22,14 @@ This Class Handles Rohdes And Schwarz Sma Signal Generators. Supported Model Is:
 
 </div>
 
-<img src={require("./SMA100A.jpg").default} style={{width:"256px", height: "200px"}} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200912/Instruments/RF%20Signal%20Generator/SMA100A/file.png" style={{ width: "325px" }} />
 
 </div>
 
-This Class Handles Rohdes And Schwarz Sma Signal Generators. Supported Model Is: -Sma100A. Signal quality, speed and flexibility these are the criteria by which signal generators are measured today. The R&S SMA100A perfectly meets these criteria, and thus is a premium-class analog generator that sets standards due to its outstanding characteristics.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
+
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692139604/Instruments/Vendor%20Logos/RohdeSchwarz.png" style={{ width: "100%", objectFit: "cover" }} />
 
 Rohde & Schwarz GmbH & Co KG is an international electronics group specializing in the fields of electronic test equipment, broadcast & media, cybersecurity, radiomonitoring and radiolocation, and radiocommunication. <a href="https://www.rohde-schwarz.com/ca/home_48230.html">Website</a>.
 
@@ -33,7 +44,8 @@ Rohde & Schwarz GmbH & Co KG is an international electronics group specializing 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
 
 
-### Pytango
+<Tabs>
+<TabItem value="Pytango" label="Pytango">
 
 Here is a Python script that uses Pytango to connect to a SMA100A RF Signal Generator:
 
@@ -87,3 +99,5 @@ smab = None
 
 Please note that you need to have PyTango installed in order to run this script.
 
+</TabItem>
+</Tabs>

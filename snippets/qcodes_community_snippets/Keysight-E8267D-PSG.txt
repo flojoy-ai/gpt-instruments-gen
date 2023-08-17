@@ -1,0 +1,30 @@
+To connect to a Keysight E8267D PSG RF Signal Generator using Qcodes Community, you can use the following Python script:
+
+```python
+from qcodes.instrument.visa import VisaInstrument
+from qcodes.instrument_drivers.Keysight.Keysight_E8267D import Keysight_E8267D
+
+# Create an instance of the Keysight E8267D PSG RF Signal Generator
+signal_generator = Keysight_E8267D("signal_generator", "TCPIP0::192.168.1.1::inst0::INSTR")
+
+# Connect to the signal generator
+signal_generator.connect()
+
+# Now you can use the instrument to control the signal generator
+# For example, to set the frequency:
+signal_generator.frequency(1e9)
+
+# To get the current frequency:
+frequency = signal_generator.frequency()
+
+# To set the power:
+signal_generator.power(-10)
+
+# To get the current power:
+power = signal_generator.power()
+
+# Disconnect from the signal generator
+signal_generator.disconnect()
+```
+
+Please note that you need to replace `"TCPIP0::192.168.1.1::inst0::INSTR"` with the actual VISA address of your Keysight E8267D PSG RF Signal Generator.

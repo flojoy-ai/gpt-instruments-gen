@@ -112,7 +112,7 @@ The class has various properties and methods to interact with the power meter. H
 
 - `wavelength_min` and `wavelength_max` are measurement properties that retrieve the minimum and maximum wavelength values supported by the power meter, respectively.
 
-- `wavelength` is a property that allows you to control the wavelength in nm. It retrieves the current wavelength value from the power meter and can be set to a new value.
+- `wavelength` is a property that allows you to control the wavelength in nm. It retrieves the current wavelength value from the power meter and can also be set to a new value.
 
 - `power` is a property that measures the power in W. It retrieves the power value from the power meter.
 

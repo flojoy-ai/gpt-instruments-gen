@@ -24,6 +24,9 @@ awg.upload_waveform(yzero, ymult, xincr, waveform)
 
 # Set the waveform name to "my_waveform"
 awg.waveform_name = "my_waveform"
+
+# Disconnect from the AWG2005 RF Signal Generator
+awg.close()
 ```
 
 Note: This script assumes that you have already installed the Instrumentkit library and its dependencies.

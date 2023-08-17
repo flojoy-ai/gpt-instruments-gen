@@ -1,0 +1,18 @@
+To connect to a Keysight B1500A Spectrum Analyzer using Qcodes, you can use the following code:
+
+```python
+from qcodes.instrument_drivers.Keysight.KeysightB1500 import KeysightB1500
+
+# Create an instance of the KeysightB1500 instrument
+b1500 = KeysightB1500('b1500', 'TCPIP0::192.168.1.1::inst0::INSTR')
+
+# Connect to the instrument
+b1500.connect()
+
+# Perform operations with the instrument
+
+# Disconnect from the instrument
+b1500.disconnect()
+```
+
+This code creates an instance of the `KeysightB1500` instrument with the name 'b1500' and the specified address ('TCPIP0::192.168.1.1::inst0::INSTR'). Then, it connects to the instrument using the `connect()` method. You can perform various operations with the instrument after connecting. Finally, it disconnects from the instrument using the `disconnect()` method.

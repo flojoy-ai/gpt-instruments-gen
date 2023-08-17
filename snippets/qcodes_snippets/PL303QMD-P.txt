@@ -9,12 +9,12 @@ aim_tti = AimTTi("aim_tti", "TCPIP0::192.168.1.1::inst0::INSTR")
 # Connect to the instrument
 aim_tti.connect()
 
-# Now you can use the instrument to perform various operations
-# For example, you can get the voltage value of channel 1
+# Now you can use the instrument to perform operations
+# For example, to get the voltage of channel 1:
 voltage = aim_tti.ch1.volt.get()
 print("Voltage:", voltage)
 
-# You can also set the voltage value of channel 1
+# You can also set the voltage of channel 1:
 aim_tti.ch1.volt.set(5.0)
 
 # Disconnect from the instrument

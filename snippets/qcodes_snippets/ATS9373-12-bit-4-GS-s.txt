@@ -1,0 +1,30 @@
+Here is a Python script that uses Qcodes to connect to an ATS9373-12 bit, 4 GS/s DAQ board:
+
+```python
+from qcodes.instrument_drivers.AlazarTech.ATS import AlazarTech_ATS
+from qcodes.instrument_drivers.AlazarTech.ATS9373 import AlazarTechATS9373
+
+# Connect to the ATS9373 board
+ats = AlazarTechATS9373('ats', dll_path='C:\\WINDOWS\\System32\\ATSApi.dll')
+
+# Print the board ID
+print(ats.get_idn())
+
+# Set the clock source to INTERNAL_CLOCK
+ats.clock_source('INTERNAL_CLOCK')
+
+# Set the sample rate to 4 GS/s
+ats.sample_rate(4_000_000_000)
+
+# Set other parameters as needed
+
+# Perform data acquisition
+data = ats.acquire()
+
+# Process the acquired data as needed
+
+# Disconnect from the board
+ats.close()
+```
+
+Note that you need to have the `ATSApi.dll` file in the specified path for the script to work.

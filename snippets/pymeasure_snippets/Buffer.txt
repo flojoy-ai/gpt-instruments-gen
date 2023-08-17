@@ -1,4 +1,4 @@
-Here is a Python script that uses Pymeasure to connect to a Keithley buffer:
+Here is a Python script that uses Pymeasure to connect to a KeithleyBuffer instrument:
 
 ```python
 import logging

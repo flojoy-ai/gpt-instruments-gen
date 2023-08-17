@@ -4,33 +4,30 @@ Sure! Here's an example Python script that uses Instrumentkit to connect to an M
 from instrumentkit import SerialConnection
 from instrumentkit import MC1
 
-# Create a serial connection to the MC1 Positional Controller
+# Create a serial connection to the MC1 controller
 connection = SerialConnection(port='/dev/ttyUSB0', baudrate=9600)
 mc1 = MC1(connection)
 
-# Set the stepping increment value of the motor controller to 2 milliseconds
-mc1.increment = 2
+# Set the stepping increment value
+mc1.increment = 2  # milliseconds
 
-# Get the estimated motor position in millimeters
-position = mc1.metric_position
+# Get the current motor position
+position = mc1.internal_position
 print(f"Current position: {position}")
 
-# Move the motor to a specified location
-new_position = 500  # in milliseconds
+# Move the motor to a new position
+new_position = 500  # milliseconds
 mc1.move(new_position)
 
-# Check if the motor is in its centering phase
+# Check if the motor is centering
 is_centering = mc1.is_centering()
 print(f"Is centering: {is_centering}")
 
-# Command the motor to go to the center of its travel range
-mc1.center()
-
-# Reset the motor to the limit of its travel range
+# Reset the motor to its limit
 mc1.reset()
 
-# Close the connection to the MC1 Positional Controller
+# Close the connection
 connection.close()
 ```
 
-Note: Make sure to replace `/dev/ttyUSB0` with the appropriate serial port for your MC1 Positional Controller.
+This script demonstrates how to connect to the MC1 controller, set the stepping increment value, get the current motor position, move the motor to a new position, check if the motor is centering, and reset the motor to its limit.

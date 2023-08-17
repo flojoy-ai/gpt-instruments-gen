@@ -1,0 +1,21 @@
+To connect to a SPD1305X Power Supply using Pymeasure, you can use the following Python script:
+
+```python
+from pymeasure.adapters import VISAAdapter
+from pymeasure.instruments.siglenttechnologies import SPD1305X
+
+# Create a VISA adapter
+adapter = VISAAdapter("USB0::0xF4EC::0xEE3A::SPD13A1R3L0001::INSTR")
+
+# Connect to the SPD1305X Power Supply
+power_supply = SPD1305X(adapter)
+
+# Perform operations on the power supply
+power_supply.ch_1.voltage = 10  # Set the voltage of channel 1 to 10V
+power_supply.ch_1.current_limit = 2  # Set the current limit of channel 1 to 2A
+
+# Disconnect from the power supply
+power_supply.disconnect()
+```
+
+Note: Replace the VISA address `"USB0::0xF4EC::0xEE3A::SPD13A1R3L0001::INSTR"` with the appropriate address for your specific instrument.

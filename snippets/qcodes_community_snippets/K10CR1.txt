@@ -14,23 +14,28 @@ print(k10cr1.get_idn())
 k10cr1.position(90)
 
 # Get the current position of the rotator
-position = k10cr1.position()
-print(f"Current position: {position} degrees")
+print(k10cr1.position())
 
 # Set the minimum velocity of the rotator
 k10cr1.velocity_min(1)
 
-# Set the maximum velocity of the rotator
-k10cr1.velocity_max(10)
+# Get the minimum velocity of the rotator
+print(k10cr1.velocity_min())
 
 # Move the rotator in the forward direction
 k10cr1.move_direction(Thorlabs_K10CR1.RotationDirection.FORWARD)
 
+# Stop the rotator
+k10cr1.stop()
+
 # Move the rotator to the home position
 k10cr1.move_home()
 
-# Stop the rotator
-k10cr1.stop()
+# Enable the rotator
+k10cr1.enable()
+
+# Disable the rotator
+k10cr1.disable()
 
 # Disconnect from the instrument
 k10cr1.close()

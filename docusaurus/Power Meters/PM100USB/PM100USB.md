@@ -1,3 +1,14 @@
+---
+title: Connecting to PM100USB by Thorlabs in Python
+sidebar_label: PM100USB
+description: The PM100USB Power and Energy Meter Interface is compatible with all our C-Series photodiode, thermal, and pyroelectric sensors except for the ES408C Fast Pyroelectric Sensor. Our C-Type standard photodiode, slim photodiode, integrating sphere, and fiber sensors can collectively measure optical powers from 100 pW to 20 W. Our thermal power sensors measure optical powers from 10 µW to 200 W. Compatible C-Series pyroelectric energy sensors can measure energies from 10 µJ to 15 J and repetition rates up to 2 kHz. Note that the ES408C sensor for repetition rates up to 10 kHz, also available below, is not recommended for use with the PM100USB interface, which supports a maximum repetition rate of 3 kHz. Alternatively, other unamplified anode- or cathode-grounded photodiodes with up to 5 mA photocurrent, thermal elements with a maximum output voltage of 1 V, or energy sensors with voltage outputs from 100 mV to 100 V may be used.This interface can be operated and powered by a PC via the mini-USB port. A readout rate of 300 samples per second allows active signal monitoring while the interface is in use.
+keywords: [power meters, Thorlabs, Instrumentkit, Pymeasure]
+slug: /instruments-wiki/power-meters/thorlabs/PM100USB
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692192822/Instruments/Power%20Meters/PM100USB/file.png
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 # PM100USB
 
@@ -13,16 +24,14 @@ This interface can be operated and powered by a PC via the mini-USB port. A read
 
 </div>
 
-<img src={require("./PM100USB.jpg").default} style={{width:"256px", height: "200px"}} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692192822/Instruments/Power%20Meters/PM100USB/file.png" style={{ width: "325px" }} />
 
 </div>
 
-The PM100USB Power and Energy Meter Interface is compatible with all our C-Series photodiode, thermal, and pyroelectric sensors except for the ES408C Fast Pyroelectric Sensor. Our C-Type standard photodiode, slim photodiode, integrating sphere, and fiber sensors can collectively measure optical powers from 100 pW to 20 W. Our thermal power sensors measure optical powers from 10 µW to 200 W. Compatible C-Series pyroelectric energy sensors can measure energies from 10 µJ to 15 J and repetition rates up to 2 kHz. Note that the ES408C sensor for repetition rates up to 10 kHz, also available below, is not recommended for use with the PM100USB interface, which supports a maximum repetition rate of 3 kHz. Alternatively, other unamplified anode- or cathode-grounded photodiodes with up to 5 mA photocurrent, thermal elements with a maximum output voltage of 1 V, or energy sensors with voltage outputs from 100 mV to 100 V may be used.
-
-This interface can be operated and powered by a PC via the mini-USB port. A readout rate of 300 samples per second allows active signal monitoring while the interface is in use.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
+
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692126009/Instruments/Vendor%20Logos/Thorlabs.png" style={{ width: "100%", objectFit: "cover" }} />
 
 Thorlabs, Inc. is an American privately held optical equipment company headquartered in Newton, New Jersey. The company was founded in 1989 by Alex Cable, who serves as its current president and CEO. As of 2018, Thorlabs has annual sales of approximately $500 million. <a href="https://www.thorlabs.com/">Website</a>.
 
@@ -37,7 +46,8 @@ Thorlabs, Inc. is an American privately held optical equipment company headquart
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
 
 
-### Instrumentkit
+<Tabs>
+<TabItem value="Instrumentkit" label="Instrumentkit">
 
 
 ```python
@@ -72,7 +82,8 @@ Finally, the script reads a measurement from the power meter using the `read` me
 
 Note that this script assumes that the Instrumentkit library is already installed and that the power meter is connected to the computer.
 
-### Pymeasure
+</TabItem>
+<TabItem value="Pymeasure" label="Pymeasure">
 
 
 ```python
@@ -187,7 +198,7 @@ The class has various properties and methods to interact with the power meter. H
 
 - `wavelength_min` and `wavelength_max` are measurement properties that retrieve the minimum and maximum wavelength values supported by the power meter, respectively.
 
-- `wavelength` is a property that allows you to control the wavelength in nm. It retrieves the current wavelength value from the power meter and can be set to a new value.
+- `wavelength` is a property that allows you to control the wavelength in nm. It retrieves the current wavelength value from the power meter and can also be set to a new value.
 
 - `power` is a property that measures the power in W. It retrieves the power value from the power meter.
 
@@ -197,3 +208,5 @@ The class has various properties and methods to interact with the power meter. H
 
 To use this script, you would need to create an instance of the `ThorlabsPM100USB` class and provide the appropriate adapter for communication with the power meter.
 
+</TabItem>
+</Tabs>

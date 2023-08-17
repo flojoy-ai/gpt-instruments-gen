@@ -6,7 +6,7 @@ import instrumentkit as ik
 # Connect to the Yokogawa AQ6370 Spectrum Analyzer
 osa = ik.yokogawa.Yokogawa6370.open_visa('TCPIP0:192.168.0.35')
 
-# Access the properties and methods of the Yokogawa AQ6370 Spectrum Analyzer
+# Access the properties and methods of the Spectrum Analyzer
 print(osa.id)
 print(osa.start_wl)
 print(osa.stop_wl)
@@ -14,12 +14,12 @@ osa.start_sweep()
 data = osa.data()
 wavelength = osa.wavelength()
 
-# Close the connection to the Yokogawa AQ6370 Spectrum Analyzer
+# Close the connection to the Spectrum Analyzer
 osa.close()
 ```
 
-This script imports the `instrumentkit` module and uses the `open_visa` method of the `Yokogawa6370` class to connect to the Yokogawa AQ6370 Spectrum Analyzer using the VISA address `'TCPIP0:192.168.0.35'`.
+This script imports the `instrumentkit` module and opens a connection to the Yokogawa AQ6370 Spectrum Analyzer using the `open_visa` method. You can replace `'TCPIP0:192.168.0.35'` with the appropriate VISA address of your Spectrum Analyzer.
 
-You can then access the properties and methods of the Yokogawa AQ6370 Spectrum Analyzer object (`osa`). For example, you can print the identification (`id`) of the device, get the start and stop wavelengths (`start_wl` and `stop_wl`), start a sweep (`start_sweep`), and retrieve the data and wavelength values (`data` and `wavelength`).
+Once connected, you can access the properties and methods of the Spectrum Analyzer. In the example script, it prints the identification (`id`) of the device, the start and stop wavelengths (`start_wl` and `stop_wl`), starts a sweep using `start_sweep()`, and retrieves the data and wavelength using `data()` and `wavelength()` methods.
 
-Finally, you can close the connection to the Yokogawa AQ6370 Spectrum Analyzer using the `close` method.
+Finally, the script closes the connection to the Spectrum Analyzer using the `close()` method.

@@ -1,3 +1,14 @@
+---
+title: Connecting to Singlequantum by Singlequantum in Python
+sidebar_label: Singlequantum
+description: Currently no description
+keywords: [photon counting system, Singlequantum, Qcodes Community]
+slug: /instruments-wiki/photon-counting-system/singlequantum/singlequantum
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201335/Instruments/Photon%20Counting%20System/Singlequantum/file.png
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 # Singlequantum
 
@@ -7,18 +18,18 @@
 
 <div>
 
-
-
-</div>
-
-<img src={require("./Singlequantum.jpg").default} style={{width:"256px", height: "200px"}} />
+Currently no description
 
 </div>
 
->
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201335/Instruments/Photon%20Counting%20System/Singlequantum/file.png" style={{ width: "325px" }} />
 
-<details open>
+</div>
+
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
+
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692126005/Instruments/Vendor%20Logos/SingleQuantum.png" style={{ width: "100%", objectFit: "cover" }} />
 
 At Single Quantum, we confront every challenge with innovation, dedication, and passion. Founded in 2012, our team emerged as true pioneers of single photon detection technology: we were among the first to manufacture and commercialize superconducting nanowire single photon detectors. Since then, our multi-channel Single Quantum Eos photon detection system has been chosen by more than 100 academic and industrial labs all over the world to perform complex optical measurements. <a href="https://singlequantum.com/">Website</a>.
 
@@ -33,7 +44,8 @@ At Single Quantum, we confront every challenge with innovation, dedication, and 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
 
 
-### Qcodes Community
+<Tabs>
+<TabItem value="Qcodes Community" label="Qcodes Community">
 
 To connect to a Singlequantum Photon Counting System using Qcodes Community, you can use the provided `WebSQControlqcode` class. Here's an example script that demonstrates how to connect to the instrument and perform some basic operations:
 
@@ -48,18 +60,18 @@ station = Station()
 instrument = WebSQControlqcode('singlequantum', address='localhost', port=12000)
 station.add_component(instrument)
 
-# Set the bias current to 100 uA
-instrument.bias_current.set(100)
+# Set the bias current to 10 uA
+instrument.bias_current(10)
 
 # Enable the detectors
-instrument.detectors.set(True)
+instrument.detectors(True)
 
-# Set the measurement period to 10 ms
-instrument.measurement_periode.set(10)
+# Set the measurement period to 100 ms
+instrument.measurement_periode(100)
 
 # Acquire 5 points
-instrument.npts.set(5)
-counts = instrument.counters.get()
+instrument.npts(5)
+counts = instrument.counters()
 
 # Print the acquired counts
 print(counts)
@@ -68,5 +80,7 @@ print(counts)
 instrument.close()
 ```
 
-In this script, we first create a `Station` object to hold the instrument. Then, we create an instance of the `WebSQControlqcode` class and add it to the station. We can then use the instrument's parameters to interact with the Singlequantum Photon Counting System. In this example, we set the bias current, enable the detectors, set the measurement period, and acquire counts for 5 points. Finally, we print the acquired counts and close the connection to the instrument.
+In this script, we first create a `Station` object to hold the instrument. Then, we create an instance of the `WebSQControlqcode` class and add it to the station. We can then use the instrument's parameters and methods to interact with the Singlequantum Photon Counting System. In this example, we set the bias current, enable the detectors, set the measurement period, and acquire counts for 5 points. Finally, we print the acquired counts and close the connection to the instrument.
 
+</TabItem>
+</Tabs>

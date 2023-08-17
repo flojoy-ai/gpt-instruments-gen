@@ -1,3 +1,14 @@
+---
+title: Connecting to SHFSG by Zurich Instruments in Python
+sidebar_label: SHFSG
+description: The Zurich Instruments SHFSG Signal Generator produces qubit control signals in the frequency range from DC to 8.5 GHz with a spurious-free modulation bandwidth of 1 GHz. The SHFSG uses a double superheterodyne technique for frequency up-conversion, which eliminates the need for mixer calibration and saves time on system tune-up. Each SHFSG comes with 4 or 8 analog output channels with 14-bit vertical resolution. Controlled by LabOne, its APIs or the LabOne Q Software, the SHFSG supports quantum computing projects with sizes ranging from a few to several hundred qubits.
+keywords: [rf signal generator, Zurich Instruments, Qcodes]
+slug: /instruments-wiki/rf-signal-generator/zurich-instruments/shfsg
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201186/Instruments/RF%20Signal%20Generator/SHFSG/file.png
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 # SHFSG
 
@@ -11,14 +22,14 @@ The Zurich Instruments SHFSG Signal Generator produces qubit control signals in 
 
 </div>
 
-<img src={require("./SHFSG.jpg").default} style={{width:"256px", height: "200px"}} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201186/Instruments/RF%20Signal%20Generator/SHFSG/file.png" style={{ width: "325px", height: "150px" }} />
 
 </div>
 
-The Zurich Instruments SHFSG Signal Generator produces qubit control signals in the frequency range from DC to 8.5 GHz with a spurious-free modulation bandwidth of 1 GHz. The SHFSG uses a double superheterodyne technique for frequency up-conversion, which eliminates the need for mixer calibration and saves time on system tune-up. Each SHFSG comes with 4 or 8 analog output channels with 14-bit vertical resolution. Controlled by LabOne, its APIs or the LabOne Q Software, the SHFSG supports quantum computing projects with sizes ranging from a few to several hundred qubits.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
+
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692126012/Instruments/Vendor%20Logos/Zurich_Instruments.png" style={{ width: "100%", objectFit: "cover" }} />
 
 Zurich Instruments Ltd. is a privately owned company developing and selling advanced test and measurement instruments equipped with software for dynamic signal analysis. <a href="https://www.zhinst.com/americas/en">Website</a>.
 
@@ -33,7 +44,8 @@ Zurich Instruments Ltd. is a privately owned company developing and selling adv
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
 
 
-### Qcodes
+<Tabs>
+<TabItem value="Qcodes" label="Qcodes">
 
 Here is an example Python script that uses Qcodes to connect to a SHFSG RF Signal Generator:
 
@@ -75,3 +87,5 @@ shfsg.close()
 
 This script connects to a SHFSG RF Signal Generator with the name "dev1234" and sets up the RF output of channel 1. It then enables the sequencer, loads a sequencer program, and enables the AWG output of channel 1. Finally, it disconnects from the SHFSG RF Signal Generator.
 
+</TabItem>
+</Tabs>

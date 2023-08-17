@@ -1,3 +1,14 @@
+---
+title: Connecting to HDAWG by Zurich Instruments in Python
+sidebar_label: HDAWG
+description: The Zurich Instruments HDAWG multi-channel Arbitrary Waveform Generator has one of the highest channel densities available in its class and is designed for advanced signal generation up to 750 MHz bandwidth. The HDAWG comes with either 4 or 8 DC-coupled, single-ended analog output channels with 16-bit vertical resolution.
+keywords: [rf signal generator, Zurich Instruments, Qcodes Community, Qcodes]
+slug: /instruments-wiki/rf-signal-generator/zurich-instruments/hdawg
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200909/Instruments/RF%20Signal%20Generator/HDAWG/file.png
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 # HDAWG
 
@@ -11,14 +22,14 @@ The Zurich Instruments HDAWG multi-channel Arbitrary Waveform Generator has one 
 
 </div>
 
-<img src={require("./HDAWG.jpg").default} style={{width:"256px", height: "200px"}} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200909/Instruments/RF%20Signal%20Generator/HDAWG/file.png" style={{ width: "325px" }} />
 
 </div>
 
-The Zurich Instruments HDAWG multi-channel Arbitrary Waveform Generator has one of the highest channel densities available in its class and is designed for advanced signal generation up to 750 MHz bandwidth. The HDAWG comes with either 4 or 8 DC-coupled, single-ended analog output channels with 16-bit vertical resolution.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
+
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692126012/Instruments/Vendor%20Logos/Zurich_Instruments.png" style={{ width: "100%", objectFit: "cover" }} />
 
 Zurich Instruments Ltd. is a privately owned company developing and selling advanced test and measurement instruments equipped with software for dynamic signal analysis. <a href="https://www.zhinst.com/americas/en">Website</a>.
 
@@ -33,38 +44,43 @@ Zurich Instruments Ltd. is a privately owned company developing and selling adv
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
 
 
-### Qcodes Community
+<Tabs>
+<TabItem value="Qcodes Community" label="Qcodes Community">
 
-To connect to a HDAWG Wavemeter using Qcodes Community, you can use the following Python script:
+To connect to a HDAWG RF Signal Generator using Qcodes Community, you can use the following Python script:
 
 ```python
 from qcodes import Station, Instrument
-from qcodes_contrib_drivers.drivers.ZI.ZIHDAWG8 import ZIHDAWG8
+from qcodes.instrument_drivers.zhinst import ZIHDAWG8
 
-# Create a station to hold the instruments
+# Create a station to hold the instrument
 station = Station()
 
-# Connect to the HDAWG Wavemeter
-hdawg = ZIHDAWG8('hdawg', 'dev1234')  # Replace 'dev1234' with the actual device ID
+# Connect to the HDAWG RF Signal Generator
+hdawg = ZIHDAWG8('hdawg', 'dev1234')
+
+# Add the instrument to the station
 station.add_component(hdawg)
 
-# Now you can use the HDAWG Wavemeter
+# Now you can use the instrument to perform operations
 hdawg.enable_channel(1)
 hdawg.start_awg(1)
 
-# Disconnect from the instruments
-station.close_all_registered_instruments()
+# Disconnect from the instrument
+hdawg.close()
 ```
 
-Note: Replace `'dev1234'` with the actual device ID of your HDAWG Wavemeter.
+In this script, we first import the necessary modules and classes from Qcodes. Then, we create a `Station` object to hold the instrument. Next, we create an instance of the `ZIHDAWG8` class, passing the name of the instrument ('hdawg') and the device ID ('dev1234') as arguments. We add the instrument to the station using the `add_component` method. Finally, we can use the instrument to perform operations such as enabling a channel and starting the AWG.
+Note: Replace `'dev1234'` with the actual device ID of your HDAWG RF Signal Generator.
 
-### Qcodes
+</TabItem>
+<TabItem value="Qcodes" label="Qcodes">
 
 ```python
 import qcodes as qc
 from qcodes.instrument_drivers.zhinst import HDAWG
 
-# Connect to the HDAWG instrument
+# Connect to the HDAWG RF Signal Generator
 hdawg = HDAWG("hdawg", "dev1234")
 
 # Enable QCCS mode
@@ -87,8 +103,10 @@ hdawg.awgs[0].enable_sequencer(single=True)
 # Wait for the AWG to finish
 hdawg.awgs[0].wait_done()
 
-# Disconnect from the instrument
+# Disconnect from the HDAWG RF Signal Generator
 hdawg.close()
 ```
-This script connects to a HDAWG instrument, enables QCCS mode, loads a sequencer program to AWG channel 0, enables the sequencer, waits for the AWG to finish, and then disconnects from the instrument.
+This script connects to the HDAWG RF Signal Generator with the device ID "dev1234" and enables QCCS mode. It then loads a sequencer program to AWG channel 0, enables the sequencer, waits for the AWG to finish, and finally disconnects from the device.
 
+</TabItem>
+</Tabs>

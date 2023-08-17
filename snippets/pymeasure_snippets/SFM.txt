@@ -5,7 +5,7 @@ from pymeasure.adapters import VISAAdapter
 from pymeasure.instruments.rf import SFM
 
 # Create a VISA adapter for communication
-adapter = VISAAdapter("GPIB0::1::INSTR")
+adapter = VISAAdapter("GPIB::1::INSTR")
 
 # Connect to the SFM RF Signal Generator
 signal_generator = SFM(adapter)
@@ -22,4 +22,4 @@ This script creates a `VISAAdapter` object to establish a connection with the SF
 
 You can perform various operations on the `signal_generator` object, such as setting the frequency and output level. Finally, you can disconnect from the signal generator using the `disconnect()` method.
 
-Note: Make sure to replace the GPIB address (`GPIB0::1::INSTR`) with the correct address of your SFM RF Signal Generator.
+Note: Make sure to replace the GPIB address in the `VISAAdapter` constructor with the correct address for your instrument.

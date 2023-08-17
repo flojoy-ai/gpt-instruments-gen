@@ -1,0 +1,32 @@
+Here's an example Python script that uses Qcodes to connect to a Keysight N9030B PXA RF Signal Generator:
+
+```python
+from qcodes.instrument_drivers.Keysight.KeysightN9030B import KeysightN9030B
+
+# Connect to the instrument
+instrument = KeysightN9030B("instrument_name", "TCPIP0::xxx.xxx.xxx.xxx::inst0::INSTR")
+
+# Print the available modes
+print(instrument.mode())
+
+# Set the mode to Spectrum Analyzer
+instrument.mode("SA")
+
+# Set the start and stop frequencies
+instrument.sa.start(1e9)
+instrument.sa.stop(10e9)
+
+# Set the number of points for the sweep
+instrument.sa.npts(1001)
+
+# Enable continuous measurement
+instrument.cont_meas(True)
+
+# Perform a measurement
+instrument.sa.trace()
+
+# Disconnect from the instrument
+instrument.close()
+```
+
+Note: Replace `"instrument_name"` with the desired name for your instrument and `"TCPIP0::xxx.xxx.xxx.xxx::inst0::INSTR"` with the actual IP address or VISA resource string of your instrument.

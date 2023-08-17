@@ -1,3 +1,14 @@
+---
+title: Connecting to D5a by Qutech in Python
+sidebar_label: D5a
+description: The D5a module contains 16 18-bit DACs (Digital to Analog Converters), initially created for setting gate-voltages on samples. In contrast to most commercial units, there are no processor or clock circuits present in this module. This to prevent interference. The only time any digital signals are present is when the DAC values are being changed. Afterwards the module goes back to being static. The DAC values are set via the controller module. As this module is generally used for gate voltage control, the use of an isolated controller module (C1b/C2 combination) is recommended.
+keywords: [power supplies, Qutech, Qcodes Community]
+slug: /instruments-wiki/power-supplies/qutech/d5a
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692106745/Instruments/Power%20Supplies/D5a/file.png
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 # D5a
 
@@ -11,14 +22,14 @@ The D5a module contains 16 18-bit DACs (Digital to Analog Converters), initially
 
 </div>
 
-<img src={require("./D5a.jpg").default} style={{width:"256px", height: "200px"}} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692106745/Instruments/Power%20Supplies/D5a/file.png" style={{ width: "325px" }} />
 
 </div>
 
-The D5a module contains 16 18-bit DACs (Digital to Analog Converters), initially created for setting gate-voltages on samples. In contrast to most commercial units, there are no processor or clock circuits present in this module. This to prevent interference. The only time any digital signals are present is when the DAC values are being changed. Afterwards the module goes back to being static. The DAC values are set via the controller module. As this module is generally used for gate voltage control, the use of an isolated controller module (C1b/C2 combination) is recommended.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
+
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125978/Instruments/Vendor%20Logos/QuTech.png" style={{ width: "100%", height: "150px",objectFit: "cover" }} />
 
 At QuTech, we work on a radically new technology with world-changing potential. Our mission: to develop scalable prototypes of a quantum computer and an inherently safe quantum internet, based on the fundamental laws of quantum mechanics. <a href="https://qutech.nl/">Website</a>.
 
@@ -33,7 +44,8 @@ At QuTech, we work on a radically new technology with world-changing potential. 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
 
 
-### Qcodes Community
+<Tabs>
+<TabItem value="Qcodes Community" label="Qcodes Community">
 
 To connect to a D5a Power Supply using Qcodes Community, you can use the following Python script:
 
@@ -64,18 +76,23 @@ d5a = D5a("D5a", spi_rack, module=1)
 d5a.connect()
 
 # Now you can use the D5a Power Supply
-# For example, to set DAC 1 to a voltage of 2.5V:
+# For example, to set DAC1 voltage to 2.5V:
 d5a.dac1(2.5)
 
-# To get the current voltage of DAC 1:
-voltage = d5a.dac1()
+# To get the minimum step size of DAC2:
+step_size = d5a.stepsize2()
 
-# To set all DACs to zero voltage:
+# To change the output span of DAC3 to '4v bi':
+d5a.span3('4v bi')
+
+# To reset all DACs to zero voltage:
 d5a.set_dacs_zero()
 
 # Disconnect from the D5a Power Supply
 d5a.disconnect()
 ```
 
-Note: Replace `"COM1"` with the appropriate port name for your SPI rack.
+Note: Replace `"COM1"` with the appropriate port name for your SPI rack connection.
 
+</TabItem>
+</Tabs>

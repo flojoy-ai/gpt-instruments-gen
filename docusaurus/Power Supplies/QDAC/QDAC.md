@@ -1,3 +1,14 @@
+---
+title: Connecting to QDAC by Qdev in Python
+sidebar_label: QDAC
+description: QDAC is a high-precision, 25-bit resolution, ultra-low-noise computer-controlled DAC with 24 voltage channel generators operating at a sample rate of 1MS/s. It is designed for DC and intermediate-frequency control of quantum devices, including, for example, gate electrodes and flux bias coils in qubits. It is also a very versatile instrument that can be used for many other purposes.
+keywords: [digital analog converter, Qdev, Qcodes]
+slug: /instruments-wiki/digital-analog-converter/qdev/qdac
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692106977/Instruments/Digital-Analog%20Converter/QDAC/file.png
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 # QDAC
 
@@ -11,14 +22,14 @@ QDAC is a high-precision, 25-bit resolution, ultra-low-noise computer-controlled
 
 </div>
 
-<img src={require("./QDAC.jpg").default} style={{width:"256px", height: "200px"}} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692106977/Instruments/Digital-Analog%20Converter/QDAC/file.png" style={{ width: "325px" }} />
 
 </div>
 
-QDAC is a high-precision, 25-bit resolution, ultra-low-noise computer-controlled DAC with 24 voltage channel generators operating at a sample rate of 1MS/s. It is designed for DC and intermediate-frequency control of quantum devices, including, for example, gate electrodes and flux bias coils in qubits. It is also a very versatile instrument that can be used for many other purposes.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
+
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125970/Instruments/Vendor%20Logos/QDevils.png" style={{ width: "100%", objectFit: "cover" }} />
 
 Founded in 2016, QDevil is an international quantum technology company focused on developing and manufacturing auxiliary electronics and specialized components, operating from mK to room temperature. The mission is to accelerate research and development in quantum electronics labs. To fulfill the mission QDevil helps customers around the world by supplying world-class auxiliary electronics. <a href="https://qdevil.com/">Website</a>.
 
@@ -33,7 +44,8 @@ Founded in 2016, QDevil is an international quantum technology company focused o
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
 
 
-### Qcodes
+<Tabs>
+<TabItem value="Qcodes" label="Qcodes">
 
 Here is an example Python script that uses Qcodes to connect to a QDAC Power Supply:
 
@@ -67,5 +79,7 @@ qdac.print_overview()
 qdac.close()
 ```
 
-Note: Replace `'TCPIP0::192.168.1.1::inst0::INSTR'` with the actual VISA address of your QDAC Power Supply.
+Note: Make sure to replace `'TCPIP0::192.168.1.1::inst0::INSTR'` with the actual VISA address of your QDAC Power Supply.
 
+</TabItem>
+</Tabs>

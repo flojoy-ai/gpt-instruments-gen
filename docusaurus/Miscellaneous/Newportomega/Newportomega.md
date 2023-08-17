@@ -1,3 +1,14 @@
+---
+title: Connecting to Newportomega by Newport in Python
+sidebar_label: Newportomega
+description: Device Server To Show The Omega Strain Gage From Newport, In A Tango System.
+keywords: [miscellaneous, Newport, Pytango]
+slug: /instruments-wiki/miscellaneous/newport/newportomega
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692106905/Instruments/Miscellaneous/Newportomega/file.png
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 # Newportomega
 
@@ -11,14 +22,14 @@ Device Server To Show The Omega Strain Gage From Newport, In A Tango System.
 
 </div>
 
-<img src={require("./Newportomega.jpg").default} style={{width:"256px", height: "200px"}} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692106905/Instruments/Miscellaneous/Newportomega/file.png" style={{ width: "325px" }} />
 
 </div>
 
-Device Server To Show The Omega Strain Gage From Newport, In A Tango System.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
+
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125992/Instruments/Vendor%20Logos/Newport.png" style={{ width: "100%", height: "150px",objectFit: "cover" }} />
 
 Newport provides a wide range of photonics technology and products designed to enhance the capabilities and productivity of our customers' applications. <a href="https://www.newport.com/">Website</a>.
 
@@ -33,23 +44,27 @@ Newport provides a wide range of photonics technology and products designed to e
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
 
 
-### Pytango
+<Tabs>
+<TabItem value="Pytango" label="Pytango">
 
 ```python
 import PyTango
 
-# Create a DeviceProxy object to connect to the Newportomega device
+# Create a DeviceProxy object to connect to the Newportomega Miscellaneous device
 device_proxy = PyTango.DeviceProxy("device_name")
 
-# Read a device attribute
+# Use the device_proxy object to interact with the device
+# For example, you can read a device attribute
 attribute_value = device_proxy.read_attribute("attribute_name").value
 
-# Write a device attribute
+# Or you can write a value to a device attribute
 device_proxy.write_attribute("attribute_name", attribute_value)
 
-# Call a device command
-device_proxy.command_inout("command_name")
+# You can also call device commands
+device_proxy.command_inout("command_name", command_argument)
 ```
 
-In the code above, replace "device_name" with the actual name of the Newportomega device you want to connect to. Replace "attribute_name" with the name of the attribute you want to read or write, and replace "command_name" with the name of the command you want to call.
+Replace "device_name" with the actual name of the Newportomega Miscellaneous device you want to connect to. Replace "attribute_name" with the name of the attribute you want to read or write, and replace "command_name" with the name of the command you want to call.
 
+</TabItem>
+</Tabs>

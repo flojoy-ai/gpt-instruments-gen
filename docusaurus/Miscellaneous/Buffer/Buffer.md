@@ -1,3 +1,14 @@
+---
+title: Connecting to Buffer by Keithley in Python
+sidebar_label: Buffer
+description: Currently no description
+keywords: [miscellaneous, Keithley, Pymeasure]
+slug: /instruments-wiki/miscellaneous/keithley/buffer
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200759/Instruments/Miscellaneous/Buffer/file.png
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 # Buffer
 
@@ -7,18 +18,18 @@
 
 <div>
 
-
-
-</div>
-
-<img src={require("./Buffer.jpg").default} style={{width:"256px", height: "200px"}} />
+Currently no description
 
 </div>
 
->
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200759/Instruments/Miscellaneous/Buffer/file.png" style={{ width: "325px" }} />
 
-<details open>
+</div>
+
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
+
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692126010/Instruments/Vendor%20Logos/Keithley.png" style={{ width: "100%", objectFit: "cover" }} />
 
 Keithley Instruments is a measurement and instrument company headquartered in Solon, Ohio, that develops, manufactures, markets, and sells data acquisition products, as well as complete systems for high-volume production and assembly testing. <a href="https://www.tek.com/en">Website</a>.
 
@@ -33,9 +44,10 @@ Keithley Instruments is a measurement and instrument company headquartered in So
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
 
 
-### Pymeasure
+<Tabs>
+<TabItem value="Pymeasure" label="Pymeasure">
 
-Here is a Python script that uses Pymeasure to connect to a Keithley buffer:
+Here is a Python script that uses Pymeasure to connect to a KeithleyBuffer instrument:
 
 ```python
 import logging
@@ -141,3 +153,5 @@ This script defines a class `KeithleyBuffer` that implements the basic buffering
 
 Note: The script assumes that you have already installed the `pymeasure` package.
 
+</TabItem>
+</Tabs>

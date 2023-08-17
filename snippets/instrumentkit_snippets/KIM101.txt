@@ -22,4 +22,4 @@ channel.drive_op_parameters = [max_volts, step_rate, acceleration]
 channel.move_abs(1000)
 ```
 
-This code connects to the KIM101 controller, enables the first channel, sets the drive parameters, and moves the channel to a specific position.
+This code connects to the KIM101 controller using the `open_serial` method from the `ik.thorlabs.APTPiezoInertiaActuator` class. It then enables the first channel, sets the drive parameters, and moves the channel to a specific position using the `enabled_single`, `drive_op_parameters`, and `move_abs` properties and methods, respectively.

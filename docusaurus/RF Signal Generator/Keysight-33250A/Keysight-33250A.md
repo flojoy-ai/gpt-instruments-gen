@@ -1,3 +1,14 @@
+---
+title: Connecting to Keysight 33250A by Keysight in Python
+sidebar_label: Keysight 33250A
+description: The 33250A 80 MHz Function/Arbitrary Waveform Generator uses direct digital-synthesis techniques to create a stable, accurate output on all waveforms, down to 1 µHz frequency resolution. The benefits are apparent in every signal you produce, from the sine wave frequency accuracy to the fast rise/fall times of square waves, to the ramp linearity.
+keywords: [rf signal generator, Keysight, Qcodes]
+slug: /instruments-wiki/rf-signal-generator/keysight/keysight-33250a
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200982/Instruments/RF%20Signal%20Generator/Keysight-33250A/file.png
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 # Keysight 33250A
 
@@ -11,14 +22,14 @@ The 33250A 80 MHz Function/Arbitrary Waveform Generator uses direct digital-synt
 
 </div>
 
-<img src={require("./Keysight-33250A.jpg").default} style={{width:"256px", height: "200px"}} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200982/Instruments/RF%20Signal%20Generator/Keysight-33250A/file.png" style={{ width: "325px" }} />
 
 </div>
 
-The 33250A 80 MHz Function/Arbitrary Waveform Generator uses direct digital-synthesis techniques to create a stable, accurate output on all waveforms, down to 1 µHz frequency resolution. The benefits are apparent in every signal you produce, from the sine wave frequency accuracy to the fast rise/fall times of square waves, to the ramp linearity.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
+
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125973/Instruments/Vendor%20Logos/Keysight.png" style={{ width: "100%", height: "150px",objectFit: "cover" }} />
 
 Keysight Technologies, or Keysight, is an American company that manufactures electronics test and measurement equipment and software. <a href="https://www.keysight.com/us/en/home.html">Website</a>.
 
@@ -33,3 +44,22 @@ Keysight Technologies, or Keysight, is an American company that manufactures el
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
 
 
+<Tabs>
+<TabItem value="Qcodes" label="Qcodes">
+
+To connect to a Keysight 33250A RF Signal Generator using Qcodes, you can use the following Python script:
+
+```python
+from qcodes.instrument_drivers.Keysight.Keysight_33XXX import WaveformGenerator_33XXX
+
+# Create an instance of the instrument
+signal_generator = WaveformGenerator_33XXX('signal_generator', 'TCPIP0::192.168.1.1::INSTR')
+
+# Connect to the instrument
+signal_generator.connect_message()
+```
+
+This script imports the `WaveformGenerator_33XXX` class from the `qcodes.instrument_drivers.Keysight.Keysight_33XXX` module. It then creates an instance of the instrument with the name "signal_generator" and the appropriate VISA address for your specific instrument. Finally, it calls the `connect_message()` method to establish a connection to the instrument and print a connection message.
+
+</TabItem>
+</Tabs>

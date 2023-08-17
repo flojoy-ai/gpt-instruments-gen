@@ -4,6 +4,8 @@ from query_chatgpt import query_chatgpt
 import os
 import pandas as pd
 from load_data import Cols
+import re
+
 
 def create_device_snippets(df: pd.DataFrame, snippets_dir: str) -> None:
     """Creates the code snippets for each device by querying chatGPT with the docstring"""
@@ -17,6 +19,10 @@ def create_device_snippets(df: pd.DataFrame, snippets_dir: str) -> None:
 
         # Don't redo one that already exists
         device_file = device.replace("/", "-")
+        device_file = device_file.replace("/", "").replace("_", "-").replace(",", "")
+        device_file = re.sub(r"\s+", "-", device_file).strip("-")
+        device_file = device_file.replace("&", "")
+
         device_path = f"{snippets_dir}/{device_file}.txt"
         if os.path.isfile(device_path):
             continue
@@ -29,9 +35,8 @@ def create_device_snippets(df: pd.DataFrame, snippets_dir: str) -> None:
             category = eval(category)[0]
         elif category is np.nan:
             category = ""
-
         docstring = row[Cols.docstring]
         code = query_chatgpt(library, device, category, docstring)
 
         with open(device_path, "w") as f:
-            f.write(code) 
+            f.write(code)

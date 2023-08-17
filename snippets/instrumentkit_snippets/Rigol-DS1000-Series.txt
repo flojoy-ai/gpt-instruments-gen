@@ -1,0 +1,31 @@
+Sure! Here's an example Python script that uses Instrumentkit to connect to a Rigol DS1000-Series Oscilloscope:
+
+```python
+from instrumentkit import RigolDS1000Series
+
+# Connect to the oscilloscope
+oscilloscope = RigolDS1000Series("192.168.1.1")  # Replace with the IP address of your oscilloscope
+
+# Set the acquisition type to normal
+oscilloscope.acquire_type = RigolDS1000Series.AcquisitionType.normal
+
+# Set the number of averages to 8
+oscilloscope.acquire_averages = 8
+
+# Trigger the oscilloscope
+oscilloscope.force_trigger()
+
+# Start running the oscilloscope trigger
+oscilloscope.run()
+
+# Stop the oscilloscope trigger
+oscilloscope.stop()
+
+# Release any lockout of the local control panel
+oscilloscope.release_panel()
+
+# Disconnect from the oscilloscope
+oscilloscope.disconnect()
+```
+
+Note: Replace `"192.168.1.1"` with the actual IP address of your Rigol DS1000-Series Oscilloscope.

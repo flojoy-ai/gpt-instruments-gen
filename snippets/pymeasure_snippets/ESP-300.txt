@@ -1,0 +1,39 @@
+Sure! Here's an example Python script that uses Pymeasure to connect to an ESP 300 Positional Controller:
+
+```python
+from pymeasure.adapters import VISAAdapter
+from pymeasure.instruments.newport import ESP300
+
+# Create a VISA adapter for communication
+adapter = VISAAdapter("GPIB0::1::INSTR")
+
+# Connect to the ESP 300 controller
+controller = ESP300(adapter)
+
+# Enable motion for all axes
+controller.enable()
+
+# Move the X axis to a specific position
+controller.x.position = 10
+
+# Move the Y axis to a specific position
+controller.y.position = 20
+
+# Move the Phi axis to a specific position
+controller.phi.position = 30
+
+# Wait for all axes to stop moving
+controller.x.wait_for_stop()
+controller.y.wait_for_stop()
+controller.phi.wait_for_stop()
+
+# Disable motion for all axes
+controller.disable()
+
+# Close the connection to the controller
+controller.shutdown()
+```
+
+This script connects to the ESP 300 controller using a VISA adapter, enables motion for all axes, moves each axis to a specific position, waits for all axes to stop moving, disables motion for all axes, and finally closes the connection to the controller.
+
+Note: Make sure to replace `"GPIB0::1::INSTR"` with the appropriate address of your ESP 300 controller.

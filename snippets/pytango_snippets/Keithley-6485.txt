@@ -1,0 +1,20 @@
+```python
+import PyTango
+
+# Create a DeviceProxy for the Keithley 6485 Power Meter
+device_proxy = PyTango.DeviceProxy("device_name")
+
+# Connect to the device
+device_proxy.connect()
+
+# Read the power measurement
+power_measurement = device_proxy.read_attribute("attribute_name").value
+
+# Print the power measurement
+print(power_measurement)
+
+# Disconnect from the device
+device_proxy.disconnect()
+```
+
+In the code above, replace "device_name" with the actual name of the Keithley 6485 Power Meter device in your Tango database. Replace "attribute_name" with the name of the attribute you want to read from the device, such as "Power" or "Voltage".

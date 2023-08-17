@@ -1,0 +1,35 @@
+Sure! Here's a Python script that uses Pymeasure to connect to a F.W. Bell 5080 Handheld Gaussmeter:
+
+```python
+from pymeasure.instruments import SerialInstrument
+from pymeasure.adapters import SerialAdapter
+
+# Create a SerialAdapter for the instrument
+adapter = SerialAdapter(port='/dev/ttyUSB0', baudrate=2400, timeout=500)
+
+# Create a SerialInstrument object for the F.W. Bell 5080 Handheld Gaussmeter
+meter = SerialInstrument(adapter, name="F.W. Bell 5080 Handheld Gaussmeter")
+
+# Connect to the instrument
+meter.open()
+
+# Set the measurement units to Gauss
+meter.units = 'gauss'
+
+# Set the range to 1 (3 kG)
+meter.range = 1
+
+# Read and print a field measurement in G
+print(meter.field)
+
+# Sample 100 field measurements
+fields = meter.fields(100)
+
+# Print the mean and standard deviation of the samples
+print(fields.mean(), fields.std())
+
+# Close the connection to the instrument
+meter.close()
+```
+
+This script connects to the F.W. Bell 5080 Handheld Gaussmeter using a SerialAdapter and creates a SerialInstrument object for it. It then sets the measurement units to Gauss and the range to 1 (3 kG). It reads and prints a field measurement in G, samples 100 field measurements, and prints the mean and standard deviation of the samples. Finally, it closes the connection to the instrument.
