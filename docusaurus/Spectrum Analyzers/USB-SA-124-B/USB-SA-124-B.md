@@ -22,14 +22,14 @@ The Signal Hound USB-SA44B is a Software Defined Receiver (SDR) optimized as a n
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201369/Instruments/Spectrum%20Analyzers/USB-SA-124-B/file.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201369/Instruments/Spectrum%20Analyzers/USB-SA-124-B/file.png" style={{ width: "325px", height: "200px", objectFit: "scale-down" }} />
 
 </div>
 
 <details>
 <summary><h2>Manufacturer Card</h2></summary>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692126008/Instruments/Vendor%20Logos/Signalhound.png" style={{ width: "100%", objectFit: "cover" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692126008/Instruments/Vendor%20Logos/Signalhound.png" style={{ width: "100%", height: "170px",objectFit: "scale-down" }} />
 
 Signal Hound is a manufacturer of RF spectrum analyzers and signal generators. <a href="https://signalhound.com/">Website</a>.
 
@@ -42,8 +42,6 @@ Signal Hound is a manufacturer of RF spectrum analyzers and signal generators. <
 ## Connect to the USB SA 124 B in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
-
 <Tabs>
 <TabItem value="Qcodes" label="Qcodes">
 

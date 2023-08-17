@@ -22,14 +22,14 @@ Deep-Well Compact Bath, –45 °C to 150 °C
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201323/Instruments/Temperature%20Controllers/Fluke-7341/file.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201323/Instruments/Temperature%20Controllers/Fluke-7341/file.png" style={{ width: "325px", height: "200px", objectFit: "scale-down" }} />
 
 </div>
 
 <details>
 <summary><h2>Manufacturer Card</h2></summary>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125987/Instruments/Vendor%20Logos/Fluke.png" style={{ width: "100%", objectFit: "cover" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125987/Instruments/Vendor%20Logos/Fluke.png" style={{ width: "100%", height: "170px",objectFit: "scale-down" }} />
 
 **Fluke** Corporation is the world leader in professional electronic test tools and software for measuring and condition monitoring. <a href="https://us.flukecal.com/">Website</a>.
 
@@ -42,8 +42,6 @@ Deep-Well Compact Bath, –45 °C to 150 °C
 ## Connect to the Fluke 7341 in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
-
 <Tabs>
 <TabItem value="Pymeasure" label="Pymeasure">
 

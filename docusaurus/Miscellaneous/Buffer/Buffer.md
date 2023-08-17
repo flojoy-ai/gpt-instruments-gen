@@ -4,7 +4,7 @@ sidebar_label: Buffer
 description: Currently no description
 keywords: [miscellaneous, Keithley, Pymeasure]
 slug: /instruments-wiki/miscellaneous/keithley/buffer
-image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200759/Instruments/Miscellaneous/Buffer/file.png
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692301450/Instruments/Miscellaneous/Buffer/file.png
 ---
 
 import Tabs from '@theme/Tabs';
@@ -22,14 +22,14 @@ Currently no description
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200759/Instruments/Miscellaneous/Buffer/file.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692301450/Instruments/Miscellaneous/Buffer/file.png" style={{ width: "325px", height: "200px", objectFit: "scale-down" }} />
 
 </div>
 
 <details>
 <summary><h2>Manufacturer Card</h2></summary>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692126010/Instruments/Vendor%20Logos/Keithley.png" style={{ width: "100%", objectFit: "cover" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692126010/Instruments/Vendor%20Logos/Keithley.png" style={{ width: "100%", height: "170px",objectFit: "scale-down" }} />
 
 Keithley Instruments is a measurement and instrument company headquartered in Solon, Ohio, that develops, manufactures, markets, and sells data acquisition products, as well as complete systems for high-volume production and assembly testing. <a href="https://www.tek.com/en">Website</a>.
 
@@ -42,8 +42,6 @@ Keithley Instruments is a measurement and instrument company headquartered in So
 ## Connect to the Buffer in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
-
 <Tabs>
 <TabItem value="Pymeasure" label="Pymeasure">
 

@@ -27,14 +27,14 @@ controlled strains and stresses to the material.
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200885/Instruments/Power%20Supplies/Razorbill-RP100/file.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200885/Instruments/Power%20Supplies/Razorbill-RP100/file.png" style={{ width: "325px", height: "200px", objectFit: "scale-down" }} />
 
 </div>
 
 <details>
 <summary><h2>Manufacturer Card</h2></summary>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692125964/Instruments/Vendor%20Logos/Razorbill_Instruments.png" style={{ width: "100%", objectFit: "cover" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692125964/Instruments/Vendor%20Logos/Razorbill_Instruments.png" style={{ width: "100%", height: "170px",objectFit: "scale-down" }} />
 
 Manufacturer of precision instruments intended for use in fundamental physics and space applications. The company manufactures electromechanical mechanisms to apply tunable uniaxial strains at low temperatures and high magnetic fields and provides expertise in the field of design for cryogenic environments, compliant mechanisms and compact systems for applying and measuring strain, enabling clients to incorporate a number of unique key technologies that allow them to have such high performance and repeatability. <a href="https://razorbillinstruments.com/">Website</a>.
 
@@ -47,8 +47,6 @@ Manufacturer of precision instruments intended for use in fundamental physics an
 ## Connect to the Razorbill RP100 in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
-
 <Tabs>
 <TabItem value="Pymeasure" label="Pymeasure">
 

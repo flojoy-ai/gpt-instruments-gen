@@ -24,14 +24,14 @@ Its stringent modular design approach makes it the perfect choice for all field 
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692285849/Instruments/Motor%20Controller/Smaract-MCS2/file.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692285849/Instruments/Motor%20Controller/Smaract-MCS2/file.png" style={{ width: "325px", height: "200px", objectFit: "scale-down" }} />
 
 </div>
 
 <details>
 <summary><h2>Manufacturer Card</h2></summary>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125996/Instruments/Vendor%20Logos/SmartAct.png" style={{ width: "100%", objectFit: "cover" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125996/Instruments/Vendor%20Logos/SmartAct.png" style={{ width: "100%", height: "170px",objectFit: "scale-down" }} />
 
 In our [Motion](https://www.smaract.com/en/motion) business unit, we develop and produce high-precision, compact products for nano-positioning that meet the highest demands while being easy to handle. <a href="https://www.smaract.com/en/">Website</a>.
 
@@ -44,8 +44,6 @@ In our [Motion](https://www.smaract.com/en/motion) business unit, we develop a
 ## Connect to the Smaract-MCS2 in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
-
 <Tabs>
 <TabItem value="Instrumental" label="Instrumental">
 

@@ -22,14 +22,14 @@ The Kinetix sCMOS delivers the highest speed and largest field of view with near
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201076/Instruments/Cameras/Kinetix-sCMOS-all-cameras/file.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201076/Instruments/Cameras/Kinetix-sCMOS-all-cameras/file.png" style={{ width: "325px", height: "200px", objectFit: "scale-down" }} />
 
 </div>
 
 <details>
 <summary><h2>Manufacturer Card</h2></summary>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125958/Instruments/Vendor%20Logos/Teledyne.png" style={{ width: "100%", objectFit: "cover" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125958/Instruments/Vendor%20Logos/Teledyne.png" style={{ width: "100%", height: "170px",objectFit: "scale-down" }} />
 
 **Teledyne** provides enabling technologies to sense, transmit and analyze information for industrial growth markets. <a href="https://www.teledyne.com">Website</a>.
 
@@ -42,8 +42,6 @@ The Kinetix sCMOS delivers the highest speed and largest field of view with near
 ## Connect to the Kinetix sCMOS all-cameras in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
-
 <Tabs>
 <TabItem value="Instrumental" label="Instrumental">
 

@@ -25,14 +25,14 @@ With a modern and intuitive user interface, you gain direct control and overview
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692106857/Instruments/Temperature%20Controllers/Bluefors-temperature-controller/file.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692106857/Instruments/Temperature%20Controllers/Bluefors-temperature-controller/file.png" style={{ width: "325px", height: "200px", objectFit: "scale-down" }} />
 
 </div>
 
 <details>
 <summary><h2>Manufacturer Card</h2></summary>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692126011/Instruments/Vendor%20Logos/Bluefors.png" style={{ width: "100%", objectFit: "cover" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692126011/Instruments/Vendor%20Logos/Bluefors.png" style={{ width: "100%", height: "170px",objectFit: "scale-down" }} />
 
 **Bluefors** is the world's leading manufacturer of ultra-low temperature dilution refrigerator measurement systems. <a href="https://bluefors.com/">Website</a>.
 
@@ -46,8 +46,6 @@ With a modern and intuitive user interface, you gain direct control and overview
  in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
-
 <Tabs>
 <TabItem value="Qcodes Community" label="Qcodes Community">
 

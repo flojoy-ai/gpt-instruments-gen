@@ -22,14 +22,14 @@ Motorized Variable Two Wheels Attenuators 10MWA168 consists of two filter wheels
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201034/Instruments/Lockin%20Amplifiers/Standa-10MWA168/file.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201034/Instruments/Lockin%20Amplifiers/Standa-10MWA168/file.png" style={{ width: "325px", height: "200px", objectFit: "scale-down" }} />
 
 </div>
 
 <details>
 <summary><h2>Manufacturer Card</h2></summary>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692125984/Instruments/Vendor%20Logos/Standa.png" style={{ width: "100%", objectFit: "cover" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692125984/Instruments/Vendor%20Logos/Standa.png" style={{ width: "100%", height: "170px",objectFit: "scale-down" }} />
 
 Standa has it's own industrial base that includes CNC turning, milling, grinding machines. Standa's design department, while developing standard products presented in Standa's catalogue (such as motorized and manual translation and rotation stages, motion controllers, optical tables, vibration isolation systems, optical mounts and holders, optics, dpss lasers and etc.) also develops the equipment for OEM customers. Some examples of it, after the agreement with OEM customers, are shown on this website. Standa currently has several laser product development laboratories. <a href="https://www.standa.lt/">Website</a>.
 
@@ -42,8 +42,6 @@ Standa has it's own industrial base that includes CNC turning, milling, grinding
 ## Connect to the Standa 10MWA168 in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
-
 <Tabs>
 <TabItem value="Qcodes Community" label="Qcodes Community">
 

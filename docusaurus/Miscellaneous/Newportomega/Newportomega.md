@@ -4,7 +4,7 @@ sidebar_label: Newportomega
 description: Device Server To Show The Omega Strain Gage From Newport, In A Tango System.
 keywords: [miscellaneous, Newport, Pytango]
 slug: /instruments-wiki/miscellaneous/newport/newportomega
-image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692106905/Instruments/Miscellaneous/Newportomega/file.png
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692301756/Instruments/Miscellaneous/Newportomega/file.png
 ---
 
 import Tabs from '@theme/Tabs';
@@ -22,14 +22,14 @@ Device Server To Show The Omega Strain Gage From Newport, In A Tango System.
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692106905/Instruments/Miscellaneous/Newportomega/file.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692301756/Instruments/Miscellaneous/Newportomega/file.png" style={{ width: "325px", height: "200px", objectFit: "scale-down" }} />
 
 </div>
 
 <details>
 <summary><h2>Manufacturer Card</h2></summary>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125992/Instruments/Vendor%20Logos/Newport.png" style={{ width: "100%", height: "150px",objectFit: "cover" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125992/Instruments/Vendor%20Logos/Newport.png" style={{ width: "100%", height: "170px",objectFit: "scale-down" }} />
 
 Newport provides a wide range of photonics technology and products designed to enhance the capabilities and productivity of our customers' applications. <a href="https://www.newport.com/">Website</a>.
 
@@ -42,8 +42,6 @@ Newport provides a wide range of photonics technology and products designed to e
 ## Connect to the Newportomega in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
-
 <Tabs>
 <TabItem value="Pytango" label="Pytango">
 

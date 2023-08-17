@@ -22,14 +22,14 @@ The ECC100 is a state-ofthe-art motion controller, allowing the simultaneous ope
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692285040/Instruments/Motor%20Controller/Attocube-ECC-100/file.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692285040/Instruments/Motor%20Controller/Attocube-ECC-100/file.png" style={{ width: "325px", height: "200px", objectFit: "scale-down" }} />
 
 </div>
 
 <details>
 <summary><h2>Manufacturer Card</h2></summary>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692125972/Instruments/Vendor%20Logos/Attocube.png" style={{ width: "100%", objectFit: "cover" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692125972/Instruments/Vendor%20Logos/Attocube.png" style={{ width: "100%", height: "170px",objectFit: "scale-down" }} />
 
 **Attocube** is a leading pioneer for nanotechnology solutions in precision motion and nanopositioning applications, cryogenic microscopy,. <a href="https://www.attocube.com/en">Website</a>.
 
@@ -42,8 +42,6 @@ The ECC100 is a state-ofthe-art motion controller, allowing the simultaneous ope
 ## Connect to the Attocube ECC 100 in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
-
 <Tabs>
 <TabItem value="Instrumental" label="Instrumental">
 

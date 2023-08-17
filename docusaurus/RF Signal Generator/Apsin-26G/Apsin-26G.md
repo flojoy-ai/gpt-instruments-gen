@@ -22,14 +22,14 @@ The APSINXXG is an analog signal generator (analog signal source) series coverin
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200841/Instruments/RF%20Signal%20Generator/Apsin-26G/file.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200841/Instruments/RF%20Signal%20Generator/Apsin-26G/file.png" style={{ width: "325px", height: "200px", objectFit: "scale-down" }} />
 
 </div>
 
 <details>
 <summary><h2>Manufacturer Card</h2></summary>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125957/Instruments/Vendor%20Logos/Anapico.png" style={{ width: "100%", objectFit: "cover" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125957/Instruments/Vendor%20Logos/Anapico.png" style={{ width: "100%", height: "170px",objectFit: "scale-down" }} />
 
 **AnaPico** is an ISO 9001:2015 certified technology leader, developing, manufacturing and supplying RF and MW test & measurement instruments. <a href="https://www.anapico.com/">Website</a>.
 
@@ -42,8 +42,6 @@ The APSINXXG is an analog signal generator (analog signal source) series coverin
 ## Connect to the Apsin 26G in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
-
 <Tabs>
 <TabItem value="Pymeasure" label="Pymeasure">
 

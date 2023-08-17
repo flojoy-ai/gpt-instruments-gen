@@ -22,14 +22,14 @@ The MG3690C series of broadband signal generators covers audio, HF, VHF, UHF, RF
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201085/Instruments/RF%20Signal%20Generator/From-MG3690C-Series/file.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201085/Instruments/RF%20Signal%20Generator/From-MG3690C-Series/file.png" style={{ width: "325px", height: "200px", objectFit: "scale-down" }} />
 
 </div>
 
 <details>
 <summary><h2>Manufacturer Card</h2></summary>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125977/Instruments/Vendor%20Logos/Anritsu.png" style={{ width: "100%", objectFit: "cover" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125977/Instruments/Vendor%20Logos/Anritsu.png" style={{ width: "100%", height: "170px",objectFit: "scale-down" }} />
 
 **Anritsu** Has Testing Solutions for Automotive, Government, Data Center, & IoT Industries. Test Solutions for IoT Devices, Government Radar, Automotive, & Signal Integrity. <a href="https://www.anritsu.com/en-us/">Website</a>.
 
@@ -42,8 +42,6 @@ The MG3690C series of broadband signal generators covers audio, HF, VHF, UHF, RF
 ## Connect to the From MG3690C Series in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
-
 <Tabs>
 <TabItem value="Pymeasure" label="Pymeasure">
 

@@ -22,14 +22,14 @@ FJ Series - 120W regulated high voltage AC-DC power supplies with outputs from 0
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201086/Instruments/Power%20Supplies/FJ-Series/file.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201086/Instruments/Power%20Supplies/FJ-Series/file.png" style={{ width: "325px", height: "200px", objectFit: "scale-down" }} />
 
 </div>
 
 <details>
 <summary><h2>Manufacturer Card</h2></summary>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125998/Instruments/Vendor%20Logos/Glassman.png" style={{ width: "100%", height: "150px",objectFit: "cover" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125998/Instruments/Vendor%20Logos/Glassman.png" style={{ width: "100%", height: "170px",objectFit: "scale-down" }} />
 
 Looking for the leading manufacturer of AC-DC **power** supplies, DC-DC converters, high voltage, RF & custom **power** products? Discover our extensive range. <a href="https://www.xppower.com">Website</a>.
 
@@ -42,8 +42,6 @@ Looking for the leading manufacturer of AC-DC **power** supplies, DC-DC conver
 ## Connect to the FJ Series in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
-
 <Tabs>
 <TabItem value="Instrumentkit" label="Instrumentkit">
 

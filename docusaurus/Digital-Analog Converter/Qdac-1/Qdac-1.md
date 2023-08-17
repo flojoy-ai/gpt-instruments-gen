@@ -22,14 +22,14 @@ The original and popular QDAC from QDevil is a high-precision low-noise computer
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692106890/Instruments/Digital-Analog%20Converter/Qdac-1/file.png" style={{ width: "325px", height: "200px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692106890/Instruments/Digital-Analog%20Converter/Qdac-1/file.png" style={{ width: "325px", height: "200px", objectFit: "scale-down" }} />
 
 </div>
 
 <details>
 <summary><h2>Manufacturer Card</h2></summary>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125970/Instruments/Vendor%20Logos/QDevils.png" style={{ width: "100%", objectFit: "cover" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125970/Instruments/Vendor%20Logos/QDevils.png" style={{ width: "100%", height: "170px",objectFit: "scale-down" }} />
 
 Founded in 2016, QDevil is an international quantum technology company focused on developing and manufacturing auxiliary electronics and specialized components, operating from mK to room temperature. The mission is to accelerate research and development in quantum electronics labs. To fulfill the mission QDevil helps customers around the world by supplying world-class auxiliary electronics. <a href="https://qdevil.com/">Website</a>.
 
@@ -42,8 +42,6 @@ Founded in 2016, QDevil is an international quantum technology company focused o
 ## Connect to the Qdac 1 in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
-
 <Tabs>
 <TabItem value="Qcodes Community" label="Qcodes Community">
 

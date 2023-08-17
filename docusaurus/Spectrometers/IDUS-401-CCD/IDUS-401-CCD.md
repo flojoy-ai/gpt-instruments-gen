@@ -22,14 +22,14 @@ The Scientific Grade, 1024 x 127 deep depletion spectroscopy CCD camera is ideal
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692107048/Instruments/Spectrometers/IDUS-401-CCD/file.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692107048/Instruments/Spectrometers/IDUS-401-CCD/file.png" style={{ width: "325px", height: "200px", objectFit: "scale-down" }} />
 
 </div>
 
 <details>
 <summary><h2>Manufacturer Card</h2></summary>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692125995/Instruments/Vendor%20Logos/Andor.png" style={{ width: "100%", objectFit: "cover" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692125995/Instruments/Vendor%20Logos/Andor.png" style={{ width: "100%", height: "170px",objectFit: "scale-down" }} />
 
 Leaders In The Development & Manufacture of Cameras, Microscopy and Spectroscopy Systems. <a href="https://andor.oxinst.com/">Website</a>.
 
@@ -42,8 +42,6 @@ Leaders In The Development & Manufacture of Cameras, Microscopy and Spectroscopy
 ## Connect to the IDUS 401 CCD in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
-
 <Tabs>
 <TabItem value="Qcodes Community" label="Qcodes Community">
 

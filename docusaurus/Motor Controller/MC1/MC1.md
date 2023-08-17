@@ -4,7 +4,7 @@ sidebar_label: MC1
 description: Currently no description
 keywords: [motor controller, Qubitekk, Instrumentkit]
 slug: /instruments-wiki/motor-controller/qubitekk/mc1
-image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692285545/Instruments/Motor%20Controller/MC1/file.png
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692301736/Instruments/Motor%20Controller/MC1/file.png
 ---
 
 import Tabs from '@theme/Tabs';
@@ -22,14 +22,14 @@ Currently no description
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692285545/Instruments/Motor%20Controller/MC1/file.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692301736/Instruments/Motor%20Controller/MC1/file.png" style={{ width: "325px", height: "200px", objectFit: "scale-down" }} />
 
 </div>
 
 <details>
 <summary><h2>Manufacturer Card</h2></summary>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125997/Instruments/Vendor%20Logos/Qubitekk.png" style={{ width: "100%", objectFit: "cover" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125997/Instruments/Vendor%20Logos/Qubitekk.png" style={{ width: "100%", height: "170px",objectFit: "scale-down" }} />
 
 Qubitekk provides reliable products for generating, preparing, distributing, detecting, correlating and storing photonic qubits. The hardware that is needed to strengthen American leadership in quantum computing, communications, and sensing solutions is being developed and manufactured in San Diego County, CA. <a href="https://qubitekk.com/">Website</a>.
 
@@ -42,8 +42,6 @@ Qubitekk provides reliable products for generating, preparing, distributing, det
 ## Connect to the MC1 in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
-
 <Tabs>
 <TabItem value="Instrumentkit" label="Instrumentkit">
 

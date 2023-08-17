@@ -22,14 +22,14 @@ The Ithaco 1211 Current Preamplifier measures current with full scale sensitivit
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201320/Instruments/Lockin%20Amplifiers/Ithaco-1211/file.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201320/Instruments/Lockin%20Amplifiers/Ithaco-1211/file.png" style={{ width: "325px", height: "200px", objectFit: "scale-down" }} />
 
 </div>
 
 <details>
 <summary><h2>Manufacturer Card</h2></summary>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692125969/Instruments/Vendor%20Logos/Ithaco.png" style={{ width: "100%", objectFit: "cover" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692125969/Instruments/Vendor%20Logos/Ithaco.png" style={{ width: "100%", height: "170px",objectFit: "scale-down" }} />
 
 Artisan Technology Group ® is a team of top-talent engineers and customer service specialists. We serve organizations that need to maintain and extend the life of their critical industrial, commercial, and military systems beyond obsolescence. <a href="https://www.artisantg.com/">Website</a>.
 
@@ -42,8 +42,6 @@ Artisan Technology Group ® is a team of top-talent engineers and customer servi
 ## Connect to the Ithaco 1211 in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
-
 <Tabs>
 <TabItem value="Qcodes" label="Qcodes">
 

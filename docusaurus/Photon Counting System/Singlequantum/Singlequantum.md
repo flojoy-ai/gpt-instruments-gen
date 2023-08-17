@@ -22,14 +22,14 @@ Currently no description
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201335/Instruments/Photon%20Counting%20System/Singlequantum/file.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201335/Instruments/Photon%20Counting%20System/Singlequantum/file.png" style={{ width: "325px", height: "200px", objectFit: "scale-down" }} />
 
 </div>
 
 <details>
 <summary><h2>Manufacturer Card</h2></summary>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692126005/Instruments/Vendor%20Logos/SingleQuantum.png" style={{ width: "100%", objectFit: "cover" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692126005/Instruments/Vendor%20Logos/SingleQuantum.png" style={{ width: "100%", height: "170px",objectFit: "scale-down" }} />
 
 At Single Quantum, we confront every challenge with innovation, dedication, and passion. Founded in 2012, our team emerged as true pioneers of single photon detection technology: we were among the first to manufacture and commercialize superconducting nanowire single photon detectors. Since then, our multi-channel Single Quantum Eos photon detection system has been chosen by more than 100 academic and industrial labs all over the world to perform complex optical measurements. <a href="https://singlequantum.com/">Website</a>.
 
@@ -42,8 +42,6 @@ At Single Quantum, we confront every challenge with innovation, dedication, and 
 ## Connect to the Singlequantum in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
-
 <Tabs>
 <TabItem value="Qcodes Community" label="Qcodes Community">
 

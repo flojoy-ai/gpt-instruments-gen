@@ -27,14 +27,14 @@ many other cutting-edge applications of condensed matter physics.
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201132/Instruments/Dilution%20Refrigerator/Triton/file.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201132/Instruments/Dilution%20Refrigerator/Triton/file.png" style={{ width: "325px", height: "200px", objectFit: "scale-down" }} />
 
 </div>
 
 <details>
 <summary><h2>Manufacturer Card</h2></summary>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125988/Instruments/Vendor%20Logos/Oxford_Instruments.png" style={{ width: "100%", objectFit: "cover" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125988/Instruments/Vendor%20Logos/Oxford_Instruments.png" style={{ width: "100%", height: "170px",objectFit: "scale-down" }} />
 
 Oxford Instruments plc is a United Kingdom manufacturing and research company that designs and manufactures tools and systems for industry and research. The company is headquartered in Abingdon, Oxfordshire, England, with sites in the United Kingdom, United States, Europe, and Asia.[2] It is listed on the London Stock Exchange and is a constituent of the FTSE 250 Index.[3]. <a href="https://www.oxinst.com/">Website</a>.
 
@@ -47,8 +47,6 @@ Oxford Instruments plc is a United Kingdom manufacturing and research company th
 ## Connect to the Triton in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
-
-
 <Tabs>
 <TabItem value="Qcodes" label="Qcodes">
 
