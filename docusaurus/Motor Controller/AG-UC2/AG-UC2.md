@@ -1,3 +1,10 @@
+---
+title: AG-UC2
+description: The AG-UC2 Agilis™ Controller provides USB computer control for two Agilis axes. The AG-UC2 controller features two sets of push buttons for each Agilis axis; one set for step size settings, and the other set for precise low speed adjustments and fast coarse motion. Power is supplied through the USB port and if not available, the USB-CH power supply can independently power the Agilis controller. USB hubs may also be used for power and communication, but must provide the required 5 V supply, e.g. must feature an external power supply.
+keywords: [motor controller, Newport, Instrumentkit]
+slug: /instruments-wiki/motor-controller/newport/ag-uc2
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201143/Instruments/Motor%20Controller/AG-UC2/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ The AG-UC2 Agilis™ Controller provides USB computer control for two Agilis axe
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692118729/Instruments/Motor%20Controller/AG-UC2/AG-UC2.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201143/Instruments/Motor%20Controller/AG-UC2/file.png" style={{ width: "325px" }} />
 
 </div>
 
-The AG-UC2 Agilis™ Controller provides USB computer control for two Agilis axes. The AG-UC2 controller features two sets of push buttons for each Agilis axis; one set for step size settings, and the other set for precise low speed adjustments and fast coarse motion. Power is supplied through the USB port and if not available, the USB-CH power supply can independently power the Agilis controller. USB hubs may also be used for power and communication, but must provide the required 5 V supply, e.g. must feature an external power supply.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125992/Instruments/Vendor%20Logos/Newport.png" style={{ width: "100%", height: "150px",objectFit: "cover" }} />

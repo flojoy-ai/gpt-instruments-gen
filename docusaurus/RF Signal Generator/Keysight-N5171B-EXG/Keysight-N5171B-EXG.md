@@ -1,3 +1,10 @@
+---
+title: Keysight N5171B EXG
+description: N5171B EXG X-Series RF analog mid-performance signal generators offer 9 kHz to 6 GHz frequency coverage, optimized for manufacturing with faster throughput and greater uptime at the right price.
+keywords: [rf signal generator, Keysight, Qcodes]
+slug: /instruments-wiki/rf-signal-generator/keysight/keysight-n5171b-exg
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200888/Instruments/RF%20Signal%20Generator/Keysight-N5171B-EXG/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ N5171B EXG X-Series RF analog mid-performance signal generators offer 9 kHz to 6
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692118471/Instruments/RF%20Signal%20Generator/Keysight-N5171B-EXG/Keysight-N5171B-EXG.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200888/Instruments/RF%20Signal%20Generator/Keysight-N5171B-EXG/file.png" style={{ width: "325px" }} />
 
 </div>
 
-N5171B EXG X-Series RF analog mid-performance signal generators offer 9 kHz to 6 GHz frequency coverage, optimized for manufacturing with faster throughput and greater uptime at the right price.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125973/Instruments/Vendor%20Logos/Keysight.png" style={{ width: "100%", height: "150px",objectFit: "cover" }} />

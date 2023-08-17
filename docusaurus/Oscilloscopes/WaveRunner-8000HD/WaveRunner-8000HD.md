@@ -1,3 +1,10 @@
+---
+title: WaveRunner 8000HD
+description: Providing 12 bits all the time, more channels than any other oscilloscope, and long memory without tradeoffs – the WaveRunner 8000HD 8 channel oscilloscope captures every detail.
+keywords: [oscilloscopes, Teledyne, Instrumentkit]
+slug: /instruments-wiki/oscilloscopes/teledyne/waverunner-8000hd
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200948/Instruments/Oscilloscopes/WaveRunner-8000HD/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ Providing 12 bits all the time, more channels than any other oscilloscope, and l
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692118531/Instruments/Oscilloscopes/WaveRunner-8000HD/WaveRunner-8000HD.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200948/Instruments/Oscilloscopes/WaveRunner-8000HD/file.png" style={{ width: "325px" }} />
 
 </div>
 
-Providing 12 bits all the time, more channels than any other oscilloscope, and long memory without tradeoffs – the WaveRunner 8000HD 8 channel oscilloscope captures every detail.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692125958/Instruments/Vendor%20Logos/Teledyne.png" style={{ width: "100%", objectFit: "cover" }} />

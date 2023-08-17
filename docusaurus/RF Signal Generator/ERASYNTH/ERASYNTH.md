@@ -1,3 +1,11 @@
+---
+title: ERASYNTH
+
+description: ERASynth removes the cost barriers and makes quality RF signal synthesis accessible to everyone, especially budget-conscious makers.
+keywords: [rf signal generator, Erainstruments, Qcodes Community]
+slug: /instruments-wiki/rf-signal-generator/erainstruments/erasynth
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200877/Instruments/RF%20Signal%20Generator/ERASYNTH/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -15,13 +23,11 @@ ERASynth removes the cost barriers and makes quality RF signal synthesis accessi
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692118462/Instruments/RF%20Signal%20Generator/ERASYNTH/ERASYNTH.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200877/Instruments/RF%20Signal%20Generator/ERASYNTH/file.png" style={{ width: "325px" }} />
 
 </div>
 
-ERASynth removes the cost barriers and makes quality RF signal synthesis accessible to everyone, especially budget-conscious makers.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692139600/Instruments/Vendor%20Logos/ERAInstruments.png" style={{ width: "100%", objectFit: "cover" }} />

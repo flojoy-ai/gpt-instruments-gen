@@ -1,3 +1,10 @@
+---
+title: Keysight 3478A
+description: The HP 3478A 5.5 digit DMM with HP-IB interface
+keywords: [multimeters, HP, Pymeasure]
+slug: /instruments-wiki/multimeters/hp/keysight-3478a
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200920/Instruments/Multimeters/Keysight-3478A/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ The HP 3478A 5.5 digit DMM with HP-IB interface
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692118503/Instruments/Multimeters/Keysight-3478A/Keysight-3478A.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200920/Instruments/Multimeters/Keysight-3478A/file.png" style={{ width: "325px" }} />
 
 </div>
 
-The HP 3478A 5.5 digit DMM with HP-IB interface>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125999/Instruments/Vendor%20Logos/HP.png" style={{ width: "100%", height: "150px",objectFit: "cover" }} />

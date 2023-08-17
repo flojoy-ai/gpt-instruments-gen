@@ -1,3 +1,10 @@
+---
+title: SMW 200 A
+description: The R&S®SMW200A offers integrated channel emulation for up to 800 MHz of fading bandwidth. Fading profiles for all major standards are available as presets. With up to 64 fading channels, all key MIMO fading scenarios such as 2x2, 3x3, 4x4, 8x4, 4x8 and 8x8 can be configured in a single instrument.
+keywords: [rf signal generator, Rohdeschwarz, Qcodes Community]
+slug: /instruments-wiki/rf-signal-generator/rohdeschwarz/smw-200-a
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200870/Instruments/RF%20Signal%20Generator/SMW-200-A/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ The R&S®SMW200A offers integrated channel emulation for up to 800 MHz of fading
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692118457/Instruments/RF%20Signal%20Generator/SMW-200-A/SMW-200-A.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200870/Instruments/RF%20Signal%20Generator/SMW-200-A/file.png" style={{ width: "325px" }} />
 
 </div>
 
-The R&S®SMW200A offers integrated channel emulation for up to 800 MHz of fading bandwidth. Fading profiles for all major standards are available as presets. With up to 64 fading channels, all key MIMO fading scenarios such as 2x2, 3x3, 4x4, 8x4, 4x8 and 8x8 can be configured in a single instrument.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692139604/Instruments/Vendor%20Logos/RohdeSchwarz.png" style={{ width: "100%", objectFit: "cover" }} />

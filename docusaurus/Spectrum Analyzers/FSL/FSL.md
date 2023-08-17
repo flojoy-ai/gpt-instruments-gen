@@ -1,3 +1,10 @@
+---
+title: FSL
+description: The R&S FSL series Spectrum Analyzer – are a lightweight and compact range of spectrum analyzer for cost-conscious users who want the functionality of high-end instruments.These analyzers are ideal for a large number of applications in development, service and production.
+keywords: [spectrum analyzers, Rohdes And Schwarz, Pymeasure]
+slug: /instruments-wiki/spectrum-analyzers/rohdes and schwarz/fsl
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201039/Instruments/Spectrum%20Analyzers/FSL/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -16,15 +23,11 @@ These analyzers are ideal for a large number of applications in development, ser
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692118624/Instruments/Spectrum%20Analyzers/FSL/FSL.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201039/Instruments/Spectrum%20Analyzers/FSL/file.png" style={{ width: "325px" }} />
 
 </div>
 
-The R&S FSL series Spectrum Analyzer – are a lightweight and compact range of spectrum analyzer for cost-conscious users who want the functionality of high-end instruments.
-
-These analyzers are ideal for a large number of applications in development, service and production.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692139604/Instruments/Vendor%20Logos/RohdeSchwarz.png" style={{ width: "100%", objectFit: "cover" }} />

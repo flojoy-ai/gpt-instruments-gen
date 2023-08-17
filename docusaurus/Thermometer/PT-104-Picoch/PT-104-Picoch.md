@@ -1,3 +1,10 @@
+---
+title: PT 104 Picoch
+description: The PT-104 is a four-channel temperature measuring data logger. It offers the ultimate in resolution (0.001 °C) and accuracy (0.015 °C). Along with temperature it can also be used to measure resistance.
+keywords: [thermometer, Pico Technology , Pytango]
+slug: /instruments-wiki/thermometer/pico technology /pt-104-picoch
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201200/Instruments/Thermometer/PT-104-Picoch/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ The PT-104 is a four-channel temperature measuring data logger. It offers the ul
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692118781/Instruments/Thermometer/PT-104-Picoch/PT-104-Picoch.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201200/Instruments/Thermometer/PT-104-Picoch/file.png" style={{ width: "325px" }} />
 
 </div>
 
-The PT-104 is a four-channel temperature measuring data logger. It offers the ultimate in resolution (0.001 °C) and accuracy (0.015 °C). Along with temperature it can also be used to measure resistance.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125986/Instruments/Vendor%20Logos/PicoTechnology.png" style={{ width: "100%", objectFit: "cover" }} />

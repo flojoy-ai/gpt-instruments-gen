@@ -1,3 +1,10 @@
+---
+title: Thermotron 3800
+description: The 3800 is a microprocessor-based programmer and controller. The programmer function allows you to program temperature, temperature/humidity, or other types of tests and store them in program memory
+keywords: [temperature controllers, Thermotron, Pymeasure]
+slug: /instruments-wiki/temperature-controllers/thermotron/thermotron-3800
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201081/Instruments/Temperature%20Controllers/Thermotron-3800/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ The 3800 is a microprocessor-based programmer and controller. The programmer fun
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692118664/Instruments/Temperature%20Controllers/Thermotron-3800/Thermotron-3800.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201081/Instruments/Temperature%20Controllers/Thermotron-3800/file.png" style={{ width: "325px" }} />
 
 </div>
 
-The 3800 is a microprocessor-based programmer and controller. The programmer function allows you to program temperature, temperature/humidity, or other types of tests and store them in program memory>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125971/Instruments/Vendor%20Logos/Thermotron.png" style={{ width: "100%", objectFit: "cover" }} />

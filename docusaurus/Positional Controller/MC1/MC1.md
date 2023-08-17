@@ -1,3 +1,10 @@
+---
+title: MC1
+description: Currently no description
+keywords: [positional controller, Qubitekk, Instrumentkit]
+slug: /instruments-wiki/positional-controller/qubitekk/mc1
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201005/Instruments/Positional%20Controller/MC1/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -10,17 +17,15 @@ import TabItem from '@theme/TabItem';
 
 <div>
 
-
-
-</div>
-
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692118588/Instruments/Positional%20Controller/MC1/MC1.png" style={{ width: "325px" }} />
+Currently no description
 
 </div>
 
->
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201005/Instruments/Positional%20Controller/MC1/file.png" style={{ width: "325px" }} />
 
-<details open>
+</div>
+
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125997/Instruments/Vendor%20Logos/Qubitekk.png" style={{ width: "100%", objectFit: "cover" }} />

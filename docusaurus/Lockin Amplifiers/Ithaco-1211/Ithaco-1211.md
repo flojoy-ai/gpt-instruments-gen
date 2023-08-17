@@ -1,3 +1,10 @@
+---
+title: Ithaco 1211
+description: The Ithaco 1211 Current Preamplifier measures current with full scale sensitivity ranging from 10-2 to 10-12 amperes
+keywords: [lockin amplifiers, Ithaco, Qcodes]
+slug: /instruments-wiki/lockin-amplifiers/ithaco/ithaco-1211
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201320/Instruments/Lockin%20Amplifiers/Ithaco-1211/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ The Ithaco 1211 Current Preamplifier measures current with full scale sensitivit
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692120089/Instruments/Lockin%20Amplifiers/Ithaco-1211/Ithaco-1211.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201320/Instruments/Lockin%20Amplifiers/Ithaco-1211/file.png" style={{ width: "325px" }} />
 
 </div>
 
-The Ithaco 1211 Current Preamplifier measures current with full scale sensitivity ranging from 10-2 to 10-12 amperes>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692125969/Instruments/Vendor%20Logos/Ithaco.png" style={{ width: "100%", objectFit: "cover" }} />

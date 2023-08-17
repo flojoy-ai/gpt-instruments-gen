@@ -1,3 +1,10 @@
+---
+title: WaveSurfer 4000HD
+description: WaveSurfer 4000HD extends Teledyne LeCroy’s leadership in High Definition Oscilloscopes with a bright, 12.1” touch screen display, performance without compromise, and price points that fit your budget.
+keywords: [oscilloscopes, Teledyne, Instrumentkit]
+slug: /instruments-wiki/oscilloscopes/teledyne/wavesurfer-4000hd
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201048/Instruments/Oscilloscopes/WaveSurfer-4000HD/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ WaveSurfer 4000HD extends Teledyne LeCroy’s leadership in High Definition Osci
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692118633/Instruments/Oscilloscopes/WaveSurfer-4000HD/WaveSurfer-4000HD.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201048/Instruments/Oscilloscopes/WaveSurfer-4000HD/file.png" style={{ width: "325px" }} />
 
 </div>
 
-WaveSurfer 4000HD extends Teledyne LeCroy’s leadership in High Definition Oscilloscopes with a bright, 12.1” touch screen display, performance without compromise, and price points that fit your budget.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692125958/Instruments/Vendor%20Logos/Teledyne.png" style={{ width: "100%", objectFit: "cover" }} />

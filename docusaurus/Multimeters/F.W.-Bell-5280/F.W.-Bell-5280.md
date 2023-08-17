@@ -1,3 +1,10 @@
+---
+title: F.W. Bell 5280
+description: Handheld single-axis digital magnetometer gauss / tesla meter for measuring magnets, magnetism of steel, and other manufacturing and scientific applications.
+keywords: [multimeters, F.W. Bell, Pymeasure]
+slug: /instruments-wiki/multimeters/f.w. bell/fw-bell-5280
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201239/Instruments/Multimeters/F.W.-Bell-5280/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ Handheld single-axis digital magnetometer gauss / tesla meter for measuring magn
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692119455/Instruments/Multimeters/F.W.-Bell-5280/F.W.-Bell-5280.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201239/Instruments/Multimeters/F.W.-Bell-5280/file.png" style={{ width: "325px" }} />
 
 </div>
 
-Handheld single-axis digital magnetometer gauss / tesla meter for measuring magnets, magnetism of steel, and other manufacturing and scientific applications.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692125981/Instruments/Vendor%20Logos/F.W.Bell.png" style={{ width: "100%", objectFit: "cover" }} />

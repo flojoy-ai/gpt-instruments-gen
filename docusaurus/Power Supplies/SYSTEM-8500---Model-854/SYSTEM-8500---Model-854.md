@@ -1,3 +1,10 @@
+---
+title: SYSTEM 8500 - Model 854
+description: The System 8500 Power Supply program offers the ultrastable Model 854 specially designed for powering magnets in MRI applications
+keywords: [power supplies, Danfysik, Pymeasure]
+slug: /instruments-wiki/power-supplies/danfysik/system-8500---model-854
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200814/Instruments/Power%20Supplies/SYSTEM-8500---Model-854/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ The System 8500 Power Supply program offers the ultrastable Model 854 specially 
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692118404/Instruments/Power%20Supplies/SYSTEM-8500---Model-854/SYSTEM-8500---Model-854.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200814/Instruments/Power%20Supplies/SYSTEM-8500---Model-854/file.png" style={{ width: "325px" }} />
 
 </div>
 
-The System 8500 Power Supply program offers the ultrastable Model 854 specially designed for powering magnets in MRI applications>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125953/Instruments/Vendor%20Logos/Danfysik.png" style={{ width: "100%", objectFit: "cover" }} />

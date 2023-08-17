@@ -1,3 +1,10 @@
+---
+title: Keysight N3300A
+description: The Keysight N3300A is a full-rack width mainframe with 6-slots that accepts combinations of N330x user-installable load modules (150 W to 600 W) for easy system configuration and future reconfiguration. The N3300A holds up to six N3302A, N3303A, N3304A, N3307A load modules, or three N3305A, N3306A double-wide modules, allowing a total up to 1,800 watts of maximum power.
+keywords: [electronic loads, Keysight, Qcodes Community]
+slug: /instruments-wiki/electronic-loads/keysight/keysight-n3300a
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692106966/Instruments/Electronic%20Loads/Keysight-N3300A/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ The Keysight N3300A is a full-rack width mainframe with 6-slots that accepts com
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692077988/Instruments/Electronic%20Loads/Keysight-N3300A/Keysight-N3300A.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692106966/Instruments/Electronic%20Loads/Keysight-N3300A/file.png" style={{ width: "325px" }} />
 
 </div>
 
-The Keysight N3300A is a full-rack width mainframe with 6-slots that accepts combinations of N330x user-installable load modules (150 W to 600 W) for easy system configuration and future reconfiguration. The N3300A holds up to six N3302A, N3303A, N3304A, N3307A load modules, or three N3305A, N3306A double-wide modules, allowing a total up to 1,800 watts of maximum power.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125973/Instruments/Vendor%20Logos/Keysight.png" style={{ width: "100%", height: "150px",objectFit: "cover" }} />

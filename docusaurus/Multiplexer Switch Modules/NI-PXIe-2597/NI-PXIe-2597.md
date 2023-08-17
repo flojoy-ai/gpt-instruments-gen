@@ -1,3 +1,10 @@
+---
+title: NI PXIe-2597
+description: 26.5 GHz, 50 Ω, 6x1 (SP6T) Terminated PXI RF Multiplexer Switch Module—The PXI‑2597 is ideal for passing high-order harmonics from PXI RF Signal Upconverter modules or routing multiple sources to PXI RF Signal Downconverter modules. The internal termination of the PXI‑2597 helps prevent high-power reflections that arise from open channels on the module. You can use the PXI‑2597 onboard relay count tracking feature to predict relay lifetime and reduce unexpected system downtime.
+keywords: [multiplexer switch modules, National Instruments, Qcodes Community]
+slug: /instruments-wiki/multiplexer-switch-modules/national instruments/ni-pxie-2597
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/v1692201270/Instruments/Multiplexer%20Switch%20Modules/NI-PXIe-2597/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ import TabItem from '@theme/TabItem';
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692120042/Instruments/Multiplexer%20Switch%20Modules/NI-PXIe-2597/NI-PXIe-2597.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692201270/Instruments/Multiplexer%20Switch%20Modules/NI-PXIe-2597/file.png" style={{ width: "325px" }} />
 
 </div>
 
-26.5 GHz, 50 Ω, 6x1 (SP6T) Terminated PXI RF Multiplexer Switch Module—The PXI‑2597 is ideal for passing high-order harmonics from PXI RF Signal Upconverter modules or routing multiple sources to PXI RF Signal Downconverter modules. The internal termination of the PXI‑2597 helps prevent high-power reflections that arise from open channels on the module. You can use the PXI‑2597 onboard relay count tracking feature to predict relay lifetime and reduce unexpected system downtime.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125989/Instruments/Vendor%20Logos/National_Instruments.png" style={{ width: "100%", objectFit: "cover" }} />

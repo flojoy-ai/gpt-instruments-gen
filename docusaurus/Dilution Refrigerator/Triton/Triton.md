@@ -1,3 +1,10 @@
+---
+title: Triton
+description: The Triton family of cryogen free dilution refrigerators has ledthe way in ultra-low temperature experiment-readiness with itsleading-edge superconducting magnet integration, sample loadingmechanisms and sample wiring options.With over 300 systems installed worldwide, Triton is used in worldleading science across quantum technology, spintronics, optics andmany other cutting-edge applications of condensed matter physics.
+keywords: [dilution refrigerator, Oxford Instruments, Qcodes]
+slug: /instruments-wiki/dilution-refrigerator/oxford instruments/triton
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201132/Instruments/Dilution%20Refrigerator/Triton/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -19,18 +26,11 @@ many other cutting-edge applications of condensed matter physics.
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692118717/Instruments/Dilution%20Refrigerator/Triton/Triton.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201132/Instruments/Dilution%20Refrigerator/Triton/file.png" style={{ width: "325px" }} />
 
 </div>
 
-The Triton family of cryogen free dilution refrigerators has led
-the way in ultra-low temperature experiment-readiness with its
-leading-edge superconducting magnet integration, sample loading
-mechanisms and sample wiring options.
-With over 300 systems installed worldwide, Triton is used in worldleading science across quantum technology, spintronics, optics and
-many other cutting-edge applications of condensed matter physics.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125988/Instruments/Vendor%20Logos/Oxford_Instruments.png" style={{ width: "100%", objectFit: "cover" }} />

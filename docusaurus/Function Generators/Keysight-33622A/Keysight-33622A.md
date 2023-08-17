@@ -1,3 +1,10 @@
+---
+title: Keysight 33622A
+description: The Keysight 33622A function/arbitrary waveform generators offer the standard signals and features you expect, such as modulation, sweep, and burst. However, it also provides features that give you the capabilities and flexibility you need to get your job done quickly, no matter how complex. An intuitive front-panel user interface, for example, can be quickly and easily relearned when your attention has been focused elsewhere.
+keywords: [function generators, Keysight, Qcodes]
+slug: /instruments-wiki/function-generators/keysight/keysight-33622a
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201214/Instruments/Function%20Generators/Keysight-33622A/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ The Keysight 33622A function/arbitrary waveform generators offer the standard si
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692118795/Instruments/Function%20Generators/Keysight-33622A/Keysight-33622A.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201214/Instruments/Function%20Generators/Keysight-33622A/file.png" style={{ width: "325px" }} />
 
 </div>
 
-The Keysight 33622A function/arbitrary waveform generators offer the standard signals and features you expect, such as modulation, sweep, and burst. However, it also provides features that give you the capabilities and flexibility you need to get your job done quickly, no matter how complex. An intuitive front-panel user interface, for example, can be quickly and easily relearned when your attention has been focused elsewhere.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125973/Instruments/Vendor%20Logos/Keysight.png" style={{ width: "100%", height: "150px",objectFit: "cover" }} />

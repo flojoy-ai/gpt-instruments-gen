@@ -1,3 +1,10 @@
+---
+title: Pipekeithley
+description: Class For Getting Data From The Keihtley Of The Photon-Ion Spectrometer (Pipe).
+keywords: [miscellaneous, Keithley, Pytango]
+slug: /instruments-wiki/miscellaneous/keithley/pipekeithley
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692106848/Instruments/Miscellaneous/Pipekeithley/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ Class For Getting Data From The Keihtley Of The Photon-Ion Spectrometer (Pipe).
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692077856/Instruments/Miscellaneous/Pipekeithley/Pipekeithley.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692106848/Instruments/Miscellaneous/Pipekeithley/file.png" style={{ width: "325px" }} />
 
 </div>
 
-Class For Getting Data From The Keihtley Of The Photon-Ion Spectrometer (Pipe).>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692126010/Instruments/Vendor%20Logos/Keithley.png" style={{ width: "100%", objectFit: "cover" }} />

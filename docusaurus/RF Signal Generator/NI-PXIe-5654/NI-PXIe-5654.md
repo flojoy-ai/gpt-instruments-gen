@@ -1,3 +1,10 @@
+---
+title: NI PXIe-5654
+description: PXIe, 250 kHz to 20 GHz, PXI RF Analog Signal Generator—The PXIe-5654 features a combination of exceptional phase noise and frequency tuning time. These features address applications such as blocker test/receiver desensitization, high-performance intermodulation distortion measurements, and various electronic warfare applications. The PXIe-5654 is designed to meet the challenging requirements of RFIC characterization, satellite test, and radar applications. Some PXIe-5654 options include a PXIe-5696 Amplitude Extender Module. The PXIe-5696 supports a frequency range of 250 kHz to 20 GHz and an extended amplitude range up to 27 dBm.
+keywords: [rf signal generator, National Instruments, Qcodes Community]
+slug: /instruments-wiki/rf-signal-generator/national instruments/ni-pxie-5654
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200803/Instruments/RF%20Signal%20Generator/NI-PXIe-5654/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ PXIe, 250 kHz to 20 GHz, PXI RF Analog Signal Generator—The PXIe-5654 features
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692118392/Instruments/RF%20Signal%20Generator/NI-PXIe-5654/NI-PXIe-5654.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200803/Instruments/RF%20Signal%20Generator/NI-PXIe-5654/file.png" style={{ width: "325px" }} />
 
 </div>
 
-PXIe, 250 kHz to 20 GHz, PXI RF Analog Signal Generator—The PXIe-5654 features a combination of exceptional phase noise and frequency tuning time. These features address applications such as blocker test/receiver desensitization, high-performance intermodulation distortion measurements, and various electronic warfare applications. The PXIe-5654 is designed to meet the challenging requirements of RFIC characterization, satellite test, and radar applications. Some PXIe-5654 options include a PXIe-5696 Amplitude Extender Module. The PXIe-5696 supports a frequency range of 250 kHz to 20 GHz and an extended amplitude range up to 27 dBm.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125989/Instruments/Vendor%20Logos/National_Instruments.png" style={{ width: "100%", objectFit: "cover" }} />

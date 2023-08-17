@@ -1,3 +1,10 @@
+---
+title: HDAWG
+description: The Zurich Instruments HDAWG multi-channel Arbitrary Waveform Generator has one of the highest channel densities available in its class and is designed for advanced signal generation up to 750 MHz bandwidth. The HDAWG comes with either 4 or 8 DC-coupled, single-ended analog output channels with 16-bit vertical resolution.
+keywords: [rf signal generator, Zurich Instruments, Qcodes Community, Qcodes]
+slug: /instruments-wiki/rf-signal-generator/zurich instruments/hdawg
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200909/Instruments/RF%20Signal%20Generator/HDAWG/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ The Zurich Instruments HDAWG multi-channel Arbitrary Waveform Generator has one 
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692118493/Instruments/RF%20Signal%20Generator/HDAWG/HDAWG.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200909/Instruments/RF%20Signal%20Generator/HDAWG/file.png" style={{ width: "325px" }} />
 
 </div>
 
-The Zurich Instruments HDAWG multi-channel Arbitrary Waveform Generator has one of the highest channel densities available in its class and is designed for advanced signal generation up to 750 MHz bandwidth. The HDAWG comes with either 4 or 8 DC-coupled, single-ended analog output channels with 16-bit vertical resolution.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692126012/Instruments/Vendor%20Logos/Zurich_Instruments.png" style={{ width: "100%", objectFit: "cover" }} />

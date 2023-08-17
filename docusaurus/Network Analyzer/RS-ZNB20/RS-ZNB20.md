@@ -1,3 +1,10 @@
+---
+title: R&S ZNB20
+description: The R&S ZNB20 from R&S is a mid range vector network analyzer with two or four test ports for the frequency range from 100 kHz to 20 GHz. It has a dynamic range of 135 dB which makes it possible to perform precise measurements on wideband DUTs or components whose behavior at low frequencies is especially important. The analyzer has a large 12.1 inches touch screen interface which makes it easy to control and review test results. The ports on the R&S 20 have 2.92 mm Male connectors.
+keywords: [network analyzer, Rohde Schwarz, Qcodes]
+slug: /instruments-wiki/network-analyzer/rohde schwarz/r&s-znb20
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200977/Instruments/Network%20Analyzer/RS-ZNB20/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ The R&S ZNB20 from R&S is a mid range vector network analyzer with two or four t
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692118559/Instruments/Network%20Analyzer/RS-ZNB20/RS-ZNB20.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200977/Instruments/Network%20Analyzer/RS-ZNB20/file.png" style={{ width: "325px" }} />
 
 </div>
 
-The R&S ZNB20 from R&S is a mid range vector network analyzer with two or four test ports for the frequency range from 100 kHz to 20 GHz. It has a dynamic range of 135 dB which makes it possible to perform precise measurements on wideband DUTs or components whose behavior at low frequencies is especially important. The analyzer has a large 12.1 inches touch screen interface which makes it easy to control and review test results. The ports on the R&S 20 have 2.92 mm Male connectors.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692139604/Instruments/Vendor%20Logos/RohdeSchwarz.png" style={{ width: "100%", objectFit: "cover" }} />

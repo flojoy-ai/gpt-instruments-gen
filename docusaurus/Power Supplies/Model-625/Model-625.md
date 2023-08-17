@@ -1,3 +1,10 @@
+---
+title: Model 625
+description: The Model 625 superconducting magnet power supply is the ideal supply for small to medium sized superconducting magnets used in high sensitivity materials research applications. The Model 625 is a practical alternative to both the larger, one size fits all, superconducting magnet supplies and the endless adaptations of generic power supplies. By limiting output power, Lake Shore was able to concentrate on the performance requirements of the most demanding magnet users. The resulting Model 625 provides high precision, low noise, safety, and convenience.
+keywords: [power supplies, Lakeshore, Qcodes Community]
+slug: /instruments-wiki/power-supplies/lakeshore/model-625
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692107104/Instruments/Power%20Supplies/Model-625/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ The Model 625 superconducting magnet power supply is the ideal supply for small 
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692078145/Instruments/Power%20Supplies/Model-625/Model-625.png" style={{ width: "325px", height: "200px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692107104/Instruments/Power%20Supplies/Model-625/file.png" style={{ width: "325px", height: "200px" }} />
 
 </div>
 
-The Model 625 superconducting magnet power supply is the ideal supply for small to medium sized superconducting magnets used in high sensitivity materials research applications. The Model 625 is a practical alternative to both the larger, one size fits all, superconducting magnet supplies and the endless adaptations of generic power supplies. By limiting output power, Lake Shore was able to concentrate on the performance requirements of the most demanding magnet users. The resulting Model 625 provides high precision, low noise, safety, and convenience.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125966/Instruments/Vendor%20Logos/Lakeshore.png" style={{ width: "100%", objectFit: "cover" }} />

@@ -1,3 +1,10 @@
+---
+title: 2500A Bridge
+description: The AH 2500A offers unparalleled stability, resolution and accuracy in a capacitance/loss1 bridge (whether manual or automatic)
+keywords: [multimeters, Andeen Hagerling, Pymeasure]
+slug: /instruments-wiki/multimeters/andeen hagerling/2500a-bridge
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201331/Instruments/Multimeters/2500A-Bridge/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ The AH 2500A offers unparalleled stability, resolution and accuracy in a capacit
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692120100/Instruments/Multimeters/2500A-Bridge/2500A-Bridge.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201331/Instruments/Multimeters/2500A-Bridge/file.png" style={{ width: "325px" }} />
 
 </div>
 
-The AH 2500A offers unparalleled stability, resolution and accuracy in a capacitance/loss1 bridge (whether manual or automatic)>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692126007/Instruments/Vendor%20Logos/Andeen_Hagerling.png" style={{ width: "100%", objectFit: "cover" }} />

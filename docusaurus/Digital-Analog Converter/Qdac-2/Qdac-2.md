@@ -1,3 +1,10 @@
+---
+title: Qdac 2
+description: QDAC-II is the next generation of the successful QDAC from QDevil. It has all the outstanding features from its predecessor but is even more versatile and with superior performance. QDAC-II is a high-precision ultra-low-noise computer controlled DAC with 24 voltage generators, operating at a sample rate of 1MS/s – a thousand times faster than its predecessor. It is designed for DC and intermediate-frequency control of quantum devices, including, for example, gate electrodes and flux bias coils in qubits, but is a very versatile instrument that can be used for many other purposes. Each of the 24 channels has five voltage generators working in parallel-> One for DC, a sine generator, a triangle generator, a square wave generator, and an arbitrary waveform generator (1 million points/second). Additionally, each channel is equipped with a DC current sensor with a resolution down to a few tens of pA, typically used for gate leakage detection and with sample rates up to 3 kHz.
+keywords: [digital analog converter, Qdevil, Qcodes Community]
+slug: /instruments-wiki/digital-analog-converter/qdevil/qdac-2
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692106818/Instruments/Digital-Analog%20Converter/Qdac-2/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ QDAC-II is the next generation of the successful QDAC from QDevil. It has all th
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692079531/Instruments/Digital-Analog%20Converter/Qdac-2/Qdac-2.png" style={{ width: "325px", height: "200px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692106818/Instruments/Digital-Analog%20Converter/Qdac-2/file.png" style={{ width: "325px", height: "200px" }} />
 
 </div>
 
-QDAC-II is the next generation of the successful QDAC from QDevil. It has all the outstanding features from its predecessor but is even more versatile and with superior performance. QDAC-II is a high-precision ultra-low-noise computer controlled DAC with 24 voltage generators, operating at a sample rate of 1MS/s – a thousand times faster than its predecessor. It is designed for DC and intermediate-frequency control of quantum devices, including, for example, gate electrodes and flux bias coils in qubits, but is a very versatile instrument that can be used for many other purposes. Each of the 24 channels has five voltage generators working in parallel: One for DC, a sine generator, a triangle generator, a square wave generator, and an arbitrary waveform generator (1 million points/second). Additionally, each channel is equipped with a DC current sensor with a resolution down to a few tens of pA, typically used for gate leakage detection and with sample rates up to 3 kHz.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125970/Instruments/Vendor%20Logos/QDevils.png" style={{ width: "100%", objectFit: "cover" }} />

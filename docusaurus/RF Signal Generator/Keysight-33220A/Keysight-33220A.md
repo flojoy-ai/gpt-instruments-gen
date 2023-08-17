@@ -1,3 +1,10 @@
+---
+title: Keysight 33220A
+description: The Keysight 33220A is a 20 MHz synthesized function generator with built-in arbitrary waveform and pulse capabilities. Itscombination of bench-top and system features makes this function generator a versatile solution for your testing requirements now and in the future.
+keywords: [rf signal generator, Agilent, Instrumentkit]
+slug: /instruments-wiki/rf-signal-generator/agilent/keysight-33220a
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201223/Instruments/RF%20Signal%20Generator/Keysight-33220A/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ The Keysight 33220A is a 20 MHz synthesized function generator with built-in arb
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692118802/Instruments/RF%20Signal%20Generator/Keysight-33220A/Keysight-33220A.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201223/Instruments/RF%20Signal%20Generator/Keysight-33220A/file.png" style={{ width: "325px" }} />
 
 </div>
 
-The Keysight 33220A is a 20 MHz synthesized function generator with built-in arbitrary waveform and pulse capabilities. Itscombination of bench-top and system features makes this function generator a versatile solution for your testing requirements now and in the future.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692126006/Instruments/Vendor%20Logos/Agilent.png" style={{ width: "100%", height: "150px",objectFit: "cover" }} />

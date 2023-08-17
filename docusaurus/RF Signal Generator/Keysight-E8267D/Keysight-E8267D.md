@@ -1,3 +1,10 @@
+---
+title: Keysight E8267D
+description: E8267D PSG Vector Signal Generator, 100 kHz to 44 GHz
+keywords: [rf signal generator, Agilent, Qcodes]
+slug: /instruments-wiki/rf-signal-generator/agilent/keysight-e8267d
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692106879/Instruments/RF%20Signal%20Generator/Keysight-E8267D/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ E8267D PSG Vector Signal Generator, 100 kHz to 44 GHz
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692077889/Instruments/RF%20Signal%20Generator/Keysight-E8267D/Keysight-E8267D.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692106879/Instruments/RF%20Signal%20Generator/Keysight-E8267D/file.png" style={{ width: "325px" }} />
 
 </div>
 
-E8267D PSG Vector Signal Generator, 100 kHz to 44 GHz>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692126006/Instruments/Vendor%20Logos/Agilent.png" style={{ width: "100%", height: "150px",objectFit: "cover" }} />

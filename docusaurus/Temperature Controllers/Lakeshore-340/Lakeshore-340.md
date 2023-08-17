@@ -1,3 +1,10 @@
+---
+title: Lakeshore 340
+description: The Model 340 cryogenic temperature controller is our most advanced temperature controller and offers unsurpassed resolution, accuracy, and stability for temperature measurement and control applications to as low as 100 mK. Operating with diodes, platinum RTDs, and negative temperature coefficient (NTC) resistor sensors, the Model 340 is expandable to ten sensor inputs or to operate with thermocouple or capacitance sensors. It has two control loops, with the first loop powered to 100 W.
+keywords: [temperature controllers, Lakeshore, Instrumentkit]
+slug: /instruments-wiki/temperature-controllers/lakeshore/lakeshore-340
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692106962/Instruments/Temperature%20Controllers/Lakeshore-340/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ The Model 340 cryogenic temperature controller is our most advanced temperature 
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692077983/Instruments/Temperature%20Controllers/Lakeshore-340/Lakeshore-340.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692106962/Instruments/Temperature%20Controllers/Lakeshore-340/file.png" style={{ width: "325px" }} />
 
 </div>
 
-The Model 340 cryogenic temperature controller is our most advanced temperature controller and offers unsurpassed resolution, accuracy, and stability for temperature measurement and control applications to as low as 100 mK. Operating with diodes, platinum RTDs, and negative temperature coefficient (NTC) resistor sensors, the Model 340 is expandable to ten sensor inputs or to operate with thermocouple or capacitance sensors. It has two control loops, with the first loop powered to 100 W.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125966/Instruments/Vendor%20Logos/Lakeshore.png" style={{ width: "100%", objectFit: "cover" }} />

@@ -1,3 +1,10 @@
+---
+title: MercuryiPS
+description: Based on ±60 A modules with ±10 V compliance.Can be configured in parallel, series and matrix modes from the basic ±60 A with ±10 V output up to ±600 A with ±10 V or ±300 A with ±20 V output configurations.Communications support a full range of interface options (Ethernet, USB, RS232, and optional GPIB) with downloadable Mercury function library for LabVIEW.Quench protection and auto-rundown. The MercuryiPS can be programmed to run the magnet down safely in the event of magnet temperature rise, low cryogen levels or if triggered by an external TTL signal.The MercuryiPS has an on-board temperature sensor for diagnostic monitoring of the magnet temperature.
+keywords: [power supplies, Oxford Instruments, Qcodes]
+slug: /instruments-wiki/power-supplies/oxford instruments/mercuryips
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692106906/Instruments/Power%20Supplies/MercuryiPS/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -18,17 +25,11 @@ The MercuryiPS has an on-board temperature sensor for diagnostic monitoring of t
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692077920/Instruments/Power%20Supplies/MercuryiPS/MercuryiPS.png" style={{ width: "325px", height: "200px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692106906/Instruments/Power%20Supplies/MercuryiPS/file.png" style={{ width: "325px", height: "200px" }} />
 
 </div>
 
-Based on ±60 A modules with ±10 V compliance.
-Can be configured in parallel, series and matrix modes from the basic ±60 A with ±10 V output up to ±600 A with ±10 V or ±300 A with ±20 V output configurations.
-Communications support a full range of interface options (Ethernet, USB, RS232, and optional GPIB) with downloadable Mercury function library for LabVIEW.
-Quench protection and auto-rundown. The MercuryiPS can be programmed to run the magnet down safely in the event of magnet temperature rise, low cryogen levels or if triggered by an external TTL signal.
-The MercuryiPS has an on-board temperature sensor for diagnostic monitoring of the magnet temperature.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125988/Instruments/Vendor%20Logos/Oxford_Instruments.png" style={{ width: "100%", objectFit: "cover" }} />

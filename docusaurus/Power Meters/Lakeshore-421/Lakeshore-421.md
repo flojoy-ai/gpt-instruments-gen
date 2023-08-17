@@ -1,3 +1,10 @@
+---
+title: Lakeshore 421
+description: Flexible probe configurations to suit your application.Several sensor types available with different performance characteristics.Most suited for field levels from earth field to very large electromagnets.Application-specific probe customization available.
+keywords: [power meters, Lakeshore, Pymeasure]
+slug: /instruments-wiki/power-meters/lakeshore/lakeshore-421
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692106749/Instruments/Power%20Meters/Lakeshore-421/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -17,16 +24,11 @@ Application-specific probe customization available.
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692077742/Instruments/Power%20Meters/Lakeshore-421/Lakeshore-421.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692106749/Instruments/Power%20Meters/Lakeshore-421/file.png" style={{ width: "325px" }} />
 
 </div>
 
-Flexible probe configurations to suit your application.
-Several sensor types available with different performance characteristics.
-Most suited for field levels from earth field to very large electromagnets.
-Application-specific probe customization available.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125966/Instruments/Vendor%20Logos/Lakeshore.png" style={{ width: "100%", objectFit: "cover" }} />

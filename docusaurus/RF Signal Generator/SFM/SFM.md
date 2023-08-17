@@ -1,3 +1,10 @@
+---
+title: SFM
+description: Generation of standard TV signals (standards B&G, D&K, L&L, I, M, N, K1) including stereo/dual sound and NICAMDouble-sideband test modulator for all IFs between 32 and 46 MHzRF upconverter, 5 to 1000 MHz, with high frequency resolution (1 Hz)
+keywords: [rf signal generator, Rohdes And Schwarz, Pymeasure]
+slug: /instruments-wiki/rf-signal-generator/rohdes and schwarz/sfm
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200915/Instruments/RF%20Signal%20Generator/SFM/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -16,15 +23,11 @@ RF upconverter, 5 to 1000 MHz, with high frequency resolution (1 Hz)
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692118499/Instruments/RF%20Signal%20Generator/SFM/SFM.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200915/Instruments/RF%20Signal%20Generator/SFM/file.png" style={{ width: "325px" }} />
 
 </div>
 
-Generation of standard TV signals (standards B&G, D&K, L&L, I, M, N, K1) including stereo/dual sound and NICAM
-Double-sideband test modulator for all IFs between 32 and 46 MHz
-RF upconverter, 5 to 1000 MHz, with high frequency resolution (1 Hz)>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692139604/Instruments/Vendor%20Logos/RohdeSchwarz.png" style={{ width: "100%", objectFit: "cover" }} />

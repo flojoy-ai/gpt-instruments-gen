@@ -1,3 +1,10 @@
+---
+title: Keysight N5232B
+description: The Keysight N5232B PNA-L series network analyzer is designed for S-parameter and simple nonlinear testing of passive components, amplifiers, and frequency converters. With the same core firmware as the PNA, the PNA-L offers the perfect balance of value and performance. The PNA-L provides efficiency and flexibility in both manufacturing and R&D applications, for industries ranging from mobile-telecomm and wireless-LAN component production to aerospace and defense.
+keywords: [network analyzer, Keysight, Qcodes]
+slug: /instruments-wiki/network-analyzer/keysight/keysight-n5232b
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200817/Instruments/Network%20Analyzer/Keysight-N5232B/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ The Keysight N5232B PNA-L series network analyzer is designed for S-parameter an
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692118406/Instruments/Network%20Analyzer/Keysight-N5232B/Keysight-N5232B.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200817/Instruments/Network%20Analyzer/Keysight-N5232B/file.png" style={{ width: "325px" }} />
 
 </div>
 
-The Keysight N5232B PNA-L series network analyzer is designed for S-parameter and simple nonlinear testing of passive components, amplifiers, and frequency converters. With the same core firmware as the PNA, the PNA-L offers the perfect balance of value and performance. The PNA-L provides efficiency and flexibility in both manufacturing and R&D applications, for industries ranging from mobile-telecomm and wireless-LAN component production to aerospace and defense.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125973/Instruments/Vendor%20Logos/Keysight.png" style={{ width: "100%", height: "150px",objectFit: "cover" }} />

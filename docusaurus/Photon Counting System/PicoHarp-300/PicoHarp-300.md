@@ -1,3 +1,10 @@
+---
+title: PicoHarp 300
+description: The PicoHarp 300 is a high-end, easy to use, plug and play Time-Correlated Single Photon Counting (TCSPC) system. It is connected to a PC through a USB 2.0 interface. The high quality and reliability of the PicoHarp 300 is expressed by a unique 5-year limited warranty.
+keywords: [photon counting system, Picoquant, Pytango]
+slug: /instruments-wiki/photon-counting-system/picoquant/picoharp-300
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200797/Instruments/Photon%20Counting%20System/PicoHarp-300/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ The PicoHarp 300 is a high-end, easy to use, plug and play Time-Correlated Singl
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692118386/Instruments/Photon%20Counting%20System/PicoHarp-300/PicoHarp-300.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200797/Instruments/Photon%20Counting%20System/PicoHarp-300/file.png" style={{ width: "325px" }} />
 
 </div>
 
-The PicoHarp 300 is a high-end, easy to use, plug and play Time-Correlated Single Photon Counting (TCSPC) system. It is connected to a PC through a USB 2.0 interface. The high quality and reliability of the PicoHarp 300 is expressed by a unique 5-year limited warranty.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125981/Instruments/Vendor%20Logos/PicoQuant.png" style={{ width: "100%", objectFit: "cover" }} />

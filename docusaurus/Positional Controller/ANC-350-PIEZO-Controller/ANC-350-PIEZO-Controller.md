@@ -1,3 +1,10 @@
+---
+title: ANC 350 PIEZO Controller
+description: multi-functional piezo controller for closed loop positioners
+keywords: [positional controller, Attocube, Qcodes Community]
+slug: /instruments-wiki/positional-controller/attocube/anc-350-piezo-controller
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201180/Instruments/Positional%20Controller/ANC-350-PIEZO-Controller/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ multi-functional piezo controller for closed loop positioners
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692118762/Instruments/Positional%20Controller/ANC-350-PIEZO-Controller/ANC-350-PIEZO-Controller.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201180/Instruments/Positional%20Controller/ANC-350-PIEZO-Controller/file.png" style={{ width: "325px" }} />
 
 </div>
 
-multi-functional piezo controller for closed loop positioners>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692125972/Instruments/Vendor%20Logos/Attocube.png" style={{ width: "100%", objectFit: "cover" }} />

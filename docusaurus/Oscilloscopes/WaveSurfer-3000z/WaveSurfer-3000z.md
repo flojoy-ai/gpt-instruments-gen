@@ -1,3 +1,10 @@
+---
+title: WaveSurfer 3000z
+description: The WaveSurfer 3000z has a 10.1" capacitive touch display, the longest memory, and the deepest toolbox – all at an affordable price.
+keywords: [oscilloscopes, Teledyne, Instrumentkit]
+slug: /instruments-wiki/oscilloscopes/teledyne/wavesurfer-3000z
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201043/Instruments/Oscilloscopes/WaveSurfer-3000z/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ The WaveSurfer 3000z has a 10.1" capacitive touch display, the longest memory, a
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692118627/Instruments/Oscilloscopes/WaveSurfer-3000z/WaveSurfer-3000z.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201043/Instruments/Oscilloscopes/WaveSurfer-3000z/file.png" style={{ width: "325px" }} />
 
 </div>
 
-The WaveSurfer 3000z has a 10.1" capacitive touch display, the longest memory, and the deepest toolbox – all at an affordable price.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692125958/Instruments/Vendor%20Logos/Teledyne.png" style={{ width: "100%", objectFit: "cover" }} />

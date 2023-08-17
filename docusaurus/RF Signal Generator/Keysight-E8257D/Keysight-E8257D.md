@@ -1,3 +1,10 @@
+---
+title: Keysight E8257D
+description: Metrology-grade analog signal generator offering industry-leading output power, level accuracy, and phase noise, with frequency coverage from 100 kHz to 67 GHz (extendable to 500 GHz) for testing advanced RF and microwave radar
+keywords: [rf signal generator, Agilent, Qcodes]
+slug: /instruments-wiki/rf-signal-generator/agilent/keysight-e8257d
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692106796/Instruments/RF%20Signal%20Generator/Keysight-E8257D/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ Metrology-grade analog signal generator offering industry-leading output power, 
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692077798/Instruments/RF%20Signal%20Generator/Keysight-E8257D/Keysight-E8257D.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692106796/Instruments/RF%20Signal%20Generator/Keysight-E8257D/file.png" style={{ width: "325px" }} />
 
 </div>
 
-Metrology-grade analog signal generator offering industry-leading output power, level accuracy, and phase noise, with frequency coverage from 100 kHz to 67 GHz (extendable to 500 GHz) for testing advanced RF and microwave radar>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692126006/Instruments/Vendor%20Logos/Agilent.png" style={{ width: "100%", height: "150px",objectFit: "cover" }} />

@@ -1,3 +1,10 @@
+---
+title: SMR 40
+description: The R&S SMR40 Signal Generator is designed as CW generator with pulse modulation capability with frequency coverage from 1 GHz up to 40 GHz. The lower limit can be expanded to 10 MHz by the optional Frequency Extension 0.01 GHz to 1 GHz  (option B11).
+keywords: [rf signal generator, Rohdeschwarz, Qcodes Community]
+slug: /instruments-wiki/rf-signal-generator/rohdeschwarz/smr-40
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201280/Instruments/RF%20Signal%20Generator/SMR-40/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ The R&S SMR40 Signal Generator is designed as CW generator with pulse modulation
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692120052/Instruments/RF%20Signal%20Generator/SMR-40/SMR-40.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201280/Instruments/RF%20Signal%20Generator/SMR-40/file.png" style={{ width: "325px" }} />
 
 </div>
 
-The R&S SMR40 Signal Generator is designed as CW generator with pulse modulation capability with frequency coverage from 1 GHz up to 40 GHz. The lower limit can be expanded to 10 MHz by the optional Frequency Extension 0.01 GHz to 1 GHz  (option B11).>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692139604/Instruments/Vendor%20Logos/RohdeSchwarz.png" style={{ width: "100%", objectFit: "cover" }} />

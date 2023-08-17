@@ -1,3 +1,10 @@
+---
+title: M4i.6631-x8
+description: The M4i.66xx-x8 series arbitrary waveform generators (AWG) deliver the highest performance in both speed and resolution. The series includes PCIe cards with either one, two or four synchronous channels. The large onboard memory can be segmented to replay different waveform sequences. The AWG features a PCI Express x8 Gen 2 interface that offers outstanding data streaming performance. The interface and Spectrum’s optimized drivers enable data transfer rates in excess of 2.8 GB/s so that signals can continuously replayed at a high output rate. While the cards have been designed using the latest technology they are still software compatible with the drivers from earlier Spectrum waveform generators. So, existing customers can use the same software they developed for a 10 year old 20 MS/s AWG card and for an M4i series 625 MS/s AWG.
+keywords: [function generators, Spectrum, Qcodes Community]
+slug: /instruments-wiki/function-generators/spectrum/m4i6631-x8
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692106847/Instruments/Function%20Generators/M4i.6631-x8/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ The M4i.66xx-x8 series arbitrary waveform generators (AWG) deliver the highest p
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692077855/Instruments/Function%20Generators/M4i.6631-x8/M4i.6631-x8.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692106847/Instruments/Function%20Generators/M4i.6631-x8/file.png" style={{ width: "325px" }} />
 
 </div>
 
-The M4i.66xx-x8 series arbitrary waveform generators (AWG) deliver the highest performance in both speed and resolution. The series includes PCIe cards with either one, two or four synchronous channels. The large onboard memory can be segmented to replay different waveform sequences. The AWG features a PCI Express x8 Gen 2 interface that offers outstanding data streaming performance. The interface and Spectrum’s optimized drivers enable data transfer rates in excess of 2.8 GB/s so that signals can continuously replayed at a high output rate. While the cards have been designed using the latest technology they are still software compatible with the drivers from earlier Spectrum waveform generators. So, existing customers can use the same software they developed for a 10 year old 20 MS/s AWG card and for an M4i series 625 MS/s AWG.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692125992/Instruments/Vendor%20Logos/Spectrum.png" style={{ width: "100%", objectFit: "cover" }} />

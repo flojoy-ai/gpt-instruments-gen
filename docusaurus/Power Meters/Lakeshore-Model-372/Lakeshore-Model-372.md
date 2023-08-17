@@ -1,3 +1,10 @@
+---
+title: Lakeshore Model 372
+description: The Model 372 AC resistance bridge and temperature controller builds on the solid foundation provided by the original Lake Shore AC resistance bridge. The Model 372 provides the best possible temperature measurement and control capabilities for dilution refrigerators (DRs) that are intended to be operated below 100 mK. The Model 372 makes it easy to perform multiple tasks that were once very difficult to perform reliably at ultra-low temperatures->
+keywords: [power meters, Lakeshore, Qcodes]
+slug: /instruments-wiki/power-meters/lakeshore/lakeshore-model-372
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692106753/Instruments/Power%20Meters/Lakeshore-Model-372/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ The Model 372 AC resistance bridge and temperature controller builds on the soli
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692077747/Instruments/Power%20Meters/Lakeshore-Model-372/Lakeshore-Model-372.png" style={{ width: "325px", height: "150px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692106753/Instruments/Power%20Meters/Lakeshore-Model-372/file.png" style={{ width: "325px", height: "150px" }} />
 
 </div>
 
-The Model 372 AC resistance bridge and temperature controller builds on the solid foundation provided by the original Lake Shore AC resistance bridge. The Model 372 provides the best possible temperature measurement and control capabilities for dilution refrigerators (DRs) that are intended to be operated below 100 mK. The Model 372 makes it easy to perform multiple tasks that were once very difficult to perform reliably at ultra-low temperatures:>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125966/Instruments/Vendor%20Logos/Lakeshore.png" style={{ width: "100%", objectFit: "cover" }} />

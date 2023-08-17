@@ -1,3 +1,10 @@
+---
+title: Keysight N6705B
+description: The N6705B is a 4-slot mainframe that accepts up to 4 DC Power Modules, and up to 600 W total DC Power Module output power. The modules are ordered separately. N6705B accepts the same modules as N6700 Modular Power System, with over 30 modules to choose from
+keywords: [rf signal generator, Keysight, Qcodes]
+slug: /instruments-wiki/rf-signal-generator/keysight/keysight-n6705b
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692107026/Instruments/RF%20Signal%20Generator/Keysight-N6705B/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -16,15 +23,11 @@ N6705B accepts the same modules as N6700 Modular Power System, with over 30 modu
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692078056/Instruments/RF%20Signal%20Generator/Keysight-N6705B/Keysight-N6705B.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692107026/Instruments/RF%20Signal%20Generator/Keysight-N6705B/file.png" style={{ width: "325px" }} />
 
 </div>
 
-The N6705B is a 4-slot mainframe that accepts up to 4 DC Power Modules, and up to 600 W total DC Power Module output power. The modules are ordered separately. 
-
-N6705B accepts the same modules as N6700 Modular Power System, with over 30 modules to choose from>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125973/Instruments/Vendor%20Logos/Keysight.png" style={{ width: "100%", height: "150px",objectFit: "cover" }} />

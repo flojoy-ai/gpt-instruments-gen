@@ -1,3 +1,10 @@
+---
+title: Weinschel 8320
+description: Spectrum Control's Weinschel brand Model 8320 Series Multi-channel Programmable Attenuator systems allow for multiple attenuator channels to be controlled across a variety of interfaces, or via a front panel.
+keywords: [digital attenuator, Weinschel, Qcodes]
+slug: /instruments-wiki/digital-attenuator/weinschel/weinschel-8320
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201188/Instruments/Digital%20Attenuator/Weinschel-8320/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ Spectrum Control's Weinschel brand Model 8320 Series Multi-channel Programmable 
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692118770/Instruments/Digital%20Attenuator/Weinschel-8320/Weinschel-8320.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201188/Instruments/Digital%20Attenuator/Weinschel-8320/file.png" style={{ width: "325px" }} />
 
 </div>
 
-Spectrum Control's Weinschel brand Model 8320 Series Multi-channel Programmable Attenuator systems allow for multiple attenuator channels to be controlled across a variety of interfaces, or via a front panel.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692125952/Instruments/Vendor%20Logos/Weinschel.png" style={{ width: "100%", objectFit: "cover" }} />

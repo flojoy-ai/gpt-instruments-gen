@@ -1,3 +1,10 @@
+---
+title: Keysight E3631A
+description: E3631A 80W Triple Output Power Supply, 6V, 5A & ±25V, 1A
+keywords: [power supplies, HP, Instrumentkit]
+slug: /instruments-wiki/power-supplies/hp/keysight-e3631a
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692106905/Instruments/Power%20Supplies/Keysight-E3631A/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ E3631A 80W Triple Output Power Supply, 6V, 5A & ±25V, 1A
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692077919/Instruments/Power%20Supplies/Keysight-E3631A/Keysight-E3631A.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692106905/Instruments/Power%20Supplies/Keysight-E3631A/file.png" style={{ width: "325px" }} />
 
 </div>
 
-E3631A 80W Triple Output Power Supply, 6V, 5A & ±25V, 1A>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125999/Instruments/Vendor%20Logos/HP.png" style={{ width: "100%", height: "150px",objectFit: "cover" }} />

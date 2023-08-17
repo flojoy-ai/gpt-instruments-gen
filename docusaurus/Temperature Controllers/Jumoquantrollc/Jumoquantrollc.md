@@ -1,3 +1,10 @@
+---
+title: Jumoquantrollc
+description: Control Of The Jumo Quantrol Lc100/Lc200/Lc300, Universal Pid Controller
+keywords: [temperature controllers, Jumo, Pytango]
+slug: /instruments-wiki/temperature-controllers/jumo/jumoquantrollc
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201358/Instruments/Temperature%20Controllers/Jumoquantrollc/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ Control Of The Jumo Quantrol Lc100/Lc200/Lc300, Universal Pid Controller
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692120125/Instruments/Temperature%20Controllers/Jumoquantrollc/Jumoquantrollc.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201358/Instruments/Temperature%20Controllers/Jumoquantrollc/file.png" style={{ width: "325px" }} />
 
 </div>
 
-Control Of The Jumo Quantrol Lc100/Lc200/Lc300, Universal Pid Controller>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692126003/Instruments/Vendor%20Logos/Jumo.png" style={{ width: "100%", objectFit: "cover" }} />

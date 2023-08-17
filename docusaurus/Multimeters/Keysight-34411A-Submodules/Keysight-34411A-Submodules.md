@@ -1,3 +1,10 @@
+---
+title: Keysight 34411A Submodules
+description: The 34411A offers Temperature and Capacitance capabilities, in addition to those measurements you have come to expect, such as DCV, ACV, DCI, ACI, 2-wire and 4-wire Resistance, Frequency, Period, Continuity and Diode Test.
+keywords: [multimeters, Keysight, Qcodes]
+slug: /instruments-wiki/multimeters/keysight/keysight-34411a-submodules
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201077/Instruments/Multimeters/Keysight-34411A-Submodules/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ The 34411A offers Temperature and Capacitance capabilities, in addition to those
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692118660/Instruments/Multimeters/Keysight-34411A-Submodules/Keysight-34411A-Submodules.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201077/Instruments/Multimeters/Keysight-34411A-Submodules/file.png" style={{ width: "325px" }} />
 
 </div>
 
-The 34411A offers Temperature and Capacitance capabilities, in addition to those measurements you have come to expect, such as DCV, ACV, DCI, ACI, 2-wire and 4-wire Resistance, Frequency, Period, Continuity and Diode Test.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125973/Instruments/Vendor%20Logos/Keysight.png" style={{ width: "100%", height: "150px",objectFit: "cover" }} />

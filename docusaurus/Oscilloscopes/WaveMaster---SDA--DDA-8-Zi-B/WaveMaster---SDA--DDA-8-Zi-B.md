@@ -1,8 +1,15 @@
+---
+title: WaveMaster - SDA -DDA 8 Zi-B
+description: The WaveMaster 8 Zi-B combines the performance, signal fidelity and feature set needed for today’s high-speed measurements with the ease of use of a standard benchtop oscilloscope. Featuring the highest-speed serial data triggers, the only complete multi-lane serial data analysis and eye diagram solution, and the most comprehensive set of compliance packages, the WaveMaster 8 Zi-B simplifies the most complex testing.
+keywords: [oscilloscopes, Teledyne, Instrumentkit]
+slug: /instruments-wiki/oscilloscopes/teledyne/wavemaster---sda--dda-8-zi-b
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692107089/Instruments/Oscilloscopes/WaveMaster---SDA--DDA-8-Zi-B/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# WaveMaster / SDA /DDA 8 Zi-B
+# WaveMaster - SDA -DDA 8 Zi-B
 
 ## Instrument Card
 
@@ -14,13 +21,11 @@ The WaveMaster 8 Zi-B combines the performance, signal fidelity and feature set 
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692078131/Instruments/Oscilloscopes/WaveMaster---SDA--DDA-8-Zi-B/WaveMaster---SDA--DDA-8-Zi-B.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692107089/Instruments/Oscilloscopes/WaveMaster---SDA--DDA-8-Zi-B/file.png" style={{ width: "325px" }} />
 
 </div>
 
-The WaveMaster 8 Zi-B combines the performance, signal fidelity and feature set needed for today’s high-speed measurements with the ease of use of a standard benchtop oscilloscope. Featuring the highest-speed serial data triggers, the only complete multi-lane serial data analysis and eye diagram solution, and the most comprehensive set of compliance packages, the WaveMaster 8 Zi-B simplifies the most complex testing.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692125958/Instruments/Vendor%20Logos/Teledyne.png" style={{ width: "100%", objectFit: "cover" }} />
@@ -33,7 +38,7 @@ Teledyne LeCroy is an American manufacturer of oscilloscopes, protocol analyzers
 </ul>
 </details>
 
-## Connect to the WaveMaster / SDA /DDA 8 Zi-B in Python
+## Connect to the WaveMaster - SDA -DDA 8 Zi-B in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
 

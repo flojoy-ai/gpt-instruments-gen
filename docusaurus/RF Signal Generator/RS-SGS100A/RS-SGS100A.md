@@ -1,3 +1,10 @@
+---
+title: R&S SGS100A
+description: The R&S®SGS100A is an RF source designed to meet the requirements of automated test systems. It is available as a CW source or as a vector signal generator with an integrated I/Q modulator. With its frequency range of up to 12.75 GHz, the vector signal generation version covers the essential digital signals. The CW version can be used as a flexible local oscillator and for interference testing against mobile radio standards.
+keywords: [rf signal generator, Rohde Schwarz, Qcodes]
+slug: /instruments-wiki/rf-signal-generator/rohde schwarz/r&s-sgs100a
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201263/Instruments/RF%20Signal%20Generator/RS-SGS100A/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ The R&S®SGS100A is an RF source designed to meet the requirements of automated 
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692119477/Instruments/RF%20Signal%20Generator/RS-SGS100A/RS-SGS100A.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201263/Instruments/RF%20Signal%20Generator/RS-SGS100A/file.png" style={{ width: "325px" }} />
 
 </div>
 
-The R&S®SGS100A is an RF source designed to meet the requirements of automated test systems. It is available as a CW source or as a vector signal generator with an integrated I/Q modulator. With its frequency range of up to 12.75 GHz, the vector signal generation version covers the essential digital signals. The CW version can be used as a flexible local oscillator and for interference testing against mobile radio standards.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692139604/Instruments/Vendor%20Logos/RohdeSchwarz.png" style={{ width: "100%", objectFit: "cover" }} />

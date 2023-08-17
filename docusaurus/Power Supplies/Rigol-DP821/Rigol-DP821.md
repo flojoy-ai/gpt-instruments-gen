@@ -1,3 +1,10 @@
+---
+title: Rigol DP821
+description: The Rigol DP821 is a dual channel, remote sense programmable DC Power Supply. It has excellent performance, including various analysis functions and has USB Host and Device with LXI option. All of this makes it suitable to meet a wide range of testing requirements.
+keywords: [power supplies, Rigol, Qcodes]
+slug: /instruments-wiki/power-supplies/rigol/rigol-dp821
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201100/Instruments/Power%20Supplies/Rigol-DP821/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ The Rigol DP821 is a dual channel, remote sense programmable DC Power Supply. It
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692118683/Instruments/Power%20Supplies/Rigol-DP821/Rigol-DP821.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201100/Instruments/Power%20Supplies/Rigol-DP821/file.png" style={{ width: "325px" }} />
 
 </div>
 
-The Rigol DP821 is a dual channel, remote sense programmable DC Power Supply. It has excellent performance, including various analysis functions and has USB Host and Device with LXI option. All of this makes it suitable to meet a wide range of testing requirements.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125991/Instruments/Vendor%20Logos/Rigol.png" style={{ width: "100%", height: "150px",objectFit: "cover" }} />

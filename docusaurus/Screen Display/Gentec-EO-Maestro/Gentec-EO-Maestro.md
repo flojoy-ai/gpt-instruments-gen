@@ -1,3 +1,10 @@
+---
+title: Gentec EO Maestro
+description: Touchscreen display device for power & energy measurement. Single-channel, multiple outputs (USB, Ethernet, analog).
+keywords: [screen display, Gentec Eo, Qcodes Community]
+slug: /instruments-wiki/screen-display/gentec eo/gentec-EO-maestro
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692106859/Instruments/Screen%20Display/Gentec-EO-Maestro/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ Touchscreen display device for power & energy measurement. Single-channel, multi
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692077868/Instruments/Screen%20Display/Gentec-EO-Maestro/Gentec-EO-Maestro.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692106859/Instruments/Screen%20Display/Gentec-EO-Maestro/file.png" style={{ width: "325px" }} />
 
 </div>
 
-Touchscreen display device for power & energy measurement. Single-channel, multiple outputs (USB, Ethernet, analog).>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692125988/Instruments/Vendor%20Logos/Gentec_Eo.png" style={{ width: "100%", height: "150px",objectFit: "cover" }} />

@@ -1,3 +1,10 @@
+---
+title: M5180 2-Port 18 GHz Analyzer
+description: The M5180 is a 2-port, 18 GHz Vector Network Analyzer that delivers metrology-grade performance in a more economical package that excludes a number of advanced features
+keywords: [network analyzer, Coppermountain, Qcodes Community]
+slug: /instruments-wiki/network-analyzer/coppermountain/m5180-2-port-18-ghz-analyzer
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692106849/Instruments/Network%20Analyzer/M5180-2-Port-18-GHz-Analyzer/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ The M5180 is a 2-port, 18 GHz Vector Network Analyzer that delivers metrology-gr
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692077857/Instruments/Network%20Analyzer/M5180-2-Port-18-GHz-Analyzer/M5180-2-Port-18-GHz-Analyzer.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692106849/Instruments/Network%20Analyzer/M5180-2-Port-18-GHz-Analyzer/file.png" style={{ width: "325px" }} />
 
 </div>
 
-The M5180 is a 2-port, 18 GHz Vector Network Analyzer that delivers metrology-grade performance in a more economical package that excludes a number of advanced features>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125964/Instruments/Vendor%20Logos/Coppermountain.png" style={{ width: "100%", objectFit: "cover" }} />

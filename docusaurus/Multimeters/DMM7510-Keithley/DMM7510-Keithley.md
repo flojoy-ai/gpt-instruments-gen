@@ -1,3 +1,10 @@
+---
+title: DMM7510 Keithley 
+description: The DMM7510 7.5 digit multimeter combines a precision, high-resolution digital multimeter (DMM), graphical touchscreen display, and high-speed, high-resolution digitizer to create the first graphical sampling multimeter. With pA-level sensitivity and 1Msample/s sampling, it accurately measures ultra-low sleep mode currents and transmit drain currents from wireless devices.
+keywords: [multimeters, Keithley, Qcodes]
+slug: /instruments-wiki/multimeters/keithley/dmm7510-keithley
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200762/Instruments/Multimeters/DMM7510-Keithley/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ The DMM7510 7.5 digit multimeter combines a precision, high-resolution digital m
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692118352/Instruments/Multimeters/DMM7510-Keithley/DMM7510-Keithley.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200762/Instruments/Multimeters/DMM7510-Keithley/file.png" style={{ width: "325px" }} />
 
 </div>
 
-The DMM7510 7.5 digit multimeter combines a precision, high-resolution digital multimeter (DMM), graphical touchscreen display, and high-speed, high-resolution digitizer to create the first graphical sampling multimeter. With pA-level sensitivity and 1Msample/s sampling, it accurately measures ultra-low sleep mode currents and transmit drain currents from wireless devices.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692126010/Instruments/Vendor%20Logos/Keithley.png" style={{ width: "100%", objectFit: "cover" }} />

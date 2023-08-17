@@ -1,3 +1,10 @@
+---
+title: TDS510A
+description: The TDS510A Digital Oscilloscope is a full-featured, cost-effective, versatile oscilloscope which meets the measurement requirements for general-purpose research and design. Its industry-preferred graphical user interface makes it easy to learn and efficient to use. The TDS510A advanced trigger capability allows the user to trigger and view signals in a wide variety of simple as well as complex design and analysis settings. With four channels, 50 K points per channel record length, and powerful waveform acquisition modes, the TDS510A can satisfy most complex design, debug, and analysis requirements.
+keywords: [oscilloscopes, Tektronix, Instrumentkit]
+slug: /instruments-wiki/oscilloscopes/tektronix/tds510a
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200970/Instruments/Oscilloscopes/TDS510A/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ The TDS510A Digital Oscilloscope is a full-featured, cost-effective, versatile o
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692118553/Instruments/Oscilloscopes/TDS510A/TDS510A.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200970/Instruments/Oscilloscopes/TDS510A/file.png" style={{ width: "325px" }} />
 
 </div>
 
-The TDS510A Digital Oscilloscope is a full-featured, cost-effective, versatile oscilloscope which meets the measurement requirements for general-purpose research and design. Its industry-preferred graphical user interface makes it easy to learn and efficient to use. The TDS510A advanced trigger capability allows the user to trigger and view signals in a wide variety of simple as well as complex design and analysis settings. With four channels, 50 K points per channel record length, and powerful waveform acquisition modes, the TDS510A can satisfy most complex design, debug, and analysis requirements.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125954/Instruments/Vendor%20Logos/Tektronix.png" style={{ width: "100%", objectFit: "cover" }} />

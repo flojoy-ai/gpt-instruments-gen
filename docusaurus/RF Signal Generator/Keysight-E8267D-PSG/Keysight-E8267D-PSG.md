@@ -1,3 +1,10 @@
+---
+title: Keysight E8267D PSG
+description: The E8267D PSG Vector Signal Generator is the highest performance, fully-integrated microwave vector signal generator from 100 kHz to 44 GHz, allowing you to create realistic wideband radar, electronic warfare (EW), and satellite communications (SATCOM) waveforms.
+keywords: [rf signal generator, Keysight, Qcodes Community]
+slug: /instruments-wiki/rf-signal-generator/keysight/keysight-e8267d-psg
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692106951/Instruments/RF%20Signal%20Generator/Keysight-E8267D-PSG/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ The E8267D PSG Vector Signal Generator is the highest performance, fully-integra
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692077971/Instruments/RF%20Signal%20Generator/Keysight-E8267D-PSG/Keysight-E8267D-PSG.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692106951/Instruments/RF%20Signal%20Generator/Keysight-E8267D-PSG/file.png" style={{ width: "325px" }} />
 
 </div>
 
-The E8267D PSG Vector Signal Generator is the highest performance, fully-integrated microwave vector signal generator from 100 kHz to 44 GHz, allowing you to create realistic wideband radar, electronic warfare (EW), and satellite communications (SATCOM) waveforms.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125973/Instruments/Vendor%20Logos/Keysight.png" style={{ width: "100%", height: "150px",objectFit: "cover" }} />

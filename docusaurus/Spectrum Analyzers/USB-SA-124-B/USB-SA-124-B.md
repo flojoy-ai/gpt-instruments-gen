@@ -1,3 +1,10 @@
+---
+title: USB SA 124 B
+description: The Signal Hound USB-SA44B is a Software Defined Receiver (SDR) optimized as a narrow-band real-time RF spectrum analyzer. It is a compact, simple to use, effective troubleshooting tool for the general lab user, engineering students, and ham radio enthusiast.
+keywords: [spectrum analyzers, Signal Hound, Qcodes]
+slug: /instruments-wiki/spectrum-analyzers/signal hound/usb-sa-124-b
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201369/Instruments/Spectrum%20Analyzers/USB-SA-124-B/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ The Signal Hound USB-SA44B is a Software Defined Receiver (SDR) optimized as a n
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692120134/Instruments/Spectrum%20Analyzers/USB-SA-124-B/USB-SA-124-B.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201369/Instruments/Spectrum%20Analyzers/USB-SA-124-B/file.png" style={{ width: "325px" }} />
 
 </div>
 
-The Signal Hound USB-SA44B is a Software Defined Receiver (SDR) optimized as a narrow-band real-time RF spectrum analyzer. It is a compact, simple to use, effective troubleshooting tool for the general lab user, engineering students, and ham radio enthusiast.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692126008/Instruments/Vendor%20Logos/Signalhound.png" style={{ width: "100%", objectFit: "cover" }} />

@@ -1,3 +1,10 @@
+---
+title: Keysight 33511B
+description: The 33511B waveform generator provides Keysight's exclusive Trueform technology which offers unmatched capabilities for generating a full range of signals for your most demanding measurements.
+keywords: [rf signal generator, Keysight, Qcodes]
+slug: /instruments-wiki/rf-signal-generator/keysight/keysight-33511b
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692193072/Instruments/RF%20Signal%20Generator/Keysight-33511B/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ The 33511B waveform generator provides Keysight's exclusive Trueform technology 
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692118307/Instruments/RF%20Signal%20Generator/Keysight-33511B/Keysight-33511B.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692193072/Instruments/RF%20Signal%20Generator/Keysight-33511B/file.png" style={{ width: "325px" }} />
 
 </div>
 
-The 33511B waveform generator provides Keysight's exclusive Trueform technology which offers unmatched capabilities for generating a full range of signals for your most demanding measurements.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125973/Instruments/Vendor%20Logos/Keysight.png" style={{ width: "100%", height: "150px",objectFit: "cover" }} />

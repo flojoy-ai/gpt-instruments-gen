@@ -1,3 +1,10 @@
+---
+title: LDA-602EH
+description: The LDA-602EH Lab Brick USB programmable 50 Ohm high resolution digital attenuator has an input power of up to +28 dBm, and offers frequency coverage of 200 to 6,000 MHz. It has an attenuation range of 120 dB and a step size of 0.1 dB. The unit is powered and controlled by USB connection to a PC or self-powered hub, and is programmable for fixed attenuation or swept attenuation ramps directly from the included graphical user interface (GUI) software.
+keywords: [digital attenuator, Vaunix, Qcodes Community]
+slug: /instruments-wiki/digital-attenuator/vaunix/lda-602eh
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/v1692106961/Instruments/Digital%20Attenuator/LDA-602EH/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ The LDA-602EH Lab Brick USB programmable 50 Ohm high resolution digital attenuat
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692077983/Instruments/Digital%20Attenuator/LDA-602EH/LDA-602EH.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692106961/Instruments/Digital%20Attenuator/LDA-602EH/file.png" style={{ width: "325px" }} />
 
 </div>
 
-The LDA-602EH Lab Brick USB programmable 50 Ohm high resolution digital attenuator has an input power of up to +28 dBm, and offers frequency coverage of 200 to 6,000 MHz. It has an attenuation range of 120 dB and a step size of 0.1 dB. The unit is powered and controlled by USB connection to a PC or self-powered hub, and is programmable for fixed attenuation or swept attenuation ramps directly from the included graphical user interface (GUI) software.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125985/Instruments/Vendor%20Logos/Vaunix.png" style={{ width: "100%", objectFit: "cover" }} />

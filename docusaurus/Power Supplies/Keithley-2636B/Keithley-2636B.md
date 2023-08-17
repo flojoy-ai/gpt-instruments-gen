@@ -1,3 +1,10 @@
+---
+title: Keithley 2636B
+description: The 2636B from Keithley is a 2600B series dual channel system SourceMeter® (SMU) instrument (0.1fA, 10A pulse). It is an industry’s leading current/voltage source and measure solutions. This dual channel model combines the capabilities of a precision power supply, true current source, 6 1/2 digit DMM, arbitrary waveform generator, pulse generator and electronic load all into one tightly integrated instrument. The result is a powerful solution that significantly boosts productivity in applications ranging from bench-top I-V characterization through highly automated production test. It has 100mV to 40V voltage, 100nA to 10A current measurement range (source). This is tightly integrated, 4-quadrant voltage/current source and measure instrument which offers best in class performance with 6 1/2digit resolution. Built-in web browser based software enables remote control through any browser, on any computer, from anywhere in the world.
+keywords: [power supplies, Keithley, Qcodes]
+slug: /instruments-wiki/power-supplies/keithley/keithley-2636b
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201224/Instruments/Power%20Supplies/Keithley-2636B/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ The 2636B from Keithley is a 2600B series dual channel system SourceMeter® (SMU
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692118804/Instruments/Power%20Supplies/Keithley-2636B/Keithley-2636B.png" style={{ width: "325px", height: "200px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201224/Instruments/Power%20Supplies/Keithley-2636B/file.png" style={{ width: "325px", height: "200px" }} />
 
 </div>
 
-The 2636B from Keithley is a 2600B series dual channel system SourceMeter® (SMU) instrument (0.1fA, 10A pulse). It is an industry’s leading current/voltage source and measure solutions. This dual channel model combines the capabilities of a precision power supply, true current source, 6 1/2 digit DMM, arbitrary waveform generator, pulse generator and electronic load all into one tightly integrated instrument. The result is a powerful solution that significantly boosts productivity in applications ranging from bench-top I-V characterization through highly automated production test. It has 100mV to 40V voltage, 100nA to 10A current measurement range (source). This is tightly integrated, 4-quadrant voltage/current source and measure instrument which offers best in class performance with 6 1/2digit resolution. Built-in web browser based software enables remote control through any browser, on any computer, from anywhere in the world.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692126010/Instruments/Vendor%20Logos/Keithley.png" style={{ width: "100%", objectFit: "cover" }} />

@@ -1,3 +1,10 @@
+---
+title: Keysight 86100A
+description: Keysight 86100AInfiniium DCA Wide-Bandwidth Oscilloscope / up to 50 GHz
+keywords: [oscilloscopes, Agilent, Instrumental]
+slug: /instruments-wiki/oscilloscopes/agilent/keysight-86100a
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692232011/Instruments/Oscilloscopes/Keysight-86100A/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -15,14 +22,11 @@ Infiniium DCA Wide-Bandwidth Oscilloscope / up to 50 GHz
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692144237/Instruments/Oscilloscopes/Keysight-86100A/Keysight-86100A.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692232011/Instruments/Oscilloscopes/Keysight-86100A/file.png" style={{ width: "325px" }} />
 
 </div>
 
-Keysight 86100A
-Infiniium DCA Wide-Bandwidth Oscilloscope / up to 50 GHz>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692126006/Instruments/Vendor%20Logos/Agilent.png" style={{ width: "100%", height: "150px",objectFit: "cover" }} />

@@ -1,3 +1,10 @@
+---
+title: Keysight 8753D
+description: 8753D Network Analyzer, 30 kHz to 3 GHz
+keywords: [network analyzer, HP, Qcodes]
+slug: /instruments-wiki/network-analyzer/hp/keysight-8753d
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200818/Instruments/Network%20Analyzer/Keysight-8753D/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ import TabItem from '@theme/TabItem';
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692118407/Instruments/Network%20Analyzer/Keysight-8753D/Keysight-8753D.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200818/Instruments/Network%20Analyzer/Keysight-8753D/file.png" style={{ width: "325px" }} />
 
 </div>
 
-8753D Network Analyzer, 30 kHz to 3 GHz>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125999/Instruments/Vendor%20Logos/HP.png" style={{ width: "100%", height: "150px",objectFit: "cover" }} />

@@ -1,3 +1,10 @@
+---
+title: Qdac 1
+description: The original and popular QDAC from QDevil is a high-precision low-noise computer-controlled voltage generator designed for DC and low-frequency control of high impedance devices, such as gates in quantum electronics and quantum computer qubits. It also comes in a “high-current” version which can source up to 10 mA, for example for flux biasing of superconducting qubits. In addition to precise and stable voltage output, the QDAC can measure output currents, for example, to detect leaking gates or shorted bonding wires. The QDAC originates from the laboratories of the Center for Quantum Devices at the University of Copenhagen, where it is used for quantum computing research. The QDAC has 24 channels and offers a cost-effective way of getting many high-quality D/A converter channels.
+keywords: [digital analog converter, Qdevil, Qcodes Community]
+slug: /instruments-wiki/digital-analog-converter/qdevil/qdac-1
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692106890/Instruments/Digital-Analog%20Converter/Qdac-1/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ The original and popular QDAC from QDevil is a high-precision low-noise computer
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692079605/Instruments/Digital-Analog%20Converter/Qdac-1/Qdac-1.png" style={{ width: "325px", height: "200px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692106890/Instruments/Digital-Analog%20Converter/Qdac-1/file.png" style={{ width: "325px", height: "200px" }} />
 
 </div>
 
-The original and popular QDAC from QDevil is a high-precision low-noise computer-controlled voltage generator designed for DC and low-frequency control of high impedance devices, such as gates in quantum electronics and quantum computer qubits. It also comes in a “high-current” version which can source up to 10 mA, for example for flux biasing of superconducting qubits. In addition to precise and stable voltage output, the QDAC can measure output currents, for example, to detect leaking gates or shorted bonding wires. The QDAC originates from the laboratories of the Center for Quantum Devices at the University of Copenhagen, where it is used for quantum computing research. The QDAC has 24 channels and offers a cost-effective way of getting many high-quality D/A converter channels.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125970/Instruments/Vendor%20Logos/QDevils.png" style={{ width: "100%", objectFit: "cover" }} />

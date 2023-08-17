@@ -1,3 +1,10 @@
+---
+title: Attocube ECC 100
+description: The ECC100 is a state-ofthe-art motion controller, allowing the simultaneous operation of up to three positioners from attocube’s industrial ECS Drive series.
+keywords: [motion, Attocube, Instrumental]
+slug: /instruments-wiki/motion/attocube/attocube-ecc-100
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200963/Instruments/Motion/Attocube-ECC-100/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ The ECC100 is a state-ofthe-art motion controller, allowing the simultaneous ope
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692118547/Instruments/Motion/Attocube-ECC-100/Attocube-ECC-100.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200963/Instruments/Motion/Attocube-ECC-100/file.png" style={{ width: "325px" }} />
 
 </div>
 
-The ECC100 is a state-ofthe-art motion controller, allowing the simultaneous operation of up to three positioners from attocube’s industrial ECS Drive series.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692125972/Instruments/Vendor%20Logos/Attocube.png" style={{ width: "100%", objectFit: "cover" }} />

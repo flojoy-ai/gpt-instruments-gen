@@ -1,3 +1,10 @@
+---
+title: Lakeshore Model 335
+description: The Model 335 supports the industry's most advanced line of cryogenic temperature sensors as manufactured by Lake Shore, including diodes, resistance temperature detectors (RTDs), and thermocouples. The controller's zone tuning feature allows you to measure and control temperatures seamlessly from 300 mK to over 1,500 K. This feature automatically switches temperature sensor inputs when your temperature range goes beyond the usable range of a given sensor.
+keywords: [temperature controllers, Lakeshore, Qcodes]
+slug: /instruments-wiki/temperature-controllers/lakeshore/lakeshore-model-335
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692106798/Instruments/Temperature%20Controllers/Lakeshore-Model-335/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ The Model 335 supports the industry's most advanced line of cryogenic temperatur
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692077800/Instruments/Temperature%20Controllers/Lakeshore-Model-335/Lakeshore-Model-335.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692106798/Instruments/Temperature%20Controllers/Lakeshore-Model-335/file.png" style={{ width: "325px" }} />
 
 </div>
 
-The Model 335 supports the industry's most advanced line of cryogenic temperature sensors as manufactured by Lake Shore, including diodes, resistance temperature detectors (RTDs), and thermocouples. The controller's zone tuning feature allows you to measure and control temperatures seamlessly from 300 mK to over 1,500 K. This feature automatically switches temperature sensor inputs when your temperature range goes beyond the usable range of a given sensor.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125966/Instruments/Vendor%20Logos/Lakeshore.png" style={{ width: "100%", objectFit: "cover" }} />

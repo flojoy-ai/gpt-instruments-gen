@@ -1,3 +1,10 @@
+---
+title: WaveRunner 9000
+description: WaveRunner 9000 oscilloscopes have the industry's widest and deepest collection of tools, making it unbelievably powerful and MAUI with OneTouch makes measurement setup insanely easy, providing faster time to insight.
+keywords: [oscilloscopes, Teledyne, Instrumentkit]
+slug: /instruments-wiki/oscilloscopes/teledyne/waverunner-9000
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200897/Instruments/Oscilloscopes/WaveRunner-9000/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ WaveRunner 9000 oscilloscopes have the industry's widest and deepest collection 
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692118481/Instruments/Oscilloscopes/WaveRunner-9000/WaveRunner-9000.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200897/Instruments/Oscilloscopes/WaveRunner-9000/file.png" style={{ width: "325px" }} />
 
 </div>
 
-WaveRunner 9000 oscilloscopes have the industry's widest and deepest collection of tools, making it unbelievably powerful and MAUI with OneTouch makes measurement setup insanely easy, providing faster time to insight.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692125958/Instruments/Vendor%20Logos/Teledyne.png" style={{ width: "100%", objectFit: "cover" }} />

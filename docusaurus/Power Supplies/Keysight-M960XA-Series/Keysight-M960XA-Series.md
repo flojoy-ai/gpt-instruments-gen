@@ -1,3 +1,10 @@
+---
+title: Keysight M960XA-Series
+description: PXI source/measure units are the source and measurement resources of voltage and current for test applications requiring high accuracy, high resolution, and measurement flexibility
+keywords: [power supplies, Keysight, Qcodes]
+slug: /instruments-wiki/power-supplies/keysight/keysight-m960xa-series
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692106825/Instruments/Power%20Supplies/Keysight-M960XA-Series/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ PXI source/measure units are the source and measurement resources of voltage and
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692077831/Instruments/Power%20Supplies/Keysight-M960XA-Series/Keysight-M960XA-Series.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692106825/Instruments/Power%20Supplies/Keysight-M960XA-Series/file.png" style={{ width: "325px" }} />
 
 </div>
 
-PXI source/measure units are the source and measurement resources of voltage and current for test applications requiring high accuracy, high resolution, and measurement flexibility>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125973/Instruments/Vendor%20Logos/Keysight.png" style={{ width: "100%", height: "150px",objectFit: "cover" }} />

@@ -1,3 +1,10 @@
+---
+title: TDS500 Series
+description: Currently no description
+keywords: [oscilloscopes, Tektronix, Instrumentkit]
+slug: /instruments-wiki/oscilloscopes/tektronix/tds500-series
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201348/Instruments/Oscilloscopes/TDS500-Series/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -10,17 +17,15 @@ import TabItem from '@theme/TabItem';
 
 <div>
 
-
-
-</div>
-
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692120116/Instruments/Oscilloscopes/TDS500-Series/TDS500-Series.png" style={{ width: "325px" }} />
+Currently no description
 
 </div>
 
->
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201348/Instruments/Oscilloscopes/TDS500-Series/file.png" style={{ width: "325px" }} />
 
-<details open>
+</div>
+
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125954/Instruments/Vendor%20Logos/Tektronix.png" style={{ width: "100%", objectFit: "cover" }} />

@@ -1,3 +1,10 @@
+---
+title: Keysight P9374A
+description: P9374A Keysight Streamline USB Vector Network Analyzer, 20 GHz. Compact, faceless, USB vector network analyzer (VNA). Affordable full two-port VNA which dramatically reduces your size of test. Up to 20 GHz.
+keywords: [network analyzer, Keysight, Qcodes]
+slug: /instruments-wiki/network-analyzer/keysight/keysight-p9374a
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201102/Instruments/Network%20Analyzer/Keysight-P9374A/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ P9374A Keysight Streamline USB Vector Network Analyzer, 20 GHz. Compact, faceles
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692118686/Instruments/Network%20Analyzer/Keysight-P9374A/Keysight-P9374A.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201102/Instruments/Network%20Analyzer/Keysight-P9374A/file.png" style={{ width: "325px" }} />
 
 </div>
 
-P9374A Keysight Streamline USB Vector Network Analyzer, 20 GHz. Compact, faceless, USB vector network analyzer (VNA). Affordable full two-port VNA which dramatically reduces your size of test. Up to 20 GHz.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125973/Instruments/Vendor%20Logos/Keysight.png" style={{ width: "100%", height: "150px",objectFit: "cover" }} />

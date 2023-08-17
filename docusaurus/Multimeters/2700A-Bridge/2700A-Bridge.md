@@ -1,3 +1,10 @@
+---
+title: 2700A Bridge
+description: The Andeen-Hagerling AH 2700A offers unparalleled stability, resolution, linearity and accuracy in a multi-frequency capacitance/loss bridge. Its numerous state-of-the-art features make it an exceptionally user-friendly instrument, measuring capacitance and loss in medium and high impedance ranges, and thus allows using three-terminal rather than five-terminal connections to the DUT (Device Under Test).The new AH 2700A-E offers substantially improved resolution over the entire operating range, bringing a super-sensitivity that enables it to explore applications in calibration, scientific research, and manufacturing with a new precision.The AH2700A-E is the pinnacle of decades of Andeen-Hagerling experience in bridge design and manufacture, and is complemented by its sister model, the AH2700A-E-C that offers continuous frequency scanning.
+keywords: [multimeters, Andeen Hagerling, Pymeasure]
+slug: /instruments-wiki/multimeters/andeen hagerling/2700a-bridge
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201250/Instruments/Multimeters/2700A-Bridge/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -18,17 +25,11 @@ The AH2700A-E is the pinnacle of decades of Andeen-Hagerling experience in bridg
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692119464/Instruments/Multimeters/2700A-Bridge/2700A-Bridge.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201250/Instruments/Multimeters/2700A-Bridge/file.png" style={{ width: "325px" }} />
 
 </div>
 
-The Andeen-Hagerling AH 2700A offers unparalleled stability, resolution, linearity and accuracy in a multi-frequency capacitance/loss bridge. Its numerous state-of-the-art features make it an exceptionally user-friendly instrument, measuring capacitance and loss in medium and high impedance ranges, and thus allows using three-terminal rather than five-terminal connections to the DUT (Device Under Test).
-
-The new AH 2700A-E offers substantially improved resolution over the entire operating range, bringing a super-sensitivity that enables it to explore applications in calibration, scientific research, and manufacturing with a new precision.
-
-The AH2700A-E is the pinnacle of decades of Andeen-Hagerling experience in bridge design and manufacture, and is complemented by its sister model, the AH2700A-E-C that offers continuous frequency scanning.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692126007/Instruments/Vendor%20Logos/Andeen_Hagerling.png" style={{ width: "100%", objectFit: "cover" }} />

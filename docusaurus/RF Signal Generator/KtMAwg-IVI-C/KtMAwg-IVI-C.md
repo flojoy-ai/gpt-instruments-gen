@@ -1,3 +1,10 @@
+---
+title: KtMAwg IVI-C
+description: Currently no description
+keywords: [rf signal generator, Keysight, Qcodes]
+slug: /instruments-wiki/rf-signal-generator/keysight/ktmawg-ivi-c
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201173/Instruments/RF%20Signal%20Generator/KtMAwg-IVI-C/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -10,17 +17,15 @@ import TabItem from '@theme/TabItem';
 
 <div>
 
-
-
-</div>
-
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692118755/Instruments/RF%20Signal%20Generator/KtMAwg-IVI-C/KtMAwg-IVI-C.png" style={{ width: "325px" }} />
+Currently no description
 
 </div>
 
->
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201173/Instruments/RF%20Signal%20Generator/KtMAwg-IVI-C/file.png" style={{ width: "325px" }} />
 
-<details open>
+</div>
+
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125973/Instruments/Vendor%20Logos/Keysight.png" style={{ width: "100%", height: "150px",objectFit: "cover" }} />

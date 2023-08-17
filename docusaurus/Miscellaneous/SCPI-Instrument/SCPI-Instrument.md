@@ -1,3 +1,10 @@
+---
+title: SCPI Instrument
+description: All SCPI Instrument
+keywords: [miscellaneous, Generic SCPI, Instrumentkit]
+slug: /instruments-wiki/miscellaneous/generic scpi/SCPI-instrument
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692107027/Instruments/Miscellaneous/SCPI-Instrument/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ All SCPI Instrument
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692078057/Instruments/Miscellaneous/SCPI-Instrument/SCPI-Instrument.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692107027/Instruments/Miscellaneous/SCPI-Instrument/file.png" style={{ width: "325px" }} />
 
 </div>
 
-All SCPI Instrument>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692142672/Instruments/Vendor%20Logos/FLOJOY_TEXT.png" style={{ width: "100%", objectFit: "cover" }} />

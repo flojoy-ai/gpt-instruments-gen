@@ -1,3 +1,10 @@
+---
+title: Keithley 2260B
+description: Source a wide range of voltages and currents with the 360W, 720W, or 1080W Series 2260B Programmable DC Power Supplies. The 360W versions can output current of 36A, 13.5A, 4.5A, or 1.44A; the 720W models can output 72A, 27A, 9A, or 2.88A; and the 1080W instruments can output 108A, 40.5A, 13.5A or 4.32A. This wide range of output voltages and current, combined with multiple interface choices, makes the Series 2260B ideal for use in a wide range of applications, including research and design, quality control, and production test.
+keywords: [power supplies, Keithley, Pymeasure]
+slug: /instruments-wiki/power-supplies/keithley/keithley-2260b
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201218/Instruments/Power%20Supplies/Keithley-2260B/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ Source a wide range of voltages and currents with the 360W, 720W, or 1080W Serie
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692118798/Instruments/Power%20Supplies/Keithley-2260B/Keithley-2260B.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201218/Instruments/Power%20Supplies/Keithley-2260B/file.png" style={{ width: "325px" }} />
 
 </div>
 
-Source a wide range of voltages and currents with the 360W, 720W, or 1080W Series 2260B Programmable DC Power Supplies. The 360W versions can output current of 36A, 13.5A, 4.5A, or 1.44A; the 720W models can output 72A, 27A, 9A, or 2.88A; and the 1080W instruments can output 108A, 40.5A, 13.5A or 4.32A. This wide range of output voltages and current, combined with multiple interface choices, makes the Series 2260B ideal for use in a wide range of applications, including research and design, quality control, and production test.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692126010/Instruments/Vendor%20Logos/Keithley.png" style={{ width: "100%", objectFit: "cover" }} />

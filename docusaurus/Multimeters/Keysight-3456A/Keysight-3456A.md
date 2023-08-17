@@ -1,3 +1,10 @@
+---
+title: Keysight 3456A
+description: 3456A 6 1/2 Digit Digital Multimeter
+keywords: [multimeters, HP, Instrumentkit]
+slug: /instruments-wiki/multimeters/hp/keysight-3456a
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201355/Instruments/Multimeters/Keysight-3456A/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ import TabItem from '@theme/TabItem';
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692120122/Instruments/Multimeters/Keysight-3456A/Keysight-3456A.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201355/Instruments/Multimeters/Keysight-3456A/file.png" style={{ width: "325px" }} />
 
 </div>
 
-3456A 6 1/2 Digit Digital Multimeter>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125999/Instruments/Vendor%20Logos/HP.png" style={{ width: "100%", height: "150px",objectFit: "cover" }} />

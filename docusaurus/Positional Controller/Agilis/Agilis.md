@@ -1,3 +1,10 @@
+---
+title: Agilis
+description: Agilis™ Piezo Motion Controllers provide convenient and compact fine positioning control of the Agilis family of piezo motion stages and mounts.
+keywords: [positional controller, Newport, Instrumentkit]
+slug: /instruments-wiki/positional-controller/newport/agilis
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200923/Instruments/Positional%20Controller/Agilis/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ Agilis™ Piezo Motion Controllers provide convenient and compact fine positioni
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692118506/Instruments/Positional%20Controller/Agilis/Agilis.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200923/Instruments/Positional%20Controller/Agilis/file.png" style={{ width: "325px" }} />
 
 </div>
 
-Agilis™ Piezo Motion Controllers provide convenient and compact fine positioning control of the Agilis family of piezo motion stages and mounts.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125992/Instruments/Vendor%20Logos/Newport.png" style={{ width: "100%", height: "150px",objectFit: "cover" }} />

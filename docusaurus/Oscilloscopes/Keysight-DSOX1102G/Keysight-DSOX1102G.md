@@ -1,3 +1,10 @@
+---
+title: Keysight DSOX1102G
+description: The DSOX1102G oscilloscope provides 70, 100 MHz of bandwidth on 2 analog channels, and waveform generator
+keywords: [oscilloscopes, Keysight, Pymeasure]
+slug: /instruments-wiki/oscilloscopes/keysight/keysight-dsox1102g
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200849/Instruments/Oscilloscopes/Keysight-DSOX1102G/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ The DSOX1102G oscilloscope provides 70, 100 MHz of bandwidth on 2 analog channel
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692118436/Instruments/Oscilloscopes/Keysight-DSOX1102G/Keysight-DSOX1102G.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200849/Instruments/Oscilloscopes/Keysight-DSOX1102G/file.png" style={{ width: "325px" }} />
 
 </div>
 
-The DSOX1102G oscilloscope provides 70, 100 MHz of bandwidth on 2 analog channels, and waveform generator>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125973/Instruments/Vendor%20Logos/Keysight.png" style={{ width: "100%", height: "150px",objectFit: "cover" }} />

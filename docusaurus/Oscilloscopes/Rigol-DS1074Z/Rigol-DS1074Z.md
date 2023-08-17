@@ -1,3 +1,10 @@
+---
+title: Rigol DS1074Z
+description: 4 analog channels, Upgradable to 16 digital channels (requires optional RPL1116 logic probe to operate)Built in 2 channel 25MHz waveform generator
+keywords: [oscilloscopes, Rigol, Qcodes]
+slug: /instruments-wiki/oscilloscopes/rigol/rigol-ds1074z
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201196/Instruments/Oscilloscopes/Rigol-DS1074Z/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -15,14 +22,11 @@ Built in 2 channel 25MHz waveform generator
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692118778/Instruments/Oscilloscopes/Rigol-DS1074Z/Rigol-DS1074Z.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201196/Instruments/Oscilloscopes/Rigol-DS1074Z/file.png" style={{ width: "325px" }} />
 
 </div>
 
-4 analog channels, Upgradable to 16 digital channels (requires optional RPL1116 logic probe to operate)
-Built in 2 channel 25MHz waveform generator>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125991/Instruments/Vendor%20Logos/Rigol.png" style={{ width: "100%", height: "150px",objectFit: "cover" }} />

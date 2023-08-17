@@ -1,3 +1,10 @@
+---
+title: F1d	
+description: The F1d module is an IQ demodulator ranging from 40 MHz to 1.4 GHz. It was initially designed for reflectometry and to be used in conjuction with the S5i RF source and the M2j low noise amplifier.
+keywords: [rf signal generator, Qutech, Qcodes Community]
+slug: /instruments-wiki/rf-signal-generator/qutech/f1d
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692106992/Instruments/RF%20Signal%20Generator/F1d/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ The F1d module is an IQ demodulator ranging from 40 MHz to 1.4 GHz. It was initi
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692078018/Instruments/RF%20Signal%20Generator/F1d/F1d.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692106992/Instruments/RF%20Signal%20Generator/F1d/file.png" style={{ width: "325px" }} />
 
 </div>
 
-The F1d module is an IQ demodulator ranging from 40 MHz to 1.4 GHz. It was initially designed for reflectometry and to be used in conjuction with the S5i RF source and the M2j low noise amplifier.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125978/Instruments/Vendor%20Logos/QuTech.png" style={{ width: "100%", height: "150px",objectFit: "cover" }} />

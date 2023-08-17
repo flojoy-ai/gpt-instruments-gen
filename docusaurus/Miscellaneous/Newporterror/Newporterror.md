@@ -1,3 +1,10 @@
+---
+title: Newporterror
+description: Currently no description
+keywords: [miscellaneous, Newport, Instrumentkit]
+slug: /instruments-wiki/miscellaneous/newport/newporterror
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200790/Instruments/Miscellaneous/Newporterror/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -10,17 +17,15 @@ import TabItem from '@theme/TabItem';
 
 <div>
 
-
-
-</div>
-
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692118379/Instruments/Miscellaneous/Newporterror/Newporterror.png" style={{ width: "325px" }} />
+Currently no description
 
 </div>
 
->
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200790/Instruments/Miscellaneous/Newporterror/file.png" style={{ width: "325px" }} />
 
-<details open>
+</div>
+
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125992/Instruments/Vendor%20Logos/Newport.png" style={{ width: "100%", height: "150px",objectFit: "cover" }} />

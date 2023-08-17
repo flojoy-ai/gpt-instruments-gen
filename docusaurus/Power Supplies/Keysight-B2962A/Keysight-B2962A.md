@@ -1,3 +1,10 @@
+---
+title: Keysight B2962A
+description: The Keysight B2962A source / measure unit (SMU) is a 6.5-digit low noise power source that provides a power supply and source solution that meets the difficult measurement challenges researchers, designers, and developers face working on advanced components, circuits, and materials.
+keywords: [power supplies, Keysight, Qcodes]
+slug: /instruments-wiki/power-supplies/keysight/keysight-b2962a
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200917/Instruments/Power%20Supplies/Keysight-B2962A/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ The Keysight B2962A source / measure unit (SMU) is a 6.5-digit low noise power s
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692118501/Instruments/Power%20Supplies/Keysight-B2962A/Keysight-B2962A.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200917/Instruments/Power%20Supplies/Keysight-B2962A/file.png" style={{ width: "325px" }} />
 
 </div>
 
-The Keysight B2962A source / measure unit (SMU) is a 6.5-digit low noise power source that provides a power supply and source solution that meets the difficult measurement challenges researchers, designers, and developers face working on advanced components, circuits, and materials.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125973/Instruments/Vendor%20Logos/Keysight.png" style={{ width: "100%", height: "150px",objectFit: "cover" }} />

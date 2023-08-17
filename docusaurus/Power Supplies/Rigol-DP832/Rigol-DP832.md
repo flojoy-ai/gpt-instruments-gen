@@ -1,3 +1,10 @@
+---
+title: Rigol DP832
+description: 3 Outputs; total power up to 195WLow Ripple Noise <350 uVrms/2mVppFast transient response time-> <50 usChannel isolation-> CH1 || CH2,CH3OVP/OCP/OTP protection functionsBuilt in V, A, W measurements and waveform display
+keywords: [power supplies, Rigol, Qcodes]
+slug: /instruments-wiki/power-supplies/rigol/rigol-dp832
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201276/Instruments/Power%20Supplies/Rigol-DP832/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -19,18 +26,11 @@ Built in V, A, W measurements and waveform display
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692120049/Instruments/Power%20Supplies/Rigol-DP832/Rigol-DP832.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201276/Instruments/Power%20Supplies/Rigol-DP832/file.png" style={{ width: "325px" }} />
 
 </div>
 
-3 Outputs; total power up to 195W
-Low Ripple Noise <350 uVrms/2mVpp
-Fast transient response time: <50 us
-Channel isolation: CH1 || CH2,CH3
-OVP/OCP/OTP protection functions
-Built in V, A, W measurements and waveform display>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125991/Instruments/Vendor%20Logos/Rigol.png" style={{ width: "100%", height: "150px",objectFit: "cover" }} />

@@ -1,3 +1,10 @@
+---
+title: SHFQC
+description: The SHFQC Qubit Controller can control, read out and provide fast feedback on up to 6 superconducting qubits. It integrates the functionality of the SHFQA Quantum Analyzer, the SHFSG Signal Generator and more in a single instrument.
+keywords: [qubit controller, Zurich Instruments, Qcodes]
+slug: /instruments-wiki/qubit-controller/zurich instruments/shfqc
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200760/Instruments/Qubit%20Controller/SHFQC/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ The SHFQC Qubit Controller can control, read out and provide fast feedback on up
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692118350/Instruments/Qubit%20Controller/SHFQC/SHFQC.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200760/Instruments/Qubit%20Controller/SHFQC/file.png" style={{ width: "325px" }} />
 
 </div>
 
-The SHFQC Qubit Controller can control, read out and provide fast feedback on up to 6 superconducting qubits. It integrates the functionality of the SHFQA Quantum Analyzer, the SHFSG Signal Generator and more in a single instrument.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692126012/Instruments/Vendor%20Logos/Zurich_Instruments.png" style={{ width: "100%", objectFit: "cover" }} />

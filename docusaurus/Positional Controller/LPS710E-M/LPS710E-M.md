@@ -1,8 +1,15 @@
+---
+title: LPS710E-M
+description: The LPS710E(/M) Amplified Piezo Stage provides long range, fine focus Z-axis travel for a microscope slide while maintaining a compact, low-profile footprint. It features submicron repeatability, nanometer positioning resolution, low angular error, and fast millisecond response and settling times. When used with the LPSA1(/M) microscope slide holder, the stage is ideal for imaging modalities requiring sensitive sample positioning and sectioning, such as confocal laser scanning microscopy. This stage is not compatible with trans-illumination.
+keywords: [positional controller, Thorlabs, Instrumentkit]
+slug: /instruments-wiki/positional-controller/thorlabs/lps710e-m
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201296/Instruments/Positional%20Controller/LPS710E-M/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# LPS710E/M
+# LPS710E-M
 
 ## Instrument Card
 
@@ -14,13 +21,11 @@ The LPS710E(/M) Amplified Piezo Stage provides long range, fine focus Z-axis tra
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692120067/Instruments/Positional%20Controller/LPS710E-M/LPS710E-M.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201296/Instruments/Positional%20Controller/LPS710E-M/file.png" style={{ width: "325px" }} />
 
 </div>
 
-The LPS710E(/M) Amplified Piezo Stage provides long range, fine focus Z-axis travel for a microscope slide while maintaining a compact, low-profile footprint. It features submicron repeatability, nanometer positioning resolution, low angular error, and fast millisecond response and settling times. When used with the LPSA1(/M) microscope slide holder, the stage is ideal for imaging modalities requiring sensitive sample positioning and sectioning, such as confocal laser scanning microscopy. This stage is not compatible with trans-illumination.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692126009/Instruments/Vendor%20Logos/Thorlabs.png" style={{ width: "100%", objectFit: "cover" }} />
@@ -33,7 +38,7 @@ Thorlabs, Inc. is an American privately held optical equipment company headquart
 </ul>
 </details>
 
-## Connect to the LPS710E/M in Python
+## Connect to the LPS710E-M in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
 

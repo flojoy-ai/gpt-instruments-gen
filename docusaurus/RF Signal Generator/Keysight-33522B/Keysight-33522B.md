@@ -1,3 +1,10 @@
+---
+title: Keysight 33522B
+description: Keysight 33500B Series waveform generators with exclusive Trueform signal generation technology offer more capability, fidelity, and flexibility than previous generation DDS generators. Easily generate the full range of signals you need to your devices with confidence the signal generator is outputting the signals you expect.
+keywords: [rf signal generator, Keysight, Qcodes]
+slug: /instruments-wiki/rf-signal-generator/keysight/keysight-33522b
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201014/Instruments/RF%20Signal%20Generator/Keysight-33522B/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ Keysight 33500B Series waveform generators with exclusive Trueform signal genera
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692118598/Instruments/RF%20Signal%20Generator/Keysight-33522B/Keysight-33522B.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201014/Instruments/RF%20Signal%20Generator/Keysight-33522B/file.png" style={{ width: "325px" }} />
 
 </div>
 
-Keysight 33500B Series waveform generators with exclusive Trueform signal generation technology offer more capability, fidelity, and flexibility than previous generation DDS generators. Easily generate the full range of signals you need to your devices with confidence the signal generator is outputting the signals you expect.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125973/Instruments/Vendor%20Logos/Keysight.png" style={{ width: "100%", height: "150px",objectFit: "cover" }} />

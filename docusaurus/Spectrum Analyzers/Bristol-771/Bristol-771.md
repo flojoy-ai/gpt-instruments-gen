@@ -1,3 +1,10 @@
+---
+title: Bristol 771 
+description: The 771 Series Laser Spectrum Analyzer combines proven Michelson interferometer technology with fast Fourier transform analysis resulting in a unique instrument that operates as both a high-resolution spectrum analyzer and a high-accuracy wavelength meter.
+keywords: [spectrum analyzers, Bristol, Instrumental]
+slug: /instruments-wiki/spectrum-analyzers/bristol/bristol-771
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692107052/Instruments/Spectrum%20Analyzers/Bristol-771/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ The 771 Series Laser Spectrum Analyzer combines proven Michelson interferometer 
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692078088/Instruments/Spectrum%20Analyzers/Bristol-771/Bristol-771.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692107052/Instruments/Spectrum%20Analyzers/Bristol-771/file.png" style={{ width: "325px" }} />
 
 </div>
 
-The 771 Series Laser Spectrum Analyzer combines proven Michelson interferometer technology with fast Fourier transform analysis resulting in a unique instrument that operates as both a high-resolution spectrum analyzer and a high-accuracy wavelength meter.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125996/Instruments/Vendor%20Logos/Bristol_Instruments.png" style={{ width: "100%", objectFit: "cover" }} />

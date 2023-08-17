@@ -1,3 +1,10 @@
+---
+title: Keysight E4408B ESA-L
+description: E4408B ESA-L Basic Spectrum Analyzer, 9 kHz to 26.5 GHz
+keywords: [spectrum analyzers, Agilent, Pymeasure]
+slug: /instruments-wiki/spectrum-analyzers/agilent/keysight-e4408b-esa-l
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200766/Instruments/Spectrum%20Analyzers/Keysight-E4408B-ESA-L/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ E4408B ESA-L Basic Spectrum Analyzer, 9 kHz to 26.5 GHz
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692118356/Instruments/Spectrum%20Analyzers/Keysight-E4408B-ESA-L/Keysight-E4408B-ESA-L.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200766/Instruments/Spectrum%20Analyzers/Keysight-E4408B-ESA-L/file.png" style={{ width: "325px" }} />
 
 </div>
 
-E4408B ESA-L Basic Spectrum Analyzer, 9 kHz to 26.5 GHz>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692126006/Instruments/Vendor%20Logos/Agilent.png" style={{ width: "100%", height: "150px",objectFit: "cover" }} />

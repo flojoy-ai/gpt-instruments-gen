@@ -1,3 +1,10 @@
+---
+title: Orbit 3 Sensor
+description: Orbit 3 is a wireless sensor for ambient temperature and humidity monitoring. Install Orbit 3 at a suitable location, and it will wirelessly transmit temperature and humidity readings continuously. It can be used in precast factories, concrete laboratories, on-site – or wherever ambient climate creates value for you.
+keywords: [humidity sensor, Orbit3, Pytango]
+slug: /instruments-wiki/humidity-sensor/orbit3/orbit-3-sensor
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201055/Instruments/Humidity%20Sensor/Orbit-3-Sensor/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ Orbit 3 is a wireless sensor for ambient temperature and humidity monitoring. In
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692118639/Instruments/Humidity%20Sensor/Orbit-3-Sensor/Orbit-3-Sensor.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201055/Instruments/Humidity%20Sensor/Orbit-3-Sensor/file.png" style={{ width: "325px" }} />
 
 </div>
 
-Orbit 3 is a wireless sensor for ambient temperature and humidity monitoring. Install Orbit 3 at a suitable location, and it will wirelessly transmit temperature and humidity readings continuously. It can be used in precast factories, concrete laboratories, on-site – or wherever ambient climate creates value for you.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692142672/Instruments/Vendor%20Logos/FLOJOY_TEXT.png" style={{ width: "100%", objectFit: "cover" }} />

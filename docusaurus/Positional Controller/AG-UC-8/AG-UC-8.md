@@ -1,3 +1,10 @@
+---
+title: AG UC 8
+description: The AG-UC8 Agilis™ Controller provides USB computer control of up to eight Agilis axes. Power is supplied through the same USB port used for communication. USB hubs may also be used for powering and communication, but must provide the required 5 V supply, e.g. must feature an external power supply. Two holes in the controller allow stacking of several controllers and attachment to optical tables.
+keywords: [positional controller, Newport, Qcodes Community]
+slug: /instruments-wiki/positional-controller/newport/ag-uc-8
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200784/Instruments/Positional%20Controller/AG-UC-8/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ The AG-UC8 Agilis™ Controller provides USB computer control of up to eight Agi
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692118373/Instruments/Positional%20Controller/AG-UC-8/AG-UC-8.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200784/Instruments/Positional%20Controller/AG-UC-8/file.png" style={{ width: "325px" }} />
 
 </div>
 
-The AG-UC8 Agilis™ Controller provides USB computer control of up to eight Agilis axes. Power is supplied through the same USB port used for communication. USB hubs may also be used for powering and communication, but must provide the required 5 V supply, e.g. must feature an external power supply. Two holes in the controller allow stacking of several controllers and attachment to optical tables.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125992/Instruments/Vendor%20Logos/Newport.png" style={{ width: "100%", height: "150px",objectFit: "cover" }} />

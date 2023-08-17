@@ -1,3 +1,10 @@
+---
+title: Keysight 8116A
+description: 8116A 50 MHZ PULSE/FUNCTION GENERATOR
+keywords: [function generators, HP, Pymeasure]
+slug: /instruments-wiki/function-generators/hp/keysight-8116a
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200871/Instruments/Function%20Generators/Keysight-8116A/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ import TabItem from '@theme/TabItem';
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692118458/Instruments/Function%20Generators/Keysight-8116A/Keysight-8116A.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200871/Instruments/Function%20Generators/Keysight-8116A/file.png" style={{ width: "325px" }} />
 
 </div>
 
-8116A 50 MHZ PULSE/FUNCTION GENERATOR>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125999/Instruments/Vendor%20Logos/HP.png" style={{ width: "100%", height: "150px",objectFit: "cover" }} />

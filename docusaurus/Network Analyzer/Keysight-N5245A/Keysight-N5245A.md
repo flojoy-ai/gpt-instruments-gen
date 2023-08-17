@@ -1,3 +1,10 @@
+---
+title: Keysight N5245A
+description: The Keysight N5245A Network Analyzer provides a wide range of measurement applications for amplifiers, converters, antennas, or mixers with a single connection.
+keywords: [network analyzer, Keysight, Qcodes]
+slug: /instruments-wiki/network-analyzer/keysight/keysight-n5245a
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201194/Instruments/Network%20Analyzer/Keysight-N5245A/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ The Keysight N5245A Network Analyzer provides a wide range of measurement applic
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692118776/Instruments/Network%20Analyzer/Keysight-N5245A/Keysight-N5245A.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201194/Instruments/Network%20Analyzer/Keysight-N5245A/file.png" style={{ width: "325px" }} />
 
 </div>
 
-The Keysight N5245A Network Analyzer provides a wide range of measurement applications for amplifiers, converters, antennas, or mixers with a single connection.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125973/Instruments/Vendor%20Logos/Keysight.png" style={{ width: "100%", height: "150px",objectFit: "cover" }} />

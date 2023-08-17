@@ -1,3 +1,10 @@
+---
+title: IVVI
+description: An ohmmeter is an electrical instrument that measures electrical resistance (the opposition offered by a circuit or component to the flow of electric current). Multimeters also function as ohmmeters when in resistance-measuring mode. An ohmmeter applies current to the circuit or component whose resistance is to be measured. It then measures the resulting voltage and calculates the resistance using Ohm’s law	https->//en.wikipedia.org/wiki/Ohmmeter
+keywords: [iv converter, Qutech, Qcodes Community]
+slug: /instruments-wiki/iv-converter/qutech/ivvi
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/v1692201075/Instruments/IV%20Converter/IVVI/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ An ohmmeter is an electrical instrument that measures electrical resistance (the
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692118658/Instruments/IV%20Converter/IVVI/IVVI.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692201075/Instruments/IV%20Converter/IVVI/file.png" style={{ width: "325px" }} />
 
 </div>
 
-An ohmmeter is an electrical instrument that measures electrical resistance (the opposition offered by a circuit or component to the flow of electric current). Multimeters also function as ohmmeters when in resistance-measuring mode. An ohmmeter applies current to the circuit or component whose resistance is to be measured. It then measures the resulting voltage and calculates the resistance using Ohm’s law	https://en.wikipedia.org/wiki/Ohmmeter>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125978/Instruments/Vendor%20Logos/QuTech.png" style={{ width: "100%", height: "150px",objectFit: "cover" }} />

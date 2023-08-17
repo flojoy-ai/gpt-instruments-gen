@@ -1,3 +1,10 @@
+---
+title: Razorbill RP100
+description: The RP100 is a two channel, sink-source power supplydesigned to drive the CS100 series strain cells and the FC100series stress cells. This power supply can be used in conjunctionwith the corresponding range of compatible Razorbill Instrumentsproducts to tune the electronic properties of materials by applyingcontrolled strains and stresses to the material.
+keywords: [power supplies, Razorbill, Pymeasure]
+slug: /instruments-wiki/power-supplies/razorbill/razorbill-rp100
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200885/Instruments/Power%20Supplies/Razorbill-RP100/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -19,18 +26,11 @@ controlled strains and stresses to the material.
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692118469/Instruments/Power%20Supplies/Razorbill-RP100/Razorbill-RP100.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200885/Instruments/Power%20Supplies/Razorbill-RP100/file.png" style={{ width: "325px" }} />
 
 </div>
 
-The RP100 is a two channel, sink-source power supply
-designed to drive the CS100 series strain cells and the FC100
-series stress cells. This power supply can be used in conjunction
-with the corresponding range of compatible Razorbill Instruments
-products to tune the electronic properties of materials by applying
-controlled strains and stresses to the material.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692125964/Instruments/Vendor%20Logos/Razorbill_Instruments.png" style={{ width: "100%", objectFit: "cover" }} />

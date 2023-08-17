@@ -1,3 +1,10 @@
+---
+title: UHFLI
+description: The Zurich Instruments UHFLI is a digital lock-in amplifier that covers the frequency range from DC to 600 MHz. It offers a time constant of 30 ns for demodulation – resulting in a demodulation bandwidth that exceeds 5 MHz.
+keywords: [lockin amplifiers, Zurich Instruments, Qcodes]
+slug: /instruments-wiki/lockin-amplifiers/zurich instruments/uhfli
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201068/Instruments/Lockin%20Amplifiers/UHFLI/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ The Zurich Instruments UHFLI is a digital lock-in amplifier that covers the freq
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692118651/Instruments/Lockin%20Amplifiers/UHFLI/UHFLI.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201068/Instruments/Lockin%20Amplifiers/UHFLI/file.png" style={{ width: "325px" }} />
 
 </div>
 
-The Zurich Instruments UHFLI is a digital lock-in amplifier that covers the frequency range from DC to 600 MHz. It offers a time constant of 30 ns for demodulation – resulting in a demodulation bandwidth that exceeds 5 MHz.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692126012/Instruments/Vendor%20Logos/Zurich_Instruments.png" style={{ width: "100%", objectFit: "cover" }} />

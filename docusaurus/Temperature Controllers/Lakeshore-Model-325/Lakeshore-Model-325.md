@@ -1,3 +1,10 @@
+---
+title: Lakeshore Model 325
+description: The Model 325 dual-channel cryogenic temperature controller is capable of supporting nearly any diode, RTD, or thermocouple temperature sensor. Two independent PID control loops with heater outputs of 25 W and 2 W are configured to drive either a 50 Ω or 25 Ω load for optimal cryocooler control flexibility. Designed with ease of use, functionality, and value in mind, the Model 325 is ideal for general-purpose laboratory and industrial temperature measurement and control applications.
+keywords: [temperature controllers, Lakeshore, Qcodes]
+slug: /instruments-wiki/temperature-controllers/lakeshore/lakeshore-model-325
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692107081/Instruments/Temperature%20Controllers/Lakeshore-Model-325/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ The Model 325 dual-channel cryogenic temperature controller is capable of suppor
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692078121/Instruments/Temperature%20Controllers/Lakeshore-Model-325/Lakeshore-Model-325.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692107081/Instruments/Temperature%20Controllers/Lakeshore-Model-325/file.png" style={{ width: "325px" }} />
 
 </div>
 
-The Model 325 dual-channel cryogenic temperature controller is capable of supporting nearly any diode, RTD, or thermocouple temperature sensor. Two independent PID control loops with heater outputs of 25 W and 2 W are configured to drive either a 50 Ω or 25 Ω load for optimal cryocooler control flexibility. Designed with ease of use, functionality, and value in mind, the Model 325 is ideal for general-purpose laboratory and industrial temperature measurement and control applications.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125966/Instruments/Vendor%20Logos/Lakeshore.png" style={{ width: "100%", objectFit: "cover" }} />

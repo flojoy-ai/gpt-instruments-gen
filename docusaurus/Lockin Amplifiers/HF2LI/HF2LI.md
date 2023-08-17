@@ -1,3 +1,10 @@
+---
+title: HF2LI
+description: The Zurich Instruments HF2LI is a digital lock-in amplifier covering the frequency range between DC and 50 MHz. It is the instrument of choice for the characterization of MEMS devices such as gyroscopes and for measurements in the area of microfluidics.
+keywords: [lockin amplifiers, Zurich Instruments, Qcodes Community]
+slug: /instruments-wiki/lockin-amplifiers/zurich instruments/hf2li
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201107/Instruments/Lockin%20Amplifiers/HF2LI/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ The Zurich Instruments HF2LI is a digital lock-in amplifier covering the frequen
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692118691/Instruments/Lockin%20Amplifiers/HF2LI/HF2LI.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201107/Instruments/Lockin%20Amplifiers/HF2LI/file.png" style={{ width: "325px" }} />
 
 </div>
 
-The Zurich Instruments HF2LI is a digital lock-in amplifier covering the frequency range between DC and 50 MHz. It is the instrument of choice for the characterization of MEMS devices such as gyroscopes and for measurements in the area of microfluidics.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692126012/Instruments/Vendor%20Logos/Zurich_Instruments.png" style={{ width: "100%", objectFit: "cover" }} />

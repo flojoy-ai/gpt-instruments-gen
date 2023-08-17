@@ -1,3 +1,10 @@
+---
+title: Kelvinox IGH
+description: Currently no description
+keywords: [dilution refrigerator, Oxford Instruments, Qcodes Community]
+slug: /instruments-wiki/dilution-refrigerator/oxford instruments/kelvinox-igh
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692107094/Instruments/Dilution%20Refrigerator/Kelvinox-IGH/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -10,17 +17,15 @@ import TabItem from '@theme/TabItem';
 
 <div>
 
-
-
-</div>
-
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692078136/Instruments/Dilution%20Refrigerator/Kelvinox-IGH/Kelvinox-IGH.png" style={{ width: "325px" }} />
+Currently no description
 
 </div>
 
->
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692107094/Instruments/Dilution%20Refrigerator/Kelvinox-IGH/file.png" style={{ width: "325px" }} />
 
-<details open>
+</div>
+
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125988/Instruments/Vendor%20Logos/Oxford_Instruments.png" style={{ width: "100%", objectFit: "cover" }} />

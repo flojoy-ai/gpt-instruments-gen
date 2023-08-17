@@ -1,3 +1,10 @@
+---
+title: Keithley 6220
+description: The Model 6220 DC Current Source and Model 6221 AC and DC Current Source combine ease of use with exceptionally low current noise. Low current sourcing is critical to applications in test environments ranging from R&D to production, especially in the semiconductor, nanotechnology, and superconductor industries. High sourcing accuracy and built-in control functions make the Models 6220 and 6221 ideal for applications like Hall measurements, resistance measurements using delta mode, pulsed measurements, and differential conductance measurements.
+keywords: [power supplies, Keithley, Instrumentkit]
+slug: /instruments-wiki/power-supplies/keithley/keithley-6220
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201183/Instruments/Power%20Supplies/Keithley-6220/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ The Model 6220 DC Current Source and Model 6221 AC and DC Current Source combine
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692118764/Instruments/Power%20Supplies/Keithley-6220/Keithley-6220.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201183/Instruments/Power%20Supplies/Keithley-6220/file.png" style={{ width: "325px" }} />
 
 </div>
 
-The Model 6220 DC Current Source and Model 6221 AC and DC Current Source combine ease of use with exceptionally low current noise. Low current sourcing is critical to applications in test environments ranging from R&D to production, especially in the semiconductor, nanotechnology, and superconductor industries. High sourcing accuracy and built-in control functions make the Models 6220 and 6221 ideal for applications like Hall measurements, resistance measurements using delta mode, pulsed measurements, and differential conductance measurements.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692126010/Instruments/Vendor%20Logos/Keithley.png" style={{ width: "100%", objectFit: "cover" }} />

@@ -1,3 +1,10 @@
+---
+title: Keysight MAwgDef
+description: Currently no description
+keywords: [rf signal generator, Keysight, Qcodes]
+slug: /instruments-wiki/rf-signal-generator/keysight/keysight-mawgdef
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200873/Instruments/RF%20Signal%20Generator/Keysight-MAwgDef/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -10,17 +17,15 @@ import TabItem from '@theme/TabItem';
 
 <div>
 
-
-
-</div>
-
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692118459/Instruments/RF%20Signal%20Generator/Keysight-MAwgDef/Keysight-MAwgDef.png" style={{ width: "325px" }} />
+Currently no description
 
 </div>
 
->
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200873/Instruments/RF%20Signal%20Generator/Keysight-MAwgDef/file.png" style={{ width: "325px" }} />
 
-<details open>
+</div>
+
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125973/Instruments/Vendor%20Logos/Keysight.png" style={{ width: "100%", height: "150px",objectFit: "cover" }} />

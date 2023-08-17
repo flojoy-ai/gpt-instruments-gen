@@ -1,3 +1,10 @@
+---
+title: SCPI multimeter
+description: All SCPI Multimeters
+keywords: [multimeters, Generic SCPI, Instrumentkit]
+slug: /instruments-wiki/multimeters/generic scpi/SCPI-multimeter
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692107011/Instruments/Multimeters/SCPI-multimeter/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ All SCPI Multimeters
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692078041/Instruments/Multimeters/SCPI-multimeter/SCPI-multimeter.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692107011/Instruments/Multimeters/SCPI-multimeter/file.png" style={{ width: "325px" }} />
 
 </div>
 
-All SCPI Multimeters>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692142672/Instruments/Vendor%20Logos/FLOJOY_TEXT.png" style={{ width: "100%", objectFit: "cover" }} />

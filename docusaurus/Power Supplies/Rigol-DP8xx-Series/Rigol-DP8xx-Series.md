@@ -1,3 +1,10 @@
+---
+title: Rigol DP8xx-Series
+description: The DP800 Series Power Supplies combine the ability to source, analyze, and coordinate over time on a powerful platform. The DP800 Series is a family of linear power supplies systems with 1, 2, or 3 outputs and 140 to 200 Watts in total. With one channel isolated users can reconfigure instruments into any number of systems or applications. Built in V, A, and W measurements make power monitoring easy, but additional wave tracking, timing, and analysis features in the advanced "A" models means there are even more ways to use the instruments. Digital triggering between instruments also makes it possible to reliably combine and connect supplies together. Intuitive to use for everything from education labs to the R & D bench, the DP800 family of power supplies provide incredible value for any application. Select the value models for best price performance or upgrade to the "A" model to improve resolution and add advanced monitoring, triggering, and programming capabilities.
+keywords: [power supplies, Rigol, Qcodes]
+slug: /instruments-wiki/power-supplies/rigol/rigol-dp8xx-series
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201342/Instruments/Power%20Supplies/Rigol-DP8xx-Series/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ The DP800 Series Power Supplies combine the ability to source, analyze, and coor
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692120111/Instruments/Power%20Supplies/Rigol-DP8xx-Series/Rigol-DP8xx-Series.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201342/Instruments/Power%20Supplies/Rigol-DP8xx-Series/file.png" style={{ width: "325px" }} />
 
 </div>
 
-The DP800 Series Power Supplies combine the ability to source, analyze, and coordinate over time on a powerful platform. The DP800 Series is a family of linear power supplies systems with 1, 2, or 3 outputs and 140 to 200 Watts in total. With one channel isolated users can reconfigure instruments into any number of systems or applications. Built in V, A, and W measurements make power monitoring easy, but additional wave tracking, timing, and analysis features in the advanced "A" models means there are even more ways to use the instruments. Digital triggering between instruments also makes it possible to reliably combine and connect supplies together. Intuitive to use for everything from education labs to the R & D bench, the DP800 family of power supplies provide incredible value for any application. Select the value models for best price performance or upgrade to the "A" model to improve resolution and add advanced monitoring, triggering, and programming capabilities.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125991/Instruments/Vendor%20Logos/Rigol.png" style={{ width: "100%", height: "150px",objectFit: "cover" }} />

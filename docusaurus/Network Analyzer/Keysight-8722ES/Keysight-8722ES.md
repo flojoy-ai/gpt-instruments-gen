@@ -1,3 +1,10 @@
+---
+title: Keysight 8722ES 
+description: The Agilent 8722ES Vector Network Analyzer (VNA) allows users to test a RF device’s amplitude and phase with one instrument. It works within 50 MHz to 40 GHz and enables the complete characterization of a device or network.
+keywords: [network analyzer, Agilent, Pymeasure]
+slug: /instruments-wiki/network-analyzer/agilent/keysight-8722es
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200848/Instruments/Network%20Analyzer/Keysight-8722ES/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ The Agilent 8722ES Vector Network Analyzer (VNA) allows users to test a RF devic
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692118435/Instruments/Network%20Analyzer/Keysight-8722ES/Keysight-8722ES.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200848/Instruments/Network%20Analyzer/Keysight-8722ES/file.png" style={{ width: "325px" }} />
 
 </div>
 
-The Agilent 8722ES Vector Network Analyzer (VNA) allows users to test a RF device’s amplitude and phase with one instrument. It works within 50 MHz to 40 GHz and enables the complete characterization of a device or network.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692126006/Instruments/Vendor%20Logos/Agilent.png" style={{ width: "100%", height: "150px",objectFit: "cover" }} />

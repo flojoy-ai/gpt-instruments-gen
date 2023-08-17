@@ -1,3 +1,10 @@
+---
+title: RFSG
+description: Currently no description
+keywords: [rf signal generator, National Instruments, Qcodes Community]
+slug: /instruments-wiki/rf-signal-generator/national instruments/rfsg
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692106850/Instruments/RF%20Signal%20Generator/RFSG/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -10,17 +17,15 @@ import TabItem from '@theme/TabItem';
 
 <div>
 
-
-
-</div>
-
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692077858/Instruments/RF%20Signal%20Generator/RFSG/RFSG.png" style={{ width: "325px" }} />
+Currently no description
 
 </div>
 
->
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692106850/Instruments/RF%20Signal%20Generator/RFSG/file.png" style={{ width: "325px" }} />
 
-<details open>
+</div>
+
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125989/Instruments/Vendor%20Logos/National_Instruments.png" style={{ width: "100%", objectFit: "cover" }} />

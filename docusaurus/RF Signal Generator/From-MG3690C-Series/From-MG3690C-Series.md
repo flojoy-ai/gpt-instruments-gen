@@ -1,3 +1,10 @@
+---
+title: From MG3690C Series
+description: The MG3690C series of broadband signal generators covers audio, HF, VHF, UHF, RF and microwave frequencies from 0.1 Hz to 70 GHz in single coaxial output and up to 500 GHz or beyond, with external multipliers
+keywords: [rf signal generator, Anritsu, Pymeasure]
+slug: /instruments-wiki/rf-signal-generator/anritsu/from-mg3690c-series
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201085/Instruments/RF%20Signal%20Generator/From-MG3690C-Series/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ The MG3690C series of broadband signal generators covers audio, HF, VHF, UHF, RF
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692118667/Instruments/RF%20Signal%20Generator/From-MG3690C-Series/From-MG3690C-Series.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201085/Instruments/RF%20Signal%20Generator/From-MG3690C-Series/file.png" style={{ width: "325px" }} />
 
 </div>
 
-The MG3690C series of broadband signal generators covers audio, HF, VHF, UHF, RF and microwave frequencies from 0.1 Hz to 70 GHz in single coaxial output and up to 500 GHz or beyond, with external multipliers>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125977/Instruments/Vendor%20Logos/Anritsu.png" style={{ width: "100%", objectFit: "cover" }} />

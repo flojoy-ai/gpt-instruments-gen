@@ -1,3 +1,10 @@
+---
+title: Keysight 4156C
+description: 4156C Precision Semiconductor Parameter Analyzer
+keywords: [spectrum analyzers, Agilent, Pymeasure]
+slug: /instruments-wiki/spectrum-analyzers/agilent/keysight-4156c
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692106960/Instruments/Spectrum%20Analyzers/Keysight-4156C/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ import TabItem from '@theme/TabItem';
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692077981/Instruments/Spectrum%20Analyzers/Keysight-4156C/Keysight-4156C.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692106960/Instruments/Spectrum%20Analyzers/Keysight-4156C/file.png" style={{ width: "325px" }} />
 
 </div>
 
-4156C Precision Semiconductor Parameter Analyzer>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692126006/Instruments/Vendor%20Logos/Agilent.png" style={{ width: "100%", height: "150px",objectFit: "cover" }} />

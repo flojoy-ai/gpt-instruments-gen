@@ -1,3 +1,10 @@
+---
+title: Keithley 2635B
+description: The 2635B SourceMeter SMU instrument, is a new and improved one-channel SMU instrument with a tightly integrated four-quadrant design that allows it to simultaneously source and measure both voltage and current to boost productivity in applications ranging from R&D to automated production test. The wide range of 1.5A DC, 10A pulse, 200V output and 0.1fA measurement resolution makes it ideal to test a wide range of lower current devices and materials. In addition to retaining all the features of the Model 2635A, the Model 2635B has 6½-digit resolution, USB 2.0 connectivity, and software command emulation of the Model 2400 SourceMeter SMU Instrument to enable easy migration of legacy test code. The Model 2635B is equipped with Keithley's high speed TSP technology (over 190% faster than traditional PC-to-instrument communication techniques,) which dramatically improves the system-level speed to lower the cost of test.
+keywords: [power supplies, Keithley, Qcodes]
+slug: /instruments-wiki/power-supplies/keithley/keithley-2635b
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200821/Instruments/Power%20Supplies/Keithley-2635B/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ The 2635B SourceMeter SMU instrument, is a new and improved one-channel SMU inst
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692118409/Instruments/Power%20Supplies/Keithley-2635B/Keithley-2635B.png" style={{ width: "325px", height: "200px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200821/Instruments/Power%20Supplies/Keithley-2635B/file.png" style={{ width: "325px", height: "200px" }} />
 
 </div>
 
-The 2635B SourceMeter SMU instrument, is a new and improved one-channel SMU instrument with a tightly integrated four-quadrant design that allows it to simultaneously source and measure both voltage and current to boost productivity in applications ranging from R&D to automated production test. The wide range of 1.5A DC, 10A pulse, 200V output and 0.1fA measurement resolution makes it ideal to test a wide range of lower current devices and materials. In addition to retaining all the features of the Model 2635A, the Model 2635B has 6½-digit resolution, USB 2.0 connectivity, and software command emulation of the Model 2400 SourceMeter SMU Instrument to enable easy migration of legacy test code. The Model 2635B is equipped with Keithley's high speed TSP technology (over 190% faster than traditional PC-to-instrument communication techniques,) which dramatically improves the system-level speed to lower the cost of test.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692126010/Instruments/Vendor%20Logos/Keithley.png" style={{ width: "100%", objectFit: "cover" }} />

@@ -1,3 +1,10 @@
+---
+title: MT Standard Interface Communication Software
+description: Instrument class to communicate with Mettler Toledo balances using the MT-SICS Standared Interface Command Set.
+keywords: [miscellaneous, Mettler Toledo, Instrumentkit]
+slug: /instruments-wiki/miscellaneous/mettler toledo/mt-standard-interface-communication-software
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201157/Instruments/Miscellaneous/MT-Standard-Interface-Communication-Software/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ Instrument class to communicate with Mettler Toledo balances using the MT-SICS S
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692118741/Instruments/Miscellaneous/MT-Standard-Interface-Communication-Software/MT-Standard-Interface-Communication-Software.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201157/Instruments/Miscellaneous/MT-Standard-Interface-Communication-Software/file.png" style={{ width: "325px" }} />
 
 </div>
 
-Instrument class to communicate with Mettler Toledo balances using the MT-SICS Standared Interface Command Set.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125974/Instruments/Vendor%20Logos/Mettler_Toledo.png" style={{ width: "100%", height: "150px",objectFit: "cover" }} />

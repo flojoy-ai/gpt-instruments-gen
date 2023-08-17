@@ -1,3 +1,11 @@
+---
+title: Bluefors temperature controller
+
+description: With a modern and intuitive user interface, you gain direct control and overview of the dilution refrigerator system’s temperature status.
+keywords: [temperature controllers, Bluefors, Qcodes Community]
+slug: /instruments-wiki/temperature-controllers/bluefors/bluefors-temperature-controller
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692106857/Instruments/Temperature%20Controllers/Bluefors-temperature-controller/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -15,13 +23,11 @@ With a modern and intuitive user interface, you gain direct control and overview
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692077867/Instruments/Temperature%20Controllers/Bluefors-temperature-controller/Bluefors-temperature-controller.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692106857/Instruments/Temperature%20Controllers/Bluefors-temperature-controller/file.png" style={{ width: "325px" }} />
 
 </div>
 
-With a modern and intuitive user interface, you gain direct control and overview of the dilution refrigerator system’s temperature status.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692126011/Instruments/Vendor%20Logos/Bluefors.png" style={{ width: "100%", objectFit: "cover" }} />

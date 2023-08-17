@@ -1,3 +1,10 @@
+---
+title: Keysight 34401A
+description: The Keysight Technologies, Inc. 34401A multimeter gives you the performance you need for fast, accurate bench and system testing. The 34401A provides a combination of resolution, accuracy and speed that rivals DMMs costing many times more. 6½ digits of resolution
+keywords: [multimeters, Agilent, Qcodes]
+slug: /instruments-wiki/multimeters/agilent/keysight-34401a
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692107067/Instruments/Multimeters/Keysight-34401A/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ The Keysight Technologies, Inc. 34401A multimeter gives you the performance you 
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692078105/Instruments/Multimeters/Keysight-34401A/Keysight-34401A.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692107067/Instruments/Multimeters/Keysight-34401A/file.png" style={{ width: "325px" }} />
 
 </div>
 
-The Keysight Technologies, Inc. 34401A multimeter gives you the performance you need for fast, accurate bench and system testing. The 34401A provides a combination of resolution, accuracy and speed that rivals DMMs costing many times more. 6½ digits of resolution>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692126006/Instruments/Vendor%20Logos/Agilent.png" style={{ width: "100%", height: "150px",objectFit: "cover" }} />

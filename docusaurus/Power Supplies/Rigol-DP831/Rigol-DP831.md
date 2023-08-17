@@ -1,3 +1,10 @@
+---
+title: Rigol DP831
+description: The Rigol DP831 features a relative large (8.9 cm / 3.5") and easy to read TFT monochrome display. In addition to the normal digital displays for voltage, current, and power, these values can also be displayed as signal curves.
+keywords: [power supplies, Rigol, Qcodes]
+slug: /instruments-wiki/power-supplies/rigol/rigol-dp831
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201058/Instruments/Power%20Supplies/Rigol-DP831/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ The Rigol DP831 features a relative large (8.9 cm / 3.5") and easy to read TFT m
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692118643/Instruments/Power%20Supplies/Rigol-DP831/Rigol-DP831.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201058/Instruments/Power%20Supplies/Rigol-DP831/file.png" style={{ width: "325px" }} />
 
 </div>
 
-The Rigol DP831 features a relative large (8.9 cm / 3.5") and easy to read TFT monochrome display. In addition to the normal digital displays for voltage, current, and power, these values can also be displayed as signal curves.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125991/Instruments/Vendor%20Logos/Rigol.png" style={{ width: "100%", height: "150px",objectFit: "cover" }} />

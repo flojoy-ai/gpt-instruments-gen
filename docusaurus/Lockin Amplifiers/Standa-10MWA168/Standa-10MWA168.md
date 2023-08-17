@@ -1,3 +1,10 @@
+---
+title: Standa 10MWA168
+description: Motorized Variable Two Wheels Attenuators 10MWA168 consists of two filter wheels. Each wheel contains eight filter mounts of ØD mm with clear aperture of Ød mm. Each mount is inclined by 4 degrees to prevent mutual reflections between filters. We supply the attenuator 10MWA168-20 with a standard, most popular, set of filters. See the table below. Alternatively, optics could be manufactured to individual orders. Or we could supply the attenuator without filters, which you can fit by yourself. 10MWA168-1 model comes WITHOUT filters. You bring a filter of each wheel into the optical path easily by hand or using automation. A single step motor drives the two wheels. A computer can operate the filter attenuator via a controller. Controllers are sold separately. For fastening, the attenuator has clearance slots for M6 and M4 screws. There are also two M6 holes, and one M4 hole (opposite to one of the M6 holes). Material-> black anodized aluminium.
+keywords: [lockin amplifiers, Standa, Qcodes Community]
+slug: /instruments-wiki/lockin-amplifiers/standa/standa-10mwa168
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201034/Instruments/Lockin%20Amplifiers/Standa-10MWA168/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ Motorized Variable Two Wheels Attenuators 10MWA168 consists of two filter wheels
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692118618/Instruments/Lockin%20Amplifiers/Standa-10MWA168/Standa-10MWA168.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201034/Instruments/Lockin%20Amplifiers/Standa-10MWA168/file.png" style={{ width: "325px" }} />
 
 </div>
 
-Motorized Variable Two Wheels Attenuators 10MWA168 consists of two filter wheels. Each wheel contains eight filter mounts of ØD mm with clear aperture of Ød mm. Each mount is inclined by 4 degrees to prevent mutual reflections between filters. We supply the attenuator 10MWA168-20 with a standard, most popular, set of filters. See the table below. Alternatively, optics could be manufactured to individual orders. Or we could supply the attenuator without filters, which you can fit by yourself. 10MWA168-1 model comes WITHOUT filters. You bring a filter of each wheel into the optical path easily by hand or using automation. A single step motor drives the two wheels. A computer can operate the filter attenuator via a controller. Controllers are sold separately. For fastening, the attenuator has clearance slots for M6 and M4 screws. There are also two M6 holes, and one M4 hole (opposite to one of the M6 holes). Material: black anodized aluminium.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692125984/Instruments/Vendor%20Logos/Standa.png" style={{ width: "100%", objectFit: "cover" }} />

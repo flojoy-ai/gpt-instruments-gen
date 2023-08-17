@@ -1,3 +1,10 @@
+---
+title: Keysight 33120A
+description: 33120A Function / Arbitrary Waveform Generator, 15 MHz
+keywords: [function generators, HP, Pymeasure]
+slug: /instruments-wiki/function-generators/hp/keysight-33120a
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200855/Instruments/Function%20Generators/Keysight-33120A/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ import TabItem from '@theme/TabItem';
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692118442/Instruments/Function%20Generators/Keysight-33120A/Keysight-33120A.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200855/Instruments/Function%20Generators/Keysight-33120A/file.png" style={{ width: "325px" }} />
 
 </div>
 
-33120A Function / Arbitrary Waveform Generator, 15 MHz>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125999/Instruments/Vendor%20Logos/HP.png" style={{ width: "100%", height: "150px",objectFit: "cover" }} />

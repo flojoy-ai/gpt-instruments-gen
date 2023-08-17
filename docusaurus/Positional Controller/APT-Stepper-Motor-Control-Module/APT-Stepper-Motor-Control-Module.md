@@ -1,3 +1,10 @@
+---
+title: APT Stepper Motor Control Module
+description: The APT™ MST602 module is a dual-channel, high-resolution, rack-mounted stepper motor driver designed for use with the APT MMR601 Motion Control 19" Modular Rack System. It has been designed to drive 2-phase bi-polar stepper motors up to 50 W, with or without encoder feedback, and is compatible with the full range of stepper-motor-equipped nanopositioning actuators and stages offered by Thorlabs. Alternatively, it is also compatible with any generic two-phase bi-polar motor of varying powers and varying cardinal step sizes.
+keywords: [positional controller, Thorlabs, Instrumentkit]
+slug: /instruments-wiki/positional-controller/thorlabs/apt-stepper-motor-control-module
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201267/Instruments/Positional%20Controller/APT-Stepper-Motor-Control-Module/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ The APT™ MST602 module is a dual-channel, high-resolution, rack-mounted steppe
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692120040/Instruments/Positional%20Controller/APT-Stepper-Motor-Control-Module/APT-Stepper-Motor-Control-Module.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201267/Instruments/Positional%20Controller/APT-Stepper-Motor-Control-Module/file.png" style={{ width: "325px" }} />
 
 </div>
 
-The APT™ MST602 module is a dual-channel, high-resolution, rack-mounted stepper motor driver designed for use with the APT MMR601 Motion Control 19" Modular Rack System. It has been designed to drive 2-phase bi-polar stepper motors up to 50 W, with or without encoder feedback, and is compatible with the full range of stepper-motor-equipped nanopositioning actuators and stages offered by Thorlabs. Alternatively, it is also compatible with any generic two-phase bi-polar motor of varying powers and varying cardinal step sizes.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692126009/Instruments/Vendor%20Logos/Thorlabs.png" style={{ width: "100%", objectFit: "cover" }} />

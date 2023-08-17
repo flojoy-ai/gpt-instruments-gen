@@ -1,3 +1,10 @@
+---
+title: Keysight E4980A
+description: The E4980A precision LCR meter provides the best combination of accuracy, speed, and versatility for a wide range of component measurements.
+keywords: [multimeters, Keysight, Pymeasure, Qcodes]
+slug: /instruments-wiki/multimeters/keysight/keysight-e4980a
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692106813/Instruments/Multimeters/Keysight-E4980A/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ The E4980A precision LCR meter provides the best combination of accuracy, speed,
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692077816/Instruments/Multimeters/Keysight-E4980A/Keysight-E4980A.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692106813/Instruments/Multimeters/Keysight-E4980A/file.png" style={{ width: "325px" }} />
 
 </div>
 
-The E4980A precision LCR meter provides the best combination of accuracy, speed, and versatility for a wide range of component measurements.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125973/Instruments/Vendor%20Logos/Keysight.png" style={{ width: "100%", height: "150px",objectFit: "cover" }} />

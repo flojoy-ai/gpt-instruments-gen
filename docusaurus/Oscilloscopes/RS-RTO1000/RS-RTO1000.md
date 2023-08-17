@@ -1,3 +1,10 @@
+---
+title: R&S RTO1000
+description: With an acquisition memory of 400 Mpts per channel simultaneously for all four channels, the oscilloscope offers up to 100 times the memory depth of comparable devices as standard.The R&S MXO 4 oscilloscopes offer the world's highest update rate of 4.5 million waveforms per second.
+keywords: [oscilloscopes, Rohde Schwarz, Qcodes]
+slug: /instruments-wiki/oscilloscopes/rohde schwarz/r&s-rto1000
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200774/Instruments/Oscilloscopes/RS-RTO1000/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -16,15 +23,11 @@ The R&S MXO 4 oscilloscopes offer the world's highest update rate of 4.5 million
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692118364/Instruments/Oscilloscopes/RS-RTO1000/RS-RTO1000.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200774/Instruments/Oscilloscopes/RS-RTO1000/file.png" style={{ width: "325px" }} />
 
 </div>
 
-With an acquisition memory of 400 Mpts per channel simultaneously for all four channels, the oscilloscope offers up to 100 times the memory depth of comparable devices as standard.
-
-The R&S MXO 4 oscilloscopes offer the world's highest update rate of 4.5 million waveforms per second.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692139604/Instruments/Vendor%20Logos/RohdeSchwarz.png" style={{ width: "100%", objectFit: "cover" }} />

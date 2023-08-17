@@ -1,3 +1,10 @@
+---
+title: Keysight 34934A
+description: The Keysight 34934A module for the 34980A Multifunction Switch/Measure Unit offers the highest density matrix for connecting paths between your device under test and your test equipment, allowing for multiple instrument connections to multiple points on your device under test at the same time.
+keywords: [daq boards, Keysight, Qcodes]
+slug: /instruments-wiki/daq-boards/keysight/keysight-34934a
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201047/Instruments/DAQ%20boards/Keysight-34934A/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ The Keysight 34934A module for the 34980A Multifunction Switch/Measure Unit offe
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692118632/Instruments/DAQ%20boards/Keysight-34934A/Keysight-34934A.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201047/Instruments/DAQ%20boards/Keysight-34934A/file.png" style={{ width: "325px" }} />
 
 </div>
 
-The Keysight 34934A module for the 34980A Multifunction Switch/Measure Unit offers the highest density matrix for connecting paths between your device under test and your test equipment, allowing for multiple instrument connections to multiple points on your device under test at the same time.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125973/Instruments/Vendor%20Logos/Keysight.png" style={{ width: "100%", height: "150px",objectFit: "cover" }} />

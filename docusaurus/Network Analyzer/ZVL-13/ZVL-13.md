@@ -1,3 +1,10 @@
+---
+title: ZVL 13
+description: The ZVL is a compact, cost-efficient, powerful and portable network analyzer. It is ideal for use in development, production, and service. It is the only instrument to combine the functions of a network analyzer, spectrum analyzer, and power meter in a single box, making you much more efficient.
+keywords: [spectrum analyzers, Rohdeschwarz, Qcodes Community]
+slug: /instruments-wiki/spectrum-analyzers/rohdeschwarz/zvl-13
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200933/Instruments/Spectrum%20Analyzers/ZVL-13/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ The ZVL is a compact, cost-efficient, powerful and portable network analyzer. It
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692118517/Instruments/Spectrum%20Analyzers/ZVL-13/ZVL-13.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200933/Instruments/Spectrum%20Analyzers/ZVL-13/file.png" style={{ width: "325px" }} />
 
 </div>
 
-The ZVL is a compact, cost-efficient, powerful and portable network analyzer. It is ideal for use in development, production, and service. It is the only instrument to combine the functions of a network analyzer, spectrum analyzer, and power meter in a single box, making you much more efficient.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692139604/Instruments/Vendor%20Logos/RohdeSchwarz.png" style={{ width: "100%", objectFit: "cover" }} />

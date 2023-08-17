@@ -1,3 +1,10 @@
+---
+title: Buffer
+description: Currently no description
+keywords: [miscellaneous, Keithley, Pymeasure]
+slug: /instruments-wiki/miscellaneous/keithley/buffer
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200759/Instruments/Miscellaneous/Buffer/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -10,17 +17,15 @@ import TabItem from '@theme/TabItem';
 
 <div>
 
-
-
-</div>
-
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692118349/Instruments/Miscellaneous/Buffer/Buffer.png" style={{ width: "325px" }} />
+Currently no description
 
 </div>
 
->
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200759/Instruments/Miscellaneous/Buffer/file.png" style={{ width: "325px" }} />
 
-<details open>
+</div>
+
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692126010/Instruments/Vendor%20Logos/Keithley.png" style={{ width: "100%", objectFit: "cover" }} />

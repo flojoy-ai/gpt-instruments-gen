@@ -1,3 +1,10 @@
+---
+title: Infiniium oscilloscopes Series
+description: Infiniium series oscilloscopes feature application-specific software that allows you to gain valuable insight into your design. Whether you are solving tough jitter or noise problems, removing loss due to cables or probes, or simply looking at protocol, this series has the software tools to help you realize your best design.
+keywords: [oscilloscopes, Keysight, Qcodes]
+slug: /instruments-wiki/oscilloscopes/keysight/infiniium-oscilloscopes-series
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200890/Instruments/Oscilloscopes/Infiniium-oscilloscopes-Series/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ Infiniium series oscilloscopes feature application-specific software that allows
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692118473/Instruments/Oscilloscopes/Infiniium-oscilloscopes-Series/Infiniium-oscilloscopes-Series.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200890/Instruments/Oscilloscopes/Infiniium-oscilloscopes-Series/file.png" style={{ width: "325px" }} />
 
 </div>
 
-Infiniium series oscilloscopes feature application-specific software that allows you to gain valuable insight into your design. Whether you are solving tough jitter or noise problems, removing loss due to cables or probes, or simply looking at protocol, this series has the software tools to help you realize your best design.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125973/Instruments/Vendor%20Logos/Keysight.png" style={{ width: "100%", height: "150px",objectFit: "cover" }} />

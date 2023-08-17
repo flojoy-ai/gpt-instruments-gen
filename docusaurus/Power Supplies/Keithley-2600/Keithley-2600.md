@@ -1,3 +1,10 @@
+---
+title: Keithley 2600
+description: Series 2600A System SourceMeter instruments are Keithley’s latest I-V source measurement unit(SMU) instruments for use as either bench-top I-V characterization tools or as building block components of multi-channel I-V test systems. For bench-top use, Series 2600A instruments feature anembedded TSP Express Software Tool that allows users to quickly and easily perform common I-Vtests without programming or installing software. For system level applications, the Series 2600A’sTest Script Processor (TSP) architecture, along with other new capabilities such as parallel test execution and precision timing, provides the highest throughput in the industry, lowering the cost of test.To simplify the testing, verification, and analysis of semiconductor components, the optional ACSBasic Edition software is also available.
+keywords: [power supplies, Keithley, Pymeasure, Qcodes]
+slug: /instruments-wiki/power-supplies/keithley/keithley-2600
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692232368/Instruments/Power%20Supplies/Keithley-2600/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -20,19 +27,11 @@ Basic Edition software is also available.
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692144653/Instruments/Power%20Supplies/Keithley-2600/Keithley-2600.png" style={{ width: "325px", height: "200px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692232368/Instruments/Power%20Supplies/Keithley-2600/file.png" style={{ width: "325px", height: "200px" }} />
 
 </div>
 
-Series 2600A System SourceMeter instruments are Keithley’s latest I-V source measurement unit
-(SMU) instruments for use as either bench-top I-V characterization tools or as building block components of multi-channel I-V test systems. For bench-top use, Series 2600A instruments feature an
-embedded TSP Express Software Tool that allows users to quickly and easily perform common I-V
-tests without programming or installing software. For system level applications, the Series 2600A’s
-Test Script Processor (TSP) architecture, along with other new capabilities such as parallel test execution and precision timing, provides the highest throughput in the industry, lowering the cost of test.
-To simplify the testing, verification, and analysis of semiconductor components, the optional ACS
-Basic Edition software is also available.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692126010/Instruments/Vendor%20Logos/Keithley.png" style={{ width: "100%", objectFit: "cover" }} />

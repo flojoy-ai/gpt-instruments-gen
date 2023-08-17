@@ -1,3 +1,10 @@
+---
+title: PCO Pixelfly
+description: The pco.pixelfly™ 1.3 SWIR is a high-performance machine vision camera due to its special InGaAs image sensor which is sensitive in the shortwave infrared, near infrared and visible range of the electromagnetic spectrum.
+keywords: [cameras, PCO, Instrumental]
+slug: /instruments-wiki/cameras/pco/PCO-pixelfly
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692197340/Instruments/Cameras/PCO-Pixelfly/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ The pco.pixelfly™ 1.3 SWIR is a high-performance machine vision camera due to 
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692118324/Instruments/Cameras/PCO-Pixelfly/PCO-Pixelfly.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692197340/Instruments/Cameras/PCO-Pixelfly/file.png" style={{ width: "325px" }} />
 
 </div>
 
-The pco.pixelfly™ 1.3 SWIR is a high-performance machine vision camera due to its special InGaAs image sensor which is sensitive in the shortwave infrared, near infrared and visible range of the electromagnetic spectrum.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125982/Instruments/Vendor%20Logos/PCO.png" style={{ width: "100%", objectFit: "cover" }} />

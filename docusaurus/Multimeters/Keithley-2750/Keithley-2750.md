@@ -1,3 +1,10 @@
+---
+title: Keithley 2750
+description: The 2750 offers a cost-effective, high performance, affordable alternatives to separate digital multimeters and switch systems, dataloggers/recorders, plug-in card data acquisition equipment, and VXI/PXI systems. System builders can create test solutions with a combination of channel count, cost per channel, and system performance unmatched by any other singlebox measurement system. The input modules provide the flexibility to vary the channel count from 20 to 200 (2-pole), apply a stimulus to the device under test, route signals, control system components, and make precision measurements with up to 14 functions. Robust digital I/O capabilities can be used for triggering, handshaking with other automation equipment, and alarm limit outputs. Scan rates of up to 500 channels/second (up to 3500 readings/second on a single channel) will increase test productivity.
+keywords: [multimeters, Keithley, Pymeasure]
+slug: /instruments-wiki/multimeters/keithley/keithley-2750
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201217/Instruments/Multimeters/Keithley-2750/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ The 2750 offers a cost-effective, high performance, affordable alternatives to s
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692118797/Instruments/Multimeters/Keithley-2750/Keithley-2750.png" style={{ width: "325px", height: "200px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692201217/Instruments/Multimeters/Keithley-2750/file.png" style={{ width: "325px", height: "200px" }} />
 
 </div>
 
-The 2750 offers a cost-effective, high performance, affordable alternatives to separate digital multimeters and switch systems, dataloggers/recorders, plug-in card data acquisition equipment, and VXI/PXI systems. System builders can create test solutions with a combination of channel count, cost per channel, and system performance unmatched by any other singlebox measurement system. The input modules provide the flexibility to vary the channel count from 20 to 200 (2-pole), apply a stimulus to the device under test, route signals, control system components, and make precision measurements with up to 14 functions. Robust digital I/O capabilities can be used for triggering, handshaking with other automation equipment, and alarm limit outputs. Scan rates of up to 500 channels/second (up to 3500 readings/second on a single channel) will increase test productivity.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692126010/Instruments/Vendor%20Logos/Keithley.png" style={{ width: "100%", objectFit: "cover" }} />

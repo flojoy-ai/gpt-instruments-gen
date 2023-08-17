@@ -1,3 +1,10 @@
+---
+title: Keithley 2000
+description: The Model 2000 6_-Digit Multimeter is part of Keithleys family of high performance DMMs. Based on the same high speed, low noise A/D converter technology as the Model 2001 and 2002, the 2000 is a fast, accurate, and highly stable instrument thats as easy to operate as it is to afford. It combines broad measurement ranges with superior accuracy specifications DC voltage from 100nV to 1kV (with 0.002% 90-day basic accuracy) and DC resistance from 100 to 100M (with 0.008% 90-day basic accuracy). Optional switch cards enable multiplexing up to 20 different input signals for multipoint measurement applications.
+keywords: [multimeters, Keithley, Pymeasure, Qcodes]
+slug: /instruments-wiki/multimeters/keithley/keithley-2000
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200782/Instruments/Multimeters/Keithley-2000/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -14,13 +21,11 @@ The Model 2000 6_-Digit Multimeter is part of Keithleys family of high performan
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692118371/Instruments/Multimeters/Keithley-2000/Keithley-2000.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692200782/Instruments/Multimeters/Keithley-2000/file.png" style={{ width: "325px" }} />
 
 </div>
 
-The Model 2000 6_-Digit Multimeter is part of Keithleys family of high performance DMMs. Based on the same high speed, low noise A/D converter technology as the Model 2001 and 2002, the 2000 is a fast, accurate, and highly stable instrument thats as easy to operate as it is to afford. It combines broad measurement ranges with superior accuracy specifications DC voltage from 100nV to 1kV (with 0.002% 90-day basic accuracy) and DC resistance from 100 to 100M (with 0.008% 90-day basic accuracy). Optional switch cards enable multiplexing up to 20 different input signals for multipoint measurement applications.>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/v1692126010/Instruments/Vendor%20Logos/Keithley.png" style={{ width: "100%", objectFit: "cover" }} />

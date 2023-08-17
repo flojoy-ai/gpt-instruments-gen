@@ -1,3 +1,10 @@
+---
+title: Keysight 34980A
+description: The Keysight 34980A Multifunction Switch/Measure unit is designed for R&D andmanufacturing test engineers who are working in design verification, automatedtest or data acquisition and are either looking to upgrade their existing systems orare in need of a new, cost-effective alternative
+keywords: [multimeters, Keysight, Qcodes]
+slug: /instruments-wiki/multimeters/keysight/keysight-34980a
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692106888/Instruments/Multimeters/Keysight-34980A/file.png
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -17,16 +24,11 @@ are in need of a new, cost-effective alternative
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692077900/Instruments/Multimeters/Keysight-34980A/Keysight-34980A.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692106888/Instruments/Multimeters/Keysight-34980A/file.png" style={{ width: "325px" }} />
 
 </div>
 
-The Keysight 34980A Multifunction Switch/Measure unit is designed for R&D and
-manufacturing test engineers who are working in design verification, automated
-test or data acquisition and are either looking to upgrade their existing systems or
-are in need of a new, cost-effective alternative>
-
-<details open>
+<details>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692125973/Instruments/Vendor%20Logos/Keysight.png" style={{ width: "100%", height: "150px",objectFit: "cover" }} />
