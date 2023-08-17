@@ -17,6 +17,7 @@ class Cols:
     docs = "Python docs link"
     docstring = "docstring"
     category = "Device Category"
+    category_description = "Category Description"
     github_link = "GitHub link to Python driver (NOT LINK TO DOCS ON GITHUB)"
     vendor_website = "Vendor website"
     vendor_desc = "Vendor wikipedia or cruncbase description"
@@ -27,6 +28,7 @@ class Cols:
     device_image_url = "Image URL"
     vendor_logo = "Vendor logo"
     vendor_logo_url = "Vendor logo URL"
+    docs_wiki = "Docs Wiki"
 
 
 def use_device_name_when_no_correct(row: pd.Series):
@@ -54,7 +56,7 @@ def load_data():
     df = df[~df[Cols.device_name].isna()]
     df[Cols.correct_device_name] = df.apply(use_device_name_when_no_correct, axis=1)
     df.to_csv("device_data.csv", index=False)
-    return df
+    return df.sort_values(by="Corrected device name", ascending=True)
 
 
 df = load_data()
