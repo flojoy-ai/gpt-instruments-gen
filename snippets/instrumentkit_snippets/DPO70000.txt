@@ -1,21 +1,17 @@
-To connect to a DPO70000 Oscilloscope using Instrumentkit, you can use the `DPO70000` class from the `instruments.tektronix.dpo70000` module. Here's an example Python script that demonstrates how to connect to the oscilloscope:
+To connect to a DPO70000 oscilloscope using Instrumentkit, you can use the following code:
 
 ```python
-from instruments.tektronix.dpo70000 import DPO70000
+import instrumentkit as ik
 
 # Connect to the oscilloscope
-oscilloscope = DPO70000.open_gpibusb("/dev/ttyUSB0", 1)
+tek = ik.tektronix.TekDPO70000.open_tcpip("192.168.0.2", 8888)
 
 # Perform operations on the oscilloscope
-# For example, you can query the instrument's identification
-print(oscilloscope.query("*IDN?"))
+# For example, read waveform from channel 0
+[x, y] = tek.channel[0].read_waveform()
 
-# Close the connection to the oscilloscope
-oscilloscope.close()
+# Close the connection
+tek.close()
 ```
 
-In this example, the `open_gpibusb` method is used to establish a connection to the oscilloscope. The first argument `"/dev/ttyUSB0"` is the device file for the GPIB-USB adapter, and the second argument `1` is the GPIB address of the oscilloscope.
-
-After connecting, you can perform various operations on the oscilloscope using the `oscilloscope` object. For example, you can use the `query` method to send SCPI commands and retrieve the instrument's identification.
-
-Finally, don't forget to close the connection to the oscilloscope using the `close` method to release any resources and terminate the connection.
+This code connects to the oscilloscope at IP address "192.168.0.2" and port 8888 using the `open_tcpip` method of the `TekDPO70000` class. It then reads a waveform from channel 0 using the `read_waveform` method of the `Channel` class. Finally, it closes the connection using the `close` method.

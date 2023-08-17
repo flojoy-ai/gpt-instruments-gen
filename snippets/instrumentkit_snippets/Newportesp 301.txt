@@ -1,1 +1,0 @@
-Unfortunately, the provided code is for the Newport Agilis Controller AG-UC2, not the Newportesp 301 Positional Controller. Therefore, I cannot provide a Python script using Instrumentkit to connect to the Newportesp 301 Positional Controller based on the provided code.

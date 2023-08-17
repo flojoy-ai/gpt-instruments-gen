@@ -9,16 +9,16 @@ yoko = Yokogawa7651("GPIB::1")
 # Apply a current of 1 mA with a compliance voltage of 1 V
 yoko.apply_current(max_current=1e-3, compliance_voltage=1)
 
-# Enable the current output
+# Enable the source
 yoko.enable_source()
 
 # Ramp the current to 5 mA over 0.5 seconds
 yoko.ramp_to_current(5e-3, steps=25, duration=0.5)
 
-# Ramp the current back to 0 mA and disable the output
+# Shutdown the instrument
 yoko.shutdown()
 ```
 
-This script connects to the Yokogawa 7651 Power Supply using the GPIB address "GPIB::1". It applies a current of 1 mA with a compliance voltage of 1 V using the `apply_current()` method. Then, it enables the current output using the `enable_source()` method. Next, it ramps the current to 5 mA over 0.5 seconds using the `ramp_to_current()` method. Finally, it ramps the current back to 0 mA and disables the output using the `shutdown()` method.
+This script connects to the Yokogawa 7651 Power Supply using the GPIB address "GPIB::1". It applies a current of 1 mA with a compliance voltage of 1 V using the `apply_current` method. Then, it enables the source using the `enable_source` method. Next, it ramps the current to 5 mA over 0.5 seconds using the `ramp_to_current` method. Finally, it shuts down the instrument using the `shutdown` method.
 
 Note: Make sure you have the necessary dependencies installed, such as `pymeasure` and the appropriate GPIB driver for your system.

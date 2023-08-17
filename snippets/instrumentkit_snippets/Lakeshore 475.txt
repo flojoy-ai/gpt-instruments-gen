@@ -1,1 +1,0 @@
-Unfortunately, the provided documentation is for the Lakeshore 340 cryogenic temperature controller, not the Lakeshore 475 Power Meters. Therefore, I cannot provide you with the code to connect to a Lakeshore 475 Power Meters using Instrumentkit.

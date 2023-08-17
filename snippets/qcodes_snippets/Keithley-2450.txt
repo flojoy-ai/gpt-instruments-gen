@@ -5,7 +5,7 @@ import qcodes as qc
 from qcodes.instrument_drivers.tektronix.Keithley_2450 import Keithley_2450
 
 # Connect to the Keithley 2450 Power Supply
-keithley = Keithley_2450("keithley", "TCPIP0::192.168.1.1::INSTR")
+keithley = Keithley_2450("keithley", "TCPIP::192.168.1.1::INSTR")
 
 # Print the instrument ID
 print(keithley.IDN())
@@ -13,21 +13,26 @@ print(keithley.IDN())
 # Set the source function to voltage
 keithley.source_function("voltage")
 
-# Set the voltage to 1V
-keithley.source_voltage(1)
+# Set the voltage range to 10V
+keithley.source.voltage.range(10)
+
+# Set the voltage to 5V
+keithley.source.voltage(5)
 
 # Enable the output
 keithley.output_enabled(True)
 
 # Measure the current
-current = keithley.sense_current()
-print(f"Current: {current} A")
+current = keithley.sense.current()
+
+# Print the measured current
+print(f"Measured current: {current} A")
 
 # Disable the output
 keithley.output_enabled(False)
 
-# Close the connection
+# Close the connection to the instrument
 keithley.close()
 ```
 
-Make sure to replace `"TCPIP0::192.168.1.1::INSTR"` with the actual IP address or VISA resource string of your Keithley 2450 Power Supply.
+Make sure to replace `"TCPIP::192.168.1.1::INSTR"` with the actual IP address or VISA resource string of your Keithley 2450 Power Supply.

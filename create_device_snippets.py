@@ -18,7 +18,8 @@ def create_device_snippets(df: pd.DataFrame, snippets_dir: str) -> None:
         device = corrected if corrected is not np.nan else device_name
 
         # Don't redo one that already exists
-        device_file = device.replace("/", "-").replace(",", "").replace("_","-")
+        device_file = device.replace("/", "-")
+        device_file = device_file.replace("/", "").replace("_", "-").replace(",", "")
         device_file = re.sub(r"\s+", "-", device_file).strip("-")
         device_file = device_file.replace("&", "")
 

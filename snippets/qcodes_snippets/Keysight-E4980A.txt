@@ -19,4 +19,4 @@ meter.disconnect()
 
 In this script, we import the `KeysightE4980A` class from the `qcodes.instrument_drivers.Keysight.Keysight_E4980A` module. We then create an instance of the instrument by providing a name and the instrument's address (in this case, a TCP/IP address). We connect to the instrument using the `connect()` method.
 
-We can then perform measurements using the instrument's parameters. In this example, we use the `measure_impedance` parameter to get the impedance measurement. Finally, we disconnect from the instrument using the `disconnect()` method.
+We can then perform measurements using the instrument's parameters and methods. In this example, we use the `measure_impedance` parameter to get the impedance measurement. Finally, we disconnect from the instrument using the `disconnect()` method.

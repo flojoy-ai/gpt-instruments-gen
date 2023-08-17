@@ -1,25 +1,18 @@
-Here's an example Python script that uses Instrumentkit to connect to a DG645 Pulse Generator:
+To connect to a DG645 Pulse Generator using Instrumentkit, you can use the following code:
 
 ```python
 import instrumentkit as ik
 
 # Connect to the DG645 Pulse Generator
-dg645 = ik.dg645.DG645.open_gpib('/dev/ttyUSB0', 1)
+dg645 = ik.srs.SRSDG645.open_gpibusb('/dev/ttyUSB0', 1)
 
-# Set the pulse width to 10 ns
-dg645.pulse_width = 10 * ik.units.ns
-
-# Set the delay to 1 us
-dg645.delay = 1 * ik.units.us
-
-# Set the trigger level to 2 V
-dg645.trigger_level = 2 * ik.units.V
-
-# Enable the output
-dg645.output_enabled = True
-
+# Example usage
+dg645.channel[dg645.Channels.A].delay = (dg645.channel[dg645.Channels.T0], 10 * ik.units.ns)
+dg645.output[dg645.Outputs.AB].level_amplitude = 4.0 * ik.units.V
 # Close the connection
 dg645.close()
 ```
 
-Note: This code assumes that you have already installed the Instrumentkit library and its dependencies.
+This code imports the `instrumentkit` module and opens a connection to the DG645 Pulse Generator using the `open_gpibusb` method of the `SRSDG645` class. The first argument is the device path (`'/dev/ttyUSB0'`) and the second argument is the GPIB address (`1`).
+
+After connecting, you can access the channels and outputs of the DG645 Pulse Generator using the `channel` and `output` properties. In the example usage, it sets the delay of channel A to 10 nanoseconds relative to channel T0 and sets the amplitude of output AB to 4.0 volts.

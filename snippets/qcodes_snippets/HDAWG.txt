@@ -20,7 +20,7 @@ sequencer_program = """
 hdawg.awgs[0].load_sequencer_program(sequencer_program)
 
 # Enable the sequencer on AWG channel 0
-hdawg.awgs[0].enable_sequencer(single=False)
+hdawg.awgs[0].enable_sequencer(single=True)
 
 # Wait for the AWG to finish
 hdawg.awgs[0].wait_done()

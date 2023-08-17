@@ -1,1 +1,0 @@
-Unfortunately, the provided code is for the Newport Agilis Controller AG-UC2, not for the Picomotorcontroller 8742 Positional Controller. Therefore, I cannot provide you with the code to connect to the Picomotorcontroller using Instrumentkit.

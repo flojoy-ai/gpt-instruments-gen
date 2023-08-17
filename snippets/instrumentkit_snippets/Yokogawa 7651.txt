@@ -1,1 +1,0 @@
-Unfortunately, the provided code is for a Yokogawa 6370 Optical Spectrum Analyzer, not a Yokogawa 7651 Power Supply. Therefore, I cannot provide you with a Python script using Instrumentkit to connect to a Yokogawa 7651 Power Supply based on the given code.
