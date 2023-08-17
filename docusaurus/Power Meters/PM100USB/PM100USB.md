@@ -38,41 +38,6 @@ Thorlabs, Inc. is an American privately held optical equipment company headquart
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
 
-### Instrumentkit
-
-
-```python
-from instrumentkit import ThorlabsPM100USB
-
-# Connect to the power meter
-power_meter = ThorlabsPM100USB()
-
-# Get information about the connected sensor
-sensor = power_meter.sensor
-print("Sensor Name:", sensor.name)
-print("Sensor Serial Number:", sensor.serial_number)
-print("Sensor Calibration Message:", sensor.calibration_message)
-print("Sensor Type:", sensor.type)
-print("Sensor Flags:", sensor.flags)
-
-# Set the measurement configuration to power
-power_meter.measurement_configuration = ThorlabsPM100USB.MeasurementConfiguration.power
-
-# Read a measurement from the power meter
-measurement = power_meter.read()
-print("Measurement:", measurement)
-```
-
-This script first imports the `ThorlabsPM100USB` class from the `instrumentkit` module. It then creates an instance of the `ThorlabsPM100USB` class to connect to the power meter.
-
-The script retrieves information about the connected sensor using the `sensor` property of the power meter instance. It prints out various properties of the sensor, such as its name, serial number, calibration message, type, and flags.
-
-Next, the script sets the measurement configuration of the power meter to "power" using the `measurement_configuration` property. This configures the power meter to measure power values.
-
-Finally, the script reads a measurement from the power meter using the `read` method. The measurement is returned as a `pint.Quantity` object, which represents a numerical value with associated units. The script prints out the measurement value.
-
-Note that this script assumes that the Instrumentkit library is already installed and that the power meter is connected to the computer.
-
 ### Pymeasure
 
 
@@ -197,4 +162,39 @@ The class has various properties and methods to interact with the power meter. H
 - `_set_flags` is a method that retrieves sensor information and writes flags based on the response from the power meter.
 
 To use this script, you would need to create an instance of the `ThorlabsPM100USB` class and provide the appropriate adapter for communication with the power meter.
+
+### Instrumentkit
+
+
+```python
+from instrumentkit import ThorlabsPM100USB
+
+# Connect to the power meter
+power_meter = ThorlabsPM100USB()
+
+# Get information about the connected sensor
+sensor = power_meter.sensor
+print("Sensor Name:", sensor.name)
+print("Sensor Serial Number:", sensor.serial_number)
+print("Sensor Calibration Message:", sensor.calibration_message)
+print("Sensor Type:", sensor.type)
+print("Sensor Flags:", sensor.flags)
+
+# Set the measurement configuration to power
+power_meter.measurement_configuration = ThorlabsPM100USB.MeasurementConfiguration.power
+
+# Read a measurement from the power meter
+measurement = power_meter.read()
+print("Measurement:", measurement)
+```
+
+This script first imports the `ThorlabsPM100USB` class from the `instrumentkit` module. It then creates an instance of the `ThorlabsPM100USB` class to connect to the power meter.
+
+The script retrieves information about the connected sensor using the `sensor` property of the power meter instance. It prints out various properties of the sensor, such as its name, serial number, calibration message, type, and flags.
+
+Next, the script sets the measurement configuration of the power meter to "power" using the `measurement_configuration` property. This configures the power meter to measure power values.
+
+Finally, the script reads a measurement from the power meter using the `read` method. The measurement is returned as a `pint.Quantity` object, which represents a numerical value with associated units. The script prints out the measurement value.
+
+Note that this script assumes that the Instrumentkit library is already installed and that the power meter is connected to the computer.
 

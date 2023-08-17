@@ -12,7 +12,7 @@ Pulse Pattern Generator / 165/330 MHz
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692242131/Instruments/Function%20Generators/Keysight-81110A/Keysight-81110A.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692287179/Instruments/Function%20Generators/Keysight-81110A/Keysight-81110A.png" style={{ width: "325px" }} />
 
 </div>
 

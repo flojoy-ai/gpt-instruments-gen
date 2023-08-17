@@ -28,6 +28,7 @@ class Cols:
     device_image_url = "Image URL"
     vendor_logo = "Vendor logo"
     vendor_logo_url = "Vendor logo URL"
+    docs_wiki = "Docs Wiki"
 
 
 def use_device_name_when_no_correct(row: pd.Series):

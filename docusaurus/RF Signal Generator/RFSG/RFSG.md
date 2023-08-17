@@ -11,7 +11,7 @@
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692242282/Instruments/RF%20Signal%20Generator/RFSG/RFSG.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692287361/Instruments/RF%20Signal%20Generator/RFSG/RFSG.png" style={{ width: "325px" }} />
 
 </div>
 

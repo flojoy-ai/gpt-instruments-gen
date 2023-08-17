@@ -11,7 +11,7 @@
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692242672/Instruments/Network%20Analyzer/Series/Series.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692287480/Instruments/Network%20Analyzer/Series/Series.png" style={{ width: "325px" }} />
 
 </div>
 

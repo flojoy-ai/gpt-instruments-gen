@@ -11,7 +11,7 @@ Class For Getting Data From The Keihtley Of The Photon-Ion Spectrometer (Pipe).
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692242280/Instruments/Miscellaneous/Pipekeithley/Pipekeithley.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692287339/Instruments/Miscellaneous/Pipekeithley/Pipekeithley.png" style={{ width: "325px" }} />
 
 </div>
 

@@ -11,7 +11,7 @@
 
 </div>
 
-<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692242171/Instruments/Miscellaneous/Newporterror/Newporterror.png" style={{ width: "325px" }} />
+<img src="https://res.cloudinary.com/dhopxs1y3/image/upload/e_bgremoval/v1692287308/Instruments/Miscellaneous/Newporterror/Newporterror.png" style={{ width: "325px" }} />
 
 </div>
 
