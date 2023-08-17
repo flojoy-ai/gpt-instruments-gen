@@ -7,4 +7,3 @@ openai
 airtable
 tiktoken
 pillow
-cloudinary
