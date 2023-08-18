@@ -32,7 +32,7 @@ def generate_url_slug(device_name: str, category: str, vendor: str) -> str:
     return url_slug
 
 
-def cloudinary_upload(file_path: str, img_data: str):
+def cloudinary_upload(file_path: str, img_data: bytes) -> str:
     response = cloudinary.uploader.upload(
         img_data,
         folder=file_path,
@@ -41,4 +41,4 @@ def cloudinary_upload(file_path: str, img_data: str):
         overwrite=True,
         format="png",
     )
-    return response
+    return response["secure_url"]

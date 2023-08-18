@@ -9,20 +9,20 @@ DATA_DIR = "data"
 SNIPPETS_DIR = "snippets"
 
 LIBRARY_CACHE_MAP = {
-    "Pytango": f"{DATA_DIR}/pytango.csv", 
-    "Qcodes": f"{DATA_DIR}/qcodes.csv", 
-    "Qcodes Community": f"{DATA_DIR}/qcodes_community.csv", 
+    "PyTango": f"{DATA_DIR}/pytango.csv", 
+    "QCodes": f"{DATA_DIR}/qcodes.csv", 
+    "QCodes Community": f"{DATA_DIR}/qcodes_community.csv", 
     "Instrumentkit": f"{DATA_DIR}/instrumentkit.csv",
-    "Pymeasure": f"{DATA_DIR}/pymeasure.csv", 
+    "PyMeasure": f"{DATA_DIR}/pymeasure.csv", 
     "Instrumental": f"{DATA_DIR}/instrumental.csv",
 }
 
 LIBRARY_SNIPPET_MAP = {
-    "Pytango": f"{SNIPPETS_DIR}/pytango_snippets", 
-    "Qcodes": f"{SNIPPETS_DIR}/qcodes_snippets", 
-    "Qcodes Community": f"{SNIPPETS_DIR}/qcodes_community_snippets", 
-    "Instrumentkit": f"{SNIPPETS_DIR}/instrumentkit_snippets",
-    "Pymeasure": f"{SNIPPETS_DIR}/pymeasure_snippets", 
+    "PyTango": f"{SNIPPETS_DIR}/pytango_snippets", 
+    "QCodes": f"{SNIPPETS_DIR}/qcodes_snippets", 
+    "QCodes Community": f"{SNIPPETS_DIR}/qcodes_community_snippets", 
+    "InstrumentKit": f"{SNIPPETS_DIR}/instrumentkit_snippets",
+    "PyMeasure": f"{SNIPPETS_DIR}/pymeasure_snippets", 
     "Instrumental": f"{SNIPPETS_DIR}/instrumental_snippets",
 }
 
