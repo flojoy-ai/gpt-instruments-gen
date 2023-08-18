@@ -26,6 +26,7 @@ class Cols:
     revenue = "Yearly revenue (millions, USD)"
     device_picture = "Device picture"
     device_image_url = "Image URL"
+    device_specification = "Device datasheet (PDF)"
     vendor_logo = "Vendor logo"
     vendor_logo_url = "Vendor logo URL"
     docs_wiki = "Docs Wiki"
