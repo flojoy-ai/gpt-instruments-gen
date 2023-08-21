@@ -1,6 +1,6 @@
 import numpy as np
 from tqdm.auto import tqdm
-from query_chatgpt import query_chatgpt
+from query_chatgpt import query_chatgpt, query_python_lib_desc
 import os
 import pandas as pd
 from load_data import Cols
@@ -27,6 +27,10 @@ def create_device_snippets(df: pd.DataFrame, snippets_dir: str) -> None:
         if os.path.isfile(device_path):
             continue
 
+        lib_desc_path = f'{snippets_dir.lower().replace(" ", "-")}/{library}_description.txt'
+        if os.path.isfile(lib_desc_path):
+            continue
+
         category = row[Cols.category]
         # For some reason they are sometimes formatted as '"['text']"'
         if isinstance(category, list):
@@ -37,6 +41,10 @@ def create_device_snippets(df: pd.DataFrame, snippets_dir: str) -> None:
             category = ""
         docstring = row[Cols.docstring]
         code = query_chatgpt(library, device, category, docstring)
+        lib_desc = query_python_lib_desc(library)
 
         with open(device_path, "w") as f:
             f.write(code)
+
+        with open(lib_desc_path, "w") as f:
+            f.write(lib_desc)
