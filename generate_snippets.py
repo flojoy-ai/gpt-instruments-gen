@@ -53,7 +53,7 @@ def get_data_for_lib(df: pd.DataFrame, library: str) -> pd.DataFrame:
 def process_data() -> None:
     """Entrypoint. Load the data, generate the snippets"""
     df = get_valid_rows()
-    unique_libs = df[Cols.library].unique()
+    unique_libs = [lib for lib in df[Cols.library].unique() if lib]
     print(f"[INFO] Found {len(unique_libs)} libraries\n{unique_libs}")
     for lib in unique_libs:
         print(f"[INFO] Getting data for library {lib}")

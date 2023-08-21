@@ -26,7 +26,7 @@ def generate_url_slug(device_name: str, category: str, vendor: str) -> str:
 
     device_name = to_lower(device_name)
     device_name = re.sub(r"\s+", "-", device_name).strip("-")
-    device_name = device_name.replace(".", "")
+    device_name = device_name.replace(".", "").replace(",", "").replace("_", "-")
 
     url_slug = f"/instruments-wiki/{category}/{vendor}/{device_name}"
     return url_slug
