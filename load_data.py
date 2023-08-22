@@ -58,8 +58,10 @@ def load_data():
     df[Cols.correct_device_name] = df.apply(use_device_name_when_no_correct, axis=1)
     df.to_csv("device_data.csv", index=False)
     df = df.sort_values(by="Corrected device name", ascending=True)
-    df["Device Category"] = df['Device Category'].apply(lambda x: ', '.join(map(str, x)))
-    df["Device Category"] = df['Device Category'].apply(lambda x: x.split(", "))
+    df["Device Category"] = df["Device Category"].apply(
+        lambda x: ", ".join(map(str, x))
+    )
+    df["Device Category"] = df["Device Category"].apply(lambda x: x.split(", "))
     df = df.explode("Device Category")
     df = df.sort_values(by=["Device Category", "Corrected device name"], ascending=True)
 

@@ -27,7 +27,9 @@ def create_device_snippets(df: pd.DataFrame, snippets_dir: str) -> None:
         if os.path.isfile(device_path):
             continue
 
-        lib_desc_path = f'{snippets_dir.lower().replace(" ", "-")}/{library}_description.txt'
+        lib_desc_path = (
+            f'{snippets_dir.lower().replace(" ", "-")}/{library}_description.txt'
+        )
         if os.path.isfile(lib_desc_path):
             continue
 
