@@ -15,9 +15,9 @@ def generate_url_slug(device_name: str, category: str, vendor: str) -> str:
         "sCMOS",
         "PCO",
     ]
-    category = category.replace(" ", "-").replace("/", "-").strip("-").lower()
+    category = category.replace(" ", "-").replace("/", "-").replace("&", "-").strip("-").lower()
     vendor = (
-        vendor.replace(" ", "-").replace(".", "").replace(",", "").strip("-").lower()
+        vendor.replace(" ", "-").replace(".", "").replace(",", "").replace("&", "-").strip("-").lower()
     )
 
     to_lower = lambda x: " ".join(
