@@ -15,9 +15,20 @@ def generate_url_slug(device_name: str, category: str, vendor: str) -> str:
         "sCMOS",
         "PCO",
     ]
-    category = category.replace(" ", "-").replace("/", "-").replace("&", "-").strip("-").lower()
+    category = (
+        category.replace(" ", "-")
+        .replace("/", "-")
+        .replace("&", "-")
+        .strip("-")
+        .lower()
+    )
     vendor = (
-        vendor.replace(" ", "-").replace(".", "").replace(",", "").replace("&", "-").strip("-").lower()
+        vendor.replace(" ", "-")
+        .replace(".", "")
+        .replace(",", "")
+        .replace("&", "-")
+        .strip("-")
+        .lower()
     )
 
     to_lower = lambda x: " ".join(
@@ -26,10 +37,22 @@ def generate_url_slug(device_name: str, category: str, vendor: str) -> str:
 
     device_name = to_lower(device_name)
     device_name = re.sub(r"\s+", "-", device_name).strip("-")
-    device_name = device_name.replace(".", "").replace(",", "").replace("_", "-").replace("&", "")
+    device_name = (
+        device_name.replace(".", "").replace(",", "").replace("_", "-").replace("&", "")
+    )
 
     url_slug = f"/instruments-wiki/{category}/{vendor}/{device_name}"
     return url_slug
+
+
+def clean_name(item: str) -> str:
+    item = (
+        item.replace("/", "-")
+        .replace("_", "-")
+        .replace(",", "")
+        .replace("&", "")
+    )
+    return item
 
 
 def cloudinary_upload(file_path: str, img_data: bytes) -> str:
