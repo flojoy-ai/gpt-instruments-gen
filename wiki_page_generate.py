@@ -2,7 +2,22 @@ from generate_snippets import LIBRARY_SNIPPET_MAP
 import os
 from templates import DOCS_TEMPLATE
 
-def instruments_wiki(unique_libs, device_file, site_url, desc, device, vendor, device_img_url, vendor_desc, vendor_web, vendor_logo_url, headquarters, revenue, device_doc_dir, category):
+def instruments_wiki(
+    unique_libs,
+    device_file,
+    site_url,
+    desc,
+    device,
+    vendor,
+    device_img_url,
+    vendor_desc,
+    vendor_web,
+    vendor_logo_url,
+    headquarters,
+    revenue,
+    device_doc_dir,
+    category,
+):
     # gather all existing snippet directories for device
     snippet_dict: dict[str:str] = {}
     for lib in unique_libs:
@@ -61,3 +76,6 @@ def instruments_wiki(unique_libs, device_file, site_url, desc, device, vendor, d
 
     with open(device_doc_file, "w") as fw:
         fw.write(device_doc)
+
+    print(f"Completed: {device_file} {category}")
+
