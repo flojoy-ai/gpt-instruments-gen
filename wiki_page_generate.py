@@ -17,6 +17,7 @@ def instruments_wiki(
     revenue,
     device_doc_dir,
     category,
+    device_spec
 ):
     # gather all existing snippet directories for device
     snippet_dict: dict[str:str] = {}
@@ -51,6 +52,7 @@ def instruments_wiki(
         site_url=site_url,
         vendor=vendor,
         seo_keywords=seo_keywords,
+        device_spec=device_spec
     )
 
     if len(snippet_dict) > 0:

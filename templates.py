@@ -20,16 +20,23 @@ import TabItem from '@theme/TabItem';
 
 </div>
 
-<details>
+<div className="flex text-center">
+
+<p>Device Specification: <a target="\_blank" href="{device_spec}">here</a></p>
+
+</div>
+
+<details style={{{{ marginTop: \"15px\"}}}}>
 <summary><h2>Manufacturer Card</h2></summary>
 
 <img src="{vendor_logo_url}" style={{{{ width: \"100%\", height: \"170px\",objectFit: \"scale-down\" }}}} />
 
-{vendor_desc}. <a href="{vendor_web}">Website</a>.
+{vendor_desc}.
 
 <ul>
   <li>Headquarters: {headquarters}</li>
   <li>Yearly Revenue (millions, USD): {revenue}</li>
+  <li>Vendor Website: <a href="{vendor_web}">here</a></li>
 </ul>
 </details>
 
