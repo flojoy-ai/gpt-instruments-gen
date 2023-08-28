@@ -62,7 +62,7 @@ You can find all the available instruments from the sidebar.
 CATEGORY_TEMPLATE = """--- 
 hide_table_of_contents: true
 sidebar_label: {category}
-sidebar_position: 1
+sidebar_position: 3
 slug: {page_url}
 ---
 

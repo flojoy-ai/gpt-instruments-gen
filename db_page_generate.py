@@ -1,8 +1,8 @@
 from generate_snippets import LIBRARY_SNIPPET_MAP
 import os
 from templates import DOCS_TEMPLATE
-
-def instruments_wiki(
+from data_utils import parse_ast
+def instruments_db(
     unique_libs,
     device_file,
     site_url,
@@ -17,7 +17,7 @@ def instruments_wiki(
     revenue,
     device_doc_dir,
     category,
-    device_spec
+    device_spec,
 ):
     # gather all existing snippet directories for device
     snippet_dict: dict[str:str] = {}
@@ -52,7 +52,7 @@ def instruments_wiki(
         site_url=site_url,
         vendor=vendor,
         seo_keywords=seo_keywords,
-        device_spec=device_spec
+        device_spec=device_spec,
     )
 
     if len(snippet_dict) > 0:
@@ -67,6 +67,8 @@ def instruments_wiki(
                     code_md = code
                 else:
                     code_md = f"```python\n{code}\n```"
+
+                parse_ast(code_md, device_name)
                 device_doc += f"\n{code_md}\n\n"
                 device_doc += f"</TabItem>\n"
         device_doc += f"</Tabs>"
@@ -79,5 +81,4 @@ def instruments_wiki(
     with open(device_doc_file, "w") as fw:
         fw.write(device_doc)
 
-    print(f"Completed: {device_file} {category}")
-
+    # print(f"Completed: {device_file} {category}")
