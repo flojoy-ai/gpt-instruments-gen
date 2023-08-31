@@ -82,9 +82,9 @@ hide_table_of_contents: true
 sidebar_position: 1
 ---
 
-# Python Libraries Wiki
+# Python Libraries Database
 
-Welcome to the Python Libraries Wiki! Here you can find information about instruments supported by libraries.
+Welcome to the Python Libraries Database! Here you can find information about instruments supported by libraries.
 """
 
 VENDOR_TEMPLATE = """--- 
@@ -92,7 +92,7 @@ hide_table_of_contents: true
 sidebar_position: 2
 ---
 
-# Vendors Wiki
+# Vendors Database
 
-Welcome to the Vendors Wiki! Here you can find information about vendors collaborating with Flojoy and their devices.
+Welcome to the Vendors Database! Here you can find information about vendors collaborating with Flojoy and their devices.
 """
