@@ -1,3 +1,5 @@
+from utils import striped_str
+
 DOCS_DIR = "docusaurus"
 
 DOCS_TEMPLATE = """
@@ -96,3 +98,72 @@ sidebar_position: 2
 
 Welcome to the Vendors Wiki! Here you can find information about vendors collaborating with Flojoy and their devices.
 """
+
+
+def get_device_template(
+    title: str,
+    sidebar_label: str,
+    description: str,
+    keywords: str,
+    slug: str,
+    meta_image: str,
+    device_spec: str,
+    vendor: str,
+    vendor_logo_url: str,
+    vendor_description: str,
+    vendor_website: str,
+    vendor_headquarter: str,
+    vendor_revennue: str,
+    category: str,
+    second_tab_item: str,
+):
+    TEMPLATE = f"""
+---
+title: {striped_str(title)}
+{f'description: {striped_str(description)}' if description != '' else ''}
+{keywords.strip()} 
+slug: {slug} 
+{f'image: {meta_image}' if meta_image != '' else ''}
+sidebar:
+    label: {striped_str(sidebar_label)} 
+---
+
+import {{ Tabs, TabItem }} from "@astrojs/starlight/components";
+
+## Instrument Card
+
+{description}
+
+{f'![{striped_str(sidebar_label)}]({meta_image})' if meta_image != '' else ''}
+
+Device Specification: {f"[here]({device_spec})" if device_spec.startswith('http') else "[here](/instruments-database/all-instruments)" }
+
+<details style={{{{ marginTop: "15px"}}}}>
+<summary><h2 style={{{{display:'inline'}}}}>Manufacturer card: {vendor.upper()}</h2></summary>
+
+![{vendor.upper()}]({vendor_logo_url})
+
+{vendor_description.strip()}
+
+- Headquarters: {vendor_headquarter}
+- Yearly Revenue (millions, USD): {vendor_revennue}
+- Vendor Website: [here]({vendor_website})
+
+</details>
+
+import FeaturedInstrumentVideo from "@root/src/components/FeaturedInstrumentVideo";
+
+<FeaturedInstrumentVideo
+  category="{'_'.join(category.upper().split(' '))}"
+  manufacturer="{vendor.upper()}"
+></FeaturedInstrumentVideo>
+
+## Connect to the {striped_str(sidebar_label)} in Python
+
+[Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/contribution/blocks/custom-flojoy-block/)
+
+import NodeCardCollection from "@root/src/components/NodeCardCollection";
+
+{second_tab_item}
+"""
+    return TEMPLATE
