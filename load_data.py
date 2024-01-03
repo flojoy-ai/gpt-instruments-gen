@@ -1,6 +1,6 @@
 import os
 import pandas as pd
-import airtable
+from airtable_table import get_table_data_list
 import numpy as np
 
 
@@ -40,20 +40,11 @@ def use_device_name_when_no_correct(row: pd.Series):
     return row[Cols.correct_device_name]
 
 
-def load_data():
+def table_to_df():
     if os.path.isfile(LOCAL_FILE_NAME):
         return pd.read_csv(LOCAL_FILE_NAME)
-    at = airtable.Airtable("appltTe3yZzVV3Ouj", AIRTABLE_API_KEY)
-    all_data = []
-    offset = None
-    while True:
-        data = at.get("All Instrument Devices", limit=100, offset=offset)
-        all_data.extend(data["records"])
-        offset = data.get("offset")
-        if not offset:
-            break
-
-    df = pd.DataFrame([row["fields"] for row in all_data])
+    table_data = get_table_data_list()
+    df = pd.DataFrame([row["fields"] for row in table_data])
     df = df[~df[Cols.device_name].isna()]
     df[Cols.correct_device_name] = df.apply(use_device_name_when_no_correct, axis=1)
     df.to_csv("device_data.csv", index=False)
@@ -68,5 +59,5 @@ def load_data():
     return df
 
 
-df = load_data()
+df = table_to_df()
 df.head(2)
