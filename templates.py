@@ -165,3 +165,25 @@ def get_unit_device_template(slug: str, img: str, device_name: str):
 />
 """
     return DEVICE_TEMPLATE
+
+
+def get_category_page_template(cat_name: str, slug: str):
+    TEMPLATE = f"""
+---
+title: {cat_name.strip()}
+slug: {slug}
+sidebar:
+  label: {cat_name.strip()} overview
+  order: 3
+---
+
+# Controlling {cat_name.strip()} in Python
+
+Welcome to the {cat_name.strip()} page! Here you can find information about the {cat_name.strip()} instruments available in Flojoy.
+
+You can find all the available instruments from the sidebar
+
+import InstrumentThumbnail from '@root/src/components/InstrumentThumbnail';
+
+"""
+    return TEMPLATE
