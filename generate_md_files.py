@@ -11,6 +11,7 @@ from templates import (
     INS_BY_CAT_TEMPLATE,
     INS_BY_LIBS_TEMPLATE,
     INS_BY_VENDOR_TEMPLATE,
+    get_category_page_template,
 )
 from utils import (
     construct_slugs_by_cat,
@@ -87,6 +88,21 @@ def process_record(record: RecordDict, base_path: str):
             f.write(template.strip())
 
 
+def write_category_overview(instrument_path: str, cat_name: str, cat_template: str):
+    category_path = os.path.join(instrument_path, cat_name)
+    if not os.path.exists(category_path):
+        os.mkdir(category_path)
+    overview_file_name = f"{cat_name.replace(' ','-')}_overview.mdx"
+    overview_file_path = os.path.join(category_path, overview_file_name)
+    temp = get_category_page_template(
+        cat_name=cat_name,
+        slug=f"instruments-database/{cat_name}/{overview_file_name.replace('.mdx','')}",
+    )
+    mdx_content = temp + cat_template
+    with open(overview_file_path, "w") as f:
+        f.write(mdx_content.strip())
+
+
 templates = {
     "category": INS_BY_CAT_TEMPLATE,
     "library": INS_BY_LIBS_TEMPLATE,
@@ -129,6 +145,9 @@ def process_with_mapping(
                     cat_title=cat,
                     cat_desc=fields[0].get(Cols.category_description, ""),
                     device_templates=device_templates,
+                )
+                write_category_overview(
+                    instrument_path=ins_db_path, cat_name=cat, cat_template=cat_template
                 )
                 template += cat_template
                 with open(os.path.join(ins_db_path, "all-instruments.mdx"), "w") as f:
