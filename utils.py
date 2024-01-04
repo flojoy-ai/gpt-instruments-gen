@@ -66,7 +66,7 @@ def get_py_code_tabs(device_name: str, lib: str, category: str, manufacturer: st
                     code_md = f"```python\n{code}\n```"
                 tabs_str += f"\n{code_md}\n\n"
                 tabs_str += f"</TabItem>\n"
-        except Exception as e:
+        except Exception:
             pass
     tabs_str += f"</Tabs>"
     return tabs_str
@@ -88,3 +88,11 @@ def add_space_after_angle(input_string: str):
     result_string = pattern.sub(r"\1 \2", input_string)
 
     return result_string
+
+
+def get_lib_desc(lib: str):
+    lib_desc_file_path = f"{LIBRARY_SNIPPET_MAP[lib]}/{lib}_description.txt"
+    if not os.path.exists(lib_desc_file_path):
+        return ""
+    with open(lib_desc_file_path, "r") as lf:
+        return lf.read()

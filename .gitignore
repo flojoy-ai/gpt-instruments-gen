@@ -5,3 +5,4 @@ venv
 __pycache__
 docusaurus
 ./device_data.csv
+docs

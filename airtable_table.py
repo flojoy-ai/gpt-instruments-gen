@@ -1,10 +1,9 @@
 from pyairtable import Api
 from pyairtable.api.types import RecordDict
+import os
+import json
 
-p_list = []
-
-
-token = ""
+token = os.environ["AIRTABLE_API_TOKEN"]
 
 
 def get_all_instrument_device_table():
@@ -14,10 +13,17 @@ def get_all_instrument_device_table():
 
 
 def get_table_data_list():
-    table = get_all_instrument_device_table()
     all_record: list[RecordDict] = []
-    for recordList in table.iterate():
-        all_record = all_record + recordList
+    table_data_cache_path = os.path.join(os.curdir, "data/table_data.json")
+    if not os.path.exists(table_data_cache_path):
+        table = get_all_instrument_device_table()
+        for recordList in table.iterate():
+            all_record = all_record + recordList
+        with open(table_data_cache_path, "w") as cf:
+            cf.write(json.dumps(all_record))
+        return all_record
+    with open(table_data_cache_path, "r") as f:
+        all_record = json.loads(f.read())
     return all_record
 
 
