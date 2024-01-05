@@ -1,5 +1,10 @@
-from load_data import load_data, Cols
 import os
+
+os.environ["OPENAI_API_KEY"] = "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"
+os.environ[
+    "AIRTABLE_API_KEY"
+] = "patRmmDLYqBiDx4Vx.a247028b00194b1a54e44d1ddf10f9fefe0e6cc59637c65f46e99241b5a8ca48"
+from load_data import table_to_df, Cols
 import pandas as pd
 from github_utils import get_raw_code_for_device
 from create_device_snippets import create_device_snippets
@@ -12,7 +17,7 @@ LIBRARY_CACHE_MAP = {
     "PyTango": f"{DATA_DIR}/pytango.csv",
     "QCodes": f"{DATA_DIR}/qcodes.csv",
     "QCodes Community": f"{DATA_DIR}/qcodes_community.csv",
-    "Instrumentkit": f"{DATA_DIR}/instrumentkit.csv",
+    "InstrumentKit": f"{DATA_DIR}/instrumentkit.csv",
     "PyMeasure": f"{DATA_DIR}/pymeasure.csv",
     "Instrumental": f"{DATA_DIR}/instrumental.csv",
 }
@@ -29,7 +34,7 @@ LIBRARY_SNIPPET_MAP = {
 
 def get_valid_rows() -> pd.DataFrame:
     """Return rows from df that are of a valid library"""
-    df = load_data()
+    df = table_to_df()
     valid_libs = list(LIBRARY_SNIPPET_MAP.keys())
     return df[df[Cols.library].isin(valid_libs)]
 
@@ -64,7 +69,7 @@ def process_data() -> None:
         create_device_snippets(df_lib, LIBRARY_SNIPPET_MAP[lib])
 
 
-if __name__ == "__main__":
+def generate_snippets():
     os.makedirs(SNIPPETS_DIR, exist_ok=True)
     os.makedirs(DATA_DIR, exist_ok=True)
     process_data()

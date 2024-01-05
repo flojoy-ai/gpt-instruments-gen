@@ -1,98 +1,189 @@
-DOCS_DIR = "docusaurus"
+from utils import striped_str
 
-DOCS_TEMPLATE = """
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
 
-# {device}
+def get_device_template(
+    title: str,
+    sidebar_label: str,
+    description: str,
+    keywords: str,
+    slug: str,
+    meta_image: str,
+    device_spec: str,
+    vendor: str,
+    vendor_logo_url: str,
+    vendor_description: str,
+    vendor_website: str,
+    vendor_headquarter: str,
+    vendor_revennue: str,
+    category: str,
+    second_tab_item: str,
+):
+    TEMPLATE = f"""
+---
+title: {striped_str(title)}
+{f'description: {striped_str(description)}' if description != '' else ''}
+{keywords.strip()} 
+slug: {slug} 
+{f'image: {meta_image}' if meta_image != '' else ''}
+sidebar:
+    label: {striped_str(sidebar_label)} 
+---
+
+import {{ Tabs, TabItem }} from "@astrojs/starlight/components";
 
 ## Instrument Card
 
-<div className="flex">
+{description}
 
-<div>
+{f'![{striped_str(sidebar_label)}]({meta_image})' if meta_image != '' else ''}
 
-{desc}
+Device Specification: {f"[here]({device_spec})" if device_spec.startswith('http') else "[here](/instruments-database/all-instruments)" }
 
-</div>
+<details style={{{{ marginTop: "15px"}}}}>
+<summary><h2 style={{{{display:'inline'}}}}>Manufacturer card: {vendor.upper()}</h2></summary>
 
-<img src="{device_img_url}" style={{{{ width: \"325px\", height: \"200px\", objectFit: \"scale-down\" }}}} />
+![{vendor.upper()}]({vendor_logo_url})
 
-</div>
+{vendor_description.strip()}
 
-<div className="flex text-center">
+- Headquarters: {vendor_headquarter}
+- Yearly Revenue (millions, USD): {vendor_revennue}
+- Vendor Website: [here]({vendor_website})
 
-<p>Device Specification: <a target="\_blank" href="{device_spec}">here</a></p>
-
-</div>
-
-<details style={{{{ marginTop: \"15px\"}}}}>
-<summary><h2>Manufacturer Card</h2></summary>
-
-<img src="{vendor_logo_url}" style={{{{ width: \"100%\", height: \"170px\",objectFit: \"scale-down\" }}}} />
-
-{vendor_desc}.
-
-<ul>
-  <li>Headquarters: {headquarters}</li>
-  <li>Yearly Revenue (millions, USD): {revenue}</li>
-  <li>Vendor Website: <a href="{vendor_web}">here</a></li>
-</ul>
 </details>
 
-## Connect to the {device} in Python
+import FeaturedInstrumentVideo from "@root/src/components/FeaturedInstrumentVideo";
 
-[Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/custom-nodes/creating-custom-node/)
+<FeaturedInstrumentVideo
+  category="{'_'.join(category.upper().split(' '))}"
+  manufacturer="{vendor.upper()}"
+></FeaturedInstrumentVideo>
+
+## Connect to the {striped_str(sidebar_label)} in Python
+
+[Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/contribution/blocks/custom-flojoy-block/)
+
+import NodeCardCollection from "@root/src/components/NodeCardCollection";
+
+{second_tab_item}
 """
+    return TEMPLATE
 
-WIKI_PAGE_TEMPLATE = """--- 
-hide_table_of_contents: true
-sidebar_label: All Instruments
-sidebar_position: 0
+
+INS_BY_CAT_TEMPLATE = f"""
+---
+title: Scientific Instruments Database for Python
+description: Copy/paste Python examples for connecting to over 400 scientific instruments, sensors, motors, and actuators.
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/v1694137012/flojoy-docs/Marketing%20Images/flojoy_and_friends_c6x62c.jpg
+keywords: [Python Driver, Agilent, Tektronix, Keysight, DAQ]
+sidebar:
+    label: 📻 All Instruments
+    order: 0
 ---
 
-# Instruments Wiki
+Welcome to Flojoy's Instruments Database of Python drivers!
 
-Welcome to the Instruments Wiki! Here you can find information about the instruments available in Flojoy.
+Here you can find copy/paste Python examples for connecting to over 400 scientific instruments, sensors, motors, and actuators.
 
-You can find all the available instruments from the sidebar.
-
+import InstrumentThumbnail from '@root/src/components/InstrumentThumbnail';
 
 """
-CATEGORY_TEMPLATE = """--- 
+
+INS_BY_LIBS_TEMPLATE = f"""
+--- 
+title: Scientific Instruments Database by Python Library
+description: Copy/paste Python examples using PyMeasure, QCodes, PyVISA, PySerial, and more.
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/v1694137515/flojoy-docs/Marketing%20Images/instrument_menagerie_delnwb.jpg
+keywords: [PyMeasure, PyVISA, PySerial, QCodes, Python Driver, Agilent, Tektronix, Keysight, DAQ]
 hide_table_of_contents: true
-sidebar_label: {category}
-sidebar_position: 1
-slug: {page_url}
+sidebar:
+    label: 🐍 By Python library
+    order: 1
 ---
 
-# Controlling {category} in Python
+## Welcome!
 
-Welcome to the {category} page! Here you can find information about the {category} instruments available in Flojoy.
+Welcome to Flojoy's Scientific Instrument Database! 
+
+Here you can find information about some of the most popular Python libraries for scientific Instrument control - including InstrumentKit, QCodes, PyMeasure, PyVISA, and PySerial. 
+
+Flojoy uses these libraries (plus many others) to connect to Instruments with no-code, drag-and-drop blocks called "nodes" in Flojoy Studio. 
+
+Please use this Instruments Database as a resource to [download Studio](/) and [create your own nodes](/custom-nodes/creating-custom-node/) for connecting to scientific hardware in your lab, manufacturing facility, and test stations.
+
+import InstrumentThumbnail from '@root/src/components/InstrumentThumbnail';
+
+"""
+
+INS_BY_VENDOR_TEMPLATE = f"""
+--- 
+title: Scientific Instruments Database by Manufacturer
+description: Copy/paste Python examples for hundreds of instruments from Agilent, Tektronix, Keithley, Keysigh, and more.
+image: https://res.cloudinary.com/dhopxs1y3/image/upload/v1694137515/flojoy-docs/Marketing%20Images/instrument_menagerie_delnwb.jpg
+keywords: [Python, Agilent, Tektronix, Keysight, DAQ]
+hide_table_of_contents: true
+sidebar:
+   order: 2
+   label: 🏭 By Manufacturer
+---
+
+## Welcome!
+
+Welcome to Flojoy's Scientific Instrument Database! 
+
+This page is organized by Instrument manufacturer. Here you can find information about vendors collaborating with Flojoy and copy/paste Python examples for connecting to their products in your lab, manufacturing facility, and test stations.
+
+import InstrumentThumbnail from '@root/src/components/InstrumentThumbnail';
+
+"""
+
+
+def get_category_template(
+    cat_name: str, cat_title: str, cat_desc: str, device_templates: str
+):
+    CAT_TEMPLATE = f"""
+## {cat_title.strip()}
+
+<details> 
+<summary>{cat_name} Description</summary> 
+{cat_desc.strip()}
+</details> 
+
+<div className="flex flex-wrap">
+{device_templates}
+</div>
+"""
+    return CAT_TEMPLATE
+
+
+def get_unit_device_template(slug: str, img: str, device_name: str):
+    DEVICE_TEMPLATE = f"""
+<InstrumentThumbnail 
+    path='{slug.strip()}'
+    img='{img}'
+    label='{striped_str(device_name)}'    
+/>
+"""
+    return DEVICE_TEMPLATE
+
+
+def get_category_page_template(cat_name: str, slug: str):
+    TEMPLATE = f"""
+---
+title: {cat_name.strip()}
+slug: {slug}
+sidebar:
+  label: {cat_name.strip()} overview
+  order: 3
+---
+
+# Controlling {cat_name.strip()} in Python
+
+Welcome to the {cat_name.strip()} page! Here you can find information about the {cat_name.strip()} instruments available in Flojoy.
 
 You can find all the available instruments from the sidebar
 
+import InstrumentThumbnail from '@root/src/components/InstrumentThumbnail';
 
 """
-
-NEW_CATEGORY_TEMPLATE = CATEGORY_TEMPLATE
-
-PYTHON_LIB_TEMPLATE = """--- 
-hide_table_of_contents: true
-sidebar_position: 1
----
-
-# Python Libraries Wiki
-
-Welcome to the Python Libraries Wiki! Here you can find information about instruments supported by libraries.
-"""
-
-VENDOR_TEMPLATE = """--- 
-hide_table_of_contents: true
-sidebar_position: 2
----
-
-# Vendors Wiki
-
-Welcome to the Vendors Wiki! Here you can find information about vendors collaborating with Flojoy and their devices.
-"""
+    return TEMPLATE
