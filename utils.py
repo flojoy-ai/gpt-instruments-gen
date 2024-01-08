@@ -46,7 +46,7 @@ def get_py_code_tabs(device_name: str, lib: str, category: str, manufacturer: st
 <Tabs>
 <TabItem value="Flojoy" label="Flojoy" className="flojoy-instrument-tabs">
 
-<NodeCardCollection category="{category.upper().replace(' ', '_')}" manufacturer="{manufacturer}"></NodeCardCollection>
+<SectionsCard category="{category.upper().replace(' ', '_')}" manufacturer="{manufacturer}"></SectionsCard>
 
 </TabItem>
 """
