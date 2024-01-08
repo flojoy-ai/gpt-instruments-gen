@@ -52,18 +52,15 @@ Device Specification: {f"[here]({device_spec})" if device_spec.startswith('http'
 
 </details>
 
-import FeaturedInstrumentVideo from "@root/src/components/FeaturedInstrumentVideo";
+import FeaturedInstrumentVideo from "@/components/FeaturedInstrumentVideo.astro";
 
-<FeaturedInstrumentVideo
-  category="{'_'.join(category.upper().split(' '))}"
-  manufacturer="{vendor.upper()}"
-></FeaturedInstrumentVideo>
+<FeaturedInstrumentVideo category="{'_'.join(category.upper().split(' '))}" />
 
 ## Connect to the {striped_str(sidebar_label)} in Python
 
 [Read our guide for turning Python scripts into Flojoy nodes.](https://docs.flojoy.ai/contribution/blocks/custom-flojoy-block/)
 
-import NodeCardCollection from "@root/src/components/NodeCardCollection";
+import SectionsCard from "@root/src/components/SectionsCard";
 
 {second_tab_item}
 """
