@@ -6,3 +6,4 @@ __pycache__
 docusaurus
 ./device_data.csv
 docs
+.cache
