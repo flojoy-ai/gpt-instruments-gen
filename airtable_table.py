@@ -14,7 +14,7 @@ def get_all_instrument_device_table():
 
 def get_table_data_list():
     all_record: list[RecordDict] = []
-    table_data_cache_path = os.path.join(os.curdir, "data/table_data.json")
+    table_data_cache_path = os.path.join(os.curdir, ".cache/table_data.json")
     if not os.path.exists(table_data_cache_path):
         table = get_all_instrument_device_table()
         for recordList in table.iterate():
@@ -28,6 +28,7 @@ def get_table_data_list():
 
 
 class AllInstrumentTableCols:
+    id = "id"
     device_name = "Device"
     correct_device_name = "Corrected device name"
     description = "Device Description"
@@ -43,7 +44,7 @@ class AllInstrumentTableCols:
     category = "Device Category"
     headquarters = "Vendor headquarters"
     revenue = "Yearly revenue (millions, USD)"
-    device_picture = "Device picture"
+    device_pictures = "Device picture"
     device_image_url = "Image URL"
     device_specification = "Device datasheet (PDF)"
     vendor_logo = "Vendor logo"

@@ -4,6 +4,7 @@ import pandas as pd
 from github_utils import get_raw_code_for_device
 from create_device_snippets import create_device_snippets
 from utils import CACHE_DIR
+from log import logger
 
 SNIPPETS_DIR = f"{CACHE_DIR}/snippets"
 
@@ -63,11 +64,11 @@ def process_data() -> None:
     """Entrypoint. Load the data, generate the snippets"""
     df = get_valid_rows()
     unique_libs = [lib for lib in df[Cols.library].unique() if lib]
-    print(f"[INFO] Found {len(unique_libs)} libraries\n{unique_libs}")
+    logger.info(f"Found {len(unique_libs)} libraries\n{unique_libs}")
     for lib in unique_libs:
-        print(f"[INFO] Getting data for library {lib}")
+        logger.info(f"Getting data for library {lib}")
         df_lib = get_data_for_lib(df, lib)
-        print(f"[INFO] Generating snippets for {lib}")
+        logger.info(f"Generating snippets for {lib}")
         create_device_snippets(df_lib, LIBRARY_SNIPPET_MAP[lib])
 
 

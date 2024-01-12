@@ -6,9 +6,7 @@ import os
 
 
 enc = tiktoken.encoding_for_model("gpt-3.5-turbo")
-openai.api_key = os.environ[
-    "OPENAI_API_KEY"
-]  # "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"
+openai.api_key = os.environ["OPENAI_API_KEY"]
 # OPENAI_MODEL = "gpt-4"
 OPENAI_MODEL = "gpt-3.5-turbo-16k"
 TEMPERATURE = 0
