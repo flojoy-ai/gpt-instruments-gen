@@ -16,7 +16,7 @@ python generate_md_files.py -d <Path to instruments database directory>
 
 In this repo, the data and results are all cached. If you want to re-run this from scratch (ie a change was made to airtable), run
 ```
-rm -rf data snippets
+rm -rf .cache
 python generate_md_files.py -d <Path to instruments database directory>
 ```
 
