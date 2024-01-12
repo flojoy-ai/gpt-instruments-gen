@@ -4,6 +4,7 @@ from urllib.parse import urljoin
 from typing import Optional
 import numpy as np
 import math
+from utils import logger
 
 
 def scrape_docs(link: str) -> str:
@@ -16,7 +17,7 @@ def scrape_docs(link: str) -> str:
         content.extend([p.text for p in paragraphs])
         return "\n\n".join(content)
     else:
-        print(f"No documentation found on the page {link}.")
+        logger.info(f"No documentation found on the page {link}.")
         return ""
 
 

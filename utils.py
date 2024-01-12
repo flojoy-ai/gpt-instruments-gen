@@ -1,8 +1,10 @@
 import os
 import re
-import logging
+from pyairtable.api.types import Fields
+from airtable_table import AllInstrumentTableCols as Cols
+import requests
+from log import logger
 
-logger = logging.getLogger()
 CACHE_DIR = os.path.join(os.curdir, ".cache")
 
 
@@ -71,3 +73,33 @@ def add_space_after_angle(input_string: str):
     result_string = pattern.sub(r"\1 \2", input_string)
 
     return result_string
+
+
+image_mapping: dict[str, bool] = {}
+
+
+def is_valid_url(id: str, device_name: str, url: str):
+    if id in image_mapping:
+        return image_mapping[id]
+    res = requests.head(url)
+    if res.status_code == 200:
+        image_mapping[id] = True
+        return True
+    image_mapping[id] = False
+    logger.warn(f"Invalid image url found for device: {device_name}, id: {id}")
+    return False
+
+
+def validate_image_url(fields: Fields):
+    device_image = fields.get(Cols.device_image_url, None)
+    if device_image and is_valid_url(
+        id=fields.get(Cols.id, "no id found"),
+        device_name=fields.get(Cols.correct_device_name, fields.get(Cols.device_name)),
+        url=device_image,
+    ):
+        return device_image
+    return ""
+
+
+def get_cache_path(file_name: str):
+    return f"{CACHE_DIR}/{file_name}"
