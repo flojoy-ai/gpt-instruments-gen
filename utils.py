@@ -24,6 +24,7 @@ def construct_slugs_by_cat(
         (
             f"{base}/{capitalize_name(cat)}/{capitalize_name(manufacturer)}/{device}",
             capitalize_name(cat),
+            f"{base}/{cat.lower().replace(' ', '-')}/{manufacturer.lower().replace(' ', '-')}/{device}",
         )
         for cat in cats
     ]

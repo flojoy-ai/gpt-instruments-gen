@@ -59,7 +59,7 @@ def process_record(record: RecordDict, base_path: str):
     title = f"Connecting to {fields[Cols.correct_device_name]} by {fields[Cols.vendor]} in Python"
     vendor = fields[Cols.vendor]
     image_url = validate_image_url(fields)
-    for file_path, category in constructed_slugs:
+    for file_path, category, slug_ in constructed_slugs:
         ensure_dirs(base_path, file_path + ".mdx")
         device_name = fields[Cols.device_name]
         corrected = fields[Cols.correct_device_name]
@@ -86,7 +86,7 @@ def process_record(record: RecordDict, base_path: str):
             category=category,
             device_spec=fields.get(Cols.device_specification, ""),
             meta_image=image_url,
-            slug=file_path,
+            slug=slug_,
             vendor=fields.get(Cols.vendor, ""),
             vendor_description=fields.get(Cols.vendor_desc, ""),
             vendor_headquarter=fields.get(Cols.headquarters, ""),
@@ -105,11 +105,11 @@ def write_category_overview(instrument_path: str, cat_name: str, cat_template: s
     category_path = os.path.join(instrument_path, cat_name)
     if not os.path.exists(category_path):
         os.mkdir(category_path)
-    overview_file_name = f"{cat_name.replace(' ','-')}_overview.mdx"
+    overview_file_name = f"{cat_name.lower().replace(' ','-')}-overview.mdx"
     overview_file_path = os.path.join(category_path, overview_file_name)
     temp = get_category_page_template(
         cat_name=cat_name,
-        slug=f"instruments-database/{cat_name}/{overview_file_name.replace('.mdx','')}",
+        slug=f"instruments-database/{cat_name.lower().replace(' ', '-')}/{overview_file_name.replace('.mdx','')}",
     )
     mdx_content = temp + cat_template
     with open(overview_file_path, "w") as f:
@@ -134,7 +134,7 @@ def all_instruments_by_category(
             else f"{cat}/{field[Cols.vendor]}/{field.get(Cols.device_name,'').replace(' ', '-')}"
         )
         constructed_slugs = construct_slugs_by_cat([cat], slug)
-        slug, _ = constructed_slugs[0]
+        _, _, slug = constructed_slugs[0]
         image_url = validate_image_url(field)
         unit_device_template = get_unit_device_template(
             slug=slug.replace("instruments-database/", ""),
@@ -158,7 +158,7 @@ def all_instruments_by_lib(
         )
         image_url = validate_image_url(field)
         constructed_slugs = construct_slugs_by_cat(categories, slug)
-        for slug_, _ in constructed_slugs:
+        for _, _, slug_ in constructed_slugs:
             unit_device_template = get_unit_device_template(
                 slug=slug_.replace("instruments-database/", ""),
                 img=image_url,
@@ -184,7 +184,7 @@ def all_instruments_by_vendor(
         )
         image_url = validate_image_url(field)
         constructed_slugs = construct_slugs_by_cat(categories, slug)
-        for slug_, _ in constructed_slugs:
+        for _, _, slug_ in constructed_slugs:
             unit_device_template = get_unit_device_template(
                 slug=slug_.replace("instruments-database/", ""),
                 img=image_url,
