@@ -12,24 +12,33 @@ from templates import (
     INS_BY_LIBS_TEMPLATE,
     INS_BY_VENDOR_TEMPLATE,
     get_category_page_template,
+    get_py_code_tabs,
 )
 from utils import (
     construct_slugs_by_cat,
     ensure_dirs,
     get_keywords,
-    get_py_code_tabs,
     add_space_after_angle,
-    get_lib_desc,
+    logger,
 )
-from generate_snippets import generate_snippets
+from generate_snippets import generate_snippets, get_lib_desc
 from tqdm.auto import tqdm
 from load_data import get_libs_cats_map
 from typing import Literal
 
 
 def generate_md_files(base_path: str):
+    """
+    Entry point of the script
+
+    Args:
+        base_path (str): path to instruments-database folder of docs
+    """
+    # Generate all instruments pages by category, library and manufacturer
     for cat in ["category", "library", "manufacturer"]:
         generate_instruments_pages(by=cat, base_path=base_path)  # type: ignore
+
+    # Get table from Airtable in list format
     table_list = get_table_data_list()
     for record in tqdm(table_list, total=len(table_list)):
         process_record(record, base_path)
@@ -110,6 +119,106 @@ templates = {
 }
 
 
+def all_instruments_by_category(
+    cat: str, fields: list[Fields], template: str, ins_db_path: str
+):
+    device_templates = ""
+    for field in fields:
+        slug = (
+            field[Cols.docs_wiki].replace("/instruments-wiki", "")
+            if Cols.docs_wiki in field and field.get(Cols.docs_wiki, None)
+            else f"{cat}/{field[Cols.vendor]}/{field.get(Cols.device_name,'').replace(' ', '-')}"
+        )
+        constructed_slugs = construct_slugs_by_cat([cat], slug)
+        slug, _ = constructed_slugs[0]
+        unit_device_template = get_unit_device_template(
+            slug=slug.replace("instruments-database/", ""),
+            img=field.get(Cols.device_image_url, ""),
+            device_name=field.get(Cols.correct_device_name, field[Cols.device_name]),
+        )
+        device_templates += unit_device_template
+
+    cat_template = get_category_template(
+        cat_name="Category",
+        cat_title=cat,
+        cat_desc=fields[0].get(Cols.category_description, ""),
+        device_templates=device_templates,
+    )
+    write_category_overview(
+        instrument_path=ins_db_path, cat_name=cat, cat_template=cat_template
+    )
+    template += cat_template
+    with open(os.path.join(ins_db_path, "all-instruments.mdx"), "w") as f:
+        f.write(template.strip())
+
+
+def all_instruments_by_lib(
+    lib: str, fields: list[Fields], template: str, ins_db_path: str
+):
+    device_templates = ""
+    for field in fields:
+        categories = field.get(Cols.category, [])
+        slug = (
+            field[Cols.docs_wiki].replace("/instruments-wiki", "")
+            if Cols.docs_wiki in field and field.get(Cols.docs_wiki, None)
+            else f"{categories[0]}/{field[Cols.vendor]}/{field.get(Cols.device_name,'').replace(' ', '-')}"
+        )
+        constructed_slugs = construct_slugs_by_cat(categories, slug)
+        for slug_, _ in constructed_slugs:
+            unit_device_template = get_unit_device_template(
+                slug=slug_.replace("instruments-database/", ""),
+                img=field.get(Cols.device_image_url, ""),
+                device_name=field.get(
+                    Cols.correct_device_name, field[Cols.device_name]
+                ),
+            )
+            device_templates += unit_device_template
+
+    cat_template = get_category_template(
+        cat_name="Library",
+        cat_title=lib,
+        cat_desc=get_lib_desc(lib),
+        device_templates=device_templates,
+    )
+    template += cat_template
+    with open(os.path.join(ins_db_path, "python-daq-library.mdx"), "w") as f:
+        f.write(template.strip())
+
+
+def all_instruments_by_vendor(
+    vendor: str, fields: list[Fields], template: str, ins_db_path: str
+):
+    device_templates = ""
+    for field in fields:
+        categories = field.get(Cols.category, [])
+
+        slug = (
+            field[Cols.docs_wiki].replace("/instruments-wiki", "")
+            if Cols.docs_wiki in field and field.get(Cols.docs_wiki, None)
+            else f"{categories[0]}/{field[Cols.vendor]}/{field.get(Cols.device_name,'').replace(' ', '-')}"
+        )
+        constructed_slugs = construct_slugs_by_cat(categories, slug)
+        for slug_, _ in constructed_slugs:
+            unit_device_template = get_unit_device_template(
+                slug=slug_.replace("instruments-database/", ""),
+                img=field.get(Cols.device_image_url, ""),
+                device_name=field.get(
+                    Cols.correct_device_name, field[Cols.device_name]
+                ),
+            )
+            device_templates += unit_device_template
+
+    cat_template = get_category_template(
+        cat_name="Manufacturer",
+        cat_title=vendor,
+        cat_desc=fields[0].get(Cols.vendor_desc, ""),
+        device_templates=device_templates,
+    )
+    template += cat_template
+    with open(os.path.join(ins_db_path, "vendors.mdx"), "w") as f:
+        f.write(template.strip())
+
+
 def process_with_mapping(
     by: Literal["category", "library", "manufacturer"],
     map_obj: dict[str, list[Fields]],
@@ -117,118 +226,53 @@ def process_with_mapping(
     base_path: str,
 ):
     ins_db_path = os.path.join(base_path, "instruments-database")
+    # Ensure instruments-database folder
     ensure_dirs(base_path=base_path, dir_path="instruments-database")
     match by:
         case "category":
             for cat, fields in map_obj.items():
-                device_templates = ""
-
-                for field in fields:
-                    slug = (
-                        field[Cols.docs_wiki].replace("/instruments-wiki", "")
-                        if Cols.docs_wiki in field and field.get(Cols.docs_wiki, None)
-                        else f"{cat}/{field[Cols.vendor]}/{field.get(Cols.device_name,'').replace(' ', '-')}"
-                    )
-                    constructed_slugs = construct_slugs_by_cat([cat], slug)
-                    slug, _ = constructed_slugs[0]
-                    unit_device_template = get_unit_device_template(
-                        slug=slug.replace("instruments-database/", ""),
-                        img=field.get(Cols.device_image_url, ""),
-                        device_name=field.get(
-                            Cols.correct_device_name, field[Cols.device_name]
-                        ),
-                    )
-                    device_templates += unit_device_template
-
-                cat_template = get_category_template(
-                    cat_name="Category",
-                    cat_title=cat,
-                    cat_desc=fields[0].get(Cols.category_description, ""),
-                    device_templates=device_templates,
+                all_instruments_by_category(
+                    cat=cat, fields=fields, template=template, ins_db_path=ins_db_path
                 )
-                write_category_overview(
-                    instrument_path=ins_db_path, cat_name=cat, cat_template=cat_template
-                )
-                template += cat_template
-                with open(os.path.join(ins_db_path, "all-instruments.mdx"), "w") as f:
-                    f.write(template.strip())
+
             return
         case "library":
             for lib, fields in map_obj.items():
-                device_templates = ""
-                for field in fields:
-                    categories = field.get(Cols.category, [])
-                    slug = (
-                        field[Cols.docs_wiki].replace("/instruments-wiki", "")
-                        if Cols.docs_wiki in field and field.get(Cols.docs_wiki, None)
-                        else f"{categories[0]}/{field[Cols.vendor]}/{field.get(Cols.device_name,'').replace(' ', '-')}"
-                    )
-                    constructed_slugs = construct_slugs_by_cat(categories, slug)
-                    for slug_, _ in constructed_slugs:
-                        unit_device_template = get_unit_device_template(
-                            slug=slug_.replace("instruments-database/", ""),
-                            img=field.get(Cols.device_image_url, ""),
-                            device_name=field.get(
-                                Cols.correct_device_name, field[Cols.device_name]
-                            ),
-                        )
-                        device_templates += unit_device_template
-
-                cat_template = get_category_template(
-                    cat_name="Library",
-                    cat_title=lib,
-                    cat_desc=get_lib_desc(lib),
-                    device_templates=device_templates,
+                all_instruments_by_lib(
+                    lib=lib, fields=fields, template=template, ins_db_path=ins_db_path
                 )
-                template += cat_template
-                with open(
-                    os.path.join(ins_db_path, "python-daq-library.mdx"), "w"
-                ) as f:
-                    f.write(template.strip())
             return
         case "manufacturer":
-            for manufac, fields in map_obj.items():
-                device_templates = ""
-                for field in fields:
-                    categories = field.get(Cols.category, [])
-
-                    slug = (
-                        field[Cols.docs_wiki].replace("/instruments-wiki", "")
-                        if Cols.docs_wiki in field and field.get(Cols.docs_wiki, None)
-                        else f"{categories[0]}/{field[Cols.vendor]}/{field.get(Cols.device_name,'').replace(' ', '-')}"
-                    )
-                    constructed_slugs = construct_slugs_by_cat(categories, slug)
-                    for slug_, _ in constructed_slugs:
-                        unit_device_template = get_unit_device_template(
-                            slug=slug_.replace("instruments-database/", ""),
-                            img=field.get(Cols.device_image_url, ""),
-                            device_name=field.get(
-                                Cols.correct_device_name, field[Cols.device_name]
-                            ),
-                        )
-                        device_templates += unit_device_template
-
-                cat_template = get_category_template(
-                    cat_name="Manufacturer",
-                    cat_title=manufac,
-                    cat_desc=fields[0].get(Cols.vendor_desc, ""),
-                    device_templates=device_templates,
+            for vendor, fields in map_obj.items():
+                all_instruments_by_vendor(
+                    vendor=vendor,
+                    fields=fields,
+                    template=template,
+                    ins_db_path=ins_db_path,
                 )
-                template += cat_template
-                with open(os.path.join(ins_db_path, "vendors.mdx"), "w") as f:
-                    f.write(template.strip())
             return
 
 
 def generate_instruments_pages(
     by: Literal["category", "library", "manufacturer"], base_path: str
 ):
+    """
+    Generate all instruments page for given category, library or manufacturer
+    Args:
+        by (Literal['category', 'library', 'manufacturer']): category, library or manufacturer
+        base_path (str): path to instruments-database folder of docs"
+    """
+    # Get mapping object for given category
     mapping = get_libs_cats_map()
     map_obj = mapping[by]
     core_template = templates[by]
-    process_with_mapping(
-        by=by, map_obj=map_obj, template=core_template, base_path=base_path
-    )
+    try:
+        process_with_mapping(
+            by=by, map_obj=map_obj, template=core_template, base_path=base_path
+        )
+        logger.info(f"Generated all instruments page by {by}.")
+    except Exception as e:
+        logger.error(f"Failed to generate all instruments page by {by}: {e}")
 
 
 if __name__ == "__main__":

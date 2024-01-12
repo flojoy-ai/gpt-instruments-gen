@@ -1,25 +1,19 @@
 import os
-
-os.environ["OPENAI_API_KEY"] = "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"
-os.environ[
-    "AIRTABLE_API_KEY"
-] = "patRmmDLYqBiDx4Vx.a247028b00194b1a54e44d1ddf10f9fefe0e6cc59637c65f46e99241b5a8ca48"
 from load_data import table_to_df, Cols
 import pandas as pd
 from github_utils import get_raw_code_for_device
 from create_device_snippets import create_device_snippets
-from tqdm.auto import tqdm
+from utils import CACHE_DIR
 
-DATA_DIR = "data"
-SNIPPETS_DIR = "snippets"
+SNIPPETS_DIR = f"{CACHE_DIR}/snippets"
 
 LIBRARY_CACHE_MAP = {
-    "PyTango": f"{DATA_DIR}/pytango.csv",
-    "QCodes": f"{DATA_DIR}/qcodes.csv",
-    "QCodes Community": f"{DATA_DIR}/qcodes_community.csv",
-    "InstrumentKit": f"{DATA_DIR}/instrumentkit.csv",
-    "PyMeasure": f"{DATA_DIR}/pymeasure.csv",
-    "Instrumental": f"{DATA_DIR}/instrumental.csv",
+    "PyTango": f"{CACHE_DIR}/pytango.csv",
+    "QCodes": f"{CACHE_DIR}/qcodes.csv",
+    "QCodes Community": f"{CACHE_DIR}/qcodes_community.csv",
+    "InstrumentKit": f"{CACHE_DIR}/instrumentkit.csv",
+    "PyMeasure": f"{CACHE_DIR}/pymeasure.csv",
+    "Instrumental": f"{CACHE_DIR}/instrumental.csv",
 }
 
 LIBRARY_SNIPPET_MAP = {
@@ -30,6 +24,14 @@ LIBRARY_SNIPPET_MAP = {
     "PyMeasure": f"{SNIPPETS_DIR}/pymeasure_snippets",
     "Instrumental": f"{SNIPPETS_DIR}/instrumental_snippets",
 }
+
+
+def get_lib_desc(lib: str):
+    lib_desc_file_path = f"{LIBRARY_SNIPPET_MAP[lib]}/{lib}_description.txt"
+    if not os.path.exists(lib_desc_file_path):
+        return ""
+    with open(lib_desc_file_path, "r") as lf:
+        return lf.read()
 
 
 def get_valid_rows() -> pd.DataFrame:
@@ -71,5 +73,5 @@ def process_data() -> None:
 
 def generate_snippets():
     os.makedirs(SNIPPETS_DIR, exist_ok=True)
-    os.makedirs(DATA_DIR, exist_ok=True)
+    os.makedirs(CACHE_DIR, exist_ok=True)
     process_data()

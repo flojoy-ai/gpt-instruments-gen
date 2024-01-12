@@ -1,13 +1,15 @@
 import os
-import pandas as pd
-from airtable_table import get_table_data_list
-import numpy as np
 import json
+import numpy as np
+import pandas as pd
+from typing import Any
+from airtable_table import get_table_data_list
 from pyairtable.api.types import Fields
 from typing import Literal
+from utils import capitalize_name, CACHE_DIR
 
 AIRTABLE_API_KEY = os.environ["AIRTABLE_API_KEY"]
-LOCAL_FILE_NAME = "data/device_data.csv"
+LOCAL_FILE_NAME = f"{CACHE_DIR}/device_data.csv"
 
 
 class Cols:
@@ -49,7 +51,7 @@ def table_to_df():
     df = pd.DataFrame([row["fields"] for row in table_data])
     df = df[~df[Cols.device_name].isna()]
     df[Cols.correct_device_name] = df.apply(use_device_name_when_no_correct, axis=1)
-    df.to_csv("device_data.csv", index=False)
+    df.to_csv(LOCAL_FILE_NAME, index=False)
     df = df.sort_values(by="Corrected device name", ascending=True)
     df["Device Category"] = df["Device Category"].apply(
         lambda x: ", ".join(map(str, x))
@@ -59,10 +61,6 @@ def table_to_df():
     df = df.sort_values(by=["Device Category", "Corrected device name"], ascending=True)
 
     return df
-
-
-df = table_to_df()
-df.head(2)
 
 
 def read_from_cache(file_path: str) -> dict[str, list[Fields]]:
@@ -77,31 +75,47 @@ def cache_data(file_path: str, data: str):
         f.write(data)
 
 
+def sort_mapping(mapping: dict[str, Any]):
+    return dict(sorted(mapping.items()))
+
+
+def get_cache_path(file_name: str):
+    return f"{CACHE_DIR}/{file_name}"
+
+
+def is_missing_cache(cache_files: list[dict[str, list[Fields]]]) -> bool:
+    return any([mapping.__len__() < 1 for mapping in cache_files])
+
+
 def get_libs_cats_map() -> (
     dict[Literal["category", "library", "manufacturer"], dict[str, list[Fields]]]
 ):
     if not os.path.exists("data"):
         os.mkdir("data")
-    cats_map_file = os.path.join(os.curdir, "data/cats_map.json")
-    libs_map_file = os.path.join(os.curdir, "data/libs_map.json")
-    manufac_map_file = os.path.join(os.curdir, "data/manufacs_map.json")
-    libs_map: dict[str, list[Fields]] = read_from_cache(libs_map_file)
-    cats_map: dict[str, list[Fields]] = read_from_cache(cats_map_file)
-    manufacs_map: dict[str, list[Fields]] = read_from_cache(manufac_map_file)
-
-    if libs_map.__len__() < 1 or cats_map.__len__() < 1 or manufacs_map.__len__() < 1:
+    cats_map_file, libs_map_file, vendors_map_file = (
+        get_cache_path("cats_map.json"),
+        get_cache_path("libs_map.json"),
+        get_cache_path("vendors_map.json"),
+    )
+    cats_map, libs_map, vendors_map = (
+        read_from_cache(cats_map_file),
+        read_from_cache(libs_map_file),
+        read_from_cache(vendors_map_file),
+    )
+    if is_missing_cache([cats_map, libs_map, vendors_map]):
         cats_map.clear()
         libs_map.clear()
-        manufacs_map.clear()
+        vendors_map.clear()
         table_data = get_table_data_list()
         for record in table_data:
             fields = record["fields"]
             cats = fields.get(Cols.category, [])
             for cat in cats:
-                if cat in cats_map:
-                    cats_map[cat].append(fields)
+                cap_category = capitalize_name(cat)
+                if cap_category in cats_map:
+                    cats_map[cap_category].append(fields)
                 else:
-                    cats_map[cat] = [fields]
+                    cats_map[cap_category] = [fields]
             lib = fields.get(Cols.library, "")
             if lib != "":
                 if lib in libs_map:
@@ -109,12 +123,13 @@ def get_libs_cats_map() -> (
                 else:
                     libs_map[lib] = [fields]
             vendor = fields[Cols.vendor]
-            if vendor in manufacs_map:
-                manufacs_map[vendor].append(fields)
+            vendor_cap = capitalize_name(vendor)
+            if vendor in vendors_map:
+                vendors_map[vendor_cap].append(fields)
             else:
-                manufacs_map[vendor] = [fields]
+                vendors_map[vendor_cap] = [fields]
 
-        cache_data(cats_map_file, json.dumps(cats_map, indent=3))
-        cache_data(libs_map_file, json.dumps(libs_map, indent=3))
-        cache_data(manufac_map_file, json.dumps(manufacs_map, indent=3))
-    return {"category": cats_map, "library": libs_map, "manufacturer": manufacs_map}
+        cache_data(cats_map_file, json.dumps(sort_mapping(cats_map), indent=3))
+        cache_data(libs_map_file, json.dumps(sort_mapping(libs_map), indent=3))
+        cache_data(vendors_map_file, json.dumps(sort_mapping(vendors_map), indent=3))
+    return {"category": cats_map, "library": libs_map, "manufacturer": vendors_map}

@@ -1,4 +1,5 @@
-from utils import striped_str
+from utils import striped_str, get_device_file_name
+from generate_snippets import LIBRARY_SNIPPET_MAP
 
 
 def get_device_template(
@@ -65,6 +66,38 @@ import SectionsCard from "@root/src/components/SectionsCard";
 {second_tab_item}
 """
     return TEMPLATE
+
+
+def get_py_code_tabs(device_name: str, lib: str, category: str, manufacturer: str):
+    device_file_name = get_device_file_name(device_name)
+    tabs_str = f"""
+<Tabs>
+<TabItem value="Flojoy" label="Flojoy" className="flojoy-instrument-tabs">
+
+<SectionsCard category="{category.upper().replace(' ', '_')}" manufacturer="{manufacturer}"></SectionsCard>
+
+</TabItem>
+"""
+    if lib != "":
+        snippet_path = f"{LIBRARY_SNIPPET_MAP[lib]}/{device_file_name}.txt"
+        try:
+            with open(snippet_path, "r") as fr:
+                code_lines = fr.readlines()
+                code_lines = [
+                    line for line in code_lines if not line.startswith("Sure")
+                ]
+                code = "".join(code_lines)
+                tabs_str += f'<TabItem value="{lib}" label="{lib}">\n'
+                if "```" in code:
+                    code_md = code
+                else:
+                    code_md = f"```python\n{code}\n```"
+                tabs_str += f"\n{code_md}\n\n"
+                tabs_str += f"</TabItem>\n"
+        except Exception:
+            pass
+    tabs_str += f"</Tabs>"
+    return tabs_str
 
 
 INS_BY_CAT_TEMPLATE = f"""
